@@ -12,7 +12,7 @@ version = "1.0.0"
 [workspace.dependencies]
 console_log = "1.0.0"
 console_error_panic_hook = "0.1.7"
-dioxus = "0.5.6"
+dioxus = "0.6.0"
 leptos = "0.7.0-rc2"
 log = "0.4.22"
 yew = "0.21.0"
