@@ -29,11 +29,11 @@ pub fn MonitorUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m9 10 3-3 3 3"></path>
-            <path d="M12 13V7"></path>
-            <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-            <path d="M12 17v4"></path>
-            <path d="M8 21h8"></path>
+            <path d="m9 10 3-3 3 3" />
+            <path d="M12 13V7" />
+            <rect width="20" height="14" x="2" y="3" rx="2" />
+            <path d="M12 17v4" />
+            <path d="M8 21h8" />
         </svg>
     }
 }

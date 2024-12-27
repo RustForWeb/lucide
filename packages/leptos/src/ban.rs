@@ -29,8 +29,8 @@ pub fn Ban(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="m4.9 4.9 14.2 14.2"></path>
+            <circle cx="12" cy="12" r="10" />
+            <path d="m4.9 4.9 14.2 14.2" />
         </svg>
     }
 }

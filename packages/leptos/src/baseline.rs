@@ -29,9 +29,9 @@ pub fn Baseline(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 20h16"></path>
-            <path d="m6 16 6-12 6 12"></path>
-            <path d="M8 12h8"></path>
+            <path d="M4 20h16" />
+            <path d="m6 16 6-12 6 12" />
+            <path d="M8 12h8" />
         </svg>
     }
 }

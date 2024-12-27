@@ -29,7 +29,7 @@ pub fn Square(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <rect width="18" height="18" x="3" y="3" rx="2" />
         </svg>
     }
 }

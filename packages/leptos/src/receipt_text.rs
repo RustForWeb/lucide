@@ -29,10 +29,10 @@ pub fn ReceiptText(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
-            <path d="M14 8H8"></path>
-            <path d="M16 12H8"></path>
-            <path d="M13 16H8"></path>
+            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
+            <path d="M14 8H8" />
+            <path d="M16 12H8" />
+            <path d="M13 16H8" />
         </svg>
     }
 }

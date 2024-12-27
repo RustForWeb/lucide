@@ -29,9 +29,9 @@ pub fn Spline(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="19" cy="5" r="2"></circle>
-            <circle cx="5" cy="19" r="2"></circle>
-            <path d="M5 17A12 12 0 0 1 17 5"></path>
+            <circle cx="19" cy="5" r="2" />
+            <circle cx="5" cy="19" r="2" />
+            <path d="M5 17A12 12 0 0 1 17 5" />
         </svg>
     }
 }

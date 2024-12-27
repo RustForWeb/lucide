@@ -29,9 +29,9 @@ pub fn Rows3(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-            <path d="M21 9H3"></path>
-            <path d="M21 15H3"></path>
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="M21 9H3" />
+            <path d="M21 15H3" />
         </svg>
     }
 }

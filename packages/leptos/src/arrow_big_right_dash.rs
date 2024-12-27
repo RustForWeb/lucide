@@ -29,8 +29,8 @@ pub fn ArrowBigRightDash(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M5 9v6"></path>
-            <path d="M9 9h3V5l7 7-7 7v-4H9V9z"></path>
+            <path d="M5 9v6" />
+            <path d="M9 9h3V5l7 7-7 7v-4H9V9z" />
         </svg>
     }
 }

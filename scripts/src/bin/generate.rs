@@ -10,7 +10,7 @@ use scripts::{
 use tempfile::tempdir;
 
 const GIT_URL: &str = "https://github.com/lucide-icons/lucide.git";
-const GIT_REF: &str = "0.460.1";
+const GIT_REF: &str = "0.469.0";
 
 fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();

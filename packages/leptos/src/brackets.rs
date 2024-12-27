@@ -29,8 +29,8 @@ pub fn Brackets(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M16 3h3v18h-3"></path>
-            <path d="M8 21H5V3h3"></path>
+            <path d="M16 3h3v18h-3" />
+            <path d="M8 21H5V3h3" />
         </svg>
     }
 }

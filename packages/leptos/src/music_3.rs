@@ -29,8 +29,8 @@ pub fn Music3(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="18" r="4"></circle>
-            <path d="M16 18V2"></path>
+            <circle cx="12" cy="18" r="4" />
+            <path d="M16 18V2" />
         </svg>
     }
 }

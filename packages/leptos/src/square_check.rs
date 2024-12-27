@@ -29,8 +29,8 @@ pub fn SquareCheck(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-            <path d="m9 12 2 2 4-4"></path>
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="m9 12 2 2 4-4" />
         </svg>
     }
 }

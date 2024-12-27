@@ -29,10 +29,10 @@ pub fn Scale3D(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="19" cy="19" r="2"></circle>
-            <circle cx="5" cy="5" r="2"></circle>
-            <path d="M5 7v12h12"></path>
-            <path d="m5 19 6-6"></path>
+            <path d="M5 7v11a1 1 0 0 0 1 1h11" />
+            <path d="M5.293 18.707 11 13" />
+            <circle cx="19" cy="19" r="2" />
+            <circle cx="5" cy="5" r="2" />
         </svg>
     }
 }

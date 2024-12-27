@@ -38,9 +38,9 @@ pub fn Grid2X2(props: &Grid2X2Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="M3 12h18" />
             <path d="M12 3v18" />
+            <path d="M3 12h18" />
+            <rect x="3" y="3" width="18" height="18" rx="2" />
         </svg>
     }
 }

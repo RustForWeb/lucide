@@ -29,9 +29,9 @@ pub fn Touchpad(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-            <path d="M2 14h20"></path>
-            <path d="M12 20v-6"></path>
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="M2 14h20" />
+            <path d="M12 20v-6" />
         </svg>
     }
 }

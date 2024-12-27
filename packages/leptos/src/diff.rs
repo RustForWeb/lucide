@@ -29,9 +29,9 @@ pub fn Diff(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 3v14"></path>
-            <path d="M5 10h14"></path>
-            <path d="M5 21h14"></path>
+            <path d="M12 3v14" />
+            <path d="M5 10h14" />
+            <path d="M5 21h14" />
         </svg>
     }
 }

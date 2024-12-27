@@ -29,7 +29,7 @@ pub fn ArrowBigUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M9 18v-6H5l7-7 7 7h-4v6H9z"></path>
+            <path d="M9 18v-6H5l7-7 7 7h-4v6H9z" />
         </svg>
     }
 }

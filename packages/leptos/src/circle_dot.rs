@@ -29,8 +29,8 @@ pub fn CircleDot(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="1" />
         </svg>
     }
 }

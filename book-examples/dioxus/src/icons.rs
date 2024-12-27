@@ -1641,6 +1641,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CalendarSync {}
+            },
+            "Calendar Sync",
+        ),
+        (
+            rsx! {
                 CalendarX {}
             },
             "Calendar X",
@@ -2095,12 +2101,6 @@ pub fn IconsC1() -> Element {
             },
             "Circle Arrow Out Up Left",
         ),
-        (
-            rsx! {
-                CircleArrowOutUpRight {}
-            },
-            "Circle Arrow Out Up Right",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2116,6 +2116,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                CircleArrowOutUpRight {}
+            },
+            "Circle Arrow Out Up Right",
+        ),
         (
             rsx! {
                 CircleArrowRight {}
@@ -2710,12 +2716,6 @@ pub fn IconsC2() -> Element {
             },
             "Computer",
         ),
-        (
-            rsx! {
-                ConciergeBell {}
-            },
-            "Concierge Bell",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2731,6 +2731,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                ConciergeBell {}
+            },
+            "Concierge Bell",
+        ),
         (
             rsx! {
                 Cone {}
@@ -3195,6 +3201,12 @@ pub fn IconsD1() -> Element {
                 Droplet {}
             },
             "Droplet",
+        ),
+        (
+            rsx! {
+                DropletOff {}
+            },
+            "Droplet Off",
         ),
         (
             rsx! {
@@ -4848,6 +4860,12 @@ pub fn IconsI1() -> Element {
         ),
         (
             rsx! {
+                ImageUpscale {}
+            },
+            "Image Upscale",
+        ),
+        (
+            rsx! {
                 Images {}
             },
             "Images",
@@ -5127,12 +5145,6 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
-                Layers3 {}
-            },
-            "Layers 3",
-        ),
-        (
-            rsx! {
                 LayoutDashboard {}
             },
             "Layout Dashboard",
@@ -5286,6 +5298,12 @@ pub fn IconsL1() -> Element {
                 ListFilter {}
             },
             "List Filter",
+        ),
+        (
+            rsx! {
+                ListFilterPlus {}
+            },
+            "List Filter Plus",
         ),
         (
             rsx! {
@@ -7455,6 +7473,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ScanHeart {}
+            },
+            "Scan Heart",
+        ),
+        (
+            rsx! {
                 ScanLine {}
             },
             "Scan Line",
@@ -7957,12 +7981,6 @@ pub fn IconsS1() -> Element {
             },
             "Spade",
         ),
-        (
-            rsx! {
-                Sparkle {}
-            },
-            "Sparkle",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -7978,6 +7996,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Sparkle {}
+            },
+            "Sparkle",
+        ),
         (
             rsx! {
                 Sparkles {}
@@ -9549,6 +9573,12 @@ pub fn IconsW1() -> Element {
                 Waves {}
             },
             "Waves",
+        ),
+        (
+            rsx! {
+                WavesLadder {}
+            },
+            "Waves Ladder",
         ),
         (
             rsx! {

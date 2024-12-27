@@ -29,10 +29,10 @@ pub fn CaseSensitive(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m3 15 4-8 4 8"></path>
-            <path d="M4 13h6"></path>
-            <circle cx="18" cy="12" r="3"></circle>
-            <path d="M21 9v6"></path>
+            <path d="m3 15 4-8 4 8" />
+            <path d="M4 13h6" />
+            <circle cx="18" cy="12" r="3" />
+            <path d="M21 9v6" />
         </svg>
     }
 }

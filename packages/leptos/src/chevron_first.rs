@@ -29,8 +29,8 @@ pub fn ChevronFirst(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m17 18-6-6 6-6"></path>
-            <path d="M7 6v12"></path>
+            <path d="m17 18-6-6 6-6" />
+            <path d="M7 6v12" />
         </svg>
     }
 }

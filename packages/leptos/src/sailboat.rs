@@ -29,9 +29,9 @@ pub fn Sailboat(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M22 18H2a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4Z"></path>
-            <path d="M21 14 10 2 3 14h18Z"></path>
-            <path d="M10 2v16"></path>
+            <path d="M22 18H2a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4Z" />
+            <path d="M21 14 10 2 3 14h18Z" />
+            <path d="M10 2v16" />
         </svg>
     }
 }

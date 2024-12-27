@@ -29,9 +29,9 @@ pub fn ArrowDownToLine(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 17V3"></path>
-            <path d="m6 11 6 6 6-6"></path>
-            <path d="M19 21H5"></path>
+            <path d="M12 17V3" />
+            <path d="m6 11 6 6 6-6" />
+            <path d="M19 21H5" />
         </svg>
     }
 }
