@@ -88,32 +88,42 @@ impl Framework for Dioxus {
                 );
             }
 
-            let name: TokenStream = format!("Icons{letter}").parse()?;
-            letter_component_name.push(quote! {
-                #name {}
-            });
+            for (n, chunk) in component_name
+                .into_iter()
+                .zip(human_name)
+                .collect::<Vec<_>>()
+                .chunks(100)
+                .enumerate()
+            {
+                let (component_name, human_name): (Vec<_>, Vec<_>) = chunk.iter().cloned().unzip();
 
-            letter_component.push(quote! {
-                #[component]
-                pub fn #name() -> Element {
-                    let icons = [
-                        #((rsx! { #component_name {} }, #human_name),)*
-                    ];
+                let name: TokenStream = format!("Icons{letter}{}", n + 1).parse()?;
+                letter_component_name.push(quote! {
+                    #name {}
+                });
 
-                    rsx! {
-                        for (icon, name) in icons {
-                            div {
-                                key: "{name}",
-                                class: "flex flex-wrap items-center gap-4 text-sm",
-                                {icon}
-                                span {
-                                    {name}
+                letter_component.push(quote! {
+                    #[component]
+                    pub fn #name() -> Element {
+                        let icons = [
+                            #((rsx! { #component_name {} }, #human_name),)*
+                        ];
+
+                        rsx! {
+                            for (icon, name) in icons {
+                                div {
+                                    key: "{name}",
+                                    class: "flex flex-wrap items-center gap-4 text-sm",
+                                    {icon}
+                                    span {
+                                        {name}
+                                    }
                                 }
                             }
                         }
                     }
-                }
-            });
+                });
+            }
         }
 
         Ok(quote! {

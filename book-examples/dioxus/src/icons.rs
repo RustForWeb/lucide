@@ -4,37 +4,44 @@ use lucide_dioxus::*;
 pub fn Icons() -> Element {
     rsx! {
         div { class: "w-full max-w-80 py-4",
-            IconsA {}
-            IconsB {}
-            IconsC {}
-            IconsD {}
-            IconsE {}
-            IconsF {}
-            IconsG {}
-            IconsH {}
-            IconsI {}
-            IconsJ {}
-            IconsK {}
-            IconsL {}
-            IconsM {}
-            IconsN {}
-            IconsO {}
-            IconsP {}
-            IconsQ {}
-            IconsR {}
-            IconsS {}
-            IconsT {}
-            IconsU {}
-            IconsV {}
-            IconsW {}
-            IconsX {}
-            IconsY {}
-            IconsZ {}
+            IconsA1 {}
+            IconsA2 {}
+            IconsB1 {}
+            IconsB2 {}
+            IconsC1 {}
+            IconsC2 {}
+            IconsC3 {}
+            IconsD1 {}
+            IconsE1 {}
+            IconsF1 {}
+            IconsF2 {}
+            IconsG1 {}
+            IconsH1 {}
+            IconsI1 {}
+            IconsJ1 {}
+            IconsK1 {}
+            IconsL1 {}
+            IconsM1 {}
+            IconsM2 {}
+            IconsN1 {}
+            IconsO1 {}
+            IconsP1 {}
+            IconsQ1 {}
+            IconsR1 {}
+            IconsS1 {}
+            IconsS2 {}
+            IconsT1 {}
+            IconsU1 {}
+            IconsV1 {}
+            IconsW1 {}
+            IconsX1 {}
+            IconsY1 {}
+            IconsZ1 {}
         }
     }
 }
 #[component]
-pub fn IconsA() -> Element {
+pub fn IconsA1() -> Element {
     let icons = [
         (
             rsx! {
@@ -636,6 +643,21 @@ pub fn IconsA() -> Element {
             },
             "Arrows Up From Line",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsA2() -> Element {
+    let icons = [
         (
             rsx! {
                 Asterisk {}
@@ -697,7 +719,7 @@ pub fn IconsA() -> Element {
     }
 }
 #[component]
-pub fn IconsB() -> Element {
+pub fn IconsB1() -> Element {
     let icons = [
         (
             rsx! {
@@ -1299,6 +1321,21 @@ pub fn IconsB() -> Element {
             },
             "Bookmark X",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsB2() -> Element {
+    let icons = [
         (
             rsx! {
                 BoomBox {}
@@ -1462,7 +1499,7 @@ pub fn IconsB() -> Element {
     }
 }
 #[component]
-pub fn IconsC() -> Element {
+pub fn IconsC1() -> Element {
     let icons = [
         (
             rsx! {
@@ -2064,6 +2101,21 @@ pub fn IconsC() -> Element {
             },
             "Circle Arrow Out Up Right",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC2() -> Element {
+    let icons = [
         (
             rsx! {
                 CircleArrowRight {}
@@ -2664,6 +2716,21 @@ pub fn IconsC() -> Element {
             },
             "Concierge Bell",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 Cone {}
@@ -2893,7 +2960,7 @@ pub fn IconsC() -> Element {
     }
 }
 #[component]
-pub fn IconsD() -> Element {
+pub fn IconsD1() -> Element {
     let icons = [
         (
             rsx! {
@@ -3166,7 +3233,7 @@ pub fn IconsD() -> Element {
     }
 }
 #[component]
-pub fn IconsE() -> Element {
+pub fn IconsE1() -> Element {
     let icons = [
         (
             rsx! {
@@ -3307,7 +3374,7 @@ pub fn IconsE() -> Element {
     }
 }
 #[component]
-pub fn IconsF() -> Element {
+pub fn IconsF1() -> Element {
     let icons = [
         (
             rsx! {
@@ -3909,6 +3976,21 @@ pub fn IconsF() -> Element {
             },
             "Folder Clock",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsF2() -> Element {
+    let icons = [
         (
             rsx! {
                 FolderClosed {}
@@ -4132,7 +4214,7 @@ pub fn IconsF() -> Element {
     }
 }
 #[component]
-pub fn IconsG() -> Element {
+pub fn IconsG1() -> Element {
     let icons = [
         (
             rsx! {
@@ -4429,7 +4511,7 @@ pub fn IconsG() -> Element {
     }
 }
 #[component]
-pub fn IconsH() -> Element {
+pub fn IconsH1() -> Element {
     let icons = [
         (
             rsx! {
@@ -4702,7 +4784,7 @@ pub fn IconsH() -> Element {
     }
 }
 #[component]
-pub fn IconsI() -> Element {
+pub fn IconsI1() -> Element {
     let icons = [
         (
             rsx! {
@@ -4855,7 +4937,7 @@ pub fn IconsI() -> Element {
     }
 }
 #[component]
-pub fn IconsJ() -> Element {
+pub fn IconsJ1() -> Element {
     let icons = [
         (
             rsx! {
@@ -4882,7 +4964,7 @@ pub fn IconsJ() -> Element {
     }
 }
 #[component]
-pub fn IconsK() -> Element {
+pub fn IconsK1() -> Element {
     let icons = [
         (
             rsx! {
@@ -4939,7 +5021,7 @@ pub fn IconsK() -> Element {
     }
 }
 #[component]
-pub fn IconsL() -> Element {
+pub fn IconsL1() -> Element {
     let icons = [
         (
             rsx! {
@@ -5368,7 +5450,7 @@ pub fn IconsL() -> Element {
     }
 }
 #[component]
-pub fn IconsM() -> Element {
+pub fn IconsM1() -> Element {
     let icons = [
         (
             rsx! {
@@ -5970,6 +6052,21 @@ pub fn IconsM() -> Element {
             },
             "Move 3 D",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsM2() -> Element {
+    let icons = [
         (
             rsx! {
                 MoveDiagonal {}
@@ -6079,7 +6176,7 @@ pub fn IconsM() -> Element {
     }
 }
 #[component]
-pub fn IconsN() -> Element {
+pub fn IconsN1() -> Element {
     let icons = [
         (
             rsx! {
@@ -6184,7 +6281,7 @@ pub fn IconsN() -> Element {
     }
 }
 #[component]
-pub fn IconsO() -> Element {
+pub fn IconsO1() -> Element {
     let icons = [
         (
             rsx! {
@@ -6253,7 +6350,7 @@ pub fn IconsO() -> Element {
     }
 }
 #[component]
-pub fn IconsP() -> Element {
+pub fn IconsP1() -> Element {
     let icons = [
         (
             rsx! {
@@ -6856,7 +6953,7 @@ pub fn IconsP() -> Element {
     }
 }
 #[component]
-pub fn IconsQ() -> Element {
+pub fn IconsQ1() -> Element {
     let icons = [
         (
             rsx! {
@@ -6883,7 +6980,7 @@ pub fn IconsQ() -> Element {
     }
 }
 #[component]
-pub fn IconsR() -> Element {
+pub fn IconsR1() -> Element {
     let icons = [
         (
             rsx! {
@@ -7264,7 +7361,7 @@ pub fn IconsR() -> Element {
     }
 }
 #[component]
-pub fn IconsS() -> Element {
+pub fn IconsS1() -> Element {
     let icons = [
         (
             rsx! {
@@ -7866,6 +7963,21 @@ pub fn IconsS() -> Element {
             },
             "Sparkle",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS2() -> Element {
+    let icons = [
         (
             rsx! {
                 Sparkles {}
@@ -8473,7 +8585,7 @@ pub fn IconsS() -> Element {
     }
 }
 #[component]
-pub fn IconsT() -> Element {
+pub fn IconsT1() -> Element {
     let icons = [
         (
             rsx! {
@@ -9022,7 +9134,7 @@ pub fn IconsT() -> Element {
     }
 }
 #[component]
-pub fn IconsU() -> Element {
+pub fn IconsU1() -> Element {
     let icons = [
         (
             rsx! {
@@ -9253,7 +9365,7 @@ pub fn IconsU() -> Element {
     }
 }
 #[component]
-pub fn IconsV() -> Element {
+pub fn IconsV1() -> Element {
     let icons = [
         (
             rsx! {
@@ -9376,7 +9488,7 @@ pub fn IconsV() -> Element {
     }
 }
 #[component]
-pub fn IconsW() -> Element {
+pub fn IconsW1() -> Element {
     let icons = [
         (
             rsx! {
@@ -9577,7 +9689,7 @@ pub fn IconsW() -> Element {
     }
 }
 #[component]
-pub fn IconsX() -> Element {
+pub fn IconsX1() -> Element {
     let icons = [(
         rsx! {
             X {}
@@ -9596,7 +9708,7 @@ pub fn IconsX() -> Element {
     }
 }
 #[component]
-pub fn IconsY() -> Element {
+pub fn IconsY1() -> Element {
     let icons = [(
         rsx! {
             Youtube {}
@@ -9615,7 +9727,7 @@ pub fn IconsY() -> Element {
     }
 }
 #[component]
-pub fn IconsZ() -> Element {
+pub fn IconsZ1() -> Element {
     let icons = [
         (
             rsx! {
