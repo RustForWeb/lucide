@@ -14,9 +14,9 @@ Rust port of [Lucide](https://lucide.dev/).
 
 Rust Lucide is available for these Rust frameworks:
 
--   [Dioxus](https://dioxuslabs.com/)
--   [Leptos](https://leptos.dev/)
--   [Yew](https://yew.rs/)
+- [Dioxus](https://dioxuslabs.com/)
+- [Leptos](https://leptos.dev/)
+- [Yew](https://yew.rs/)
 
 See [the Rust Lucide book](https://lucide.rustforweb.org/introduction.html#frameworks) for more information.
 
@@ -34,6 +34,6 @@ This project is available under the [MIT license](LICENSE.md).
 
 ## Rust For Web
 
-The Rust Lucide project is part of the [Rust For Web](https://github.com/RustForWeb).
+The Rust Lucide project is part of [Rust For Web](https://github.com/RustForWeb).
 
 [Rust For Web](https://github.com/RustForWeb) creates and ports web UI libraries for Rust. All projects are free and open source.
