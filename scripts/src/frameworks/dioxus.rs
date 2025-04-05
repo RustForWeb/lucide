@@ -2,7 +2,7 @@ use std::{error::Error, path::PathBuf, process::Command};
 
 use convert_case::{Case, Casing};
 use proc_macro2::TokenStream;
-use quote::{quote, ToTokens};
+use quote::{ToTokens, quote};
 use roxmltree::{Attribute, Children, Document, Node, NodeType};
 
 use crate::framework::Framework;
