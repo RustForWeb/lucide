@@ -63,7 +63,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         let component_name = file_stem.to_case(Case::Pascal);
         component_names.push(component_name.clone());
 
-        info!("{} - {}", module, component_name);
+        info!("{module} - {component_name}");
 
         for framework in &frameworks {
             generate_icon(
@@ -120,7 +120,7 @@ fn generate_icon(
     let output_path = Path::new("packages")
         .join(framework.name())
         .join("src")
-        .join(format!("{}.rs", module));
+        .join(format!("{module}.rs"));
 
     let output_tokens = framework.generate(component_name, input)?;
     let output = prettyplease::unparse(&syn::parse2(output_tokens)?);
@@ -168,7 +168,7 @@ fn generate_lib(framework: &dyn Framework, modules: &[String]) -> Result<(), Box
     let output = format!(
         "{}{}\n\n{}\n",
         match framework.lib_header() {
-            Some(header) => format!("{}\n\n", header),
+            Some(header) => format!("{header}\n\n"),
             None => "".into(),
         },
         output_modules,

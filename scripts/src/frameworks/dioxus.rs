@@ -31,7 +31,7 @@ impl Framework for Dioxus {
         let svg = convert_children(document.root().children(), None);
 
         let component_name: TokenStream = component_name.parse()?;
-        let props_name: TokenStream = format!("{}Props", component_name).parse()?;
+        let props_name: TokenStream = format!("{component_name}Props").parse()?;
 
         Ok(quote! {
             use dioxus::prelude::*;

@@ -29,7 +29,7 @@ impl Framework for Yew {
 
     fn generate(&self, component_name: String, svg: String) -> Result<TokenStream, Box<dyn Error>> {
         let component_name: TokenStream = component_name.parse()?;
-        let props_name: TokenStream = format!("{}Props", component_name).parse()?;
+        let props_name: TokenStream = format!("{component_name}Props").parse()?;
         let svg: TokenStream = svg
             .replacen(
                 "<svg",
