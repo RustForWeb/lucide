@@ -12,6 +12,7 @@ pub struct SquareRadicalProps {
     #[props(default = false)]
     pub absolute_stroke_width: bool,
     pub class: Option<String>,
+    pub style: Option<String>,
 }
 #[component]
 pub fn SquareRadical(props: SquareRadicalProps) -> Element {
@@ -24,6 +25,7 @@ pub fn SquareRadical(props: SquareRadicalProps) -> Element {
         svg {
             "xmlns": "http://www.w3.org/2000/svg",
             "class": if let Some(class) = props.class { "{class}" },
+            "style": if let Some(style) = props.style { "{style}" },
             "width": "{props.size}",
             "height": "{props.size}",
             "viewBox": "0 0 24 24",

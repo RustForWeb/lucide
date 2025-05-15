@@ -48,8 +48,8 @@ impl Framework for Dioxus {
                 pub stroke_width: usize,
                 #[props(default = false)]
                 pub absolute_stroke_width: bool,
-
                 pub class: Option<String>,
+                pub style: Option<String>,
             }
 
             #[component]
@@ -187,6 +187,7 @@ fn convert_node(node: Node, parent_namespace: Option<&str>) -> Option<TokenStrea
             let class = (node.tag_name().name() == "svg").then(|| {
                 quote! {
                     "class": if let Some(class) = props.class { "{class}" },
+                    "style": if let Some(style) = props.style { "{style}" },
                 }
             });
             let attributes = node

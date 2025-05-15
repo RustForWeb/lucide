@@ -14,6 +14,8 @@ pub struct CodeXmlProps {
     #[prop_or_default]
     pub class: Classes,
     #[prop_or_default]
+    pub style: std::option::Option<AttrValue>,
+    #[prop_or_default]
     pub node_ref: NodeRef,
 }
 #[function_component]
@@ -28,6 +30,7 @@ pub fn CodeXml(props: &CodeXmlProps) -> Html {
             ref={props.node_ref.clone()}
             class={classes!("lucide", props.class
         .clone())}
+            style={props.style.clone()}
             xmlns="http://www.w3.org/2000/svg"
             width={props.size.to_string()}
             height={props.size.to_string()}

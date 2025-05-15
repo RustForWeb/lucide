@@ -33,7 +33,7 @@ impl Framework for Yew {
         let svg: TokenStream = svg
             .replacen(
                 "<svg",
-                "<svg ref={props.node_ref.clone()} class={classes!(\"lucide\", props.class.clone())} ",
+                "<svg ref={props.node_ref.clone()} class={classes!(\"lucide\", props.class.clone())} style={props.style.clone()} ",
                 1,
             )
             .replacen("width=\"24\"", "width={props.size.to_string()}", 1)
@@ -64,6 +64,8 @@ impl Framework for Yew {
                 pub absolute_stroke_width: bool,
                 #[prop_or_default]
                 pub class: Classes,
+                #[prop_or_default]
+                pub style: std::option::Option<AttrValue>,
                 #[prop_or_default]
                 pub node_ref: NodeRef,
             }
