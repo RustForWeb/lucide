@@ -1,7 +1,7 @@
 {
     "name": "@rustforweb/lucide",
     "description": "Rust port of Lucide.",
-    "author": "Rust For Web <info@rustforweb.org>",
+    "author": "Rust for Web <info@rustforweb.org>",
     "repository": "github:RustForWeb/lucide",
     "license": "MIT",
     "private": true,

@@ -32,8 +32,8 @@ The logo is a combination of the [Lucide logo](https://github.com/lucide-icons/l
 
 This project is available under the [MIT license](LICENSE.md).
 
-## Rust For Web
+## Rust for Web
 
-The Rust Lucide project is part of [Rust For Web](https://github.com/RustForWeb).
+The Rust Lucide project is part of [Rust for Web](https://github.com/RustForWeb).
 
-[Rust For Web](https://github.com/RustForWeb) creates and ports web UI libraries for Rust. All projects are free and open source.
+[Rust for Web](https://github.com/RustForWeb) creates and ports web UI libraries for Rust. All projects are free and open source.
