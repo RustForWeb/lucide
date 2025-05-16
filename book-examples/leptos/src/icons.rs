@@ -917,6 +917,7 @@ pub fn IconsG() -> impl IntoView {
                 (view! { <Globe /> }.into_any(), "Globe"),
                 (view! { <GlobeLock /> }.into_any(), "Globe Lock"),
                 (view! { <Goal /> }.into_any(), "Goal"),
+                (view! { <Gpu /> }.into_any(), "Gpu"),
                 (view! { <Grab /> }.into_any(), "Grab"),
                 (view! { <GraduationCap /> }.into_any(), "Graduation Cap"),
                 (view! { <Grape /> }.into_any(), "Grape"),

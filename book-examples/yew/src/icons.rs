@@ -948,6 +948,7 @@ pub fn IconsG() -> Html {
         (html! { <Globe /> }, "Globe"),
         (html! { <GlobeLock /> }, "Globe Lock"),
         (html! { <Goal /> }, "Goal"),
+        (html! { <Gpu /> }, "Gpu"),
         (html! { <Grab /> }, "Grab"),
         (html! { <GraduationCap /> }, "Graduation Cap"),
         (html! { <Grape /> }, "Grape"),

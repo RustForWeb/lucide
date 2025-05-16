@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Axe(
+pub fn Gpu(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,11 @@ pub fn Axe(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m14 12-8.381 8.38a1 1 0 0 1-3.001-3L11 9" />
-            <path d="M15 15.5a.5.5 0 0 0 .5.5A6.5 6.5 0 0 0 22 9.5a.5.5 0 0 0-.5-.5h-1.672a2 2 0 0 1-1.414-.586l-5.062-5.062a1.205 1.205 0 0 0-1.704 0L9.352 5.648a1.205 1.205 0 0 0 0 1.704l5.062 5.062A2 2 0 0 1 15 13.828z" />
+            <path d="M2 21V3" />
+            <path d="M2 5h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26" />
+            <path d="M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3" />
+            <circle cx="16" cy="11" r="2" />
+            <circle cx="8" cy="11" r="2" />
         </svg>
     }
 }

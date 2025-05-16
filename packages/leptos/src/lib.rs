@@ -1706,6 +1706,8 @@ mod globe;
 mod globe_lock;
 #[cfg(feature = "gaming")]
 mod goal;
+#[cfg(any(feature = "devices", feature = "gaming"))]
+mod gpu;
 #[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
 mod grab;
 #[cfg(feature = "buildings")]
@@ -5744,6 +5746,8 @@ pub use globe::*;
 pub use globe_lock::*;
 #[cfg(feature = "gaming")]
 pub use goal::*;
+#[cfg(any(feature = "devices", feature = "gaming"))]
+pub use gpu::*;
 #[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
 pub use grab::*;
 #[cfg(feature = "buildings")]

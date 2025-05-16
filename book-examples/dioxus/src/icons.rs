@@ -4531,6 +4531,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                Gpu {}
+            },
+            "Gpu",
+        ),
+        (
+            rsx! {
                 Grab {}
             },
             "Grab",
