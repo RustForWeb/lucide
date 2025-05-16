@@ -29,7 +29,7 @@ pub fn Play(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <polygon points="6 3 20 12 6 21 6 3"></polygon>
+            <polygon points="6 3 20 12 6 21 6 3" />
         </svg>
     }
 }

@@ -29,7 +29,7 @@ pub fn FlagTriangleRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M7 22V2l10 5-10 5"></path>
+            <path d="M7 22V2l10 5-10 5" />
         </svg>
     }
 }

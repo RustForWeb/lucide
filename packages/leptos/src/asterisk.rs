@@ -29,9 +29,9 @@ pub fn Asterisk(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 6v12"></path>
-            <path d="M17.196 9 6.804 15"></path>
-            <path d="m6.804 9 10.392 6"></path>
+            <path d="M12 6v12" />
+            <path d="M17.196 9 6.804 15" />
+            <path d="m6.804 9 10.392 6" />
         </svg>
     }
 }

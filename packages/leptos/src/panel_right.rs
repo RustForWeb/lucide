@@ -29,8 +29,8 @@ pub fn PanelRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-            <path d="M15 3v18"></path>
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="M15 3v18" />
         </svg>
     }
 }

@@ -29,8 +29,8 @@ pub fn Option(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 3h6l6 18h6"></path>
-            <path d="M14 3h7"></path>
+            <path d="M3 3h6l6 18h6" />
+            <path d="M14 3h7" />
         </svg>
     }
 }

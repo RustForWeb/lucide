@@ -29,7 +29,7 @@ pub fn Slash(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M22 2 2 22"></path>
+            <path d="M22 2 2 22" />
         </svg>
     }
 }

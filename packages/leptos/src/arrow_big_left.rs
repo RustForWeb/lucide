@@ -29,7 +29,7 @@ pub fn ArrowBigLeft(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M18 15h-6v4l-7-7 7-7v4h6v6z"></path>
+            <path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />
         </svg>
     }
 }

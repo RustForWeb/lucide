@@ -29,9 +29,9 @@ pub fn Grid2X2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 3v18"></path>
-            <path d="M3 12h18"></path>
-            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M12 3v18" />
+            <path d="M3 12h18" />
+            <rect x="3" y="3" width="18" height="18" rx="2" />
         </svg>
     }
 }

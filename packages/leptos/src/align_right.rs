@@ -29,9 +29,9 @@ pub fn AlignRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M21 12H9"></path>
-            <path d="M21 18H7"></path>
-            <path d="M21 6H3"></path>
+            <path d="M21 12H9" />
+            <path d="M21 18H7" />
+            <path d="M21 6H3" />
         </svg>
     }
 }

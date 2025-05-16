@@ -29,13 +29,13 @@ pub fn Shredder(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 22v-5"></path>
-            <path d="M14 19v-2"></path>
-            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-            <path d="M18 20v-3"></path>
-            <path d="M2 13h20"></path>
-            <path d="M20 13V7l-5-5H6a2 2 0 0 0-2 2v9"></path>
-            <path d="M6 20v-3"></path>
+            <path d="M10 22v-5" />
+            <path d="M14 19v-2" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M18 20v-3" />
+            <path d="M2 13h20" />
+            <path d="M20 13V7l-5-5H6a2 2 0 0 0-2 2v9" />
+            <path d="M6 20v-3" />
         </svg>
     }
 }

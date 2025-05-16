@@ -29,9 +29,9 @@ pub fn Tally3(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 4v16"></path>
-            <path d="M9 4v16"></path>
-            <path d="M14 4v16"></path>
+            <path d="M4 4v16" />
+            <path d="M9 4v16" />
+            <path d="M14 4v16" />
         </svg>
     }
 }

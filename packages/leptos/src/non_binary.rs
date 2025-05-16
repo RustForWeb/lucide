@@ -29,10 +29,10 @@ pub fn NonBinary(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v10"></path>
-            <path d="m8.5 4 7 4"></path>
-            <path d="m8.5 8 7-4"></path>
-            <circle cx="12" cy="17" r="5"></circle>
+            <path d="M12 2v10" />
+            <path d="m8.5 4 7 4" />
+            <path d="m8.5 8 7-4" />
+            <circle cx="12" cy="17" r="5" />
         </svg>
     }
 }

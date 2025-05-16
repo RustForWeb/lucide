@@ -29,9 +29,9 @@ pub fn Text(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 18H3"></path>
-            <path d="M17 6H3"></path>
-            <path d="M21 12H3"></path>
+            <path d="M15 18H3" />
+            <path d="M17 6H3" />
+            <path d="M21 12H3" />
         </svg>
     }
 }

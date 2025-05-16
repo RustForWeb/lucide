@@ -29,10 +29,10 @@ pub fn AArrowUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3.5 13h6"></path>
-            <path d="m2 16 4.5-9 4.5 9"></path>
-            <path d="M18 16V7"></path>
-            <path d="m14 11 4-4 4 4"></path>
+            <path d="M3.5 13h6" />
+            <path d="m2 16 4.5-9 4.5 9" />
+            <path d="M18 16V7" />
+            <path d="m14 11 4-4 4 4" />
         </svg>
     }
 }

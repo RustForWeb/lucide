@@ -29,8 +29,8 @@ pub fn CircleSlash2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M22 2 2 22"></path>
-            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M22 2 2 22" />
+            <circle cx="12" cy="12" r="10" />
         </svg>
     }
 }

@@ -29,10 +29,10 @@ pub fn AppWindowMac(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-            <path d="M6 8h.01"></path>
-            <path d="M10 8h.01"></path>
-            <path d="M14 8h.01"></path>
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="M6 8h.01" />
+            <path d="M10 8h.01" />
+            <path d="M14 8h.01" />
         </svg>
     }
 }

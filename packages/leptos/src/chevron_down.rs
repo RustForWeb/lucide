@@ -29,7 +29,7 @@ pub fn ChevronDown(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m6 9 6 6 6-6"></path>
+            <path d="m6 9 6 6 6-6" />
         </svg>
     }
 }

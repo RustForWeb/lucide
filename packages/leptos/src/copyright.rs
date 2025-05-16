@@ -29,8 +29,8 @@ pub fn Copyright(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M14.83 14.83a4 4 0 1 1 0-5.66"></path>
+            <circle cx="12" cy="12" r="10" />
+            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
         </svg>
     }
 }

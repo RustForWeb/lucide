@@ -29,9 +29,9 @@ pub fn MoonStar(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9"></path>
-            <path d="M20 3v4"></path>
-            <path d="M22 5h-4"></path>
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
+            <path d="M20 3v4" />
+            <path d="M22 5h-4" />
         </svg>
     }
 }

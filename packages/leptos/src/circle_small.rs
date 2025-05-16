@@ -29,7 +29,7 @@ pub fn CircleSmall(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="6" />
         </svg>
     }
 }

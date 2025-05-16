@@ -29,13 +29,13 @@ pub fn RulerDimensionLine(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 15v-3.014"></path>
-            <path d="M16 15v-3.014"></path>
-            <path d="M20 6H4"></path>
-            <path d="M20 8V4"></path>
-            <path d="M4 8V4"></path>
-            <path d="M8 15v-3.014"></path>
-            <rect x="3" y="12" width="18" height="7" rx="1"></rect>
+            <path d="M12 15v-3.014" />
+            <path d="M16 15v-3.014" />
+            <path d="M20 6H4" />
+            <path d="M20 8V4" />
+            <path d="M4 8V4" />
+            <path d="M8 15v-3.014" />
+            <rect x="3" y="12" width="18" height="7" rx="1" />
         </svg>
     }
 }

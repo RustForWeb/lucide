@@ -29,8 +29,8 @@ pub fn Pause(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
-            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1" />
+            <rect x="6" y="4" width="4" height="16" rx="1" />
         </svg>
     }
 }

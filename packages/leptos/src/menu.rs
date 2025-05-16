@@ -29,9 +29,9 @@ pub fn Menu(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 12h16"></path>
-            <path d="M4 18h16"></path>
-            <path d="M4 6h16"></path>
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+            <path d="M4 6h16" />
         </svg>
     }
 }

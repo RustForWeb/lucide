@@ -29,8 +29,8 @@ pub fn SkipForward(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <polygon points="5 4 15 12 5 20 5 4"></polygon>
-            <line x1="19" x2="19" y1="5" y2="19"></line>
+            <polygon points="5 4 15 12 5 20 5 4" />
+            <line x1="19" x2="19" y1="5" y2="19" />
         </svg>
     }
 }

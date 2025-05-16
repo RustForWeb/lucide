@@ -29,10 +29,10 @@ pub fn Library(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m16 6 4 14"></path>
-            <path d="M12 6v14"></path>
-            <path d="M8 8v12"></path>
-            <path d="M4 4v16"></path>
+            <path d="m16 6 4 14" />
+            <path d="M12 6v14" />
+            <path d="M8 8v12" />
+            <path d="M4 4v16" />
         </svg>
     }
 }

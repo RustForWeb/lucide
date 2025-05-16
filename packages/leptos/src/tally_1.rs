@@ -29,7 +29,7 @@ pub fn Tally1(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 4v16"></path>
+            <path d="M4 4v16" />
         </svg>
     }
 }

@@ -29,8 +29,8 @@ pub fn Parentheses(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M8 21s-4-3-4-9 4-9 4-9"></path>
-            <path d="M16 3s4 3 4 9-4 9-4 9"></path>
+            <path d="M8 21s-4-3-4-9 4-9 4-9" />
+            <path d="M16 3s4 3 4 9-4 9-4 9" />
         </svg>
     }
 }

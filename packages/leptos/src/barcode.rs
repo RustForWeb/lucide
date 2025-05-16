@@ -29,11 +29,11 @@ pub fn Barcode(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 5v14"></path>
-            <path d="M8 5v14"></path>
-            <path d="M12 5v14"></path>
-            <path d="M17 5v14"></path>
-            <path d="M21 5v14"></path>
+            <path d="M3 5v14" />
+            <path d="M8 5v14" />
+            <path d="M12 5v14" />
+            <path d="M17 5v14" />
+            <path d="M21 5v14" />
         </svg>
     }
 }

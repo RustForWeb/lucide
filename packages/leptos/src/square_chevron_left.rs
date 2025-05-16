@@ -29,8 +29,8 @@ pub fn SquareChevronLeft(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-            <path d="m14 16-4-4 4-4"></path>
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="m14 16-4-4 4-4" />
         </svg>
     }
 }

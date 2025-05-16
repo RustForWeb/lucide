@@ -29,10 +29,10 @@ pub fn CaseLower(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="7" cy="12" r="3"></circle>
-            <path d="M10 9v6"></path>
-            <circle cx="17" cy="12" r="3"></circle>
-            <path d="M14 7v8"></path>
+            <circle cx="7" cy="12" r="3" />
+            <path d="M10 9v6" />
+            <circle cx="17" cy="12" r="3" />
+            <path d="M14 7v8" />
         </svg>
     }
 }

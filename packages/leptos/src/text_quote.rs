@@ -29,10 +29,10 @@ pub fn TextQuote(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M17 6H3"></path>
-            <path d="M21 12H8"></path>
-            <path d="M21 18H8"></path>
-            <path d="M3 12v6"></path>
+            <path d="M17 6H3" />
+            <path d="M21 12H8" />
+            <path d="M21 18H8" />
+            <path d="M3 12v6" />
         </svg>
     }
 }

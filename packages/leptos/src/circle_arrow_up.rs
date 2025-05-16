@@ -29,9 +29,9 @@ pub fn CircleArrowUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="m16 12-4-4-4 4"></path>
-            <path d="M12 16V8"></path>
+            <circle cx="12" cy="12" r="10" />
+            <path d="m16 12-4-4-4 4" />
+            <path d="M12 16V8" />
         </svg>
     }
 }

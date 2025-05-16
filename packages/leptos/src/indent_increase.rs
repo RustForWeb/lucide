@@ -29,10 +29,10 @@ pub fn IndentIncrease(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M21 12H11"></path>
-            <path d="M21 18H11"></path>
-            <path d="M21 6H11"></path>
-            <path d="m3 8 4 4-4 4"></path>
+            <path d="M21 12H11" />
+            <path d="M21 18H11" />
+            <path d="M21 6H11" />
+            <path d="m3 8 4 4-4 4" />
         </svg>
     }
 }

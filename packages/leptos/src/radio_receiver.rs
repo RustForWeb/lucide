@@ -29,10 +29,10 @@ pub fn RadioReceiver(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M5 16v2"></path>
-            <path d="M19 16v2"></path>
-            <rect width="20" height="8" x="2" y="8" rx="2"></rect>
-            <path d="M18 12h.01"></path>
+            <path d="M5 16v2" />
+            <path d="M19 16v2" />
+            <rect width="20" height="8" x="2" y="8" rx="2" />
+            <path d="M18 12h.01" />
         </svg>
     }
 }
