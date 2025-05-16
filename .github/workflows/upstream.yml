@@ -5,6 +5,9 @@ on:
         - cron: '00 16 * * *'
     workflow_dispatch: {}
 
+permissions:
+    contents: write
+
 jobs:
     check:
         name: Check for upstream releases
@@ -16,7 +19,7 @@ jobs:
 
             - name: Set up Rust toolchain
               run: |
-                  rustup toolchain install stable --no-self-update --profile minimal
+                  rustup toolchain install stable --no-self-update --profile default
                   rustup target add wasm32-unknown-unknown
 
             - name: Set up Rust cache
