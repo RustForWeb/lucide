@@ -29,8 +29,8 @@ pub fn Eclipse(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 2a7 7 0 1 0 10 10" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a7 7 0 1 0 10 10"></path>
         </svg>
     }
 }

@@ -29,7 +29,7 @@ pub fn RectangleHorizontal(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="20" height="12" x="2" y="6" rx="2" />
+            <rect width="20" height="12" x="2" y="6" rx="2"></rect>
         </svg>
     }
 }

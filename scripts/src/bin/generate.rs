@@ -1,4 +1,4 @@
-use std::{error::Error, fs, path::Path};
+use std::{collections::HashSet, error::Error, fs, path::Path};
 
 use convert_case::{Case, Casing};
 use git2::Repository;
@@ -6,11 +6,12 @@ use log::info;
 use scripts::{
     framework::Framework,
     frameworks::{dioxus::Dioxus, leptos::Leptos, yew::Yew},
+    metadata::Metadata,
 };
 use tempfile::tempdir;
 
 const GIT_URL: &str = "https://github.com/lucide-icons/lucide.git";
-const GIT_REF: &str = "0.469.0";
+const GIT_REF: &str = "0.507.0";
 
 fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();
@@ -53,9 +54,15 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let mut modules = vec![];
     let mut component_names = vec![];
+    let mut metadatas = vec![];
 
     for (path, file_stem) in paths {
-        let file_contents = fs::read_to_string(path)?;
+        let file_contents = fs::read_to_string(&path)?;
+
+        let mut metadata_path = path.clone();
+        metadata_path.set_extension("json");
+        let metadata = serde_json::from_str::<Metadata>(&fs::read_to_string(&metadata_path)?)?;
+        metadatas.push(metadata.clone());
 
         let module = file_stem.to_case(Case::Snake);
         modules.push(module.clone());
@@ -76,8 +83,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     for framework in &frameworks {
-        generate_lib(&**framework, &modules)?;
+        generate_lib(&**framework, &modules, &metadatas)?;
         generate_example(&**framework, &component_names)?;
+        generate_features(&**framework, &metadatas)?;
 
         framework.format(
             format!("lucide-{}", framework.name()),
@@ -147,7 +155,28 @@ fn generate_example(
     Ok(())
 }
 
-fn generate_lib(framework: &dyn Framework, modules: &[String]) -> Result<(), Box<dyn Error>> {
+fn generate_lib(
+    framework: &dyn Framework,
+    modules: &[String],
+    metadatas: &[Metadata],
+) -> Result<(), Box<dyn Error>> {
+    let attributes = metadatas
+        .iter()
+        .map(|metadata| {
+            let conditions = metadata
+                .categories
+                .iter()
+                .map(|category| format!("feature = \"{category}\""))
+                .collect::<Vec<_>>();
+
+            if conditions.len() == 1 {
+                format!("#[cfg({})]", conditions.join(", "))
+            } else {
+                format!("#[cfg(any({}))]", conditions.join(", "))
+            }
+        })
+        .collect::<Vec<String>>();
+
     let output_path = Path::new("packages")
         .join(framework.name())
         .join("src")
@@ -155,13 +184,22 @@ fn generate_lib(framework: &dyn Framework, modules: &[String]) -> Result<(), Box
 
     let output_modules = modules
         .iter()
-        .map(|module| format!("mod {};", sanitize_identifier(module.as_str())))
+        .zip(&attributes)
+        .map(|(module, attribute)| {
+            format!("{attribute}\nmod {};", sanitize_identifier(module.as_str()))
+        })
         .collect::<Vec<String>>()
         .join("\n");
 
     let output_uses = modules
         .iter()
-        .map(|module| format!("pub use {}::*;", sanitize_identifier(module.as_str())))
+        .zip(&attributes)
+        .map(|(module, attribute)| {
+            format!(
+                "{attribute}\npub use {}::*;",
+                sanitize_identifier(module.as_str())
+            )
+        })
         .collect::<Vec<String>>()
         .join("\n");
 
@@ -176,6 +214,50 @@ fn generate_lib(framework: &dyn Framework, modules: &[String]) -> Result<(), Box
     );
 
     fs::write(output_path, output)?;
+
+    Ok(())
+}
+
+fn generate_features(
+    framework: &dyn Framework,
+    metadatas: &[Metadata],
+) -> Result<(), Box<dyn Error>> {
+    let file_path = Path::new("packages")
+        .join(framework.name())
+        .join("Cargo.toml");
+
+    let mut file_contents = fs::read_to_string(&file_path)?;
+
+    let index = file_contents.find("[features]");
+    if let Some(index) = index {
+        file_contents = file_contents[0..index].to_string();
+    }
+    file_contents = file_contents.trim_end_matches("\n").to_string();
+
+    let mut features = metadatas
+        .iter()
+        .flat_map(|metadata| metadata.categories.clone())
+        .collect::<HashSet<String>>()
+        .into_iter()
+        .collect::<Vec<String>>();
+    features.sort();
+
+    let output_all_features = features
+        .iter()
+        .map(|feature| format!("    \"{feature}\","))
+        .collect::<Vec<String>>()
+        .join("\n");
+    let output_features = features
+        .into_iter()
+        .map(|feature| format!("{feature} = []"))
+        .collect::<Vec<String>>()
+        .join("\n");
+
+    let output = format!(
+        "{file_contents}\n\n[features]\ndefault = []\n{output_features}\nall-icons = [\n{output_all_features}\n]\n"
+    );
+
+    fs::write(&file_path, output)?;
 
     Ok(())
 }

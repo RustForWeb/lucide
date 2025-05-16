@@ -29,8 +29,8 @@ pub fn Captions(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="14" x="3" y="5" rx="2" ry="2" />
-            <path d="M7 15h4M15 15h2M7 11h2M13 11h4" />
+            <rect width="18" height="14" x="3" y="5" rx="2" ry="2"></rect>
+            <path d="M7 15h4M15 15h2M7 11h2M13 11h4"></path>
         </svg>
     }
 }

@@ -29,10 +29,10 @@ pub fn ClockArrowDown(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12.338 21.994A10 10 0 1 1 21.925 13.227" />
-            <path d="M12 6v6l2 1" />
-            <path d="m14 18 4 4 4-4" />
-            <path d="M18 14v8" />
+            <path d="M12.338 21.994A10 10 0 1 1 21.925 13.227"></path>
+            <path d="M12 6v6l2 1"></path>
+            <path d="m14 18 4 4 4-4"></path>
+            <path d="M18 14v8"></path>
         </svg>
     }
 }

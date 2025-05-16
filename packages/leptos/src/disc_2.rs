@@ -29,9 +29,9 @@ pub fn Disc2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 12h.01" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 12h.01"></path>
         </svg>
     }
 }

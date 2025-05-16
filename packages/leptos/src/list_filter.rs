@@ -29,9 +29,9 @@ pub fn ListFilter(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 6h18" />
-            <path d="M7 12h10" />
-            <path d="M10 18h4" />
+            <path d="M3 6h18"></path>
+            <path d="M7 12h10"></path>
+            <path d="M10 18h4"></path>
         </svg>
     }
 }

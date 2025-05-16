@@ -30,6 +30,7 @@ pub fn Icons() -> Element {
             IconsR1 {}
             IconsS1 {}
             IconsS2 {}
+            IconsS3 {}
             IconsT1 {}
             IconsU1 {}
             IconsV1 {}
@@ -867,6 +868,24 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BanknoteArrowDown {}
+            },
+            "Banknote Arrow Down",
+        ),
+        (
+            rsx! {
+                BanknoteArrowUp {}
+            },
+            "Banknote Arrow Up",
+        ),
+        (
+            rsx! {
+                BanknoteX {}
+            },
+            "Banknote X",
+        ),
+        (
+            rsx! {
                 Barcode {}
             },
             "Barcode",
@@ -912,6 +931,12 @@ pub fn IconsB1() -> Element {
                 BatteryMedium {}
             },
             "Battery Medium",
+        ),
+        (
+            rsx! {
+                BatteryPlus {}
+            },
+            "Battery Plus",
         ),
         (
             rsx! {
@@ -1297,6 +1322,21 @@ pub fn IconsB1() -> Element {
             },
             "Bookmark",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsB2() -> Element {
+    let icons = [
         (
             rsx! {
                 BookmarkCheck {}
@@ -1321,21 +1361,6 @@ pub fn IconsB1() -> Element {
             },
             "Bookmark X",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsB2() -> Element {
-    let icons = [
         (
             rsx! {
                 BoomBox {}
@@ -1359,6 +1384,12 @@ pub fn IconsB2() -> Element {
                 BotOff {}
             },
             "Bot Off",
+        ),
+        (
+            rsx! {
+                BowArrow {}
+            },
+            "Bow Arrow",
         ),
         (
             rsx! {
@@ -1410,6 +1441,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BrickWallFire {}
+            },
+            "Brick Wall Fire",
+        ),
+        (
+            rsx! {
                 Briefcase {}
             },
             "Briefcase",
@@ -1443,6 +1480,18 @@ pub fn IconsB2() -> Element {
                 Brush {}
             },
             "Brush",
+        ),
+        (
+            rsx! {
+                BrushCleaning {}
+            },
+            "Brush Cleaning",
+        ),
+        (
+            rsx! {
+                Bubbles {}
+            },
+            "Bubbles",
         ),
         (
             rsx! {
@@ -2304,6 +2353,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleSmall {}
+            },
+            "Circle Small",
+        ),
+        (
+            rsx! {
                 CircleStop {}
             },
             "Circle Stop",
@@ -2508,6 +2563,18 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClockFading {}
+            },
+            "Clock Fading",
+        ),
+        (
+            rsx! {
+                ClockPlus {}
+            },
+            "Clock Plus",
+        ),
+        (
+            rsx! {
                 Cloud {}
             },
             "Cloud",
@@ -2682,6 +2749,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                Columns3Cog {}
+            },
+            "Columns 3 Cog",
+        ),
+        (
+            rsx! {
                 Columns4 {}
             },
             "Columns 4",
@@ -2692,6 +2765,21 @@ pub fn IconsC2() -> Element {
             },
             "Combine",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 Command {}
@@ -2716,21 +2804,6 @@ pub fn IconsC2() -> Element {
             },
             "Computer",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 ConciergeBell {}
@@ -2994,6 +3067,18 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DecimalsArrowLeft {}
+            },
+            "Decimals Arrow Left",
+        ),
+        (
+            rsx! {
+                DecimalsArrowRight {}
+            },
+            "Decimals Arrow Right",
+        ),
+        (
+            rsx! {
                 Delete {}
             },
             "Delete",
@@ -3153,6 +3238,12 @@ pub fn IconsD1() -> Element {
                 DoorClosed {}
             },
             "Door Closed",
+        ),
+        (
+            rsx! {
+                DoorClosedLocked {}
+            },
+            "Door Closed Locked",
         ),
         (
             rsx! {
@@ -3804,18 +3895,6 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                Filter {}
-            },
-            "Filter",
-        ),
-        (
-            rsx! {
-                FilterX {}
-            },
-            "Filter X",
-        ),
-        (
-            rsx! {
                 Fingerprint {}
             },
             "Fingerprint",
@@ -3988,6 +4067,18 @@ pub fn IconsF1() -> Element {
             },
             "Folder Clock",
         ),
+        (
+            rsx! {
+                FolderClosed {}
+            },
+            "Folder Closed",
+        ),
+        (
+            rsx! {
+                FolderCode {}
+            },
+            "Folder Code",
+        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -4003,18 +4094,6 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
-        (
-            rsx! {
-                FolderClosed {}
-            },
-            "Folder Closed",
-        ),
-        (
-            rsx! {
-                FolderCode {}
-            },
-            "Folder Code",
-        ),
         (
             rsx! {
                 FolderCog {}
@@ -4212,6 +4291,24 @@ pub fn IconsF2() -> Element {
                 Fullscreen {}
             },
             "Fullscreen",
+        ),
+        (
+            rsx! {
+                Funnel {}
+            },
+            "Funnel",
+        ),
+        (
+            rsx! {
+                FunnelPlus {}
+            },
+            "Funnel Plus",
+        ),
+        (
+            rsx! {
+                FunnelX {}
+            },
+            "Funnel X",
         ),
     ];
     rsx! {
@@ -4533,6 +4630,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                Hamburger {}
+            },
+            "Hamburger",
+        ),
+        (
+            rsx! {
                 Hammer {}
             },
             "Hammer",
@@ -4701,9 +4804,21 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HeartMinus {}
+            },
+            "Heart Minus",
+        ),
+        (
+            rsx! {
                 HeartOff {}
             },
             "Heart Off",
+        ),
+        (
+            rsx! {
+                HeartPlus {}
+            },
+            "Heart Plus",
         ),
         (
             rsx! {
@@ -4782,6 +4897,12 @@ pub fn IconsH1() -> Element {
                 HousePlus {}
             },
             "House Plus",
+        ),
+        (
+            rsx! {
+                HouseWifi {}
+            },
+            "House Wifi",
         ),
     ];
     rsx! {
@@ -5403,6 +5524,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LocationEdit {}
+            },
+            "Location Edit",
+        ),
+        (
+            rsx! {
                 Lock {}
             },
             "Lock",
@@ -5619,6 +5746,24 @@ pub fn IconsM1() -> Element {
                 MapPinned {}
             },
             "Map Pinned",
+        ),
+        (
+            rsx! {
+                MapPlus {}
+            },
+            "Map Plus",
+        ),
+        (
+            rsx! {
+                Mars {}
+            },
+            "Mars",
+        ),
+        (
+            rsx! {
+                MarsStroke {}
+            },
+            "Mars Stroke",
         ),
         (
             rsx! {
@@ -6052,6 +6197,21 @@ pub fn IconsM1() -> Element {
             },
             "Mouse Pointer Ban",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsM2() -> Element {
+    let icons = [
         (
             rsx! {
                 MousePointerClick {}
@@ -6070,21 +6230,6 @@ pub fn IconsM1() -> Element {
             },
             "Move 3 D",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsM2() -> Element {
-    let icons = [
         (
             rsx! {
                 MoveDiagonal {}
@@ -6237,6 +6382,12 @@ pub fn IconsN1() -> Element {
                 Nfc {}
             },
             "Nfc",
+        ),
+        (
+            rsx! {
+                NonBinary {}
+            },
+            "Non Binary",
         ),
         (
             rsx! {
@@ -6447,6 +6598,12 @@ pub fn IconsP1() -> Element {
                 Palette {}
             },
             "Palette",
+        ),
+        (
+            rsx! {
+                Panda {}
+            },
+            "Panda",
         ),
         (
             rsx! {
@@ -7134,6 +7291,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RectangleGoggles {}
+            },
+            "Rectangle Goggles",
+        ),
+        (
+            rsx! {
                 RectangleHorizontal {}
             },
             "Rectangle Horizontal",
@@ -7296,6 +7459,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RotateCcwKey {}
+            },
+            "Rotate Ccw Key",
+        ),
+        (
+            rsx! {
                 RotateCcwSquare {}
             },
             "Rotate Ccw Square",
@@ -7362,6 +7531,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RulerDimensionLine {}
+            },
+            "Ruler Dimension Line",
+        ),
+        (
+            rsx! {
                 RussianRuble {}
             },
             "Russian Ruble",
@@ -7410,6 +7585,12 @@ pub fn IconsS1() -> Element {
                 SatelliteDish {}
             },
             "Satellite Dish",
+        ),
+        (
+            rsx! {
+                SaudiRiyal {}
+            },
+            "Saudi Riyal",
         ),
         (
             rsx! {
@@ -7737,6 +7918,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShieldUser {}
+            },
+            "Shield User",
+        ),
+        (
+            rsx! {
                 ShieldX {}
             },
             "Shield X",
@@ -7788,6 +7975,18 @@ pub fn IconsS1() -> Element {
                 ShowerHead {}
             },
             "Shower Head",
+        ),
+        (
+            rsx! {
+                Shredder {}
+            },
+            "Shredder",
+        ),
+        (
+            rsx! {
+                Shrimp {}
+            },
+            "Shrimp",
         ),
         (
             rsx! {
@@ -7957,6 +8156,27 @@ pub fn IconsS1() -> Element {
             },
             "Snowflake",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS2() -> Element {
+    let icons = [
+        (
+            rsx! {
+                SoapDispenserDroplet {}
+            },
+            "Soap Dispenser Droplet",
+        ),
         (
             rsx! {
                 Sofa {}
@@ -7981,21 +8201,6 @@ pub fn IconsS1() -> Element {
             },
             "Spade",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS2() -> Element {
-    let icons = [
         (
             rsx! {
                 Sparkle {}
@@ -8037,6 +8242,12 @@ pub fn IconsS2() -> Element {
                 Spline {}
             },
             "Spline",
+        ),
+        (
+            rsx! {
+                SplinePointer {}
+            },
+            "Spline Pointer",
         ),
         (
             rsx! {
@@ -8352,6 +8563,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareRoundCorner {}
+            },
+            "Square Round Corner",
+        ),
+        (
+            rsx! {
                 SquareScissors {}
             },
             "Square Scissors",
@@ -8415,6 +8632,30 @@ pub fn IconsS2() -> Element {
                 SquareX {}
             },
             "Square X",
+        ),
+        (
+            rsx! {
+                SquaresExclude {}
+            },
+            "Squares Exclude",
+        ),
+        (
+            rsx! {
+                SquaresIntersect {}
+            },
+            "Squares Intersect",
+        ),
+        (
+            rsx! {
+                SquaresSubtract {}
+            },
+            "Squares Subtract",
+        ),
+        (
+            rsx! {
+                SquaresUnite {}
+            },
+            "Squares Unite",
         ),
         (
             rsx! {
@@ -8530,6 +8771,21 @@ pub fn IconsS2() -> Element {
             },
             "Sun Medium",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS3() -> Element {
+    let icons = [
         (
             rsx! {
                 SunMoon {}
@@ -9009,6 +9265,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Transgender {}
+            },
+            "Transgender",
+        ),
+        (
+            rsx! {
                 Trash {}
             },
             "Trash",
@@ -9081,6 +9343,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TriangleDashed {}
+            },
+            "Triangle Dashed",
+        ),
+        (
+            rsx! {
                 TriangleRight {}
             },
             "Triangle Right",
@@ -9096,6 +9364,12 @@ pub fn IconsT1() -> Element {
                 Truck {}
             },
             "Truck",
+        ),
+        (
+            rsx! {
+                TruckElectric {}
+            },
+            "Truck Electric",
         ),
         (
             rsx! {
@@ -9270,6 +9544,12 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UserLock {}
+            },
+            "User Lock",
+        ),
+        (
+            rsx! {
                 UserMinus {}
             },
             "User Minus",
@@ -9414,6 +9694,18 @@ pub fn IconsV1() -> Element {
                 VenetianMask {}
             },
             "Venetian Mask",
+        ),
+        (
+            rsx! {
+                Venus {}
+            },
+            "Venus",
+        ),
+        (
+            rsx! {
+                VenusAndMars {}
+            },
+            "Venus And Mars",
         ),
         (
             rsx! {
@@ -9651,6 +9943,12 @@ pub fn IconsW1() -> Element {
                 WifiOff {}
             },
             "Wifi Off",
+        ),
+        (
+            rsx! {
+                WifiPen {}
+            },
+            "Wifi Pen",
         ),
         (
             rsx! {

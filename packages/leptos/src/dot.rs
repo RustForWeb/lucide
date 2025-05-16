@@ -29,7 +29,7 @@ pub fn Dot(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12.1" cy="12.1" r="1" />
+            <circle cx="12.1" cy="12.1" r="1"></circle>
         </svg>
     }
 }

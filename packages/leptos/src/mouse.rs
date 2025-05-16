@@ -29,8 +29,8 @@ pub fn Mouse(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect x="5" y="2" width="14" height="20" rx="7" />
-            <path d="M12 6v4" />
+            <rect x="5" y="2" width="14" height="20" rx="7"></rect>
+            <path d="M12 6v4"></path>
         </svg>
     }
 }

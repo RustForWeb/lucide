@@ -29,9 +29,9 @@ pub fn FileLock(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-            <rect width="8" height="6" x="8" y="12" rx="1" />
-            <path d="M10 12v-2a2 2 0 1 1 4 0v2" />
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+            <rect width="8" height="6" x="8" y="12" rx="1"></rect>
+            <path d="M10 12v-2a2 2 0 1 1 4 0v2"></path>
         </svg>
     }
 }

@@ -29,11 +29,11 @@ pub fn ArrowDownNarrowWide(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m3 16 4 4 4-4" />
-            <path d="M7 20V4" />
-            <path d="M11 4h4" />
-            <path d="M11 8h7" />
-            <path d="M11 12h10" />
+            <path d="m3 16 4 4 4-4"></path>
+            <path d="M7 20V4"></path>
+            <path d="M11 4h4"></path>
+            <path d="M11 8h7"></path>
+            <path d="M11 12h10"></path>
         </svg>
     }
 }

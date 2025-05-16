@@ -29,10 +29,10 @@ pub fn ListMinus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 12H3" />
-            <path d="M16 6H3" />
-            <path d="M16 18H3" />
-            <path d="M21 12h-6" />
+            <path d="M11 12H3"></path>
+            <path d="M16 6H3"></path>
+            <path d="M16 18H3"></path>
+            <path d="M21 12h-6"></path>
         </svg>
     }
 }

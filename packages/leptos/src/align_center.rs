@@ -29,9 +29,9 @@ pub fn AlignCenter(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M17 12H7" />
-            <path d="M19 18H5" />
-            <path d="M21 6H3" />
+            <path d="M17 12H7"></path>
+            <path d="M19 18H5"></path>
+            <path d="M21 6H3"></path>
         </svg>
     }
 }

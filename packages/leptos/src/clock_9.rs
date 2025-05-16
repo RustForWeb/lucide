@@ -29,8 +29,8 @@ pub fn Clock9(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 7.5 12" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 7.5 12"></polyline>
         </svg>
     }
 }

@@ -29,10 +29,10 @@ pub fn SquareLibrary(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="M7 7v10" />
-            <path d="M11 7v10" />
-            <path d="m15 7 2 10" />
+            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <path d="M7 7v10"></path>
+            <path d="M11 7v10"></path>
+            <path d="m15 7 2 10"></path>
         </svg>
     }
 }

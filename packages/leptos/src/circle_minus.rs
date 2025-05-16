@@ -29,8 +29,8 @@ pub fn CircleMinus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M8 12h8" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M8 12h8"></path>
         </svg>
     }
 }

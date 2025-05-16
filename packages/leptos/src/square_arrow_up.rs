@@ -29,9 +29,9 @@ pub fn SquareArrowUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="m16 12-4-4-4 4" />
-            <path d="M12 16V8" />
+            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <path d="m16 12-4-4-4 4"></path>
+            <path d="M12 16V8"></path>
         </svg>
     }
 }

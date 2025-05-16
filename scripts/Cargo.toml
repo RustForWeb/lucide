@@ -18,6 +18,8 @@ prettyplease = "0.2.25"
 proc-macro2 = "1.0.92"
 quote = "1.0.37"
 roxmltree = "0.20.0"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
 tempfile = "3.14.0"
 syn = "2.0.89"
 usvg = "0.45.0"

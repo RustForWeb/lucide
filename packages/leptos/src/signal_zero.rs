@@ -29,7 +29,7 @@ pub fn SignalZero(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M2 20h.01" />
+            <path d="M2 20h.01"></path>
         </svg>
     }
 }

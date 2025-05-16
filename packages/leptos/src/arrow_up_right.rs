@@ -29,8 +29,8 @@ pub fn ArrowUpRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M7 7h10v10" />
-            <path d="M7 17 17 7" />
+            <path d="M7 7h10v10"></path>
+            <path d="M7 17 17 7"></path>
         </svg>
     }
 }

@@ -29,10 +29,10 @@ pub fn Settings2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M20 7h-9" />
-            <path d="M14 17H5" />
-            <circle cx="17" cy="17" r="3" />
-            <circle cx="7" cy="7" r="3" />
+            <path d="M20 7h-9"></path>
+            <path d="M14 17H5"></path>
+            <circle cx="17" cy="17" r="3"></circle>
+            <circle cx="7" cy="7" r="3"></circle>
         </svg>
     }
 }

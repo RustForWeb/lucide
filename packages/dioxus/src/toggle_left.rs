@@ -34,15 +34,14 @@ pub fn ToggleLeft(props: ToggleLeftProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            circle { "cx": "9", "cy": "12", "r": "3" }
             rect {
                 "width": "20",
-                "height": "12",
+                "height": "14",
                 "x": "2",
-                "y": "6",
-                "rx": "6",
-                "ry": "6",
+                "y": "5",
+                "rx": "7",
             }
-            circle { "cx": "8", "cy": "12", "r": "2" }
         }
     }
 }

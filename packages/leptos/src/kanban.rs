@@ -29,9 +29,9 @@ pub fn Kanban(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M6 5v11" />
-            <path d="M12 5v6" />
-            <path d="M18 5v14" />
+            <path d="M6 5v11"></path>
+            <path d="M12 5v6"></path>
+            <path d="M18 5v14"></path>
         </svg>
     }
 }

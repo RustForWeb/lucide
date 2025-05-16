@@ -29,11 +29,11 @@ pub fn ListTree(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M21 12h-8" />
-            <path d="M21 6H8" />
-            <path d="M21 18h-8" />
-            <path d="M3 6v4c0 1.1.9 2 2 2h3" />
-            <path d="M3 10v6c0 1.1.9 2 2 2h3" />
+            <path d="M21 12h-8"></path>
+            <path d="M21 6H8"></path>
+            <path d="M21 18h-8"></path>
+            <path d="M3 6v4c0 1.1.9 2 2 2h3"></path>
+            <path d="M3 10v6c0 1.1.9 2 2 2h3"></path>
         </svg>
     }
 }

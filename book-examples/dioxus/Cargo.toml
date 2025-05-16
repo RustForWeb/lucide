@@ -17,4 +17,4 @@ log.workspace = true
 lucide-dioxus = { path = "../../packages/dioxus", optional = true }
 
 [features]
-icons = ["dep:lucide-dioxus"]
+icons = ["dep:lucide-dioxus", "lucide-dioxus/all-icons"]

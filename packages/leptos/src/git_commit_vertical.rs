@@ -29,9 +29,9 @@ pub fn GitCommitVertical(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 3v6" />
-            <circle cx="12" cy="12" r="3" />
-            <path d="M12 15v6" />
+            <path d="M12 3v6"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 15v6"></path>
         </svg>
     }
 }

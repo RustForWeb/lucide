@@ -29,9 +29,9 @@ pub fn SquarePlus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="M8 12h8" />
-            <path d="M12 8v8" />
+            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <path d="M8 12h8"></path>
+            <path d="M12 8v8"></path>
         </svg>
     }
 }

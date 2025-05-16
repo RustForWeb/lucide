@@ -29,8 +29,8 @@ pub fn MoveRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M18 8L22 12L18 16" />
-            <path d="M2 12H22" />
+            <path d="M18 8L22 12L18 16"></path>
+            <path d="M2 12H22"></path>
         </svg>
     }
 }

@@ -29,8 +29,8 @@ pub fn IterationCw(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4" />
-            <polyline points="8 22 4 18 8 14" />
+            <path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4"></path>
+            <polyline points="8 22 4 18 8 14"></polyline>
         </svg>
     }
 }

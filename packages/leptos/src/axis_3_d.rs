@@ -29,8 +29,8 @@ pub fn Axis3D(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 4v16h16" />
-            <path d="m4 20 7-7" />
+            <path d="M4 4v16h16"></path>
+            <path d="m4 20 7-7"></path>
         </svg>
     }
 }

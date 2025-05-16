@@ -29,9 +29,9 @@ pub fn MoveHorizontal(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m18 8 4 4-4 4" />
-            <path d="M2 12h20" />
-            <path d="m6 8-4 4 4 4" />
+            <path d="m18 8 4 4-4 4"></path>
+            <path d="M2 12h20"></path>
+            <path d="m6 8-4 4 4 4"></path>
         </svg>
     }
 }

@@ -29,11 +29,11 @@ pub fn ChevronsLeftRightEllipsis(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m18 8 4 4-4 4" />
-            <path d="m6 8-4 4 4 4" />
-            <path d="M8 12h.01" />
-            <path d="M12 12h.01" />
-            <path d="M16 12h.01" />
+            <path d="m18 8 4 4-4 4"></path>
+            <path d="m6 8-4 4 4 4"></path>
+            <path d="M8 12h.01"></path>
+            <path d="M12 12h.01"></path>
+            <path d="M16 12h.01"></path>
         </svg>
     }
 }

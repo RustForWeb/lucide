@@ -29,8 +29,8 @@ pub fn CircleChevronRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="m10 8 4 4-4 4" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="m10 8 4 4-4 4"></path>
         </svg>
     }
 }

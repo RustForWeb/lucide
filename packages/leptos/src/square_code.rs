@@ -29,9 +29,9 @@ pub fn SquareCode(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 9.5 8 12l2 2.5" />
-            <path d="m14 9.5 2 2.5-2 2.5" />
-            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="M10 9.5 8 12l2 2.5"></path>
+            <path d="m14 9.5 2 2.5-2 2.5"></path>
+            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
         </svg>
     }
 }

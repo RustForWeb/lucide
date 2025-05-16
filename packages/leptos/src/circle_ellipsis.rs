@@ -29,10 +29,10 @@ pub fn CircleEllipsis(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M17 12h.01" />
-            <path d="M12 12h.01" />
-            <path d="M7 12h.01" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M17 12h.01"></path>
+            <path d="M12 12h.01"></path>
+            <path d="M7 12h.01"></path>
         </svg>
     }
 }

@@ -29,9 +29,9 @@ pub fn MoveVertical(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v20" />
-            <path d="m8 18 4 4 4-4" />
-            <path d="m8 6 4-4 4 4" />
+            <path d="M12 2v20"></path>
+            <path d="m8 18 4 4 4-4"></path>
+            <path d="m8 6 4-4 4 4"></path>
         </svg>
     }
 }

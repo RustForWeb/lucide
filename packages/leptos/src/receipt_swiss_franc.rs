@@ -29,10 +29,10 @@ pub fn ReceiptSwissFranc(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
-            <path d="M10 17V7h5" />
-            <path d="M10 11h4" />
-            <path d="M8 15h5" />
+            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+            <path d="M10 17V7h5"></path>
+            <path d="M10 11h4"></path>
+            <path d="M8 15h5"></path>
         </svg>
     }
 }

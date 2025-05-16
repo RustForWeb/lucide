@@ -29,9 +29,9 @@ pub fn MoveDiagonal2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M19 13v6h-6" />
-            <path d="M5 11V5h6" />
-            <path d="m5 5 14 14" />
+            <path d="M19 13v6h-6"></path>
+            <path d="M5 11V5h6"></path>
+            <path d="m5 5 14 14"></path>
         </svg>
     }
 }

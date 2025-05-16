@@ -29,7 +29,7 @@ pub fn WifiZero(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 20h.01" />
+            <path d="M12 20h.01"></path>
         </svg>
     }
 }

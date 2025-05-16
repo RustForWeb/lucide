@@ -29,10 +29,10 @@ pub fn Heading1(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4 12h8" />
-            <path d="M4 18V6" />
-            <path d="M12 18V6" />
-            <path d="m17 12 3-2v8" />
+            <path d="M4 12h8"></path>
+            <path d="M4 18V6"></path>
+            <path d="M12 18V6"></path>
+            <path d="m17 12 3-2v8"></path>
         </svg>
     }
 }

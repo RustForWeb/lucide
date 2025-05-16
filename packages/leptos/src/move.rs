@@ -29,12 +29,12 @@ pub fn Move(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v20" />
-            <path d="m15 19-3 3-3-3" />
-            <path d="m19 9 3 3-3 3" />
-            <path d="M2 12h20" />
-            <path d="m5 9-3 3 3 3" />
-            <path d="m9 5 3-3 3 3" />
+            <path d="M12 2v20"></path>
+            <path d="m15 19-3 3-3-3"></path>
+            <path d="m19 9 3 3-3 3"></path>
+            <path d="M2 12h20"></path>
+            <path d="m5 9-3 3 3 3"></path>
+            <path d="m9 5 3-3 3 3"></path>
         </svg>
     }
 }

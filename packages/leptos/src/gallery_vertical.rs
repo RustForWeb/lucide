@@ -29,9 +29,9 @@ pub fn GalleryVertical(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 2h18" />
-            <rect width="18" height="12" x="3" y="6" rx="2" />
-            <path d="M3 22h18" />
+            <path d="M3 2h18"></path>
+            <rect width="18" height="12" x="3" y="6" rx="2"></rect>
+            <path d="M3 22h18"></path>
         </svg>
     }
 }

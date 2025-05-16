@@ -29,8 +29,8 @@ pub fn ChevronsDownUp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m7 20 5-5 5 5" />
-            <path d="m7 4 5 5 5-5" />
+            <path d="m7 20 5-5 5 5"></path>
+            <path d="m7 4 5 5 5-5"></path>
         </svg>
     }
 }

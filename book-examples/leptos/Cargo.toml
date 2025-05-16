@@ -18,4 +18,4 @@ lucide-leptos = { path = "../../packages/leptos", optional = true }
 
 [features]
 default = []
-icons = ["dep:lucide-leptos"]
+icons = ["dep:lucide-leptos", "lucide-leptos/all-icons"]

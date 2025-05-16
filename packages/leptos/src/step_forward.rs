@@ -29,8 +29,8 @@ pub fn StepForward(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <line x1="6" x2="6" y1="4" y2="20" />
-            <polygon points="10,4 20,12 10,20" />
+            <line x1="6" x2="6" y1="4" y2="20"></line>
+            <polygon points="10,4 20,12 10,20"></polygon>
         </svg>
     }
 }

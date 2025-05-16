@@ -29,11 +29,11 @@ pub fn ListFilterPlus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 18h4" />
-            <path d="M11 6H3" />
-            <path d="M15 6h6" />
-            <path d="M18 9V3" />
-            <path d="M7 12h8" />
+            <path d="M10 18h4"></path>
+            <path d="M11 6H3"></path>
+            <path d="M15 6h6"></path>
+            <path d="M18 9V3"></path>
+            <path d="M7 12h8"></path>
         </svg>
     }
 }

@@ -29,8 +29,8 @@ pub fn Contrast(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 18a6 6 0 0 0 0-12v12z" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 18a6 6 0 0 0 0-12v12z"></path>
         </svg>
     }
 }

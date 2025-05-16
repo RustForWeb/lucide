@@ -29,9 +29,9 @@ pub fn CirclePlus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M8 12h8" />
-            <path d="M12 8v8" />
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M8 12h8"></path>
+            <path d="M12 8v8"></path>
         </svg>
     }
 }

@@ -29,9 +29,9 @@ pub fn PanelsLeftBottom(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="18" height="18" x="3" y="3" rx="2" />
-            <path d="M9 3v18" />
-            <path d="M9 15h12" />
+            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <path d="M9 3v18"></path>
+            <path d="M9 15h12"></path>
         </svg>
     }
 }
