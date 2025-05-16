@@ -7,12 +7,16 @@ Implementation of the Lucide icon library for [Yew](https://yew.rs/) application
 Install the icons from your command line.
 
 ```shell
-cargo add lucide-yew
+# Selective categories (see https://lucide.dev/icons/categories)
+cargo add lucide-yew --features accessibility,communication
+
+# All categories
+cargo add lucide-yew --features all-icons
 ```
 
--   [View on crates.io](https://crates.io/crates/lucide-yew)
--   [View on docs.rs](https://docs.rs/lucide-yew/latest/lucide_yew/)
--   [View source](https://github.com/RustForWeb/lucide/tree/main/packages/yew)
+- [View on crates.io](https://crates.io/crates/lucide-yew)
+- [View on docs.rs](https://docs.rs/lucide-yew/latest/lucide_yew/)
+- [View source](https://github.com/RustForWeb/lucide/tree/main/packages/yew)
 
 ## Usage
 
@@ -30,13 +34,15 @@ fn App() -> Html {
 
 ## Props
 
-| Name                    | Type     | Default          |
-| ----------------------- | -------- | ---------------- |
-| `size`                  | `usize`  | `24`             |
-| `color`                 | `String` | `"currentColor"` |
-| `fill`                  | `String` | `"none"`         |
-| `stroke_width`          | `usize`  | `2`              |
-| `absolute_stroke_width` | `bool`   | `false`          |
+| Name                    | Type                | Default          |
+| ----------------------- | ------------------- | ---------------- |
+| `size`                  | `usize`             | `24`             |
+| `color`                 | `AttrValue`         | `"currentColor"` |
+| `fill`                  | `AttrValue`         | `"none"`         |
+| `stroke_width`          | `usize`             | `2`              |
+| `absolute_stroke_width` | `bool`              | `false`          |
+| `class`                 | `Classes`           | -                |
+| `style`                 | `Option<AttrValue>` | -                |
 
 ## Icons
 

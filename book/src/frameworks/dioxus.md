@@ -5,12 +5,16 @@ Implementation of the Lucide icon library for [Dioxus](https://dioxuslabs.com/) 
 ## Installation
 
 ```shell
-cargo add lucide-dioxus
+# Selective categories (see https://lucide.dev/icons/categories)
+cargo add lucide-dioxus --features accessibility,communication
+
+# All categories
+cargo add lucide-dioxus --features all-icons
 ```
 
--   [View on crates.io](https://crates.io/crates/lucide-dioxus)
--   [View on docs.rs](https://docs.rs/lucide-dioxus/latest/lucide_dioxus/)
--   [View source](https://github.com/RustForWeb/lucide/tree/main/packages/dioxus)
+- [View on crates.io](https://crates.io/crates/lucide-dioxus)
+- [View on docs.rs](https://docs.rs/lucide-dioxus/latest/lucide_dioxus/)
+- [View source](https://github.com/RustForWeb/lucide/tree/main/packages/dioxus)
 
 ## Usage
 
@@ -31,13 +35,15 @@ fn App() -> Element {
 
 ## Props
 
-| Name                    | Type     | Default          |
-| ----------------------- | -------- | ---------------- |
-| `size`                  | `usize`  | `24`             |
-| `color`                 | `String` | `"currentColor"` |
-| `fill`                  | `String` | `"none"`         |
-| `stroke_width`          | `usize`  | `2`              |
-| `absolute_stroke_width` | `bool`   | `false`          |
+| Name                    | Type             | Default          |
+| ----------------------- | ---------------- | ---------------- |
+| `size`                  | `usize`          | `24`             |
+| `color`                 | `String`         | `"currentColor"` |
+| `fill`                  | `String`         | `"none"`         |
+| `stroke_width`          | `usize`          | `2`              |
+| `absolute_stroke_width` | `bool`           | `false`          |
+| `class`                 | `Option<String>` | -                |
+| `style`                 | `Option<String>` | -                |
 
 ## Icons
 

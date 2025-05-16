@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {},
     "devDependencies": {
-        "prettier": "^3.3.3",
+        "prettier": "^3.5.3",
         "tailwindcss": "^3.4.17"
     },
     "engines": {

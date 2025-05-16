@@ -7,12 +7,16 @@ Implementation of the Lucide icon library for [Leptos](https://leptos.dev/) appl
 Install the icons from your command line.
 
 ```shell
-cargo add lucide-leptos
+# Selective categories (see https://lucide.dev/icons/categories)
+cargo add lucide-leptos --features accessibility,communication
+
+# All categories
+cargo add lucide-leptos --features all-icons
 ```
 
--   [View on crates.io](https://crates.io/crates/lucide-leptos)
--   [View on docs.rs](https://docs.rs/lucide-leptos/latest/lucide_leptos/)
--   [View source](https://github.com/RustForWeb/lucide/tree/main/packages/leptos)
+- [View on crates.io](https://crates.io/crates/lucide-leptos)
+- [View on docs.rs](https://docs.rs/lucide-leptos/latest/lucide_leptos/)
+- [View source](https://github.com/RustForWeb/lucide/tree/main/packages/leptos)
 
 ## Usage
 
