@@ -1,4 +1,8 @@
-use std::{error::Error, path::PathBuf, process::Command};
+use std::{
+    error::Error,
+    path::{Path, PathBuf},
+    process::Command,
+};
 
 use convert_case::{Case, Casing};
 use proc_macro2::TokenStream;
@@ -144,7 +148,12 @@ impl Framework for Dioxus {
         })
     }
 
-    fn format(&self, package: String, path: PathBuf) -> Result<(), Box<dyn Error>> {
+    fn format(
+        &self,
+        package: String,
+        repository_path: &Path,
+        path: PathBuf,
+    ) -> Result<(), Box<dyn Error>> {
         Command::new("dx")
             .arg("fmt")
             .current_dir(path)
@@ -155,6 +164,7 @@ impl Framework for Dioxus {
             .arg("fmt")
             .arg("-p")
             .arg(&package)
+            .current_dir(repository_path)
             .status()?
             .exit_ok()?;
 

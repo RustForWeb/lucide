@@ -1,4 +1,8 @@
-use std::{error::Error, path::PathBuf, process::Command};
+use std::{
+    error::Error,
+    path::{Path, PathBuf},
+    process::Command,
+};
 
 use convert_case::{Case, Casing};
 use proc_macro2::TokenStream;
@@ -148,12 +152,18 @@ impl Framework for Yew {
         })
     }
 
-    fn format(&self, package: String, _path: PathBuf) -> Result<(), Box<dyn Error>> {
+    fn format(
+        &self,
+        package: String,
+        repository_path: &Path,
+        _path: PathBuf,
+    ) -> Result<(), Box<dyn Error>> {
         Command::new("cargo")
             .arg("fmt")
             .arg("-p")
             .arg(&package)
             .env("RUSTFMT", "yew-fmt")
+            .current_dir(repository_path)
             .status()?
             .exit_ok()?;
 
@@ -161,6 +171,7 @@ impl Framework for Yew {
             .arg("fmt")
             .arg("-p")
             .arg(&package)
+            .current_dir(repository_path)
             .status()?
             .exit_ok()?;
 
