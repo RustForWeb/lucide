@@ -132,7 +132,6 @@ pub async fn github_create_pull_request(
         .pulls(GITHUB_OWNER, GITHUB_REPO)
         .create(title, branch_name, "main")
         .body(body)
-        .draft(true)
         .send()
         .await?;
 
