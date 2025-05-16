@@ -19,7 +19,7 @@ jobs:
 
             - name: Set up Rust toolchain
               run: |
-                  rustup toolchain install stable --no-self-update --profile default
+                  rustup toolchain install nightly --no-self-update --profile default
                   rustup target add wasm32-unknown-unknown
 
             - name: Set up Rust cache
