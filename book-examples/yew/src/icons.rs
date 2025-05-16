@@ -450,6 +450,7 @@ pub fn IconsC() -> Html {
         (html! { <ChartSpline /> }, "Chart Spline"),
         (html! { <Check /> }, "Check"),
         (html! { <CheckCheck /> }, "Check Check"),
+        (html! { <CheckLine /> }, "Check Line"),
         (html! { <ChefHat /> }, "Chef Hat"),
         (html! { <Cherry /> }, "Cherry"),
         (html! { <ChevronDown /> }, "Chevron Down"),

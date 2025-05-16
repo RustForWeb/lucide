@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct BracketsProps {
+pub struct CheckLineProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct BracketsProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Brackets(props: &BracketsProps) -> Html {
+pub fn CheckLine(props: &CheckLineProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,9 @@ pub fn Brackets(props: &BracketsProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3" />
-            <path d="M8 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h3" />
+            <path d="M20 4L9 15" />
+            <path d="M21 19L3 19" />
+            <path d="M9 15L4 10" />
         </svg>
     }
 }

@@ -740,6 +740,8 @@ mod chart_spline;
 mod check;
 #[cfg(feature = "notifications")]
 mod check_check;
+#[cfg(feature = "notifications")]
+mod check_line;
 #[cfg(feature = "food-beverage")]
 mod chef_hat;
 #[cfg(feature = "food-beverage")]
@@ -4780,6 +4782,8 @@ pub use chart_spline::*;
 pub use check::*;
 #[cfg(feature = "notifications")]
 pub use check_check::*;
+#[cfg(feature = "notifications")]
+pub use check_line::*;
 #[cfg(feature = "food-beverage")]
 pub use chef_hat::*;
 #[cfg(feature = "food-beverage")]

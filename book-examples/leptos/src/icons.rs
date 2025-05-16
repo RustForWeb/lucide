@@ -433,6 +433,7 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <ChartSpline /> }.into_any(), "Chart Spline"),
                 (view! { <Check /> }.into_any(), "Check"),
                 (view! { <CheckCheck /> }.into_any(), "Check Check"),
+                (view! { <CheckLine /> }.into_any(), "Check Line"),
                 (view! { <ChefHat /> }.into_any(), "Chef Hat"),
                 (view! { <Cherry /> }.into_any(), "Cherry"),
                 (view! { <ChevronDown /> }.into_any(), "Chevron Down"),

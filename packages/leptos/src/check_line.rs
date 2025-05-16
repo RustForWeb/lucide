@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Brackets(
+pub fn CheckLine(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,9 @@ pub fn Brackets(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3" />
-            <path d="M8 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h3" />
+            <path d="M20 4L9 15" />
+            <path d="M21 19L3 19" />
+            <path d="M9 15L4 10" />
         </svg>
     }
 }

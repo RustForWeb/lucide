@@ -1984,6 +1984,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CheckLine {}
+            },
+            "Check Line",
+        ),
+        (
+            rsx! {
                 ChefHat {}
             },
             "Chef Hat",
@@ -2144,12 +2150,6 @@ pub fn IconsC1() -> Element {
             },
             "Circle Arrow Out Down Right",
         ),
-        (
-            rsx! {
-                CircleArrowOutUpLeft {}
-            },
-            "Circle Arrow Out Up Left",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2165,6 +2165,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                CircleArrowOutUpLeft {}
+            },
+            "Circle Arrow Out Up Left",
+        ),
         (
             rsx! {
                 CircleArrowOutUpRight {}
@@ -2759,12 +2765,6 @@ pub fn IconsC2() -> Element {
             },
             "Columns 4",
         ),
-        (
-            rsx! {
-                Combine {}
-            },
-            "Combine",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2780,6 +2780,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Combine {}
+            },
+            "Combine",
+        ),
         (
             rsx! {
                 Command {}

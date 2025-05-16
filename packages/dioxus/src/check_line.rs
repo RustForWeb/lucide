@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BracketsProps {
+pub struct CheckLineProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BracketsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Brackets(props: BracketsProps) -> Element {
+pub fn CheckLine(props: CheckLineProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,9 @@ pub fn Brackets(props: BracketsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3" }
-            path { "d": "M8 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h3" }
+            path { "d": "M20 4L9 15" }
+            path { "d": "M21 19L3 19" }
+            path { "d": "M9 15L4 10" }
         }
     }
 }
