@@ -34,8 +34,8 @@ pub fn Clock6(props: Clock6Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            path { "d": "M12 16.5V6" }
             circle { "cx": "12", "cy": "12", "r": "10" }
-            polyline { "points": "12 6 12 12 12 16.5" }
         }
     }
 }

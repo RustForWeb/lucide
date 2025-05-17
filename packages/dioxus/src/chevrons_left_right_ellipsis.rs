@@ -34,11 +34,11 @@ pub fn ChevronsLeftRightEllipsis(props: ChevronsLeftRightEllipsisProps) -> Eleme
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m18 8 4 4-4 4" }
-            path { "d": "m6 8-4 4 4 4" }
-            path { "d": "M8 12h.01" }
             path { "d": "M12 12h.01" }
             path { "d": "M16 12h.01" }
+            path { "d": "m17 7 5 5-5 5" }
+            path { "d": "m7 7-5 5 5 5" }
+            path { "d": "M8 12h.01" }
         }
     }
 }

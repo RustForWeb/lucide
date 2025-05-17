@@ -34,7 +34,7 @@ pub fn CornerUpRight(props: CornerUpRightProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            polyline { "points": "15 14 20 9 15 4" }
+            path { "d": "m15 14 5-5-5-5" }
             path { "d": "M4 20v-7a4 4 0 0 1 4-4h12" }
         }
     }

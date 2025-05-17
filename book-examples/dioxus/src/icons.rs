@@ -8455,6 +8455,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareDashedTopSolid {}
+            },
+            "Square Dashed Top Solid",
+        ),
+        (
+            rsx! {
                 SquareDivide {}
             },
             "Square Divide",
@@ -8777,12 +8783,6 @@ pub fn IconsS2() -> Element {
             },
             "Sun Dim",
         ),
-        (
-            rsx! {
-                SunMedium {}
-            },
-            "Sun Medium",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8798,6 +8798,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SunMedium {}
+            },
+            "Sun Medium",
+        ),
         (
             rsx! {
                 SunMoon {}

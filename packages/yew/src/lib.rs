@@ -3381,6 +3381,8 @@ mod square_dashed_kanban;
     feature = "tools"
 ))]
 mod square_dashed_mouse_pointer;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+mod square_dashed_top_solid;
 #[cfg(feature = "math")]
 mod square_divide;
 #[cfg(feature = "development")]
@@ -7423,6 +7425,8 @@ pub use square_dashed_kanban::*;
     feature = "tools"
 ))]
 pub use square_dashed_mouse_pointer::*;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+pub use square_dashed_top_solid::*;
 #[cfg(feature = "math")]
 pub use square_divide::*;
 #[cfg(feature = "development")]

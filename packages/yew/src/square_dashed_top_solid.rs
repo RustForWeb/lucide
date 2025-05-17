@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct ReplyProps {
+pub struct SquareDashedTopSolidProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct ReplyProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Reply(props: &ReplyProps) -> Html {
+pub fn SquareDashedTopSolid(props: &SquareDashedTopSolidProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,15 @@ pub fn Reply(props: &ReplyProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M20 18v-2a4 4 0 0 0-4-4H4" />
-            <path d="m9 17-5-5 5-5" />
+            <path d="M14 21h1" />
+            <path d="M21 14v1" />
+            <path d="M21 19a2 2 0 0 1-2 2" />
+            <path d="M21 9v1" />
+            <path d="M3 14v1" />
+            <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+            <path d="M3 9v1" />
+            <path d="M5 21a2 2 0 0 1-2-2" />
+            <path d="M9 21h1" />
         </svg>
     }
 }
