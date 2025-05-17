@@ -1743,6 +1743,7 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <SquareDashedBottomCode /> }.into_any(), "Square Dashed Bottom Code"),
                 (view! { <SquareDashedKanban /> }.into_any(), "Square Dashed Kanban"),
                 (view! { <SquareDashedMousePointer /> }.into_any(), "Square Dashed Mouse Pointer"),
+                (view! { <SquareDashedTopSolid /> }.into_any(), "Square Dashed Top Solid"),
                 (view! { <SquareDivide /> }.into_any(), "Square Divide"),
                 (view! { <SquareDot /> }.into_any(), "Square Dot"),
                 (view! { <SquareEqual /> }.into_any(), "Square Equal"),

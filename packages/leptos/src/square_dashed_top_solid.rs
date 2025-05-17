@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn CornerUpRight(
+pub fn SquareDashedTopSolid(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,15 @@ pub fn CornerUpRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m15 14 5-5-5-5" />
-            <path d="M4 20v-7a4 4 0 0 1 4-4h12" />
+            <path d="M14 21h1" />
+            <path d="M21 14v1" />
+            <path d="M21 19a2 2 0 0 1-2 2" />
+            <path d="M21 9v1" />
+            <path d="M3 14v1" />
+            <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+            <path d="M3 9v1" />
+            <path d="M5 21a2 2 0 0 1-2-2" />
+            <path d="M9 21h1" />
         </svg>
     }
 }

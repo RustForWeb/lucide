@@ -1786,6 +1786,10 @@ pub fn IconsS() -> Html {
             html! { <SquareDashedMousePointer /> },
             "Square Dashed Mouse Pointer",
         ),
+        (
+            html! { <SquareDashedTopSolid /> },
+            "Square Dashed Top Solid",
+        ),
         (html! { <SquareDivide /> }, "Square Divide"),
         (html! { <SquareDot /> }, "Square Dot"),
         (html! { <SquareEqual /> }, "Square Equal"),
