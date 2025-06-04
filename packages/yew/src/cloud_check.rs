@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SquareCheckBigProps {
+pub struct CloudCheckProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SquareCheckBigProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn SquareCheckBig(props: &SquareCheckBigProps) -> Html {
+pub fn CloudCheck(props: &CloudCheckProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,8 @@ pub fn SquareCheckBig(props: &SquareCheckBigProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" />
-            <path d="m9 11 3 3L22 4" />
+            <path d="m17 15-5.5 5.5L9 18" />
+            <path d="M5 17.743A7 7 0 1 1 15.71 10h1.79a4.5 4.5 0 0 1 1.5 8.742" />
         </svg>
     }
 }

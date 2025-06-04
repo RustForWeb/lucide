@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SquareCheckBigProps {
+pub struct IdCardLanyardProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SquareCheckBigProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn SquareCheckBig(props: &SquareCheckBigProps) -> Html {
+pub fn IdCardLanyard(props: &IdCardLanyardProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,11 @@ pub fn SquareCheckBig(props: &SquareCheckBigProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" />
-            <path d="m9 11 3 3L22 4" />
+            <path d="M13.5 8h-3" />
+            <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+            <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+            <path d="m9 2 3 6" />
+            <circle cx="12" cy="15" r="3" />
         </svg>
     }
 }

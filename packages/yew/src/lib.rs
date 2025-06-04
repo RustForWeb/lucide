@@ -879,6 +879,8 @@ mod circle_play;
     feature = "gaming"
 ))]
 mod circle_plus;
+#[cfg(feature = "finance")]
+mod circle_pound_sterling;
 #[cfg(feature = "connectivity")]
 mod circle_power;
 #[cfg(any(feature = "development", feature = "math"))]
@@ -963,6 +965,8 @@ mod clock_plus;
 mod cloud;
 #[cfg(feature = "development")]
 mod cloud_alert;
+#[cfg(feature = "development")]
+mod cloud_check;
 #[cfg(feature = "development")]
 mod cloud_cog;
 #[cfg(any(feature = "arrows", feature = "files"))]
@@ -1731,6 +1735,13 @@ mod grid_2_x_2_check;
 mod grid_2_x_2_plus;
 #[cfg(any(feature = "text", feature = "layout", feature = "math"))]
 mod grid_2_x_2_x;
+#[cfg(any(
+    feature = "text",
+    feature = "math",
+    feature = "layout",
+    feature = "design"
+))]
+mod grid_3_x_2;
 #[cfg(any(feature = "text", feature = "layout", feature = "design"))]
 mod grid_3_x_3;
 #[cfg(feature = "layout")]
@@ -1901,6 +1912,8 @@ mod ice_cream_bowl;
 mod ice_cream_cone;
 #[cfg(any(feature = "security", feature = "account"))]
 mod id_card;
+#[cfg(any(feature = "security", feature = "account"))]
+mod id_card_lanyard;
 #[cfg(any(
     feature = "photography",
     feature = "text",
@@ -4923,6 +4936,8 @@ pub use circle_play::*;
     feature = "gaming"
 ))]
 pub use circle_plus::*;
+#[cfg(feature = "finance")]
+pub use circle_pound_sterling::*;
 #[cfg(feature = "connectivity")]
 pub use circle_power::*;
 #[cfg(any(feature = "development", feature = "math"))]
@@ -5007,6 +5022,8 @@ pub use clock_plus::*;
 pub use cloud::*;
 #[cfg(feature = "development")]
 pub use cloud_alert::*;
+#[cfg(feature = "development")]
+pub use cloud_check::*;
 #[cfg(feature = "development")]
 pub use cloud_cog::*;
 #[cfg(any(feature = "arrows", feature = "files"))]
@@ -5775,6 +5792,13 @@ pub use grid_2_x_2_check::*;
 pub use grid_2_x_2_plus::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "math"))]
 pub use grid_2_x_2_x::*;
+#[cfg(any(
+    feature = "text",
+    feature = "math",
+    feature = "layout",
+    feature = "design"
+))]
+pub use grid_3_x_2::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "design"))]
 pub use grid_3_x_3::*;
 #[cfg(feature = "layout")]
@@ -5945,6 +5969,8 @@ pub use ice_cream_bowl::*;
 pub use ice_cream_cone::*;
 #[cfg(any(feature = "security", feature = "account"))]
 pub use id_card::*;
+#[cfg(any(feature = "security", feature = "account"))]
+pub use id_card_lanyard::*;
 #[cfg(any(
     feature = "photography",
     feature = "text",

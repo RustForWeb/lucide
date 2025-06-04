@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn BatteryPlus(
+pub fn IdCardLanyard(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,11 @@ pub fn BatteryPlus(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 9v6" />
-            <path d="M12.543 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.605" />
-            <path d="M22 14v-4" />
-            <path d="M7 12h6" />
-            <path d="M7.606 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.606" />
+            <path d="M13.5 8h-3" />
+            <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+            <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+            <path d="m9 2 3 6" />
+            <circle cx="12" cy="15" r="3" />
         </svg>
     }
 }

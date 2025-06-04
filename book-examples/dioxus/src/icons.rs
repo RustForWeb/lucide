@@ -2341,6 +2341,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CirclePoundSterling {}
+            },
+            "Circle Pound Sterling",
+        ),
+        (
+            rsx! {
                 CirclePower {}
             },
             "Circle Power",
@@ -2593,6 +2599,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CloudCheck {}
+            },
+            "Cloud Check",
+        ),
+        (
+            rsx! {
                 CloudCog {}
             },
             "Cloud Cog",
@@ -2753,18 +2765,6 @@ pub fn IconsC2() -> Element {
             },
             "Columns 3",
         ),
-        (
-            rsx! {
-                Columns3Cog {}
-            },
-            "Columns 3 Cog",
-        ),
-        (
-            rsx! {
-                Columns4 {}
-            },
-            "Columns 4",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2780,6 +2780,18 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Columns3Cog {}
+            },
+            "Columns 3 Cog",
+        ),
+        (
+            rsx! {
+                Columns4 {}
+            },
+            "Columns 4",
+        ),
         (
             rsx! {
                 Combine {}
@@ -4585,6 +4597,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                Grid3X2 {}
+            },
+            "Grid 3 X 2",
+        ),
+        (
+            rsx! {
                 Grid3X3 {}
             },
             "Grid 3 X 3",
@@ -4948,6 +4966,12 @@ pub fn IconsI1() -> Element {
                 IdCard {}
             },
             "Id Card",
+        ),
+        (
+            rsx! {
+                IdCardLanyard {}
+            },
+            "Id Card Lanyard",
         ),
         (
             rsx! {

@@ -34,19 +34,13 @@ pub fn Battery(props: BatteryProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            path { "d": "M 22 14 L 22 10" }
             rect {
-                "width": "16",
-                "height": "10",
                 "x": "2",
-                "y": "7",
+                "y": "6",
+                "width": "16",
+                "height": "12",
                 "rx": "2",
-                "ry": "2",
-            }
-            line {
-                "x1": "22",
-                "x2": "22",
-                "y1": "11",
-                "y2": "13",
             }
         }
     }
