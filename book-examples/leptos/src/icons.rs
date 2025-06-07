@@ -393,6 +393,7 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <CarFront /> }.into_any(), "Car Front"),
                 (view! { <CarTaxiFront /> }.into_any(), "Car Taxi Front"),
                 (view! { <Caravan /> }.into_any(), "Caravan"),
+                (view! { <CardSim /> }.into_any(), "Card Sim"),
                 (view! { <Carrot /> }.into_any(), "Carrot"),
                 (view! { <CaseLower /> }.into_any(), "Case Lower"),
                 (view! { <CaseSensitive /> }.into_any(), "Case Sensitive"),

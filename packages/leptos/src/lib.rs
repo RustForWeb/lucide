@@ -653,6 +653,13 @@ mod car_front;
 mod car_taxi_front;
 #[cfg(any(feature = "transportation", feature = "travel", feature = "nature"))]
 mod caravan;
+#[cfg(any(
+    feature = "connectivity",
+    feature = "communication",
+    feature = "multimedia",
+    feature = "devices"
+))]
+mod card_sim;
 #[cfg(feature = "food-beverage")]
 mod carrot;
 #[cfg(feature = "text")]
@@ -4710,6 +4717,13 @@ pub use car_front::*;
 pub use car_taxi_front::*;
 #[cfg(any(feature = "transportation", feature = "travel", feature = "nature"))]
 pub use caravan::*;
+#[cfg(any(
+    feature = "connectivity",
+    feature = "communication",
+    feature = "multimedia",
+    feature = "devices"
+))]
+pub use card_sim::*;
 #[cfg(feature = "food-beverage")]
 pub use carrot::*;
 #[cfg(feature = "text")]
