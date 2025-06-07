@@ -52,7 +52,7 @@ pub fn git_version_tags(repository: &Repository) -> Result<Vec<Version>, Box<dyn
 
 pub fn git_has_remote_branch(repository: &Repository, branch_name: &str) -> bool {
     repository
-        .find_branch(branch_name, BranchType::Remote)
+        .find_branch(&format!("origin/{branch_name}"), BranchType::Remote)
         .is_ok()
 }
 
