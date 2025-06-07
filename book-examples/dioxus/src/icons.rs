@@ -1780,6 +1780,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CardSim {}
+            },
+            "Card Sim",
+        ),
+        (
+            rsx! {
                 Carrot {}
             },
             "Carrot",
@@ -2144,12 +2150,6 @@ pub fn IconsC1() -> Element {
             },
             "Circle Arrow Out Down Left",
         ),
-        (
-            rsx! {
-                CircleArrowOutDownRight {}
-            },
-            "Circle Arrow Out Down Right",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2165,6 +2165,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                CircleArrowOutDownRight {}
+            },
+            "Circle Arrow Out Down Right",
+        ),
         (
             rsx! {
                 CircleArrowOutUpLeft {}
@@ -2759,12 +2765,6 @@ pub fn IconsC2() -> Element {
             },
             "Columns 2",
         ),
-        (
-            rsx! {
-                Columns3 {}
-            },
-            "Columns 3",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2780,6 +2780,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Columns3 {}
+            },
+            "Columns 3",
+        ),
         (
             rsx! {
                 Columns3Cog {}

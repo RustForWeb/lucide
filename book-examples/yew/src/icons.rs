@@ -404,6 +404,7 @@ pub fn IconsC() -> Html {
         (html! { <CarFront /> }, "Car Front"),
         (html! { <CarTaxiFront /> }, "Car Taxi Front"),
         (html! { <Caravan /> }, "Caravan"),
+        (html! { <CardSim /> }, "Card Sim"),
         (html! { <Carrot /> }, "Carrot"),
         (html! { <CaseLower /> }, "Case Lower"),
         (html! { <CaseSensitive /> }, "Case Sensitive"),
