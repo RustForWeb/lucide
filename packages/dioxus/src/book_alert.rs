@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct TrophyProps {
+pub struct BookAlertProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct TrophyProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Trophy(props: TrophyProps) -> Element {
+pub fn BookAlert(props: BookAlertProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,12 +34,9 @@ pub fn Trophy(props: TrophyProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" }
-            path { "d": "M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" }
-            path { "d": "M18 9h1.5a1 1 0 0 0 0-5H18" }
-            path { "d": "M4 22h16" }
-            path { "d": "M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" }
-            path { "d": "M6 9H4.5a1 1 0 0 1 0-5H6" }
+            path { "d": "M12 13h.01" }
+            path { "d": "M12 6v3" }
+            path { "d": "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" }
         }
     }
 }

@@ -1186,6 +1186,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BookAlert {}
+            },
+            "Book Alert",
+        ),
+        (
+            rsx! {
                 BookAudio {}
             },
             "Book Audio",
@@ -1316,12 +1322,6 @@ pub fn IconsB1() -> Element {
             },
             "Book X",
         ),
-        (
-            rsx! {
-                Bookmark {}
-            },
-            "Bookmark",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -1337,6 +1337,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Bookmark {}
+            },
+            "Bookmark",
+        ),
         (
             rsx! {
                 BookmarkCheck {}

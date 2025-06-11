@@ -291,6 +291,7 @@ pub fn IconsB() -> Html {
         (html! { <Bone /> }, "Bone"),
         (html! { <Book /> }, "Book"),
         (html! { <BookA /> }, "Book A"),
+        (html! { <BookAlert /> }, "Book Alert"),
         (html! { <BookAudio /> }, "Book Audio"),
         (html! { <BookCheck /> }, "Book Check"),
         (html! { <BookCopy /> }, "Book Copy"),

@@ -439,6 +439,8 @@ mod bone;
 mod book;
 #[cfg(any(feature = "text", feature = "gaming"))]
 mod book_a;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+mod book_alert;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod book_audio;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
@@ -4503,6 +4505,8 @@ pub use bone::*;
 pub use book::*;
 #[cfg(any(feature = "text", feature = "gaming"))]
 pub use book_a::*;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+pub use book_alert::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use book_audio::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]

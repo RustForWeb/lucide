@@ -282,6 +282,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <Bone /> }.into_any(), "Bone"),
                 (view! { <Book /> }.into_any(), "Book"),
                 (view! { <BookA /> }.into_any(), "Book A"),
+                (view! { <BookAlert /> }.into_any(), "Book Alert"),
                 (view! { <BookAudio /> }.into_any(), "Book Audio"),
                 (view! { <BookCheck /> }.into_any(), "Book Check"),
                 (view! { <BookCopy /> }.into_any(), "Book Copy"),
