@@ -2846,6 +2846,8 @@ mod receipt_russian_ruble;
 mod receipt_swiss_franc;
 #[cfg(any(feature = "finance", feature = "travel"))]
 mod receipt_text;
+#[cfg(any(feature = "development", feature = "text"))]
+mod rectangle_circle;
 #[cfg(any(feature = "text", feature = "development"))]
 mod rectangle_ellipsis;
 #[cfg(any(
@@ -6912,6 +6914,8 @@ pub use receipt_russian_ruble::*;
 pub use receipt_swiss_franc::*;
 #[cfg(any(feature = "finance", feature = "travel"))]
 pub use receipt_text::*;
+#[cfg(any(feature = "development", feature = "text"))]
+pub use rectangle_circle::*;
 #[cfg(any(feature = "text", feature = "development"))]
 pub use rectangle_ellipsis::*;
 #[cfg(any(

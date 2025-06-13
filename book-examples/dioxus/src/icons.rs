@@ -7333,6 +7333,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RectangleCircle {}
+            },
+            "Rectangle Circle",
+        ),
+        (
+            rsx! {
                 RectangleEllipsis {}
             },
             "Rectangle Ellipsis",

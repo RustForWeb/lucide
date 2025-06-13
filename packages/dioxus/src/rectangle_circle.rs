@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct HousePlusProps {
+pub struct RectangleCircleProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct HousePlusProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn HousePlus(props: HousePlusProps) -> Element {
+pub fn RectangleCircle(props: RectangleCircleProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,10 +34,8 @@ pub fn HousePlus(props: HousePlusProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12.662 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v2.475" }
-            path { "d": "M14.959 12.717A1 1 0 0 0 14 12h-4a1 1 0 0 0-1 1v8" }
-            path { "d": "M15 18h6" }
-            path { "d": "M18 15v6" }
+            path { "d": "M14 4v16H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" }
+            circle { "cx": "14", "cy": "12", "r": "8" }
         }
     }
 }

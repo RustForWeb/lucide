@@ -1564,6 +1564,7 @@ pub fn IconsR() -> Html {
         (html! { <ReceiptRussianRuble /> }, "Receipt Russian Ruble"),
         (html! { <ReceiptSwissFranc /> }, "Receipt Swiss Franc"),
         (html! { <ReceiptText /> }, "Receipt Text"),
+        (html! { <RectangleCircle /> }, "Rectangle Circle"),
         (html! { <RectangleEllipsis /> }, "Rectangle Ellipsis"),
         (html! { <RectangleGoggles /> }, "Rectangle Goggles"),
         (html! { <RectangleHorizontal /> }, "Rectangle Horizontal"),

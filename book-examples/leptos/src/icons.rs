@@ -1541,6 +1541,7 @@ pub fn IconsR() -> impl IntoView {
                 (view! { <ReceiptRussianRuble /> }.into_any(), "Receipt Russian Ruble"),
                 (view! { <ReceiptSwissFranc /> }.into_any(), "Receipt Swiss Franc"),
                 (view! { <ReceiptText /> }.into_any(), "Receipt Text"),
+                (view! { <RectangleCircle /> }.into_any(), "Rectangle Circle"),
                 (view! { <RectangleEllipsis /> }.into_any(), "Rectangle Ellipsis"),
                 (view! { <RectangleGoggles /> }.into_any(), "Rectangle Goggles"),
                 (view! { <RectangleHorizontal /> }.into_any(), "Rectangle Horizontal"),
