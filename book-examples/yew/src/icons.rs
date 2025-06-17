@@ -2099,6 +2099,7 @@ pub fn IconsW() -> Html {
         (html! { <WheatOff /> }, "Wheat Off"),
         (html! { <WholeWord /> }, "Whole Word"),
         (html! { <Wifi /> }, "Wifi"),
+        (html! { <WifiCog /> }, "Wifi Cog"),
         (html! { <WifiHigh /> }, "Wifi High"),
         (html! { <WifiLow /> }, "Wifi Low"),
         (html! { <WifiOff /> }, "Wifi Off"),

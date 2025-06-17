@@ -9988,6 +9988,12 @@ pub fn IconsW1() -> Element {
         ),
         (
             rsx! {
+                WifiCog {}
+            },
+            "Wifi Cog",
+        ),
+        (
+            rsx! {
                 WifiHigh {}
             },
             "Wifi High",

@@ -2054,6 +2054,7 @@ pub fn IconsW() -> impl IntoView {
                 (view! { <WheatOff /> }.into_any(), "Wheat Off"),
                 (view! { <WholeWord /> }.into_any(), "Whole Word"),
                 (view! { <Wifi /> }.into_any(), "Wifi"),
+                (view! { <WifiCog /> }.into_any(), "Wifi Cog"),
                 (view! { <WifiHigh /> }.into_any(), "Wifi High"),
                 (view! { <WifiLow /> }.into_any(), "Wifi Low"),
                 (view! { <WifiOff /> }.into_any(), "Wifi Off"),

@@ -4011,6 +4011,8 @@ mod wheat_off;
 mod whole_word;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "files"))]
+mod wifi_cog;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi_high;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -8079,6 +8081,8 @@ pub use wheat_off::*;
 pub use whole_word::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi::*;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "files"))]
+pub use wifi_cog::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi_high::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
