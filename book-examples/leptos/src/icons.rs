@@ -233,6 +233,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <BanknoteArrowUp /> }.into_any(), "Banknote Arrow Up"),
                 (view! { <BanknoteX /> }.into_any(), "Banknote X"),
                 (view! { <Barcode /> }.into_any(), "Barcode"),
+                (view! { <Barrel /> }.into_any(), "Barrel"),
                 (view! { <Baseline /> }.into_any(), "Baseline"),
                 (view! { <Bath /> }.into_any(), "Bath"),
                 (view! { <Battery /> }.into_any(), "Battery"),

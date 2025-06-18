@@ -892,6 +892,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                Barrel {}
+            },
+            "Barrel",
+        ),
+        (
+            rsx! {
                 Baseline {}
             },
             "Baseline",
@@ -1316,12 +1322,6 @@ pub fn IconsB1() -> Element {
             },
             "Book User",
         ),
-        (
-            rsx! {
-                BookX {}
-            },
-            "Book X",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -1337,6 +1337,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookX {}
+            },
+            "Book X",
+        ),
         (
             rsx! {
                 Bookmark {}

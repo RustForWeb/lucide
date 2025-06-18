@@ -331,6 +331,8 @@ mod banknote_arrow_up;
 mod banknote_x;
 #[cfg(feature = "shopping")]
 mod barcode;
+#[cfg(any(feature = "food-beverage", feature = "navigation"))]
+mod barrel;
 #[cfg(feature = "text")]
 mod baseline;
 #[cfg(feature = "travel")]
@@ -4401,6 +4403,8 @@ pub use banknote_arrow_up::*;
 pub use banknote_x::*;
 #[cfg(feature = "shopping")]
 pub use barcode::*;
+#[cfg(any(feature = "food-beverage", feature = "navigation"))]
+pub use barrel::*;
 #[cfg(feature = "text")]
 pub use baseline::*;
 #[cfg(feature = "travel")]

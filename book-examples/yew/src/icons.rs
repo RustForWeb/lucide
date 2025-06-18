@@ -239,6 +239,7 @@ pub fn IconsB() -> Html {
         (html! { <BanknoteArrowUp /> }, "Banknote Arrow Up"),
         (html! { <BanknoteX /> }, "Banknote X"),
         (html! { <Barcode /> }, "Barcode"),
+        (html! { <Barrel /> }, "Barrel"),
         (html! { <Baseline /> }, "Baseline"),
         (html! { <Bath /> }, "Bath"),
         (html! { <Battery /> }, "Battery"),
