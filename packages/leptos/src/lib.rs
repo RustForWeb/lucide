@@ -284,8 +284,6 @@ mod badge_check;
 mod badge_dollar_sign;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_euro;
-#[cfg(any(feature = "accessibility", feature = "social"))]
-mod badge_help;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_indian_rupee;
 #[cfg(any(feature = "account", feature = "accessibility", feature = "social"))]
@@ -305,6 +303,8 @@ mod badge_percent;
 mod badge_plus;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_pound_sterling;
+#[cfg(any(feature = "accessibility", feature = "social", feature = "shapes"))]
+mod badge_question_mark;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_russian_ruble;
 #[cfg(any(feature = "shopping", feature = "finance"))]
@@ -860,8 +860,6 @@ mod circle_fading_arrow_up;
 mod circle_fading_plus;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 mod circle_gauge;
-#[cfg(any(feature = "accessibility", feature = "text", feature = "notifications"))]
-mod circle_help;
 #[cfg(feature = "math")]
 mod circle_minus;
 #[cfg(feature = "shapes")]
@@ -892,6 +890,8 @@ mod circle_plus;
 mod circle_pound_sterling;
 #[cfg(feature = "connectivity")]
 mod circle_power;
+#[cfg(any(feature = "accessibility", feature = "text", feature = "notifications"))]
+mod circle_question_mark;
 #[cfg(any(feature = "development", feature = "math"))]
 mod circle_slash;
 #[cfg(any(feature = "shapes", feature = "math", feature = "development"))]
@@ -1256,6 +1256,8 @@ mod drama;
 mod dribbble;
 #[cfg(any(feature = "tools", feature = "home", feature = "devices"))]
 mod drill;
+#[cfg(any(feature = "transportation", feature = "devices"))]
+mod drone;
 #[cfg(any(feature = "weather", feature = "gaming"))]
 mod droplet;
 #[cfg(any(feature = "weather", feature = "gaming"))]
@@ -1429,7 +1431,7 @@ mod file_plus;
 #[cfg(feature = "files")]
 mod file_plus_2;
 #[cfg(feature = "files")]
-mod file_question;
+mod file_question_mark;
 #[cfg(feature = "files")]
 mod file_scan;
 #[cfg(feature = "files")]
@@ -2193,7 +2195,7 @@ mod mail_open;
 #[cfg(feature = "mail")]
 mod mail_plus;
 #[cfg(feature = "mail")]
-mod mail_question;
+mod mail_question_mark;
 #[cfg(feature = "mail")]
 mod mail_search;
 #[cfg(feature = "mail")]
@@ -2271,7 +2273,7 @@ mod message_circle_off;
 #[cfg(feature = "social")]
 mod message_circle_plus;
 #[cfg(feature = "social")]
-mod message_circle_question;
+mod message_circle_question_mark;
 #[cfg(feature = "social")]
 mod message_circle_reply;
 #[cfg(any(feature = "social", feature = "notifications"))]
@@ -3173,7 +3175,7 @@ mod shield_plus;
     feature = "development",
     feature = "gaming"
 ))]
-mod shield_question;
+mod shield_question_mark;
 #[cfg(any(feature = "account", feature = "security", feature = "development"))]
 mod shield_user;
 #[cfg(any(
@@ -4356,8 +4358,6 @@ pub use badge_check::*;
 pub use badge_dollar_sign::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_euro::*;
-#[cfg(any(feature = "accessibility", feature = "social"))]
-pub use badge_help::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_indian_rupee::*;
 #[cfg(any(feature = "account", feature = "accessibility", feature = "social"))]
@@ -4377,6 +4377,8 @@ pub use badge_percent::*;
 pub use badge_plus::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_pound_sterling::*;
+#[cfg(any(feature = "accessibility", feature = "social", feature = "shapes"))]
+pub use badge_question_mark::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_russian_ruble::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
@@ -4932,8 +4934,6 @@ pub use circle_fading_arrow_up::*;
 pub use circle_fading_plus::*;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 pub use circle_gauge::*;
-#[cfg(any(feature = "accessibility", feature = "text", feature = "notifications"))]
-pub use circle_help::*;
 #[cfg(feature = "math")]
 pub use circle_minus::*;
 #[cfg(feature = "shapes")]
@@ -4964,6 +4964,8 @@ pub use circle_plus::*;
 pub use circle_pound_sterling::*;
 #[cfg(feature = "connectivity")]
 pub use circle_power::*;
+#[cfg(any(feature = "accessibility", feature = "text", feature = "notifications"))]
+pub use circle_question_mark::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use circle_slash::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "development"))]
@@ -5328,6 +5330,8 @@ pub use drama::*;
 pub use dribbble::*;
 #[cfg(any(feature = "tools", feature = "home", feature = "devices"))]
 pub use drill::*;
+#[cfg(any(feature = "transportation", feature = "devices"))]
+pub use drone::*;
 #[cfg(any(feature = "weather", feature = "gaming"))]
 pub use droplet::*;
 #[cfg(any(feature = "weather", feature = "gaming"))]
@@ -5501,7 +5505,7 @@ pub use file_plus::*;
 #[cfg(feature = "files")]
 pub use file_plus_2::*;
 #[cfg(feature = "files")]
-pub use file_question::*;
+pub use file_question_mark::*;
 #[cfg(feature = "files")]
 pub use file_scan::*;
 #[cfg(feature = "files")]
@@ -6265,7 +6269,7 @@ pub use mail_open::*;
 #[cfg(feature = "mail")]
 pub use mail_plus::*;
 #[cfg(feature = "mail")]
-pub use mail_question::*;
+pub use mail_question_mark::*;
 #[cfg(feature = "mail")]
 pub use mail_search::*;
 #[cfg(feature = "mail")]
@@ -6343,7 +6347,7 @@ pub use message_circle_off::*;
 #[cfg(feature = "social")]
 pub use message_circle_plus::*;
 #[cfg(feature = "social")]
-pub use message_circle_question::*;
+pub use message_circle_question_mark::*;
 #[cfg(feature = "social")]
 pub use message_circle_reply::*;
 #[cfg(any(feature = "social", feature = "notifications"))]
@@ -7245,7 +7249,7 @@ pub use shield_plus::*;
     feature = "development",
     feature = "gaming"
 ))]
-pub use shield_question::*;
+pub use shield_question_mark::*;
 #[cfg(any(feature = "account", feature = "security", feature = "development"))]
 pub use shield_user::*;
 #[cfg(any(

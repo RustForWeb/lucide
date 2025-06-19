@@ -772,12 +772,6 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
-                BadgeHelp {}
-            },
-            "Badge Help",
-        ),
-        (
-            rsx! {
                 BadgeIndianRupee {}
             },
             "Badge Indian Rupee",
@@ -817,6 +811,12 @@ pub fn IconsB1() -> Element {
                 BadgePoundSterling {}
             },
             "Badge Pound Sterling",
+        ),
+        (
+            rsx! {
+                BadgeQuestionMark {}
+            },
+            "Badge Question Mark",
         ),
         (
             rsx! {
@@ -2305,12 +2305,6 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
-                CircleHelp {}
-            },
-            "Circle Help",
-        ),
-        (
-            rsx! {
                 CircleMinus {}
             },
             "Circle Minus",
@@ -2368,6 +2362,12 @@ pub fn IconsC2() -> Element {
                 CirclePower {}
             },
             "Circle Power",
+        ),
+        (
+            rsx! {
+                CircleQuestionMark {}
+            },
+            "Circle Question Mark",
         ),
         (
             rsx! {
@@ -3325,6 +3325,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                Drone {}
+            },
+            "Drone",
+        ),
+        (
+            rsx! {
                 Droplet {}
             },
             "Droplet",
@@ -3793,9 +3799,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileQuestion {}
+                FileQuestionMark {}
             },
-            "File Question",
+            "File Question Mark",
         ),
         (
             rsx! {
@@ -5689,9 +5695,9 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
-                MailQuestion {}
+                MailQuestionMark {}
             },
-            "Mail Question",
+            "Mail Question Mark",
         ),
         (
             rsx! {
@@ -5923,9 +5929,9 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
-                MessageCircleQuestion {}
+                MessageCircleQuestionMark {}
             },
-            "Message Circle Question",
+            "Message Circle Question Mark",
         ),
         (
             rsx! {
@@ -7972,9 +7978,9 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
-                ShieldQuestion {}
+                ShieldQuestionMark {}
             },
-            "Shield Question",
+            "Shield Question Mark",
         ),
         (
             rsx! {

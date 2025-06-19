@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct EggOffProps {
+pub struct FileQuestionMarkProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct EggOffProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn EggOff(props: EggOffProps) -> Element {
+pub fn FileQuestionMark(props: FileQuestionMarkProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,9 @@ pub fn EggOff(props: EggOffProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m2 2 20 20" }
-            path { "d": "M20 14.347V14c0-6-4-12-8-12-1.078 0-2.157.436-3.157 1.19" }
-            path { "d": "M6.206 6.21C4.871 8.4 4 11.2 4 14a8 8 0 0 0 14.568 4.568" }
+            path { "d": "M12 17h.01" }
+            path { "d": "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" }
+            path { "d": "M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" }
         }
     }
 }

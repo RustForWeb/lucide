@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct EggProps {
+pub struct ShieldQuestionMarkProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct EggProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Egg(props: &EggProps) -> Html {
+pub fn ShieldQuestionMark(props: &ShieldQuestionMarkProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,7 +41,11 @@ pub fn Egg(props: &EggProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12" />
+            <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+            <path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
+            <path d="M12 17h.01" />
         </svg>
     }
 }

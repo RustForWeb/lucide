@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Egg(
+pub fn FileQuestionMark(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,7 +29,9 @@ pub fn Egg(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12" />
+            <path d="M12 17h.01" />
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+            <path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
         </svg>
     }
 }

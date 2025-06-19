@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct EggOffProps {
+pub struct DroneProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct EggOffProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn EggOff(props: EggOffProps) -> Element {
+pub fn Drone(props: DroneProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,21 @@ pub fn EggOff(props: EggOffProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m2 2 20 20" }
-            path { "d": "M20 14.347V14c0-6-4-12-8-12-1.078 0-2.157.436-3.157 1.19" }
-            path { "d": "M6.206 6.21C4.871 8.4 4 11.2 4 14a8 8 0 0 0 14.568 4.568" }
+            path { "d": "M10 10 7 7" }
+            path { "d": "m10 14-3 3" }
+            path { "d": "m14 10 3-3" }
+            path { "d": "m14 14 3 3" }
+            path { "d": "M14.205 4.139a4 4 0 1 1 5.439 5.863" }
+            path { "d": "M19.637 14a4 4 0 1 1-5.432 5.868" }
+            path { "d": "M4.367 10a4 4 0 1 1 5.438-5.862" }
+            path { "d": "M9.795 19.862a4 4 0 1 1-5.429-5.873" }
+            rect {
+                "x": "10",
+                "y": "8",
+                "width": "4",
+                "height": "8",
+                "rx": "1",
+            }
         }
     }
 }
