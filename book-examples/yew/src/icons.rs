@@ -1740,6 +1740,7 @@ pub fn IconsS() -> Html {
         (html! { <Spline /> }, "Spline"),
         (html! { <SplinePointer /> }, "Spline Pointer"),
         (html! { <Split /> }, "Split"),
+        (html! { <Spool /> }, "Spool"),
         (html! { <SprayCan /> }, "Spray Can"),
         (html! { <Sprout /> }, "Sprout"),
         (html! { <Square /> }, "Square"),

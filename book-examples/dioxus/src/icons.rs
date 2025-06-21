@@ -8323,6 +8323,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                Spool {}
+            },
+            "Spool",
+        ),
+        (
+            rsx! {
                 SprayCan {}
             },
             "Spray Can",
@@ -8831,12 +8837,6 @@ pub fn IconsS2() -> Element {
             },
             "Sun",
         ),
-        (
-            rsx! {
-                SunDim {}
-            },
-            "Sun Dim",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8852,6 +8852,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SunDim {}
+            },
+            "Sun Dim",
+        ),
         (
             rsx! {
                 SunMedium {}

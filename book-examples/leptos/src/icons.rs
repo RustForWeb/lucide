@@ -1721,6 +1721,7 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <Spline /> }.into_any(), "Spline"),
                 (view! { <SplinePointer /> }.into_any(), "Spline Pointer"),
                 (view! { <Split /> }.into_any(), "Split"),
+                (view! { <Spool /> }.into_any(), "Spool"),
                 (view! { <SprayCan /> }.into_any(), "Spray Can"),
                 (view! { <Sprout /> }.into_any(), "Sprout"),
                 (view! { <Square /> }.into_any(), "Square"),

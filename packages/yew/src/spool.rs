@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct BlocksProps {
+pub struct SpoolProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct BlocksProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Blocks(props: &BlocksProps) -> Html {
+pub fn Spool(props: &SpoolProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -42,9 +42,11 @@ pub fn Blocks(props: &BlocksProps) -> Html {
             stroke-linejoin="round"
         >
             <path
-                d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
+                d="M17 13.44 4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66"
             />
-            <rect x="14" y="2" width="8" height="8" rx="1" />
+            <path
+                d="m7 10.56 12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178"
+            />
         </svg>
     }
 }
