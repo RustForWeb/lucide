@@ -421,7 +421,7 @@ mod bitcoin;
 mod blend;
 #[cfg(feature = "home")]
 mod blinds;
-#[cfg(any(feature = "development", feature = "shapes"))]
+#[cfg(any(feature = "development", feature = "layout", feature = "shapes"))]
 mod blocks;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod bluetooth;
@@ -3321,6 +3321,8 @@ mod spline;
 mod spline_pointer;
 #[cfg(any(feature = "development", feature = "arrows"))]
 mod split;
+#[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
+mod spool;
 #[cfg(any(feature = "design", feature = "tools"))]
 mod spray_can;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
@@ -4495,7 +4497,7 @@ pub use bitcoin::*;
 pub use blend::*;
 #[cfg(feature = "home")]
 pub use blinds::*;
-#[cfg(any(feature = "development", feature = "shapes"))]
+#[cfg(any(feature = "development", feature = "layout", feature = "shapes"))]
 pub use blocks::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use bluetooth::*;
@@ -7395,6 +7397,8 @@ pub use spline::*;
 pub use spline_pointer::*;
 #[cfg(any(feature = "development", feature = "arrows"))]
 pub use split::*;
+#[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
+pub use spool::*;
 #[cfg(any(feature = "design", feature = "tools"))]
 pub use spray_can::*;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
