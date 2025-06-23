@@ -897,6 +897,7 @@ pub fn IconsG() -> impl IntoView {
                 (view! { <Gauge /> }.into_any(), "Gauge"),
                 (view! { <Gavel /> }.into_any(), "Gavel"),
                 (view! { <Gem /> }.into_any(), "Gem"),
+                (view! { <GeorgianLari /> }.into_any(), "Georgian Lari"),
                 (view! { <Ghost /> }.into_any(), "Ghost"),
                 (view! { <Gift /> }.into_any(), "Gift"),
                 (view! { <GitBranch /> }.into_any(), "Git Branch"),

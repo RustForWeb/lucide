@@ -922,6 +922,7 @@ pub fn IconsG() -> Html {
         (html! { <Gauge /> }, "Gauge"),
         (html! { <Gavel /> }, "Gavel"),
         (html! { <Gem /> }, "Gem"),
+        (html! { <GeorgianLari /> }, "Georgian Lari"),
         (html! { <Ghost /> }, "Ghost"),
         (html! { <Gift /> }, "Gift"),
         (html! { <GitBranch /> }, "Git Branch"),

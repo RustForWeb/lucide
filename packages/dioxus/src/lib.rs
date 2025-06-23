@@ -1677,6 +1677,8 @@ mod gauge;
 mod gavel;
 #[cfg(any(feature = "gaming", feature = "development", feature = "finance"))]
 mod gem;
+#[cfg(feature = "finance")]
+mod georgian_lari;
 #[cfg(feature = "gaming")]
 mod ghost;
 #[cfg(any(feature = "gaming", feature = "account"))]
@@ -5753,6 +5755,8 @@ pub use gauge::*;
 pub use gavel::*;
 #[cfg(any(feature = "gaming", feature = "development", feature = "finance"))]
 pub use gem::*;
+#[cfg(feature = "finance")]
+pub use georgian_lari::*;
 #[cfg(feature = "gaming")]
 pub use ghost::*;
 #[cfg(any(feature = "gaming", feature = "account"))]

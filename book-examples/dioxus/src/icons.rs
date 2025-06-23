@@ -4429,6 +4429,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GeorgianLari {}
+            },
+            "Georgian Lari",
+        ),
+        (
+            rsx! {
                 Ghost {}
             },
             "Ghost",
