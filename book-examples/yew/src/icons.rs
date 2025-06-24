@@ -1841,6 +1841,7 @@ pub fn IconsS() -> Html {
         (html! { <SquaresSubtract /> }, "Squares Subtract"),
         (html! { <SquaresUnite /> }, "Squares Unite"),
         (html! { <Squircle /> }, "Squircle"),
+        (html! { <SquircleDashed /> }, "Squircle Dashed"),
         (html! { <Squirrel /> }, "Squirrel"),
         (html! { <Stamp /> }, "Stamp"),
         (html! { <Star /> }, "Star"),

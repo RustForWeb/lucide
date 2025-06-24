@@ -1795,6 +1795,7 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <SquaresSubtract /> }.into_any(), "Squares Subtract"),
                 (view! { <SquaresUnite /> }.into_any(), "Squares Unite"),
                 (view! { <Squircle /> }.into_any(), "Squircle"),
+                (view! { <SquircleDashed /> }.into_any(), "Squircle Dashed"),
                 (view! { <Squirrel /> }.into_any(), "Squirrel"),
                 (view! { <Stamp /> }.into_any(), "Stamp"),
                 (view! { <Star /> }.into_any(), "Star"),

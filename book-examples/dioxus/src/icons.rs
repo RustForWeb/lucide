@@ -8749,6 +8749,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquircleDashed {}
+            },
+            "Squircle Dashed",
+        ),
+        (
+            rsx! {
                 Squirrel {}
             },
             "Squirrel",
@@ -8837,12 +8843,6 @@ pub fn IconsS2() -> Element {
             },
             "Subscript",
         ),
-        (
-            rsx! {
-                Sun {}
-            },
-            "Sun",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8858,6 +8858,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Sun {}
+            },
+            "Sun",
+        ),
         (
             rsx! {
                 SunDim {}

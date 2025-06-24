@@ -3522,6 +3522,8 @@ mod squares_subtract;
 mod squares_unite;
 #[cfg(feature = "shapes")]
 mod squircle;
+#[cfg(any(feature = "development", feature = "shapes", feature = "design"))]
+mod squircle_dashed;
 #[cfg(feature = "animals")]
 mod squirrel;
 #[cfg(any(feature = "design", feature = "cursors", feature = "tools"))]
@@ -7600,6 +7602,8 @@ pub use squares_subtract::*;
 pub use squares_unite::*;
 #[cfg(feature = "shapes")]
 pub use squircle::*;
+#[cfg(any(feature = "development", feature = "shapes", feature = "design"))]
+pub use squircle_dashed::*;
 #[cfg(feature = "animals")]
 pub use squirrel::*;
 #[cfg(any(feature = "design", feature = "cursors", feature = "tools"))]

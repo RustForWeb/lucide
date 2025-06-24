@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CircleArrowLeftProps {
+pub struct SquircleDashedProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CircleArrowLeftProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CircleArrowLeft(props: CircleArrowLeftProps) -> Element {
+pub fn SquircleDashed(props: SquircleDashedProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,14 @@ pub fn CircleArrowLeft(props: CircleArrowLeftProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            circle { "cx": "12", "cy": "12", "r": "10" }
-            path { "d": "m12 8-4 4 4 4" }
-            path { "d": "M16 12H8" }
+            path { "d": "M13.77 3.043a34 34 0 0 0-3.54 0" }
+            path { "d": "M13.771 20.956a33 33 0 0 1-3.541.001" }
+            path { "d": "M20.18 17.74c-.51 1.15-1.29 1.93-2.439 2.44" }
+            path { "d": "M20.18 6.259c-.51-1.148-1.291-1.929-2.44-2.438" }
+            path { "d": "M20.957 10.23a33 33 0 0 1 0 3.54" }
+            path { "d": "M3.043 10.23a34 34 0 0 0 .001 3.541" }
+            path { "d": "M6.26 20.179c-1.15-.508-1.93-1.29-2.44-2.438" }
+            path { "d": "M6.26 3.82c-1.149.51-1.93 1.291-2.44 2.44" }
         }
     }
 }
