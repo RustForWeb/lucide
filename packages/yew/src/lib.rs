@@ -2107,6 +2107,8 @@ mod ligature;
 mod lightbulb;
 #[cfg(feature = "photography")]
 mod lightbulb_off;
+#[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
+mod line_squiggle;
 #[cfg(any(feature = "text", feature = "account"))]
 mod link;
 #[cfg(any(feature = "text", feature = "account"))]
@@ -6187,6 +6189,8 @@ pub use ligature::*;
 pub use lightbulb::*;
 #[cfg(feature = "photography")]
 pub use lightbulb_off::*;
+#[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
+pub use line_squiggle::*;
 #[cfg(any(feature = "text", feature = "account"))]
 pub use link::*;
 #[cfg(any(feature = "text", feature = "account"))]

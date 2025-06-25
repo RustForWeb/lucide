@@ -1165,6 +1165,7 @@ pub fn IconsL() -> Html {
         (html! { <Ligature /> }, "Ligature"),
         (html! { <Lightbulb /> }, "Lightbulb"),
         (html! { <LightbulbOff /> }, "Lightbulb Off"),
+        (html! { <LineSquiggle /> }, "Line Squiggle"),
         (html! { <Link /> }, "Link"),
         (html! { <Link2 /> }, "Link 2"),
         (html! { <Link2Off /> }, "Link 2 Off"),

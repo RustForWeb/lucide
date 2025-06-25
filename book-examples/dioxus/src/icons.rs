@@ -5428,6 +5428,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LineSquiggle {}
+            },
+            "Line Squiggle",
+        ),
+        (
+            rsx! {
                 Link {}
             },
             "Link",
