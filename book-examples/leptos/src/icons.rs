@@ -315,6 +315,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <Bot /> }.into_any(), "Bot"),
                 (view! { <BotMessageSquare /> }.into_any(), "Bot Message Square"),
                 (view! { <BotOff /> }.into_any(), "Bot Off"),
+                (view! { <BottleWine /> }.into_any(), "Bottle Wine"),
                 (view! { <BowArrow /> }.into_any(), "Bow Arrow"),
                 (view! { <Box /> }.into_any(), "Box"),
                 (view! { <Boxes /> }.into_any(), "Boxes"),

@@ -1399,6 +1399,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BottleWine {}
+            },
+            "Bottle Wine",
+        ),
+        (
+            rsx! {
                 BowArrow {}
             },
             "Bow Arrow",

@@ -324,6 +324,7 @@ pub fn IconsB() -> Html {
         (html! { <Bot /> }, "Bot"),
         (html! { <BotMessageSquare /> }, "Bot Message Square"),
         (html! { <BotOff /> }, "Bot Off"),
+        (html! { <BottleWine /> }, "Bottle Wine"),
         (html! { <BowArrow /> }, "Bow Arrow"),
         (html! { <Box /> }, "Box"),
         (html! { <Boxes /> }, "Boxes"),

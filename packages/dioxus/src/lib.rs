@@ -518,6 +518,8 @@ mod bot;
 mod bot_message_square;
 #[cfg(any(feature = "development", feature = "social"))]
 mod bot_off;
+#[cfg(feature = "food-beverage")]
+mod bottle_wine;
 #[cfg(any(feature = "gaming", feature = "tools"))]
 mod bow_arrow;
 #[cfg(any(
@@ -4600,6 +4602,8 @@ pub use bot::*;
 pub use bot_message_square::*;
 #[cfg(any(feature = "development", feature = "social"))]
 pub use bot_off::*;
+#[cfg(feature = "food-beverage")]
+pub use bottle_wine::*;
 #[cfg(any(feature = "gaming", feature = "tools"))]
 pub use bow_arrow::*;
 #[cfg(any(
