@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ClockArrowDown(
+pub fn VectorSquare(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,14 @@ pub fn ClockArrowDown(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 6v6l2 1" />
-            <path d="M12.337 21.994a10 10 0 1 1 9.588-8.767" />
-            <path d="m14 18 4 4 4-4" />
-            <path d="M18 14v8" />
+            <path d="M19.5 7a24 24 0 0 1 0 10" />
+            <path d="M4.5 7a24 24 0 0 0 0 10" />
+            <path d="M7 19.5a24 24 0 0 0 10 0" />
+            <path d="M7 4.5a24 24 0 0 1 10 0" />
+            <rect x="17" y="17" width="5" height="5" rx="1" />
+            <rect x="17" y="2" width="5" height="5" rx="1" />
+            <rect x="2" y="17" width="5" height="5" rx="1" />
+            <rect x="2" y="2" width="5" height="5" rx="1" />
         </svg>
     }
 }

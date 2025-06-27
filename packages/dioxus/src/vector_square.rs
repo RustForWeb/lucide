@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Clock7Props {
+pub struct VectorSquareProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Clock7Props {
     pub style: Option<String>,
 }
 #[component]
-pub fn Clock7(props: Clock7Props) -> Element {
+pub fn VectorSquare(props: VectorSquareProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,38 @@ pub fn Clock7(props: Clock7Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 6v6l-2 4" }
-            circle { "cx": "12", "cy": "12", "r": "10" }
+            path { "d": "M19.5 7a24 24 0 0 1 0 10" }
+            path { "d": "M4.5 7a24 24 0 0 0 0 10" }
+            path { "d": "M7 19.5a24 24 0 0 0 10 0" }
+            path { "d": "M7 4.5a24 24 0 0 1 10 0" }
+            rect {
+                "x": "17",
+                "y": "17",
+                "width": "5",
+                "height": "5",
+                "rx": "1",
+            }
+            rect {
+                "x": "17",
+                "y": "2",
+                "width": "5",
+                "height": "5",
+                "rx": "1",
+            }
+            rect {
+                "x": "2",
+                "y": "17",
+                "width": "5",
+                "height": "5",
+                "rx": "1",
+            }
+            rect {
+                "x": "2",
+                "y": "2",
+                "width": "5",
+                "height": "5",
+                "rx": "1",
+            }
         }
     }
 }

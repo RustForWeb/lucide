@@ -9787,6 +9787,12 @@ pub fn IconsV1() -> Element {
         ),
         (
             rsx! {
+                VectorSquare {}
+            },
+            "Vector Square",
+        ),
+        (
+            rsx! {
                 Vegan {}
             },
             "Vegan",

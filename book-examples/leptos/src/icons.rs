@@ -2009,6 +2009,7 @@ pub fn IconsV() -> impl IntoView {
             each=move || [
                 (view! { <Variable /> }.into_any(), "Variable"),
                 (view! { <Vault /> }.into_any(), "Vault"),
+                (view! { <VectorSquare /> }.into_any(), "Vector Square"),
                 (view! { <Vegan /> }.into_any(), "Vegan"),
                 (view! { <VenetianMask /> }.into_any(), "Venetian Mask"),
                 (view! { <Venus /> }.into_any(), "Venus"),

@@ -41,7 +41,7 @@ pub fn Clock6(props: &Clock6Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 16.5V6" />
+            <path d="M12 6v10" />
             <circle cx="12" cy="12" r="10" />
         </svg>
     }

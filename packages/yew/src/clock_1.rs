@@ -41,8 +41,8 @@ pub fn Clock1(props: &Clock1Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
+            <path d="M12 6v6l2-4" />
             <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 14.5 8" />
         </svg>
     }
 }

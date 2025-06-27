@@ -3885,6 +3885,13 @@ mod utility_pole;
 mod variable;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 mod vault;
+#[cfg(any(
+    feature = "shapes",
+    feature = "math",
+    feature = "design",
+    feature = "tools"
+))]
+mod vector_square;
 #[cfg(any(feature = "food-beverage", feature = "sustainability"))]
 mod vegan;
 #[cfg(any(feature = "account", feature = "gaming"))]
@@ -7969,6 +7976,13 @@ pub use utility_pole::*;
 pub use variable::*;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 pub use vault::*;
+#[cfg(any(
+    feature = "shapes",
+    feature = "math",
+    feature = "design",
+    feature = "tools"
+))]
+pub use vector_square::*;
 #[cfg(any(feature = "food-beverage", feature = "sustainability"))]
 pub use vegan::*;
 #[cfg(any(feature = "account", feature = "gaming"))]

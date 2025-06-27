@@ -2052,6 +2052,7 @@ pub fn IconsV() -> Html {
     let icons = [
         (html! { <Variable /> }, "Variable"),
         (html! { <Vault /> }, "Vault"),
+        (html! { <VectorSquare /> }, "Vector Square"),
         (html! { <Vegan /> }, "Vegan"),
         (html! { <VenetianMask /> }, "Venetian Mask"),
         (html! { <Venus /> }, "Venus"),

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct LigatureProps {
+pub struct VectorSquareProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct LigatureProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Ligature(props: &LigatureProps) -> Html {
+pub fn VectorSquare(props: &VectorSquareProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,14 @@ pub fn Ligature(props: &LigatureProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M14 12h2v8" />
-            <path d="M14 20h4" />
-            <path d="M6 12h4" />
-            <path d="M6 20h4" />
-            <path d="M8 20V8a4 4 0 0 1 7.464-2" />
+            <path d="M19.5 7a24 24 0 0 1 0 10" />
+            <path d="M4.5 7a24 24 0 0 0 0 10" />
+            <path d="M7 19.5a24 24 0 0 0 10 0" />
+            <path d="M7 4.5a24 24 0 0 1 10 0" />
+            <rect x="17" y="17" width="5" height="5" rx="1" />
+            <rect x="17" y="2" width="5" height="5" rx="1" />
+            <rect x="2" y="17" width="5" height="5" rx="1" />
+            <rect x="2" y="2" width="5" height="5" rx="1" />
         </svg>
     }
 }
