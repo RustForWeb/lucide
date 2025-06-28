@@ -1898,6 +1898,7 @@ pub fn IconsT() -> impl IntoView {
                 (view! { <ToggleLeft /> }.into_any(), "Toggle Left"),
                 (view! { <ToggleRight /> }.into_any(), "Toggle Right"),
                 (view! { <Toilet /> }.into_any(), "Toilet"),
+                (view! { <ToolCase /> }.into_any(), "Tool Case"),
                 (view! { <Tornado /> }.into_any(), "Tornado"),
                 (view! { <Torus /> }.into_any(), "Torus"),
                 (view! { <Touchpad /> }.into_any(), "Touchpad"),

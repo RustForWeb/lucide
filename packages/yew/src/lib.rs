@@ -3717,6 +3717,8 @@ mod toggle_left;
 mod toggle_right;
 #[cfg(any(feature = "devices", feature = "home"))]
 mod toilet;
+#[cfg(any(feature = "tools", feature = "development", feature = "home"))]
+mod tool_case;
 #[cfg(feature = "weather")]
 mod tornado;
 #[cfg(any(
@@ -7808,6 +7810,8 @@ pub use toggle_left::*;
 pub use toggle_right::*;
 #[cfg(any(feature = "devices", feature = "home"))]
 pub use toilet::*;
+#[cfg(any(feature = "tools", feature = "development", feature = "home"))]
+pub use tool_case::*;
 #[cfg(feature = "weather")]
 pub use tornado::*;
 #[cfg(any(

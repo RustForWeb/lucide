@@ -9295,6 +9295,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                ToolCase {}
+            },
+            "Tool Case",
+        ),
+        (
+            rsx! {
                 Tornado {}
             },
             "Tornado",

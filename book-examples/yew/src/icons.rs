@@ -1943,6 +1943,7 @@ pub fn IconsT() -> Html {
         (html! { <ToggleLeft /> }, "Toggle Left"),
         (html! { <ToggleRight /> }, "Toggle Right"),
         (html! { <Toilet /> }, "Toilet"),
+        (html! { <ToolCase /> }, "Tool Case"),
         (html! { <Tornado /> }, "Tornado"),
         (html! { <Torus /> }, "Torus"),
         (html! { <Touchpad /> }, "Touchpad"),
