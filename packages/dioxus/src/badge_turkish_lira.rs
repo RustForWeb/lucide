@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct PodcastProps {
+pub struct BadgeTurkishLiraProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct PodcastProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Podcast(props: PodcastProps) -> Element {
+pub fn BadgeTurkishLira(props: BadgeTurkishLiraProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,18 +34,9 @@ pub fn Podcast(props: PodcastProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path {
-                "d": "M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z",
-                "fill": "currentColor",
-            }
-            path { "d": "M16.85 18.58a9 9 0 1 0-9.7 0" }
-            path { "d": "M8 14a5 5 0 1 1 8 0" }
-            circle {
-                "cx": "12",
-                "cy": "11",
-                "r": "1",
-                "fill": "currentColor",
-            }
+            path { "d": "M11 7v10a5 5 0 0 0 5-5" }
+            path { "d": "m15 8-6 3" }
+            path { "d": "M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76" }
         }
     }
 }

@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn PencilLine(
+pub fn ReceiptTurkishLira(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,9 @@ pub fn PencilLine(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13 21h8" />
-            <path d="m15 5 4 4" />
-            <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+            <path d="M10 6.5v11a5.5 5.5 0 0 0 5.5-5.5" />
+            <path d="m14 8-6 3" />
+            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z" />
         </svg>
     }
 }

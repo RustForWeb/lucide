@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct BanProps {
+pub struct ReceiptTurkishLiraProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct BanProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Ban(props: &BanProps) -> Html {
+pub fn ReceiptTurkishLira(props: &ReceiptTurkishLiraProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,9 @@ pub fn Ban(props: &BanProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M4.929 4.929 19.07 19.071" />
-            <circle cx="12" cy="12" r="10" />
+            <path d="M10 6.5v11a5.5 5.5 0 0 0 5.5-5.5" />
+            <path d="m14 8-6 3" />
+            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z" />
         </svg>
     }
 }

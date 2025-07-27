@@ -832,6 +832,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BadgeTurkishLira {}
+            },
+            "Badge Turkish Lira",
+        ),
+        (
+            rsx! {
                 BadgeX {}
             },
             "Badge X",
@@ -1316,12 +1322,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Up 2",
         ),
-        (
-            rsx! {
-                BookUser {}
-            },
-            "Book User",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -1337,6 +1337,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookUser {}
+            },
+            "Book User",
+        ),
         (
             rsx! {
                 BookX {}
@@ -7363,6 +7369,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                ReceiptTurkishLira {}
+            },
+            "Receipt Turkish Lira",
+        ),
+        (
+            rsx! {
                 RectangleCircle {}
             },
             "Rectangle Circle",
@@ -9481,6 +9493,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TurkishLira {}
+            },
+            "Turkish Lira",
+        ),
+        (
+            rsx! {
                 Turtle {}
             },
             "Turtle",
@@ -10069,6 +10087,12 @@ pub fn IconsW1() -> Element {
                 WifiPen {}
             },
             "Wifi Pen",
+        ),
+        (
+            rsx! {
+                WifiSync {}
+            },
+            "Wifi Sync",
         ),
         (
             rsx! {

@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct PodcastProps {
+pub struct ReceiptTurkishLiraProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct PodcastProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Podcast(props: PodcastProps) -> Element {
+pub fn ReceiptTurkishLira(props: ReceiptTurkishLiraProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,18 +34,9 @@ pub fn Podcast(props: PodcastProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path {
-                "d": "M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z",
-                "fill": "currentColor",
-            }
-            path { "d": "M16.85 18.58a9 9 0 1 0-9.7 0" }
-            path { "d": "M8 14a5 5 0 1 1 8 0" }
-            circle {
-                "cx": "12",
-                "cy": "11",
-                "r": "1",
-                "fill": "currentColor",
-            }
+            path { "d": "M10 6.5v11a5.5 5.5 0 0 0 5.5-5.5" }
+            path { "d": "m14 8-6 3" }
+            path { "d": "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z" }
         }
     }
 }

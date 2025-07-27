@@ -311,6 +311,8 @@ mod badge_question_mark;
 mod badge_russian_ruble;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_swiss_franc;
+#[cfg(any(feature = "shopping", feature = "finance"))]
+mod badge_turkish_lira;
 #[cfg(feature = "social")]
 mod badge_x;
 #[cfg(any(feature = "transportation", feature = "travel"))]
@@ -2858,6 +2860,8 @@ mod receipt_russian_ruble;
 mod receipt_swiss_franc;
 #[cfg(any(feature = "finance", feature = "travel"))]
 mod receipt_text;
+#[cfg(any(feature = "finance", feature = "travel"))]
+mod receipt_turkish_lira;
 #[cfg(any(feature = "development", feature = "text"))]
 mod rectangle_circle;
 #[cfg(any(feature = "text", feature = "development"))]
@@ -3788,6 +3792,8 @@ mod trophy;
 mod truck;
 #[cfg(feature = "transportation")]
 mod truck_electric;
+#[cfg(feature = "finance")]
+mod turkish_lira;
 #[cfg(feature = "animals")]
 mod turtle;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
@@ -4046,6 +4052,8 @@ mod wifi_low;
 mod wifi_off;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi_pen;
+#[cfg(any(feature = "connectivity", feature = "devices"))]
+mod wifi_sync;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi_zero;
 #[cfg(any(feature = "weather", feature = "sustainability"))]
@@ -4404,6 +4412,8 @@ pub use badge_question_mark::*;
 pub use badge_russian_ruble::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_swiss_franc::*;
+#[cfg(any(feature = "shopping", feature = "finance"))]
+pub use badge_turkish_lira::*;
 #[cfg(feature = "social")]
 pub use badge_x::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
@@ -6951,6 +6961,8 @@ pub use receipt_russian_ruble::*;
 pub use receipt_swiss_franc::*;
 #[cfg(any(feature = "finance", feature = "travel"))]
 pub use receipt_text::*;
+#[cfg(any(feature = "finance", feature = "travel"))]
+pub use receipt_turkish_lira::*;
 #[cfg(any(feature = "development", feature = "text"))]
 pub use rectangle_circle::*;
 #[cfg(any(feature = "text", feature = "development"))]
@@ -7881,6 +7893,8 @@ pub use trophy::*;
 pub use truck::*;
 #[cfg(feature = "transportation")]
 pub use truck_electric::*;
+#[cfg(feature = "finance")]
+pub use turkish_lira::*;
 #[cfg(feature = "animals")]
 pub use turtle::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
@@ -8139,6 +8153,8 @@ pub use wifi_low::*;
 pub use wifi_off::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi_pen::*;
+#[cfg(any(feature = "connectivity", feature = "devices"))]
+pub use wifi_sync::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi_zero::*;
 #[cfg(any(feature = "weather", feature = "sustainability"))]
