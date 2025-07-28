@@ -8359,6 +8359,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                Spotlight {}
+            },
+            "Spotlight",
+        ),
+        (
+            rsx! {
                 SprayCan {}
             },
             "Spray Can",
@@ -8861,12 +8867,6 @@ pub fn IconsS2() -> Element {
             },
             "Strikethrough",
         ),
-        (
-            rsx! {
-                Subscript {}
-            },
-            "Subscript",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8882,6 +8882,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Subscript {}
+            },
+            "Subscript",
+        ),
         (
             rsx! {
                 Sun {}

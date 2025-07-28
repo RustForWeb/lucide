@@ -3333,6 +3333,13 @@ mod spline_pointer;
 mod split;
 #[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
 mod spool;
+#[cfg(any(
+    feature = "devices",
+    feature = "photography",
+    feature = "multimedia",
+    feature = "communication"
+))]
+mod spotlight;
 #[cfg(any(feature = "design", feature = "tools"))]
 mod spray_can;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
@@ -7434,6 +7441,13 @@ pub use spline_pointer::*;
 pub use split::*;
 #[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
 pub use spool::*;
+#[cfg(any(
+    feature = "devices",
+    feature = "photography",
+    feature = "multimedia",
+    feature = "communication"
+))]
+pub use spotlight::*;
 #[cfg(any(feature = "design", feature = "tools"))]
 pub use spray_can::*;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
