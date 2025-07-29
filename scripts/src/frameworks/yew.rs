@@ -24,7 +24,7 @@ impl Framework for Yew {
             //!\n\
             //! Lucide is a beautiful & consistent icon toolkit made by the community.\n\
             //!\n\
-            //! See [the Rust Lucide book](https://lucide.rustforweb.org/yew.html) for more documenation.\n\
+            //! See [the Rust Lucide book](https://lucide.rustforweb.org/frameworks/yew.html) for more documenation.\n\
             \n\
             #![allow(ambiguous_glob_reexports)]
             ".to_owned()

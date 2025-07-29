@@ -2,7 +2,7 @@
 //!
 //! Lucide is a beautiful & consistent icon toolkit made by the community.
 //!
-//! See [the Rust Lucide book](https://lucide.rustforweb.org/yew.html) for more documenation.
+//! See [the Rust Lucide book](https://lucide.rustforweb.org/frameworks/yew.html) for more documenation.
 
 #![allow(ambiguous_glob_reexports)]
 

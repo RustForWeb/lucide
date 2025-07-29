@@ -2,7 +2,7 @@
 //!
 //! Lucide is a beautiful & consistent icon toolkit made by the community.
 //!
-//! See [the Rust Lucide book](https://lucide.rustforweb.org/leptos.html) for more documenation.
+//! See [the Rust Lucide book](https://lucide.rustforweb.org/frameworks/leptos.html) for more documenation.
 
 #[cfg(any(feature = "text", feature = "design"))]
 mod a_arrow_down;

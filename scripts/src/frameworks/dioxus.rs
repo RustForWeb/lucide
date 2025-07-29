@@ -24,7 +24,7 @@ impl Framework for Dioxus {
             //!\n\
             //! Lucide is a beautiful & consistent icon toolkit made by the community.\n\
             //!\n\
-            //! See [the Rust Lucide book](https://lucide.rustforweb.org/dioxus.html) for more documenation.\n\
+            //! See [the Rust Lucide book](https://lucide.rustforweb.org/frameworks/dioxus.html) for more documenation.\n\
             "
             .to_owned()
         )
