@@ -34,8 +34,8 @@ pub fn FastForward(props: FastForwardProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            polygon { "points": "13 19 22 12 13 5 13 19" }
-            polygon { "points": "2 19 11 12 2 5 2 19" }
+            path { "d": "M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" }
+            path { "d": "M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" }
         }
     }
 }

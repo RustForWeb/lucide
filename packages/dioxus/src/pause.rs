@@ -36,16 +36,16 @@ pub fn Pause(props: PauseProps) -> Element {
             "stroke-linejoin": "round",
             rect {
                 "x": "14",
-                "y": "4",
-                "width": "4",
-                "height": "16",
+                "y": "3",
+                "width": "5",
+                "height": "18",
                 "rx": "1",
             }
             rect {
-                "x": "6",
-                "y": "4",
-                "width": "4",
-                "height": "16",
+                "x": "5",
+                "y": "3",
+                "width": "5",
+                "height": "18",
                 "rx": "1",
             }
         }

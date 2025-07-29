@@ -1433,6 +1433,8 @@ mod file_pen;
 #[cfg(feature = "files")]
 mod file_pen_line;
 #[cfg(feature = "files")]
+mod file_play;
+#[cfg(feature = "files")]
 mod file_plus;
 #[cfg(feature = "files")]
 mod file_plus_2;
@@ -1465,9 +1467,7 @@ mod file_up;
 #[cfg(any(feature = "account", feature = "files"))]
 mod file_user;
 #[cfg(feature = "files")]
-mod file_video;
-#[cfg(feature = "files")]
-mod file_video_2;
+mod file_video_camera;
 #[cfg(feature = "files")]
 mod file_volume;
 #[cfg(feature = "files")]
@@ -1819,6 +1819,8 @@ mod hard_drive_upload;
 mod hard_hat;
 #[cfg(any(feature = "text", feature = "social"))]
 mod hash;
+#[cfg(any(feature = "social", feature = "account", feature = "security"))]
+mod hat_glasses;
 #[cfg(feature = "weather")]
 mod haze;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
@@ -3344,7 +3346,7 @@ mod spotlight;
 mod spray_can;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
 mod sprout;
-#[cfg(feature = "shapes")]
+#[cfg(any(feature = "shapes", feature = "multimedia"))]
 mod square;
 #[cfg(any(
     feature = "medical",
@@ -3471,6 +3473,8 @@ mod square_mouse_pointer;
 mod square_parking;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 mod square_parking_off;
+#[cfg(feature = "multimedia")]
+mod square_pause;
 #[cfg(feature = "text")]
 mod square_pen;
 #[cfg(any(
@@ -3519,6 +3523,8 @@ mod square_split_vertical;
 mod square_square;
 #[cfg(any(feature = "text", feature = "files", feature = "development"))]
 mod square_stack;
+#[cfg(feature = "multimedia")]
+mod square_stop;
 #[cfg(feature = "development")]
 mod square_terminal;
 #[cfg(feature = "account")]
@@ -5541,6 +5547,8 @@ pub use file_pen::*;
 #[cfg(feature = "files")]
 pub use file_pen_line::*;
 #[cfg(feature = "files")]
+pub use file_play::*;
+#[cfg(feature = "files")]
 pub use file_plus::*;
 #[cfg(feature = "files")]
 pub use file_plus_2::*;
@@ -5573,9 +5581,7 @@ pub use file_up::*;
 #[cfg(any(feature = "account", feature = "files"))]
 pub use file_user::*;
 #[cfg(feature = "files")]
-pub use file_video::*;
-#[cfg(feature = "files")]
-pub use file_video_2::*;
+pub use file_video_camera::*;
 #[cfg(feature = "files")]
 pub use file_volume::*;
 #[cfg(feature = "files")]
@@ -5927,6 +5933,8 @@ pub use hard_drive_upload::*;
 pub use hard_hat::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use hash::*;
+#[cfg(any(feature = "social", feature = "account", feature = "security"))]
+pub use hat_glasses::*;
 #[cfg(feature = "weather")]
 pub use haze::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
@@ -7452,7 +7460,7 @@ pub use spotlight::*;
 pub use spray_can::*;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
 pub use sprout::*;
-#[cfg(feature = "shapes")]
+#[cfg(any(feature = "shapes", feature = "multimedia"))]
 pub use square::*;
 #[cfg(any(
     feature = "medical",
@@ -7579,6 +7587,8 @@ pub use square_mouse_pointer::*;
 pub use square_parking::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 pub use square_parking_off::*;
+#[cfg(feature = "multimedia")]
+pub use square_pause::*;
 #[cfg(feature = "text")]
 pub use square_pen::*;
 #[cfg(any(
@@ -7627,6 +7637,8 @@ pub use square_split_vertical::*;
 pub use square_square::*;
 #[cfg(any(feature = "text", feature = "files", feature = "development"))]
 pub use square_stack::*;
+#[cfg(feature = "multimedia")]
+pub use square_stop::*;
 #[cfg(feature = "development")]
 pub use square_terminal::*;
 #[cfg(feature = "account")]

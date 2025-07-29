@@ -3799,6 +3799,12 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
+                FilePlay {}
+            },
+            "File Play",
+        ),
+        (
+            rsx! {
                 FilePlus {}
             },
             "File Plus",
@@ -3895,15 +3901,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileVideo {}
+                FileVideoCamera {}
             },
-            "File Video",
-        ),
-        (
-            rsx! {
-                FileVideo2 {}
-            },
-            "File Video 2",
+            "File Video Camera",
         ),
         (
             rsx! {
@@ -4783,6 +4783,12 @@ pub fn IconsH1() -> Element {
                 Hash {}
             },
             "Hash",
+        ),
+        (
+            rsx! {
+                HatGlasses {}
+            },
+            "Hat Glasses",
         ),
         (
             rsx! {
@@ -8629,6 +8635,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquarePause {}
+            },
+            "Square Pause",
+        ),
+        (
+            rsx! {
                 SquarePen {}
             },
             "Square Pen",
@@ -8722,6 +8734,12 @@ pub fn IconsS2() -> Element {
                 SquareStack {}
             },
             "Square Stack",
+        ),
+        (
+            rsx! {
+                SquareStop {}
+            },
+            "Square Stop",
         ),
         (
             rsx! {
@@ -8855,18 +8873,6 @@ pub fn IconsS2() -> Element {
             },
             "Stretch Horizontal",
         ),
-        (
-            rsx! {
-                StretchVertical {}
-            },
-            "Stretch Vertical",
-        ),
-        (
-            rsx! {
-                Strikethrough {}
-            },
-            "Strikethrough",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8882,6 +8888,18 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                StretchVertical {}
+            },
+            "Stretch Vertical",
+        ),
+        (
+            rsx! {
+                Strikethrough {}
+            },
+            "Strikethrough",
+        ),
         (
             rsx! {
                 Subscript {}
