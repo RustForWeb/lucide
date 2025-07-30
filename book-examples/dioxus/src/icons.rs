@@ -5614,12 +5614,6 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
-                LocationEdit {}
-            },
-            "Location Edit",
-        ),
-        (
-            rsx! {
                 Lock {}
             },
             "Lock",
@@ -5767,6 +5761,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MapMinus {}
+            },
+            "Map Minus",
+        ),
+        (
+            rsx! {
                 MapPin {}
             },
             "Map Pin",
@@ -5806,6 +5806,12 @@ pub fn IconsM1() -> Element {
                 MapPinOff {}
             },
             "Map Pin Off",
+        ),
+        (
+            rsx! {
+                MapPinPen {}
+            },
+            "Map Pin Pen",
         ),
         (
             rsx! {
@@ -6275,18 +6281,6 @@ pub fn IconsM1() -> Element {
             },
             "Mouse Pointer",
         ),
-        (
-            rsx! {
-                MousePointer2 {}
-            },
-            "Mouse Pointer 2",
-        ),
-        (
-            rsx! {
-                MousePointerBan {}
-            },
-            "Mouse Pointer Ban",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -6302,6 +6296,18 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MousePointer2 {}
+            },
+            "Mouse Pointer 2",
+        ),
+        (
+            rsx! {
+                MousePointerBan {}
+            },
+            "Mouse Pointer Ban",
+        ),
         (
             rsx! {
                 MousePointerClick {}

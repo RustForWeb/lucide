@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CastleProps {
+pub struct MapPinPenProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CastleProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Castle(props: CastleProps) -> Element {
+pub fn MapPinPen(props: MapPinPenProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,14 +34,9 @@ pub fn Castle(props: CastleProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 5V3" }
-            path { "d": "M14 5V3" }
-            path { "d": "M15 21v-3a3 3 0 0 0-6 0v3" }
-            path { "d": "M18 3v8" }
-            path { "d": "M18 5H6" }
-            path { "d": "M22 11H2" }
-            path { "d": "M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9" }
-            path { "d": "M6 3v8" }
+            path { "d": "M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468" }
+            path { "d": "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }
+            circle { "cx": "10", "cy": "10", "r": "3" }
         }
     }
 }

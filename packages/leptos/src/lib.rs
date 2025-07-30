@@ -2172,8 +2172,6 @@ mod locate;
 mod locate_fixed;
 #[cfg(feature = "navigation")]
 mod locate_off;
-#[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
-mod location_edit;
 #[cfg(feature = "security")]
 mod lock;
 #[cfg(feature = "security")]
@@ -2218,6 +2216,8 @@ mod mailbox;
 mod mails;
 #[cfg(any(feature = "text", feature = "navigation"))]
 mod map;
+#[cfg(any(feature = "navigation", feature = "travel"))]
+mod map_minus;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 mod map_pin;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
@@ -2232,6 +2232,8 @@ mod map_pin_minus;
 mod map_pin_minus_inside;
 #[cfg(any(feature = "navigation", feature = "travel"))]
 mod map_pin_off;
+#[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
+mod map_pin_pen;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 mod map_pin_plus;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
@@ -6286,8 +6288,6 @@ pub use locate::*;
 pub use locate_fixed::*;
 #[cfg(feature = "navigation")]
 pub use locate_off::*;
-#[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
-pub use location_edit::*;
 #[cfg(feature = "security")]
 pub use lock::*;
 #[cfg(feature = "security")]
@@ -6332,6 +6332,8 @@ pub use mailbox::*;
 pub use mails::*;
 #[cfg(any(feature = "text", feature = "navigation"))]
 pub use map::*;
+#[cfg(any(feature = "navigation", feature = "travel"))]
+pub use map_minus::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 pub use map_pin::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
@@ -6346,6 +6348,8 @@ pub use map_pin_minus::*;
 pub use map_pin_minus_inside::*;
 #[cfg(any(feature = "navigation", feature = "travel"))]
 pub use map_pin_off::*;
+#[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
+pub use map_pin_pen::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 pub use map_pin_plus::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
