@@ -9778,6 +9778,12 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UserStar {}
+            },
+            "User Star",
+        ),
+        (
+            rsx! {
                 UserX {}
             },
             "User X",

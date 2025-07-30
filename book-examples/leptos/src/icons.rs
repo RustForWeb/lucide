@@ -1993,6 +1993,7 @@ pub fn IconsU() -> impl IntoView {
                 (view! { <UserRoundSearch /> }.into_any(), "User Round Search"),
                 (view! { <UserRoundX /> }.into_any(), "User Round X"),
                 (view! { <UserSearch /> }.into_any(), "User Search"),
+                (view! { <UserStar /> }.into_any(), "User Star"),
                 (view! { <UserX /> }.into_any(), "User X"),
                 (view! { <Users /> }.into_any(), "Users"),
                 (view! { <UsersRound /> }.into_any(), "Users Round"),

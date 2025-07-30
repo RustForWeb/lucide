@@ -2037,6 +2037,7 @@ pub fn IconsU() -> Html {
         (html! { <UserRoundSearch /> }, "User Round Search"),
         (html! { <UserRoundX /> }, "User Round X"),
         (html! { <UserSearch /> }, "User Search"),
+        (html! { <UserStar /> }, "User Star"),
         (html! { <UserX /> }, "User X"),
         (html! { <Users /> }, "Users"),
         (html! { <UsersRound /> }, "Users Round"),

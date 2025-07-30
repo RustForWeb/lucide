@@ -3893,6 +3893,8 @@ mod user_round_x;
 #[cfg(any(feature = "account", feature = "social"))]
 mod user_search;
 #[cfg(feature = "account")]
+mod user_star;
+#[cfg(feature = "account")]
 mod user_x;
 #[cfg(feature = "account")]
 mod users;
@@ -8008,6 +8010,8 @@ pub use user_round_search::*;
 pub use user_round_x::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use user_search::*;
+#[cfg(feature = "account")]
+pub use user_star::*;
 #[cfg(feature = "account")]
 pub use user_x::*;
 #[cfg(feature = "account")]
