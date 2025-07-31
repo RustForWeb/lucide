@@ -4756,6 +4756,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                Handbag {}
+            },
+            "Handbag",
+        ),
+        (
+            rsx! {
                 Handshake {}
             },
             "Handshake",

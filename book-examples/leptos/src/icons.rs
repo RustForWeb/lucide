@@ -969,6 +969,7 @@ pub fn IconsH() -> impl IntoView {
                 (view! { <HandHelping /> }.into_any(), "Hand Helping"),
                 (view! { <HandMetal /> }.into_any(), "Hand Metal"),
                 (view! { <HandPlatter /> }.into_any(), "Hand Platter"),
+                (view! { <Handbag /> }.into_any(), "Handbag"),
                 (view! { <Handshake /> }.into_any(), "Handshake"),
                 (view! { <HardDrive /> }.into_any(), "Hard Drive"),
                 (view! { <HardDriveDownload /> }.into_any(), "Hard Drive Download"),

@@ -999,6 +999,7 @@ pub fn IconsH() -> Html {
         (html! { <HandHelping /> }, "Hand Helping"),
         (html! { <HandMetal /> }, "Hand Metal"),
         (html! { <HandPlatter /> }, "Hand Platter"),
+        (html! { <Handbag /> }, "Handbag"),
         (html! { <Handshake /> }, "Handshake"),
         (html! { <HardDrive /> }, "Hard Drive"),
         (html! { <HardDriveDownload /> }, "Hard Drive Download"),

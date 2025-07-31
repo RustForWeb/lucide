@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct GavelProps {
+pub struct HandbagProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct GavelProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Gavel(props: GavelProps) -> Element {
+pub fn Handbag(props: HandbagProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,8 @@ pub fn Gavel(props: GavelProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m14.499 12.501-8.88 8.879a1 1 0 0 1-3.001-3L11.5 9.5" }
-            path { "d": "m16 16 6-6" }
-            path { "d": "m21 11-8-8" }
-            path { "d": "m8 8 6-6" }
-            path { "d": "m9 7 8 8" }
+            path { "d": "M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z" }
+            path { "d": "M8 11V6a4 4 0 0 1 8 0v5" }
         }
     }
 }

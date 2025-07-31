@@ -1791,6 +1791,8 @@ mod hand_helping;
 mod hand_metal;
 #[cfg(any(feature = "food-beverage", feature = "people"))]
 mod hand_platter;
+#[cfg(any(feature = "shopping", feature = "transportation"))]
+mod handbag;
 #[cfg(any(
     feature = "account",
     feature = "social",
@@ -5911,6 +5913,8 @@ pub use hand_helping::*;
 pub use hand_metal::*;
 #[cfg(any(feature = "food-beverage", feature = "people"))]
 pub use hand_platter::*;
+#[cfg(any(feature = "shopping", feature = "transportation"))]
+pub use handbag::*;
 #[cfg(any(
     feature = "account",
     feature = "social",
