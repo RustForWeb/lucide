@@ -512,6 +512,7 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <Clapperboard /> }.into_any(), "Clapperboard"),
                 (view! { <Clipboard /> }.into_any(), "Clipboard"),
                 (view! { <ClipboardCheck /> }.into_any(), "Clipboard Check"),
+                (view! { <ClipboardClock /> }.into_any(), "Clipboard Clock"),
                 (view! { <ClipboardCopy /> }.into_any(), "Clipboard Copy"),
                 (view! { <ClipboardList /> }.into_any(), "Clipboard List"),
                 (view! { <ClipboardMinus /> }.into_any(), "Clipboard Minus"),

@@ -922,6 +922,8 @@ mod clapperboard;
 mod clipboard;
 #[cfg(feature = "text")]
 mod clipboard_check;
+#[cfg(any(feature = "time", feature = "text"))]
+mod clipboard_clock;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod clipboard_copy;
 #[cfg(feature = "text")]
@@ -5040,6 +5042,8 @@ pub use clapperboard::*;
 pub use clipboard::*;
 #[cfg(feature = "text")]
 pub use clipboard_check::*;
+#[cfg(any(feature = "time", feature = "text"))]
+pub use clipboard_clock::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use clipboard_copy::*;
 #[cfg(feature = "text")]

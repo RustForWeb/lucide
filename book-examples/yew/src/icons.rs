@@ -541,6 +541,7 @@ pub fn IconsC() -> Html {
         (html! { <Clapperboard /> }, "Clapperboard"),
         (html! { <Clipboard /> }, "Clipboard"),
         (html! { <ClipboardCheck /> }, "Clipboard Check"),
+        (html! { <ClipboardClock /> }, "Clipboard Clock"),
         (html! { <ClipboardCopy /> }, "Clipboard Copy"),
         (html! { <ClipboardList /> }, "Clipboard List"),
         (html! { <ClipboardMinus /> }, "Clipboard Minus"),

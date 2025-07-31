@@ -2455,6 +2455,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClipboardClock {}
+            },
+            "Clipboard Clock",
+        ),
+        (
+            rsx! {
                 ClipboardCopy {}
             },
             "Clipboard Copy",
@@ -2783,12 +2789,6 @@ pub fn IconsC2() -> Element {
             },
             "Coins",
         ),
-        (
-            rsx! {
-                Columns2 {}
-            },
-            "Columns 2",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2804,6 +2804,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Columns2 {}
+            },
+            "Columns 2",
+        ),
         (
             rsx! {
                 Columns3 {}
