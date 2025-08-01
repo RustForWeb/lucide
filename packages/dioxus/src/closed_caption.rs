@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct HeartOffProps {
+pub struct ClosedCaptionProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct HeartOffProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn HeartOff(props: HeartOffProps) -> Element {
+pub fn ClosedCaption(props: ClosedCaptionProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,15 @@ pub fn HeartOff(props: HeartOffProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10.5 4.893a5.5 5.5 0 0 1 1.091.931.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 1.872-1.002 3.356-2.187 4.655" }
-            path { "d": "m16.967 16.967-3.459 3.346a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5a5.5 5.5 0 0 1 2.747-4.761" }
-            path { "d": "m2 2 20 20" }
+            path { "d": "M10 9.17a3 3 0 1 0 0 5.66" }
+            path { "d": "M17 9.17a3 3 0 1 0 0 5.66" }
+            rect {
+                "x": "2",
+                "y": "5",
+                "width": "20",
+                "height": "14",
+                "rx": "2",
+            }
         }
     }
 }

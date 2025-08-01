@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CaseSensitiveProps {
+pub struct ClosedCaptionProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CaseSensitiveProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn CaseSensitive(props: &CaseSensitiveProps) -> Html {
+pub fn ClosedCaption(props: &ClosedCaptionProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,10 +41,9 @@ pub fn CaseSensitive(props: &CaseSensitiveProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16" />
-            <path d="M22 9v7" />
-            <path d="M3.304 13h6.392" />
-            <circle cx="18.5" cy="12.5" r="3.5" />
+            <path d="M10 9.17a3 3 0 1 0 0 5.66" />
+            <path d="M17 9.17a3 3 0 1 0 0 5.66" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
         </svg>
     }
 }

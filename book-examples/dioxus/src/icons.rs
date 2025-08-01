@@ -2623,6 +2623,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClosedCaption {}
+            },
+            "Closed Caption",
+        ),
+        (
+            rsx! {
                 Cloud {}
             },
             "Cloud",
@@ -2783,12 +2789,6 @@ pub fn IconsC2() -> Element {
             },
             "Cog",
         ),
-        (
-            rsx! {
-                Coins {}
-            },
-            "Coins",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2804,6 +2804,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Coins {}
+            },
+            "Coins",
+        ),
         (
             rsx! {
                 Columns2 {}

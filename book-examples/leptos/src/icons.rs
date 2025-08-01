@@ -540,6 +540,7 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <ClockArrowUp /> }.into_any(), "Clock Arrow Up"),
                 (view! { <ClockFading /> }.into_any(), "Clock Fading"),
                 (view! { <ClockPlus /> }.into_any(), "Clock Plus"),
+                (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),
                 (view! { <Cloud /> }.into_any(), "Cloud"),
                 (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
                 (view! { <CloudCheck /> }.into_any(), "Cloud Check"),

@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn FlagTriangleRight(
+pub fn ClosedCaption(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,7 +29,9 @@ pub fn FlagTriangleRight(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M6 22V2.8a.8.8 0 0 1 1.17-.71l11.38 5.69a.8.8 0 0 1 0 1.44L6 15.5" />
+            <path d="M10 9.17a3 3 0 1 0 0 5.66" />
+            <path d="M17 9.17a3 3 0 1 0 0 5.66" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
         </svg>
     }
 }

@@ -670,11 +670,11 @@ mod caravan;
 mod card_sim;
 #[cfg(feature = "food-beverage")]
 mod carrot;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "text", feature = "development"))]
 mod case_lower;
 #[cfg(feature = "text")]
 mod case_sensitive;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "text", feature = "development"))]
 mod case_upper;
 #[cfg(any(
     feature = "connectivity",
@@ -976,6 +976,8 @@ mod clock_arrow_up;
 mod clock_fading;
 #[cfg(feature = "time")]
 mod clock_plus;
+#[cfg(any(feature = "accessibility", feature = "multimedia"))]
+mod closed_caption;
 #[cfg(feature = "weather")]
 mod cloud;
 #[cfg(feature = "development")]
@@ -1501,9 +1503,9 @@ mod fish_symbol;
 mod flag;
 #[cfg(any(feature = "account", feature = "social"))]
 mod flag_off;
-#[cfg(feature = "development")]
+#[cfg(any(feature = "development", feature = "navigation"))]
 mod flag_triangle_left;
-#[cfg(feature = "development")]
+#[cfg(any(feature = "development", feature = "navigation"))]
 mod flag_triangle_right;
 #[cfg(any(feature = "weather", feature = "social", feature = "gaming"))]
 mod flame;
@@ -4792,11 +4794,11 @@ pub use caravan::*;
 pub use card_sim::*;
 #[cfg(feature = "food-beverage")]
 pub use carrot::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "text", feature = "development"))]
 pub use case_lower::*;
 #[cfg(feature = "text")]
 pub use case_sensitive::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "text", feature = "development"))]
 pub use case_upper::*;
 #[cfg(any(
     feature = "connectivity",
@@ -5098,6 +5100,8 @@ pub use clock_arrow_up::*;
 pub use clock_fading::*;
 #[cfg(feature = "time")]
 pub use clock_plus::*;
+#[cfg(any(feature = "accessibility", feature = "multimedia"))]
+pub use closed_caption::*;
 #[cfg(feature = "weather")]
 pub use cloud::*;
 #[cfg(feature = "development")]
@@ -5623,9 +5627,9 @@ pub use fish_symbol::*;
 pub use flag::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use flag_off::*;
-#[cfg(feature = "development")]
+#[cfg(any(feature = "development", feature = "navigation"))]
 pub use flag_triangle_left::*;
-#[cfg(feature = "development")]
+#[cfg(any(feature = "development", feature = "navigation"))]
 pub use flag_triangle_right::*;
 #[cfg(any(feature = "weather", feature = "social", feature = "gaming"))]
 pub use flame::*;
