@@ -1986,6 +1986,7 @@ pub fn IconsT() -> Html {
         (html! { <Truck /> }, "Truck"),
         (html! { <TruckElectric /> }, "Truck Electric"),
         (html! { <TurkishLira /> }, "Turkish Lira"),
+        (html! { <Turntable /> }, "Turntable"),
         (html! { <Turtle /> }, "Turtle"),
         (html! { <Tv /> }, "Tv"),
         (html! { <TvMinimal /> }, "Tv Minimal"),

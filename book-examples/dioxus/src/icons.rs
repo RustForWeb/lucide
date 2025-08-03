@@ -9553,6 +9553,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Turntable {}
+            },
+            "Turntable",
+        ),
+        (
+            rsx! {
                 Turtle {}
             },
             "Turtle",

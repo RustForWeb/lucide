@@ -3820,6 +3820,8 @@ mod truck;
 mod truck_electric;
 #[cfg(feature = "finance")]
 mod turkish_lira;
+#[cfg(any(feature = "multimedia", feature = "home"))]
+mod turntable;
 #[cfg(feature = "animals")]
 mod turtle;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
@@ -7951,6 +7953,8 @@ pub use truck::*;
 pub use truck_electric::*;
 #[cfg(feature = "finance")]
 pub use turkish_lira::*;
+#[cfg(any(feature = "multimedia", feature = "home"))]
+pub use turntable::*;
 #[cfg(feature = "animals")]
 pub use turtle::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]

@@ -1941,6 +1941,7 @@ pub fn IconsT() -> impl IntoView {
                 (view! { <Truck /> }.into_any(), "Truck"),
                 (view! { <TruckElectric /> }.into_any(), "Truck Electric"),
                 (view! { <TurkishLira /> }.into_any(), "Turkish Lira"),
+                (view! { <Turntable /> }.into_any(), "Turntable"),
                 (view! { <Turtle /> }.into_any(), "Turtle"),
                 (view! { <Tv /> }.into_any(), "Tv"),
                 (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),

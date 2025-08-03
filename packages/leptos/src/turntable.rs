@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn MessageCircleWarning(
+pub fn Turntable(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,10 @@ pub fn MessageCircleWarning(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
-            <path d="M12 8v4" />
-            <path d="M12 16h.01" />
+            <path d="M10 12.01h.01" />
+            <path d="M18 8v4a8 8 0 0 1-1.07 4" />
+            <circle cx="10" cy="12" r="4" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
         </svg>
     }
 }

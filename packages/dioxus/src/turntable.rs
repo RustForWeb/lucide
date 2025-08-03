@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct MessageSquareShareProps {
+pub struct TurntableProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct MessageSquareShareProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn MessageSquareShare(props: MessageSquareShareProps) -> Element {
+pub fn Turntable(props: TurntableProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,16 @@ pub fn MessageSquareShare(props: MessageSquareShareProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 3H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H20a2 2 0 0 0 2-2v-4" }
-            path { "d": "M16 3h6v6" }
-            path { "d": "m16 9 6-6" }
+            path { "d": "M10 12.01h.01" }
+            path { "d": "M18 8v4a8 8 0 0 1-1.07 4" }
+            circle { "cx": "10", "cy": "12", "r": "4" }
+            rect {
+                "x": "2",
+                "y": "4",
+                "width": "20",
+                "height": "16",
+                "rx": "2",
+            }
         }
     }
 }

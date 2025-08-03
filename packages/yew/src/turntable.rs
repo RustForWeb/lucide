@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct MessageSquareWarningProps {
+pub struct TurntableProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct MessageSquareWarningProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn MessageSquareWarning(props: &MessageSquareWarningProps) -> Html {
+pub fn Turntable(props: &TurntableProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,10 @@ pub fn MessageSquareWarning(props: &MessageSquareWarningProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
-            />
-            <path d="M12 15h.01" />
-            <path d="M12 7v4" />
+            <path d="M10 12.01h.01" />
+            <path d="M18 8v4a8 8 0 0 1-1.07 4" />
+            <circle cx="10" cy="12" r="4" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
         </svg>
     }
 }
