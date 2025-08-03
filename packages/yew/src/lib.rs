@@ -1739,8 +1739,6 @@ mod globe_lock;
 mod goal;
 #[cfg(any(feature = "devices", feature = "gaming"))]
 mod gpu;
-#[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
-mod grab;
 #[cfg(feature = "buildings")]
 mod graduation_cap;
 #[cfg(feature = "food-beverage")]
@@ -1787,6 +1785,15 @@ mod hammer;
 mod hand;
 #[cfg(any(feature = "finance", feature = "account"))]
 mod hand_coins;
+#[cfg(any(
+    feature = "social",
+    feature = "emoji",
+    feature = "communication",
+    feature = "sports"
+))]
+mod hand_fist;
+#[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
+mod hand_grab;
 #[cfg(feature = "social")]
 mod hand_heart;
 #[cfg(feature = "emoji")]
@@ -5863,8 +5870,6 @@ pub use globe_lock::*;
 pub use goal::*;
 #[cfg(any(feature = "devices", feature = "gaming"))]
 pub use gpu::*;
-#[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
-pub use grab::*;
 #[cfg(feature = "buildings")]
 pub use graduation_cap::*;
 #[cfg(feature = "food-beverage")]
@@ -5911,6 +5916,15 @@ pub use hammer::*;
 pub use hand::*;
 #[cfg(any(feature = "finance", feature = "account"))]
 pub use hand_coins::*;
+#[cfg(any(
+    feature = "social",
+    feature = "emoji",
+    feature = "communication",
+    feature = "sports"
+))]
+pub use hand_fist::*;
+#[cfg(any(feature = "cursors", feature = "design", feature = "layout"))]
+pub use hand_grab::*;
 #[cfg(feature = "social")]
 pub use hand_heart::*;
 #[cfg(feature = "emoji")]

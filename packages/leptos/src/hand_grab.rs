@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ScanHeart(
+pub fn HandGrab(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,11 @@ pub fn ScanHeart(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M17 3h2a2 2 0 0 1 2 2v2" />
-            <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
-            <path d="M3 7V5a2 2 0 0 1 2-2h2" />
-            <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-            <path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 4.172 4.306l-3.447 3.62a1 1 0 0 1-1.449 0z" />
+            <path d="M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
+            <path d="M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+            <path d="M10 9.9V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" />
+            <path d="M6 14a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+            <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" />
         </svg>
     }
 }

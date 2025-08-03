@@ -4609,12 +4609,6 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
-                Grab {}
-            },
-            "Grab",
-        ),
-        (
-            rsx! {
                 GraduationCap {}
             },
             "Graduation Cap",
@@ -4735,6 +4729,18 @@ pub fn IconsH1() -> Element {
                 HandCoins {}
             },
             "Hand Coins",
+        ),
+        (
+            rsx! {
+                HandFist {}
+            },
+            "Hand Fist",
+        ),
+        (
+            rsx! {
+                HandGrab {}
+            },
+            "Hand Grab",
         ),
         (
             rsx! {

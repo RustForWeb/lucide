@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BookHeartProps {
+pub struct HandGrabProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BookHeartProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn BookHeart(props: BookHeartProps) -> Element {
+pub fn HandGrab(props: HandGrabProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,11 @@ pub fn BookHeart(props: BookHeartProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" }
-            path { "d": "M8.62 9.8A2.25 2.25 0 1 1 12 6.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z" }
+            path { "d": "M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" }
+            path { "d": "M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" }
+            path { "d": "M10 9.9V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" }
+            path { "d": "M6 14a2 2 0 0 0-2-2a2 2 0 0 0-2 2" }
+            path { "d": "M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" }
         }
     }
 }
