@@ -2401,6 +2401,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleStar {}
+            },
+            "Circle Star",
+        ),
+        (
+            rsx! {
                 CircleStop {}
             },
             "Circle Stop",
@@ -2783,12 +2789,6 @@ pub fn IconsC2() -> Element {
             },
             "Coffee",
         ),
-        (
-            rsx! {
-                Cog {}
-            },
-            "Cog",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2804,6 +2804,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Cog {}
+            },
+            "Cog",
+        ),
         (
             rsx! {
                 Coins {}
@@ -8767,6 +8773,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareStar {}
+            },
+            "Square Star",
+        ),
+        (
+            rsx! {
                 SquareStop {}
             },
             "Square Stop",
@@ -8897,12 +8909,6 @@ pub fn IconsS2() -> Element {
             },
             "Store",
         ),
-        (
-            rsx! {
-                StretchHorizontal {}
-            },
-            "Stretch Horizontal",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8918,6 +8924,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                StretchHorizontal {}
+            },
+            "Stretch Horizontal",
+        ),
         (
             rsx! {
                 StretchVertical {}

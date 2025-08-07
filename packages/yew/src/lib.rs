@@ -904,6 +904,8 @@ mod circle_slash;
 mod circle_slash_2;
 #[cfg(any(feature = "shapes", feature = "medical"))]
 mod circle_small;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+mod circle_star;
 #[cfg(feature = "multimedia")]
 mod circle_stop;
 #[cfg(feature = "account")]
@@ -3538,6 +3540,8 @@ mod square_split_vertical;
 mod square_square;
 #[cfg(any(feature = "text", feature = "files", feature = "development"))]
 mod square_stack;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+mod square_star;
 #[cfg(feature = "multimedia")]
 mod square_stop;
 #[cfg(feature = "development")]
@@ -5037,6 +5041,8 @@ pub use circle_slash::*;
 pub use circle_slash_2::*;
 #[cfg(any(feature = "shapes", feature = "medical"))]
 pub use circle_small::*;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+pub use circle_star::*;
 #[cfg(feature = "multimedia")]
 pub use circle_stop::*;
 #[cfg(feature = "account")]
@@ -7671,6 +7677,8 @@ pub use square_split_vertical::*;
 pub use square_square::*;
 #[cfg(any(feature = "text", feature = "files", feature = "development"))]
 pub use square_stack::*;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+pub use square_star::*;
 #[cfg(feature = "multimedia")]
 pub use square_stop::*;
 #[cfg(feature = "development")]

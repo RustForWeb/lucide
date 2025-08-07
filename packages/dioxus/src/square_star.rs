@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct SchoolProps {
+pub struct SquareStarProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct SchoolProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn School(props: SchoolProps) -> Element {
+pub fn SquareStar(props: SquareStarProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,12 +34,14 @@ pub fn School(props: SchoolProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M14 21v-3a2 2 0 0 0-4 0v3" }
-            path { "d": "M18 5v16" }
-            path { "d": "m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" }
-            path { "d": "m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" }
-            path { "d": "M6 5v16" }
-            circle { "cx": "12", "cy": "9", "r": "2" }
+            path { "d": "M11.035 7.69a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z" }
+            rect {
+                "x": "3",
+                "y": "3",
+                "width": "18",
+                "height": "18",
+                "rx": "2",
+            }
         }
     }
 }
