@@ -1091,6 +1091,7 @@ pub fn IconsK() -> impl IntoView {
         <For
             each=move || [
                 (view! { <Kanban /> }.into_any(), "Kanban"),
+                (view! { <Kayak /> }.into_any(), "Kayak"),
                 (view! { <Key /> }.into_any(), "Key"),
                 (view! { <KeyRound /> }.into_any(), "Key Round"),
                 (view! { <KeySquare /> }.into_any(), "Key Square"),

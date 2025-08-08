@@ -2023,6 +2023,8 @@ mod japanese_yen;
 mod joystick;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
 mod kanban;
+#[cfg(feature = "transportation")]
+mod kayak;
 #[cfg(any(feature = "security", feature = "account"))]
 mod key;
 #[cfg(any(feature = "security", feature = "account"))]
@@ -6160,6 +6162,8 @@ pub use japanese_yen::*;
 pub use joystick::*;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
 pub use kanban::*;
+#[cfg(feature = "transportation")]
+pub use kayak::*;
 #[cfg(any(feature = "security", feature = "account"))]
 pub use key::*;
 #[cfg(any(feature = "security", feature = "account"))]

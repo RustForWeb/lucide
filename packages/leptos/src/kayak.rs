@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Apple(
+pub fn Kayak(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,10 @@ pub fn Apple(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 6.528V3a1 1 0 0 1 1-1h0" />
-            <path d="M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21" />
+            <path d="M18 17a1 1 0 0 0-1 1v1a2 2 0 1 0 2-2z" />
+            <path d="M20.97 3.61a.45.45 0 0 0-.58-.58C10.2 6.6 6.6 10.2 3.03 20.39a.45.45 0 0 0 .58.58C13.8 17.4 17.4 13.8 20.97 3.61" />
+            <path d="m6.707 6.707 10.586 10.586" />
+            <path d="M7 5a2 2 0 1 0-2 2h1a1 1 0 0 0 1-1z" />
         </svg>
     }
 }

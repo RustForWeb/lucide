@@ -5227,6 +5227,12 @@ pub fn IconsK1() -> Element {
         ),
         (
             rsx! {
+                Kayak {}
+            },
+            "Kayak",
+        ),
+        (
+            rsx! {
                 Key {}
             },
             "Key",

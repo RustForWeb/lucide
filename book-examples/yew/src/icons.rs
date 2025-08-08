@@ -1118,6 +1118,7 @@ pub fn IconsJ() -> Html {
 pub fn IconsK() -> Html {
     let icons = [
         (html! { <Kanban /> }, "Kanban"),
+        (html! { <Kayak /> }, "Kayak"),
         (html! { <Key /> }, "Key"),
         (html! { <KeyRound /> }, "Key Round"),
         (html! { <KeySquare /> }, "Key Square"),
