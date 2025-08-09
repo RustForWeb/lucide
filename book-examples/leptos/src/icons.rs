@@ -327,6 +327,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <BrainCog /> }.into_any(), "Brain Cog"),
                 (view! { <BrickWall /> }.into_any(), "Brick Wall"),
                 (view! { <BrickWallFire /> }.into_any(), "Brick Wall Fire"),
+                (view! { <BrickWallShield /> }.into_any(), "Brick Wall Shield"),
                 (view! { <Briefcase /> }.into_any(), "Briefcase"),
                 (view! { <BriefcaseBusiness /> }.into_any(), "Briefcase Business"),
                 (view! { <BriefcaseConveyorBelt /> }.into_any(), "Briefcase Conveyor Belt"),

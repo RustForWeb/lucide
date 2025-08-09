@@ -336,6 +336,7 @@ pub fn IconsB() -> Html {
         (html! { <BrainCog /> }, "Brain Cog"),
         (html! { <BrickWall /> }, "Brick Wall"),
         (html! { <BrickWallFire /> }, "Brick Wall Fire"),
+        (html! { <BrickWallShield /> }, "Brick Wall Shield"),
         (html! { <Briefcase /> }, "Briefcase"),
         (html! { <BriefcaseBusiness /> }, "Briefcase Business"),
         (

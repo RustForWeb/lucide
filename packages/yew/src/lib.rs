@@ -549,6 +549,8 @@ mod brain_cog;
 mod brick_wall;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
 mod brick_wall_fire;
+#[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
+mod brick_wall_shield;
 #[cfg(feature = "transportation")]
 mod briefcase;
 #[cfg(feature = "transportation")]
@@ -4688,6 +4690,8 @@ pub use brain_cog::*;
 pub use brick_wall::*;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
 pub use brick_wall_fire::*;
+#[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
+pub use brick_wall_shield::*;
 #[cfg(feature = "transportation")]
 pub use briefcase::*;
 #[cfg(feature = "transportation")]

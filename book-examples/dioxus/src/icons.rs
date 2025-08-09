@@ -1471,6 +1471,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BrickWallShield {}
+            },
+            "Brick Wall Shield",
+        ),
+        (
+            rsx! {
                 Briefcase {}
             },
             "Briefcase",
