@@ -1608,6 +1608,7 @@ pub fn IconsR() -> Html {
         (html! { <Rocket /> }, "Rocket"),
         (html! { <RockingChair /> }, "Rocking Chair"),
         (html! { <RollerCoaster /> }, "Roller Coaster"),
+        (html! { <Rose /> }, "Rose"),
         (html! { <Rotate3D /> }, "Rotate 3 D"),
         (html! { <RotateCcw /> }, "Rotate Ccw"),
         (html! { <RotateCcwKey /> }, "Rotate Ccw Key"),

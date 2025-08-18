@@ -1588,6 +1588,7 @@ pub fn IconsR() -> impl IntoView {
                 (view! { <Rocket /> }.into_any(), "Rocket"),
                 (view! { <RockingChair /> }.into_any(), "Rocking Chair"),
                 (view! { <RollerCoaster /> }.into_any(), "Roller Coaster"),
+                (view! { <Rose /> }.into_any(), "Rose"),
                 (view! { <Rotate3D /> }.into_any(), "Rotate 3 D"),
                 (view! { <RotateCcw /> }.into_any(), "Rotate Ccw"),
                 (view! { <RotateCcwKey /> }.into_any(), "Rotate Ccw Key"),

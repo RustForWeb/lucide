@@ -2944,6 +2944,14 @@ mod rocket;
 mod rocking_chair;
 #[cfg(feature = "navigation")]
 mod roller_coaster;
+#[cfg(any(
+    feature = "nature",
+    feature = "seasons",
+    feature = "sustainability",
+    feature = "home",
+    feature = "social"
+))]
+mod rose;
 #[cfg(feature = "design")]
 mod rotate_3_d;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
@@ -7085,6 +7093,14 @@ pub use rocket::*;
 pub use rocking_chair::*;
 #[cfg(feature = "navigation")]
 pub use roller_coaster::*;
+#[cfg(any(
+    feature = "nature",
+    feature = "seasons",
+    feature = "sustainability",
+    feature = "home",
+    feature = "social"
+))]
+pub use rose::*;
 #[cfg(feature = "design")]
 pub use rotate_3_d::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]

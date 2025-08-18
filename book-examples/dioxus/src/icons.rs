@@ -7597,6 +7597,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                Rose {}
+            },
+            "Rose",
+        ),
+        (
+            rsx! {
                 Rotate3D {}
             },
             "Rotate 3 D",

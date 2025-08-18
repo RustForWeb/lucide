@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CameraProps {
+pub struct RoseProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CameraProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Camera(props: &CameraProps) -> Html {
+pub fn Rose(props: &RoseProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,10 +41,13 @@ pub fn Camera(props: &CameraProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
+            <path d="M17 10h-1a4 4 0 1 1 4-4v.534" />
+            <path d="M17 6h1a4 4 0 0 1 1.42 7.74l-2.29.87a6 6 0 0 1-5.339-10.68l2.069-1.31" />
             <path
-                d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"
+                d="M4.5 17c2.8-.5 4.4 0 5.5.8s1.8 2.2 2.3 3.7c-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2"
             />
-            <circle cx="12" cy="13" r="3" />
+            <path d="M9.77 12C4 15 2 22 2 22" />
+            <circle cx="17" cy="8" r="2" />
         </svg>
     }
 }
