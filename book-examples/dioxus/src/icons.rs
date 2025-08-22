@@ -26,6 +26,7 @@ pub fn Icons() -> Element {
             IconsN1 {}
             IconsO1 {}
             IconsP1 {}
+            IconsP2 {}
             IconsQ1 {}
             IconsR1 {}
             IconsS1 {}
@@ -2128,9 +2129,9 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
-                Chrome {}
+                Chromium {}
             },
-            "Chrome",
+            "Chromium",
         ),
         (
             rsx! {
@@ -6793,6 +6794,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PanelLeftRightDashed {}
+            },
+            "Panel Left Right Dashed",
+        ),
+        (
+            rsx! {
                 PanelRight {}
             },
             "Panel Right",
@@ -6820,6 +6827,12 @@ pub fn IconsP1() -> Element {
                 PanelTop {}
             },
             "Panel Top",
+        ),
+        (
+            rsx! {
+                PanelTopBottomDashed {}
+            },
+            "Panel Top Bottom Dashed",
         ),
         (
             rsx! {
@@ -7247,13 +7260,26 @@ pub fn IconsP1() -> Element {
             },
             "Puzzle",
         ),
-        (
-            rsx! {
-                Pyramid {}
-            },
-            "Pyramid",
-        ),
     ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsP2() -> Element {
+    let icons = [(
+        rsx! {
+            Pyramid {}
+        },
+        "Pyramid",
+    )];
     rsx! {
         for (icon , name) in icons {
             div {

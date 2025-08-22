@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BuildingProps {
+pub struct ChromiumProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BuildingProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Building(props: BuildingProps) -> Element {
+pub fn Chromium(props: ChromiumProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,23 +34,11 @@ pub fn Building(props: BuildingProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 10h.01" }
-            path { "d": "M12 14h.01" }
-            path { "d": "M12 6h.01" }
-            path { "d": "M16 10h.01" }
-            path { "d": "M16 14h.01" }
-            path { "d": "M16 6h.01" }
-            path { "d": "M8 10h.01" }
-            path { "d": "M8 14h.01" }
-            path { "d": "M8 6h.01" }
-            path { "d": "M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" }
-            rect {
-                "x": "4",
-                "y": "2",
-                "width": "16",
-                "height": "20",
-                "rx": "2",
-            }
+            path { "d": "M10.88 21.94 15.46 14" }
+            path { "d": "M21.17 8H12" }
+            path { "d": "M3.95 6.06 8.54 14" }
+            circle { "cx": "12", "cy": "12", "r": "10" }
+            circle { "cx": "12", "cy": "12", "r": "4" }
         }
     }
 }

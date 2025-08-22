@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Building(
+pub fn PanelLeftRightDashed(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,17 +29,15 @@ pub fn Building(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 10h.01" />
-            <path d="M12 14h.01" />
-            <path d="M12 6h.01" />
-            <path d="M16 10h.01" />
-            <path d="M16 14h.01" />
-            <path d="M16 6h.01" />
-            <path d="M8 10h.01" />
-            <path d="M8 14h.01" />
-            <path d="M8 6h.01" />
-            <path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" />
-            <rect x="4" y="2" width="16" height="20" rx="2" />
+            <path d="M16 10V9" />
+            <path d="M16 15v-1" />
+            <path d="M16 21v-2" />
+            <path d="M16 5V3" />
+            <path d="M8 10V9" />
+            <path d="M8 15v-1" />
+            <path d="M8 21v-2" />
+            <path d="M8 5V3" />
+            <rect x="3" y="3" width="18" height="18" rx="2" />
         </svg>
     }
 }

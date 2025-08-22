@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BuildingProps {
+pub struct PanelLeftRightDashedProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BuildingProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Building(props: BuildingProps) -> Element {
+pub fn PanelLeftRightDashed(props: PanelLeftRightDashedProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,21 +34,19 @@ pub fn Building(props: BuildingProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 10h.01" }
-            path { "d": "M12 14h.01" }
-            path { "d": "M12 6h.01" }
-            path { "d": "M16 10h.01" }
-            path { "d": "M16 14h.01" }
-            path { "d": "M16 6h.01" }
-            path { "d": "M8 10h.01" }
-            path { "d": "M8 14h.01" }
-            path { "d": "M8 6h.01" }
-            path { "d": "M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" }
+            path { "d": "M16 10V9" }
+            path { "d": "M16 15v-1" }
+            path { "d": "M16 21v-2" }
+            path { "d": "M16 5V3" }
+            path { "d": "M8 10V9" }
+            path { "d": "M8 15v-1" }
+            path { "d": "M8 21v-2" }
+            path { "d": "M8 5V3" }
             rect {
-                "x": "4",
-                "y": "2",
-                "width": "16",
-                "height": "20",
+                "x": "3",
+                "y": "3",
+                "width": "18",
+                "height": "18",
                 "rx": "2",
             }
         }

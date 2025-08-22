@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CogProps {
+pub struct PanelTopBottomDashedProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CogProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Cog(props: &CogProps) -> Html {
+pub fn PanelTopBottomDashed(props: &PanelTopBottomDashedProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,20 +41,15 @@ pub fn Cog(props: &CogProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 10.27 7 3.34" />
-            <path d="m11 13.73-4 6.93" />
-            <path d="M12 22v-2" />
-            <path d="M12 2v2" />
-            <path d="M14 12h8" />
-            <path d="m17 20.66-1-1.73" />
-            <path d="m17 3.34-1 1.73" />
-            <path d="M2 12h2" />
-            <path d="m20.66 17-1.73-1" />
-            <path d="m20.66 7-1.73 1" />
-            <path d="m3.34 17 1.73-1" />
-            <path d="m3.34 7 1.73 1" />
-            <circle cx="12" cy="12" r="2" />
-            <circle cx="12" cy="12" r="8" />
+            <path d="M14 16h1" />
+            <path d="M14 8h1" />
+            <path d="M19 16h2" />
+            <path d="M19 8h2" />
+            <path d="M3 16h2" />
+            <path d="M3 8h2" />
+            <path d="M9 16h1" />
+            <path d="M9 8h1" />
+            <rect x="3" y="3" width="18" height="18" rx="2" />
         </svg>
     }
 }

@@ -807,7 +807,7 @@ mod chevrons_up;
 #[cfg(feature = "arrows")]
 mod chevrons_up_down;
 #[cfg(feature = "brands")]
-mod chrome;
+mod chromium;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 mod church;
 #[cfg(any(feature = "travel", feature = "transportation", feature = "medical"))]
@@ -2593,6 +2593,8 @@ mod panel_left_dashed;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 mod panel_left_open;
 #[cfg(feature = "layout")]
+mod panel_left_right_dashed;
+#[cfg(feature = "layout")]
 mod panel_right;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 mod panel_right_close;
@@ -2602,6 +2604,8 @@ mod panel_right_dashed;
 mod panel_right_open;
 #[cfg(any(feature = "layout", feature = "design", feature = "development"))]
 mod panel_top;
+#[cfg(feature = "layout")]
+mod panel_top_bottom_dashed;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 mod panel_top_close;
 #[cfg(feature = "layout")]
@@ -4956,7 +4960,7 @@ pub use chevrons_up::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_up_down::*;
 #[cfg(feature = "brands")]
-pub use chrome::*;
+pub use chromium::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use church::*;
 #[cfg(any(feature = "travel", feature = "transportation", feature = "medical"))]
@@ -6742,6 +6746,8 @@ pub use panel_left_dashed::*;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 pub use panel_left_open::*;
 #[cfg(feature = "layout")]
+pub use panel_left_right_dashed::*;
+#[cfg(feature = "layout")]
 pub use panel_right::*;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 pub use panel_right_close::*;
@@ -6751,6 +6757,8 @@ pub use panel_right_dashed::*;
 pub use panel_right_open::*;
 #[cfg(any(feature = "layout", feature = "design", feature = "development"))]
 pub use panel_top::*;
+#[cfg(feature = "layout")]
+pub use panel_top_bottom_dashed::*;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 pub use panel_top_close::*;
 #[cfg(feature = "layout")]
