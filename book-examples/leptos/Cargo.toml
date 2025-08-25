@@ -9,13 +9,13 @@ license.workspace = true
 repository.workspace = true
 version.workspace = true
 
+[features]
+default = []
+icons = ["dep:lucide-leptos", "lucide-leptos/all-icons"]
+
 [dependencies]
 console_error_panic_hook.workspace = true
 console_log.workspace = true
 leptos = { workspace = true, features = ["csr"] }
 log.workspace = true
 lucide-leptos = { path = "../../packages/leptos", optional = true }
-
-[features]
-default = []
-icons = ["dep:lucide-leptos", "lucide-leptos/all-icons"]

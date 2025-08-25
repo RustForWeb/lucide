@@ -9,9 +9,6 @@ license.workspace = true
 repository.workspace = true
 version.workspace = true
 
-[dependencies]
-yew.workspace = true
-
 [features]
 default = []
 accessibility = []
@@ -102,3 +99,6 @@ all-icons = [
     "travel",
     "weather",
 ]
+
+[dependencies]
+yew.workspace = true

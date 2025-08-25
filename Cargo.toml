@@ -10,8 +10,8 @@ repository = "https://github.com/RustForWeb/lucide"
 version = "2.31.0"
 
 [workspace.dependencies]
-console_log = "1.0.0"
 console_error_panic_hook = "0.1.7"
+console_log = "1.0.0"
 dioxus = "0.6.0"
 leptos = "0.8.0"
 log = "0.4.22"

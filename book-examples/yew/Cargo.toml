@@ -9,13 +9,13 @@ license.workspace = true
 repository.workspace = true
 version.workspace = true
 
+[features]
+default = []
+icons = ["dep:lucide-yew", "lucide-yew/all-icons"]
+
 [dependencies]
 console_error_panic_hook.workspace = true
 console_log.workspace = true
 log.workspace = true
 lucide-yew = { path = "../../packages/yew", optional = true }
 yew = { workspace = true, features = ["csr"] }
-
-[features]
-default = []
-icons = ["dep:lucide-yew", "lucide-yew/all-icons"]
