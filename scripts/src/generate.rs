@@ -227,11 +227,14 @@ fn generate_features(
 
     let mut file_contents = fs::read_to_string(&file_path)?;
 
-    let index = file_contents.find("[features]");
-    if let Some(index) = index {
-        file_contents = file_contents[0..index].to_string();
-    }
-    file_contents = file_contents.trim_end_matches("\n").to_string();
+    let start_index = file_contents.find("[features]").ok_or_else(|| {
+        Box::<dyn Error>::from(format!("`{file_path:?}` does not contain `[features]`."))
+    })?;
+    let end_index = file_contents.find("[dependencies]").ok_or_else(|| {
+        Box::<dyn Error>::from(format!(
+            "`{file_path:?}` does not contain `[dependencies]`."
+        ))
+    })?;
 
     let mut features = metadatas
         .iter()
@@ -253,10 +256,12 @@ fn generate_features(
         .join("\n");
 
     let output = format!(
-        "{file_contents}\n\n[features]\ndefault = []\n{output_features}\nall-icons = [\n{output_all_features}\n]\n"
+        "[features]\ndefault = []\n{output_features}\nall-icons = [\n{output_all_features}\n]\n\n"
     );
 
-    fs::write(&file_path, output)?;
+    file_contents.replace_range(start_index..end_index, &output);
+
+    fs::write(&file_path, file_contents)?;
 
     Ok(())
 }
