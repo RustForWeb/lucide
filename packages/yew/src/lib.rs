@@ -2148,6 +2148,8 @@ mod list;
 mod list_check;
 #[cfg(feature = "text")]
 mod list_checks;
+#[cfg(any(feature = "text", feature = "arrows"))]
+mod list_chevrons_down_up;
 #[cfg(feature = "text")]
 mod list_collapse;
 #[cfg(any(feature = "multimedia", feature = "text"))]
@@ -6301,6 +6303,8 @@ pub use list::*;
 pub use list_check::*;
 #[cfg(feature = "text")]
 pub use list_checks::*;
+#[cfg(any(feature = "text", feature = "arrows"))]
+pub use list_chevrons_down_up::*;
 #[cfg(feature = "text")]
 pub use list_collapse::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]

@@ -99,6 +99,3 @@ all-icons = [
     "travel",
     "weather",
 ]
-
-[dependencies]
-leptos.workspace = true

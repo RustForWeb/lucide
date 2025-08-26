@@ -5537,6 +5537,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                ListChevronsDownUp {}
+            },
+            "List Chevrons Down Up",
+        ),
+        (
+            rsx! {
                 ListCollapse {}
             },
             "List Collapse",

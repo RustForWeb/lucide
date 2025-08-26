@@ -1183,6 +1183,7 @@ pub fn IconsL() -> Html {
         (html! { <List /> }, "List"),
         (html! { <ListCheck /> }, "List Check"),
         (html! { <ListChecks /> }, "List Checks"),
+        (html! { <ListChevronsDownUp /> }, "List Chevrons Down Up"),
         (html! { <ListCollapse /> }, "List Collapse"),
         (html! { <ListEnd /> }, "List End"),
         (html! { <ListFilter /> }, "List Filter"),

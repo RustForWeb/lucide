@@ -99,6 +99,3 @@ all-icons = [
     "travel",
     "weather",
 ]
-
-[dependencies]
-yew.workspace = true
