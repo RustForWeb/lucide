@@ -48,19 +48,20 @@ jobs:
             - name: Check formatting
               run: cargo fmt --all --check
 
-    test:
-        name: Test
-        runs-on: ubuntu-latest
+    # This repository has no tests, so save some time by skipping test builds for all components.
+    # test:
+    #     name: Test
+    #     runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v5
+    #     steps:
+    #         - name: Checkout
+    #           uses: actions/checkout@v5
 
-            - name: Set up Rust toolchain
-              uses: actions-rust-lang/setup-rust-toolchain@v1
-              with:
-                  components: clippy, rustfmt
-                  target: wasm32-unknown-unknown
+    #         - name: Set up Rust toolchain
+    #           uses: actions-rust-lang/setup-rust-toolchain@v1
+    #           with:
+    #               components: clippy, rustfmt
+    #               target: wasm32-unknown-unknown
 
-            - name: Test
-              run: cargo test --all-features --locked --release
+    #         - name: Test
+    #           run: cargo test --all-features --locked --release
