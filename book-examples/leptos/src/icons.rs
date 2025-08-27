@@ -1157,6 +1157,7 @@ pub fn IconsL() -> impl IntoView {
                 (view! { <List /> }.into_any(), "List"),
                 (view! { <ListCheck /> }.into_any(), "List Check"),
                 (view! { <ListChecks /> }.into_any(), "List Checks"),
+                (view! { <ListChevronsDownUp /> }.into_any(), "List Chevrons Down Up"),
                 (view! { <ListCollapse /> }.into_any(), "List Collapse"),
                 (view! { <ListEnd /> }.into_any(), "List End"),
                 (view! { <ListFilter /> }.into_any(), "List Filter"),
