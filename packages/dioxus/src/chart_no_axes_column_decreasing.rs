@@ -34,9 +34,9 @@ pub fn ChartNoAxesColumnDecreasing(props: ChartNoAxesColumnDecreasingProps) -> E
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 20V10" }
-            path { "d": "M18 20v-4" }
-            path { "d": "M6 20V4" }
+            path { "d": "M5 21V3" }
+            path { "d": "M12 21V9" }
+            path { "d": "M19 21v-6" }
         }
     }
 }

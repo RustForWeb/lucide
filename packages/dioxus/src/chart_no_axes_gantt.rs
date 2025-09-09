@@ -34,9 +34,9 @@ pub fn ChartNoAxesGantt(props: ChartNoAxesGanttProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M8 6h10" }
-            path { "d": "M6 12h9" }
-            path { "d": "M11 18h7" }
+            path { "d": "M6 5h12" }
+            path { "d": "M4 12h10" }
+            path { "d": "M12 19h8" }
         }
     }
 }

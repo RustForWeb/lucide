@@ -34,9 +34,9 @@ pub fn Kanban(props: KanbanProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M6 5v11" }
-            path { "d": "M12 5v6" }
-            path { "d": "M18 5v14" }
+            path { "d": "M5 3v14" }
+            path { "d": "M12 3v8" }
+            path { "d": "M19 3v18" }
         }
     }
 }

@@ -131,12 +131,6 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
-                AlignCenter {}
-            },
-            "Align Center",
-        ),
-        (
-            rsx! {
                 AlignCenterHorizontal {}
             },
             "Align Center Horizontal",
@@ -206,24 +200,6 @@ pub fn IconsA1() -> Element {
                 AlignHorizontalSpaceBetween {}
             },
             "Align Horizontal Space Between",
-        ),
-        (
-            rsx! {
-                AlignJustify {}
-            },
-            "Align Justify",
-        ),
-        (
-            rsx! {
-                AlignLeft {}
-            },
-            "Align Left",
-        ),
-        (
-            rsx! {
-                AlignRight {}
-            },
-            "Align Right",
         ),
         (
             rsx! {
@@ -645,21 +621,6 @@ pub fn IconsA1() -> Element {
             },
             "Arrows Up From Line",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsA2() -> Element {
-    let icons = [
         (
             rsx! {
                 Asterisk {}
@@ -684,6 +645,21 @@ pub fn IconsA2() -> Element {
             },
             "Audio Lines",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsA2() -> Element {
+    let icons = [
         (
             rsx! {
                 AudioWaveform {}
@@ -5003,6 +4979,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HouseHeart {}
+            },
+            "House Heart",
+        ),
+        (
+            rsx! {
                 HousePlug {}
             },
             "House Plug",
@@ -5123,18 +5105,6 @@ pub fn IconsI1() -> Element {
                 Inbox {}
             },
             "Inbox",
-        ),
-        (
-            rsx! {
-                IndentDecrease {}
-            },
-            "Indent Decrease",
-        ),
-        (
-            rsx! {
-                IndentIncrease {}
-            },
-            "Indent Increase",
         ),
         (
             rsx! {
@@ -5447,12 +5417,6 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
-                LetterText {}
-            },
-            "Letter Text",
-        ),
-        (
-            rsx! {
                 Library {}
             },
             "Library",
@@ -5543,6 +5507,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                ListChevronsUpDown {}
+            },
+            "List Chevrons Up Down",
+        ),
+        (
+            rsx! {
                 ListCollapse {}
             },
             "List Collapse",
@@ -5564,6 +5534,18 @@ pub fn IconsL1() -> Element {
                 ListFilterPlus {}
             },
             "List Filter Plus",
+        ),
+        (
+            rsx! {
+                ListIndentDecrease {}
+            },
+            "List Indent Decrease",
+        ),
+        (
+            rsx! {
+                ListIndentIncrease {}
+            },
+            "List Indent Increase",
         ),
         (
             rsx! {
@@ -9261,9 +9243,27 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
-                Text {}
+                TextAlignCenter {}
             },
-            "Text",
+            "Text Align Center",
+        ),
+        (
+            rsx! {
+                TextAlignEnd {}
+            },
+            "Text Align End",
+        ),
+        (
+            rsx! {
+                TextAlignJustify {}
+            },
+            "Text Align Justify",
+        ),
+        (
+            rsx! {
+                TextAlignStart {}
+            },
+            "Text Align Start",
         ),
         (
             rsx! {
@@ -9276,6 +9276,12 @@ pub fn IconsT1() -> Element {
                 TextCursorInput {}
             },
             "Text Cursor Input",
+        ),
+        (
+            rsx! {
+                TextInitial {}
+            },
+            "Text Initial",
         ),
         (
             rsx! {
@@ -9294,6 +9300,12 @@ pub fn IconsT1() -> Element {
                 TextSelect {}
             },
             "Text Select",
+        ),
+        (
+            rsx! {
+                TextWrap {}
+            },
+            "Text Wrap",
         ),
         (
             rsx! {
@@ -10263,12 +10275,6 @@ pub fn IconsW1() -> Element {
                 Worm {}
             },
             "Worm",
-        ),
-        (
-            rsx! {
-                WrapText {}
-            },
-            "Wrap Text",
         ),
         (
             rsx! {

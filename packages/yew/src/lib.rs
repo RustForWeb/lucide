@@ -45,8 +45,6 @@ mod alarm_clock_plus;
 mod alarm_smoke;
 #[cfg(any(feature = "photography", feature = "multimedia"))]
 mod album;
-#[cfg(feature = "text")]
-mod align_center;
 #[cfg(feature = "layout")]
 mod align_center_horizontal;
 #[cfg(feature = "layout")]
@@ -71,12 +69,6 @@ mod align_horizontal_justify_start;
 mod align_horizontal_space_around;
 #[cfg(feature = "layout")]
 mod align_horizontal_space_between;
-#[cfg(feature = "text")]
-mod align_justify;
-#[cfg(feature = "text")]
-mod align_left;
-#[cfg(feature = "text")]
-mod align_right;
 #[cfg(feature = "layout")]
 mod align_start_horizontal;
 #[cfg(feature = "layout")]
@@ -1938,6 +1930,8 @@ mod hotel;
 mod hourglass;
 #[cfg(any(feature = "buildings", feature = "home"))]
 mod house;
+#[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
+mod house_heart;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
 mod house_plug;
 #[cfg(any(feature = "buildings", feature = "medical"))]
@@ -1999,10 +1993,6 @@ mod images;
 mod import;
 #[cfg(any(feature = "account", feature = "mail"))]
 mod inbox;
-#[cfg(any(feature = "text", feature = "development"))]
-mod indent_decrease;
-#[cfg(any(feature = "text", feature = "development"))]
-mod indent_increase;
 #[cfg(feature = "finance")]
 mod indian_rupee;
 #[cfg(feature = "multimedia")]
@@ -2106,8 +2096,6 @@ mod leaf;
 mod leafy_green;
 #[cfg(any(feature = "communication", feature = "multimedia"))]
 mod lectern;
-#[cfg(feature = "text")]
-mod letter_text;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -2150,6 +2138,8 @@ mod list_check;
 mod list_checks;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod list_chevrons_down_up;
+#[cfg(any(feature = "text", feature = "arrows"))]
+mod list_chevrons_up_down;
 #[cfg(feature = "text")]
 mod list_collapse;
 #[cfg(any(feature = "multimedia", feature = "text"))]
@@ -2158,6 +2148,10 @@ mod list_end;
 mod list_filter;
 #[cfg(any(feature = "text", feature = "layout"))]
 mod list_filter_plus;
+#[cfg(any(feature = "text", feature = "development"))]
+mod list_indent_decrease;
+#[cfg(any(feature = "text", feature = "development"))]
+mod list_indent_increase;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod list_minus;
 #[cfg(feature = "multimedia")]
@@ -3717,18 +3711,28 @@ mod test_tube;
 mod test_tube_diagonal;
 #[cfg(feature = "science")]
 mod test_tubes;
-#[cfg(any(feature = "text", feature = "files", feature = "cursors"))]
-mod text;
+#[cfg(feature = "text")]
+mod text_align_center;
+#[cfg(feature = "text")]
+mod text_align_end;
+#[cfg(feature = "text")]
+mod text_align_justify;
+#[cfg(feature = "text")]
+mod text_align_start;
 #[cfg(any(feature = "text", feature = "cursors"))]
 mod text_cursor;
 #[cfg(any(feature = "text", feature = "layout"))]
 mod text_cursor_input;
+#[cfg(feature = "text")]
+mod text_initial;
 #[cfg(feature = "text")]
 mod text_quote;
 #[cfg(feature = "text")]
 mod text_search;
 #[cfg(any(feature = "text", feature = "cursors"))]
 mod text_select;
+#[cfg(any(feature = "text", feature = "arrows"))]
+mod text_wrap;
 #[cfg(any(feature = "buildings", feature = "social"))]
 mod theater;
 #[cfg(feature = "weather")]
@@ -4122,8 +4126,6 @@ mod wine_off;
 mod workflow;
 #[cfg(any(feature = "animals", feature = "security"))]
 mod worm;
-#[cfg(any(feature = "text", feature = "arrows"))]
-mod wrap_text;
 #[cfg(any(feature = "account", feature = "development", feature = "tools"))]
 mod wrench;
 #[cfg(any(feature = "notifications", feature = "math"))]
@@ -4200,8 +4202,6 @@ pub use alarm_clock_plus::*;
 pub use alarm_smoke::*;
 #[cfg(any(feature = "photography", feature = "multimedia"))]
 pub use album::*;
-#[cfg(feature = "text")]
-pub use align_center::*;
 #[cfg(feature = "layout")]
 pub use align_center_horizontal::*;
 #[cfg(feature = "layout")]
@@ -4226,12 +4226,6 @@ pub use align_horizontal_justify_start::*;
 pub use align_horizontal_space_around::*;
 #[cfg(feature = "layout")]
 pub use align_horizontal_space_between::*;
-#[cfg(feature = "text")]
-pub use align_justify::*;
-#[cfg(feature = "text")]
-pub use align_left::*;
-#[cfg(feature = "text")]
-pub use align_right::*;
 #[cfg(feature = "layout")]
 pub use align_start_horizontal::*;
 #[cfg(feature = "layout")]
@@ -6093,6 +6087,8 @@ pub use hotel::*;
 pub use hourglass::*;
 #[cfg(any(feature = "buildings", feature = "home"))]
 pub use house::*;
+#[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
+pub use house_heart::*;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
 pub use house_plug::*;
 #[cfg(any(feature = "buildings", feature = "medical"))]
@@ -6154,10 +6150,6 @@ pub use images::*;
 pub use import::*;
 #[cfg(any(feature = "account", feature = "mail"))]
 pub use inbox::*;
-#[cfg(any(feature = "text", feature = "development"))]
-pub use indent_decrease::*;
-#[cfg(any(feature = "text", feature = "development"))]
-pub use indent_increase::*;
 #[cfg(feature = "finance")]
 pub use indian_rupee::*;
 #[cfg(feature = "multimedia")]
@@ -6261,8 +6253,6 @@ pub use leaf::*;
 pub use leafy_green::*;
 #[cfg(any(feature = "communication", feature = "multimedia"))]
 pub use lectern::*;
-#[cfg(feature = "text")]
-pub use letter_text::*;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -6305,6 +6295,8 @@ pub use list_check::*;
 pub use list_checks::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use list_chevrons_down_up::*;
+#[cfg(any(feature = "text", feature = "arrows"))]
+pub use list_chevrons_up_down::*;
 #[cfg(feature = "text")]
 pub use list_collapse::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
@@ -6313,6 +6305,10 @@ pub use list_end::*;
 pub use list_filter::*;
 #[cfg(any(feature = "text", feature = "layout"))]
 pub use list_filter_plus::*;
+#[cfg(any(feature = "text", feature = "development"))]
+pub use list_indent_decrease::*;
+#[cfg(any(feature = "text", feature = "development"))]
+pub use list_indent_increase::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use list_minus::*;
 #[cfg(feature = "multimedia")]
@@ -7872,18 +7868,28 @@ pub use test_tube::*;
 pub use test_tube_diagonal::*;
 #[cfg(feature = "science")]
 pub use test_tubes::*;
-#[cfg(any(feature = "text", feature = "files", feature = "cursors"))]
-pub use text::*;
+#[cfg(feature = "text")]
+pub use text_align_center::*;
+#[cfg(feature = "text")]
+pub use text_align_end::*;
+#[cfg(feature = "text")]
+pub use text_align_justify::*;
+#[cfg(feature = "text")]
+pub use text_align_start::*;
 #[cfg(any(feature = "text", feature = "cursors"))]
 pub use text_cursor::*;
 #[cfg(any(feature = "text", feature = "layout"))]
 pub use text_cursor_input::*;
+#[cfg(feature = "text")]
+pub use text_initial::*;
 #[cfg(feature = "text")]
 pub use text_quote::*;
 #[cfg(feature = "text")]
 pub use text_search::*;
 #[cfg(any(feature = "text", feature = "cursors"))]
 pub use text_select::*;
+#[cfg(any(feature = "text", feature = "arrows"))]
+pub use text_wrap::*;
 #[cfg(any(feature = "buildings", feature = "social"))]
 pub use theater::*;
 #[cfg(feature = "weather")]
@@ -8277,8 +8283,6 @@ pub use wine_off::*;
 pub use workflow::*;
 #[cfg(any(feature = "animals", feature = "security"))]
 pub use worm::*;
-#[cfg(any(feature = "text", feature = "arrows"))]
-pub use wrap_text::*;
 #[cfg(any(feature = "account", feature = "development", feature = "tools"))]
 pub use wrench::*;
 #[cfg(any(feature = "notifications", feature = "math"))]

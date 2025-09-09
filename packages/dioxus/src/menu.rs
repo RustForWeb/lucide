@@ -34,9 +34,9 @@ pub fn Menu(props: MenuProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            path { "d": "M4 5h16" }
             path { "d": "M4 12h16" }
-            path { "d": "M4 18h16" }
-            path { "d": "M4 6h16" }
+            path { "d": "M4 19h16" }
         }
     }
 }
