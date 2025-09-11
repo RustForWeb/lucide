@@ -711,6 +711,7 @@ pub fn IconsE() -> impl IntoView {
                 (view! { <Eraser /> }.into_any(), "Eraser"),
                 (view! { <EthernetPort /> }.into_any(), "Ethernet Port"),
                 (view! { <Euro /> }.into_any(), "Euro"),
+                (view! { <EvCharger /> }.into_any(), "Ev Charger"),
                 (view! { <Expand /> }.into_any(), "Expand"),
                 (view! { <ExternalLink /> }.into_any(), "External Link"),
                 (view! { <Eye /> }.into_any(), "Eye"),

@@ -1319,6 +1319,8 @@ mod eraser;
 mod ethernet_port;
 #[cfg(feature = "finance")]
 mod euro;
+#[cfg(any(feature = "transportation", feature = "navigation"))]
+mod ev_charger;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod expand;
 #[cfg(any(feature = "arrows", feature = "text", feature = "social"))]
@@ -5476,6 +5478,8 @@ pub use eraser::*;
 pub use ethernet_port::*;
 #[cfg(feature = "finance")]
 pub use euro::*;
+#[cfg(any(feature = "transportation", feature = "navigation"))]
+pub use ev_charger::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use expand::*;
 #[cfg(any(feature = "arrows", feature = "text", feature = "social"))]

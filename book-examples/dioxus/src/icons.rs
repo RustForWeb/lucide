@@ -3491,6 +3491,12 @@ pub fn IconsE1() -> Element {
         ),
         (
             rsx! {
+                EvCharger {}
+            },
+            "Ev Charger",
+        ),
+        (
+            rsx! {
                 Expand {}
             },
             "Expand",

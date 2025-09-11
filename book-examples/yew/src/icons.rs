@@ -738,6 +738,7 @@ pub fn IconsE() -> Html {
         (html! { <Eraser /> }, "Eraser"),
         (html! { <EthernetPort /> }, "Ethernet Port"),
         (html! { <Euro /> }, "Euro"),
+        (html! { <EvCharger /> }, "Ev Charger"),
         (html! { <Expand /> }, "Expand"),
         (html! { <ExternalLink /> }, "External Link"),
         (html! { <Eye /> }, "Eye"),
