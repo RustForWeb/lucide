@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Building2(
+pub fn Motorbike(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,11 @@ pub fn Building2(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 12h4" />
-            <path d="M10 8h4" />
-            <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-            <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
-            <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+            <path d="m18 14-1-3" />
+            <path d="m3 9 6 2a2 2 0 0 1 2-2h2a2 2 0 0 1 1.99 1.81" />
+            <path d="M8 17h3a1 1 0 0 0 1-1 6 6 0 0 1 6-6 1 1 0 0 0 1-1v-.75A5 5 0 0 0 17 5" />
+            <circle cx="19" cy="17" r="3" />
+            <circle cx="5" cy="17" r="3" />
         </svg>
     }
 }

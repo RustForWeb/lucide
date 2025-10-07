@@ -1300,6 +1300,7 @@ pub fn IconsM() -> impl IntoView {
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
                 (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
+                (view! { <Motorbike /> }.into_any(), "Motorbike"),
                 (view! { <Mountain /> }.into_any(), "Mountain"),
                 (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
                 (view! { <Mouse /> }.into_any(), "Mouse"),

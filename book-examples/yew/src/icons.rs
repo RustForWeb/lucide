@@ -1325,6 +1325,7 @@ pub fn IconsM() -> Html {
         (html! { <MonitorX /> }, "Monitor X"),
         (html! { <Moon /> }, "Moon"),
         (html! { <MoonStar /> }, "Moon Star"),
+        (html! { <Motorbike /> }, "Motorbike"),
         (html! { <Mountain /> }, "Mountain"),
         (html! { <MountainSnow /> }, "Mountain Snow"),
         (html! { <Mouse /> }, "Mouse"),
