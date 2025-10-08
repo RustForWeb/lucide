@@ -6290,6 +6290,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                Motorbike {}
+            },
+            "Motorbike",
+        ),
+        (
+            rsx! {
                 Mountain {}
             },
             "Mountain",
@@ -6312,12 +6318,6 @@ pub fn IconsM1() -> Element {
             },
             "Mouse Off",
         ),
-        (
-            rsx! {
-                MousePointer {}
-            },
-            "Mouse Pointer",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -6333,6 +6333,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MousePointer {}
+            },
+            "Mouse Pointer",
+        ),
         (
             rsx! {
                 MousePointer2 {}

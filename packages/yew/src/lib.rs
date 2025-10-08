@@ -2419,6 +2419,8 @@ mod monitor_x;
 mod moon;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 mod moon_star;
+#[cfg(feature = "transportation")]
+mod motorbike;
 #[cfg(any(feature = "nature", feature = "gaming"))]
 mod mountain;
 #[cfg(feature = "nature")]
@@ -6578,6 +6580,8 @@ pub use monitor_x::*;
 pub use moon::*;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 pub use moon_star::*;
+#[cfg(feature = "transportation")]
+pub use motorbike::*;
 #[cfg(any(feature = "nature", feature = "gaming"))]
 pub use mountain::*;
 #[cfg(feature = "nature")]
