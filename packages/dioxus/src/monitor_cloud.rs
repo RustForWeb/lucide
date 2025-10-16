@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct ReceiptTextProps {
+pub struct MonitorCloudProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct ReceiptTextProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn ReceiptText(props: ReceiptTextProps) -> Element {
+pub fn MonitorCloud(props: MonitorCloudProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,10 +34,16 @@ pub fn ReceiptText(props: ReceiptTextProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M13 16H8" }
-            path { "d": "M14 8H8" }
-            path { "d": "M16 12H8" }
-            path { "d": "M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" }
+            path { "d": "M11 13a3 3 0 1 1 2.83-4H14a2 2 0 0 1 0 4z" }
+            path { "d": "M12 17v4" }
+            path { "d": "M8 21h8" }
+            rect {
+                "x": "2",
+                "y": "3",
+                "width": "20",
+                "height": "14",
+                "rx": "2",
+            }
         }
     }
 }
