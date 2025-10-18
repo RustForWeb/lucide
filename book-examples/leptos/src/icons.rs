@@ -1287,6 +1287,7 @@ pub fn IconsM() -> impl IntoView {
                 (view! { <Minus /> }.into_any(), "Minus"),
                 (view! { <Monitor /> }.into_any(), "Monitor"),
                 (view! { <MonitorCheck /> }.into_any(), "Monitor Check"),
+                (view! { <MonitorCloud /> }.into_any(), "Monitor Cloud"),
                 (view! { <MonitorCog /> }.into_any(), "Monitor Cog"),
                 (view! { <MonitorDot /> }.into_any(), "Monitor Dot"),
                 (view! { <MonitorDown /> }.into_any(), "Monitor Down"),

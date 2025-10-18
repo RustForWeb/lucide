@@ -1312,6 +1312,7 @@ pub fn IconsM() -> Html {
         (html! { <Minus /> }, "Minus"),
         (html! { <Monitor /> }, "Monitor"),
         (html! { <MonitorCheck /> }, "Monitor Check"),
+        (html! { <MonitorCloud /> }, "Monitor Cloud"),
         (html! { <MonitorCog /> }, "Monitor Cog"),
         (html! { <MonitorDot /> }, "Monitor Dot"),
         (html! { <MonitorDown /> }, "Monitor Down"),

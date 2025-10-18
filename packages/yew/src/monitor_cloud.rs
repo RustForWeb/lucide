@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SwordProps {
+pub struct MonitorCloudProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SwordProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Sword(props: &SwordProps) -> Html {
+pub fn MonitorCloud(props: &MonitorCloudProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,10 +41,10 @@ pub fn Sword(props: &SwordProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m11 19-6-6" />
-            <path d="m5 21-2-2" />
-            <path d="m8 16-4 4" />
-            <path d="M9.5 17.5 21 6V3h-3L6.5 14.5" />
+            <path d="M11 13a3 3 0 1 1 2.83-4H14a2 2 0 0 1 0 4z" />
+            <path d="M12 17v4" />
+            <path d="M8 21h8" />
+            <rect x="2" y="3" width="20" height="14" rx="2" />
         </svg>
     }
 }

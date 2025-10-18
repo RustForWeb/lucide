@@ -6212,6 +6212,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MonitorCloud {}
+            },
+            "Monitor Cloud",
+        ),
+        (
+            rsx! {
                 MonitorCog {}
             },
             "Monitor Cog",
@@ -6312,12 +6318,6 @@ pub fn IconsM1() -> Element {
             },
             "Mouse",
         ),
-        (
-            rsx! {
-                MouseOff {}
-            },
-            "Mouse Off",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -6333,6 +6333,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MouseOff {}
+            },
+            "Mouse Off",
+        ),
         (
             rsx! {
                 MousePointer {}

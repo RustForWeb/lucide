@@ -2391,6 +2391,8 @@ mod minus;
 mod monitor;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod monitor_check;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "development"))]
+mod monitor_cloud;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod monitor_cog;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -6552,6 +6554,8 @@ pub use minus::*;
 pub use monitor::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use monitor_check::*;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "development"))]
+pub use monitor_cloud::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use monitor_cog::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
