@@ -402,6 +402,13 @@ mod binoculars;
 mod biohazard;
 #[cfg(feature = "animals")]
 mod bird;
+#[cfg(any(
+    feature = "nature",
+    feature = "animals",
+    feature = "navigation",
+    feature = "home"
+))]
+mod birdhouse;
 #[cfg(any(feature = "brands", feature = "development", feature = "finance"))]
 mod bitcoin;
 #[cfg(any(
@@ -4565,6 +4572,13 @@ pub use binoculars::*;
 pub use biohazard::*;
 #[cfg(feature = "animals")]
 pub use bird::*;
+#[cfg(any(
+    feature = "nature",
+    feature = "animals",
+    feature = "navigation",
+    feature = "home"
+))]
+pub use birdhouse::*;
 #[cfg(any(feature = "brands", feature = "development", feature = "finance"))]
 pub use bitcoin::*;
 #[cfg(any(

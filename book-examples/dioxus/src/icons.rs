@@ -1091,6 +1091,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                Birdhouse {}
+            },
+            "Birdhouse",
+        ),
+        (
+            rsx! {
                 Bitcoin {}
             },
             "Bitcoin",
@@ -1293,12 +1299,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Up",
         ),
-        (
-            rsx! {
-                BookUp2 {}
-            },
-            "Book Up 2",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -1314,6 +1314,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookUp2 {}
+            },
+            "Book Up 2",
+        ),
         (
             rsx! {
                 BookUser {}

@@ -275,6 +275,7 @@ pub fn IconsB() -> Html {
         (html! { <Binoculars /> }, "Binoculars"),
         (html! { <Biohazard /> }, "Biohazard"),
         (html! { <Bird /> }, "Bird"),
+        (html! { <Birdhouse /> }, "Birdhouse"),
         (html! { <Bitcoin /> }, "Bitcoin"),
         (html! { <Blend /> }, "Blend"),
         (html! { <Blinds /> }, "Blinds"),
