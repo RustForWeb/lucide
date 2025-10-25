@@ -2271,14 +2271,14 @@ checksum = "b3bd0dd2cd90571056fdb71f6275fada10131182f84899f4b2a916e565d81d86"
 
 [[package]]
 name = "lucide-dioxus"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "dioxus",
 ]
 
 [[package]]
 name = "lucide-dioxus-book"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
@@ -2289,14 +2289,14 @@ dependencies = [
 
 [[package]]
 name = "lucide-leptos"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "leptos",
 ]
 
 [[package]]
 name = "lucide-leptos-book"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
@@ -2307,14 +2307,14 @@ dependencies = [
 
 [[package]]
 name = "lucide-yew"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "yew",
 ]
 
 [[package]]
 name = "lucide-yew-book"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
@@ -3111,7 +3111,7 @@ checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
 name = "scripts"
-version = "2.36.0"
+version = "2.37.0"
 dependencies = [
  "convert_case 0.8.0",
  "env_logger",
