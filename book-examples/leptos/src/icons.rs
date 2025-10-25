@@ -266,6 +266,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <Binoculars /> }.into_any(), "Binoculars"),
                 (view! { <Biohazard /> }.into_any(), "Biohazard"),
                 (view! { <Bird /> }.into_any(), "Bird"),
+                (view! { <Birdhouse /> }.into_any(), "Birdhouse"),
                 (view! { <Bitcoin /> }.into_any(), "Bitcoin"),
                 (view! { <Blend /> }.into_any(), "Blend"),
                 (view! { <Blinds /> }.into_any(), "Blinds"),
