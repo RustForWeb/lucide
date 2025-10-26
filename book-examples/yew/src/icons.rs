@@ -923,6 +923,7 @@ pub fn IconsG() -> Html {
         (html! { <GalleryVerticalEnd /> }, "Gallery Vertical End"),
         (html! { <Gamepad /> }, "Gamepad"),
         (html! { <Gamepad2 /> }, "Gamepad 2"),
+        (html! { <GamepadDirectional /> }, "Gamepad Directional"),
         (html! { <Gauge /> }, "Gauge"),
         (html! { <Gavel /> }, "Gavel"),
         (html! { <Gem /> }, "Gem"),

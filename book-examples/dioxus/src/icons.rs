@@ -4436,6 +4436,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GamepadDirectional {}
+            },
+            "Gamepad Directional",
+        ),
+        (
+            rsx! {
                 Gauge {}
             },
             "Gauge",

@@ -898,6 +898,7 @@ pub fn IconsG() -> impl IntoView {
                 (view! { <GalleryVerticalEnd /> }.into_any(), "Gallery Vertical End"),
                 (view! { <Gamepad /> }.into_any(), "Gamepad"),
                 (view! { <Gamepad2 /> }.into_any(), "Gamepad 2"),
+                (view! { <GamepadDirectional /> }.into_any(), "Gamepad Directional"),
                 (view! { <Gauge /> }.into_any(), "Gauge"),
                 (view! { <Gavel /> }.into_any(), "Gavel"),
                 (view! { <Gem /> }.into_any(), "Gem"),
