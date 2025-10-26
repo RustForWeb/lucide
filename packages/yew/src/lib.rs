@@ -1686,6 +1686,8 @@ mod gallery_vertical_end;
 mod gamepad;
 #[cfg(any(feature = "gaming", feature = "devices"))]
 mod gamepad_2;
+#[cfg(any(feature = "gaming", feature = "devices"))]
+mod gamepad_directional;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 mod gauge;
 #[cfg(any(feature = "navigation", feature = "tools"))]
@@ -5856,6 +5858,8 @@ pub use gallery_vertical_end::*;
 pub use gamepad::*;
 #[cfg(any(feature = "gaming", feature = "devices"))]
 pub use gamepad_2::*;
+#[cfg(any(feature = "gaming", feature = "devices"))]
+pub use gamepad_directional::*;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 pub use gauge::*;
 #[cfg(any(feature = "navigation", feature = "tools"))]
