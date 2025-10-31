@@ -1701,6 +1701,8 @@ mod gift;
 #[cfg(feature = "development")]
 mod git_branch;
 #[cfg(feature = "development")]
+mod git_branch_minus;
+#[cfg(feature = "development")]
 mod git_branch_plus;
 #[cfg(any(feature = "development", feature = "navigation"))]
 mod git_commit_horizontal;
@@ -5872,6 +5874,8 @@ pub use ghost::*;
 pub use gift::*;
 #[cfg(feature = "development")]
 pub use git_branch::*;
+#[cfg(feature = "development")]
+pub use git_branch_minus::*;
 #[cfg(feature = "development")]
 pub use git_branch_plus::*;
 #[cfg(any(feature = "development", feature = "navigation"))]
