@@ -1031,6 +1031,7 @@ pub fn IconsH() -> Html {
         (html! { <HeartPlus /> }, "Heart Plus"),
         (html! { <HeartPulse /> }, "Heart Pulse"),
         (html! { <Heater /> }, "Heater"),
+        (html! { <Helicopter /> }, "Helicopter"),
         (html! { <Hexagon /> }, "Hexagon"),
         (html! { <Highlighter /> }, "Highlighter"),
         (html! { <History /> }, "History"),

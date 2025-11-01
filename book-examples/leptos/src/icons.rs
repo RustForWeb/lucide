@@ -1001,6 +1001,7 @@ pub fn IconsH() -> impl IntoView {
                 (view! { <HeartPlus /> }.into_any(), "Heart Plus"),
                 (view! { <HeartPulse /> }.into_any(), "Heart Pulse"),
                 (view! { <Heater /> }.into_any(), "Heater"),
+                (view! { <Helicopter /> }.into_any(), "Helicopter"),
                 (view! { <Hexagon /> }.into_any(), "Hexagon"),
                 (view! { <Highlighter /> }.into_any(), "Highlighter"),
                 (view! { <History /> }.into_any(), "History"),

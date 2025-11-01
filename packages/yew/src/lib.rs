@@ -1920,6 +1920,8 @@ mod heart_plus;
 mod heart_pulse;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 mod heater;
+#[cfg(any(feature = "transportation", feature = "travel"))]
+mod helicopter;
 #[cfg(any(feature = "shapes", feature = "brands", feature = "development"))]
 mod hexagon;
 #[cfg(any(feature = "text", feature = "design"))]
@@ -6094,6 +6096,8 @@ pub use heart_plus::*;
 pub use heart_pulse::*;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 pub use heater::*;
+#[cfg(any(feature = "transportation", feature = "travel"))]
+pub use helicopter::*;
 #[cfg(any(feature = "shapes", feature = "brands", feature = "development"))]
 pub use hexagon::*;
 #[cfg(any(feature = "text", feature = "design"))]

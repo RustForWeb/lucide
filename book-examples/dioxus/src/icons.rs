@@ -4949,6 +4949,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                Helicopter {}
+            },
+            "Helicopter",
+        ),
+        (
+            rsx! {
                 Hexagon {}
             },
             "Hexagon",
