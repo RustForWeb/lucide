@@ -931,6 +931,7 @@ pub fn IconsG() -> Html {
         (html! { <Ghost /> }, "Ghost"),
         (html! { <Gift /> }, "Gift"),
         (html! { <GitBranch /> }, "Git Branch"),
+        (html! { <GitBranchMinus /> }, "Git Branch Minus"),
         (html! { <GitBranchPlus /> }, "Git Branch Plus"),
         (html! { <GitCommitHorizontal /> }, "Git Commit Horizontal"),
         (html! { <GitCommitVertical /> }, "Git Commit Vertical"),

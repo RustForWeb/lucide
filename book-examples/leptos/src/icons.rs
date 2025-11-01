@@ -906,6 +906,7 @@ pub fn IconsG() -> impl IntoView {
                 (view! { <Ghost /> }.into_any(), "Ghost"),
                 (view! { <Gift /> }.into_any(), "Gift"),
                 (view! { <GitBranch /> }.into_any(), "Git Branch"),
+                (view! { <GitBranchMinus /> }.into_any(), "Git Branch Minus"),
                 (view! { <GitBranchPlus /> }.into_any(), "Git Branch Plus"),
                 (view! { <GitCommitHorizontal /> }.into_any(), "Git Commit Horizontal"),
                 (view! { <GitCommitVertical /> }.into_any(), "Git Commit Vertical"),

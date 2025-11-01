@@ -4484,6 +4484,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GitBranchMinus {}
+            },
+            "Git Branch Minus",
+        ),
+        (
+            rsx! {
                 GitBranchPlus {}
             },
             "Git Branch Plus",
