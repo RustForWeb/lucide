@@ -537,6 +537,7 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <ClockAlert /> }.into_any(), "Clock Alert"),
                 (view! { <ClockArrowDown /> }.into_any(), "Clock Arrow Down"),
                 (view! { <ClockArrowUp /> }.into_any(), "Clock Arrow Up"),
+                (view! { <ClockCheck /> }.into_any(), "Clock Check"),
                 (view! { <ClockFading /> }.into_any(), "Clock Fading"),
                 (view! { <ClockPlus /> }.into_any(), "Clock Plus"),
                 (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),

@@ -2606,6 +2606,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClockCheck {}
+            },
+            "Clock Check",
+        ),
+        (
+            rsx! {
                 ClockFading {}
             },
             "Clock Fading",
@@ -2772,12 +2778,6 @@ pub fn IconsC2() -> Element {
             },
             "Codesandbox",
         ),
-        (
-            rsx! {
-                Coffee {}
-            },
-            "Coffee",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2793,6 +2793,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Coffee {}
+            },
+            "Coffee",
+        ),
         (
             rsx! {
                 Cog {}
