@@ -3614,18 +3614,6 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileAudio {}
-            },
-            "File Audio",
-        ),
-        (
-            rsx! {
-                FileAudio2 {}
-            },
-            "File Audio 2",
-        ),
-        (
-            rsx! {
                 FileAxis3D {}
             },
             "File Axis 3 D",
@@ -3638,15 +3626,21 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileBadge2 {}
-            },
-            "File Badge 2",
-        ),
-        (
-            rsx! {
                 FileBox {}
             },
             "File Box",
+        ),
+        (
+            rsx! {
+                FileBraces {}
+            },
+            "File Braces",
+        ),
+        (
+            rsx! {
+                FileBracesCorner {}
+            },
+            "File Braces Corner",
         ),
         (
             rsx! {
@@ -3680,9 +3674,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileCheck2 {}
+                FileCheckCorner {}
             },
-            "File Check 2",
+            "File Check Corner",
         ),
         (
             rsx! {
@@ -3698,9 +3692,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileCode2 {}
+                FileCodeCorner {}
             },
-            "File Code 2",
+            "File Code Corner",
         ),
         (
             rsx! {
@@ -3728,6 +3722,18 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
+                FileExclamationPoint {}
+            },
+            "File Exclamation Point",
+        ),
+        (
+            rsx! {
+                FileHeadphone {}
+            },
+            "File Headphone",
+        ),
+        (
+            rsx! {
                 FileHeart {}
             },
             "File Heart",
@@ -3746,27 +3752,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileJson {}
-            },
-            "File Json",
-        ),
-        (
-            rsx! {
-                FileJson2 {}
-            },
-            "File Json 2",
-        ),
-        (
-            rsx! {
                 FileKey {}
             },
             "File Key",
-        ),
-        (
-            rsx! {
-                FileKey2 {}
-            },
-            "File Key 2",
         ),
         (
             rsx! {
@@ -3776,21 +3764,15 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileLock2 {}
-            },
-            "File Lock 2",
-        ),
-        (
-            rsx! {
                 FileMinus {}
             },
             "File Minus",
         ),
         (
             rsx! {
-                FileMinus2 {}
+                FileMinusCorner {}
             },
-            "File Minus 2",
+            "File Minus Corner",
         ),
         (
             rsx! {
@@ -3830,9 +3812,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FilePlus2 {}
+                FilePlusCorner {}
             },
-            "File Plus 2",
+            "File Plus Corner",
         ),
         (
             rsx! {
@@ -3854,9 +3836,15 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileSearch2 {}
+                FileSearchCorner {}
             },
-            "File Search 2",
+            "File Search Corner",
+        ),
+        (
+            rsx! {
+                FileSignal {}
+            },
+            "File Signal",
         ),
         (
             rsx! {
@@ -3902,9 +3890,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileType2 {}
+                FileTypeCorner {}
             },
-            "File Type 2",
+            "File Type Corner",
         ),
         (
             rsx! {
@@ -3932,27 +3920,15 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FileVolume2 {}
-            },
-            "File Volume 2",
-        ),
-        (
-            rsx! {
-                FileWarning {}
-            },
-            "File Warning",
-        ),
-        (
-            rsx! {
                 FileX {}
             },
             "File X",
         ),
         (
             rsx! {
-                FileX2 {}
+                FileXCorner {}
             },
-            "File X 2",
+            "File X Corner",
         ),
         (
             rsx! {
@@ -4152,21 +4128,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Code",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsF2() -> Element {
-    let icons = [
         (
             rsx! {
                 FolderCog {}
@@ -4191,6 +4152,21 @@ pub fn IconsF2() -> Element {
             },
             "Folder Git",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsF2() -> Element {
+    let icons = [
         (
             rsx! {
                 FolderGit2 {}
@@ -8403,6 +8379,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SolarPanel {}
+            },
+            "Solar Panel",
+        ),
+        (
+            rsx! {
                 Soup {}
             },
             "Soup",
@@ -8983,12 +8965,6 @@ pub fn IconsS2() -> Element {
             },
             "Sticky Note",
         ),
-        (
-            rsx! {
-                Store {}
-            },
-            "Store",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -9004,6 +8980,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Store {}
+            },
+            "Store",
+        ),
         (
             rsx! {
                 StretchHorizontal {}
