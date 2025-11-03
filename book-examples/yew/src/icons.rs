@@ -566,6 +566,7 @@ pub fn IconsC() -> Html {
         (html! { <ClockAlert /> }, "Clock Alert"),
         (html! { <ClockArrowDown /> }, "Clock Arrow Down"),
         (html! { <ClockArrowUp /> }, "Clock Arrow Up"),
+        (html! { <ClockCheck /> }, "Clock Check"),
         (html! { <ClockFading /> }, "Clock Fading"),
         (html! { <ClockPlus /> }, "Clock Plus"),
         (html! { <ClosedCaption /> }, "Closed Caption"),

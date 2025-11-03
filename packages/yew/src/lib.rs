@@ -978,6 +978,8 @@ mod clock_arrow_down;
 #[cfg(feature = "time")]
 mod clock_arrow_up;
 #[cfg(feature = "time")]
+mod clock_check;
+#[cfg(feature = "time")]
 mod clock_fading;
 #[cfg(feature = "time")]
 mod clock_plus;
@@ -5153,6 +5155,8 @@ pub use clock_alert::*;
 pub use clock_arrow_down::*;
 #[cfg(feature = "time")]
 pub use clock_arrow_up::*;
+#[cfg(feature = "time")]
+pub use clock_check::*;
 #[cfg(feature = "time")]
 pub use clock_fading::*;
 #[cfg(feature = "time")]
