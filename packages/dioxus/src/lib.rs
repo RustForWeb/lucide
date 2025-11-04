@@ -1373,18 +1373,16 @@ mod figma;
 mod file;
 #[cfg(feature = "files")]
 mod file_archive;
-#[cfg(feature = "files")]
-mod file_audio;
-#[cfg(feature = "files")]
-mod file_audio_2;
 #[cfg(any(feature = "design", feature = "files"))]
 mod file_axis_3_d;
 #[cfg(feature = "files")]
 mod file_badge;
 #[cfg(feature = "files")]
-mod file_badge_2;
-#[cfg(feature = "files")]
 mod file_box;
+#[cfg(any(feature = "files", feature = "development"))]
+mod file_braces;
+#[cfg(any(feature = "files", feature = "development"))]
+mod file_braces_corner;
 #[cfg(feature = "files")]
 mod file_chart_column;
 #[cfg(feature = "files")]
@@ -1396,13 +1394,13 @@ mod file_chart_pie;
 #[cfg(feature = "files")]
 mod file_check;
 #[cfg(feature = "files")]
-mod file_check_2;
+mod file_check_corner;
 #[cfg(any(feature = "files", feature = "time"))]
 mod file_clock;
 #[cfg(any(feature = "files", feature = "development"))]
 mod file_code;
 #[cfg(any(feature = "files", feature = "development"))]
-mod file_code_2;
+mod file_code_corner;
 #[cfg(feature = "files")]
 mod file_cog;
 #[cfg(any(feature = "files", feature = "development"))]
@@ -1411,28 +1409,24 @@ mod file_diff;
 mod file_digit;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod file_down;
+#[cfg(any(feature = "files", feature = "notifications"))]
+mod file_exclamation_point;
+#[cfg(feature = "files")]
+mod file_headphone;
 #[cfg(feature = "files")]
 mod file_heart;
 #[cfg(feature = "files")]
 mod file_image;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod file_input;
-#[cfg(any(feature = "files", feature = "development"))]
-mod file_json;
-#[cfg(any(feature = "files", feature = "development"))]
-mod file_json_2;
 #[cfg(any(feature = "files", feature = "security"))]
 mod file_key;
 #[cfg(any(feature = "files", feature = "security"))]
-mod file_key_2;
-#[cfg(any(feature = "files", feature = "security"))]
 mod file_lock;
-#[cfg(any(feature = "files", feature = "security"))]
-mod file_lock_2;
 #[cfg(feature = "files")]
 mod file_minus;
 #[cfg(feature = "files")]
-mod file_minus_2;
+mod file_minus_corner;
 #[cfg(any(feature = "files", feature = "multimedia"))]
 mod file_music;
 #[cfg(any(feature = "files", feature = "arrows"))]
@@ -1446,7 +1440,7 @@ mod file_play;
 #[cfg(feature = "files")]
 mod file_plus;
 #[cfg(feature = "files")]
-mod file_plus_2;
+mod file_plus_corner;
 #[cfg(feature = "files")]
 mod file_question_mark;
 #[cfg(feature = "files")]
@@ -1454,7 +1448,9 @@ mod file_scan;
 #[cfg(feature = "files")]
 mod file_search;
 #[cfg(feature = "files")]
-mod file_search_2;
+mod file_search_corner;
+#[cfg(feature = "files")]
+mod file_signal;
 #[cfg(any(feature = "files", feature = "development"))]
 mod file_sliders;
 #[cfg(feature = "files")]
@@ -1470,7 +1466,7 @@ mod file_text;
 #[cfg(any(feature = "files", feature = "text"))]
 mod file_type;
 #[cfg(any(feature = "files", feature = "text"))]
-mod file_type_2;
+mod file_type_corner;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod file_up;
 #[cfg(any(feature = "account", feature = "files"))]
@@ -1480,13 +1476,9 @@ mod file_video_camera;
 #[cfg(feature = "files")]
 mod file_volume;
 #[cfg(feature = "files")]
-mod file_volume_2;
-#[cfg(any(feature = "files", feature = "notifications"))]
-mod file_warning;
-#[cfg(feature = "files")]
 mod file_x;
 #[cfg(feature = "files")]
-mod file_x_2;
+mod file_x_corner;
 #[cfg(feature = "files")]
 mod files;
 #[cfg(any(feature = "photography", feature = "multimedia"))]
@@ -3347,6 +3339,13 @@ mod snowflake;
 mod soap_dispenser_droplet;
 #[cfg(feature = "home")]
 mod sofa;
+#[cfg(any(
+    feature = "home",
+    feature = "science",
+    feature = "sustainability",
+    feature = "weather"
+))]
+mod solar_panel;
 #[cfg(feature = "food-beverage")]
 mod soup;
 #[cfg(feature = "text")]
@@ -5551,18 +5550,16 @@ pub use figma::*;
 pub use file::*;
 #[cfg(feature = "files")]
 pub use file_archive::*;
-#[cfg(feature = "files")]
-pub use file_audio::*;
-#[cfg(feature = "files")]
-pub use file_audio_2::*;
 #[cfg(any(feature = "design", feature = "files"))]
 pub use file_axis_3_d::*;
 #[cfg(feature = "files")]
 pub use file_badge::*;
 #[cfg(feature = "files")]
-pub use file_badge_2::*;
-#[cfg(feature = "files")]
 pub use file_box::*;
+#[cfg(any(feature = "files", feature = "development"))]
+pub use file_braces::*;
+#[cfg(any(feature = "files", feature = "development"))]
+pub use file_braces_corner::*;
 #[cfg(feature = "files")]
 pub use file_chart_column::*;
 #[cfg(feature = "files")]
@@ -5574,13 +5571,13 @@ pub use file_chart_pie::*;
 #[cfg(feature = "files")]
 pub use file_check::*;
 #[cfg(feature = "files")]
-pub use file_check_2::*;
+pub use file_check_corner::*;
 #[cfg(any(feature = "files", feature = "time"))]
 pub use file_clock::*;
 #[cfg(any(feature = "files", feature = "development"))]
 pub use file_code::*;
 #[cfg(any(feature = "files", feature = "development"))]
-pub use file_code_2::*;
+pub use file_code_corner::*;
 #[cfg(feature = "files")]
 pub use file_cog::*;
 #[cfg(any(feature = "files", feature = "development"))]
@@ -5589,28 +5586,24 @@ pub use file_diff::*;
 pub use file_digit::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use file_down::*;
+#[cfg(any(feature = "files", feature = "notifications"))]
+pub use file_exclamation_point::*;
+#[cfg(feature = "files")]
+pub use file_headphone::*;
 #[cfg(feature = "files")]
 pub use file_heart::*;
 #[cfg(feature = "files")]
 pub use file_image::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use file_input::*;
-#[cfg(any(feature = "files", feature = "development"))]
-pub use file_json::*;
-#[cfg(any(feature = "files", feature = "development"))]
-pub use file_json_2::*;
 #[cfg(any(feature = "files", feature = "security"))]
 pub use file_key::*;
 #[cfg(any(feature = "files", feature = "security"))]
-pub use file_key_2::*;
-#[cfg(any(feature = "files", feature = "security"))]
 pub use file_lock::*;
-#[cfg(any(feature = "files", feature = "security"))]
-pub use file_lock_2::*;
 #[cfg(feature = "files")]
 pub use file_minus::*;
 #[cfg(feature = "files")]
-pub use file_minus_2::*;
+pub use file_minus_corner::*;
 #[cfg(any(feature = "files", feature = "multimedia"))]
 pub use file_music::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
@@ -5624,7 +5617,7 @@ pub use file_play::*;
 #[cfg(feature = "files")]
 pub use file_plus::*;
 #[cfg(feature = "files")]
-pub use file_plus_2::*;
+pub use file_plus_corner::*;
 #[cfg(feature = "files")]
 pub use file_question_mark::*;
 #[cfg(feature = "files")]
@@ -5632,7 +5625,9 @@ pub use file_scan::*;
 #[cfg(feature = "files")]
 pub use file_search::*;
 #[cfg(feature = "files")]
-pub use file_search_2::*;
+pub use file_search_corner::*;
+#[cfg(feature = "files")]
+pub use file_signal::*;
 #[cfg(any(feature = "files", feature = "development"))]
 pub use file_sliders::*;
 #[cfg(feature = "files")]
@@ -5648,7 +5643,7 @@ pub use file_text::*;
 #[cfg(any(feature = "files", feature = "text"))]
 pub use file_type::*;
 #[cfg(any(feature = "files", feature = "text"))]
-pub use file_type_2::*;
+pub use file_type_corner::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use file_up::*;
 #[cfg(any(feature = "account", feature = "files"))]
@@ -5658,13 +5653,9 @@ pub use file_video_camera::*;
 #[cfg(feature = "files")]
 pub use file_volume::*;
 #[cfg(feature = "files")]
-pub use file_volume_2::*;
-#[cfg(any(feature = "files", feature = "notifications"))]
-pub use file_warning::*;
-#[cfg(feature = "files")]
 pub use file_x::*;
 #[cfg(feature = "files")]
-pub use file_x_2::*;
+pub use file_x_corner::*;
 #[cfg(feature = "files")]
 pub use files::*;
 #[cfg(any(feature = "photography", feature = "multimedia"))]
@@ -7525,6 +7516,13 @@ pub use snowflake::*;
 pub use soap_dispenser_droplet::*;
 #[cfg(feature = "home")]
 pub use sofa::*;
+#[cfg(any(
+    feature = "home",
+    feature = "science",
+    feature = "sustainability",
+    feature = "weather"
+))]
+pub use solar_panel::*;
 #[cfg(feature = "food-beverage")]
 pub use soup::*;
 #[cfg(feature = "text")]
