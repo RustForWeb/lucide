@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct RulerDimensionLineProps {
+pub struct ChessQueenProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct RulerDimensionLineProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn RulerDimensionLine(props: RulerDimensionLineProps) -> Element {
+pub fn ChessQueen(props: ChessQueenProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,20 +34,14 @@ pub fn RulerDimensionLine(props: RulerDimensionLineProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 15v-3" }
-            path { "d": "M14 15v-3" }
-            path { "d": "M18 15v-3" }
-            path { "d": "M2 8V4" }
-            path { "d": "M22 6H2" }
-            path { "d": "M22 8V4" }
-            path { "d": "M6 15v-3" }
-            rect {
-                "x": "2",
-                "y": "12",
-                "width": "20",
-                "height": "8",
-                "rx": "2",
-            }
+            path { "d": "M4 20a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" }
+            path { "d": "m12.474 5.943 1.567 5.34a1 1 0 0 0 1.75.328l2.616-3.402" }
+            path { "d": "m20 9-3 9" }
+            path { "d": "m5.594 8.209 2.615 3.403a1 1 0 0 0 1.75-.329l1.567-5.34" }
+            path { "d": "M7 18 4 9" }
+            circle { "cx": "12", "cy": "4", "r": "2" }
+            circle { "cx": "20", "cy": "7", "r": "2" }
+            circle { "cx": "4", "cy": "7", "r": "2" }
         }
     }
 }

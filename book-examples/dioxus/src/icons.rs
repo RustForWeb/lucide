@@ -2021,6 +2021,42 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                ChessBishop {}
+            },
+            "Chess Bishop",
+        ),
+        (
+            rsx! {
+                ChessKing {}
+            },
+            "Chess King",
+        ),
+        (
+            rsx! {
+                ChessKnight {}
+            },
+            "Chess Knight",
+        ),
+        (
+            rsx! {
+                ChessPawn {}
+            },
+            "Chess Pawn",
+        ),
+        (
+            rsx! {
+                ChessQueen {}
+            },
+            "Chess Queen",
+        ),
+        (
+            rsx! {
+                ChessRook {}
+            },
+            "Chess Rook",
+        ),
+        (
+            rsx! {
                 ChevronDown {}
             },
             "Chevron Down",
@@ -2127,6 +2163,21 @@ pub fn IconsC1() -> Element {
             },
             "Cigarette",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC2() -> Element {
+    let icons = [
         (
             rsx! {
                 CigaretteOff {}
@@ -2163,21 +2214,6 @@ pub fn IconsC1() -> Element {
             },
             "Circle Arrow Out Down Left",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC2() -> Element {
-    let icons = [
         (
             rsx! {
                 CircleArrowOutDownRight {}
@@ -2742,6 +2778,21 @@ pub fn IconsC2() -> Element {
             },
             "Cloudy",
         ),
+    ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 Clover {}
@@ -2778,21 +2829,6 @@ pub fn IconsC2() -> Element {
             },
             "Codesandbox",
         ),
-    ];
-    rsx! {
-        for (icon , name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 Coffee {}
@@ -6356,6 +6392,12 @@ pub fn IconsM2() -> Element {
                 MousePointer2 {}
             },
             "Mouse Pointer 2",
+        ),
+        (
+            rsx! {
+                MousePointer2Off {}
+            },
+            "Mouse Pointer 2 Off",
         ),
         (
             rsx! {
