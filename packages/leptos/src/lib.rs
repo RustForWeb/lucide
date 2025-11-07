@@ -760,6 +760,18 @@ mod check_line;
 mod chef_hat;
 #[cfg(feature = "food-beverage")]
 mod cherry;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_bishop;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_king;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_knight;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_pawn;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_queen;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+mod chess_rook;
 #[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
 mod chevron_down;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
@@ -2440,6 +2452,8 @@ mod mouse_off;
 mod mouse_pointer;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod mouse_pointer_2;
+#[cfg(any(feature = "arrows", feature = "cursors"))]
+mod mouse_pointer_2_off;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod mouse_pointer_ban;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
@@ -4937,6 +4951,18 @@ pub use check_line::*;
 pub use chef_hat::*;
 #[cfg(feature = "food-beverage")]
 pub use cherry::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_bishop::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_king::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_knight::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_pawn::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_queen::*;
+#[cfg(any(feature = "gaming", feature = "emoji"))]
+pub use chess_rook::*;
 #[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
 pub use chevron_down::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
@@ -6617,6 +6643,8 @@ pub use mouse_off::*;
 pub use mouse_pointer::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use mouse_pointer_2::*;
+#[cfg(any(feature = "arrows", feature = "cursors"))]
+pub use mouse_pointer_2_off::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use mouse_pointer_ban::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]

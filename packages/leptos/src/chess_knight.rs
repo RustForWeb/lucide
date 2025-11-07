@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn RulerDimensionLine(
+pub fn ChessKnight(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,14 +29,11 @@ pub fn RulerDimensionLine(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 15v-3" />
-            <path d="M14 15v-3" />
-            <path d="M18 15v-3" />
-            <path d="M2 8V4" />
-            <path d="M22 6H2" />
-            <path d="M22 8V4" />
-            <path d="M6 15v-3" />
-            <rect x="2" y="12" width="20" height="8" rx="2" />
+            <path d="M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" />
+            <path d="M16.5 18c1-2 2.5-5 2.5-9a7 7 0 0 0-7-7H6.635a1 1 0 0 0-.768 1.64L7 5l-2.32 5.802a2 2 0 0 0 .95 2.526l2.87 1.456" />
+            <path d="m15 5 1.425-1.425" />
+            <path d="m17 8 1.53-1.53" />
+            <path d="M9.713 12.185 7 18" />
         </svg>
     }
 }

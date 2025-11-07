@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct RulerDimensionLineProps {
+pub struct ChessKingProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct RulerDimensionLineProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn RulerDimensionLine(props: &RulerDimensionLineProps) -> Html {
+pub fn ChessKing(props: &ChessKingProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,14 +41,12 @@ pub fn RulerDimensionLine(props: &RulerDimensionLineProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 15v-3" />
-            <path d="M14 15v-3" />
-            <path d="M18 15v-3" />
-            <path d="M2 8V4" />
-            <path d="M22 6H2" />
-            <path d="M22 8V4" />
-            <path d="M6 15v-3" />
-            <rect x="2" y="12" width="20" height="8" rx="2" />
+            <path d="M4 20a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" />
+            <path
+                d="m6.7 18-1-1C4.35 15.682 3 14.09 3 12a5 5 0 0 1 4.95-5c1.584 0 2.7.455 4.05 1.818C13.35 7.455 14.466 7 16.05 7A5 5 0 0 1 21 12c0 2.082-1.359 3.673-2.7 5l-1 1"
+            />
+            <path d="M10 4h4" />
+            <path d="M12 2v6.818" />
         </svg>
     }
 }
