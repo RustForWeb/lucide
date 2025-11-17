@@ -1721,6 +1721,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                Calendars {}
+            },
+            "Calendars",
+        ),
+        (
+            rsx! {
                 Camera {}
             },
             "Camera",
@@ -2157,12 +2163,6 @@ pub fn IconsC1() -> Element {
             },
             "Church",
         ),
-        (
-            rsx! {
-                Cigarette {}
-            },
-            "Cigarette",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2178,6 +2178,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Cigarette {}
+            },
+            "Cigarette",
+        ),
         (
             rsx! {
                 CigaretteOff {}
@@ -2772,12 +2778,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Upload",
         ),
-        (
-            rsx! {
-                Cloudy {}
-            },
-            "Cloudy",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2793,6 +2793,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Cloudy {}
+            },
+            "Cloudy",
+        ),
         (
             rsx! {
                 Clover {}
@@ -3980,9 +3986,9 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                Fingerprint {}
+                FingerprintPattern {}
             },
-            "Fingerprint",
+            "Fingerprint Pattern",
         ),
         (
             rsx! {

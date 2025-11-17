@@ -630,6 +630,8 @@ mod calendar_sync;
 mod calendar_x;
 #[cfg(feature = "time")]
 mod calendar_x_2;
+#[cfg(feature = "time")]
+mod calendars;
 #[cfg(any(
     feature = "photography",
     feature = "devices",
@@ -1501,7 +1503,7 @@ mod film;
     feature = "medical",
     feature = "devices"
 ))]
-mod fingerprint;
+mod fingerprint_pattern;
 #[cfg(any(feature = "home", feature = "tools", feature = "travel"))]
 mod fire_extinguisher;
 #[cfg(any(feature = "food-beverage", feature = "animals"))]
@@ -4821,6 +4823,8 @@ pub use calendar_sync::*;
 pub use calendar_x::*;
 #[cfg(feature = "time")]
 pub use calendar_x_2::*;
+#[cfg(feature = "time")]
+pub use calendars::*;
 #[cfg(any(
     feature = "photography",
     feature = "devices",
@@ -5692,7 +5696,7 @@ pub use film::*;
     feature = "medical",
     feature = "devices"
 ))]
-pub use fingerprint::*;
+pub use fingerprint_pattern::*;
 #[cfg(any(feature = "home", feature = "tools", feature = "travel"))]
 pub use fire_extinguisher::*;
 #[cfg(any(feature = "food-beverage", feature = "animals"))]
