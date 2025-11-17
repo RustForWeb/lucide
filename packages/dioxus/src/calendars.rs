@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct AnchorProps {
+pub struct CalendarsProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct AnchorProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Anchor(props: AnchorProps) -> Element {
+pub fn Calendars(props: CalendarsProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,10 +34,17 @@ pub fn Anchor(props: AnchorProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 6v16" }
-            path { "d": "m19 13 2-1a9 9 0 0 1-18 0l2 1" }
-            path { "d": "M9 11h6" }
-            circle { "cx": "12", "cy": "4", "r": "2" }
+            path { "d": "M12 2v2" }
+            path { "d": "M15.726 21.01A2 2 0 0 1 14 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2" }
+            path { "d": "M18 2v2" }
+            path { "d": "M8 8h14" }
+            rect {
+                "x": "8",
+                "y": "3",
+                "width": "14",
+                "height": "14",
+                "rx": "2",
+            }
         }
     }
 }
