@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Scale(
+pub fn WavesArrowDown(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,10 @@ pub fn Scale(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 3v18" />
-            <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
-            <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
-            <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
-            <path d="M7 21h10" />
+            <path d="M12 10L12 2" />
+            <path d="M16 6L12 10L8 6" />
+            <path d="M2 15C2.6 15.5 3.2 16 4.5 16C7 16 7 14 9.5 14C12.1 14 11.9 16 14.5 16C17 16 17 14 19.5 14C20.8 14 21.4 14.5 22 15" />
+            <path d="M2 21C2.6 21.5 3.2 22 4.5 22C7 22 7 20 9.5 20C12.1 20 11.9 22 14.5 22C17 22 17 20 19.5 20C20.8 20 21.4 20.5 22 21" />
         </svg>
     }
 }

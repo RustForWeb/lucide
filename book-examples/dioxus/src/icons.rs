@@ -4349,6 +4349,12 @@ pub fn IconsF2() -> Element {
         ),
         (
             rsx! {
+                Form {}
+            },
+            "Form",
+        ),
+        (
+            rsx! {
                 Forward {}
             },
             "Forward",
@@ -10215,6 +10221,18 @@ pub fn IconsW1() -> Element {
                 Waves {}
             },
             "Waves",
+        ),
+        (
+            rsx! {
+                WavesArrowDown {}
+            },
+            "Waves Arrow Down",
+        ),
+        (
+            rsx! {
+                WavesArrowUp {}
+            },
+            "Waves Arrow Up",
         ),
         (
             rsx! {

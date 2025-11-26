@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct ScaleProps {
+pub struct FormProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct ScaleProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Scale(props: ScaleProps) -> Element {
+pub fn Form(props: FormProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,22 @@ pub fn Scale(props: ScaleProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 3v18" }
-            path { "d": "m19 8 3 8a5 5 0 0 1-6 0zV7" }
-            path { "d": "M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" }
-            path { "d": "m5 8 3 8a5 5 0 0 1-6 0zV7" }
-            path { "d": "M7 21h10" }
+            path { "d": "M4 14h6" }
+            path { "d": "M4 2h10" }
+            rect {
+                "x": "4",
+                "y": "18",
+                "width": "16",
+                "height": "4",
+                "rx": "1",
+            }
+            rect {
+                "x": "4",
+                "y": "6",
+                "width": "16",
+                "height": "4",
+                "rx": "1",
+            }
         }
     }
 }
