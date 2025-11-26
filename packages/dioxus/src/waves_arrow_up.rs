@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct ScaleProps {
+pub struct WavesArrowUpProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct ScaleProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Scale(props: ScaleProps) -> Element {
+pub fn WavesArrowUp(props: WavesArrowUpProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,10 @@ pub fn Scale(props: ScaleProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 3v18" }
-            path { "d": "m19 8 3 8a5 5 0 0 1-6 0zV7" }
-            path { "d": "M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" }
-            path { "d": "m5 8 3 8a5 5 0 0 1-6 0zV7" }
-            path { "d": "M7 21h10" }
+            path { "d": "M12 2v8" }
+            path { "d": "M2 15c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" }
+            path { "d": "M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" }
+            path { "d": "m8 6 4-4 4 4" }
         }
     }
 }

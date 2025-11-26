@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CalendarsProps {
+pub struct WavesArrowUpProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CalendarsProps {
     pub node_ref: NodeRef,
 }
 #[function_component]
-pub fn Calendars(props: &CalendarsProps) -> Html {
+pub fn WavesArrowUp(props: &WavesArrowUpProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,14 @@ pub fn Calendars(props: &CalendarsProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v2" />
-            <path d="M15.726 21.01A2 2 0 0 1 14 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2" />
-            <path d="M18 2v2" />
-            <path d="M2 13h2" />
-            <path d="M8 8h14" />
-            <rect x="8" y="3" width="14" height="14" rx="2" />
+            <path d="M12 2v8" />
+            <path
+                d="M2 15c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+            />
+            <path
+                d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+            />
+            <path d="m8 6 4-4 4 4" />
         </svg>
     }
 }
