@@ -131,26 +131,20 @@ mod archive_restore;
 mod archive_x;
 #[cfg(feature = "home")]
 mod armchair;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_down;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "gaming",
-    feature = "files"
-))]
+#[cfg(any(feature = "arrows", feature = "gaming", feature = "files"))]
 mod arrow_big_down_dash;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_left_dash;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_right;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_right_dash;
 #[cfg(any(
     feature = "arrows",
-    feature = "navigation",
     feature = "text",
     feature = "development",
     feature = "gaming"
@@ -158,13 +152,12 @@ mod arrow_big_right_dash;
 mod arrow_big_up;
 #[cfg(any(
     feature = "arrows",
-    feature = "navigation",
     feature = "text",
     feature = "development",
     feature = "gaming"
 ))]
 mod arrow_big_up_dash;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_down;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_0_1;
@@ -172,46 +165,41 @@ mod arrow_down_0_1;
 mod arrow_down_1_0;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_a_z;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "files"))]
+#[cfg(any(feature = "arrows", feature = "files"))]
 mod arrow_down_from_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_down_left;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_narrow_wide;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_down_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_down_to_dot;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "files",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "files", feature = "development"))]
 mod arrow_down_to_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_down_up;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_wide_narrow;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_z_a;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_left_from_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_left_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_left_to_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_right_from_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_right_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "development"))]
+#[cfg(any(feature = "arrows", feature = "development"))]
 mod arrow_right_to_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_up;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_up_0_1;
@@ -219,24 +207,19 @@ mod arrow_up_0_1;
 mod arrow_up_1_0;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_up_a_z;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_up_down;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_up_from_dot;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "files",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "files", feature = "development"))]
 mod arrow_up_from_line;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_up_left;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_up_narrow_wide;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod arrow_up_right;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "files"))]
+#[cfg(any(feature = "arrows", feature = "files"))]
 mod arrow_up_to_line;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_up_wide_narrow;
@@ -689,7 +672,7 @@ mod case_upper;
 mod cassette_tape;
 #[cfg(any(feature = "devices", feature = "connectivity"))]
 mod cast;
-#[cfg(any(feature = "buildings", feature = "gaming"))]
+#[cfg(any(feature = "buildings", feature = "gaming", feature = "navigation"))]
 mod castle;
 #[cfg(feature = "animals")]
 mod cat;
@@ -774,33 +757,23 @@ mod chess_pawn;
 mod chess_queen;
 #[cfg(any(feature = "gaming", feature = "emoji"))]
 mod chess_rook;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod chevron_down;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 mod chevron_first;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 mod chevron_last;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod chevron_left;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "math",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "math", feature = "development"))]
 mod chevron_right;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "math",
-    feature = "gaming"
-))]
+#[cfg(any(feature = "arrows", feature = "math", feature = "gaming"))]
 mod chevron_up;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod chevrons_down;
 #[cfg(feature = "arrows")]
 mod chevrons_down_up;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod chevrons_left;
 #[cfg(feature = "arrows")]
 mod chevrons_left_right;
@@ -811,11 +784,11 @@ mod chevrons_left_right;
     feature = "gaming"
 ))]
 mod chevrons_left_right_ellipsis;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod chevrons_right;
 #[cfg(feature = "arrows")]
 mod chevrons_right_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod chevrons_up;
 #[cfg(feature = "arrows")]
 mod chevrons_up_down;
@@ -831,33 +804,33 @@ mod cigarette_off;
 mod circle;
 #[cfg(feature = "notifications")]
 mod circle_alert;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod circle_arrow_down;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod circle_arrow_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_arrow_out_down_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_arrow_out_down_right;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "development"))]
+#[cfg(any(feature = "arrows", feature = "development"))]
 mod circle_arrow_out_up_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_arrow_out_up_right;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod circle_arrow_right;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod circle_arrow_up;
 #[cfg(feature = "notifications")]
 mod circle_check;
 #[cfg(feature = "notifications")]
 mod circle_check_big;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_chevron_down;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_chevron_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_chevron_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod circle_chevron_up;
 #[cfg(any(feature = "development", feature = "shapes"))]
 mod circle_dashed;
@@ -1160,7 +1133,11 @@ mod cup_soda;
 mod currency;
 #[cfg(any(feature = "shapes", feature = "design", feature = "math"))]
 mod cylinder;
-#[cfg(any(feature = "buildings", feature = "sustainability"))]
+#[cfg(any(
+    feature = "buildings",
+    feature = "sustainability",
+    feature = "navigation"
+))]
 mod dam;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database;
@@ -1369,7 +1346,7 @@ mod eye_closed;
 mod eye_off;
 #[cfg(any(feature = "social", feature = "brands"))]
 mod facebook;
-#[cfg(feature = "buildings")]
+#[cfg(any(feature = "buildings", feature = "navigation"))]
 mod factory;
 #[cfg(feature = "home")]
 mod fan;
@@ -1623,6 +1600,8 @@ mod folders;
 mod footprints;
 #[cfg(feature = "transportation")]
 mod forklift;
+#[cfg(feature = "development")]
+mod form;
 #[cfg(feature = "mail")]
 mod forward;
 #[cfg(any(feature = "design", feature = "photography"))]
@@ -1949,7 +1928,7 @@ mod hospital;
 mod hotel;
 #[cfg(any(feature = "time", feature = "gaming"))]
 mod hourglass;
-#[cfg(any(feature = "buildings", feature = "home"))]
+#[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 mod house;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
 mod house_heart;
@@ -2782,7 +2761,7 @@ mod pin_off;
 mod pipette;
 #[cfg(feature = "food-beverage")]
 mod pizza;
-#[cfg(any(feature = "transportation", feature = "travel"))]
+#[cfg(any(feature = "transportation", feature = "travel", feature = "navigation"))]
 mod plane;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod plane_landing;
@@ -3048,7 +3027,7 @@ mod save;
 mod save_all;
 #[cfg(any(feature = "text", feature = "files"))]
 mod save_off;
-#[cfg(feature = "navigation")]
+#[cfg(any(feature = "navigation", feature = "science", feature = "finance"))]
 mod scale;
 #[cfg(feature = "design")]
 mod scale_3_d;
@@ -3418,29 +3397,29 @@ mod square;
     feature = "multimedia"
 ))]
 mod square_activity;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod square_arrow_down;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod square_arrow_down_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 mod square_arrow_down_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_out_down_left;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_out_down_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_out_up_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "social"))]
+#[cfg(any(feature = "arrows", feature = "social"))]
 mod square_arrow_out_up_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_right;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_up;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 mod square_arrow_up_left;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "social"))]
+#[cfg(any(feature = "arrows", feature = "social"))]
 mod square_arrow_up_right;
 #[cfg(any(
     feature = "text",
@@ -4104,6 +4083,10 @@ mod watch;
     feature = "sustainability"
 ))]
 mod waves;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+mod waves_arrow_down;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+mod waves_arrow_up;
 #[cfg(any(feature = "sports", feature = "home"))]
 mod waves_ladder;
 #[cfg(any(
@@ -4324,26 +4307,20 @@ pub use archive_restore::*;
 pub use archive_x::*;
 #[cfg(feature = "home")]
 pub use armchair::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_down::*;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "gaming",
-    feature = "files"
-))]
+#[cfg(any(feature = "arrows", feature = "gaming", feature = "files"))]
 pub use arrow_big_down_dash::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_left_dash::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_right_dash::*;
 #[cfg(any(
     feature = "arrows",
-    feature = "navigation",
     feature = "text",
     feature = "development",
     feature = "gaming"
@@ -4351,13 +4328,12 @@ pub use arrow_big_right_dash::*;
 pub use arrow_big_up::*;
 #[cfg(any(
     feature = "arrows",
-    feature = "navigation",
     feature = "text",
     feature = "development",
     feature = "gaming"
 ))]
 pub use arrow_big_up_dash::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_down::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_0_1::*;
@@ -4365,46 +4341,41 @@ pub use arrow_down_0_1::*;
 pub use arrow_down_1_0::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_a_z::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "files"))]
+#[cfg(any(feature = "arrows", feature = "files"))]
 pub use arrow_down_from_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_down_left::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_narrow_wide::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_down_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_down_to_dot::*;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "files",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "files", feature = "development"))]
 pub use arrow_down_to_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_down_up::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_wide_narrow::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_z_a::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_left_from_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_left_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_left_to_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_right_from_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_right_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "development"))]
+#[cfg(any(feature = "arrows", feature = "development"))]
 pub use arrow_right_to_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_up::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_up_0_1::*;
@@ -4412,24 +4383,19 @@ pub use arrow_up_0_1::*;
 pub use arrow_up_1_0::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_up_a_z::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_up_down::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_up_from_dot::*;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "files",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "files", feature = "development"))]
 pub use arrow_up_from_line::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_up_left::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_up_narrow_wide::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use arrow_up_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "files"))]
+#[cfg(any(feature = "arrows", feature = "files"))]
 pub use arrow_up_to_line::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_up_wide_narrow::*;
@@ -4882,7 +4848,7 @@ pub use case_upper::*;
 pub use cassette_tape::*;
 #[cfg(any(feature = "devices", feature = "connectivity"))]
 pub use cast::*;
-#[cfg(any(feature = "buildings", feature = "gaming"))]
+#[cfg(any(feature = "buildings", feature = "gaming", feature = "navigation"))]
 pub use castle::*;
 #[cfg(feature = "animals")]
 pub use cat::*;
@@ -4967,33 +4933,23 @@ pub use chess_pawn::*;
 pub use chess_queen::*;
 #[cfg(any(feature = "gaming", feature = "emoji"))]
 pub use chess_rook::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use chevron_down::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 pub use chevron_first::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 pub use chevron_last::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use chevron_left::*;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "math",
-    feature = "development"
-))]
+#[cfg(any(feature = "arrows", feature = "math", feature = "development"))]
 pub use chevron_right::*;
-#[cfg(any(
-    feature = "arrows",
-    feature = "navigation",
-    feature = "math",
-    feature = "gaming"
-))]
+#[cfg(any(feature = "arrows", feature = "math", feature = "gaming"))]
 pub use chevron_up::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use chevrons_down::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_down_up::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use chevrons_left::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_left_right::*;
@@ -5004,11 +4960,11 @@ pub use chevrons_left_right::*;
     feature = "gaming"
 ))]
 pub use chevrons_left_right_ellipsis::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use chevrons_right::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_right_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use chevrons_up::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_up_down::*;
@@ -5024,33 +4980,33 @@ pub use cigarette_off::*;
 pub use circle::*;
 #[cfg(feature = "notifications")]
 pub use circle_alert::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use circle_arrow_down::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use circle_arrow_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_arrow_out_down_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_arrow_out_down_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "development"))]
+#[cfg(any(feature = "arrows", feature = "development"))]
 pub use circle_arrow_out_up_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_arrow_out_up_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use circle_arrow_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use circle_arrow_up::*;
 #[cfg(feature = "notifications")]
 pub use circle_check::*;
 #[cfg(feature = "notifications")]
 pub use circle_check_big::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_chevron_down::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_chevron_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_chevron_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use circle_chevron_up::*;
 #[cfg(any(feature = "development", feature = "shapes"))]
 pub use circle_dashed::*;
@@ -5353,7 +5309,11 @@ pub use cup_soda::*;
 pub use currency::*;
 #[cfg(any(feature = "shapes", feature = "design", feature = "math"))]
 pub use cylinder::*;
-#[cfg(any(feature = "buildings", feature = "sustainability"))]
+#[cfg(any(
+    feature = "buildings",
+    feature = "sustainability",
+    feature = "navigation"
+))]
 pub use dam::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database::*;
@@ -5562,7 +5522,7 @@ pub use eye_closed::*;
 pub use eye_off::*;
 #[cfg(any(feature = "social", feature = "brands"))]
 pub use facebook::*;
-#[cfg(feature = "buildings")]
+#[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use factory::*;
 #[cfg(feature = "home")]
 pub use fan::*;
@@ -5816,6 +5776,8 @@ pub use folders::*;
 pub use footprints::*;
 #[cfg(feature = "transportation")]
 pub use forklift::*;
+#[cfg(feature = "development")]
+pub use form::*;
 #[cfg(feature = "mail")]
 pub use forward::*;
 #[cfg(any(feature = "design", feature = "photography"))]
@@ -6142,7 +6104,7 @@ pub use hospital::*;
 pub use hotel::*;
 #[cfg(any(feature = "time", feature = "gaming"))]
 pub use hourglass::*;
-#[cfg(any(feature = "buildings", feature = "home"))]
+#[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 pub use house::*;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
 pub use house_heart::*;
@@ -6975,7 +6937,7 @@ pub use pin_off::*;
 pub use pipette::*;
 #[cfg(feature = "food-beverage")]
 pub use pizza::*;
-#[cfg(any(feature = "transportation", feature = "travel"))]
+#[cfg(any(feature = "transportation", feature = "travel", feature = "navigation"))]
 pub use plane::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use plane_landing::*;
@@ -7241,7 +7203,7 @@ pub use save::*;
 pub use save_all::*;
 #[cfg(any(feature = "text", feature = "files"))]
 pub use save_off::*;
-#[cfg(feature = "navigation")]
+#[cfg(any(feature = "navigation", feature = "science", feature = "finance"))]
 pub use scale::*;
 #[cfg(feature = "design")]
 pub use scale_3_d::*;
@@ -7611,29 +7573,29 @@ pub use square::*;
     feature = "multimedia"
 ))]
 pub use square_activity::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use square_arrow_down::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use square_arrow_down_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "gaming"))]
+#[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use square_arrow_down_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_out_down_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_out_down_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_out_up_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "social"))]
+#[cfg(any(feature = "arrows", feature = "social"))]
 pub use square_arrow_out_up_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_right::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_up::*;
-#[cfg(any(feature = "arrows", feature = "navigation"))]
+#[cfg(feature = "arrows")]
 pub use square_arrow_up_left::*;
-#[cfg(any(feature = "arrows", feature = "navigation", feature = "social"))]
+#[cfg(any(feature = "arrows", feature = "social"))]
 pub use square_arrow_up_right::*;
 #[cfg(any(
     feature = "text",
@@ -8297,6 +8259,10 @@ pub use watch::*;
     feature = "sustainability"
 ))]
 pub use waves::*;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+pub use waves_arrow_down::*;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+pub use waves_arrow_up::*;
 #[cfg(any(feature = "sports", feature = "home"))]
 pub use waves_ladder::*;
 #[cfg(any(
