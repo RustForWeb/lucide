@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ThermometerSun(
+pub fn BookSearch(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,12 +29,10 @@ pub fn ThermometerSun(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v2" />
-            <path d="M12 8a4 4 0 0 0-1.645 7.647" />
-            <path d="M2 12h2" />
-            <path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z" />
-            <path d="m4.93 4.93 1.41 1.41" />
-            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="M11 22H5.5a1 1 0 0 1 0-5h4.501" />
+            <path d="m21 22-1.879-1.878" />
+            <path d="M3 19.5v-15A2.5 2.5 0 0 1 5.5 2H18a1 1 0 0 1 1 1v8" />
+            <circle cx="17" cy="18" r="3" />
         </svg>
     }
 }

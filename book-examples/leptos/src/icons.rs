@@ -298,6 +298,7 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
                 (view! { <BookOpenText /> }.into_any(), "Book Open Text"),
                 (view! { <BookPlus /> }.into_any(), "Book Plus"),
+                (view! { <BookSearch /> }.into_any(), "Book Search"),
                 (view! { <BookText /> }.into_any(), "Book Text"),
                 (view! { <BookType /> }.into_any(), "Book Type"),
                 (view! { <BookUp /> }.into_any(), "Book Up"),
@@ -1659,6 +1660,7 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <School /> }.into_any(), "School"),
                 (view! { <Scissors /> }.into_any(), "Scissors"),
                 (view! { <ScissorsLineDashed /> }.into_any(), "Scissors Line Dashed"),
+                (view! { <Scooter /> }.into_any(), "Scooter"),
                 (view! { <ScreenShare /> }.into_any(), "Screen Share"),
                 (view! { <ScreenShareOff /> }.into_any(), "Screen Share Off"),
                 (view! { <Scroll /> }.into_any(), "Scroll"),
@@ -2046,6 +2048,7 @@ pub fn IconsV() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Van /> }.into_any(), "Van"),
                 (view! { <Variable /> }.into_any(), "Variable"),
                 (view! { <Vault /> }.into_any(), "Vault"),
                 (view! { <VectorSquare /> }.into_any(), "Vector Square"),
@@ -2102,6 +2105,7 @@ pub fn IconsW() -> impl IntoView {
                 (view! { <Webhook /> }.into_any(), "Webhook"),
                 (view! { <WebhookOff /> }.into_any(), "Webhook Off"),
                 (view! { <Weight /> }.into_any(), "Weight"),
+                (view! { <WeightTilde /> }.into_any(), "Weight Tilde"),
                 (view! { <Wheat /> }.into_any(), "Wheat"),
                 (view! { <WheatOff /> }.into_any(), "Wheat Off"),
                 (view! { <WholeWord /> }.into_any(), "Whole Word"),

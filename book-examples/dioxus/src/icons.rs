@@ -1283,6 +1283,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BookSearch {}
+            },
+            "Book Search",
+        ),
+        (
+            rsx! {
                 BookText {}
             },
             "Book Text",
@@ -1292,12 +1298,6 @@ pub fn IconsB1() -> Element {
                 BookType {}
             },
             "Book Type",
-        ),
-        (
-            rsx! {
-                BookUp {}
-            },
-            "Book Up",
         ),
     ];
     rsx! {
@@ -1314,6 +1314,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookUp {}
+            },
+            "Book Up",
+        ),
         (
             rsx! {
                 BookUp2 {}
@@ -7950,6 +7956,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                Scooter {}
+            },
+            "Scooter",
+        ),
+        (
+            rsx! {
                 ScreenShare {}
             },
             "Screen Share",
@@ -8398,12 +8410,6 @@ pub fn IconsS1() -> Element {
             },
             "Snail",
         ),
-        (
-            rsx! {
-                Snowflake {}
-            },
-            "Snowflake",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8419,6 +8425,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Snowflake {}
+            },
+            "Snowflake",
+        ),
         (
             rsx! {
                 SoapDispenserDroplet {}
@@ -9013,12 +9025,6 @@ pub fn IconsS2() -> Element {
             },
             "Sticker",
         ),
-        (
-            rsx! {
-                StickyNote {}
-            },
-            "Sticky Note",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -9034,6 +9040,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                StickyNote {}
+            },
+            "Sticky Note",
+        ),
         (
             rsx! {
                 Store {}
@@ -10023,6 +10035,12 @@ pub fn IconsV1() -> Element {
     let icons = [
         (
             rsx! {
+                Van {}
+            },
+            "Van",
+        ),
+        (
+            rsx! {
                 Variable {}
             },
             "Variable",
@@ -10269,6 +10287,12 @@ pub fn IconsW1() -> Element {
                 Weight {}
             },
             "Weight",
+        ),
+        (
+            rsx! {
+                WeightTilde {}
+            },
+            "Weight Tilde",
         ),
         (
             rsx! {

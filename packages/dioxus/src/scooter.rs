@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct ThermometerSunProps {
+pub struct ScooterProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct ThermometerSunProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn ThermometerSun(props: ThermometerSunProps) -> Element {
+pub fn Scooter(props: ScooterProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,12 +34,10 @@ pub fn ThermometerSun(props: ThermometerSunProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 2v2" }
-            path { "d": "M12 8a4 4 0 0 0-1.645 7.647" }
-            path { "d": "M2 12h2" }
-            path { "d": "M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z" }
-            path { "d": "m4.93 4.93 1.41 1.41" }
-            path { "d": "m6.34 17.66-1.41 1.41" }
+            path { "d": "M21 4h-3.5l2 11.05" }
+            path { "d": "M6.95 17h5.142c.523 0 .95-.406 1.063-.916a6.5 6.5 0 0 1 5.345-5.009" }
+            circle { "cx": "19.5", "cy": "17.5", "r": "2.5" }
+            circle { "cx": "4.5", "cy": "17.5", "r": "2.5" }
         }
     }
 }
