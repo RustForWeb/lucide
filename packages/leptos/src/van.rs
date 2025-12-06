@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ThermometerSun(
+pub fn Van(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,12 +29,11 @@ pub fn ThermometerSun(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 2v2" />
-            <path d="M12 8a4 4 0 0 0-1.645 7.647" />
-            <path d="M2 12h2" />
-            <path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z" />
-            <path d="m4.93 4.93 1.41 1.41" />
-            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="M13 6v5a1 1 0 0 0 1 1h6.102a1 1 0 0 1 .712.298l.898.91a1 1 0 0 1 .288.702V17a1 1 0 0 1-1 1h-3" />
+            <path d="M5 18H3a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2h12c1.1 0 2.1.8 2.4 1.8l1.176 4.2" />
+            <path d="M9 18h5" />
+            <circle cx="16" cy="18" r="2" />
+            <circle cx="7" cy="18" r="2" />
         </svg>
     }
 }

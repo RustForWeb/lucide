@@ -467,6 +467,8 @@ mod book_open_check;
 mod book_open_text;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 mod book_plus;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+mod book_search;
 #[cfg(any(feature = "text", feature = "gaming"))]
 mod book_text;
 #[cfg(any(feature = "text", feature = "design", feature = "gaming"))]
@@ -3084,6 +3086,8 @@ mod school;
 mod scissors;
 #[cfg(any(feature = "design", feature = "tools"))]
 mod scissors_line_dashed;
+#[cfg(feature = "transportation")]
+mod scooter;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -3960,6 +3964,8 @@ mod utensils;
 mod utensils_crossed;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
 mod utility_pole;
+#[cfg(feature = "transportation")]
+mod van;
 #[cfg(any(feature = "development", feature = "math"))]
 mod variable;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
@@ -4109,6 +4115,8 @@ mod webhook;
 mod webhook_off;
 #[cfg(feature = "math")]
 mod weight;
+#[cfg(feature = "math")]
+mod weight_tilde;
 #[cfg(feature = "food-beverage")]
 mod wheat;
 #[cfg(feature = "food-beverage")]
@@ -4643,6 +4651,8 @@ pub use book_open_check::*;
 pub use book_open_text::*;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 pub use book_plus::*;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+pub use book_search::*;
 #[cfg(any(feature = "text", feature = "gaming"))]
 pub use book_text::*;
 #[cfg(any(feature = "text", feature = "design", feature = "gaming"))]
@@ -7260,6 +7270,8 @@ pub use school::*;
 pub use scissors::*;
 #[cfg(any(feature = "design", feature = "tools"))]
 pub use scissors_line_dashed::*;
+#[cfg(feature = "transportation")]
+pub use scooter::*;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -8136,6 +8148,8 @@ pub use utensils::*;
 pub use utensils_crossed::*;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
 pub use utility_pole::*;
+#[cfg(feature = "transportation")]
+pub use van::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use variable::*;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
@@ -8285,6 +8299,8 @@ pub use webhook::*;
 pub use webhook_off::*;
 #[cfg(feature = "math")]
 pub use weight::*;
+#[cfg(feature = "math")]
+pub use weight_tilde::*;
 #[cfg(feature = "food-beverage")]
 pub use wheat::*;
 #[cfg(feature = "food-beverage")]

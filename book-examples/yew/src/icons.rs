@@ -307,6 +307,7 @@ pub fn IconsB() -> Html {
         (html! { <BookOpenCheck /> }, "Book Open Check"),
         (html! { <BookOpenText /> }, "Book Open Text"),
         (html! { <BookPlus /> }, "Book Plus"),
+        (html! { <BookSearch /> }, "Book Search"),
         (html! { <BookText /> }, "Book Text"),
         (html! { <BookType /> }, "Book Type"),
         (html! { <BookUp /> }, "Book Up"),
@@ -1684,6 +1685,7 @@ pub fn IconsS() -> Html {
         (html! { <School /> }, "School"),
         (html! { <Scissors /> }, "Scissors"),
         (html! { <ScissorsLineDashed /> }, "Scissors Line Dashed"),
+        (html! { <Scooter /> }, "Scooter"),
         (html! { <ScreenShare /> }, "Screen Share"),
         (html! { <ScreenShareOff /> }, "Screen Share Off"),
         (html! { <Scroll /> }, "Scroll"),
@@ -2095,6 +2097,7 @@ pub fn IconsU() -> Html {
 #[function_component]
 pub fn IconsV() -> Html {
     let icons = [
+        (html! { <Van /> }, "Van"),
         (html! { <Variable /> }, "Variable"),
         (html! { <Vault /> }, "Vault"),
         (html! { <VectorSquare /> }, "Vector Square"),
@@ -2150,6 +2153,7 @@ pub fn IconsW() -> Html {
         (html! { <Webhook /> }, "Webhook"),
         (html! { <WebhookOff /> }, "Webhook Off"),
         (html! { <Weight /> }, "Weight"),
+        (html! { <WeightTilde /> }, "Weight Tilde"),
         (html! { <Wheat /> }, "Wheat"),
         (html! { <WheatOff /> }, "Wheat Off"),
         (html! { <WholeWord /> }, "Whole Word"),
