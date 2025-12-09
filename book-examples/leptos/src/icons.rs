@@ -4,37 +4,46 @@ use lucide_leptos::*;
 pub fn Icons() -> impl IntoView {
     view! {
         <div class="w-full max-w-80 py-4">
-            <IconsA />
-            <IconsB />
-            <IconsC />
-            <IconsD />
-            <IconsE />
-            <IconsF />
-            <IconsG />
-            <IconsH />
-            <IconsI />
-            <IconsJ />
-            <IconsK />
-            <IconsL />
-            <IconsM />
-            <IconsN />
-            <IconsO />
-            <IconsP />
-            <IconsQ />
-            <IconsR />
-            <IconsS />
-            <IconsT />
-            <IconsU />
-            <IconsV />
-            <IconsW />
-            <IconsX />
-            <IconsY />
-            <IconsZ />
+            <IconsA1 />
+            <IconsA2 />
+            <IconsB1 />
+            <IconsB2 />
+            <IconsC1 />
+            <IconsC2 />
+            <IconsC3 />
+            <IconsD1 />
+            <IconsE1 />
+            <IconsF1 />
+            <IconsF2 />
+            <IconsG1 />
+            <IconsH1 />
+            <IconsI1 />
+            <IconsJ1 />
+            <IconsK1 />
+            <IconsL1 />
+            <IconsM1 />
+            <IconsM2 />
+            <IconsN1 />
+            <IconsO1 />
+            <IconsP1 />
+            <IconsP2 />
+            <IconsQ1 />
+            <IconsR1 />
+            <IconsS1 />
+            <IconsS2 />
+            <IconsS3 />
+            <IconsT1 />
+            <IconsU1 />
+            <IconsV1 />
+            <IconsW1 />
+            <IconsX1 />
+            <IconsY1 />
+            <IconsZ1 />
         </div>
     }
 }
 #[component]
-pub fn IconsA() -> impl IntoView {
+pub fn IconsA1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -180,6 +189,23 @@ pub fn IconsA() -> impl IntoView {
                 (view! { <AtSign /> }.into_any(), "At Sign"),
                 (view! { <Atom /> }.into_any(), "Atom"),
                 (view! { <AudioLines /> }.into_any(), "Audio Lines"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsA2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <AudioWaveform /> }.into_any(), "Audio Waveform"),
                 (view! { <Award /> }.into_any(), "Award"),
                 (view! { <Axe /> }.into_any(), "Axe"),
@@ -197,7 +223,7 @@ pub fn IconsA() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsB() -> impl IntoView {
+pub fn IconsB1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -301,6 +327,23 @@ pub fn IconsB() -> impl IntoView {
                 (view! { <BookSearch /> }.into_any(), "Book Search"),
                 (view! { <BookText /> }.into_any(), "Book Text"),
                 (view! { <BookType /> }.into_any(), "Book Type"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsB2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <BookUp /> }.into_any(), "Book Up"),
                 (view! { <BookUp2 /> }.into_any(), "Book Up 2"),
                 (view! { <BookUser /> }.into_any(), "Book User"),
@@ -354,7 +397,7 @@ pub fn IconsB() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsC() -> impl IntoView {
+pub fn IconsC1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -467,6 +510,23 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <ChevronsUpDown /> }.into_any(), "Chevrons Up Down"),
                 (view! { <Chromium /> }.into_any(), "Chromium"),
                 (view! { <Church /> }.into_any(), "Church"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsC2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <Cigarette /> }.into_any(), "Cigarette"),
                 (view! { <CigaretteOff /> }.into_any(), "Cigarette Off"),
                 (view! { <Circle /> }.into_any(), "Circle"),
@@ -567,6 +627,23 @@ pub fn IconsC() -> impl IntoView {
                 (view! { <CloudSun /> }.into_any(), "Cloud Sun"),
                 (view! { <CloudSunRain /> }.into_any(), "Cloud Sun Rain"),
                 (view! { <CloudUpload /> }.into_any(), "Cloud Upload"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsC3() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <Cloudy /> }.into_any(), "Cloudy"),
                 (view! { <Clover /> }.into_any(), "Clover"),
                 (view! { <Club /> }.into_any(), "Club"),
@@ -636,7 +713,7 @@ pub fn IconsC() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsD() -> impl IntoView {
+pub fn IconsD1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -701,7 +778,7 @@ pub fn IconsD() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsE() -> impl IntoView {
+pub fn IconsE1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -740,7 +817,7 @@ pub fn IconsE() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsF() -> impl IntoView {
+pub fn IconsF1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -847,6 +924,23 @@ pub fn IconsF() -> impl IntoView {
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
                 (view! { <FolderGit /> }.into_any(), "Folder Git"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsF2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
                 (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),
@@ -893,7 +987,7 @@ pub fn IconsF() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsG() -> impl IntoView {
+pub fn IconsG1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -964,7 +1058,7 @@ pub fn IconsG() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsH() -> impl IntoView {
+pub fn IconsH1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1034,7 +1128,7 @@ pub fn IconsH() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsI() -> impl IntoView {
+pub fn IconsI1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1074,7 +1168,7 @@ pub fn IconsI() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsJ() -> impl IntoView {
+pub fn IconsJ1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1093,7 +1187,7 @@ pub fn IconsJ() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsK() -> impl IntoView {
+pub fn IconsK1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1118,7 +1212,7 @@ pub fn IconsK() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsL() -> impl IntoView {
+pub fn IconsL1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1208,7 +1302,7 @@ pub fn IconsL() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsM() -> impl IntoView {
+pub fn IconsM1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1315,6 +1409,23 @@ pub fn IconsM() -> impl IntoView {
                 (view! { <Mountain /> }.into_any(), "Mountain"),
                 (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
                 (view! { <Mouse /> }.into_any(), "Mouse"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsM2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <MouseOff /> }.into_any(), "Mouse Off"),
                 (view! { <MousePointer /> }.into_any(), "Mouse Pointer"),
                 (view! { <MousePointer2 /> }.into_any(), "Mouse Pointer 2"),
@@ -1352,7 +1463,7 @@ pub fn IconsM() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsN() -> impl IntoView {
+pub fn IconsN1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1385,7 +1496,7 @@ pub fn IconsN() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsO() -> impl IntoView {
+pub fn IconsO1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1411,7 +1522,7 @@ pub fn IconsO() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsP() -> impl IntoView {
+pub fn IconsP1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1515,7 +1626,6 @@ pub fn IconsP() -> impl IntoView {
                 (view! { <Projector /> }.into_any(), "Projector"),
                 (view! { <Proportions /> }.into_any(), "Proportions"),
                 (view! { <Puzzle /> }.into_any(), "Puzzle"),
-                (view! { <Pyramid /> }.into_any(), "Pyramid"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1529,7 +1639,23 @@ pub fn IconsP() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsQ() -> impl IntoView {
+pub fn IconsP2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [(view! { <Pyramid /> }.into_any(), "Pyramid")]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsQ1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1548,7 +1674,7 @@ pub fn IconsQ() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsR() -> impl IntoView {
+pub fn IconsR1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1632,7 +1758,7 @@ pub fn IconsR() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsS() -> impl IntoView {
+pub fn IconsS1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1736,6 +1862,23 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <Smile /> }.into_any(), "Smile"),
                 (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
                 (view! { <Snail /> }.into_any(), "Snail"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsS2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <Snowflake /> }.into_any(), "Snowflake"),
                 (view! { <SoapDispenserDroplet /> }.into_any(), "Soap Dispenser Droplet"),
                 (view! { <Sofa /> }.into_any(), "Sofa"),
@@ -1839,6 +1982,23 @@ pub fn IconsS() -> impl IntoView {
                 (view! { <StepForward /> }.into_any(), "Step Forward"),
                 (view! { <Stethoscope /> }.into_any(), "Stethoscope"),
                 (view! { <Sticker /> }.into_any(), "Sticker"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsS3() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <StickyNote /> }.into_any(), "Sticky Note"),
                 (view! { <Store /> }.into_any(), "Store"),
                 (view! { <StretchHorizontal /> }.into_any(), "Stretch Horizontal"),
@@ -1872,7 +2032,7 @@ pub fn IconsS() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsT() -> impl IntoView {
+pub fn IconsT1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -1989,7 +2149,7 @@ pub fn IconsT() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsU() -> impl IntoView {
+pub fn IconsU1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -2044,7 +2204,7 @@ pub fn IconsU() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsV() -> impl IntoView {
+pub fn IconsV1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -2083,7 +2243,7 @@ pub fn IconsV() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsW() -> impl IntoView {
+pub fn IconsW1() -> impl IntoView {
     view! {
         <For
             each=move || [
@@ -2137,7 +2297,7 @@ pub fn IconsW() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsX() -> impl IntoView {
+pub fn IconsX1() -> impl IntoView {
     view! {
         <For
             each=move || [(view! { <X /> }.into_any(), "X")]
@@ -2153,7 +2313,7 @@ pub fn IconsX() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsY() -> impl IntoView {
+pub fn IconsY1() -> impl IntoView {
     view! {
         <For
             each=move || [(view! { <Youtube /> }.into_any(), "Youtube")]
@@ -2169,7 +2329,7 @@ pub fn IconsY() -> impl IntoView {
     }
 }
 #[component]
-pub fn IconsZ() -> impl IntoView {
+pub fn IconsZ1() -> impl IntoView {
     view! {
         <For
             each=move || [
