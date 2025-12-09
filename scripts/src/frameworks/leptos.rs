@@ -89,32 +89,42 @@ impl Framework for Leptos {
                 );
             }
 
-            let name: TokenStream = format!("Icons{letter}").parse()?;
-            letter_component_name.push(quote! {
-                <#name />
-            });
+            for (n, chunk) in component_name
+                .into_iter()
+                .zip(human_name)
+                .collect::<Vec<_>>()
+                .chunks(100)
+                .enumerate()
+            {
+                let (component_name, human_name): (Vec<_>, Vec<_>) = chunk.iter().cloned().unzip();
 
-            letter_component.push(quote! {
-                #[component]
-                pub fn #name() -> impl IntoView {
-                    view! {
-                        <For
-                            each=move || [
-                                #((view! { <#component_name /> }.into_any(), #human_name),)*
-                            ]
-                            key=|icon| icon.1
-                            children=move |(icon, name)| {
-                                view! {
-                                    <div class="flex flex-wrap items-center gap-4 text-sm">
-                                        {icon}
-                                        <span>{name}</span>
-                                    </div>
+                let name: TokenStream = format!("Icons{letter}{}", n + 1).parse()?;
+                letter_component_name.push(quote! {
+                    <#name />
+                });
+
+                letter_component.push(quote! {
+                    #[component]
+                    pub fn #name() -> impl IntoView {
+                        view! {
+                            <For
+                                each=move || [
+                                    #((view! { <#component_name /> }.into_any(), #human_name),)*
+                                ]
+                                key=|icon| icon.1
+                                children=move |(icon, name)| {
+                                    view! {
+                                        <div class="flex flex-wrap items-center gap-4 text-sm">
+                                            {icon}
+                                            <span>{name}</span>
+                                        </div>
+                                    }
                                 }
-                            }
-                        />
+                            />
+                        }
                     }
-                }
-            });
+                });
+            }
         }
 
         Ok(quote! {
