@@ -18,7 +18,7 @@ pub struct ChartNetworkProps {
     #[prop_or_default]
     pub node_ref: NodeRef,
 }
-#[function_component]
+#[component]
 pub fn ChartNetwork(props: &ChartNetworkProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size

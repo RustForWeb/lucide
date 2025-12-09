@@ -1,6 +1,6 @@
 use lucide_yew::{Component, *};
 use yew::prelude::*;
-#[function_component]
+#[component]
 pub fn Icons() -> Html {
     html! {
         <div class="w-full max-w-80 py-4">
@@ -33,7 +33,7 @@ pub fn Icons() -> Html {
         </div>
     }
 }
-#[function_component]
+#[component]
 pub fn IconsA() -> Html {
     let icons = [
         (html! { <AArrowDown /> }, "A Arrow Down"),
@@ -204,7 +204,7 @@ pub fn IconsA() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsB() -> Html {
     let icons = [
         (html! { <Baby /> }, "Baby"),
@@ -366,7 +366,7 @@ pub fn IconsB() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsC() -> Html {
     let icons = [
         (html! { <Cable /> }, "Cable"),
@@ -665,7 +665,7 @@ pub fn IconsC() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsD() -> Html {
     let icons = [
         (html! { <Dam /> }, "Dam"),
@@ -729,7 +729,7 @@ pub fn IconsD() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsE() -> Html {
     let icons = [
         (html! { <Ear /> }, "Ear"),
@@ -767,7 +767,7 @@ pub fn IconsE() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsF() -> Html {
     let icons = [
         (html! { <Facebook /> }, "Facebook"),
@@ -919,7 +919,7 @@ pub fn IconsF() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsG() -> Html {
     let icons = [
         (html! { <GalleryHorizontal /> }, "Gallery Horizontal"),
@@ -995,7 +995,7 @@ pub fn IconsG() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsH() -> Html {
     let icons = [
         (html! { <Ham /> }, "Ham"),
@@ -1064,7 +1064,7 @@ pub fn IconsH() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsI() -> Html {
     let icons = [
         (html! { <IceCreamBowl /> }, "Ice Cream Bowl"),
@@ -1103,7 +1103,7 @@ pub fn IconsI() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsJ() -> Html {
     let icons = [
         (html! { <JapaneseYen /> }, "Japanese Yen"),
@@ -1121,7 +1121,7 @@ pub fn IconsJ() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsK() -> Html {
     let icons = [
         (html! { <Kanban /> }, "Kanban"),
@@ -1145,7 +1145,7 @@ pub fn IconsK() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsL() -> Html {
     let icons = [
         (html! { <Lamp /> }, "Lamp"),
@@ -1234,7 +1234,7 @@ pub fn IconsL() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsM() -> Html {
     let icons = [
         (html! { <Magnet /> }, "Magnet"),
@@ -1377,7 +1377,7 @@ pub fn IconsM() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsN() -> Html {
     let icons = [
         (html! { <Navigation /> }, "Navigation"),
@@ -1409,7 +1409,7 @@ pub fn IconsN() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsO() -> Html {
     let icons = [
         (html! { <Octagon /> }, "Octagon"),
@@ -1434,7 +1434,7 @@ pub fn IconsO() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsP() -> Html {
     let icons = [
         (html! { <Package /> }, "Package"),
@@ -1557,7 +1557,7 @@ pub fn IconsP() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsQ() -> Html {
     let icons = [
         (html! { <QrCode /> }, "Qr Code"),
@@ -1575,7 +1575,7 @@ pub fn IconsQ() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsR() -> Html {
     let icons = [
         (html! { <Rabbit /> }, "Rabbit"),
@@ -1658,7 +1658,7 @@ pub fn IconsR() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsS() -> Html {
     let icons = [
         (html! { <Sailboat /> }, "Sailboat"),
@@ -1924,7 +1924,7 @@ pub fn IconsS() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsT() -> Html {
     let icons = [
         (html! { <Table /> }, "Table"),
@@ -2040,7 +2040,7 @@ pub fn IconsT() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsU() -> Html {
     let icons = [
         (html! { <Umbrella /> }, "Umbrella"),
@@ -2094,7 +2094,7 @@ pub fn IconsU() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsV() -> Html {
     let icons = [
         (html! { <Van /> }, "Van"),
@@ -2132,7 +2132,7 @@ pub fn IconsV() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsW() -> Html {
     let icons = [
         (html! { <Wallet /> }, "Wallet"),
@@ -2185,7 +2185,7 @@ pub fn IconsW() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsX() -> Html {
     let icons = [(html! { <X /> }, "X")];
     icons
@@ -2200,7 +2200,7 @@ pub fn IconsX() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsY() -> Html {
     let icons = [(html! { <Youtube /> }, "Youtube")];
     icons
@@ -2215,7 +2215,7 @@ pub fn IconsY() -> Html {
         })
         .collect::<Html>()
 }
-#[function_component]
+#[component]
 pub fn IconsZ() -> Html {
     let icons = [
         (html! { <Zap /> }, "Zap"),

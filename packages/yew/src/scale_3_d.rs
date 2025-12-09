@@ -18,7 +18,7 @@ pub struct Scale3DProps {
     #[prop_or_default]
     pub node_ref: NodeRef,
 }
-#[function_component]
+#[component]
 pub fn Scale3D(props: &Scale3DProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
