@@ -18,7 +18,7 @@ pub struct ActivityProps {
     #[prop_or_default]
     pub node_ref: NodeRef,
 }
-#[function_component]
+#[component]
 pub fn Activity(props: &ActivityProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size

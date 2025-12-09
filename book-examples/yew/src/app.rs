@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-#[function_component]
+#[component]
 pub fn App() -> Html {
     #[allow(unused_mut)]
     let mut children: Vec<Html> = vec![];

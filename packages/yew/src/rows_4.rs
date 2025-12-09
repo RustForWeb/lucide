@@ -18,7 +18,7 @@ pub struct Rows4Props {
     #[prop_or_default]
     pub node_ref: NodeRef,
 }
-#[function_component]
+#[component]
 pub fn Rows4(props: &Rows4Props) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size

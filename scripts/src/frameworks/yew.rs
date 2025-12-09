@@ -74,7 +74,7 @@ impl Framework for Yew {
                 pub node_ref: NodeRef,
             }
 
-            #[function_component]
+            #[component]
             pub fn #component_name(props: &#props_name) -> Html {
                 let stroke_width = if props.absolute_stroke_width {
                     props.stroke_width * 24 / props.size
@@ -116,7 +116,7 @@ impl Framework for Yew {
             });
 
             letter_component.push(quote! {
-                #[function_component]
+                #[component]
                 pub fn #name() -> Html {
                     let icons = [
                         #((html! { <#component_name /> }, #human_name),)*
@@ -139,7 +139,7 @@ impl Framework for Yew {
             use lucide_yew::{*, Component};
             use yew::prelude::*;
 
-            #[function_component]
+            #[component]
             pub fn Icons() -> Html {
                 html! {
                     <div class="w-full max-w-80 py-4">
