@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn BrushCleaning(
+pub fn CloudSync(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,11 @@ pub fn BrushCleaning(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m16 22-1-4" />
-            <path d="M19 14a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v1a1 1 0 0 0 1 1" />
-            <path d="M19 14H5l-1.973 6.767A1 1 0 0 0 4 22h16a1 1 0 0 0 .973-1.233z" />
-            <path d="m8 22 1-4" />
+            <path d="m17 18-1.535 1.605a5 5 0 0 1-8-1.5" />
+            <path d="M17 22v-4h-4" />
+            <path d="M20.996 15.251A4.5 4.5 0 0 0 17.495 8h-1.79a7 7 0 1 0-12.709 5.607" />
+            <path d="M7 10v4h4" />
+            <path d="m7 14 1.535-1.605a5 5 0 0 1 8 1.5" />
         </svg>
     }
 }

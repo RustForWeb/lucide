@@ -827,6 +827,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                Balloon {}
+            },
+            "Balloon",
+        ),
+        (
+            rsx! {
                 Ban {}
             },
             "Ban",
@@ -1293,12 +1299,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Text",
         ),
-        (
-            rsx! {
-                BookType {}
-            },
-            "Book Type",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -1314,6 +1314,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookType {}
+            },
+            "Book Type",
+        ),
         (
             rsx! {
                 BookUp {}
@@ -2390,6 +2396,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CirclePile {}
+            },
+            "Circle Pile",
+        ),
+        (
+            rsx! {
                 CirclePlay {}
             },
             "Circle Play",
@@ -2690,6 +2702,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CloudBackup {}
+            },
+            "Cloud Backup",
+        ),
+        (
+            rsx! {
                 CloudCheck {}
             },
             "Cloud Check",
@@ -2772,18 +2790,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Sun",
         ),
-        (
-            rsx! {
-                CloudSunRain {}
-            },
-            "Cloud Sun Rain",
-        ),
-        (
-            rsx! {
-                CloudUpload {}
-            },
-            "Cloud Upload",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2799,6 +2805,24 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudSunRain {}
+            },
+            "Cloud Sun Rain",
+        ),
+        (
+            rsx! {
+                CloudSync {}
+            },
+            "Cloud Sync",
+        ),
+        (
+            rsx! {
+                CloudUpload {}
+            },
+            "Cloud Upload",
+        ),
         (
             rsx! {
                 Cloudy {}
@@ -5429,6 +5453,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LayersPlus {}
+            },
+            "Layers Plus",
+        ),
+        (
+            rsx! {
                 LayoutDashboard {}
             },
             "Layout Dashboard",
@@ -7992,6 +8022,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                SearchAlert {}
+            },
+            "Search Alert",
+        ),
+        (
+            rsx! {
                 SearchCheck {}
             },
             "Search Check",
@@ -8404,12 +8440,6 @@ pub fn IconsS1() -> Element {
             },
             "Smile Plus",
         ),
-        (
-            rsx! {
-                Snail {}
-            },
-            "Snail",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8425,6 +8455,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Snail {}
+            },
+            "Snail",
+        ),
         (
             rsx! {
                 Snowflake {}
@@ -9019,12 +9055,6 @@ pub fn IconsS2() -> Element {
             },
             "Stethoscope",
         ),
-        (
-            rsx! {
-                Sticker {}
-            },
-            "Sticker",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -9040,6 +9070,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Sticker {}
+            },
+            "Sticker",
+        ),
         (
             rsx! {
                 StickyNote {}

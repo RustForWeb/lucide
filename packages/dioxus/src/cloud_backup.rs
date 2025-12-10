@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct TicketsProps {
+pub struct CloudBackupProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct TicketsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Tickets(props: TicketsProps) -> Element {
+pub fn CloudBackup(props: CloudBackupProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,9 @@ pub fn Tickets(props: TicketsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m3.173 8.18 11-5a2 2 0 0 1 2.647.993L18.56 8" }
-            path { "d": "M6 10V8" }
-            path { "d": "M6 14v1" }
-            path { "d": "M6 19v2" }
-            rect {
-                "x": "2",
-                "y": "8",
-                "width": "20",
-                "height": "13",
-                "rx": "2",
-            }
+            path { "d": "M21 15.251A4.5 4.5 0 0 0 17.5 8h-1.79A7 7 0 1 0 3 13.607" }
+            path { "d": "M7 11v4h4" }
+            path { "d": "M8 19a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5 4.82 4.82 0 0 0-3.41 1.41L7 15" }
         }
     }
 }

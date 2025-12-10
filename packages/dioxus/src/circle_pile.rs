@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct TicketsProps {
+pub struct CirclePileProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct TicketsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Tickets(props: TicketsProps) -> Element {
+pub fn CirclePile(props: CirclePileProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,12 @@ pub fn Tickets(props: TicketsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m3.173 8.18 11-5a2 2 0 0 1 2.647.993L18.56 8" }
-            path { "d": "M6 10V8" }
-            path { "d": "M6 14v1" }
-            path { "d": "M6 19v2" }
-            rect {
-                "x": "2",
-                "y": "8",
-                "width": "20",
-                "height": "13",
-                "rx": "2",
-            }
+            circle { "cx": "12", "cy": "19", "r": "2" }
+            circle { "cx": "12", "cy": "5", "r": "2" }
+            circle { "cx": "16", "cy": "12", "r": "2" }
+            circle { "cx": "20", "cy": "19", "r": "2" }
+            circle { "cx": "4", "cy": "19", "r": "2" }
+            circle { "cx": "8", "cy": "12", "r": "2" }
         }
     }
 }
