@@ -248,6 +248,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BadgeTurkishLira /> }.into_any(), "Badge Turkish Lira"),
                 (view! { <BadgeX /> }.into_any(), "Badge X"),
                 (view! { <BaggageClaim /> }.into_any(), "Baggage Claim"),
+                (view! { <Balloon /> }.into_any(), "Balloon"),
                 (view! { <Ban /> }.into_any(), "Ban"),
                 (view! { <Banana /> }.into_any(), "Banana"),
                 (view! { <Bandage /> }.into_any(), "Bandage"),
@@ -326,7 +327,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookPlus /> }.into_any(), "Book Plus"),
                 (view! { <BookSearch /> }.into_any(), "Book Search"),
                 (view! { <BookText /> }.into_any(), "Book Text"),
-                (view! { <BookType /> }.into_any(), "Book Type"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -344,6 +344,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookType /> }.into_any(), "Book Type"),
                 (view! { <BookUp /> }.into_any(), "Book Up"),
                 (view! { <BookUp2 /> }.into_any(), "Book Up 2"),
                 (view! { <BookUser /> }.into_any(), "Book User"),
@@ -561,6 +562,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleParkingOff /> }.into_any(), "Circle Parking Off"),
                 (view! { <CirclePause /> }.into_any(), "Circle Pause"),
                 (view! { <CirclePercent /> }.into_any(), "Circle Percent"),
+                (view! { <CirclePile /> }.into_any(), "Circle Pile"),
                 (view! { <CirclePlay /> }.into_any(), "Circle Play"),
                 (view! { <CirclePlus /> }.into_any(), "Circle Plus"),
                 (view! { <CirclePoundSterling /> }.into_any(), "Circle Pound Sterling"),
@@ -611,6 +613,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),
                 (view! { <Cloud /> }.into_any(), "Cloud"),
                 (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
+                (view! { <CloudBackup /> }.into_any(), "Cloud Backup"),
                 (view! { <CloudCheck /> }.into_any(), "Cloud Check"),
                 (view! { <CloudCog /> }.into_any(), "Cloud Cog"),
                 (view! { <CloudDownload /> }.into_any(), "Cloud Download"),
@@ -625,8 +628,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CloudRainWind /> }.into_any(), "Cloud Rain Wind"),
                 (view! { <CloudSnow /> }.into_any(), "Cloud Snow"),
                 (view! { <CloudSun /> }.into_any(), "Cloud Sun"),
-                (view! { <CloudSunRain /> }.into_any(), "Cloud Sun Rain"),
-                (view! { <CloudUpload /> }.into_any(), "Cloud Upload"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -644,6 +645,9 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudSunRain /> }.into_any(), "Cloud Sun Rain"),
+                (view! { <CloudSync /> }.into_any(), "Cloud Sync"),
+                (view! { <CloudUpload /> }.into_any(), "Cloud Upload"),
                 (view! { <Cloudy /> }.into_any(), "Cloudy"),
                 (view! { <Clover /> }.into_any(), "Clover"),
                 (view! { <Club /> }.into_any(), "Club"),
@@ -1233,6 +1237,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <Laugh /> }.into_any(), "Laugh"),
                 (view! { <Layers /> }.into_any(), "Layers"),
                 (view! { <Layers2 /> }.into_any(), "Layers 2"),
+                (view! { <LayersPlus /> }.into_any(), "Layers Plus"),
                 (view! { <LayoutDashboard /> }.into_any(), "Layout Dashboard"),
                 (view! { <LayoutGrid /> }.into_any(), "Layout Grid"),
                 (view! { <LayoutList /> }.into_any(), "Layout List"),
@@ -1792,6 +1797,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Scroll /> }.into_any(), "Scroll"),
                 (view! { <ScrollText /> }.into_any(), "Scroll Text"),
                 (view! { <Search /> }.into_any(), "Search"),
+                (view! { <SearchAlert /> }.into_any(), "Search Alert"),
                 (view! { <SearchCheck /> }.into_any(), "Search Check"),
                 (view! { <SearchCode /> }.into_any(), "Search Code"),
                 (view! { <SearchSlash /> }.into_any(), "Search Slash"),
@@ -1861,7 +1867,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SmartphoneNfc /> }.into_any(), "Smartphone Nfc"),
                 (view! { <Smile /> }.into_any(), "Smile"),
                 (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
-                (view! { <Snail /> }.into_any(), "Snail"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1879,6 +1884,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Snail /> }.into_any(), "Snail"),
                 (view! { <Snowflake /> }.into_any(), "Snowflake"),
                 (view! { <SoapDispenserDroplet /> }.into_any(), "Soap Dispenser Droplet"),
                 (view! { <Sofa /> }.into_any(), "Sofa"),
@@ -1981,7 +1987,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <StepBack /> }.into_any(), "Step Back"),
                 (view! { <StepForward /> }.into_any(), "Step Forward"),
                 (view! { <Stethoscope /> }.into_any(), "Stethoscope"),
-                (view! { <Sticker /> }.into_any(), "Sticker"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1999,6 +2004,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Sticker /> }.into_any(), "Sticker"),
                 (view! { <StickyNote /> }.into_any(), "Sticky Note"),
                 (view! { <Store /> }.into_any(), "Store"),
                 (view! { <StretchHorizontal /> }.into_any(), "Stretch Horizontal"),

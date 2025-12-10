@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct TicketsProps {
+pub struct LayersPlusProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct TicketsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Tickets(props: TicketsProps) -> Element {
+pub fn LayersPlus(props: LayersPlusProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,11 @@ pub fn Tickets(props: TicketsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m3.173 8.18 11-5a2 2 0 0 1 2.647.993L18.56 8" }
-            path { "d": "M6 10V8" }
-            path { "d": "M6 14v1" }
-            path { "d": "M6 19v2" }
-            rect {
-                "x": "2",
-                "y": "8",
-                "width": "20",
-                "height": "13",
-                "rx": "2",
-            }
+            path { "d": "M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 .83.18 2 2 0 0 0 .83-.18l8.58-3.9a1 1 0 0 0 0-1.831z" }
+            path { "d": "M16 17h6" }
+            path { "d": "M19 14v6" }
+            path { "d": "M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 .825.178" }
+            path { "d": "M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l2.116-.962" }
         }
     }
 }

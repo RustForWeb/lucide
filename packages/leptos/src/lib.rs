@@ -290,6 +290,8 @@ mod badge_turkish_lira;
 mod badge_x;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod baggage_claim;
+#[cfg(feature = "emoji")]
+mod balloon;
 #[cfg(feature = "account")]
 mod ban;
 #[cfg(feature = "food-beverage")]
@@ -871,6 +873,8 @@ mod circle_pause;
     feature = "math"
 ))]
 mod circle_percent;
+#[cfg(feature = "shapes")]
+mod circle_pile;
 #[cfg(feature = "multimedia")]
 mod circle_play;
 #[cfg(any(
@@ -976,6 +980,8 @@ mod closed_caption;
 mod cloud;
 #[cfg(feature = "development")]
 mod cloud_alert;
+#[cfg(any(feature = "arrows", feature = "files"))]
+mod cloud_backup;
 #[cfg(feature = "development")]
 mod cloud_check;
 #[cfg(feature = "development")]
@@ -1006,6 +1012,8 @@ mod cloud_snow;
 mod cloud_sun;
 #[cfg(feature = "weather")]
 mod cloud_sun_rain;
+#[cfg(any(feature = "arrows", feature = "files"))]
+mod cloud_sync;
 #[cfg(any(feature = "arrows", feature = "files"))]
 mod cloud_upload;
 #[cfg(feature = "weather")]
@@ -2072,6 +2080,8 @@ mod layers;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_2;
 #[cfg(any(feature = "design", feature = "layout"))]
+mod layers_plus;
+#[cfg(any(feature = "design", feature = "layout"))]
 mod layout_dashboard;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layout_grid;
@@ -3106,6 +3116,8 @@ mod scroll;
 mod scroll_text;
 #[cfg(any(feature = "text", feature = "social"))]
 mod search;
+#[cfg(any(feature = "text", feature = "social"))]
+mod search_alert;
 #[cfg(any(feature = "text", feature = "social"))]
 mod search_check;
 #[cfg(any(feature = "text", feature = "social", feature = "development"))]
@@ -4474,6 +4486,8 @@ pub use badge_turkish_lira::*;
 pub use badge_x::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use baggage_claim::*;
+#[cfg(feature = "emoji")]
+pub use balloon::*;
 #[cfg(feature = "account")]
 pub use ban::*;
 #[cfg(feature = "food-beverage")]
@@ -5055,6 +5069,8 @@ pub use circle_pause::*;
     feature = "math"
 ))]
 pub use circle_percent::*;
+#[cfg(feature = "shapes")]
+pub use circle_pile::*;
 #[cfg(feature = "multimedia")]
 pub use circle_play::*;
 #[cfg(any(
@@ -5160,6 +5176,8 @@ pub use closed_caption::*;
 pub use cloud::*;
 #[cfg(feature = "development")]
 pub use cloud_alert::*;
+#[cfg(any(feature = "arrows", feature = "files"))]
+pub use cloud_backup::*;
 #[cfg(feature = "development")]
 pub use cloud_check::*;
 #[cfg(feature = "development")]
@@ -5190,6 +5208,8 @@ pub use cloud_snow::*;
 pub use cloud_sun::*;
 #[cfg(feature = "weather")]
 pub use cloud_sun_rain::*;
+#[cfg(any(feature = "arrows", feature = "files"))]
+pub use cloud_sync::*;
 #[cfg(any(feature = "arrows", feature = "files"))]
 pub use cloud_upload::*;
 #[cfg(feature = "weather")]
@@ -6256,6 +6276,8 @@ pub use layers::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_2::*;
 #[cfg(any(feature = "design", feature = "layout"))]
+pub use layers_plus::*;
+#[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_dashboard::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_grid::*;
@@ -7290,6 +7312,8 @@ pub use scroll::*;
 pub use scroll_text::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use search::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use search_alert::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use search_check::*;
 #[cfg(any(feature = "text", feature = "social", feature = "development"))]
