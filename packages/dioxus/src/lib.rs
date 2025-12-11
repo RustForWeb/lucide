@@ -1840,6 +1840,8 @@ mod hash;
 mod hat_glasses;
 #[cfg(feature = "weather")]
 mod haze;
+#[cfg(any(feature = "devices", feature = "multimedia"))]
+mod hd;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
 mod hdmi_port;
 #[cfg(feature = "text")]
@@ -6036,6 +6038,8 @@ pub use hash::*;
 pub use hat_glasses::*;
 #[cfg(feature = "weather")]
 pub use haze::*;
+#[cfg(any(feature = "devices", feature = "multimedia"))]
+pub use hd::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
 pub use hdmi_port::*;
 #[cfg(feature = "text")]

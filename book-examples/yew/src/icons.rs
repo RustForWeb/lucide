@@ -1022,6 +1022,7 @@ pub fn IconsH() -> Html {
         (html! { <Hash /> }, "Hash"),
         (html! { <HatGlasses /> }, "Hat Glasses"),
         (html! { <Haze /> }, "Haze"),
+        (html! { <Hd /> }, "Hd"),
         (html! { <HdmiPort /> }, "Hdmi Port"),
         (html! { <Heading /> }, "Heading"),
         (html! { <Heading1 /> }, "Heading 1"),
