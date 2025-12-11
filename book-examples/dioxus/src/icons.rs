@@ -4895,6 +4895,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                Hd {}
+            },
+            "Hd",
+        ),
+        (
+            rsx! {
                 HdmiPort {}
             },
             "Hdmi Port",

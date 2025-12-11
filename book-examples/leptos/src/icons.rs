@@ -1086,6 +1086,7 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <Hash /> }.into_any(), "Hash"),
                 (view! { <HatGlasses /> }.into_any(), "Hat Glasses"),
                 (view! { <Haze /> }.into_any(), "Haze"),
+                (view! { <Hd /> }.into_any(), "Hd"),
                 (view! { <HdmiPort /> }.into_any(), "Hdmi Port"),
                 (view! { <Heading /> }.into_any(), "Heading"),
                 (view! { <Heading1 /> }.into_any(), "Heading 1"),
