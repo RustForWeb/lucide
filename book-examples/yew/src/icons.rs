@@ -847,6 +847,7 @@ pub fn IconsF() -> Html {
         (html! { <Fish /> }, "Fish"),
         (html! { <FishOff /> }, "Fish Off"),
         (html! { <FishSymbol /> }, "Fish Symbol"),
+        (html! { <FishingHook /> }, "Fishing Hook"),
         (html! { <Flag /> }, "Flag"),
         (html! { <FlagOff /> }, "Flag Off"),
         (html! { <FlagTriangleLeft /> }, "Flag Triangle Left"),

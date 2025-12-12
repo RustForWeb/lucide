@@ -898,6 +898,7 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <Fish /> }.into_any(), "Fish"),
                 (view! { <FishOff /> }.into_any(), "Fish Off"),
                 (view! { <FishSymbol /> }.into_any(), "Fish Symbol"),
+                (view! { <FishingHook /> }.into_any(), "Fishing Hook"),
                 (view! { <Flag /> }.into_any(), "Flag"),
                 (view! { <FlagOff /> }.into_any(), "Flag Off"),
                 (view! { <FlagTriangleLeft /> }.into_any(), "Flag Triangle Left"),
@@ -927,7 +928,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderCog /> }.into_any(), "Folder Cog"),
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
-                (view! { <FolderGit /> }.into_any(), "Folder Git"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -945,6 +945,7 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FolderGit /> }.into_any(), "Folder Git"),
                 (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
                 (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),

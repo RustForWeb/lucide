@@ -1501,6 +1501,8 @@ mod fish;
 mod fish_off;
 #[cfg(any(feature = "food-beverage", feature = "animals"))]
 mod fish_symbol;
+#[cfg(any(feature = "sports", feature = "travel"))]
+mod fishing_hook;
 #[cfg(any(feature = "account", feature = "social"))]
 mod flag;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -5699,6 +5701,8 @@ pub use fish::*;
 pub use fish_off::*;
 #[cfg(any(feature = "food-beverage", feature = "animals"))]
 pub use fish_symbol::*;
+#[cfg(any(feature = "sports", feature = "travel"))]
+pub use fishing_hook::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use flag::*;
 #[cfg(any(feature = "account", feature = "social"))]

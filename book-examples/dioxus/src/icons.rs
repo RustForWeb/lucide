@@ -4046,6 +4046,12 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
+                FishingHook {}
+            },
+            "Fishing Hook",
+        ),
+        (
+            rsx! {
                 Flag {}
             },
             "Flag",
@@ -4218,12 +4224,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Down",
         ),
-        (
-            rsx! {
-                FolderGit {}
-            },
-            "Folder Git",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -4239,6 +4239,12 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
+        (
+            rsx! {
+                FolderGit {}
+            },
+            "Folder Git",
+        ),
         (
             rsx! {
                 FolderGit2 {}
