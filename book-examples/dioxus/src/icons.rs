@@ -1775,6 +1775,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CannabisOff {}
+            },
+            "Cannabis Off",
+        ),
+        (
+            rsx! {
                 Captions {}
             },
             "Captions",
@@ -2169,12 +2175,6 @@ pub fn IconsC1() -> Element {
             },
             "Chromium",
         ),
-        (
-            rsx! {
-                Church {}
-            },
-            "Church",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2190,6 +2190,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Church {}
+            },
+            "Church",
+        ),
         (
             rsx! {
                 Cigarette {}
@@ -2784,12 +2790,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Snow",
         ),
-        (
-            rsx! {
-                CloudSun {}
-            },
-            "Cloud Sun",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -2805,6 +2805,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudSun {}
+            },
+            "Cloud Sun",
+        ),
         (
             rsx! {
                 CloudSunRain {}

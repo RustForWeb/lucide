@@ -435,6 +435,7 @@ pub fn IconsC1() -> impl IntoView {
                 (view! { <CandyCane /> }.into_any(), "Candy Cane"),
                 (view! { <CandyOff /> }.into_any(), "Candy Off"),
                 (view! { <Cannabis /> }.into_any(), "Cannabis"),
+                (view! { <CannabisOff /> }.into_any(), "Cannabis Off"),
                 (view! { <Captions /> }.into_any(), "Captions"),
                 (view! { <CaptionsOff /> }.into_any(), "Captions Off"),
                 (view! { <Car /> }.into_any(), "Car"),
@@ -510,7 +511,6 @@ pub fn IconsC1() -> impl IntoView {
                 (view! { <ChevronsUp /> }.into_any(), "Chevrons Up"),
                 (view! { <ChevronsUpDown /> }.into_any(), "Chevrons Up Down"),
                 (view! { <Chromium /> }.into_any(), "Chromium"),
-                (view! { <Church /> }.into_any(), "Church"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -528,6 +528,7 @@ pub fn IconsC2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Church /> }.into_any(), "Church"),
                 (view! { <Cigarette /> }.into_any(), "Cigarette"),
                 (view! { <CigaretteOff /> }.into_any(), "Cigarette Off"),
                 (view! { <Circle /> }.into_any(), "Circle"),
@@ -627,7 +628,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CloudRain /> }.into_any(), "Cloud Rain"),
                 (view! { <CloudRainWind /> }.into_any(), "Cloud Rain Wind"),
                 (view! { <CloudSnow /> }.into_any(), "Cloud Snow"),
-                (view! { <CloudSun /> }.into_any(), "Cloud Sun"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -645,6 +645,7 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudSun /> }.into_any(), "Cloud Sun"),
                 (view! { <CloudSunRain /> }.into_any(), "Cloud Sun Rain"),
                 (view! { <CloudSync /> }.into_any(), "Cloud Sync"),
                 (view! { <CloudUpload /> }.into_any(), "Cloud Upload"),

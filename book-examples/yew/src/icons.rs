@@ -403,6 +403,7 @@ pub fn IconsC() -> Html {
         (html! { <CandyCane /> }, "Candy Cane"),
         (html! { <CandyOff /> }, "Candy Off"),
         (html! { <Cannabis /> }, "Cannabis"),
+        (html! { <CannabisOff /> }, "Cannabis Off"),
         (html! { <Captions /> }, "Captions"),
         (html! { <CaptionsOff /> }, "Captions Off"),
         (html! { <Car /> }, "Car"),

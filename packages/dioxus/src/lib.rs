@@ -639,6 +639,8 @@ mod candy_cane;
 mod candy_off;
 #[cfg(feature = "nature")]
 mod cannabis;
+#[cfg(feature = "nature")]
+mod cannabis_off;
 #[cfg(feature = "multimedia")]
 mod captions;
 #[cfg(feature = "multimedia")]
@@ -4839,6 +4841,8 @@ pub use candy_cane::*;
 pub use candy_off::*;
 #[cfg(feature = "nature")]
 pub use cannabis::*;
+#[cfg(feature = "nature")]
+pub use cannabis_off::*;
 #[cfg(feature = "multimedia")]
 pub use captions::*;
 #[cfg(feature = "multimedia")]
