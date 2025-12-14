@@ -2009,6 +2009,7 @@ pub fn IconsS3() -> impl IntoView {
             each=move || [
                 (view! { <Sticker /> }.into_any(), "Sticker"),
                 (view! { <StickyNote /> }.into_any(), "Sticky Note"),
+                (view! { <Stone /> }.into_any(), "Stone"),
                 (view! { <Store /> }.into_any(), "Store"),
                 (view! { <StretchHorizontal /> }.into_any(), "Stretch Horizontal"),
                 (view! { <StretchVertical /> }.into_any(), "Stretch Vertical"),

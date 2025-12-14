@@ -9102,6 +9102,12 @@ pub fn IconsS3() -> Element {
         ),
         (
             rsx! {
+                Stone {}
+            },
+            "Stone",
+        ),
+        (
+            rsx! {
                 Store {}
             },
             "Store",

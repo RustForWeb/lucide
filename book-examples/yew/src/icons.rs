@@ -1901,6 +1901,7 @@ pub fn IconsS() -> Html {
         (html! { <Stethoscope /> }, "Stethoscope"),
         (html! { <Sticker /> }, "Sticker"),
         (html! { <StickyNote /> }, "Sticky Note"),
+        (html! { <Stone /> }, "Stone"),
         (html! { <Store /> }, "Store"),
         (html! { <StretchHorizontal /> }, "Stretch Horizontal"),
         (html! { <StretchVertical /> }, "Stretch Vertical"),

@@ -3639,6 +3639,8 @@ mod stethoscope;
 mod sticker;
 #[cfg(any(feature = "text", feature = "social"))]
 mod sticky_note;
+#[cfg(feature = "nature")]
+mod stone;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "shopping"))]
 mod store;
 #[cfg(feature = "layout")]
@@ -7841,6 +7843,8 @@ pub use stethoscope::*;
 pub use sticker::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use sticky_note::*;
+#[cfg(feature = "nature")]
+pub use stone::*;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "shopping"))]
 pub use store::*;
 #[cfg(feature = "layout")]
