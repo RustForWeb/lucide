@@ -33,6 +33,7 @@ pub fn Icons() -> impl IntoView {
             <IconsS2 />
             <IconsS3 />
             <IconsT1 />
+            <IconsT2 />
             <IconsU1 />
             <IconsV1 />
             <IconsW1 />
@@ -2106,6 +2107,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <ToggleRight /> }.into_any(), "Toggle Right"),
                 (view! { <Toilet /> }.into_any(), "Toilet"),
                 (view! { <ToolCase /> }.into_any(), "Tool Case"),
+                (view! { <Toolbox /> }.into_any(), "Toolbox"),
                 (view! { <Tornado /> }.into_any(), "Tornado"),
                 (view! { <Torus /> }.into_any(), "Torus"),
                 (view! { <Touchpad /> }.into_any(), "Touchpad"),
@@ -2145,8 +2147,23 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Twitch /> }.into_any(), "Twitch"),
                 (view! { <Twitter /> }.into_any(), "Twitter"),
                 (view! { <Type /> }.into_any(), "Type"),
-                (view! { <TypeOutline /> }.into_any(), "Type Outline"),
             ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsT2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [(view! { <TypeOutline /> }.into_any(), "Type Outline")]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

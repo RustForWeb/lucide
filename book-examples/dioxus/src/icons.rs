@@ -33,6 +33,7 @@ pub fn Icons() -> Element {
             IconsS2 {}
             IconsS3 {}
             IconsT1 {}
+            IconsT2 {}
             IconsU1 {}
             IconsV1 {}
             IconsW1 {}
@@ -9597,6 +9598,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Toolbox {}
+            },
+            "Toolbox",
+        ),
+        (
+            rsx! {
                 Tornado {}
             },
             "Tornado",
@@ -9829,13 +9836,26 @@ pub fn IconsT1() -> Element {
             },
             "Type",
         ),
-        (
-            rsx! {
-                TypeOutline {}
-            },
-            "Type Outline",
-        ),
     ];
+    rsx! {
+        for (icon , name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsT2() -> Element {
+    let icons = [(
+        rsx! {
+            TypeOutline {}
+        },
+        "Type Outline",
+    )];
     rsx! {
         for (icon , name) in icons {
             div {
