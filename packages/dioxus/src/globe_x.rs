@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BookmarkMinusProps {
+pub struct GlobeXProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BookmarkMinusProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn BookmarkMinus(props: BookmarkMinusProps) -> Element {
+pub fn GlobeX(props: GlobeXProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,9 @@ pub fn BookmarkMinus(props: BookmarkMinusProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M15 10H9" }
-            path { "d": "M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z" }
+            path { "d": "m16 3 5 5" }
+            path { "d": "M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10" }
+            path { "d": "m21 3-5 5" }
         }
     }
 }

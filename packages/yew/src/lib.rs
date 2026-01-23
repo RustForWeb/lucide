@@ -1745,6 +1745,8 @@ mod glasses;
 mod globe;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 mod globe_lock;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "navigation"))]
+mod globe_x;
 #[cfg(feature = "gaming")]
 mod goal;
 #[cfg(any(feature = "devices", feature = "gaming"))]
@@ -2836,6 +2838,8 @@ mod presentation;
 mod printer;
 #[cfg(feature = "devices")]
 mod printer_check;
+#[cfg(feature = "devices")]
+mod printer_x;
 #[cfg(any(
     feature = "multimedia",
     feature = "photography",
@@ -5951,6 +5955,8 @@ pub use glasses::*;
 pub use globe::*;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 pub use globe_lock::*;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "navigation"))]
+pub use globe_x::*;
 #[cfg(feature = "gaming")]
 pub use goal::*;
 #[cfg(any(feature = "devices", feature = "gaming"))]
@@ -7042,6 +7048,8 @@ pub use presentation::*;
 pub use printer::*;
 #[cfg(feature = "devices")]
 pub use printer_check::*;
+#[cfg(feature = "devices")]
+pub use printer_x::*;
 #[cfg(any(
     feature = "multimedia",
     feature = "photography",
