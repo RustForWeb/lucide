@@ -1037,6 +1037,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Glasses /> }.into_any(), "Glasses"),
                 (view! { <Globe /> }.into_any(), "Globe"),
                 (view! { <GlobeLock /> }.into_any(), "Globe Lock"),
+                (view! { <GlobeX /> }.into_any(), "Globe X"),
                 (view! { <Goal /> }.into_any(), "Goal"),
                 (view! { <Gpu /> }.into_any(), "Gpu"),
                 (view! { <GraduationCap /> }.into_any(), "Graduation Cap"),
@@ -1632,9 +1633,9 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Presentation /> }.into_any(), "Presentation"),
                 (view! { <Printer /> }.into_any(), "Printer"),
                 (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
+                (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
                 (view! { <Proportions /> }.into_any(), "Proportions"),
-                (view! { <Puzzle /> }.into_any(), "Puzzle"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1651,7 +1652,10 @@ pub fn IconsP1() -> impl IntoView {
 pub fn IconsP2() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <Pyramid /> }.into_any(), "Pyramid")]
+            each=move || [
+                (view! { <Puzzle /> }.into_any(), "Puzzle"),
+                (view! { <Pyramid /> }.into_any(), "Pyramid"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn TicketsPlane(
+pub fn GlobeX(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,13 +29,9 @@ pub fn TicketsPlane(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10.5 17h1.227a2 2 0 0 0 1.345-.52L18 12" />
-            <path d="m12 13.5 3.794.506" />
-            <path d="m3.173 8.18 11-5a2 2 0 0 1 2.647.993L18.56 8" />
-            <path d="M6 10V8" />
-            <path d="M6 14v1" />
-            <path d="M6 19v2" />
-            <rect x="2" y="8" width="20" height="13" rx="2" />
+            <path d="m16 3 5 5" />
+            <path d="M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10" />
+            <path d="m21 3-5 5" />
         </svg>
     }
 }

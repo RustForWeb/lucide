@@ -4683,6 +4683,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GlobeX {}
+            },
+            "Globe X",
+        ),
+        (
+            rsx! {
                 Goal {}
             },
             "Goal",
@@ -7365,6 +7371,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PrinterX {}
+            },
+            "Printer X",
+        ),
+        (
+            rsx! {
                 Projector {}
             },
             "Projector",
@@ -7374,12 +7386,6 @@ pub fn IconsP1() -> Element {
                 Proportions {}
             },
             "Proportions",
-        ),
-        (
-            rsx! {
-                Puzzle {}
-            },
-            "Puzzle",
         ),
     ];
     rsx! {
@@ -7395,12 +7401,20 @@ pub fn IconsP1() -> Element {
 }
 #[component]
 pub fn IconsP2() -> Element {
-    let icons = [(
-        rsx! {
-            Pyramid {}
-        },
-        "Pyramid",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Puzzle {}
+            },
+            "Puzzle",
+        ),
+        (
+            rsx! {
+                Pyramid {}
+            },
+            "Pyramid",
+        ),
+    ];
     rsx! {
         for (icon , name) in icons {
             div {
