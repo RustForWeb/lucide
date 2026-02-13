@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct RotateCcwKeyProps {
+pub struct UserKeyProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct RotateCcwKeyProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn RotateCcwKey(props: RotateCcwKeyProps) -> Element {
+pub fn UserKey(props: UserKeyProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,11 @@ pub fn RotateCcwKey(props: RotateCcwKeyProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 7v6" }
-            path { "d": "M12 9h2" }
-            path { "d": "M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8" }
-            path { "d": "M3 3v5h5" }
-            circle { "cx": "12", "cy": "15", "r": "2" }
+            path { "d": "M20 11v6" }
+            path { "d": "M20 13h2" }
+            path { "d": "M3 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 2.072.578" }
+            circle { "cx": "10", "cy": "7", "r": "4" }
+            circle { "cx": "20", "cy": "19", "r": "2" }
         }
     }
 }

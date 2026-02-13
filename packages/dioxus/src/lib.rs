@@ -1162,6 +1162,8 @@ mod database;
 ))]
 mod database_backup;
 #[cfg(any(feature = "devices", feature = "development"))]
+mod database_search;
+#[cfg(any(feature = "devices", feature = "development"))]
 mod database_zap;
 #[cfg(any(
     feature = "design",
@@ -3950,6 +3952,8 @@ mod user;
 mod user_check;
 #[cfg(feature = "account")]
 mod user_cog;
+#[cfg(feature = "account")]
+mod user_key;
 #[cfg(any(feature = "account", feature = "security"))]
 mod user_lock;
 #[cfg(feature = "account")]
@@ -3964,6 +3968,8 @@ mod user_round;
 mod user_round_check;
 #[cfg(feature = "account")]
 mod user_round_cog;
+#[cfg(feature = "account")]
+mod user_round_key;
 #[cfg(feature = "account")]
 mod user_round_minus;
 #[cfg(feature = "account")]
@@ -5371,6 +5377,8 @@ pub use database::*;
     feature = "photography"
 ))]
 pub use database_backup::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_search::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database_zap::*;
 #[cfg(any(
@@ -8160,6 +8168,8 @@ pub use user::*;
 pub use user_check::*;
 #[cfg(feature = "account")]
 pub use user_cog::*;
+#[cfg(feature = "account")]
+pub use user_key::*;
 #[cfg(any(feature = "account", feature = "security"))]
 pub use user_lock::*;
 #[cfg(feature = "account")]
@@ -8174,6 +8184,8 @@ pub use user_round::*;
 pub use user_round_check::*;
 #[cfg(feature = "account")]
 pub use user_round_cog::*;
+#[cfg(feature = "account")]
+pub use user_round_key::*;
 #[cfg(feature = "account")]
 pub use user_round_minus::*;
 #[cfg(feature = "account")]

@@ -3201,6 +3201,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DatabaseSearch {}
+            },
+            "Database Search",
+        ),
+        (
+            rsx! {
                 DatabaseZap {}
             },
             "Database Zap",
@@ -9994,6 +10000,12 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UserKey {}
+            },
+            "User Key",
+        ),
+        (
+            rsx! {
                 UserLock {}
             },
             "User Lock",
@@ -10033,6 +10045,12 @@ pub fn IconsU1() -> Element {
                 UserRoundCog {}
             },
             "User Round Cog",
+        ),
+        (
+            rsx! {
+                UserRoundKey {}
+            },
+            "User Round Key",
         ),
         (
             rsx! {

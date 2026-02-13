@@ -38,7 +38,7 @@ pub fn Bandage(props: BandageProps) -> Element {
             path { "d": "M10 14.01h.01" }
             path { "d": "M14 10.01h.01" }
             path { "d": "M14 14.01h.01" }
-            path { "d": "M18 6v11.5" }
+            path { "d": "M18 6v12" }
             path { "d": "M6 6v12" }
             rect {
                 "x": "2",

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CloudAlertProps {
+pub struct DatabaseSearchProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CloudAlertProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CloudAlert(props: &CloudAlertProps) -> Html {
+pub fn DatabaseSearch(props: &DatabaseSearchProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn CloudAlert(props: &CloudAlertProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 12v4" />
-            <path d="M12 20h.01" />
-            <path d="M8.128 16.949A7 7 0 1 1 15.71 8h1.79a1 1 0 0 1 0 9h-1.642" />
+            <path d="M21 11.693V5" />
+            <path d="m22 22-1.875-1.875" />
+            <path d="M3 12a9 3 0 0 0 8.697 2.998" />
+            <path d="M3 5v14a9 3 0 0 0 9.28 2.999" />
+            <circle cx="18" cy="18" r="3" />
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
         </svg>
     }
 }
