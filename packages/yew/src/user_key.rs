@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CloudAlertProps {
+pub struct UserKeyProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CloudAlertProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CloudAlert(props: &CloudAlertProps) -> Html {
+pub fn UserKey(props: &UserKeyProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,11 @@ pub fn CloudAlert(props: &CloudAlertProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 12v4" />
-            <path d="M12 20h.01" />
-            <path d="M8.128 16.949A7 7 0 1 1 15.71 8h1.79a1 1 0 0 1 0 9h-1.642" />
+            <path d="M20 11v6" />
+            <path d="M20 13h2" />
+            <path d="M3 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 2.072.578" />
+            <circle cx="10" cy="7" r="4" />
+            <circle cx="20" cy="19" r="2" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn HardDrive(
+pub fn DatabaseSearch(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,12 @@ pub fn HardDrive(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 16h.01" />
-            <path d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
-            <path d="M21.946 12.013H2.054" />
-            <path d="M6 16h.01" />
+            <path d="M21 11.693V5" />
+            <path d="m22 22-1.875-1.875" />
+            <path d="M3 12a9 3 0 0 0 8.697 2.998" />
+            <path d="M3 5v14a9 3 0 0 0 9.28 2.999" />
+            <circle cx="18" cy="18" r="3" />
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
         </svg>
     }
 }

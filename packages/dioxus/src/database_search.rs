@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct RotateCcwKeyProps {
+pub struct DatabaseSearchProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct RotateCcwKeyProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn RotateCcwKey(props: RotateCcwKeyProps) -> Element {
+pub fn DatabaseSearch(props: DatabaseSearchProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,17 @@ pub fn RotateCcwKey(props: RotateCcwKeyProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 7v6" }
-            path { "d": "M12 9h2" }
-            path { "d": "M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8" }
-            path { "d": "M3 3v5h5" }
-            circle { "cx": "12", "cy": "15", "r": "2" }
+            path { "d": "M21 11.693V5" }
+            path { "d": "m22 22-1.875-1.875" }
+            path { "d": "M3 12a9 3 0 0 0 8.697 2.998" }
+            path { "d": "M3 5v14a9 3 0 0 0 9.28 2.999" }
+            circle { "cx": "18", "cy": "18", "r": "3" }
+            ellipse {
+                "cx": "12",
+                "cy": "5",
+                "rx": "9",
+                "ry": "3",
+            }
         }
     }
 }
