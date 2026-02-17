@@ -2118,6 +2118,10 @@ mod leaf;
 mod leafy_green;
 #[cfg(any(feature = "communication", feature = "multimedia"))]
 mod lectern;
+#[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
+mod lens_concave;
+#[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
+mod lens_convex;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -6334,6 +6338,10 @@ pub use leaf::*;
 pub use leafy_green::*;
 #[cfg(any(feature = "communication", feature = "multimedia"))]
 pub use lectern::*;
+#[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
+pub use lens_concave::*;
+#[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
+pub use lens_convex::*;
 #[cfg(any(
     feature = "text",
     feature = "photography",
