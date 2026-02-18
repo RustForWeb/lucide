@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct ForkliftProps {
+pub struct GlobeOffProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct ForkliftProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Forklift(props: ForkliftProps) -> Element {
+pub fn GlobeOff(props: GlobeOffProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,13 +34,13 @@ pub fn Forklift(props: ForkliftProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 12H5a2 2 0 0 0-2 2v5" }
-            path { "d": "M15 19h7" }
-            path { "d": "M16 19V2" }
-            path { "d": "M6 12V7a2 2 0 0 1 2-2h2.172a2 2 0 0 1 1.414.586l3.828 3.828A2 2 0 0 1 16 10.828" }
-            path { "d": "M7 19h4" }
-            circle { "cx": "13", "cy": "19", "r": "2" }
-            circle { "cx": "5", "cy": "19", "r": "2" }
+            path { "d": "M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643" }
+            path { "d": "M15.557 15.556A14.5 14.5 0 0 1 12 22 10 10 0 0 1 4.929 4.929" }
+            path { "d": "M15.892 10.234A14.5 14.5 0 0 0 12 2a10 10 0 0 0-3.643.687" }
+            path { "d": "M17.656 12H22" }
+            path { "d": "M19.071 19.071A10 10 0 0 1 12 22 14.5 14.5 0 0 1 8.44 8.45" }
+            path { "d": "M2 12h10" }
+            path { "d": "m2 2 20 20" }
         }
     }
 }

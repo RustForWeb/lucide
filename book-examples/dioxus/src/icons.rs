@@ -4689,6 +4689,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GlobeOff {}
+            },
+            "Globe Off",
+        ),
+        (
+            rsx! {
                 GlobeX {}
             },
             "Globe X",

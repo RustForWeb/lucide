@@ -1038,6 +1038,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Glasses /> }.into_any(), "Glasses"),
                 (view! { <Globe /> }.into_any(), "Globe"),
                 (view! { <GlobeLock /> }.into_any(), "Globe Lock"),
+                (view! { <GlobeOff /> }.into_any(), "Globe Off"),
                 (view! { <GlobeX /> }.into_any(), "Globe X"),
                 (view! { <Goal /> }.into_any(), "Goal"),
                 (view! { <Gpu /> }.into_any(), "Gpu"),

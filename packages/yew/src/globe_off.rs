@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct RocketProps {
+pub struct GlobeOffProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct RocketProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Rocket(props: &RocketProps) -> Html {
+pub fn GlobeOff(props: &GlobeOffProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,14 +41,13 @@ pub fn Rocket(props: &RocketProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-            <path
-                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
-            />
-            <path
-                d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
-            />
-            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+            <path d="M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643" />
+            <path d="M15.557 15.556A14.5 14.5 0 0 1 12 22 10 10 0 0 1 4.929 4.929" />
+            <path d="M15.892 10.234A14.5 14.5 0 0 0 12 2a10 10 0 0 0-3.643.687" />
+            <path d="M17.656 12H22" />
+            <path d="M19.071 19.071A10 10 0 0 1 12 22 14.5 14.5 0 0 1 8.44 8.45" />
+            <path d="M2 12h10" />
+            <path d="m2 2 20 20" />
         </svg>
     }
 }
