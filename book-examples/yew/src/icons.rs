@@ -1184,6 +1184,8 @@ pub fn IconsL() -> Html {
         (html! { <Leaf /> }, "Leaf"),
         (html! { <LeafyGreen /> }, "Leafy Green"),
         (html! { <Lectern /> }, "Lectern"),
+        (html! { <LensConcave /> }, "Lens Concave"),
+        (html! { <LensConvex /> }, "Lens Convex"),
         (html! { <Library /> }, "Library"),
         (html! { <LibraryBig /> }, "Library Big"),
         (html! { <LifeBuoy /> }, "Life Buoy"),

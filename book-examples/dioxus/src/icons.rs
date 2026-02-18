@@ -5544,6 +5544,18 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LensConcave {}
+            },
+            "Lens Concave",
+        ),
+        (
+            rsx! {
+                LensConvex {}
+            },
+            "Lens Convex",
+        ),
+        (
+            rsx! {
                 Library {}
             },
             "Library",
