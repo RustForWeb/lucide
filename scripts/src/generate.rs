@@ -1,7 +1,8 @@
-use std::{collections::HashSet, error::Error, fs, path::Path};
+use std::{collections::HashSet, error::Error, fs, path::Path, process::Command};
 
 use convert_case::{Case, Casing};
 use log::info;
+use quote::quote;
 use regex::Regex;
 use tempfile::tempdir;
 
@@ -50,11 +51,14 @@ pub fn generate(
 
     paths.sort_by_key(|(_, file_stem)| file_stem.clone());
 
+    let mut names = vec![];
     let mut modules = vec![];
     let mut component_names = vec![];
     let mut metadatas = vec![];
 
     for (path, file_stem) in paths {
+        names.push(file_stem.clone());
+
         let file_contents = fs::read_to_string(&path)?;
 
         let mut metadata_path = path.clone();
@@ -81,6 +85,8 @@ pub fn generate(
         }
     }
 
+    generate_icon_names(repository_path, &names)?;
+
     for framework in &frameworks {
         generate_lib(repository_path, &**framework, &modules, &metadatas)?;
         generate_example(repository_path, &**framework, &component_names)?;
@@ -106,6 +112,47 @@ pub fn generate(
     }
 
     update_repository_rev(repository_path, upstream_repository_rev)?;
+
+    Ok(())
+}
+
+fn generate_icon_names(path: &Path, names: &[String]) -> Result<(), Box<dyn Error>> {
+    let count = names.len();
+
+    let output_path = path
+        .join("packages")
+        .join("icon-name")
+        .join("src")
+        .join("lib.rs");
+
+    let output_tokens = quote! {
+        pub static ICON_NAMES: [&str; #count] = [
+            #( #names, )*
+        ];
+    };
+
+    let output = prettyplease::unparse(&syn::parse2(output_tokens)?);
+
+    const HEADER: &str = "\
+    //! [Lucide](https://lucide.dev/) icon names.\n\
+    //!\n\
+    //! Lucide is a beautiful & consistent icon toolkit made by the community.\n\
+    //!\n\
+    //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.\n\
+    ";
+    const COMMENT: &str = "/// [Lucide](https://lucide.dev/) icon names.\n";
+
+    let output = format!("{HEADER}\n{COMMENT}{output}");
+
+    fs::write(&output_path, output)?;
+
+    Command::new("cargo")
+        .arg("fmt")
+        .arg("-p")
+        .arg("lucide-icon-name")
+        .current_dir(path)
+        .status()?
+        .exit_ok()?;
 
     Ok(())
 }
