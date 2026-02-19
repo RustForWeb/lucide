@@ -1747,6 +1747,8 @@ mod glasses;
 mod globe;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 mod globe_lock;
+#[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
+mod globe_off;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "navigation"))]
 mod globe_x;
 #[cfg(feature = "gaming")]
@@ -5967,6 +5969,8 @@ pub use glasses::*;
 pub use globe::*;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 pub use globe_lock::*;
+#[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
+pub use globe_off::*;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "navigation"))]
 pub use globe_x::*;
 #[cfg(feature = "gaming")]

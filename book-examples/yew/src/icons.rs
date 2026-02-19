@@ -974,6 +974,7 @@ pub fn IconsG() -> Html {
         (html! { <Glasses /> }, "Glasses"),
         (html! { <Globe /> }, "Globe"),
         (html! { <GlobeLock /> }, "Globe Lock"),
+        (html! { <GlobeOff /> }, "Globe Off"),
         (html! { <GlobeX /> }, "Globe X"),
         (html! { <Goal /> }, "Goal"),
         (html! { <Gpu /> }, "Gpu"),
