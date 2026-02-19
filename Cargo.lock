@@ -2750,6 +2750,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "lucide-icon-name"
+version = "2.566.0"
+
+[[package]]
 name = "lucide-leptos"
 version = "2.566.0"
 dependencies = [

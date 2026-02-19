@@ -1,0 +1,10 @@
+[package]
+name = "lucide-icon-name"
+description = "Lucide icon names."
+homepage = "https://lucide.rustforweb.org"
+
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
