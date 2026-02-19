@@ -1193,6 +1193,10 @@ pub fn IconsL() -> Html {
         (html! { <Ligature /> }, "Ligature"),
         (html! { <Lightbulb /> }, "Lightbulb"),
         (html! { <LightbulbOff /> }, "Lightbulb Off"),
+        (
+            html! { <LineDotRightHorizontal /> },
+            "Line Dot Right Horizontal",
+        ),
         (html! { <LineSquiggle /> }, "Line Squiggle"),
         (html! { <Link /> }, "Link"),
         (html! { <Link2 /> }, "Link 2"),
