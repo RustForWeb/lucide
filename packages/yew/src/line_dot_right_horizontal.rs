@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct GiftProps {
+pub struct LineDotRightHorizontalProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct GiftProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Gift(props: &GiftProps) -> Html {
+pub fn LineDotRightHorizontal(props: &LineDotRightHorizontalProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,10 +41,8 @@ pub fn Gift(props: &GiftProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 7v14" />
-            <path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" />
-            <path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5" />
-            <rect x="3" y="7" width="18" height="4" rx="1" />
+            <path d="M 3 12 L 15 12" />
+            <circle cx="18" cy="12" r="3" />
         </svg>
     }
 }
