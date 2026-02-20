@@ -953,6 +953,7 @@ pub fn IconsG() -> Html {
         (html! { <GitFork /> }, "Git Fork"),
         (html! { <GitGraph /> }, "Git Graph"),
         (html! { <GitMerge /> }, "Git Merge"),
+        (html! { <GitMergeConflict /> }, "Git Merge Conflict"),
         (html! { <GitPullRequest /> }, "Git Pull Request"),
         (html! { <GitPullRequestArrow /> }, "Git Pull Request Arrow"),
         (

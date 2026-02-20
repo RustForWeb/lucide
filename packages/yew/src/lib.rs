@@ -1724,6 +1724,8 @@ mod git_graph;
 #[cfg(feature = "development")]
 mod git_merge;
 #[cfg(feature = "development")]
+mod git_merge_conflict;
+#[cfg(feature = "development")]
 mod git_pull_request;
 #[cfg(any(feature = "development", feature = "arrows"))]
 mod git_pull_request_arrow;
@@ -5947,6 +5949,8 @@ pub use git_fork::*;
 pub use git_graph::*;
 #[cfg(feature = "development")]
 pub use git_merge::*;
+#[cfg(feature = "development")]
+pub use git_merge_conflict::*;
 #[cfg(feature = "development")]
 pub use git_pull_request::*;
 #[cfg(any(feature = "development", feature = "arrows"))]

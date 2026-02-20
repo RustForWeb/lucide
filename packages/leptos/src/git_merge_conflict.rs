@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Clapperboard(
+pub fn GitMergeConflict(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,11 @@ pub fn Clapperboard(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m12.296 3.464 3.02 3.956" />
-            <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z" />
-            <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <path d="m6.18 5.276 3.1 3.899" />
+            <path d="M12 6h4a2 2 0 0 1 2 2v7" />
+            <path d="M6 12v9" />
+            <path d="M9 3 3 9" />
+            <path d="M9 9 3 3" />
+            <circle cx="18" cy="18" r="3" />
         </svg>
     }
 }
