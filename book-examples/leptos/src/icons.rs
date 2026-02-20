@@ -1023,6 +1023,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <GitFork /> }.into_any(), "Git Fork"),
                 (view! { <GitGraph /> }.into_any(), "Git Graph"),
                 (view! { <GitMerge /> }.into_any(), "Git Merge"),
+                (view! { <GitMergeConflict /> }.into_any(), "Git Merge Conflict"),
                 (view! { <GitPullRequest /> }.into_any(), "Git Pull Request"),
                 (view! { <GitPullRequestArrow /> }.into_any(), "Git Pull Request Arrow"),
                 (view! { <GitPullRequestClosed /> }.into_any(), "Git Pull Request Closed"),

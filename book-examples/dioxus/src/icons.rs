@@ -4617,6 +4617,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GitMergeConflict {}
+            },
+            "Git Merge Conflict",
+        ),
+        (
+            rsx! {
                 GitPullRequest {}
             },
             "Git Pull Request",

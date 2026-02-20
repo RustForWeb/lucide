@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1675usize] = [
+pub static ICON_NAMES: [&str; 1676usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -740,6 +740,7 @@ pub static ICON_NAMES: [&str; 1675usize] = [
     "git-fork",
     "git-graph",
     "git-merge",
+    "git-merge-conflict",
     "git-pull-request",
     "git-pull-request-arrow",
     "git-pull-request-closed",
