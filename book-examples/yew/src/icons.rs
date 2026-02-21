@@ -1338,6 +1338,8 @@ pub fn IconsM() -> Html {
         (html! { <Minimize /> }, "Minimize"),
         (html! { <Minimize2 /> }, "Minimize 2"),
         (html! { <Minus /> }, "Minus"),
+        (html! { <MirrorRectangular /> }, "Mirror Rectangular"),
+        (html! { <MirrorRound /> }, "Mirror Round"),
         (html! { <Monitor /> }, "Monitor"),
         (html! { <MonitorCheck /> }, "Monitor Check"),
         (html! { <MonitorCloud /> }, "Monitor Cloud"),

@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1676usize] = [
+pub static ICON_NAMES: [&str; 1678usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -1014,6 +1014,8 @@ pub static ICON_NAMES: [&str; 1676usize] = [
     "minimize",
     "minimize-2",
     "minus",
+    "mirror-rectangular",
+    "mirror-round",
     "monitor",
     "monitor-check",
     "monitor-cloud",

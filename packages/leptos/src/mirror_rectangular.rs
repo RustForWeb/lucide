@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ClipboardPen(
+pub fn MirrorRectangular(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,9 @@ pub fn ClipboardPen(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M16 4h2a2 2 0 0 1 2 2v2" />
-            <path d="M21.34 15.664a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
-            <path d="M8 22H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-            <rect x="8" y="2" width="8" height="4" rx="1" />
+            <path d="M11 6 8 9" />
+            <path d="m16 7-8 8" />
+            <rect x="4" y="2" width="16" height="20" rx="2" />
         </svg>
     }
 }
