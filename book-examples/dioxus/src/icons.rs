@@ -6351,6 +6351,18 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MirrorRectangular {}
+            },
+            "Mirror Rectangular",
+        ),
+        (
+            rsx! {
+                MirrorRound {}
+            },
+            "Mirror Round",
+        ),
+        (
+            rsx! {
                 Monitor {}
             },
             "Monitor",
@@ -6457,18 +6469,6 @@ pub fn IconsM1() -> Element {
             },
             "Mountain",
         ),
-        (
-            rsx! {
-                MountainSnow {}
-            },
-            "Mountain Snow",
-        ),
-        (
-            rsx! {
-                Mouse {}
-            },
-            "Mouse",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -6484,6 +6484,18 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MountainSnow {}
+            },
+            "Mountain Snow",
+        ),
+        (
+            rsx! {
+                Mouse {}
+            },
+            "Mouse",
+        ),
         (
             rsx! {
                 MouseOff {}

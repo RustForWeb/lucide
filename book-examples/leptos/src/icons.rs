@@ -1405,6 +1405,8 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Minimize /> }.into_any(), "Minimize"),
                 (view! { <Minimize2 /> }.into_any(), "Minimize 2"),
                 (view! { <Minus /> }.into_any(), "Minus"),
+                (view! { <MirrorRectangular /> }.into_any(), "Mirror Rectangular"),
+                (view! { <MirrorRound /> }.into_any(), "Mirror Round"),
                 (view! { <Monitor /> }.into_any(), "Monitor"),
                 (view! { <MonitorCheck /> }.into_any(), "Monitor Check"),
                 (view! { <MonitorCloud /> }.into_any(), "Monitor Cloud"),
@@ -1423,8 +1425,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
                 (view! { <Motorbike /> }.into_any(), "Motorbike"),
                 (view! { <Mountain /> }.into_any(), "Mountain"),
-                (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
-                (view! { <Mouse /> }.into_any(), "Mouse"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1442,6 +1442,8 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
+                (view! { <Mouse /> }.into_any(), "Mouse"),
                 (view! { <MouseOff /> }.into_any(), "Mouse Off"),
                 (view! { <MousePointer /> }.into_any(), "Mouse Pointer"),
                 (view! { <MousePointer2 /> }.into_any(), "Mouse Pointer 2"),

@@ -2421,6 +2421,10 @@ mod minimize_2;
     feature = "tools"
 ))]
 mod minus;
+#[cfg(any(feature = "science", feature = "home", feature = "tools"))]
+mod mirror_rectangular;
+#[cfg(any(feature = "science", feature = "home", feature = "tools"))]
+mod mirror_round;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod monitor;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -6647,6 +6651,10 @@ pub use minimize_2::*;
     feature = "tools"
 ))]
 pub use minus::*;
+#[cfg(any(feature = "science", feature = "home", feature = "tools"))]
+pub use mirror_rectangular::*;
+#[cfg(any(feature = "science", feature = "home", feature = "tools"))]
+pub use mirror_round::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use monitor::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
