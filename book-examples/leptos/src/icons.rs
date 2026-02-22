@@ -2124,6 +2124,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Torus /> }.into_any(), "Torus"),
                 (view! { <Touchpad /> }.into_any(), "Touchpad"),
                 (view! { <TouchpadOff /> }.into_any(), "Touchpad Off"),
+                (view! { <TowelRack /> }.into_any(), "Towel Rack"),
                 (view! { <TowerControl /> }.into_any(), "Tower Control"),
                 (view! { <ToyBrick /> }.into_any(), "Toy Brick"),
                 (view! { <Tractor /> }.into_any(), "Tractor"),
@@ -2158,7 +2159,6 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TvMinimalPlay /> }.into_any(), "Tv Minimal Play"),
                 (view! { <Twitch /> }.into_any(), "Twitch"),
                 (view! { <Twitter /> }.into_any(), "Twitter"),
-                (view! { <Type /> }.into_any(), "Type"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2175,7 +2175,10 @@ pub fn IconsT1() -> impl IntoView {
 pub fn IconsT2() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <TypeOutline /> }.into_any(), "Type Outline")]
+            each=move || [
+                (view! { <Type /> }.into_any(), "Type"),
+                (view! { <TypeOutline /> }.into_any(), "Type Outline"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

@@ -3851,6 +3851,8 @@ mod torus;
 mod touchpad;
 #[cfg(feature = "devices")]
 mod touchpad_off;
+#[cfg(any(feature = "home", feature = "travel"))]
+mod towel_rack;
 #[cfg(any(feature = "travel", feature = "transportation"))]
 mod tower_control;
 #[cfg(any(feature = "gaming", feature = "development"))]
@@ -8081,6 +8083,8 @@ pub use torus::*;
 pub use touchpad::*;
 #[cfg(feature = "devices")]
 pub use touchpad_off::*;
+#[cfg(any(feature = "home", feature = "travel"))]
+pub use towel_rack::*;
 #[cfg(any(feature = "travel", feature = "transportation"))]
 pub use tower_control::*;
 #[cfg(any(feature = "gaming", feature = "development"))]

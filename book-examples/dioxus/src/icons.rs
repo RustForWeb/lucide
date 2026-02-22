@@ -9690,6 +9690,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TowelRack {}
+            },
+            "Towel Rack",
+        ),
+        (
+            rsx! {
                 TowerControl {}
             },
             "Tower Control",
@@ -9892,12 +9898,6 @@ pub fn IconsT1() -> Element {
             },
             "Twitter",
         ),
-        (
-            rsx! {
-                Type {}
-            },
-            "Type",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -9912,12 +9912,20 @@ pub fn IconsT1() -> Element {
 }
 #[component]
 pub fn IconsT2() -> Element {
-    let icons = [(
-        rsx! {
-            TypeOutline {}
-        },
-        "Type Outline",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Type {}
+            },
+            "Type",
+        ),
+        (
+            rsx! {
+                TypeOutline {}
+            },
+            "Type Outline",
+        ),
+    ];
     rsx! {
         for (icon , name) in icons {
             div {
