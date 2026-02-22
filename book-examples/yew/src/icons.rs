@@ -2015,6 +2015,7 @@ pub fn IconsT() -> Html {
         (html! { <Torus /> }, "Torus"),
         (html! { <Touchpad /> }, "Touchpad"),
         (html! { <TouchpadOff /> }, "Touchpad Off"),
+        (html! { <TowelRack /> }, "Towel Rack"),
         (html! { <TowerControl /> }, "Tower Control"),
         (html! { <ToyBrick /> }, "Toy Brick"),
         (html! { <Tractor /> }, "Tractor"),
