@@ -1528,11 +1528,7 @@ mod flask_conical_off;
 #[cfg(any(feature = "science", feature = "gaming"))]
 mod flask_round;
 #[cfg(any(feature = "design", feature = "photography"))]
-mod flip_horizontal;
-#[cfg(any(feature = "design", feature = "photography"))]
 mod flip_horizontal_2;
-#[cfg(any(feature = "design", feature = "photography"))]
-mod flip_vertical;
 #[cfg(any(feature = "design", feature = "photography"))]
 mod flip_vertical_2;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
@@ -2345,6 +2341,8 @@ mod message_circle_warning;
 mod message_circle_x;
 #[cfg(feature = "social")]
 mod message_square;
+#[cfg(any(feature = "social", feature = "account"))]
+mod message_square_check;
 #[cfg(any(feature = "development", feature = "social"))]
 mod message_square_code;
 #[cfg(feature = "social")]
@@ -2377,6 +2375,8 @@ mod message_square_warning;
 mod message_square_x;
 #[cfg(feature = "social")]
 mod messages_square;
+#[cfg(any(feature = "multimedia", feature = "time"))]
+mod metronome;
 #[cfg(any(
     feature = "devices",
     feature = "communication",
@@ -3465,6 +3465,20 @@ mod square_arrow_out_up_left;
 mod square_arrow_out_up_right;
 #[cfg(feature = "arrows")]
 mod square_arrow_right;
+#[cfg(any(
+    feature = "arrows",
+    feature = "shapes",
+    feature = "layout",
+    feature = "multimedia"
+))]
+mod square_arrow_right_enter;
+#[cfg(any(
+    feature = "arrows",
+    feature = "shapes",
+    feature = "layout",
+    feature = "multimedia"
+))]
+mod square_arrow_right_exit;
 #[cfg(feature = "arrows")]
 mod square_arrow_up;
 #[cfg(feature = "arrows")]
@@ -3486,6 +3500,10 @@ mod square_asterisk;
     feature = "development"
 ))]
 mod square_bottom_dashed_scissors;
+#[cfg(any(feature = "design", feature = "photography"))]
+mod square_centerline_dashed_horizontal;
+#[cfg(any(feature = "design", feature = "photography"))]
+mod square_centerline_dashed_vertical;
 #[cfg(any(
     feature = "charts",
     feature = "time",
@@ -5770,11 +5788,7 @@ pub use flask_conical_off::*;
 #[cfg(any(feature = "science", feature = "gaming"))]
 pub use flask_round::*;
 #[cfg(any(feature = "design", feature = "photography"))]
-pub use flip_horizontal::*;
-#[cfg(any(feature = "design", feature = "photography"))]
 pub use flip_horizontal_2::*;
-#[cfg(any(feature = "design", feature = "photography"))]
-pub use flip_vertical::*;
 #[cfg(any(feature = "design", feature = "photography"))]
 pub use flip_vertical_2::*;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
@@ -6587,6 +6601,8 @@ pub use message_circle_warning::*;
 pub use message_circle_x::*;
 #[cfg(feature = "social")]
 pub use message_square::*;
+#[cfg(any(feature = "social", feature = "account"))]
+pub use message_square_check::*;
 #[cfg(any(feature = "development", feature = "social"))]
 pub use message_square_code::*;
 #[cfg(feature = "social")]
@@ -6619,6 +6635,8 @@ pub use message_square_warning::*;
 pub use message_square_x::*;
 #[cfg(feature = "social")]
 pub use messages_square::*;
+#[cfg(any(feature = "multimedia", feature = "time"))]
+pub use metronome::*;
 #[cfg(any(
     feature = "devices",
     feature = "communication",
@@ -7707,6 +7725,20 @@ pub use square_arrow_out_up_left::*;
 pub use square_arrow_out_up_right::*;
 #[cfg(feature = "arrows")]
 pub use square_arrow_right::*;
+#[cfg(any(
+    feature = "arrows",
+    feature = "shapes",
+    feature = "layout",
+    feature = "multimedia"
+))]
+pub use square_arrow_right_enter::*;
+#[cfg(any(
+    feature = "arrows",
+    feature = "shapes",
+    feature = "layout",
+    feature = "multimedia"
+))]
+pub use square_arrow_right_exit::*;
 #[cfg(feature = "arrows")]
 pub use square_arrow_up::*;
 #[cfg(feature = "arrows")]
@@ -7728,6 +7760,10 @@ pub use square_asterisk::*;
     feature = "development"
 ))]
 pub use square_bottom_dashed_scissors::*;
+#[cfg(any(feature = "design", feature = "photography"))]
+pub use square_centerline_dashed_horizontal::*;
+#[cfg(any(feature = "design", feature = "photography"))]
+pub use square_centerline_dashed_vertical::*;
 #[cfg(any(
     feature = "charts",
     feature = "time",

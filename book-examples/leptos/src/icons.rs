@@ -913,9 +913,7 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FlaskConical /> }.into_any(), "Flask Conical"),
                 (view! { <FlaskConicalOff /> }.into_any(), "Flask Conical Off"),
                 (view! { <FlaskRound /> }.into_any(), "Flask Round"),
-                (view! { <FlipHorizontal /> }.into_any(), "Flip Horizontal"),
                 (view! { <FlipHorizontal2 /> }.into_any(), "Flip Horizontal 2"),
-                (view! { <FlipVertical /> }.into_any(), "Flip Vertical"),
                 (view! { <FlipVertical2 /> }.into_any(), "Flip Vertical 2"),
                 (view! { <Flower /> }.into_any(), "Flower"),
                 (view! { <Flower2 /> }.into_any(), "Flower 2"),
@@ -931,6 +929,8 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderCog /> }.into_any(), "Folder Cog"),
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
+                (view! { <FolderGit /> }.into_any(), "Folder Git"),
+                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -948,8 +948,6 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <FolderGit /> }.into_any(), "Folder Git"),
-                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
                 (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),
                 (view! { <FolderKanban /> }.into_any(), "Folder Kanban"),
@@ -1378,6 +1376,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MessageCircleWarning /> }.into_any(), "Message Circle Warning"),
                 (view! { <MessageCircleX /> }.into_any(), "Message Circle X"),
                 (view! { <MessageSquare /> }.into_any(), "Message Square"),
+                (view! { <MessageSquareCheck /> }.into_any(), "Message Square Check"),
                 (view! { <MessageSquareCode /> }.into_any(), "Message Square Code"),
                 (view! { <MessageSquareDashed /> }.into_any(), "Message Square Dashed"),
                 (view! { <MessageSquareDiff /> }.into_any(), "Message Square Diff"),
@@ -1394,6 +1393,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MessageSquareWarning /> }.into_any(), "Message Square Warning"),
                 (view! { <MessageSquareX /> }.into_any(), "Message Square X"),
                 (view! { <MessagesSquare /> }.into_any(), "Messages Square"),
+                (view! { <Metronome /> }.into_any(), "Metronome"),
                 (view! { <Mic /> }.into_any(), "Mic"),
                 (view! { <MicOff /> }.into_any(), "Mic Off"),
                 (view! { <MicVocal /> }.into_any(), "Mic Vocal"),
@@ -1423,8 +1423,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
                 (view! { <Moon /> }.into_any(), "Moon"),
-                (view! { <MoonStar /> }.into_any(), "Moon Star"),
-                (view! { <Motorbike /> }.into_any(), "Motorbike"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1442,6 +1440,8 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MoonStar /> }.into_any(), "Moon Star"),
+                (view! { <Motorbike /> }.into_any(), "Motorbike"),
                 (view! { <Mountain /> }.into_any(), "Mountain"),
                 (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
                 (view! { <Mouse /> }.into_any(), "Mouse"),
@@ -1936,6 +1936,8 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareArrowOutUpLeft /> }.into_any(), "Square Arrow Out Up Left"),
                 (view! { <SquareArrowOutUpRight /> }.into_any(), "Square Arrow Out Up Right"),
                 (view! { <SquareArrowRight /> }.into_any(), "Square Arrow Right"),
+                (view! { <SquareArrowRightEnter /> }.into_any(), "Square Arrow Right Enter"),
+                (view! { <SquareArrowRightExit /> }.into_any(), "Square Arrow Right Exit"),
                 (view! { <SquareArrowUp /> }.into_any(), "Square Arrow Up"),
                 (view! { <SquareArrowUpLeft /> }.into_any(), "Square Arrow Up Left"),
                 (view! { <SquareArrowUpRight /> }.into_any(), "Square Arrow Up Right"),
@@ -1943,6 +1945,14 @@ pub fn IconsS2() -> impl IntoView {
                 (
                     view! { <SquareBottomDashedScissors /> }.into_any(),
                     "Square Bottom Dashed Scissors",
+                ),
+                (
+                    view! { <SquareCenterlineDashedHorizontal /> }.into_any(),
+                    "Square Centerline Dashed Horizontal",
+                ),
+                (
+                    view! { <SquareCenterlineDashedVertical /> }.into_any(),
+                    "Square Centerline Dashed Vertical",
                 ),
                 (view! { <SquareChartGantt /> }.into_any(), "Square Chart Gantt"),
                 (view! { <SquareCheck /> }.into_any(), "Square Check"),
@@ -2002,10 +2012,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <Squirrel /> }.into_any(), "Squirrel"),
                 (view! { <Stamp /> }.into_any(), "Stamp"),
                 (view! { <Star /> }.into_any(), "Star"),
-                (view! { <StarHalf /> }.into_any(), "Star Half"),
-                (view! { <StarOff /> }.into_any(), "Star Off"),
-                (view! { <StepBack /> }.into_any(), "Step Back"),
-                (view! { <StepForward /> }.into_any(), "Step Forward"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2023,6 +2029,10 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <StarHalf /> }.into_any(), "Star Half"),
+                (view! { <StarOff /> }.into_any(), "Star Off"),
+                (view! { <StepBack /> }.into_any(), "Step Back"),
+                (view! { <StepForward /> }.into_any(), "Step Forward"),
                 (view! { <Stethoscope /> }.into_any(), "Stethoscope"),
                 (view! { <Sticker /> }.into_any(), "Sticker"),
                 (view! { <StickyNote /> }.into_any(), "Sticky Note"),

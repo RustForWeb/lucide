@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct FilePenLineProps {
+pub struct MessageSquareCheckProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct FilePenLineProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn FilePenLine(props: FilePenLineProps) -> Element {
+pub fn MessageSquareCheck(props: MessageSquareCheckProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,10 +34,8 @@ pub fn FilePenLine(props: FilePenLineProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z" }
-            path { "d": "M14.487 7.858A1 1 0 0 1 14 7V2" }
-            path { "d": "M20 19.645V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l2.516 2.516" }
-            path { "d": "M8 18h1" }
+            path { "d": "M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.7.7 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" }
+            path { "d": "m9 11 2 2 4-4" }
         }
     }
 }
