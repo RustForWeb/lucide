@@ -2321,6 +2321,8 @@ mod menu;
 mod merge;
 #[cfg(feature = "social")]
 mod message_circle;
+#[cfg(any(feature = "social", feature = "account"))]
+mod message_circle_check;
 #[cfg(any(feature = "development", feature = "social"))]
 mod message_circle_code;
 #[cfg(feature = "social")]
@@ -6555,6 +6557,8 @@ pub use menu::*;
 pub use merge::*;
 #[cfg(feature = "social")]
 pub use message_circle::*;
+#[cfg(any(feature = "social", feature = "account"))]
+pub use message_circle_check::*;
 #[cfg(any(feature = "development", feature = "social"))]
 pub use message_circle_code::*;
 #[cfg(feature = "social")]
