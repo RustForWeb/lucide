@@ -1734,6 +1734,7 @@ pub fn IconsS() -> Html {
         (html! { <Share2 /> }, "Share 2"),
         (html! { <Sheet /> }, "Sheet"),
         (html! { <Shell /> }, "Shell"),
+        (html! { <ShelvingUnit /> }, "Shelving Unit"),
         (html! { <Shield /> }, "Shield"),
         (html! { <ShieldAlert /> }, "Shield Alert"),
         (html! { <ShieldBan /> }, "Shield Ban"),

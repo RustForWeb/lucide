@@ -1835,6 +1835,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Share2 /> }.into_any(), "Share 2"),
                 (view! { <Sheet /> }.into_any(), "Sheet"),
                 (view! { <Shell /> }.into_any(), "Shell"),
+                (view! { <ShelvingUnit /> }.into_any(), "Shelving Unit"),
                 (view! { <Shield /> }.into_any(), "Shield"),
                 (view! { <ShieldAlert /> }.into_any(), "Shield Alert"),
                 (view! { <ShieldBan /> }.into_any(), "Shield Ban"),
@@ -1882,7 +1883,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SmartphoneCharging /> }.into_any(), "Smartphone Charging"),
                 (view! { <SmartphoneNfc /> }.into_any(), "Smartphone Nfc"),
                 (view! { <Smile /> }.into_any(), "Smile"),
-                (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1900,6 +1900,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
                 (view! { <Snail /> }.into_any(), "Snail"),
                 (view! { <Snowflake /> }.into_any(), "Snowflake"),
                 (view! { <SoapDispenserDroplet /> }.into_any(), "Soap Dispenser Droplet"),
@@ -2002,7 +2003,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <StarOff /> }.into_any(), "Star Off"),
                 (view! { <StepBack /> }.into_any(), "Step Back"),
                 (view! { <StepForward /> }.into_any(), "Step Forward"),
-                (view! { <Stethoscope /> }.into_any(), "Stethoscope"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2020,6 +2020,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Stethoscope /> }.into_any(), "Stethoscope"),
                 (view! { <Sticker /> }.into_any(), "Sticker"),
                 (view! { <StickyNote /> }.into_any(), "Sticky Note"),
                 (view! { <Stone /> }.into_any(), "Stone"),

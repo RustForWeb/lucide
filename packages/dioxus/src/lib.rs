@@ -3194,6 +3194,8 @@ mod sheet;
     feature = "home"
 ))]
 mod shell;
+#[cfg(feature = "home")]
+mod shelving_unit;
 #[cfg(any(
     feature = "account",
     feature = "security",
@@ -7426,6 +7428,8 @@ pub use sheet::*;
     feature = "home"
 ))]
 pub use shell::*;
+#[cfg(feature = "home")]
+pub use shelving_unit::*;
 #[cfg(any(
     feature = "account",
     feature = "security",

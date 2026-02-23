@@ -8235,6 +8235,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShelvingUnit {}
+            },
+            "Shelving Unit",
+        ),
+        (
+            rsx! {
                 Shield {}
             },
             "Shield",
@@ -8515,12 +8521,6 @@ pub fn IconsS1() -> Element {
             },
             "Smile",
         ),
-        (
-            rsx! {
-                SmilePlus {}
-            },
-            "Smile Plus",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -8536,6 +8536,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SmilePlus {}
+            },
+            "Smile Plus",
+        ),
         (
             rsx! {
                 Snail {}
@@ -9130,12 +9136,6 @@ pub fn IconsS2() -> Element {
             },
             "Step Forward",
         ),
-        (
-            rsx! {
-                Stethoscope {}
-            },
-            "Stethoscope",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -9151,6 +9151,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Stethoscope {}
+            },
+            "Stethoscope",
+        ),
         (
             rsx! {
                 Sticker {}

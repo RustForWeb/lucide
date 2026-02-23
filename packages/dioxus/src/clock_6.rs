@@ -34,8 +34,8 @@ pub fn Clock6(props: Clock6Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 6v10" }
             circle { "cx": "12", "cy": "12", "r": "10" }
+            path { "d": "M12 6v10" }
         }
     }
 }

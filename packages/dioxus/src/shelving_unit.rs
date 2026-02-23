@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Clock5Props {
+pub struct ShelvingUnitProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Clock5Props {
     pub style: Option<String>,
 }
 #[component]
-pub fn Clock5(props: Clock5Props) -> Element {
+pub fn ShelvingUnit(props: ShelvingUnitProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,13 @@ pub fn Clock5(props: Clock5Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            circle { "cx": "12", "cy": "12", "r": "10" }
-            path { "d": "M12 6v6l2 4" }
+            path { "d": "M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" }
+            path { "d": "M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" }
+            path { "d": "M20 22V2" }
+            path { "d": "M4 12h16" }
+            path { "d": "M4 20h16" }
+            path { "d": "M4 2v20" }
+            path { "d": "M4 4h16" }
         }
     }
 }
