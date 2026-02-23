@@ -1361,12 +1361,14 @@ pub fn IconsM() -> Html {
         (html! { <Mountain /> }, "Mountain"),
         (html! { <MountainSnow /> }, "Mountain Snow"),
         (html! { <Mouse /> }, "Mouse"),
+        (html! { <MouseLeft /> }, "Mouse Left"),
         (html! { <MouseOff /> }, "Mouse Off"),
         (html! { <MousePointer /> }, "Mouse Pointer"),
         (html! { <MousePointer2 /> }, "Mouse Pointer 2"),
         (html! { <MousePointer2Off /> }, "Mouse Pointer 2 Off"),
         (html! { <MousePointerBan /> }, "Mouse Pointer Ban"),
         (html! { <MousePointerClick /> }, "Mouse Pointer Click"),
+        (html! { <MouseRight /> }, "Mouse Right"),
         (html! { <Move /> }, "Move"),
         (html! { <Move3D /> }, "Move 3 D"),
         (html! { <MoveDiagonal /> }, "Move Diagonal"),
@@ -2216,7 +2218,10 @@ pub fn IconsW() -> Html {
 }
 #[component]
 pub fn IconsX() -> Html {
-    let icons = [(html! { <X /> }, "X")];
+    let icons = [
+        (html! { <X /> }, "X"),
+        (html! { <XLineTop /> }, "X Line Top"),
+    ];
     icons
         .into_iter()
         .map(|(icon, name)| {

@@ -2468,6 +2468,8 @@ mod mountain_snow;
 #[cfg(feature = "devices")]
 mod mouse;
 #[cfg(feature = "devices")]
+mod mouse_left;
+#[cfg(feature = "devices")]
 mod mouse_off;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod mouse_pointer;
@@ -2479,6 +2481,8 @@ mod mouse_pointer_2_off;
 mod mouse_pointer_ban;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod mouse_pointer_click;
+#[cfg(feature = "devices")]
+mod mouse_right;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod r#move;
 #[cfg(feature = "design")]
@@ -4209,6 +4213,8 @@ mod worm;
 mod wrench;
 #[cfg(any(feature = "notifications", feature = "math"))]
 mod x;
+#[cfg(any(feature = "notifications", feature = "math"))]
+mod x_line_top;
 #[cfg(any(feature = "multimedia", feature = "social", feature = "brands"))]
 mod youtube;
 #[cfg(any(
@@ -6704,6 +6710,8 @@ pub use mountain_snow::*;
 #[cfg(feature = "devices")]
 pub use mouse::*;
 #[cfg(feature = "devices")]
+pub use mouse_left::*;
+#[cfg(feature = "devices")]
 pub use mouse_off::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use mouse_pointer::*;
@@ -6715,6 +6723,8 @@ pub use mouse_pointer_2_off::*;
 pub use mouse_pointer_ban::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use mouse_pointer_click::*;
+#[cfg(feature = "devices")]
+pub use mouse_right::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use r#move::*;
 #[cfg(feature = "design")]
@@ -8445,6 +8455,8 @@ pub use worm::*;
 pub use wrench::*;
 #[cfg(any(feature = "notifications", feature = "math"))]
 pub use x::*;
+#[cfg(any(feature = "notifications", feature = "math"))]
+pub use x_line_top::*;
 #[cfg(any(feature = "multimedia", feature = "social", feature = "brands"))]
 pub use youtube::*;
 #[cfg(any(

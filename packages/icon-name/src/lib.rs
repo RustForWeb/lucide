@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1681usize] = [
+pub static ICON_NAMES: [&str; 1684usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -1037,12 +1037,14 @@ pub static ICON_NAMES: [&str; 1681usize] = [
     "mountain",
     "mountain-snow",
     "mouse",
+    "mouse-left",
     "mouse-off",
     "mouse-pointer",
     "mouse-pointer-2",
     "mouse-pointer-2-off",
     "mouse-pointer-ban",
     "mouse-pointer-click",
+    "mouse-right",
     "move",
     "move-3d",
     "move-diagonal",
@@ -1682,6 +1684,7 @@ pub static ICON_NAMES: [&str; 1681usize] = [
     "worm",
     "wrench",
     "x",
+    "x-line-top",
     "youtube",
     "zap",
     "zap-off",
