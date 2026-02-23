@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct RockingChairProps {
+pub struct XLineTopProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct RockingChairProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn RockingChair(props: RockingChairProps) -> Element {
+pub fn XLineTop(props: XLineTopProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,10 +34,9 @@ pub fn RockingChair(props: RockingChairProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m15 13 3.708 7.416" }
-            path { "d": "M3 19a15 15 0 0 0 18 0" }
-            path { "d": "m3 2 3.21 9.633A2 2 0 0 0 8.109 13H18" }
-            path { "d": "m9 13-3.708 7.416" }
+            path { "d": "M18 4H6" }
+            path { "d": "M18 8 6 20" }
+            path { "d": "m6 8 12 12" }
         }
     }
 }

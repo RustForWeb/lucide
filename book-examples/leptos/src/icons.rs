@@ -1445,12 +1445,14 @@ pub fn IconsM2() -> impl IntoView {
                 (view! { <Mountain /> }.into_any(), "Mountain"),
                 (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
                 (view! { <Mouse /> }.into_any(), "Mouse"),
+                (view! { <MouseLeft /> }.into_any(), "Mouse Left"),
                 (view! { <MouseOff /> }.into_any(), "Mouse Off"),
                 (view! { <MousePointer /> }.into_any(), "Mouse Pointer"),
                 (view! { <MousePointer2 /> }.into_any(), "Mouse Pointer 2"),
                 (view! { <MousePointer2Off /> }.into_any(), "Mouse Pointer 2 Off"),
                 (view! { <MousePointerBan /> }.into_any(), "Mouse Pointer Ban"),
                 (view! { <MousePointerClick /> }.into_any(), "Mouse Pointer Click"),
+                (view! { <MouseRight /> }.into_any(), "Mouse Right"),
                 (view! { <Move /> }.into_any(), "Move"),
                 (view! { <Move3D /> }.into_any(), "Move 3 D"),
                 (view! { <MoveDiagonal /> }.into_any(), "Move Diagonal"),
@@ -2346,7 +2348,10 @@ pub fn IconsW1() -> impl IntoView {
 pub fn IconsX1() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <X /> }.into_any(), "X")]
+            each=move || [
+                (view! { <X /> }.into_any(), "X"),
+                (view! { <XLineTop /> }.into_any(), "X Line Top"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

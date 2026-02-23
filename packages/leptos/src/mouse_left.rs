@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Coins(
+pub fn MouseLeft(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,9 @@ pub fn Coins(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13.744 17.736a6 6 0 1 1-7.48-7.48" />
-            <path d="M15 6h1v4" />
-            <path d="m6.134 14.768.866-.5 2 3.464" />
-            <circle cx="16" cy="8" r="6" />
+            <path d="M12 7.318V10" />
+            <path d="M5 10v5a7 7 0 0 0 14 0V9c0-3.527-2.608-6.515-6-7" />
+            <circle cx="7" cy="4" r="2" />
         </svg>
     }
 }

@@ -6504,6 +6504,12 @@ pub fn IconsM2() -> Element {
         ),
         (
             rsx! {
+                MouseLeft {}
+            },
+            "Mouse Left",
+        ),
+        (
+            rsx! {
                 MouseOff {}
             },
             "Mouse Off",
@@ -6537,6 +6543,12 @@ pub fn IconsM2() -> Element {
                 MousePointerClick {}
             },
             "Mouse Pointer Click",
+        ),
+        (
+            rsx! {
+                MouseRight {}
+            },
+            "Mouse Right",
         ),
         (
             rsx! {
@@ -10590,12 +10602,20 @@ pub fn IconsW1() -> Element {
 }
 #[component]
 pub fn IconsX1() -> Element {
-    let icons = [(
-        rsx! {
-            X {}
-        },
-        "X",
-    )];
+    let icons = [
+        (
+            rsx! {
+                X {}
+            },
+            "X",
+        ),
+        (
+            rsx! {
+                XLineTop {}
+            },
+            "X Line Top",
+        ),
+    ];
     rsx! {
         for (icon , name) in icons {
             div {

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CoinsProps {
+pub struct MouseRightProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CoinsProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Coins(props: &CoinsProps) -> Html {
+pub fn MouseRight(props: &MouseRightProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,10 +41,9 @@ pub fn Coins(props: &CoinsProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13.744 17.736a6 6 0 1 1-7.48-7.48" />
-            <path d="M15 6h1v4" />
-            <path d="m6.134 14.768.866-.5 2 3.464" />
-            <circle cx="16" cy="8" r="6" />
+            <path d="M12 7.318V10" />
+            <path d="M19 10v5a7 7 0 0 1-14 0V9c0-3.527 2.608-6.515 6-7" />
+            <circle cx="17" cy="4" r="2" />
         </svg>
     }
 }
