@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1684usize] = [
+pub static ICON_NAMES: [&str; 1688usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -664,9 +664,7 @@ pub static ICON_NAMES: [&str; 1684usize] = [
     "flask-conical",
     "flask-conical-off",
     "flask-round",
-    "flip-horizontal",
     "flip-horizontal-2",
-    "flip-vertical",
     "flip-vertical-2",
     "flower",
     "flower-2",
@@ -987,6 +985,7 @@ pub static ICON_NAMES: [&str; 1684usize] = [
     "message-circle-warning",
     "message-circle-x",
     "message-square",
+    "message-square-check",
     "message-square-code",
     "message-square-dashed",
     "message-square-diff",
@@ -1003,6 +1002,7 @@ pub static ICON_NAMES: [&str; 1684usize] = [
     "message-square-warning",
     "message-square-x",
     "messages-square",
+    "metronome",
     "mic",
     "mic-off",
     "mic-vocal",
@@ -1392,11 +1392,15 @@ pub static ICON_NAMES: [&str; 1684usize] = [
     "square-arrow-out-up-left",
     "square-arrow-out-up-right",
     "square-arrow-right",
+    "square-arrow-right-enter",
+    "square-arrow-right-exit",
     "square-arrow-up",
     "square-arrow-up-left",
     "square-arrow-up-right",
     "square-asterisk",
     "square-bottom-dashed-scissors",
+    "square-centerline-dashed-horizontal",
+    "square-centerline-dashed-vertical",
     "square-chart-gantt",
     "square-check",
     "square-check-big",

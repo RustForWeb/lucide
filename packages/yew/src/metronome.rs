@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FilePenLineProps {
+pub struct MetronomeProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FilePenLineProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn FilePenLine(props: &FilePenLineProps) -> Html {
+pub fn Metronome(props: &MetronomeProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,14 +41,12 @@ pub fn FilePenLine(props: &FilePenLineProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
+            <path d="M12 11.4V9.1" />
+            <path d="m12 17 6.59-6.59" />
             <path
-                d="M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z"
+                d="m15.05 5.7-.218-.691a3 3 0 0 0-5.663 0L4.418 19.695A1 1 0 0 0 5.37 21h13.253a1 1 0 0 0 .951-1.31L18.45 16.2"
             />
-            <path d="M14.487 7.858A1 1 0 0 1 14 7V2" />
-            <path
-                d="M20 19.645V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l2.516 2.516"
-            />
-            <path d="M8 18h1" />
+            <circle cx="20" cy="9" r="2" />
         </svg>
     }
 }
