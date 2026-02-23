@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn CircleEqual(
+pub fn ShelvingUnit(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,13 @@ pub fn CircleEqual(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M7 10h10" />
-            <path d="M7 14h10" />
+            <path d="M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+            <path d="M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
+            <path d="M20 22V2" />
+            <path d="M4 12h16" />
+            <path d="M4 20h16" />
+            <path d="M4 2v20" />
+            <path d="M4 4h16" />
         </svg>
     }
 }

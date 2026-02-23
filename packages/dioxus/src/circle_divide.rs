@@ -34,6 +34,7 @@ pub fn CircleDivide(props: CircleDivideProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            circle { "cx": "12", "cy": "12", "r": "10" }
             line {
                 "x1": "8",
                 "x2": "16",
@@ -52,7 +53,6 @@ pub fn CircleDivide(props: CircleDivideProps) -> Element {
                 "y1": "8",
                 "y2": "8",
             }
-            circle { "cx": "12", "cy": "12", "r": "10" }
         }
     }
 }

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct Clock6Props {
+pub struct ShelvingUnitProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct Clock6Props {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Clock6(props: &Clock6Props) -> Html {
+pub fn ShelvingUnit(props: &ShelvingUnitProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,13 @@ pub fn Clock6(props: &Clock6Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 6v10" />
+            <path d="M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+            <path d="M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
+            <path d="M20 22V2" />
+            <path d="M4 12h16" />
+            <path d="M4 20h16" />
+            <path d="M4 2v20" />
+            <path d="M4 4h16" />
         </svg>
     }
 }
