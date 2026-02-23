@@ -1363,6 +1363,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Menu /> }.into_any(), "Menu"),
                 (view! { <Merge /> }.into_any(), "Merge"),
                 (view! { <MessageCircle /> }.into_any(), "Message Circle"),
+                (view! { <MessageCircleCheck /> }.into_any(), "Message Circle Check"),
                 (view! { <MessageCircleCode /> }.into_any(), "Message Circle Code"),
                 (view! { <MessageCircleDashed /> }.into_any(), "Message Circle Dashed"),
                 (view! { <MessageCircleHeart /> }.into_any(), "Message Circle Heart"),
@@ -1424,7 +1425,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
                 (view! { <Motorbike /> }.into_any(), "Motorbike"),
-                (view! { <Mountain /> }.into_any(), "Mountain"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1442,6 +1442,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Mountain /> }.into_any(), "Mountain"),
                 (view! { <MountainSnow /> }.into_any(), "Mountain Snow"),
                 (view! { <Mouse /> }.into_any(), "Mouse"),
                 (view! { <MouseOff /> }.into_any(), "Mouse Off"),

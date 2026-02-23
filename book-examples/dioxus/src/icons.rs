@@ -6117,6 +6117,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MessageCircleCheck {}
+            },
+            "Message Circle Check",
+        ),
+        (
+            rsx! {
                 MessageCircleCode {}
             },
             "Message Circle Code",
@@ -6463,12 +6469,6 @@ pub fn IconsM1() -> Element {
             },
             "Motorbike",
         ),
-        (
-            rsx! {
-                Mountain {}
-            },
-            "Mountain",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -6484,6 +6484,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Mountain {}
+            },
+            "Mountain",
+        ),
         (
             rsx! {
                 MountainSnow {}

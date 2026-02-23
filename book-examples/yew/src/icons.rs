@@ -1296,6 +1296,7 @@ pub fn IconsM() -> Html {
         (html! { <Menu /> }, "Menu"),
         (html! { <Merge /> }, "Merge"),
         (html! { <MessageCircle /> }, "Message Circle"),
+        (html! { <MessageCircleCheck /> }, "Message Circle Check"),
         (html! { <MessageCircleCode /> }, "Message Circle Code"),
         (html! { <MessageCircleDashed /> }, "Message Circle Dashed"),
         (html! { <MessageCircleHeart /> }, "Message Circle Heart"),
