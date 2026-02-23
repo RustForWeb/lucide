@@ -7,7 +7,7 @@ authors = ["Rust for Web <info@rustforweb.org>"]
 edition = "2024"
 license = "MIT"
 repository = "https://github.com/RustForWeb/lucide"
-version = "2.572.0"
+version = "2.573.0"
 
 [workspace.dependencies]
 console_error_panic_hook = "0.1.7"
