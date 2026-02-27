@@ -1139,7 +1139,7 @@ mod cross;
 mod crosshair;
 #[cfg(feature = "gaming")]
 mod crown;
-#[cfg(any(feature = "shapes", feature = "math", feature = "buildings"))]
+#[cfg(any(feature = "shapes", feature = "math", feature = "food-beverage"))]
 mod cuboid;
 #[cfg(feature = "food-beverage")]
 mod cup_soda;
@@ -1507,6 +1507,8 @@ mod fish_off;
 mod fish_symbol;
 #[cfg(any(feature = "sports", feature = "travel"))]
 mod fishing_hook;
+#[cfg(any(feature = "sports", feature = "travel"))]
+mod fishing_rod;
 #[cfg(any(feature = "account", feature = "social"))]
 mod flag;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -4249,6 +4251,32 @@ mod zap;
     feature = "weather"
 ))]
 mod zap_off;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_aquarius;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_aries;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_cancer;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_capricorn;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_gemini;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_leo;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_libra;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_ophiuchus;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_pisces;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_sagittarius;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_scorpio;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_taurus;
+#[cfg(any(feature = "social", feature = "emoji"))]
+mod zodiac_virgo;
 #[cfg(any(
     feature = "accessibility",
     feature = "layout",
@@ -5399,7 +5427,7 @@ pub use cross::*;
 pub use crosshair::*;
 #[cfg(feature = "gaming")]
 pub use crown::*;
-#[cfg(any(feature = "shapes", feature = "math", feature = "buildings"))]
+#[cfg(any(feature = "shapes", feature = "math", feature = "food-beverage"))]
 pub use cuboid::*;
 #[cfg(feature = "food-beverage")]
 pub use cup_soda::*;
@@ -5767,6 +5795,8 @@ pub use fish_off::*;
 pub use fish_symbol::*;
 #[cfg(any(feature = "sports", feature = "travel"))]
 pub use fishing_hook::*;
+#[cfg(any(feature = "sports", feature = "travel"))]
+pub use fishing_rod::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use flag::*;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -8509,6 +8539,32 @@ pub use zap::*;
     feature = "weather"
 ))]
 pub use zap_off::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_aquarius::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_aries::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_cancer::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_capricorn::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_gemini::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_leo::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_libra::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_ophiuchus::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_pisces::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_sagittarius::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_scorpio::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_taurus::*;
+#[cfg(any(feature = "social", feature = "emoji"))]
+pub use zodiac_virgo::*;
 #[cfg(any(
     feature = "accessibility",
     feature = "layout",

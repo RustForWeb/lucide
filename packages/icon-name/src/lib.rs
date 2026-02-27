@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1688usize] = [
+pub static ICON_NAMES: [&str; 1702usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -653,6 +653,7 @@ pub static ICON_NAMES: [&str; 1688usize] = [
     "fish-off",
     "fish-symbol",
     "fishing-hook",
+    "fishing-rod",
     "flag",
     "flag-off",
     "flag-triangle-left",
@@ -1692,6 +1693,19 @@ pub static ICON_NAMES: [&str; 1688usize] = [
     "youtube",
     "zap",
     "zap-off",
+    "zodiac-aquarius",
+    "zodiac-aries",
+    "zodiac-cancer",
+    "zodiac-capricorn",
+    "zodiac-gemini",
+    "zodiac-leo",
+    "zodiac-libra",
+    "zodiac-ophiuchus",
+    "zodiac-pisces",
+    "zodiac-sagittarius",
+    "zodiac-scorpio",
+    "zodiac-taurus",
+    "zodiac-virgo",
     "zoom-in",
     "zoom-out",
 ];

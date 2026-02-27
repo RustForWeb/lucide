@@ -902,6 +902,7 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FishOff /> }.into_any(), "Fish Off"),
                 (view! { <FishSymbol /> }.into_any(), "Fish Symbol"),
                 (view! { <FishingHook /> }.into_any(), "Fishing Hook"),
+                (view! { <FishingRod /> }.into_any(), "Fishing Rod"),
                 (view! { <Flag /> }.into_any(), "Flag"),
                 (view! { <FlagOff /> }.into_any(), "Flag Off"),
                 (view! { <FlagTriangleLeft /> }.into_any(), "Flag Triangle Left"),
@@ -930,7 +931,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
                 (view! { <FolderGit /> }.into_any(), "Folder Git"),
-                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -948,6 +948,7 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
                 (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),
                 (view! { <FolderKanban /> }.into_any(), "Folder Kanban"),
@@ -2396,6 +2397,19 @@ pub fn IconsZ1() -> impl IntoView {
             each=move || [
                 (view! { <Zap /> }.into_any(), "Zap"),
                 (view! { <ZapOff /> }.into_any(), "Zap Off"),
+                (view! { <ZodiacAquarius /> }.into_any(), "Zodiac Aquarius"),
+                (view! { <ZodiacAries /> }.into_any(), "Zodiac Aries"),
+                (view! { <ZodiacCancer /> }.into_any(), "Zodiac Cancer"),
+                (view! { <ZodiacCapricorn /> }.into_any(), "Zodiac Capricorn"),
+                (view! { <ZodiacGemini /> }.into_any(), "Zodiac Gemini"),
+                (view! { <ZodiacLeo /> }.into_any(), "Zodiac Leo"),
+                (view! { <ZodiacLibra /> }.into_any(), "Zodiac Libra"),
+                (view! { <ZodiacOphiuchus /> }.into_any(), "Zodiac Ophiuchus"),
+                (view! { <ZodiacPisces /> }.into_any(), "Zodiac Pisces"),
+                (view! { <ZodiacSagittarius /> }.into_any(), "Zodiac Sagittarius"),
+                (view! { <ZodiacScorpio /> }.into_any(), "Zodiac Scorpio"),
+                (view! { <ZodiacTaurus /> }.into_any(), "Zodiac Taurus"),
+                (view! { <ZodiacVirgo /> }.into_any(), "Zodiac Virgo"),
                 (view! { <ZoomIn /> }.into_any(), "Zoom In"),
                 (view! { <ZoomOut /> }.into_any(), "Zoom Out"),
             ]

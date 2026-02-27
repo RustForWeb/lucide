@@ -4065,6 +4065,12 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
+                FishingRod {}
+            },
+            "Fishing Rod",
+        ),
+        (
+            rsx! {
                 Flag {}
             },
             "Flag",
@@ -4231,12 +4237,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Git",
         ),
-        (
-            rsx! {
-                FolderGit2 {}
-            },
-            "Folder Git 2",
-        ),
     ];
     rsx! {
         for (icon , name) in icons {
@@ -4252,6 +4252,12 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
+        (
+            rsx! {
+                FolderGit2 {}
+            },
+            "Folder Git 2",
+        ),
         (
             rsx! {
                 FolderHeart {}
@@ -10684,6 +10690,84 @@ pub fn IconsZ1() -> Element {
                 ZapOff {}
             },
             "Zap Off",
+        ),
+        (
+            rsx! {
+                ZodiacAquarius {}
+            },
+            "Zodiac Aquarius",
+        ),
+        (
+            rsx! {
+                ZodiacAries {}
+            },
+            "Zodiac Aries",
+        ),
+        (
+            rsx! {
+                ZodiacCancer {}
+            },
+            "Zodiac Cancer",
+        ),
+        (
+            rsx! {
+                ZodiacCapricorn {}
+            },
+            "Zodiac Capricorn",
+        ),
+        (
+            rsx! {
+                ZodiacGemini {}
+            },
+            "Zodiac Gemini",
+        ),
+        (
+            rsx! {
+                ZodiacLeo {}
+            },
+            "Zodiac Leo",
+        ),
+        (
+            rsx! {
+                ZodiacLibra {}
+            },
+            "Zodiac Libra",
+        ),
+        (
+            rsx! {
+                ZodiacOphiuchus {}
+            },
+            "Zodiac Ophiuchus",
+        ),
+        (
+            rsx! {
+                ZodiacPisces {}
+            },
+            "Zodiac Pisces",
+        ),
+        (
+            rsx! {
+                ZodiacSagittarius {}
+            },
+            "Zodiac Sagittarius",
+        ),
+        (
+            rsx! {
+                ZodiacScorpio {}
+            },
+            "Zodiac Scorpio",
+        ),
+        (
+            rsx! {
+                ZodiacTaurus {}
+            },
+            "Zodiac Taurus",
+        ),
+        (
+            rsx! {
+                ZodiacVirgo {}
+            },
+            "Zodiac Virgo",
         ),
         (
             rsx! {
