@@ -1310,6 +1310,8 @@ mod egg;
 mod egg_fried;
 #[cfg(feature = "food-beverage")]
 mod egg_off;
+#[cfg(feature = "shapes")]
+mod ellipse;
 #[cfg(any(feature = "layout", feature = "development"))]
 mod ellipsis;
 #[cfg(feature = "layout")]
@@ -5598,6 +5600,8 @@ pub use egg::*;
 pub use egg_fried::*;
 #[cfg(feature = "food-beverage")]
 pub use egg_off::*;
+#[cfg(feature = "shapes")]
+pub use ellipse::*;
 #[cfg(any(feature = "layout", feature = "development"))]
 pub use ellipsis::*;
 #[cfg(feature = "layout")]
