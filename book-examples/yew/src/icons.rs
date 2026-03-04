@@ -746,6 +746,7 @@ pub fn IconsE() -> Html {
         (html! { <Egg /> }, "Egg"),
         (html! { <EggFried /> }, "Egg Fried"),
         (html! { <EggOff /> }, "Egg Off"),
+        (html! { <Ellipse /> }, "Ellipse"),
         (html! { <Ellipsis /> }, "Ellipsis"),
         (html! { <EllipsisVertical /> }, "Ellipsis Vertical"),
         (html! { <Equal /> }, "Equal"),

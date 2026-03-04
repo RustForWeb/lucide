@@ -3540,6 +3540,12 @@ pub fn IconsE1() -> Element {
         ),
         (
             rsx! {
+                Ellipse {}
+            },
+            "Ellipse",
+        ),
+        (
+            rsx! {
                 Ellipsis {}
             },
             "Ellipsis",

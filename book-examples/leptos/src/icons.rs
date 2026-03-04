@@ -797,6 +797,7 @@ pub fn IconsE1() -> impl IntoView {
                 (view! { <Egg /> }.into_any(), "Egg"),
                 (view! { <EggFried /> }.into_any(), "Egg Fried"),
                 (view! { <EggOff /> }.into_any(), "Egg Off"),
+                (view! { <Ellipse /> }.into_any(), "Ellipse"),
                 (view! { <Ellipsis /> }.into_any(), "Ellipsis"),
                 (view! { <EllipsisVertical /> }.into_any(), "Ellipsis Vertical"),
                 (view! { <Equal /> }.into_any(), "Equal"),
