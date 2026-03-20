@@ -15,7 +15,6 @@ accessibility = []
 account = []
 animals = []
 arrows = []
-brands = []
 buildings = []
 charts = []
 communication = []
@@ -59,7 +58,6 @@ all-icons = [
     "account",
     "animals",
     "arrows",
-    "brands",
     "buildings",
     "charts",
     "communication",
