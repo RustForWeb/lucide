@@ -22,12 +22,7 @@ mod accessibility;
 mod activity;
 #[cfg(feature = "home")]
 mod air_vent;
-#[cfg(any(
-    feature = "multimedia",
-    feature = "connectivity",
-    feature = "devices",
-    feature = "brands"
-))]
+#[cfg(any(feature = "multimedia", feature = "connectivity"))]
 mod airplay;
 #[cfg(any(feature = "devices", feature = "notifications", feature = "time"))]
 mod alarm_clock;
@@ -394,7 +389,7 @@ mod bird;
     feature = "home"
 ))]
 mod birdhouse;
-#[cfg(any(feature = "brands", feature = "development", feature = "finance"))]
+#[cfg(any(feature = "development", feature = "finance"))]
 mod bitcoin;
 #[cfg(any(
     feature = "design",
@@ -798,8 +793,6 @@ mod chevrons_right_left;
 mod chevrons_up;
 #[cfg(feature = "arrows")]
 mod chevrons_up_down;
-#[cfg(feature = "brands")]
-mod chromium;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 mod church;
 #[cfg(any(feature = "travel", feature = "transportation", feature = "medical"))]
@@ -1028,10 +1021,6 @@ mod club;
 mod code;
 #[cfg(any(feature = "text", feature = "development"))]
 mod code_xml;
-#[cfg(any(feature = "brands", feature = "development"))]
-mod codepen;
-#[cfg(any(feature = "brands", feature = "development"))]
-mod codesandbox;
 #[cfg(feature = "food-beverage")]
 mod coffee;
 #[cfg(feature = "account")]
@@ -1270,8 +1259,6 @@ mod download;
 mod drafting_compass;
 #[cfg(feature = "multimedia")]
 mod drama;
-#[cfg(any(feature = "brands", feature = "social", feature = "design"))]
-mod dribbble;
 #[cfg(any(feature = "tools", feature = "home", feature = "devices"))]
 mod drill;
 #[cfg(any(feature = "transportation", feature = "devices"))]
@@ -1360,8 +1347,6 @@ mod eye_closed;
     feature = "security"
 ))]
 mod eye_off;
-#[cfg(any(feature = "social", feature = "brands"))]
-mod facebook;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 mod factory;
 #[cfg(feature = "home")]
@@ -1374,8 +1359,6 @@ mod feather;
 mod fence;
 #[cfg(feature = "navigation")]
 mod ferris_wheel;
-#[cfg(any(feature = "brands", feature = "design"))]
-mod figma;
 #[cfg(feature = "files")]
 mod file;
 #[cfg(feature = "files")]
@@ -1622,8 +1605,6 @@ mod form;
 mod forward;
 #[cfg(any(feature = "design", feature = "photography"))]
 mod frame;
-#[cfg(any(feature = "brands", feature = "design"))]
-mod framer;
 #[cfg(any(feature = "emoji", feature = "account"))]
 mod frown;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -1735,10 +1716,6 @@ mod git_pull_request_create;
 mod git_pull_request_create_arrow;
 #[cfg(feature = "development")]
 mod git_pull_request_draft;
-#[cfg(any(feature = "brands", feature = "development"))]
-mod github;
-#[cfg(any(feature = "brands", feature = "development"))]
-mod gitlab;
 #[cfg(feature = "food-beverage")]
 mod glass_water;
 #[cfg(feature = "accessibility")]
@@ -1931,7 +1908,7 @@ mod heart_pulse;
 mod heater;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod helicopter;
-#[cfg(any(feature = "shapes", feature = "brands", feature = "development"))]
+#[cfg(any(feature = "shapes", feature = "development"))]
 mod hexagon;
 #[cfg(any(feature = "text", feature = "design"))]
 mod highlighter;
@@ -2025,8 +2002,6 @@ mod infinity;
 mod info;
 #[cfg(feature = "tools")]
 mod inspection_panel;
-#[cfg(any(feature = "brands", feature = "social", feature = "photography"))]
-mod instagram;
 #[cfg(feature = "text")]
 mod italic;
 #[cfg(any(feature = "arrows", feature = "design"))]
@@ -2160,8 +2135,6 @@ mod link;
 mod link_2;
 #[cfg(feature = "text")]
 mod link_2_off;
-#[cfg(any(feature = "social", feature = "brands"))]
-mod linkedin;
 #[cfg(feature = "text")]
 mod list;
 #[cfg(feature = "text")]
@@ -2830,8 +2803,6 @@ mod plug_zap;
     feature = "gaming"
 ))]
 mod plus;
-#[cfg(feature = "brands")]
-mod pocket;
 #[cfg(feature = "tools")]
 mod pocket_knife;
 #[cfg(any(feature = "multimedia", feature = "social"))]
@@ -2911,8 +2882,6 @@ mod radio_tower;
     feature = "tools"
 ))]
 mod radius;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod rail_symbol;
 #[cfg(feature = "weather")]
 mod rainbow;
 #[cfg(feature = "animals")]
@@ -3350,13 +3319,6 @@ mod skip_back;
 mod skip_forward;
 #[cfg(feature = "gaming")]
 mod skull;
-#[cfg(any(
-    feature = "account",
-    feature = "social",
-    feature = "brands",
-    feature = "development"
-))]
-mod slack;
 #[cfg(any(feature = "development", feature = "math"))]
 mod slash;
 #[cfg(feature = "design")]
@@ -3782,7 +3744,7 @@ mod tally_5;
     feature = "tools"
 ))]
 mod tangent;
-#[cfg(any(feature = "brands", feature = "gaming"))]
+#[cfg(feature = "gaming")]
 mod target;
 #[cfg(any(feature = "science", feature = "development", feature = "tools"))]
 mod telescope;
@@ -3915,8 +3877,6 @@ mod tree_palm;
 mod tree_pine;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 mod trees;
-#[cfg(any(feature = "account", feature = "brands", feature = "development"))]
-mod trello;
 #[cfg(any(feature = "charts", feature = "arrows"))]
 mod trending_down;
 #[cfg(any(feature = "charts", feature = "arrows"))]
@@ -3949,15 +3909,6 @@ mod tv;
 mod tv_minimal;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 mod tv_minimal_play;
-#[cfg(any(
-    feature = "brands",
-    feature = "social",
-    feature = "account",
-    feature = "gaming"
-))]
-mod twitch;
-#[cfg(any(feature = "brands", feature = "social", feature = "account"))]
-mod twitter;
 #[cfg(feature = "text")]
 mod r#type;
 #[cfg(feature = "text")]
@@ -4235,8 +4186,6 @@ mod wrench;
 mod x;
 #[cfg(any(feature = "notifications", feature = "math"))]
 mod x_line_top;
-#[cfg(any(feature = "multimedia", feature = "social", feature = "brands"))]
-mod youtube;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -4312,12 +4261,7 @@ pub use accessibility::*;
 pub use activity::*;
 #[cfg(feature = "home")]
 pub use air_vent::*;
-#[cfg(any(
-    feature = "multimedia",
-    feature = "connectivity",
-    feature = "devices",
-    feature = "brands"
-))]
+#[cfg(any(feature = "multimedia", feature = "connectivity"))]
 pub use airplay::*;
 #[cfg(any(feature = "devices", feature = "notifications", feature = "time"))]
 pub use alarm_clock::*;
@@ -4684,7 +4628,7 @@ pub use bird::*;
     feature = "home"
 ))]
 pub use birdhouse::*;
-#[cfg(any(feature = "brands", feature = "development", feature = "finance"))]
+#[cfg(any(feature = "development", feature = "finance"))]
 pub use bitcoin::*;
 #[cfg(any(
     feature = "design",
@@ -5088,8 +5032,6 @@ pub use chevrons_right_left::*;
 pub use chevrons_up::*;
 #[cfg(feature = "arrows")]
 pub use chevrons_up_down::*;
-#[cfg(feature = "brands")]
-pub use chromium::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use church::*;
 #[cfg(any(feature = "travel", feature = "transportation", feature = "medical"))]
@@ -5318,10 +5260,6 @@ pub use club::*;
 pub use code::*;
 #[cfg(any(feature = "text", feature = "development"))]
 pub use code_xml::*;
-#[cfg(any(feature = "brands", feature = "development"))]
-pub use codepen::*;
-#[cfg(any(feature = "brands", feature = "development"))]
-pub use codesandbox::*;
 #[cfg(feature = "food-beverage")]
 pub use coffee::*;
 #[cfg(feature = "account")]
@@ -5560,8 +5498,6 @@ pub use download::*;
 pub use drafting_compass::*;
 #[cfg(feature = "multimedia")]
 pub use drama::*;
-#[cfg(any(feature = "brands", feature = "social", feature = "design"))]
-pub use dribbble::*;
 #[cfg(any(feature = "tools", feature = "home", feature = "devices"))]
 pub use drill::*;
 #[cfg(any(feature = "transportation", feature = "devices"))]
@@ -5650,8 +5586,6 @@ pub use eye_closed::*;
     feature = "security"
 ))]
 pub use eye_off::*;
-#[cfg(any(feature = "social", feature = "brands"))]
-pub use facebook::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use factory::*;
 #[cfg(feature = "home")]
@@ -5664,8 +5598,6 @@ pub use feather::*;
 pub use fence::*;
 #[cfg(feature = "navigation")]
 pub use ferris_wheel::*;
-#[cfg(any(feature = "brands", feature = "design"))]
-pub use figma::*;
 #[cfg(feature = "files")]
 pub use file::*;
 #[cfg(feature = "files")]
@@ -5912,8 +5844,6 @@ pub use form::*;
 pub use forward::*;
 #[cfg(any(feature = "design", feature = "photography"))]
 pub use frame::*;
-#[cfg(any(feature = "brands", feature = "design"))]
-pub use framer::*;
 #[cfg(any(feature = "emoji", feature = "account"))]
 pub use frown::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -6025,10 +5955,6 @@ pub use git_pull_request_create::*;
 pub use git_pull_request_create_arrow::*;
 #[cfg(feature = "development")]
 pub use git_pull_request_draft::*;
-#[cfg(any(feature = "brands", feature = "development"))]
-pub use github::*;
-#[cfg(any(feature = "brands", feature = "development"))]
-pub use gitlab::*;
 #[cfg(feature = "food-beverage")]
 pub use glass_water::*;
 #[cfg(feature = "accessibility")]
@@ -6221,7 +6147,7 @@ pub use heart_pulse::*;
 pub use heater::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use helicopter::*;
-#[cfg(any(feature = "shapes", feature = "brands", feature = "development"))]
+#[cfg(any(feature = "shapes", feature = "development"))]
 pub use hexagon::*;
 #[cfg(any(feature = "text", feature = "design"))]
 pub use highlighter::*;
@@ -6315,8 +6241,6 @@ pub use infinity::*;
 pub use info::*;
 #[cfg(feature = "tools")]
 pub use inspection_panel::*;
-#[cfg(any(feature = "brands", feature = "social", feature = "photography"))]
-pub use instagram::*;
 #[cfg(feature = "text")]
 pub use italic::*;
 #[cfg(any(feature = "arrows", feature = "design"))]
@@ -6450,8 +6374,6 @@ pub use link::*;
 pub use link_2::*;
 #[cfg(feature = "text")]
 pub use link_2_off::*;
-#[cfg(any(feature = "social", feature = "brands"))]
-pub use linkedin::*;
 #[cfg(feature = "text")]
 pub use list::*;
 #[cfg(feature = "text")]
@@ -7120,8 +7042,6 @@ pub use plug_zap::*;
     feature = "gaming"
 ))]
 pub use plus::*;
-#[cfg(feature = "brands")]
-pub use pocket::*;
 #[cfg(feature = "tools")]
 pub use pocket_knife::*;
 #[cfg(any(feature = "multimedia", feature = "social"))]
@@ -7201,8 +7121,6 @@ pub use radio_tower::*;
     feature = "tools"
 ))]
 pub use radius::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use rail_symbol::*;
 #[cfg(feature = "weather")]
 pub use rainbow::*;
 #[cfg(feature = "animals")]
@@ -7640,13 +7558,6 @@ pub use skip_back::*;
 pub use skip_forward::*;
 #[cfg(feature = "gaming")]
 pub use skull::*;
-#[cfg(any(
-    feature = "account",
-    feature = "social",
-    feature = "brands",
-    feature = "development"
-))]
-pub use slack::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use slash::*;
 #[cfg(feature = "design")]
@@ -8072,7 +7983,7 @@ pub use tally_5::*;
     feature = "tools"
 ))]
 pub use tangent::*;
-#[cfg(any(feature = "brands", feature = "gaming"))]
+#[cfg(feature = "gaming")]
 pub use target::*;
 #[cfg(any(feature = "science", feature = "development", feature = "tools"))]
 pub use telescope::*;
@@ -8205,8 +8116,6 @@ pub use tree_palm::*;
 pub use tree_pine::*;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 pub use trees::*;
-#[cfg(any(feature = "account", feature = "brands", feature = "development"))]
-pub use trello::*;
 #[cfg(any(feature = "charts", feature = "arrows"))]
 pub use trending_down::*;
 #[cfg(any(feature = "charts", feature = "arrows"))]
@@ -8239,15 +8148,6 @@ pub use tv::*;
 pub use tv_minimal::*;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 pub use tv_minimal_play::*;
-#[cfg(any(
-    feature = "brands",
-    feature = "social",
-    feature = "account",
-    feature = "gaming"
-))]
-pub use twitch::*;
-#[cfg(any(feature = "brands", feature = "social", feature = "account"))]
-pub use twitter::*;
 #[cfg(feature = "text")]
 pub use r#type::*;
 #[cfg(feature = "text")]
@@ -8525,8 +8425,6 @@ pub use wrench::*;
 pub use x::*;
 #[cfg(any(feature = "notifications", feature = "math"))]
 pub use x_line_top::*;
-#[cfg(any(feature = "multimedia", feature = "social", feature = "brands"))]
-pub use youtube::*;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
