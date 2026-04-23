@@ -646,7 +646,7 @@ pub fn IconsA1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -685,7 +685,7 @@ pub fn IconsA2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -1300,7 +1300,7 @@ pub fn IconsB1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -1561,7 +1561,7 @@ pub fn IconsB2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -2176,7 +2176,7 @@ pub fn IconsC1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -2791,7 +2791,7 @@ pub fn IconsC2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -3148,7 +3148,7 @@ pub fn IconsC3() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -3451,7 +3451,7 @@ pub fn IconsD1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -3604,7 +3604,7 @@ pub fn IconsE1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -4219,7 +4219,7 @@ pub fn IconsF1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -4414,7 +4414,7 @@ pub fn IconsF2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -4741,7 +4741,7 @@ pub fn IconsG1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -5080,7 +5080,7 @@ pub fn IconsH1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -5227,7 +5227,7 @@ pub fn IconsI1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -5254,7 +5254,7 @@ pub fn IconsJ1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -5317,7 +5317,7 @@ pub fn IconsK1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -5788,7 +5788,7 @@ pub fn IconsL1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -6403,7 +6403,7 @@ pub fn IconsM1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -6604,7 +6604,7 @@ pub fn IconsM2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -6715,7 +6715,7 @@ pub fn IconsN1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -6784,7 +6784,7 @@ pub fn IconsO1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -7399,7 +7399,7 @@ pub fn IconsP1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -7418,7 +7418,7 @@ pub fn IconsP2() -> Element {
         "Pyramid",
     )];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -7445,7 +7445,7 @@ pub fn IconsQ1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -7856,7 +7856,7 @@ pub fn IconsR1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -8471,7 +8471,7 @@ pub fn IconsS1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -9086,7 +9086,7 @@ pub fn IconsS2() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -9257,7 +9257,7 @@ pub fn IconsS3() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -9866,7 +9866,7 @@ pub fn IconsT1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -10121,7 +10121,7 @@ pub fn IconsU1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -10268,7 +10268,7 @@ pub fn IconsV1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -10505,7 +10505,7 @@ pub fn IconsW1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -10532,7 +10532,7 @@ pub fn IconsX1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
@@ -10649,7 +10649,7 @@ pub fn IconsZ1() -> Element {
         ),
     ];
     rsx! {
-        for (icon , name) in icons {
+        for (icon, name) in icons {
             div {
                 key: "{name}",
                 class: "flex flex-wrap items-center gap-4 text-sm",
