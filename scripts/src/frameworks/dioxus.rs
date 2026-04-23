@@ -92,6 +92,10 @@ impl Framework for Dioxus {
                 );
             }
 
+            if component_name.is_empty() {
+                continue;
+            }
+
             for (n, chunk) in component_name
                 .into_iter()
                 .zip(human_name)

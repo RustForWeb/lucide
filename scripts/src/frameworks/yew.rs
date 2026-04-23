@@ -110,6 +110,10 @@ impl Framework for Yew {
                 );
             }
 
+            if component_name.is_empty() {
+                continue;
+            }
+
             let name: TokenStream = format!("Icons{letter}").parse()?;
             letter_component_name.push(quote! {
                 <#name />
