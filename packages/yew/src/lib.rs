@@ -2973,6 +2973,8 @@ mod reply_all;
 mod rewind;
 #[cfg(any(feature = "social", feature = "medical", feature = "emoji"))]
 mod ribbon;
+#[cfg(feature = "transportation")]
+mod road;
 #[cfg(any(feature = "gaming", feature = "development"))]
 mod rocket;
 #[cfg(feature = "home")]
@@ -7220,6 +7222,8 @@ pub use reply_all::*;
 pub use rewind::*;
 #[cfg(any(feature = "social", feature = "medical", feature = "emoji"))]
 pub use ribbon::*;
+#[cfg(feature = "transportation")]
+pub use road::*;
 #[cfg(any(feature = "gaming", feature = "development"))]
 pub use rocket::*;
 #[cfg(feature = "home")]

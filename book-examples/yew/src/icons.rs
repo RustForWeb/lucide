@@ -1638,6 +1638,7 @@ pub fn IconsR() -> Html {
         (html! { <ReplyAll /> }, "Reply All"),
         (html! { <Rewind /> }, "Rewind"),
         (html! { <Ribbon /> }, "Ribbon"),
+        (html! { <Road /> }, "Road"),
         (html! { <Rocket /> }, "Rocket"),
         (html! { <RockingChair /> }, "Rocking Chair"),
         (html! { <RollerCoaster /> }, "Roller Coaster"),

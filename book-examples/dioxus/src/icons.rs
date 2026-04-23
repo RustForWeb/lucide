@@ -7742,6 +7742,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                Road {}
+            },
+            "Road",
+        ),
+        (
+            rsx! {
                 Rocket {}
             },
             "Rocket",
