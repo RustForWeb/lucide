@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CircleUserRoundProps {
+pub struct RoadProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CircleUserRoundProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CircleUserRound(props: &CircleUserRoundProps) -> Html {
+pub fn Road(props: &RoadProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn CircleUserRound(props: &CircleUserRoundProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M17.925 20.056a6 6 0 0 0-11.851.001" />
-            <circle cx="12" cy="11" r="4" />
-            <circle cx="12" cy="12" r="10" />
+            <path d="M12 17v4" />
+            <path d="M12 5V3" />
+            <path d="M12 9v3" />
+            <path
+                d="M2.077 18.449A2 2 0 0 0 4 21h16a2 2 0 0 0 1.924-2.55l-4-14A2 2 0 0 0 16 3H8a2 2 0 0 0-1.924 1.45z"
+            />
         </svg>
     }
 }

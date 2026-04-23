@@ -1735,6 +1735,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <ReplyAll /> }.into_any(), "Reply All"),
                 (view! { <Rewind /> }.into_any(), "Rewind"),
                 (view! { <Ribbon /> }.into_any(), "Ribbon"),
+                (view! { <Road /> }.into_any(), "Road"),
                 (view! { <Rocket /> }.into_any(), "Rocket"),
                 (view! { <RockingChair /> }.into_any(), "Rocking Chair"),
                 (view! { <RollerCoaster /> }.into_any(), "Roller Coaster"),
