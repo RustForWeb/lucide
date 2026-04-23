@@ -33,10 +33,12 @@ pub fn Icons() -> Element {
             IconsS2 {}
             IconsS3 {}
             IconsT1 {}
+            IconsT2 {}
             IconsU1 {}
             IconsV1 {}
             IconsW1 {}
             IconsX1 {}
+            IconsY1 {}
             IconsZ1 {}
         }
     }
@@ -1876,6 +1878,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CctvOff {}
+            },
+            "Cctv Off",
+        ),
+        (
+            rsx! {
                 ChartArea {}
             },
             "Chart Area",
@@ -2168,12 +2176,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Up Down",
         ),
-        (
-            rsx! {
-                Church {}
-            },
-            "Church",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2189,6 +2191,18 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Chromium {}
+            },
+            "Chromium",
+        ),
+        (
+            rsx! {
+                Church {}
+            },
+            "Church",
+        ),
         (
             rsx! {
                 Cigarette {}
@@ -2777,18 +2791,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Rain Wind",
         ),
-        (
-            rsx! {
-                CloudSnow {}
-            },
-            "Cloud Snow",
-        ),
-        (
-            rsx! {
-                CloudSun {}
-            },
-            "Cloud Sun",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2804,6 +2806,18 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudSnow {}
+            },
+            "Cloud Snow",
+        ),
+        (
+            rsx! {
+                CloudSun {}
+            },
+            "Cloud Sun",
+        ),
         (
             rsx! {
                 CloudSunRain {}
@@ -2851,6 +2865,18 @@ pub fn IconsC3() -> Element {
                 CodeXml {}
             },
             "Code Xml",
+        ),
+        (
+            rsx! {
+                Codepen {}
+            },
+            "Codepen",
+        ),
+        (
+            rsx! {
+                Codesandbox {}
+            },
+            "Codesandbox",
         ),
         (
             rsx! {
@@ -3403,6 +3429,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                Dribbble {}
+            },
+            "Dribbble",
+        ),
+        (
+            rsx! {
                 Drill {}
             },
             "Drill",
@@ -3619,6 +3651,12 @@ pub fn IconsF1() -> Element {
     let icons = [
         (
             rsx! {
+                Facebook {}
+            },
+            "Facebook",
+        ),
+        (
+            rsx! {
                 Factory {}
             },
             "Factory",
@@ -3652,6 +3690,12 @@ pub fn IconsF1() -> Element {
                 FerrisWheel {}
             },
             "Ferris Wheel",
+        ),
+        (
+            rsx! {
+                Figma {}
+            },
+            "Figma",
         ),
         (
             rsx! {
@@ -4205,18 +4249,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Git",
         ),
-        (
-            rsx! {
-                FolderGit2 {}
-            },
-            "Folder Git 2",
-        ),
-        (
-            rsx! {
-                FolderHeart {}
-            },
-            "Folder Heart",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -4232,6 +4264,18 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
+        (
+            rsx! {
+                FolderGit2 {}
+            },
+            "Folder Git 2",
+        ),
+        (
+            rsx! {
+                FolderHeart {}
+            },
+            "Folder Heart",
+        ),
         (
             rsx! {
                 FolderInput {}
@@ -4375,6 +4419,12 @@ pub fn IconsF2() -> Element {
                 Frame {}
             },
             "Frame",
+        ),
+        (
+            rsx! {
+                Framer {}
+            },
+            "Framer",
         ),
         (
             rsx! {
@@ -4612,6 +4662,18 @@ pub fn IconsG1() -> Element {
                 GitPullRequestDraft {}
             },
             "Git Pull Request Draft",
+        ),
+        (
+            rsx! {
+                Github {}
+            },
+            "Github",
+        ),
+        (
+            rsx! {
+                Gitlab {}
+            },
+            "Gitlab",
         ),
         (
             rsx! {
@@ -5209,6 +5271,12 @@ pub fn IconsI1() -> Element {
         ),
         (
             rsx! {
+                Instagram {}
+            },
+            "Instagram",
+        ),
+        (
+            rsx! {
                 Italic {}
             },
             "Italic",
@@ -5569,6 +5637,12 @@ pub fn IconsL1() -> Element {
                 Link2Off {}
             },
             "Link 2 Off",
+        ),
+        (
+            rsx! {
+                Linkedin {}
+            },
+            "Linkedin",
         ),
         (
             rsx! {
@@ -7303,6 +7377,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                Pocket {}
+            },
+            "Pocket",
+        ),
+        (
+            rsx! {
                 PocketKnife {}
             },
             "Pocket Knife",
@@ -7391,12 +7471,6 @@ pub fn IconsP1() -> Element {
             },
             "Proportions",
         ),
-        (
-            rsx! {
-                Puzzle {}
-            },
-            "Puzzle",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7411,12 +7485,20 @@ pub fn IconsP1() -> Element {
 }
 #[component]
 pub fn IconsP2() -> Element {
-    let icons = [(
-        rsx! {
-            Pyramid {}
-        },
-        "Pyramid",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Puzzle {}
+            },
+            "Puzzle",
+        ),
+        (
+            rsx! {
+                Pyramid {}
+            },
+            "Pyramid",
+        ),
+    ];
     rsx! {
         for (icon, name) in icons {
             div {
@@ -7505,6 +7587,12 @@ pub fn IconsR1() -> Element {
                 Radius {}
             },
             "Radius",
+        ),
+        (
+            rsx! {
+                RailSymbol {}
+            },
+            "Rail Symbol",
         ),
         (
             rsx! {
@@ -8417,6 +8505,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                Slack {}
+            },
+            "Slack",
+        ),
+        (
+            rsx! {
                 Slash {}
             },
             "Slash",
@@ -8463,12 +8557,6 @@ pub fn IconsS1() -> Element {
             },
             "Smile",
         ),
-        (
-            rsx! {
-                SmilePlus {}
-            },
-            "Smile Plus",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8484,6 +8572,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SmilePlus {}
+            },
+            "Smile Plus",
+        ),
         (
             rsx! {
                 Snail {}
@@ -9078,12 +9172,6 @@ pub fn IconsS2() -> Element {
             },
             "Star",
         ),
-        (
-            rsx! {
-                StarHalf {}
-            },
-            "Star Half",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9099,6 +9187,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                StarHalf {}
+            },
+            "Star Half",
+        ),
         (
             rsx! {
                 StarOff {}
@@ -9758,6 +9852,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Trello {}
+            },
+            "Trello",
+        ),
+        (
+            rsx! {
                 TrendingDown {}
             },
             "Trending Down",
@@ -9852,6 +9952,33 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal Play",
         ),
+        (
+            rsx! {
+                Twitch {}
+            },
+            "Twitch",
+        ),
+        (
+            rsx! {
+                Twitter {}
+            },
+            "Twitter",
+        ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsT2() -> Element {
+    let icons = [
         (
             rsx! {
                 Type {}
@@ -10531,6 +10658,25 @@ pub fn IconsX1() -> Element {
             "X Line Top",
         ),
     ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsY1() -> Element {
+    let icons = [(
+        rsx! {
+            Youtube {}
+        },
+        "Youtube",
+    )];
     rsx! {
         for (icon, name) in icons {
             div {
