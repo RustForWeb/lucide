@@ -28,7 +28,6 @@ pub fn Icons() -> Html {
             <IconsV />
             <IconsW />
             <IconsX />
-            <IconsY />
             <IconsZ />
         </div>
     }
@@ -484,7 +483,6 @@ pub fn IconsC() -> Html {
         (html! { <ChevronsRightLeft /> }, "Chevrons Right Left"),
         (html! { <ChevronsUp /> }, "Chevrons Up"),
         (html! { <ChevronsUpDown /> }, "Chevrons Up Down"),
-        (html! { <Chromium /> }, "Chromium"),
         (html! { <Church /> }, "Church"),
         (html! { <Cigarette /> }, "Cigarette"),
         (html! { <CigaretteOff /> }, "Cigarette Off"),
@@ -606,8 +604,6 @@ pub fn IconsC() -> Html {
         (html! { <Club /> }, "Club"),
         (html! { <Code /> }, "Code"),
         (html! { <CodeXml /> }, "Code Xml"),
-        (html! { <Codepen /> }, "Codepen"),
-        (html! { <Codesandbox /> }, "Codesandbox"),
         (html! { <Coffee /> }, "Coffee"),
         (html! { <Cog /> }, "Cog"),
         (html! { <Coins /> }, "Coins"),
@@ -713,7 +709,6 @@ pub fn IconsD() -> Html {
         (html! { <Download /> }, "Download"),
         (html! { <DraftingCompass /> }, "Drafting Compass"),
         (html! { <Drama /> }, "Drama"),
-        (html! { <Dribbble /> }, "Dribbble"),
         (html! { <Drill /> }, "Drill"),
         (html! { <Drone /> }, "Drone"),
         (html! { <Droplet /> }, "Droplet"),
@@ -777,14 +772,12 @@ pub fn IconsE() -> Html {
 #[component]
 pub fn IconsF() -> Html {
     let icons = [
-        (html! { <Facebook /> }, "Facebook"),
         (html! { <Factory /> }, "Factory"),
         (html! { <Fan /> }, "Fan"),
         (html! { <FastForward /> }, "Fast Forward"),
         (html! { <Feather /> }, "Feather"),
         (html! { <Fence /> }, "Fence"),
         (html! { <FerrisWheel /> }, "Ferris Wheel"),
-        (html! { <Figma /> }, "Figma"),
         (html! { <File /> }, "File"),
         (html! { <FileArchive /> }, "File Archive"),
         (html! { <FileAxis3D /> }, "File Axis 3 D"),
@@ -906,7 +899,6 @@ pub fn IconsF() -> Html {
         (html! { <Form /> }, "Form"),
         (html! { <Forward /> }, "Forward"),
         (html! { <Frame /> }, "Frame"),
-        (html! { <Framer /> }, "Framer"),
         (html! { <Frown /> }, "Frown"),
         (html! { <Fuel /> }, "Fuel"),
         (html! { <Fullscreen /> }, "Fullscreen"),
@@ -969,8 +961,6 @@ pub fn IconsG() -> Html {
             "Git Pull Request Create Arrow",
         ),
         (html! { <GitPullRequestDraft /> }, "Git Pull Request Draft"),
-        (html! { <Github /> }, "Github"),
-        (html! { <Gitlab /> }, "Gitlab"),
         (html! { <GlassWater /> }, "Glass Water"),
         (html! { <Glasses /> }, "Glasses"),
         (html! { <Globe /> }, "Globe"),
@@ -1097,7 +1087,6 @@ pub fn IconsI() -> Html {
         (html! { <Infinity /> }, "Infinity"),
         (html! { <Info /> }, "Info"),
         (html! { <InspectionPanel /> }, "Inspection Panel"),
-        (html! { <Instagram /> }, "Instagram"),
         (html! { <Italic /> }, "Italic"),
         (html! { <IterationCcw /> }, "Iteration Ccw"),
         (html! { <IterationCw /> }, "Iteration Cw"),
@@ -1202,7 +1191,6 @@ pub fn IconsL() -> Html {
         (html! { <Link /> }, "Link"),
         (html! { <Link2 /> }, "Link 2"),
         (html! { <Link2Off /> }, "Link 2 Off"),
-        (html! { <Linkedin /> }, "Linkedin"),
         (html! { <List /> }, "List"),
         (html! { <ListCheck /> }, "List Check"),
         (html! { <ListChecks /> }, "List Checks"),
@@ -1552,7 +1540,6 @@ pub fn IconsP() -> Html {
         (html! { <Plug2 /> }, "Plug 2"),
         (html! { <PlugZap /> }, "Plug Zap"),
         (html! { <Plus /> }, "Plus"),
-        (html! { <Pocket /> }, "Pocket"),
         (html! { <PocketKnife /> }, "Pocket Knife"),
         (html! { <Podcast /> }, "Podcast"),
         (html! { <Pointer /> }, "Pointer"),
@@ -1612,7 +1599,6 @@ pub fn IconsR() -> Html {
         (html! { <RadioReceiver /> }, "Radio Receiver"),
         (html! { <RadioTower /> }, "Radio Tower"),
         (html! { <Radius /> }, "Radius"),
-        (html! { <RailSymbol /> }, "Rail Symbol"),
         (html! { <Rainbow /> }, "Rainbow"),
         (html! { <Rat /> }, "Rat"),
         (html! { <Ratio /> }, "Ratio"),
@@ -1778,7 +1764,6 @@ pub fn IconsS() -> Html {
         (html! { <SkipBack /> }, "Skip Back"),
         (html! { <SkipForward /> }, "Skip Forward"),
         (html! { <Skull /> }, "Skull"),
-        (html! { <Slack /> }, "Slack"),
         (html! { <Slash /> }, "Slash"),
         (html! { <Slice /> }, "Slice"),
         (html! { <SlidersHorizontal /> }, "Sliders Horizontal"),
@@ -2053,7 +2038,6 @@ pub fn IconsT() -> Html {
         (html! { <TreePalm /> }, "Tree Palm"),
         (html! { <TreePine /> }, "Tree Pine"),
         (html! { <Trees /> }, "Trees"),
-        (html! { <Trello /> }, "Trello"),
         (html! { <TrendingDown /> }, "Trending Down"),
         (html! { <TrendingUp /> }, "Trending Up"),
         (html! { <TrendingUpDown /> }, "Trending Up Down"),
@@ -2070,8 +2054,6 @@ pub fn IconsT() -> Html {
         (html! { <Tv /> }, "Tv"),
         (html! { <TvMinimal /> }, "Tv Minimal"),
         (html! { <TvMinimalPlay /> }, "Tv Minimal Play"),
-        (html! { <Twitch /> }, "Twitch"),
-        (html! { <Twitter /> }, "Twitter"),
         (html! { <Type /> }, "Type"),
         (html! { <TypeOutline /> }, "Type Outline"),
     ];
@@ -2240,21 +2222,6 @@ pub fn IconsX() -> Html {
         (html! { <X /> }, "X"),
         (html! { <XLineTop /> }, "X Line Top"),
     ];
-    icons
-        .into_iter()
-        .map(|(icon, name)| {
-            html! {
-                <div class="flex flex-wrap items-center gap-4 text-sm">
-                    { icon }
-                    <span>{ name }</span>
-                </div>
-            }
-        })
-        .collect::<Html>()
-}
-#[component]
-pub fn IconsY() -> Html {
-    let icons = [(html! { <Youtube /> }, "Youtube")];
     icons
         .into_iter()
         .map(|(icon, name)| {
