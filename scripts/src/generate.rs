@@ -318,7 +318,7 @@ fn update_repository_rev(path: &Path, repository_rev: &str) -> Result<(), Box<dy
 
     let file_contents = fs::read_to_string(&file_path)?;
 
-    let regex = Regex::new(r"\d+\.\d+\.\d+")?;
+    let regex = Regex::new(r"\d+\.\d+\.\d+(-rc\.\d+)?")?;
     let output = regex.replace(&file_contents, repository_rev).to_string();
 
     fs::write(&file_path, output)?;
