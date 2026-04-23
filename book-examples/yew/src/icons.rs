@@ -28,7 +28,6 @@ pub fn Icons() -> Html {
             <IconsV />
             <IconsW />
             <IconsX />
-            <IconsY />
             <IconsZ />
         </div>
     }
@@ -2223,21 +2222,6 @@ pub fn IconsX() -> Html {
         (html! { <X /> }, "X"),
         (html! { <XLineTop /> }, "X Line Top"),
     ];
-    icons
-        .into_iter()
-        .map(|(icon, name)| {
-            html! {
-                <div class="flex flex-wrap items-center gap-4 text-sm">
-                    { icon }
-                    <span>{ name }</span>
-                </div>
-            }
-        })
-        .collect::<Html>()
-}
-#[component]
-pub fn IconsY() -> Html {
-    let icons = [];
     icons
         .into_iter()
         .map(|(icon, name)| {
