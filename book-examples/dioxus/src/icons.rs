@@ -982,6 +982,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BeefOff {}
+            },
+            "Beef Off",
+        ),
+        (
+            rsx! {
                 Beer {}
             },
             "Beer",
@@ -1292,12 +1298,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Search",
         ),
-        (
-            rsx! {
-                BookText {}
-            },
-            "Book Text",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1313,6 +1313,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookText {}
+            },
+            "Book Text",
+        ),
         (
             rsx! {
                 BookType {}
