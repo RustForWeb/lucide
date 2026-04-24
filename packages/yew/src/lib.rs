@@ -494,6 +494,8 @@ mod bookmark_check;
 #[cfg(feature = "account")]
 mod bookmark_minus;
 #[cfg(feature = "account")]
+mod bookmark_off;
+#[cfg(feature = "account")]
 mod bookmark_plus;
 #[cfg(feature = "account")]
 mod bookmark_x;
@@ -3549,6 +3551,8 @@ mod square_dashed_kanban;
     feature = "tools"
 ))]
 mod square_dashed_mouse_pointer;
+#[cfg(any(feature = "text", feature = "cursors"))]
+mod square_dashed_text;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 mod square_dashed_top_solid;
 #[cfg(feature = "math")]
@@ -3821,8 +3825,6 @@ mod text_initial;
 mod text_quote;
 #[cfg(feature = "text")]
 mod text_search;
-#[cfg(any(feature = "text", feature = "cursors"))]
-mod text_select;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod text_wrap;
 #[cfg(any(feature = "buildings", feature = "social"))]
@@ -4773,6 +4775,8 @@ pub use bookmark::*;
 pub use bookmark_check::*;
 #[cfg(feature = "account")]
 pub use bookmark_minus::*;
+#[cfg(feature = "account")]
+pub use bookmark_off::*;
 #[cfg(feature = "account")]
 pub use bookmark_plus::*;
 #[cfg(feature = "account")]
@@ -7829,6 +7833,8 @@ pub use square_dashed_kanban::*;
     feature = "tools"
 ))]
 pub use square_dashed_mouse_pointer::*;
+#[cfg(any(feature = "text", feature = "cursors"))]
+pub use square_dashed_text::*;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 pub use square_dashed_top_solid::*;
 #[cfg(feature = "math")]
@@ -8101,8 +8107,6 @@ pub use text_initial::*;
 pub use text_quote::*;
 #[cfg(feature = "text")]
 pub use text_search::*;
-#[cfg(any(feature = "text", feature = "cursors"))]
-pub use text_select::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use text_wrap::*;
 #[cfg(any(feature = "buildings", feature = "social"))]

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct RadioOffProps {
+pub struct BookmarkOffProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct RadioOffProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn RadioOff(props: &RadioOffProps) -> Html {
+pub fn BookmarkOff(props: &BookmarkOffProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,11 @@ pub fn RadioOff(props: &RadioOffProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13.414 13.414a2 2 0 1 1-2.828-2.828" />
-            <path d="M16.247 7.761a6 6 0 0 1 1.744 4.572" />
-            <path d="M19.075 4.933a10 10 0 0 1 2.234 10.72" />
+            <path
+                d="M19 19v1a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5"
+            />
             <path d="m2 2 20 20" />
-            <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
-            <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+            <path d="M8.656 3H17a2 2 0 0 1 2 2v8.344" />
         </svg>
     }
 }

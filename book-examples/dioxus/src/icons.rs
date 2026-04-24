@@ -1369,6 +1369,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BookmarkOff {}
+            },
+            "Bookmark Off",
+        ),
+        (
+            rsx! {
                 BookmarkPlus {}
             },
             "Bookmark Plus",
@@ -8864,6 +8870,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareDashedText {}
+            },
+            "Square Dashed Text",
+        ),
+        (
+            rsx! {
                 SquareDashedTopSolid {}
             },
             "Square Dashed Top Solid",
@@ -9114,12 +9126,6 @@ pub fn IconsS2() -> Element {
             },
             "Squircle Dashed",
         ),
-        (
-            rsx! {
-                Squirrel {}
-            },
-            "Squirrel",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9135,6 +9141,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Squirrel {}
+            },
+            "Squirrel",
+        ),
         (
             rsx! {
                 Stamp {}
@@ -9539,12 +9551,6 @@ pub fn IconsT1() -> Element {
                 TextSearch {}
             },
             "Text Search",
-        ),
-        (
-            rsx! {
-                TextSelect {}
-            },
-            "Text Select",
         ),
         (
             rsx! {

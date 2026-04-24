@@ -318,6 +318,7 @@ pub fn IconsB() -> Html {
         (html! { <Bookmark /> }, "Bookmark"),
         (html! { <BookmarkCheck /> }, "Bookmark Check"),
         (html! { <BookmarkMinus /> }, "Bookmark Minus"),
+        (html! { <BookmarkOff /> }, "Bookmark Off"),
         (html! { <BookmarkPlus /> }, "Bookmark Plus"),
         (html! { <BookmarkX /> }, "Bookmark X"),
         (html! { <BoomBox /> }, "Boom Box"),
@@ -1872,6 +1873,7 @@ pub fn IconsS() -> Html {
             html! { <SquareDashedMousePointer /> },
             "Square Dashed Mouse Pointer",
         ),
+        (html! { <SquareDashedText /> }, "Square Dashed Text"),
         (
             html! { <SquareDashedTopSolid /> },
             "Square Dashed Top Solid",
@@ -2002,7 +2004,6 @@ pub fn IconsT() -> Html {
         (html! { <TextInitial /> }, "Text Initial"),
         (html! { <TextQuote /> }, "Text Quote"),
         (html! { <TextSearch /> }, "Text Search"),
-        (html! { <TextSelect /> }, "Text Select"),
         (html! { <TextWrap /> }, "Text Wrap"),
         (html! { <Theater /> }, "Theater"),
         (html! { <Thermometer /> }, "Thermometer"),
