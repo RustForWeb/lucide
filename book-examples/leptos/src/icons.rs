@@ -2120,6 +2120,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TicketX /> }.into_any(), "Ticket X"),
                 (view! { <Tickets /> }.into_any(), "Tickets"),
                 (view! { <TicketsPlane /> }.into_any(), "Tickets Plane"),
+                (view! { <Timeline /> }.into_any(), "Timeline"),
                 (view! { <Timer /> }.into_any(), "Timer"),
                 (view! { <TimerOff /> }.into_any(), "Timer Off"),
                 (view! { <TimerReset /> }.into_any(), "Timer Reset"),
