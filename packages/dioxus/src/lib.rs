@@ -3221,6 +3221,22 @@ mod shield_check;
     feature = "account",
     feature = "security",
     feature = "development",
+    feature = "gaming",
+    feature = "shapes"
+))]
+mod shield_cog;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "gaming",
+    feature = "shapes"
+))]
+mod shield_cog_corner;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
     feature = "gaming"
 ))]
 mod shield_ellipsis;
@@ -7468,6 +7484,22 @@ pub use shield_ban::*;
     feature = "gaming"
 ))]
 pub use shield_check::*;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "gaming",
+    feature = "shapes"
+))]
+pub use shield_cog::*;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "gaming",
+    feature = "shapes"
+))]
+pub use shield_cog_corner::*;
 #[cfg(any(
     feature = "account",
     feature = "security",

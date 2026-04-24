@@ -1733,6 +1733,8 @@ pub fn IconsS() -> Html {
         (html! { <ShieldAlert /> }, "Shield Alert"),
         (html! { <ShieldBan /> }, "Shield Ban"),
         (html! { <ShieldCheck /> }, "Shield Check"),
+        (html! { <ShieldCog /> }, "Shield Cog"),
+        (html! { <ShieldCogCorner /> }, "Shield Cog Corner"),
         (html! { <ShieldEllipsis /> }, "Shield Ellipsis"),
         (html! { <ShieldHalf /> }, "Shield Half"),
         (html! { <ShieldMinus /> }, "Shield Minus"),
