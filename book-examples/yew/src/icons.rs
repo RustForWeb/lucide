@@ -1270,6 +1270,7 @@ pub fn IconsM() -> Html {
         (html! { <MapPinPen /> }, "Map Pin Pen"),
         (html! { <MapPinPlus /> }, "Map Pin Plus"),
         (html! { <MapPinPlusInside /> }, "Map Pin Plus Inside"),
+        (html! { <MapPinSearch /> }, "Map Pin Search"),
         (html! { <MapPinX /> }, "Map Pin X"),
         (html! { <MapPinXInside /> }, "Map Pin X Inside"),
         (html! { <MapPinned /> }, "Map Pinned"),

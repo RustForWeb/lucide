@@ -5965,6 +5965,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MapPinSearch {}
+            },
+            "Map Pin Search",
+        ),
+        (
+            rsx! {
                 MapPinX {}
             },
             "Map Pin X",
@@ -6413,12 +6419,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor X",
         ),
-        (
-            rsx! {
-                Moon {}
-            },
-            "Moon",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6434,6 +6434,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Moon {}
+            },
+            "Moon",
+        ),
         (
             rsx! {
                 MoonStar {}

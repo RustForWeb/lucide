@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1693usize] = [
+pub static ICON_NAMES: [&str; 1694usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -950,6 +950,7 @@ pub static ICON_NAMES: [&str; 1693usize] = [
     "map-pin-pen",
     "map-pin-plus",
     "map-pin-plus-inside",
+    "map-pin-search",
     "map-pin-x",
     "map-pin-x-inside",
     "map-pinned",
