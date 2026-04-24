@@ -2139,6 +2139,8 @@ mod lightbulb_off;
 mod line_dot_right_horizontal;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 mod line_squiggle;
+#[cfg(any(feature = "design", feature = "tools"))]
+mod line_style;
 #[cfg(any(feature = "text", feature = "account"))]
 mod link;
 #[cfg(any(feature = "text", feature = "account"))]
@@ -6388,6 +6390,8 @@ pub use lightbulb_off::*;
 pub use line_dot_right_horizontal::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 pub use line_squiggle::*;
+#[cfg(any(feature = "design", feature = "tools"))]
+pub use line_style::*;
 #[cfg(any(feature = "text", feature = "account"))]
 pub use link::*;
 #[cfg(any(feature = "text", feature = "account"))]

@@ -1189,6 +1189,7 @@ pub fn IconsL() -> Html {
             "Line Dot Right Horizontal",
         ),
         (html! { <LineSquiggle /> }, "Line Squiggle"),
+        (html! { <LineStyle /> }, "Line Style"),
         (html! { <Link /> }, "Link"),
         (html! { <Link2 /> }, "Link 2"),
         (html! { <Link2Off /> }, "Link 2 Off"),

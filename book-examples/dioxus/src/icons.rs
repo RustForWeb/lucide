@@ -5560,6 +5560,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LineStyle {}
+            },
+            "Line Style",
+        ),
+        (
+            rsx! {
                 Link {}
             },
             "Link",
