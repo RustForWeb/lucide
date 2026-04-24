@@ -1599,6 +1599,7 @@ pub fn IconsR() -> Html {
         (html! { <Radiation /> }, "Radiation"),
         (html! { <Radical /> }, "Radical"),
         (html! { <Radio /> }, "Radio"),
+        (html! { <RadioOff /> }, "Radio Off"),
         (html! { <RadioReceiver /> }, "Radio Receiver"),
         (html! { <RadioTower /> }, "Radio Tower"),
         (html! { <Radius /> }, "Radius"),

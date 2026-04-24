@@ -7508,6 +7508,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RadioOff {}
+            },
+            "Radio Off",
+        ),
+        (
+            rsx! {
                 RadioReceiver {}
             },
             "Radio Receiver",
