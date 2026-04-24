@@ -1336,6 +1336,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MapPinPen /> }.into_any(), "Map Pin Pen"),
                 (view! { <MapPinPlus /> }.into_any(), "Map Pin Plus"),
                 (view! { <MapPinPlusInside /> }.into_any(), "Map Pin Plus Inside"),
+                (view! { <MapPinSearch /> }.into_any(), "Map Pin Search"),
                 (view! { <MapPinX /> }.into_any(), "Map Pin X"),
                 (view! { <MapPinXInside /> }.into_any(), "Map Pin X Inside"),
                 (view! { <MapPinned /> }.into_any(), "Map Pinned"),
@@ -1414,7 +1415,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
                 (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
-                (view! { <Moon /> }.into_any(), "Moon"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1432,6 +1432,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
                 (view! { <Motorbike /> }.into_any(), "Motorbike"),
                 (view! { <Mountain /> }.into_any(), "Mountain"),

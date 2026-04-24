@@ -2274,6 +2274,13 @@ mod map_pin_pen;
 mod map_pin_plus;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 mod map_pin_plus_inside;
+#[cfg(any(
+    feature = "text",
+    feature = "navigation",
+    feature = "travel",
+    feature = "account"
+))]
+mod map_pin_search;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 mod map_pin_x;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
@@ -6547,6 +6554,13 @@ pub use map_pin_pen::*;
 pub use map_pin_plus::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 pub use map_pin_plus_inside::*;
+#[cfg(any(
+    feature = "text",
+    feature = "navigation",
+    feature = "travel",
+    feature = "account"
+))]
+pub use map_pin_search::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
 pub use map_pin_x::*;
 #[cfg(any(feature = "navigation", feature = "travel", feature = "account"))]
