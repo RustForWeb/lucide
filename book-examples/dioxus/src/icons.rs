@@ -8231,6 +8231,18 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShieldCog {}
+            },
+            "Shield Cog",
+        ),
+        (
+            rsx! {
+                ShieldCogCorner {}
+            },
+            "Shield Cog Corner",
+        ),
+        (
+            rsx! {
                 ShieldEllipsis {}
             },
             "Shield Ellipsis",
@@ -8475,18 +8487,6 @@ pub fn IconsS1() -> Element {
             },
             "Smartphone Nfc",
         ),
-        (
-            rsx! {
-                Smile {}
-            },
-            "Smile",
-        ),
-        (
-            rsx! {
-                SmilePlus {}
-            },
-            "Smile Plus",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8502,6 +8502,18 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Smile {}
+            },
+            "Smile",
+        ),
+        (
+            rsx! {
+                SmilePlus {}
+            },
+            "Smile Plus",
+        ),
         (
             rsx! {
                 Snail {}
@@ -9090,18 +9102,6 @@ pub fn IconsS2() -> Element {
             },
             "Stamp",
         ),
-        (
-            rsx! {
-                Star {}
-            },
-            "Star",
-        ),
-        (
-            rsx! {
-                StarHalf {}
-            },
-            "Star Half",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9117,6 +9117,18 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Star {}
+            },
+            "Star",
+        ),
+        (
+            rsx! {
+                StarHalf {}
+            },
+            "Star Half",
+        ),
         (
             rsx! {
                 StarOff {}

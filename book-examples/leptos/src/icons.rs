@@ -1831,6 +1831,8 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ShieldAlert /> }.into_any(), "Shield Alert"),
                 (view! { <ShieldBan /> }.into_any(), "Shield Ban"),
                 (view! { <ShieldCheck /> }.into_any(), "Shield Check"),
+                (view! { <ShieldCog /> }.into_any(), "Shield Cog"),
+                (view! { <ShieldCogCorner /> }.into_any(), "Shield Cog Corner"),
                 (view! { <ShieldEllipsis /> }.into_any(), "Shield Ellipsis"),
                 (view! { <ShieldHalf /> }.into_any(), "Shield Half"),
                 (view! { <ShieldMinus /> }.into_any(), "Shield Minus"),
@@ -1872,8 +1874,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Smartphone /> }.into_any(), "Smartphone"),
                 (view! { <SmartphoneCharging /> }.into_any(), "Smartphone Charging"),
                 (view! { <SmartphoneNfc /> }.into_any(), "Smartphone Nfc"),
-                (view! { <Smile /> }.into_any(), "Smile"),
-                (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1891,6 +1891,8 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Smile /> }.into_any(), "Smile"),
+                (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
                 (view! { <Snail /> }.into_any(), "Snail"),
                 (view! { <Snowflake /> }.into_any(), "Snowflake"),
                 (view! { <SoapDispenserDroplet /> }.into_any(), "Soap Dispenser Droplet"),
@@ -1998,8 +2000,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquircleDashed /> }.into_any(), "Squircle Dashed"),
                 (view! { <Squirrel /> }.into_any(), "Squirrel"),
                 (view! { <Stamp /> }.into_any(), "Stamp"),
-                (view! { <Star /> }.into_any(), "Star"),
-                (view! { <StarHalf /> }.into_any(), "Star Half"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2017,6 +2017,8 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Star /> }.into_any(), "Star"),
+                (view! { <StarHalf /> }.into_any(), "Star Half"),
                 (view! { <StarOff /> }.into_any(), "Star Off"),
                 (view! { <StepBack /> }.into_any(), "Step Back"),
                 (view! { <StepForward /> }.into_any(), "Step Forward"),
