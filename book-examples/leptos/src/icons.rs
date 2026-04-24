@@ -1254,6 +1254,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <LightbulbOff /> }.into_any(), "Lightbulb Off"),
                 (view! { <LineDotRightHorizontal /> }.into_any(), "Line Dot Right Horizontal"),
                 (view! { <LineSquiggle /> }.into_any(), "Line Squiggle"),
+                (view! { <LineStyle /> }.into_any(), "Line Style"),
                 (view! { <Link /> }.into_any(), "Link"),
                 (view! { <Link2 /> }.into_any(), "Link 2"),
                 (view! { <Link2Off /> }.into_any(), "Link 2 Off"),
