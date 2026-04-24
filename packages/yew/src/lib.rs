@@ -340,6 +340,8 @@ mod bed_single;
 #[cfg(feature = "food-beverage")]
 mod beef;
 #[cfg(feature = "food-beverage")]
+mod beef_off;
+#[cfg(feature = "food-beverage")]
 mod beer;
 #[cfg(feature = "food-beverage")]
 mod beer_off;
@@ -4608,6 +4610,8 @@ pub use bed_double::*;
 pub use bed_single::*;
 #[cfg(feature = "food-beverage")]
 pub use beef::*;
+#[cfg(feature = "food-beverage")]
+pub use beef_off::*;
 #[cfg(feature = "food-beverage")]
 pub use beer::*;
 #[cfg(feature = "food-beverage")]

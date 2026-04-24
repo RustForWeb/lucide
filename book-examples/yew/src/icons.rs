@@ -253,6 +253,7 @@ pub fn IconsB() -> Html {
         (html! { <BedDouble /> }, "Bed Double"),
         (html! { <BedSingle /> }, "Bed Single"),
         (html! { <Beef /> }, "Beef"),
+        (html! { <BeefOff /> }, "Beef Off"),
         (html! { <Beer /> }, "Beer"),
         (html! { <BeerOff /> }, "Beer Off"),
         (html! { <Bell /> }, "Bell"),
