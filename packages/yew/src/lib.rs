@@ -3423,6 +3423,8 @@ mod spline_pointer;
 mod split;
 #[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
 mod spool;
+#[cfg(feature = "sports")]
+mod sport_shoe;
 #[cfg(any(
     feature = "devices",
     feature = "photography",
@@ -7690,6 +7692,8 @@ pub use spline_pointer::*;
 pub use split::*;
 #[cfg(any(feature = "communication", feature = "tools", feature = "social"))]
 pub use spool::*;
+#[cfg(feature = "sports")]
+pub use sport_shoe::*;
 #[cfg(any(
     feature = "devices",
     feature = "photography",
