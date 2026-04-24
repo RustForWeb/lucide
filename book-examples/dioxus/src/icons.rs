@@ -8624,6 +8624,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SportShoe {}
+            },
+            "Sport Shoe",
+        ),
+        (
+            rsx! {
                 Spotlight {}
             },
             "Spotlight",
@@ -9096,12 +9102,6 @@ pub fn IconsS2() -> Element {
             },
             "Squirrel",
         ),
-        (
-            rsx! {
-                Stamp {}
-            },
-            "Stamp",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9117,6 +9117,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Stamp {}
+            },
+            "Stamp",
+        ),
         (
             rsx! {
                 Star {}

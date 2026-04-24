@@ -1796,6 +1796,7 @@ pub fn IconsS() -> Html {
         (html! { <SplinePointer /> }, "Spline Pointer"),
         (html! { <Split /> }, "Split"),
         (html! { <Spool /> }, "Spool"),
+        (html! { <SportShoe /> }, "Sport Shoe"),
         (html! { <Spotlight /> }, "Spotlight"),
         (html! { <SprayCan /> }, "Spray Can"),
         (html! { <Sprout /> }, "Sprout"),

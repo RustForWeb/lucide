@@ -1911,6 +1911,7 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SplinePointer /> }.into_any(), "Spline Pointer"),
                 (view! { <Split /> }.into_any(), "Split"),
                 (view! { <Spool /> }.into_any(), "Spool"),
+                (view! { <SportShoe /> }.into_any(), "Sport Shoe"),
                 (view! { <Spotlight /> }.into_any(), "Spotlight"),
                 (view! { <SprayCan /> }.into_any(), "Spray Can"),
                 (view! { <Sprout /> }.into_any(), "Sprout"),
@@ -1999,7 +2000,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <Squircle /> }.into_any(), "Squircle"),
                 (view! { <SquircleDashed /> }.into_any(), "Squircle Dashed"),
                 (view! { <Squirrel /> }.into_any(), "Squirrel"),
-                (view! { <Stamp /> }.into_any(), "Stamp"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2017,6 +2017,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Stamp /> }.into_any(), "Stamp"),
                 (view! { <Star /> }.into_any(), "Star"),
                 (view! { <StarHalf /> }.into_any(), "Star Half"),
                 (view! { <StarOff /> }.into_any(), "Star Off"),
