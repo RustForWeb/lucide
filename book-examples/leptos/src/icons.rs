@@ -1696,6 +1696,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <Radiation /> }.into_any(), "Radiation"),
                 (view! { <Radical /> }.into_any(), "Radical"),
                 (view! { <Radio /> }.into_any(), "Radio"),
+                (view! { <RadioOff /> }.into_any(), "Radio Off"),
                 (view! { <RadioReceiver /> }.into_any(), "Radio Receiver"),
                 (view! { <RadioTower /> }.into_any(), "Radio Tower"),
                 (view! { <Radius /> }.into_any(), "Radius"),

@@ -2883,6 +2883,8 @@ mod radiation;
 mod radical;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
 mod radio;
+#[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
+mod radio_off;
 #[cfg(feature = "devices")]
 mod radio_receiver;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
@@ -7154,6 +7156,8 @@ pub use radiation::*;
 pub use radical::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
 pub use radio::*;
+#[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
+pub use radio_off::*;
 #[cfg(feature = "devices")]
 pub use radio_receiver::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "social"))]
