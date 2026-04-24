@@ -9650,6 +9650,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Timeline {}
+            },
+            "Timeline",
+        ),
+        (
+            rsx! {
                 Timer {}
             },
             "Timer",

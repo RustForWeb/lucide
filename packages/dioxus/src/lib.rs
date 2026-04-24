@@ -3856,6 +3856,8 @@ mod tickets;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod tickets_plane;
 #[cfg(feature = "time")]
+mod timeline;
+#[cfg(feature = "time")]
 mod timer;
 #[cfg(feature = "time")]
 mod timer_off;
@@ -8137,6 +8139,8 @@ pub use ticket_x::*;
 pub use tickets::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use tickets_plane::*;
+#[cfg(feature = "time")]
+pub use timeline::*;
 #[cfg(feature = "time")]
 pub use timer::*;
 #[cfg(feature = "time")]

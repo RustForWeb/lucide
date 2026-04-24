@@ -2020,6 +2020,7 @@ pub fn IconsT() -> Html {
         (html! { <TicketX /> }, "Ticket X"),
         (html! { <Tickets /> }, "Tickets"),
         (html! { <TicketsPlane /> }, "Tickets Plane"),
+        (html! { <Timeline /> }, "Timeline"),
         (html! { <Timer /> }, "Timer"),
         (html! { <TimerOff /> }, "Timer Off"),
         (html! { <TimerReset /> }, "Timer Reset"),
