@@ -352,6 +352,7 @@ pub fn IconsB2() -> impl IntoView {
                 (view! { <Bookmark /> }.into_any(), "Bookmark"),
                 (view! { <BookmarkCheck /> }.into_any(), "Bookmark Check"),
                 (view! { <BookmarkMinus /> }.into_any(), "Bookmark Minus"),
+                (view! { <BookmarkOff /> }.into_any(), "Bookmark Off"),
                 (view! { <BookmarkPlus /> }.into_any(), "Bookmark Plus"),
                 (view! { <BookmarkX /> }.into_any(), "Bookmark X"),
                 (view! { <BoomBox /> }.into_any(), "Boom Box"),
@@ -1960,6 +1961,7 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareDashedBottomCode /> }.into_any(), "Square Dashed Bottom Code"),
                 (view! { <SquareDashedKanban /> }.into_any(), "Square Dashed Kanban"),
                 (view! { <SquareDashedMousePointer /> }.into_any(), "Square Dashed Mouse Pointer"),
+                (view! { <SquareDashedText /> }.into_any(), "Square Dashed Text"),
                 (view! { <SquareDashedTopSolid /> }.into_any(), "Square Dashed Top Solid"),
                 (view! { <SquareDivide /> }.into_any(), "Square Divide"),
                 (view! { <SquareDot /> }.into_any(), "Square Dot"),
@@ -2002,7 +2004,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquaresUnite /> }.into_any(), "Squares Unite"),
                 (view! { <Squircle /> }.into_any(), "Squircle"),
                 (view! { <SquircleDashed /> }.into_any(), "Squircle Dashed"),
-                (view! { <Squirrel /> }.into_any(), "Squirrel"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2020,6 +2021,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Squirrel /> }.into_any(), "Squirrel"),
                 (view! { <Stamp /> }.into_any(), "Stamp"),
                 (view! { <Star /> }.into_any(), "Star"),
                 (view! { <StarHalf /> }.into_any(), "Star Half"),
@@ -2102,7 +2104,6 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TextInitial /> }.into_any(), "Text Initial"),
                 (view! { <TextQuote /> }.into_any(), "Text Quote"),
                 (view! { <TextSearch /> }.into_any(), "Text Search"),
-                (view! { <TextSelect /> }.into_any(), "Text Select"),
                 (view! { <TextWrap /> }.into_any(), "Text Wrap"),
                 (view! { <Theater /> }.into_any(), "Theater"),
                 (view! { <Thermometer /> }.into_any(), "Thermometer"),

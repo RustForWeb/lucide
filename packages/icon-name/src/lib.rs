@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1694usize] = [
+pub static ICON_NAMES: [&str; 1695usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -219,6 +219,7 @@ pub static ICON_NAMES: [&str; 1694usize] = [
     "bookmark",
     "bookmark-check",
     "bookmark-minus",
+    "bookmark-off",
     "bookmark-plus",
     "bookmark-x",
     "boom-box",
@@ -1411,6 +1412,7 @@ pub static ICON_NAMES: [&str; 1694usize] = [
     "square-dashed-bottom-code",
     "square-dashed-kanban",
     "square-dashed-mouse-pointer",
+    "square-dashed-text",
     "square-dashed-top-solid",
     "square-divide",
     "square-dot",
@@ -1519,7 +1521,6 @@ pub static ICON_NAMES: [&str; 1694usize] = [
     "text-initial",
     "text-quote",
     "text-search",
-    "text-select",
     "text-wrap",
     "theater",
     "thermometer",
