@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Rotate3DProps {
+pub struct LayersMinusProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Rotate3DProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Rotate3D(props: Rotate3DProps) -> Element {
+pub fn LayersMinus(props: LayersMinusProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,11 @@ pub fn Rotate3D(props: Rotate3DProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m15.194 13.707 3.814 1.86-1.86 3.814" }
-            path { "d": "M16.47214 7.52786 A 5 10 0 1 0 13 21.79796" }
-            path { "d": "M21.79796 11 A 10 5 0 1 0 19 15.57071" }
+            path { "d": "M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 .83.18 2 2 0 0 0 .83-.18l8.58-3.9a1 1 0 0 0 0-1.832z" }
+            path { "d": "M16 17h6" }
+            path { "d": "M2.003 11.995a1 1 0 0 0 .597.915l8.58 3.91a2 2 0 0 0 .83.18" }
+            path { "d": "M2.003 16.995a1 1 0 0 0 .597.915l8.58 3.91a2 2 0 0 0 .83.18 2 2 0 0 0 .83-.18l2.11-.96" }
+            path { "d": "M22.018 12.004a1 1 0 0 1-.598.916l-.177.08" }
         }
     }
 }

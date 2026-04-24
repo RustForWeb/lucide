@@ -277,6 +277,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <Beer /> }.into_any(), "Beer"),
                 (view! { <BeerOff /> }.into_any(), "Beer Off"),
                 (view! { <Bell /> }.into_any(), "Bell"),
+                (view! { <BellCheck /> }.into_any(), "Bell Check"),
                 (view! { <BellDot /> }.into_any(), "Bell Dot"),
                 (view! { <BellElectric /> }.into_any(), "Bell Electric"),
                 (view! { <BellMinus /> }.into_any(), "Bell Minus"),
@@ -325,7 +326,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
                 (view! { <BookOpenText /> }.into_any(), "Book Open Text"),
                 (view! { <BookPlus /> }.into_any(), "Book Plus"),
-                (view! { <BookSearch /> }.into_any(), "Book Search"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -343,6 +343,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookSearch /> }.into_any(), "Book Search"),
                 (view! { <BookText /> }.into_any(), "Book Text"),
                 (view! { <BookType /> }.into_any(), "Book Type"),
                 (view! { <BookUp /> }.into_any(), "Book Up"),
@@ -1104,6 +1105,7 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <HeartOff /> }.into_any(), "Heart Off"),
                 (view! { <HeartPlus /> }.into_any(), "Heart Plus"),
                 (view! { <HeartPulse /> }.into_any(), "Heart Pulse"),
+                (view! { <HeartX /> }.into_any(), "Heart X"),
                 (view! { <Heater /> }.into_any(), "Heater"),
                 (view! { <Helicopter /> }.into_any(), "Helicopter"),
                 (view! { <Hexagon /> }.into_any(), "Hexagon"),
@@ -1236,6 +1238,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <Laugh /> }.into_any(), "Laugh"),
                 (view! { <Layers /> }.into_any(), "Layers"),
                 (view! { <Layers2 /> }.into_any(), "Layers 2"),
+                (view! { <LayersMinus /> }.into_any(), "Layers Minus"),
                 (view! { <LayersPlus /> }.into_any(), "Layers Plus"),
                 (view! { <LayoutDashboard /> }.into_any(), "Layout Dashboard"),
                 (view! { <LayoutGrid /> }.into_any(), "Layout Grid"),
