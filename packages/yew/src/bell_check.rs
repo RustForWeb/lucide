@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct Rotate3DProps {
+pub struct BellCheckProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct Rotate3DProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Rotate3D(props: &Rotate3DProps) -> Html {
+pub fn BellCheck(props: &BellCheckProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn Rotate3D(props: &Rotate3DProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
-            <path d="M16.47214 7.52786 A 5 10 0 1 0 13 21.79796" />
-            <path d="M21.79796 11 A 10 5 0 1 0 19 15.57071" />
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path d="m15 8 2 2 4-4" />
+            <path d="M16.8607 4.4824A6 6 0 0 0 6 8C6 12.499 4.589 13.956 3.262 15.326" />
+            <path
+                d="M3.262 15.326A1 1 0 0 0 4 17H20A1 1 0 0 0 20.74 15.327C20.209 14.779 19.665 14.218 19.203 13.454"
+            />
         </svg>
     }
 }

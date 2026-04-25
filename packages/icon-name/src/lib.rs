@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1696usize] = [
+pub static ICON_NAMES: [&str; 1699usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -161,6 +161,7 @@ pub static ICON_NAMES: [&str; 1696usize] = [
     "beer",
     "beer-off",
     "bell",
+    "bell-check",
     "bell-dot",
     "bell-electric",
     "bell-minus",
@@ -803,6 +804,7 @@ pub static ICON_NAMES: [&str; 1696usize] = [
     "heart-off",
     "heart-plus",
     "heart-pulse",
+    "heart-x",
     "heater",
     "helicopter",
     "hexagon",
@@ -867,6 +869,7 @@ pub static ICON_NAMES: [&str; 1696usize] = [
     "laugh",
     "layers",
     "layers-2",
+    "layers-minus",
     "layers-plus",
     "layout-dashboard",
     "layout-grid",

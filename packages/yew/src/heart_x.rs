@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct Rotate3DProps {
+pub struct HeartXProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct Rotate3DProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Rotate3D(props: &Rotate3DProps) -> Html {
+pub fn HeartX(props: &HeartXProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,11 @@ pub fn Rotate3D(props: &Rotate3DProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
-            <path d="M16.47214 7.52786 A 5 10 0 1 0 13 21.79796" />
-            <path d="M21.79796 11 A 10 5 0 1 0 19 15.57071" />
+            <path d="m15.5 12.5 5 5" />
+            <path d="m20.5 12.5-5 5" />
+            <path
+                d="M21.955 8.774a5.5 5.5 0 0 0-9.546-2.95.6.6 0 0 1-.818 0A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.508 5.332a2 2 0 0 0 2.57.352"
+            />
         </svg>
     }
 }

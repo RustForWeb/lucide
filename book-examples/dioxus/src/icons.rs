@@ -1006,6 +1006,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BellCheck {}
+            },
+            "Bell Check",
+        ),
+        (
+            rsx! {
                 BellDot {}
             },
             "Bell Dot",
@@ -1292,12 +1298,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Plus",
         ),
-        (
-            rsx! {
-                BookSearch {}
-            },
-            "Book Search",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1313,6 +1313,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookSearch {}
+            },
+            "Book Search",
+        ),
         (
             rsx! {
                 BookText {}
@@ -5008,6 +5014,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HeartX {}
+            },
+            "Heart X",
+        ),
+        (
+            rsx! {
                 Heater {}
             },
             "Heater",
@@ -5449,6 +5461,12 @@ pub fn IconsL1() -> Element {
                 Layers2 {}
             },
             "Layers 2",
+        ),
+        (
+            rsx! {
+                LayersMinus {}
+            },
+            "Layers Minus",
         ),
         (
             rsx! {

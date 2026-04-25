@@ -346,6 +346,8 @@ mod beer_off;
 #[cfg(any(feature = "account", feature = "notifications"))]
 mod bell;
 #[cfg(any(feature = "account", feature = "notifications"))]
+mod bell_check;
+#[cfg(any(feature = "account", feature = "notifications"))]
 mod bell_dot;
 #[cfg(any(feature = "devices", feature = "notifications", feature = "home"))]
 mod bell_electric;
@@ -1916,6 +1918,13 @@ mod heart_off;
 mod heart_plus;
 #[cfg(feature = "medical")]
 mod heart_pulse;
+#[cfg(any(
+    feature = "social",
+    feature = "multimedia",
+    feature = "design",
+    feature = "shapes"
+))]
+mod heart_x;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 mod heater;
 #[cfg(any(feature = "transportation", feature = "travel"))]
@@ -2080,6 +2089,8 @@ mod laugh;
 mod layers;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_2;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layers_minus;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_plus;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -4630,6 +4641,8 @@ pub use beer_off::*;
 #[cfg(any(feature = "account", feature = "notifications"))]
 pub use bell::*;
 #[cfg(any(feature = "account", feature = "notifications"))]
+pub use bell_check::*;
+#[cfg(any(feature = "account", feature = "notifications"))]
 pub use bell_dot::*;
 #[cfg(any(feature = "devices", feature = "notifications", feature = "home"))]
 pub use bell_electric::*;
@@ -6200,6 +6213,13 @@ pub use heart_off::*;
 pub use heart_plus::*;
 #[cfg(feature = "medical")]
 pub use heart_pulse::*;
+#[cfg(any(
+    feature = "social",
+    feature = "multimedia",
+    feature = "design",
+    feature = "shapes"
+))]
+pub use heart_x::*;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 pub use heater::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
@@ -6364,6 +6384,8 @@ pub use laugh::*;
 pub use layers::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_2::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layers_minus::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_plus::*;
 #[cfg(any(feature = "design", feature = "layout"))]
