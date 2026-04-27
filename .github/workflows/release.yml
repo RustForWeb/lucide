@@ -18,7 +18,7 @@ permissions:
 jobs:
     release:
         name: Release
-        uses: RustForWeb/.github/.github/workflows/release.yml@dde39f6537f31ed953352c64c48f104ec9dee399
+        uses: RustForWeb/.github/.github/workflows/release.yml@373c25f8fd29e10c40f1343f13312f8be3514af0
         with:
             bump: ${{ inputs.bump }}
             target: wasm32-unknown-unknown
