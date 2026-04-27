@@ -12,6 +12,6 @@ permissions:
 jobs:
     rust:
         name: Rust
-        uses: RustForWeb/.github/.github/workflows/rust.yml@bdaeb4edfd8df63355139e11a364fb3e6871dac2
+        uses: RustForWeb/.github/.github/workflows/rust.yml@dde39f6537f31ed953352c64c48f104ec9dee399
         with:
             target: wasm32-unknown-unknown
