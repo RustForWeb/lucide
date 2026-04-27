@@ -8,16 +8,6 @@ permissions:
     issues: write
 
 jobs:
-    sync-labels:
-        name: Sync Labels
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-              with:
-                  sparse-checkout: .github/labels.yml
-
-            - name: Sync labels
-              uses: EndBug/label-sync@52074158190acb45f3077f9099fea818aa43f97a # v2.3.3
-              with:
-                  config-file: .github/labels.yml
+    labels:
+        name: Labels
+        uses: RustForWeb/.github/.github/workflows/labels.yml@dde39f6537f31ed953352c64c48f104ec9dee399

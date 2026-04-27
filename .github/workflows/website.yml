@@ -1,4 +1,5 @@
 name: Website
+
 on:
     pull_request: {}
     push:
@@ -7,107 +8,14 @@ on:
 
 permissions:
     contents: read
+    id-token: write
+    pages: write
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: false
 
 jobs:
-    book-test:
-        name: Test Book
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Checkout
-              uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-
-            - name: Set up Rust toolchain
-              uses: actions-rust-lang/setup-rust-toolchain@2b1f5e9b395427c92ee4e3331786ca3c37afe2d7 # v1.16.0
-              with:
-                  target: wasm32-unknown-unknown
-
-            - name: Install Cargo Binary Install
-              uses: cargo-bins/cargo-binstall@dc19f1e48450eefe5a29b8da6c6b00a87d730b37 # v1.18.1
-
-            - name: Install mdBook
-              run: cargo binstall --force -y mdbook mdbook-tabs mdbook-trunk
-
-            - name: Run tests
-              run: mdbook test
-              working-directory: book
-
-    book-build:
-        name: Build Book
-        needs: book-test
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Checkout
-              uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-              with:
-                  fetch-depth: 0
-
-            - name: Set up Rust toolchain
-              uses: actions-rust-lang/setup-rust-toolchain@2b1f5e9b395427c92ee4e3331786ca3c37afe2d7 # v1.16.0
-              with:
-                  target: wasm32-unknown-unknown
-
-            - name: Install Cargo Binary Install
-              uses: cargo-bins/cargo-binstall@dc19f1e48450eefe5a29b8da6c6b00a87d730b37 # v1.18.1
-
-            - name: Install mdBook and Trunk
-              run: cargo binstall --force -y mdbook mdbook-tabs mdbook-trunk trunk
-
-            - name: Install Node.js dependencies
-              run: npm ci
-
-            - name: Build Book
-              run: mdbook build
-              working-directory: book
-
-            - name: Combine Book Outputs
-              run: mdbook-trunk combine
-              working-directory: book
-
-            - name: Upload artifact
-              uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-              with:
-                  name: book
-                  path: book/dist
-                  retention-days: 1
-                  if-no-files-found: error
-
-    deploy:
-        name: Deploy
-        needs: book-build
-        if: github.ref == 'refs/heads/main'
-        runs-on: ubuntu-latest
-
-        permissions:
-            contents: read
-            pages: write
-            id-token: write
-
-        steps:
-            - name: Checkout
-              uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-              with:
-                  fetch-depth: 0
-
-            - name: Download artifacts
-              uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-              with:
-                  path: dist
-                  merge-multiple: true
-
-            - name: Setup Pages
-              uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
-              with:
-                  path: dist
-
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+    book:
+        name: Book
+        uses: RustForWeb/.github/.github/workflows/book.yml@dde39f6537f31ed953352c64c48f104ec9dee399
