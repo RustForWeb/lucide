@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1699usize] = [
+pub static ICON_NAMES: [&str; 1701usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -103,6 +103,7 @@ pub static ICON_NAMES: [&str; 1699usize] = [
     "arrow-up-z-a",
     "arrows-up-from-line",
     "asterisk",
+    "astroid",
     "at-sign",
     "atom",
     "audio-lines",
@@ -673,6 +674,7 @@ pub static ICON_NAMES: [&str; 1699usize] = [
     "fold-vertical",
     "folder",
     "folder-archive",
+    "folder-bookmark",
     "folder-check",
     "folder-clock",
     "folder-closed",
