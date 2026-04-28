@@ -185,9 +185,9 @@ pub fn IconsA1() -> impl IntoView {
                 (view! { <ArrowUpZA /> }.into_any(), "Arrow Up Za"),
                 (view! { <ArrowsUpFromLine /> }.into_any(), "Arrows Up From Line"),
                 (view! { <Asterisk /> }.into_any(), "Asterisk"),
+                (view! { <Astroid /> }.into_any(), "Astroid"),
                 (view! { <AtSign /> }.into_any(), "At Sign"),
                 (view! { <Atom /> }.into_any(), "Atom"),
-                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -205,6 +205,7 @@ pub fn IconsA2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
                 (view! { <AudioWaveform /> }.into_any(), "Audio Waveform"),
                 (view! { <Award /> }.into_any(), "Award"),
                 (view! { <Axe /> }.into_any(), "Axe"),
@@ -920,6 +921,7 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FoldVertical /> }.into_any(), "Fold Vertical"),
                 (view! { <Folder /> }.into_any(), "Folder"),
                 (view! { <FolderArchive /> }.into_any(), "Folder Archive"),
+                (view! { <FolderBookmark /> }.into_any(), "Folder Bookmark"),
                 (view! { <FolderCheck /> }.into_any(), "Folder Check"),
                 (view! { <FolderClock /> }.into_any(), "Folder Clock"),
                 (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
@@ -929,7 +931,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
                 (view! { <FolderGit /> }.into_any(), "Folder Git"),
                 (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
-                (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -947,6 +948,7 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),
                 (view! { <FolderKanban /> }.into_any(), "Folder Kanban"),
                 (view! { <FolderKey /> }.into_any(), "Folder Key"),

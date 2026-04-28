@@ -628,6 +628,12 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
+                Astroid {}
+            },
+            "Astroid",
+        ),
+        (
+            rsx! {
                 AtSign {}
             },
             "At Sign",
@@ -637,12 +643,6 @@ pub fn IconsA1() -> Element {
                 Atom {}
             },
             "Atom",
-        ),
-        (
-            rsx! {
-                AudioLines {}
-            },
-            "Audio Lines",
         ),
     ];
     rsx! {
@@ -659,6 +659,12 @@ pub fn IconsA1() -> Element {
 #[component]
 pub fn IconsA2() -> Element {
     let icons = [
+        (
+            rsx! {
+                AudioLines {}
+            },
+            "Audio Lines",
+        ),
         (
             rsx! {
                 AudioWaveform {}
@@ -4183,6 +4189,12 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
+                FolderBookmark {}
+            },
+            "Folder Bookmark",
+        ),
+        (
+            rsx! {
                 FolderCheck {}
             },
             "Folder Check",
@@ -4235,12 +4247,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Git 2",
         ),
-        (
-            rsx! {
-                FolderHeart {}
-            },
-            "Folder Heart",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -4256,6 +4262,12 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
+        (
+            rsx! {
+                FolderHeart {}
+            },
+            "Folder Heart",
+        ),
         (
             rsx! {
                 FolderInput {}
