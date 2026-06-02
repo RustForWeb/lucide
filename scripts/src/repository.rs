@@ -41,7 +41,10 @@ pub fn git_version_tags(repository: &Repository) -> Result<Vec<Version>, Box<dyn
     let mut tag_names = tag_names
         .into_iter()
         .flat_map(|tag_name| {
-            tag_name.and_then(|tag_name| Version::parse(tag_name.trim_start_matches("v")).ok())
+            tag_name
+                .ok()
+                .flatten()
+                .and_then(|tag_name| Version::parse(tag_name.trim_start_matches("v")).ok())
         })
         .collect::<Vec<_>>();
 
