@@ -200,8 +200,8 @@ fn convert_node(node: Node, parent_namespace: Option<&str>) -> Option<TokenStrea
             });
             let class = (node.tag_name().name() == "svg").then(|| {
                 quote! {
-                    "class": if let Some(class) = props.class { "{class}" },
-                    "style": if let Some(style) = props.style { "{style}" },
+                    "class": if let Some(class) = props.class { class },
+                    "style": if let Some(style) = props.style { style },
                 }
             });
             let attributes = node
