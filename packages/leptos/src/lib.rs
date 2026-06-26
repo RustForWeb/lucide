@@ -4171,19 +4171,21 @@ mod warehouse;
 mod washing_machine;
 #[cfg(feature = "time")]
 mod watch;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+mod waves_arrow_down;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+mod waves_arrow_up;
 #[cfg(any(
     feature = "weather",
     feature = "navigation",
     feature = "multimedia",
     feature = "sustainability"
 ))]
-mod waves;
-#[cfg(any(feature = "weather", feature = "sustainability"))]
-mod waves_arrow_down;
-#[cfg(any(feature = "weather", feature = "sustainability"))]
-mod waves_arrow_up;
+mod waves_horizontal;
 #[cfg(any(feature = "sports", feature = "home"))]
 mod waves_ladder;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+mod waves_vertical;
 #[cfg(any(
     feature = "security",
     feature = "account",
@@ -8470,19 +8472,21 @@ pub use warehouse::*;
 pub use washing_machine::*;
 #[cfg(feature = "time")]
 pub use watch::*;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+pub use waves_arrow_down::*;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+pub use waves_arrow_up::*;
 #[cfg(any(
     feature = "weather",
     feature = "navigation",
     feature = "multimedia",
     feature = "sustainability"
 ))]
-pub use waves::*;
-#[cfg(any(feature = "weather", feature = "sustainability"))]
-pub use waves_arrow_down::*;
-#[cfg(any(feature = "weather", feature = "sustainability"))]
-pub use waves_arrow_up::*;
+pub use waves_horizontal::*;
 #[cfg(any(feature = "sports", feature = "home"))]
 pub use waves_ladder::*;
+#[cfg(any(feature = "weather", feature = "sustainability"))]
+pub use waves_vertical::*;
 #[cfg(any(
     feature = "security",
     feature = "account",
