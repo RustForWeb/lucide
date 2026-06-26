@@ -406,6 +406,8 @@ mod bitcoin;
     feature = "development"
 ))]
 mod blend;
+#[cfg(any(feature = "food-beverage", feature = "home"))]
+mod blender;
 #[cfg(feature = "home")]
 mod blinds;
 #[cfg(any(feature = "development", feature = "layout", feature = "shapes"))]
@@ -4723,6 +4725,8 @@ pub use bitcoin::*;
     feature = "development"
 ))]
 pub use blend::*;
+#[cfg(any(feature = "food-beverage", feature = "home"))]
+pub use blender::*;
 #[cfg(feature = "home")]
 pub use blinds::*;
 #[cfg(any(feature = "development", feature = "layout", feature = "shapes"))]
