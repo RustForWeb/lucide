@@ -2991,6 +2991,8 @@ mod repeat;
 mod repeat_1;
 #[cfg(any(feature = "arrows", feature = "social", feature = "multimedia"))]
 mod repeat_2;
+#[cfg(any(feature = "arrows", feature = "multimedia"))]
+mod repeat_off;
 #[cfg(feature = "text")]
 mod replace;
 #[cfg(feature = "text")]
@@ -7292,6 +7294,8 @@ pub use repeat::*;
 pub use repeat_1::*;
 #[cfg(any(feature = "arrows", feature = "social", feature = "multimedia"))]
 pub use repeat_2::*;
+#[cfg(any(feature = "arrows", feature = "multimedia"))]
+pub use repeat_off::*;
 #[cfg(feature = "text")]
 pub use replace::*;
 #[cfg(feature = "text")]

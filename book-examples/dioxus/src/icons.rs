@@ -7766,6 +7766,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RepeatOff {}
+            },
+            "Repeat Off",
+        ),
+        (
+            rsx! {
                 Replace {}
             },
             "Replace",

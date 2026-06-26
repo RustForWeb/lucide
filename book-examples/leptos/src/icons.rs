@@ -1739,6 +1739,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <Repeat /> }.into_any(), "Repeat"),
                 (view! { <Repeat1 /> }.into_any(), "Repeat 1"),
                 (view! { <Repeat2 /> }.into_any(), "Repeat 2"),
+                (view! { <RepeatOff /> }.into_any(), "Repeat Off"),
                 (view! { <Replace /> }.into_any(), "Replace"),
                 (view! { <ReplaceAll /> }.into_any(), "Replace All"),
                 (view! { <Reply /> }.into_any(), "Reply"),
