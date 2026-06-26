@@ -8,7 +8,7 @@ use convert_case::{Case, Casing};
 use proc_macro2::TokenStream;
 use quote::{ToTokens, quote};
 
-use crate::framework::Framework;
+use crate::{framework::Framework, status::ExitStatusExt};
 
 pub struct Yew;
 
@@ -169,7 +169,7 @@ impl Framework for Yew {
             .env("RUSTFMT", "yew-fmt")
             .current_dir(repository_path)
             .status()?
-            .exit_ok()?;
+            .stable_exit_ok()?;
 
         Command::new("cargo")
             .arg("fmt")
@@ -177,7 +177,7 @@ impl Framework for Yew {
             .arg(&package)
             .current_dir(repository_path)
             .status()?
-            .exit_ok()?;
+            .stable_exit_ok()?;
 
         Ok(())
     }

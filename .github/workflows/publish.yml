@@ -7,10 +7,14 @@ on:
 permissions:
     contents: read
     id-token: write
+    packages: write
 
 jobs:
     publish:
         name: Publish
-        uses: RustForWeb/.github/.github/workflows/publish.yml@373c25f8fd29e10c40f1343f13312f8be3514af0
+        uses: RustForWeb/.github/.github/workflows/publish.yml@dc2442c27ef9f920a1a889ec94e615b419b491b2 # v1.0.1
         with:
+            enable-rust: true
+            enable-typescript: false
+            
             target: wasm32-unknown-unknown

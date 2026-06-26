@@ -35,7 +35,7 @@ jobs:
               uses: cargo-bins/cargo-binstall@30b5ca8b54e1dcffd9548bc87ede1531310fdc67 # v1.20.0
 
             - name: Install crates
-              run: cargo binstall --force -y dioxus-cli leptosfmt yew-fmt
+              run: cargo binstall --force -y dioxus-cli@0.7.9 leptosfmt@0.1.33 yew-fmt@0.6.3
 
             - name: Check for upstream releases
               run: cargo run -p scripts --bin upstream

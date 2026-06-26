@@ -12,6 +12,7 @@ use crate::{
     frameworks::{dioxus::Dioxus, leptos::Leptos, yew::Yew},
     metadata::Metadata,
     repository::git_checkout,
+    status::ExitStatusExt,
 };
 
 pub fn generate(
@@ -152,7 +153,7 @@ fn generate_icon_names(path: &Path, names: &[String]) -> Result<(), Box<dyn Erro
         .arg("lucide-icon-name")
         .current_dir(path)
         .status()?
-        .exit_ok()?;
+        .stable_exit_ok()?;
 
     Ok(())
 }
