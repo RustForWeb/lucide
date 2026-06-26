@@ -10433,12 +10433,6 @@ pub fn IconsW1() -> Element {
         ),
         (
             rsx! {
-                Waves {}
-            },
-            "Waves",
-        ),
-        (
-            rsx! {
                 WavesArrowDown {}
             },
             "Waves Arrow Down",
@@ -10451,9 +10445,21 @@ pub fn IconsW1() -> Element {
         ),
         (
             rsx! {
+                WavesHorizontal {}
+            },
+            "Waves Horizontal",
+        ),
+        (
+            rsx! {
                 WavesLadder {}
             },
             "Waves Ladder",
+        ),
+        (
+            rsx! {
+                WavesVertical {}
+            },
+            "Waves Vertical",
         ),
         (
             rsx! {
