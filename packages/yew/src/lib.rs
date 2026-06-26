@@ -226,6 +226,8 @@ mod arrow_up_z_a;
 mod arrows_up_from_line;
 #[cfg(any(feature = "text", feature = "math", feature = "development"))]
 mod asterisk;
+#[cfg(any(feature = "shapes", feature = "math"))]
+mod astroid;
 #[cfg(any(feature = "text", feature = "account"))]
 mod at_sign;
 #[cfg(feature = "science")]
@@ -1548,6 +1550,8 @@ mod fold_vertical;
 mod folder;
 #[cfg(feature = "files")]
 mod folder_archive;
+#[cfg(feature = "files")]
+mod folder_bookmark;
 #[cfg(feature = "files")]
 mod folder_check;
 #[cfg(any(feature = "files", feature = "time"))]
@@ -4521,6 +4525,8 @@ pub use arrow_up_z_a::*;
 pub use arrows_up_from_line::*;
 #[cfg(any(feature = "text", feature = "math", feature = "development"))]
 pub use asterisk::*;
+#[cfg(any(feature = "shapes", feature = "math"))]
+pub use astroid::*;
 #[cfg(any(feature = "text", feature = "account"))]
 pub use at_sign::*;
 #[cfg(feature = "science")]
@@ -5843,6 +5849,8 @@ pub use fold_vertical::*;
 pub use folder::*;
 #[cfg(feature = "files")]
 pub use folder_archive::*;
+#[cfg(feature = "files")]
+pub use folder_bookmark::*;
 #[cfg(feature = "files")]
 pub use folder_check::*;
 #[cfg(any(feature = "files", feature = "time"))]
