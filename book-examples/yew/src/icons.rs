@@ -1642,6 +1642,7 @@ pub fn IconsR() -> Html {
         (html! { <Repeat /> }, "Repeat"),
         (html! { <Repeat1 /> }, "Repeat 1"),
         (html! { <Repeat2 /> }, "Repeat 2"),
+        (html! { <RepeatOff /> }, "Repeat Off"),
         (html! { <Replace /> }, "Replace"),
         (html! { <ReplaceAll /> }, "Replace All"),
         (html! { <Reply /> }, "Reply"),
