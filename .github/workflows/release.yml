@@ -18,7 +18,14 @@ permissions:
 jobs:
     release:
         name: Release
-        uses: RustForWeb/.github/.github/workflows/release.yml@373c25f8fd29e10c40f1343f13312f8be3514af0
+        uses: RustForWeb/.github/.github/workflows/release.yml@dc2442c27ef9f920a1a889ec94e615b419b491b2 # v1.0.1
         with:
             bump: ${{ inputs.bump }}
+            bump-rust: true
+            bump-typescript: false
+            extract-version: rust
+
             target: wasm32-unknown-unknown
+        secrets:
+            app-client-id: ${{ secrets.APP_ID }}
+            app-private-key: ${{ secrets.APP_PRIVATE_KEY }}

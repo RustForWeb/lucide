@@ -1,10 +1,9 @@
-#![feature(exit_status_error)]
-
 mod framework;
 mod frameworks;
 pub mod generate;
 mod metadata;
 pub mod repository;
+mod status;
 
 pub const GIT_URL: &str = "https://github.com/RustForWeb/lucide.git";
 pub const GITHUB_OWNER: &str = "RustForWeb";
