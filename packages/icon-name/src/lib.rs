@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1703usize] = [
+pub static ICON_NAMES: [&str; 1710usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -245,6 +245,7 @@ pub static ICON_NAMES: [&str; 1703usize] = [
     "briefcase-conveyor-belt",
     "briefcase-medical",
     "bring-to-front",
+    "broccoli",
     "brush",
     "brush-cleaning",
     "bubbles",
@@ -1471,6 +1472,12 @@ pub static ICON_NAMES: [&str; 1703usize] = [
     "stethoscope",
     "sticker",
     "sticky-note",
+    "sticky-note-check",
+    "sticky-note-minus",
+    "sticky-note-off",
+    "sticky-note-plus",
+    "sticky-note-x",
+    "sticky-notes",
     "stone",
     "store",
     "stretch-horizontal",

@@ -1525,6 +1525,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                Broccoli {}
+            },
+            "Broccoli",
+        ),
+        (
+            rsx! {
                 Brush {}
             },
             "Brush",
@@ -9236,6 +9242,42 @@ pub fn IconsS3() -> Element {
                 StickyNote {}
             },
             "Sticky Note",
+        ),
+        (
+            rsx! {
+                StickyNoteCheck {}
+            },
+            "Sticky Note Check",
+        ),
+        (
+            rsx! {
+                StickyNoteMinus {}
+            },
+            "Sticky Note Minus",
+        ),
+        (
+            rsx! {
+                StickyNoteOff {}
+            },
+            "Sticky Note Off",
+        ),
+        (
+            rsx! {
+                StickyNotePlus {}
+            },
+            "Sticky Note Plus",
+        ),
+        (
+            rsx! {
+                StickyNoteX {}
+            },
+            "Sticky Note X",
+        ),
+        (
+            rsx! {
+                StickyNotes {}
+            },
+            "Sticky Notes",
         ),
         (
             rsx! {

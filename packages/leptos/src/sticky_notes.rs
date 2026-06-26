@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Volleyball(
+pub fn StickyNotes(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,12 +29,10 @@ pub fn Volleyball(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 7a16 16 20 0 1 10.98 4.362" />
-            <path d="M12 12a13 13 0 0 1-8.66 5" />
-            <path d="M16.83 13.634a16 16 0 0 1-9.267 7.328" />
-            <path d="M20.66 17A13 13 0 0 0 12 12a13 13 0 0 1 0-10" />
-            <path d="M8.17 15.366a16 16 0 0 1-1.713-11.69" />
-            <circle cx="12" cy="12" r="10" />
+            <path d="M10 8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 16 14v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" />
+            <path d="M10 8v5a1 1 0 0 0 1 1h5" />
+            <path d="M8 4a2 2 0 0 1 2-2h6a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 22 8v6a2 2 0 0 1-2 2" />
+            <path d="M16 2v5a1 1 0 0 0 1 1h5" />
         </svg>
     }
 }

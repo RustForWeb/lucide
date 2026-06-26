@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct ChartNoAxesCombinedProps {
+pub struct BroccoliProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct ChartNoAxesCombinedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn ChartNoAxesCombined(props: &ChartNoAxesCombinedProps) -> Html {
+pub fn Broccoli(props: &BroccoliProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,14 @@ pub fn ChartNoAxesCombined(props: &ChartNoAxesCombinedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 16v5" />
-            <path d="M16 14.639V21" />
-            <path d="M20 10.656V21" />
-            <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
-            <path d="M4 18.463V21" />
-            <path d="M8 14.656V21" />
+            <path d="M10 13a3 3 0 0 1-2.121-5.121" />
+            <path
+                d="M15.606 14.204c-3.5 1.5-5.899 4.503-8.899 7.503A1 1 0 0 1 6 22c-2 0-4-2-4-4a1 1 0 0 1 .293-.707c1.911-1.911 3.823-3.578 5.347-5.441"
+            />
+            <path d="M16.573 14.737A4 4 0 0 1 14 11" />
+            <path
+                d="M7.14 10.907a4 4 0 1 1 2.756-7.43A4 4 0 0 1 16.7 4.48a2 2 0 0 1 2.82 2.82 4 4 0 0 1 1.002 6.805A4 4 0 1 1 13 16"
+            />
         </svg>
     }
 }

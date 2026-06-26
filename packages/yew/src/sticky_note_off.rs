@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct ChartNoAxesCombinedProps {
+pub struct StickyNoteOffProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct ChartNoAxesCombinedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn ChartNoAxesCombined(props: &ChartNoAxesCombinedProps) -> Html {
+pub fn StickyNoteOff(props: &StickyNoteOffProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,10 @@ pub fn ChartNoAxesCombined(props: &ChartNoAxesCombinedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 16v5" />
-            <path d="M16 14.639V21" />
-            <path d="M20 10.656V21" />
-            <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
-            <path d="M4 18.463V21" />
-            <path d="M8 14.656V21" />
+            <path d="M15 3v5a1 1 0 0 0 1 1h5" />
+            <path d="m2 2 20 20" />
+            <path d="M3.586 3.586A2 2 0 0 0 3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 1.414-.586" />
+            <path d="M8.656 3H15a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 21 9v6.344" />
         </svg>
     }
 }

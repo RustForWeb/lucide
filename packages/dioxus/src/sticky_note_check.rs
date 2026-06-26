@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct TextCursorProps {
+pub struct StickyNoteCheckProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct TextCursorProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn TextCursor(props: TextCursorProps) -> Element {
+pub fn StickyNoteCheck(props: StickyNoteCheckProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,9 @@ pub fn TextCursor(props: TextCursorProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1" }
-            path { "d": "M7 22h1a4 4 0 0 0 4-4" }
-            path { "d": "M7 2h1a4 4 0 0 1 4 4" }
+            path { "d": "m15 19 2 2 4-4" }
+            path { "d": "M15 3v5a1 1 0 0 0 1 1h5" }
+            path { "d": "M21 13V9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6.5" }
         }
     }
 }
