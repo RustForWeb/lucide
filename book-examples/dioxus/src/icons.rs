@@ -1132,6 +1132,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                Blender {}
+            },
+            "Blender",
+        ),
+        (
+            rsx! {
                 Blinds {}
             },
             "Blinds",
@@ -1298,12 +1304,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Open Text",
         ),
-        (
-            rsx! {
-                BookPlus {}
-            },
-            "Book Plus",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1319,6 +1319,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookPlus {}
+            },
+            "Book Plus",
+        ),
         (
             rsx! {
                 BookSearch {}
