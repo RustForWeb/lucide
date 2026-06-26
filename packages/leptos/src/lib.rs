@@ -548,6 +548,8 @@ mod briefcase_conveyor_belt;
 mod briefcase_medical;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod bring_to_front;
+#[cfg(feature = "food-beverage")]
+mod broccoli;
 #[cfg(any(feature = "text", feature = "design", feature = "tools"))]
 mod brush;
 #[cfg(any(feature = "home", feature = "tools", feature = "design"))]
@@ -3713,6 +3715,18 @@ mod stethoscope;
 mod sticker;
 #[cfg(any(feature = "text", feature = "social"))]
 mod sticky_note;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_note_check;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_note_minus;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_note_off;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_note_plus;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_note_x;
+#[cfg(any(feature = "text", feature = "social"))]
+mod sticky_notes;
 #[cfg(feature = "nature")]
 mod stone;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "shopping"))]
@@ -4851,6 +4865,8 @@ pub use briefcase_conveyor_belt::*;
 pub use briefcase_medical::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use bring_to_front::*;
+#[cfg(feature = "food-beverage")]
+pub use broccoli::*;
 #[cfg(any(feature = "text", feature = "design", feature = "tools"))]
 pub use brush::*;
 #[cfg(any(feature = "home", feature = "tools", feature = "design"))]
@@ -8016,6 +8032,18 @@ pub use stethoscope::*;
 pub use sticker::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use sticky_note::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_note_check::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_note_minus::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_note_off::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_note_plus::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_note_x::*;
+#[cfg(any(feature = "text", feature = "social"))]
+pub use sticky_notes::*;
 #[cfg(feature = "nature")]
 pub use stone::*;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "shopping"))]
