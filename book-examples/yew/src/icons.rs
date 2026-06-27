@@ -40,6 +40,7 @@ pub fn IconsA() -> Html {
         (html! { <ALargeSmall /> }, "A Large Small"),
         (html! { <Accessibility /> }, "Accessibility"),
         (html! { <Activity /> }, "Activity"),
+        (html! { <Ad /> }, "Ad"),
         (html! { <AirVent /> }, "Air Vent"),
         (html! { <Airplay /> }, "Airplay"),
         (html! { <AlarmClock /> }, "Alarm Clock"),
@@ -762,6 +763,7 @@ pub fn IconsE() -> Html {
         (html! { <ExternalLink /> }, "External Link"),
         (html! { <Eye /> }, "Eye"),
         (html! { <EyeClosed /> }, "Eye Closed"),
+        (html! { <EyeDashed /> }, "Eye Dashed"),
         (html! { <EyeOff /> }, "Eye Off"),
     ];
     icons
@@ -1219,6 +1221,8 @@ pub fn IconsL() -> Html {
         (html! { <ListOrdered /> }, "List Ordered"),
         (html! { <ListPlus /> }, "List Plus"),
         (html! { <ListRestart /> }, "List Restart"),
+        (html! { <ListSortAscending /> }, "List Sort Ascending"),
+        (html! { <ListSortDescending /> }, "List Sort Descending"),
         (html! { <ListStart /> }, "List Start"),
         (html! { <ListTodo /> }, "List Todo"),
         (html! { <ListTree /> }, "List Tree"),
@@ -1557,6 +1561,7 @@ pub fn IconsP() -> Html {
         (html! { <Plus /> }, "Plus"),
         (html! { <PocketKnife /> }, "Pocket Knife"),
         (html! { <Podcast /> }, "Podcast"),
+        (html! { <Podium /> }, "Podium"),
         (html! { <Pointer /> }, "Pointer"),
         (html! { <PointerOff /> }, "Pointer Off"),
         (html! { <Popcorn /> }, "Popcorn"),
@@ -1700,6 +1705,8 @@ pub fn IconsS() -> Html {
         (html! { <Save /> }, "Save"),
         (html! { <SaveAll /> }, "Save All"),
         (html! { <SaveOff /> }, "Save Off"),
+        (html! { <SavePen /> }, "Save Pen"),
+        (html! { <SavePlus /> }, "Save Plus"),
         (html! { <Scale /> }, "Scale"),
         (html! { <Scale3D /> }, "Scale 3 D"),
         (html! { <Scaling /> }, "Scaling"),
@@ -1936,8 +1943,12 @@ pub fn IconsS() -> Html {
         (html! { <Squirrel /> }, "Squirrel"),
         (html! { <Stamp /> }, "Stamp"),
         (html! { <Star /> }, "Star"),
+        (html! { <StarCheck /> }, "Star Check"),
         (html! { <StarHalf /> }, "Star Half"),
+        (html! { <StarMinus /> }, "Star Minus"),
         (html! { <StarOff /> }, "Star Off"),
+        (html! { <StarPlus /> }, "Star Plus"),
+        (html! { <StarX /> }, "Star X"),
         (html! { <StepBack /> }, "Step Back"),
         (html! { <StepForward /> }, "Step Forward"),
         (html! { <Stethoscope /> }, "Stethoscope"),
@@ -2233,6 +2244,7 @@ pub fn IconsW() -> Html {
         (html! { <Workflow /> }, "Workflow"),
         (html! { <Worm /> }, "Worm"),
         (html! { <Wrench /> }, "Wrench"),
+        (html! { <WrenchOff /> }, "Wrench Off"),
     ];
     icons
         .into_iter()

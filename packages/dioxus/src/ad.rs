@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct WalletCardsProps {
+pub struct AdProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct WalletCardsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn WalletCards(props: WalletCardsProps) -> Element {
+pub fn Ad(props: AdProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,13 +34,14 @@ pub fn WalletCards(props: WalletCardsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" }
-            path { "d": "M3 7h18" }
+            path { "d": "M10 13H6" }
+            path { "d": "M10 15v-4a2 2 0 0 0-4 0v4" }
+            path { "d": "M14 14.5a.5.5 0 0 0 .5.5h1a2.5 2.5 0 0 0 2.5-2.5v-1A2.5 2.5 0 0 0 15.5 9h-1a.5.5 0 0 0-.5.5z" }
             rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
+                "x": "2",
+                "y": "5",
+                "width": "20",
+                "height": "14",
                 "rx": "2",
             }
         }

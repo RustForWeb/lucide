@@ -22,6 +22,8 @@ mod accessibility;
     feature = "multimedia"
 ))]
 mod activity;
+#[cfg(any(feature = "multimedia", feature = "notifications"))]
+mod ad;
 #[cfg(feature = "home")]
 mod air_vent;
 #[cfg(any(feature = "multimedia", feature = "connectivity"))]
@@ -1368,6 +1370,13 @@ mod eye_closed;
     feature = "design",
     feature = "security"
 ))]
+mod eye_dashed;
+#[cfg(any(
+    feature = "accessibility",
+    feature = "photography",
+    feature = "design",
+    feature = "security"
+))]
 mod eye_off;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 mod factory;
@@ -2204,6 +2213,10 @@ mod list_ordered;
 mod list_plus;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod list_restart;
+#[cfg(any(feature = "text", feature = "layout"))]
+mod list_sort_ascending;
+#[cfg(any(feature = "text", feature = "layout"))]
+mod list_sort_descending;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod list_start;
 #[cfg(feature = "text")]
@@ -2855,6 +2868,8 @@ mod plus;
 mod pocket_knife;
 #[cfg(any(feature = "multimedia", feature = "social"))]
 mod podcast;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+mod podium;
 #[cfg(feature = "cursors")]
 mod pointer;
 #[cfg(feature = "cursors")]
@@ -3098,6 +3113,10 @@ mod save;
 mod save_all;
 #[cfg(any(feature = "text", feature = "files"))]
 mod save_off;
+#[cfg(any(feature = "text", feature = "files"))]
+mod save_pen;
+#[cfg(any(feature = "text", feature = "files"))]
+mod save_plus;
 #[cfg(any(feature = "navigation", feature = "science", feature = "finance"))]
 mod scale;
 #[cfg(feature = "design")]
@@ -3711,10 +3730,50 @@ mod stamp;
     feature = "gaming"
 ))]
 mod star;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+mod star_check;
 #[cfg(any(feature = "social", feature = "multimedia"))]
 mod star_half;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+mod star_minus;
 #[cfg(any(feature = "multimedia", feature = "social"))]
 mod star_off;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+mod star_plus;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+mod star_x;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 mod step_back;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
@@ -4276,6 +4335,8 @@ mod workflow;
 mod worm;
 #[cfg(any(feature = "account", feature = "development", feature = "tools"))]
 mod wrench;
+#[cfg(any(feature = "account", feature = "development", feature = "tools"))]
+mod wrench_off;
 #[cfg(any(feature = "notifications", feature = "math"))]
 mod x;
 #[cfg(any(feature = "notifications", feature = "math"))]
@@ -4353,6 +4414,8 @@ pub use accessibility::*;
     feature = "multimedia"
 ))]
 pub use activity::*;
+#[cfg(any(feature = "multimedia", feature = "notifications"))]
+pub use ad::*;
 #[cfg(feature = "home")]
 pub use air_vent::*;
 #[cfg(any(feature = "multimedia", feature = "connectivity"))]
@@ -5699,6 +5762,13 @@ pub use eye_closed::*;
     feature = "design",
     feature = "security"
 ))]
+pub use eye_dashed::*;
+#[cfg(any(
+    feature = "accessibility",
+    feature = "photography",
+    feature = "design",
+    feature = "security"
+))]
 pub use eye_off::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use factory::*;
@@ -6535,6 +6605,10 @@ pub use list_ordered::*;
 pub use list_plus::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use list_restart::*;
+#[cfg(any(feature = "text", feature = "layout"))]
+pub use list_sort_ascending::*;
+#[cfg(any(feature = "text", feature = "layout"))]
+pub use list_sort_descending::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use list_start::*;
 #[cfg(feature = "text")]
@@ -7186,6 +7260,8 @@ pub use plus::*;
 pub use pocket_knife::*;
 #[cfg(any(feature = "multimedia", feature = "social"))]
 pub use podcast::*;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+pub use podium::*;
 #[cfg(feature = "cursors")]
 pub use pointer::*;
 #[cfg(feature = "cursors")]
@@ -7429,6 +7505,10 @@ pub use save::*;
 pub use save_all::*;
 #[cfg(any(feature = "text", feature = "files"))]
 pub use save_off::*;
+#[cfg(any(feature = "text", feature = "files"))]
+pub use save_pen::*;
+#[cfg(any(feature = "text", feature = "files"))]
+pub use save_plus::*;
 #[cfg(any(feature = "navigation", feature = "science", feature = "finance"))]
 pub use scale::*;
 #[cfg(feature = "design")]
@@ -8042,10 +8122,50 @@ pub use stamp::*;
     feature = "gaming"
 ))]
 pub use star::*;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+pub use star_check::*;
 #[cfg(any(feature = "social", feature = "multimedia"))]
 pub use star_half::*;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+pub use star_minus::*;
 #[cfg(any(feature = "multimedia", feature = "social"))]
 pub use star_off::*;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+pub use star_plus::*;
+#[cfg(any(
+    feature = "account",
+    feature = "social",
+    feature = "shapes",
+    feature = "multimedia",
+    feature = "weather",
+    feature = "emoji",
+    feature = "gaming"
+))]
+pub use star_x::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 pub use step_back::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
@@ -8607,6 +8727,8 @@ pub use workflow::*;
 pub use worm::*;
 #[cfg(any(feature = "account", feature = "development", feature = "tools"))]
 pub use wrench::*;
+#[cfg(any(feature = "account", feature = "development", feature = "tools"))]
+pub use wrench_off::*;
 #[cfg(any(feature = "notifications", feature = "math"))]
 pub use x::*;
 #[cfg(any(feature = "notifications", feature = "math"))]

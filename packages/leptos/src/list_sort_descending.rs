@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn WalletCards(
+pub fn ListSortDescending(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,9 @@ pub fn WalletCards(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" />
-            <path d="M3 7h18" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M15 12H3" />
+            <path d="M3 5h18" />
+            <path d="M9 19H3" />
         </svg>
     }
 }
