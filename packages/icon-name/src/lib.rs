@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1711usize] = [
+pub static ICON_NAMES: [&str; 1713usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -751,6 +751,7 @@ pub static ICON_NAMES: [&str; 1711usize] = [
     "glass-water",
     "glasses",
     "globe",
+    "globe-check",
     "globe-lock",
     "globe-off",
     "globe-x",
@@ -1127,6 +1128,7 @@ pub static ICON_NAMES: [&str; 1711usize] = [
     "panels-right-bottom",
     "panels-top-left",
     "paperclip",
+    "parasol",
     "parentheses",
     "parking-meter",
     "party-popper",

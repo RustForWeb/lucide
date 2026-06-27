@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct MartiniProps {
+pub struct ParasolProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct MartiniProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Martini(props: &MartiniProps) -> Html {
+pub fn Parasol(props: &ParasolProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,11 @@ pub fn Martini(props: &MartiniProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 12 4.207 4.207A.707.707 0 0 1 4.707 3h14.586a.707.707 0 0 1 .5 1.207z" />
-            <path d="M12 12v10" />
-            <path d="M7 22h10" />
+            <path d="M12.5 11.134 18.196 21" />
+            <path
+                d="M20.425 5.299a10 10 0 0 0-16.941 9.78c.183.563.843.774 1.355.478L20.16 6.711c.512-.296.66-.973.264-1.413"
+            />
+            <path d="M21 21H3" />
         </svg>
     }
 }

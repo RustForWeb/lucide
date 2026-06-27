@@ -1035,6 +1035,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <GlassWater /> }.into_any(), "Glass Water"),
                 (view! { <Glasses /> }.into_any(), "Glasses"),
                 (view! { <Globe /> }.into_any(), "Globe"),
+                (view! { <GlobeCheck /> }.into_any(), "Globe Check"),
                 (view! { <GlobeLock /> }.into_any(), "Globe Lock"),
                 (view! { <GlobeOff /> }.into_any(), "Globe Off"),
                 (view! { <GlobeX /> }.into_any(), "Globe X"),
@@ -1584,6 +1585,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PanelsRightBottom /> }.into_any(), "Panels Right Bottom"),
                 (view! { <PanelsTopLeft /> }.into_any(), "Panels Top Left"),
                 (view! { <Paperclip /> }.into_any(), "Paperclip"),
+                (view! { <Parasol /> }.into_any(), "Parasol"),
                 (view! { <Parentheses /> }.into_any(), "Parentheses"),
                 (view! { <ParkingMeter /> }.into_any(), "Parking Meter"),
                 (view! { <PartyPopper /> }.into_any(), "Party Popper"),
@@ -1647,7 +1649,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
                 (view! { <Proportions /> }.into_any(), "Proportions"),
-                (view! { <Puzzle /> }.into_any(), "Puzzle"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1664,7 +1665,10 @@ pub fn IconsP1() -> impl IntoView {
 pub fn IconsP2() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <Pyramid /> }.into_any(), "Pyramid")]
+            each=move || [
+                (view! { <Puzzle /> }.into_any(), "Puzzle"),
+                (view! { <Pyramid /> }.into_any(), "Pyramid"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

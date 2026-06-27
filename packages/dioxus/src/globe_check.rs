@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct MartiniProps {
+pub struct GlobeCheckProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct MartiniProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Martini(props: MartiniProps) -> Element {
+pub fn GlobeCheck(props: GlobeCheckProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,8 @@ pub fn Martini(props: MartiniProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 12 4.207 4.207A.707.707 0 0 1 4.707 3h14.586a.707.707 0 0 1 .5 1.207z" }
-            path { "d": "M12 12v10" }
-            path { "d": "M7 22h10" }
+            path { "d": "m15 6 2 2 4-4" }
+            path { "d": "M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10" }
         }
     }
 }
