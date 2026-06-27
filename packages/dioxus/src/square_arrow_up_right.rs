@@ -34,15 +34,15 @@ pub fn SquareArrowUpRight(props: SquareArrowUpRightProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
+            path { "d": "M15 15V9H9" }
+            path { "d": "m9 15 6-6" }
             rect {
-                "width": "18",
-                "height": "18",
                 "x": "3",
                 "y": "3",
+                "width": "18",
+                "height": "18",
                 "rx": "2",
             }
-            path { "d": "M8 8h8v8" }
-            path { "d": "m8 16 8-8" }
         }
     }
 }

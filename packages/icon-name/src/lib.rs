@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1727usize] = [
+pub static ICON_NAMES: [&str; 1736usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -140,6 +140,7 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "banknote",
     "banknote-arrow-down",
     "banknote-arrow-up",
+    "banknote-check",
     "banknote-x",
     "barcode",
     "barrel",
@@ -437,6 +438,8 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "clock-9",
     "clock-alert",
     "clock-arrow-down",
+    "clock-arrow-left",
+    "clock-arrow-right",
     "clock-arrow-up",
     "clock-check",
     "clock-fading",
@@ -1147,6 +1150,7 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "pencil-line",
     "pencil-off",
     "pencil-ruler",
+    "pencil-sparkles",
     "pentagon",
     "percent",
     "person-standing",
@@ -1279,6 +1283,7 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "saudi-riyal",
     "save",
     "save-all",
+    "save-check",
     "save-off",
     "save-pen",
     "save-plus",
@@ -1499,6 +1504,7 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "stretch-vertical",
     "strikethrough",
     "subscript",
+    "summary",
     "sun",
     "sun-dim",
     "sun-medium",
@@ -1525,6 +1531,8 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "tablet-smartphone",
     "tablets",
     "tag",
+    "tag-plus",
+    "tag-x",
     "tags",
     "tally-1",
     "tally-2",
@@ -1636,6 +1644,7 @@ pub static ICON_NAMES: [&str; 1727usize] = [
     "user-pen",
     "user-plus",
     "user-round",
+    "user-round-arrow-left",
     "user-round-check",
     "user-round-cog",
     "user-round-key",

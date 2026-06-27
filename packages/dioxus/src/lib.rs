@@ -304,6 +304,8 @@ mod banknote_arrow_down;
 #[cfg(feature = "finance")]
 mod banknote_arrow_up;
 #[cfg(feature = "finance")]
+mod banknote_check;
+#[cfg(feature = "finance")]
 mod banknote_x;
 #[cfg(feature = "shopping")]
 mod barcode;
@@ -983,6 +985,10 @@ mod clock_9;
 mod clock_alert;
 #[cfg(feature = "time")]
 mod clock_arrow_down;
+#[cfg(feature = "time")]
+mod clock_arrow_left;
+#[cfg(any(feature = "time", feature = "people", feature = "arrows"))]
+mod clock_arrow_right;
 #[cfg(feature = "time")]
 mod clock_arrow_up;
 #[cfg(feature = "time")]
@@ -2748,6 +2754,14 @@ mod pencil_off;
     feature = "text"
 ))]
 mod pencil_ruler;
+#[cfg(any(
+    feature = "design",
+    feature = "cursors",
+    feature = "tools",
+    feature = "text",
+    feature = "photography"
+))]
+mod pencil_sparkles;
 #[cfg(feature = "shapes")]
 mod pentagon;
 #[cfg(any(
@@ -3109,6 +3123,8 @@ mod saudi_riyal;
 mod save;
 #[cfg(any(feature = "text", feature = "files"))]
 mod save_all;
+#[cfg(any(feature = "text", feature = "files", feature = "development"))]
+mod save_check;
 #[cfg(any(feature = "text", feature = "files"))]
 mod save_off;
 #[cfg(any(feature = "text", feature = "files"))]
@@ -3806,6 +3822,8 @@ mod stretch_vertical;
 mod strikethrough;
 #[cfg(feature = "text")]
 mod subscript;
+#[cfg(feature = "text")]
+mod summary;
 #[cfg(any(
     feature = "accessibility",
     feature = "weather",
@@ -3868,6 +3886,10 @@ mod tablet_smartphone;
 mod tablets;
 #[cfg(feature = "account")]
 mod tag;
+#[cfg(feature = "account")]
+mod tag_plus;
+#[cfg(feature = "account")]
+mod tag_x;
 #[cfg(feature = "account")]
 mod tags;
 #[cfg(any(feature = "math", feature = "gaming"))]
@@ -4104,6 +4126,8 @@ mod user_pen;
 mod user_plus;
 #[cfg(feature = "account")]
 mod user_round;
+#[cfg(any(feature = "account", feature = "people", feature = "arrows"))]
+mod user_round_arrow_left;
 #[cfg(feature = "account")]
 mod user_round_check;
 #[cfg(feature = "account")]
@@ -4695,6 +4719,8 @@ pub use banknote::*;
 pub use banknote_arrow_down::*;
 #[cfg(feature = "finance")]
 pub use banknote_arrow_up::*;
+#[cfg(feature = "finance")]
+pub use banknote_check::*;
 #[cfg(feature = "finance")]
 pub use banknote_x::*;
 #[cfg(feature = "shopping")]
@@ -5375,6 +5401,10 @@ pub use clock_12::*;
 pub use clock_alert::*;
 #[cfg(feature = "time")]
 pub use clock_arrow_down::*;
+#[cfg(feature = "time")]
+pub use clock_arrow_left::*;
+#[cfg(any(feature = "time", feature = "people", feature = "arrows"))]
+pub use clock_arrow_right::*;
 #[cfg(feature = "time")]
 pub use clock_arrow_up::*;
 #[cfg(feature = "time")]
@@ -7140,6 +7170,14 @@ pub use pencil_off::*;
     feature = "text"
 ))]
 pub use pencil_ruler::*;
+#[cfg(any(
+    feature = "design",
+    feature = "cursors",
+    feature = "tools",
+    feature = "text",
+    feature = "photography"
+))]
+pub use pencil_sparkles::*;
 #[cfg(feature = "shapes")]
 pub use pentagon::*;
 #[cfg(any(
@@ -7501,6 +7539,8 @@ pub use saudi_riyal::*;
 pub use save::*;
 #[cfg(any(feature = "text", feature = "files"))]
 pub use save_all::*;
+#[cfg(any(feature = "text", feature = "files", feature = "development"))]
+pub use save_check::*;
 #[cfg(any(feature = "text", feature = "files"))]
 pub use save_off::*;
 #[cfg(any(feature = "text", feature = "files"))]
@@ -8198,6 +8238,8 @@ pub use stretch_vertical::*;
 pub use strikethrough::*;
 #[cfg(feature = "text")]
 pub use subscript::*;
+#[cfg(feature = "text")]
+pub use summary::*;
 #[cfg(any(
     feature = "accessibility",
     feature = "weather",
@@ -8260,6 +8302,10 @@ pub use tablet_smartphone::*;
 pub use tablets::*;
 #[cfg(feature = "account")]
 pub use tag::*;
+#[cfg(feature = "account")]
+pub use tag_plus::*;
+#[cfg(feature = "account")]
+pub use tag_x::*;
 #[cfg(feature = "account")]
 pub use tags::*;
 #[cfg(any(feature = "math", feature = "gaming"))]
@@ -8496,6 +8542,8 @@ pub use user_pen::*;
 pub use user_plus::*;
 #[cfg(feature = "account")]
 pub use user_round::*;
+#[cfg(any(feature = "account", feature = "people", feature = "arrows"))]
+pub use user_round_arrow_left::*;
 #[cfg(feature = "account")]
 pub use user_round_check::*;
 #[cfg(feature = "account")]

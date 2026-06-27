@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct SquareArrowUpLeftProps {
+pub struct BanknoteCheckProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct SquareArrowUpLeftProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn SquareArrowUpLeft(props: SquareArrowUpLeftProps) -> Element {
+pub fn BanknoteCheck(props: BanknoteCheckProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,11 @@ pub fn SquareArrowUpLeft(props: SquareArrowUpLeftProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M15 15 9 9" }
-            path { "d": "M9 15V9h6" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M11.748 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4.875" }
+            path { "d": "m16 19 2 2 4-4" }
+            path { "d": "M18 12h.01" }
+            path { "d": "M6 12h.01" }
+            circle { "cx": "12", "cy": "12", "r": "2" }
         }
     }
 }
