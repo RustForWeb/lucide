@@ -312,6 +312,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <Bolt /> }.into_any(), "Bolt"),
                 (view! { <Bomb /> }.into_any(), "Bomb"),
                 (view! { <Bone /> }.into_any(), "Bone"),
+                (view! { <BoneFracture /> }.into_any(), "Bone Fracture"),
                 (view! { <Book /> }.into_any(), "Book"),
                 (view! { <BookA /> }.into_any(), "Book A"),
                 (view! { <BookAlert /> }.into_any(), "Book Alert"),
@@ -328,7 +329,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookMarked /> }.into_any(), "Book Marked"),
                 (view! { <BookMinus /> }.into_any(), "Book Minus"),
                 (view! { <BookOpen /> }.into_any(), "Book Open"),
-                (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -346,6 +346,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
                 (view! { <BookOpenText /> }.into_any(), "Book Open Text"),
                 (view! { <BookPlus /> }.into_any(), "Book Plus"),
                 (view! { <BookSearch /> }.into_any(), "Book Search"),

@@ -294,6 +294,7 @@ pub fn IconsB() -> Html {
         (html! { <Bolt /> }, "Bolt"),
         (html! { <Bomb /> }, "Bomb"),
         (html! { <Bone /> }, "Bone"),
+        (html! { <BoneFracture /> }, "Bone Fracture"),
         (html! { <Book /> }, "Book"),
         (html! { <BookA /> }, "Book A"),
         (html! { <BookAlert /> }, "Book Alert"),
