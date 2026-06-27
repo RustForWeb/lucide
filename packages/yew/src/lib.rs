@@ -1746,6 +1746,8 @@ mod glass_water;
 mod glasses;
 #[cfg(feature = "navigation")]
 mod globe;
+#[cfg(feature = "navigation")]
+mod globe_check;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 mod globe_lock;
 #[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
@@ -2690,6 +2692,8 @@ mod panels_top_left;
     feature = "mail"
 ))]
 mod paperclip;
+#[cfg(any(feature = "travel", feature = "weather"))]
+mod parasol;
 #[cfg(any(feature = "development", feature = "files", feature = "math"))]
 mod parentheses;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -6065,6 +6069,8 @@ pub use glass_water::*;
 pub use glasses::*;
 #[cfg(feature = "navigation")]
 pub use globe::*;
+#[cfg(feature = "navigation")]
+pub use globe_check::*;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 pub use globe_lock::*;
 #[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
@@ -7009,6 +7015,8 @@ pub use panels_top_left::*;
     feature = "mail"
 ))]
 pub use paperclip::*;
+#[cfg(any(feature = "travel", feature = "weather"))]
+pub use parasol::*;
 #[cfg(any(feature = "development", feature = "files", feature = "math"))]
 pub use parentheses::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]

@@ -4681,6 +4681,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GlobeCheck {}
+            },
+            "Globe Check",
+        ),
+        (
+            rsx! {
                 GlobeLock {}
             },
             "Globe Lock",
@@ -7087,6 +7093,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                Parasol {}
+            },
+            "Parasol",
+        ),
+        (
+            rsx! {
                 Parentheses {}
             },
             "Parentheses",
@@ -7463,12 +7475,6 @@ pub fn IconsP1() -> Element {
             },
             "Proportions",
         ),
-        (
-            rsx! {
-                Puzzle {}
-            },
-            "Puzzle",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7483,12 +7489,20 @@ pub fn IconsP1() -> Element {
 }
 #[component]
 pub fn IconsP2() -> Element {
-    let icons = [(
-        rsx! {
-            Pyramid {}
-        },
-        "Pyramid",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Puzzle {}
+            },
+            "Puzzle",
+        ),
+        (
+            rsx! {
+                Pyramid {}
+            },
+            "Pyramid",
+        ),
+    ];
     rsx! {
         for (icon, name) in icons {
             div {
