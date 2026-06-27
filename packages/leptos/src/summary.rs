@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn SquareArrowUpLeft(
+pub fn Summary(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,11 @@ pub fn SquareArrowUpLeft(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 15 9 9" />
-            <path d="M9 15V9h6" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M15 4H7" />
+            <path d="m18 16 3 3-3 3" />
+            <path d="M3 4v13a2 2 0 0 0 2 2h16" />
+            <path d="M7 14h7" />
+            <path d="M7 9h12" />
         </svg>
     }
 }

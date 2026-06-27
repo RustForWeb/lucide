@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct SquareArrowUpLeftProps {
+pub struct TagXProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct SquareArrowUpLeftProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn SquareArrowUpLeft(props: SquareArrowUpLeftProps) -> Element {
+pub fn TagX(props: TagXProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,14 +34,14 @@ pub fn SquareArrowUpLeft(props: SquareArrowUpLeftProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M15 15 9 9" }
-            path { "d": "M9 15V9h6" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
+            path { "d": "m16.5 6.5-3.914-3.914A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.43 2.43 0 0 0 3.42 0l1.79-1.79" }
+            path { "d": "m16.5 10.5 5 5" }
+            path { "d": "m21.5 10.5-5 5" }
+            circle {
+                "cx": "7.5",
+                "cy": "7.5",
+                "r": ".5",
+                "fill": "currentColor",
             }
         }
     }

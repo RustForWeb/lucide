@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SquareArrowDownLeftProps {
+pub struct SummaryProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SquareArrowDownLeftProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn SquareArrowDownLeft(props: &SquareArrowDownLeftProps) -> Html {
+pub fn Summary(props: &SummaryProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,11 @@ pub fn SquareArrowDownLeft(props: &SquareArrowDownLeftProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 15H9l6-6" />
-            <path d="M9 15V9" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M15 4H7" />
+            <path d="m18 16 3 3-3 3" />
+            <path d="M3 4v13a2 2 0 0 0 2 2h16" />
+            <path d="M7 14h7" />
+            <path d="M7 9h12" />
         </svg>
     }
 }

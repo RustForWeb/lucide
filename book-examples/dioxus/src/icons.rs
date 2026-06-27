@@ -33,6 +33,7 @@ pub fn Icons() -> Element {
             IconsS2 {}
             IconsS3 {}
             IconsT1 {}
+            IconsT2 {}
             IconsU1 {}
             IconsV1 {}
             IconsW1 {}
@@ -880,6 +881,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BanknoteCheck {}
+            },
+            "Banknote Check",
+        ),
+        (
+            rsx! {
                 BanknoteX {}
             },
             "Banknote X",
@@ -1304,12 +1311,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Open Check",
         ),
-        (
-            rsx! {
-                BookOpenText {}
-            },
-            "Book Open Text",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1325,6 +1326,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookOpenText {}
+            },
+            "Book Open Text",
+        ),
         (
             rsx! {
                 BookPlus {}
@@ -2707,6 +2714,18 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClockArrowLeft {}
+            },
+            "Clock Arrow Left",
+        ),
+        (
+            rsx! {
+                ClockArrowRight {}
+            },
+            "Clock Arrow Right",
+        ),
+        (
+            rsx! {
                 ClockArrowUp {}
             },
             "Clock Arrow Up",
@@ -2819,18 +2838,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Rain",
         ),
-        (
-            rsx! {
-                CloudRainWind {}
-            },
-            "Cloud Rain Wind",
-        ),
-        (
-            rsx! {
-                CloudSnow {}
-            },
-            "Cloud Snow",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2846,6 +2853,18 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudRainWind {}
+            },
+            "Cloud Rain Wind",
+        ),
+        (
+            rsx! {
+                CloudSnow {}
+            },
+            "Cloud Snow",
+        ),
         (
             rsx! {
                 CloudSun {}
@@ -7207,6 +7226,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PencilSparkles {}
+            },
+            "Pencil Sparkles",
+        ),
+        (
+            rsx! {
                 Pentagon {}
             },
             "Pentagon",
@@ -7493,12 +7518,6 @@ pub fn IconsP1() -> Element {
             },
             "Printer Check",
         ),
-        (
-            rsx! {
-                PrinterX {}
-            },
-            "Printer X",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7514,6 +7533,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                PrinterX {}
+            },
+            "Printer X",
+        ),
         (
             rsx! {
                 Projector {}
@@ -8056,6 +8081,12 @@ pub fn IconsS1() -> Element {
                 SaveAll {}
             },
             "Save All",
+        ),
+        (
+            rsx! {
+                SaveCheck {}
+            },
+            "Save Check",
         ),
         (
             rsx! {
@@ -8603,12 +8634,6 @@ pub fn IconsS1() -> Element {
             },
             "Sliders Vertical",
         ),
-        (
-            rsx! {
-                Smartphone {}
-            },
-            "Smartphone",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8624,6 +8649,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Smartphone {}
+            },
+            "Smartphone",
+        ),
         (
             rsx! {
                 SmartphoneCharging {}
@@ -9218,12 +9249,6 @@ pub fn IconsS2() -> Element {
             },
             "Squares Subtract",
         ),
-        (
-            rsx! {
-                SquaresUnite {}
-            },
-            "Squares Unite",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9239,6 +9264,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquaresUnite {}
+            },
+            "Squares Unite",
+        ),
         (
             rsx! {
                 Squircle {}
@@ -9406,6 +9437,12 @@ pub fn IconsS3() -> Element {
                 Subscript {}
             },
             "Subscript",
+        ),
+        (
+            rsx! {
+                Summary {}
+            },
+            "Summary",
         ),
         (
             rsx! {
@@ -9577,6 +9614,18 @@ pub fn IconsT1() -> Element {
                 Tag {}
             },
             "Tag",
+        ),
+        (
+            rsx! {
+                TagPlus {}
+            },
+            "Tag Plus",
+        ),
+        (
+            rsx! {
+                TagX {}
+            },
+            "Tag X",
         ),
         (
             rsx! {
@@ -10094,13 +10143,26 @@ pub fn IconsT1() -> Element {
             },
             "Type",
         ),
-        (
-            rsx! {
-                TypeOutline {}
-            },
-            "Type Outline",
-        ),
     ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsT2() -> Element {
+    let icons = [(
+        rsx! {
+            TypeOutline {}
+        },
+        "Type Outline",
+    )];
     rsx! {
         for (icon, name) in icons {
             div {
@@ -10258,6 +10320,12 @@ pub fn IconsU1() -> Element {
                 UserRound {}
             },
             "User Round",
+        ),
+        (
+            rsx! {
+                UserRoundArrowLeft {}
+            },
+            "User Round Arrow Left",
         ),
         (
             rsx! {
