@@ -430,6 +430,8 @@ mod bolt;
 mod bomb;
 #[cfg(any(feature = "animals", feature = "medical", feature = "gaming"))]
 mod bone;
+#[cfg(any(feature = "medical", feature = "animals"))]
+mod bone_fracture;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 mod book;
 #[cfg(any(feature = "text", feature = "gaming"))]
@@ -4846,6 +4848,8 @@ pub use bolt::*;
 pub use bomb::*;
 #[cfg(any(feature = "animals", feature = "medical", feature = "gaming"))]
 pub use bone::*;
+#[cfg(any(feature = "medical", feature = "animals"))]
+pub use bone_fracture::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 pub use book::*;
 #[cfg(any(feature = "text", feature = "gaming"))]
