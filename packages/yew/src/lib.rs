@@ -2834,6 +2834,8 @@ mod plane_landing;
 mod plane_takeoff;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 mod play;
+#[cfg(feature = "multimedia")]
+mod play_off;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod plug;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -4224,6 +4226,12 @@ mod waypoints;
     feature = "communication"
 ))]
 mod webcam;
+#[cfg(any(
+    feature = "connectivity",
+    feature = "devices",
+    feature = "communication"
+))]
+mod webcam_off;
 #[cfg(any(feature = "development", feature = "social", feature = "account"))]
 mod webhook;
 #[cfg(any(feature = "development", feature = "social", feature = "account"))]
@@ -7157,6 +7165,8 @@ pub use plane_landing::*;
 pub use plane_takeoff::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 pub use play::*;
+#[cfg(feature = "multimedia")]
+pub use play_off::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use plug::*;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -8547,6 +8557,12 @@ pub use waypoints::*;
     feature = "communication"
 ))]
 pub use webcam::*;
+#[cfg(any(
+    feature = "connectivity",
+    feature = "devices",
+    feature = "communication"
+))]
+pub use webcam_off::*;
 #[cfg(any(feature = "development", feature = "social", feature = "account"))]
 pub use webhook::*;
 #[cfg(any(feature = "development", feature = "social", feature = "account"))]

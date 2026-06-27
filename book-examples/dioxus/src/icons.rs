@@ -7363,6 +7363,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PlayOff {}
+            },
+            "Play Off",
+        ),
+        (
+            rsx! {
                 Plug {}
             },
             "Plug",
@@ -7469,12 +7475,6 @@ pub fn IconsP1() -> Element {
             },
             "Projector",
         ),
-        (
-            rsx! {
-                Proportions {}
-            },
-            "Proportions",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7490,6 +7490,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Proportions {}
+            },
+            "Proportions",
+        ),
         (
             rsx! {
                 Puzzle {}
@@ -10540,6 +10546,12 @@ pub fn IconsW1() -> Element {
                 Webcam {}
             },
             "Webcam",
+        ),
+        (
+            rsx! {
+                WebcamOff {}
+            },
+            "Webcam Off",
         ),
         (
             rsx! {

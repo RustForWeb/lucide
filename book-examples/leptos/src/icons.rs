@@ -1630,6 +1630,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PlaneLanding /> }.into_any(), "Plane Landing"),
                 (view! { <PlaneTakeoff /> }.into_any(), "Plane Takeoff"),
                 (view! { <Play /> }.into_any(), "Play"),
+                (view! { <PlayOff /> }.into_any(), "Play Off"),
                 (view! { <Plug /> }.into_any(), "Plug"),
                 (view! { <Plug2 /> }.into_any(), "Plug 2"),
                 (view! { <PlugZap /> }.into_any(), "Plug Zap"),
@@ -1648,7 +1649,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
-                (view! { <Proportions /> }.into_any(), "Proportions"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1666,6 +1666,7 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Proportions /> }.into_any(), "Proportions"),
                 (view! { <Puzzle /> }.into_any(), "Puzzle"),
                 (view! { <Pyramid /> }.into_any(), "Pyramid"),
             ]
@@ -2314,6 +2315,7 @@ pub fn IconsW1() -> impl IntoView {
                 (view! { <WavesVertical /> }.into_any(), "Waves Vertical"),
                 (view! { <Waypoints /> }.into_any(), "Waypoints"),
                 (view! { <Webcam /> }.into_any(), "Webcam"),
+                (view! { <WebcamOff /> }.into_any(), "Webcam Off"),
                 (view! { <Webhook /> }.into_any(), "Webhook"),
                 (view! { <WebhookOff /> }.into_any(), "Webhook Off"),
                 (view! { <Weight /> }.into_any(), "Weight"),
