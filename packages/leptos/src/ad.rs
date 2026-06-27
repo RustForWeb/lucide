@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn WalletCards(
+pub fn Ad(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,10 @@ pub fn WalletCards(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" />
-            <path d="M3 7h18" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M10 13H6" />
+            <path d="M10 15v-4a2 2 0 0 0-4 0v4" />
+            <path d="M14 14.5a.5.5 0 0 0 .5.5h1a2.5 2.5 0 0 0 2.5-2.5v-1A2.5 2.5 0 0 0 15.5 9h-1a.5.5 0 0 0-.5.5z" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
         </svg>
     }
 }

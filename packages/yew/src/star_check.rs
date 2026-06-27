@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct WalletCardsProps {
+pub struct StarCheckProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct WalletCardsProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn WalletCards(props: &WalletCardsProps) -> Html {
+pub fn StarCheck(props: &StarCheckProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,10 @@ pub fn WalletCards(props: &WalletCardsProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" />
-            <path d="M3 7h18" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path
+                d="m19.06 12.501 2.78-2.707a.53.53 0 0 0-.294-.905l-5.166-.755a2.1 2.1 0 0 1-1.595-1.16l-2.31-4.68a.53.53 0 0 0-.95.001L9.216 6.974a2.1 2.1 0 0 1-1.597 1.16l-5.165.755a.53.53 0 0 0-.294.906l3.736 3.637a2.1 2.1 0 0 1 .611 1.879l-.88 5.139a.53.53 0 0 0 .769.56l4.617-2.428.027-.014"
+            />
+            <path d="m15 18 2 2 4-4" />
         </svg>
     }
 }

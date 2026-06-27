@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct WalletCardsProps {
+pub struct ListSortDescendingProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct WalletCardsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn WalletCards(props: WalletCardsProps) -> Element {
+pub fn ListSortDescending(props: ListSortDescendingProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,9 @@ pub fn WalletCards(props: WalletCardsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" }
-            path { "d": "M3 7h18" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M15 12H3" }
+            path { "d": "M3 5h18" }
+            path { "d": "M9 19H3" }
         }
     }
 }

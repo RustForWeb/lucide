@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct WalletCardsProps {
+pub struct EyeDashedProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct WalletCardsProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn WalletCards(props: WalletCardsProps) -> Element {
+pub fn EyeDashed(props: EyeDashedProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,15 @@ pub fn WalletCards(props: WalletCardsProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" }
-            path { "d": "M3 7h18" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M13.054 18.946a11 11 0 0 1-2.11 0" }
+            path { "d": "M13.054 5.054a11 11 0 0 0-2.11-.001" }
+            path { "d": "M17.072 6.274a11 11 0 0 1 1.753 1.173" }
+            path { "d": "M18.825 16.552a11 11 0 0 1-1.753 1.174" }
+            path { "d": "M2.514 13.303a11 11 0 0 1-.452-.954 1 1 0 0 1 0-.697 11 11 0 0 1 .45-.955" }
+            path { "d": "M21.485 10.697a11 11 0 0 1 .453.955 1 1 0 0 1 0 .697 11 11 0 0 1-.453.954" }
+            path { "d": "M5.173 7.448a11 11 0 0 1 1.753-1.174" }
+            path { "d": "M6.926 17.726a11 11 0 0 1-1.753-1.174" }
+            circle { "cx": "12", "cy": "12", "r": "3" }
         }
     }
 }

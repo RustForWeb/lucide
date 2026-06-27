@@ -76,6 +76,12 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
+                Ad {}
+            },
+            "Ad",
+        ),
+        (
+            rsx! {
                 AirVent {}
             },
             "Air Vent",
@@ -638,12 +644,6 @@ pub fn IconsA1() -> Element {
             },
             "At Sign",
         ),
-        (
-            rsx! {
-                Atom {}
-            },
-            "Atom",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -659,6 +659,12 @@ pub fn IconsA1() -> Element {
 #[component]
 pub fn IconsA2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Atom {}
+            },
+            "Atom",
+        ),
         (
             rsx! {
                 AudioLines {}
@@ -3640,6 +3646,12 @@ pub fn IconsE1() -> Element {
         ),
         (
             rsx! {
+                EyeDashed {}
+            },
+            "Eye Dashed",
+        ),
+        (
+            rsx! {
                 EyeOff {}
             },
             "Eye Off",
@@ -5740,6 +5752,18 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                ListSortAscending {}
+            },
+            "List Sort Ascending",
+        ),
+        (
+            rsx! {
+                ListSortDescending {}
+            },
+            "List Sort Descending",
+        ),
+        (
+            rsx! {
                 ListStart {}
             },
             "List Start",
@@ -7405,6 +7429,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                Podium {}
+            },
+            "Podium",
+        ),
+        (
+            rsx! {
                 Pointer {}
             },
             "Pointer",
@@ -7469,12 +7499,6 @@ pub fn IconsP1() -> Element {
             },
             "Printer X",
         ),
-        (
-            rsx! {
-                Projector {}
-            },
-            "Projector",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7490,6 +7514,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Projector {}
+            },
+            "Projector",
+        ),
         (
             rsx! {
                 Proportions {}
@@ -8035,6 +8065,18 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                SavePen {}
+            },
+            "Save Pen",
+        ),
+        (
+            rsx! {
+                SavePlus {}
+            },
+            "Save Plus",
+        ),
+        (
+            rsx! {
                 Scale {}
             },
             "Scale",
@@ -8567,18 +8609,6 @@ pub fn IconsS1() -> Element {
             },
             "Smartphone",
         ),
-        (
-            rsx! {
-                SmartphoneCharging {}
-            },
-            "Smartphone Charging",
-        ),
-        (
-            rsx! {
-                SmartphoneNfc {}
-            },
-            "Smartphone Nfc",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8594,6 +8624,18 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SmartphoneCharging {}
+            },
+            "Smartphone Charging",
+        ),
+        (
+            rsx! {
+                SmartphoneNfc {}
+            },
+            "Smartphone Nfc",
+        ),
         (
             rsx! {
                 Smile {}
@@ -9182,18 +9224,6 @@ pub fn IconsS2() -> Element {
             },
             "Squares Unite",
         ),
-        (
-            rsx! {
-                Squircle {}
-            },
-            "Squircle",
-        ),
-        (
-            rsx! {
-                SquircleDashed {}
-            },
-            "Squircle Dashed",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9209,6 +9239,18 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Squircle {}
+            },
+            "Squircle",
+        ),
+        (
+            rsx! {
+                SquircleDashed {}
+            },
+            "Squircle Dashed",
+        ),
         (
             rsx! {
                 Squirrel {}
@@ -9229,15 +9271,39 @@ pub fn IconsS3() -> Element {
         ),
         (
             rsx! {
+                StarCheck {}
+            },
+            "Star Check",
+        ),
+        (
+            rsx! {
                 StarHalf {}
             },
             "Star Half",
         ),
         (
             rsx! {
+                StarMinus {}
+            },
+            "Star Minus",
+        ),
+        (
+            rsx! {
                 StarOff {}
             },
             "Star Off",
+        ),
+        (
+            rsx! {
+                StarPlus {}
+            },
+            "Star Plus",
+        ),
+        (
+            rsx! {
+                StarX {}
+            },
+            "Star X",
         ),
         (
             rsx! {
@@ -10684,6 +10750,12 @@ pub fn IconsW1() -> Element {
                 Wrench {}
             },
             "Wrench",
+        ),
+        (
+            rsx! {
+                WrenchOff {}
+            },
+            "Wrench Off",
         ),
     ];
     rsx! {
