@@ -733,8 +733,14 @@ pub fn IconsD1() -> impl IntoView {
             each=move || [
                 (view! { <Dam /> }.into_any(), "Dam"),
                 (view! { <Database /> }.into_any(), "Database"),
+                (view! { <DatabaseArrowDown /> }.into_any(), "Database Arrow Down"),
+                (view! { <DatabaseArrowUp /> }.into_any(), "Database Arrow Up"),
                 (view! { <DatabaseBackup /> }.into_any(), "Database Backup"),
+                (view! { <DatabaseCheck /> }.into_any(), "Database Check"),
+                (view! { <DatabaseMinus /> }.into_any(), "Database Minus"),
+                (view! { <DatabasePlus /> }.into_any(), "Database Plus"),
                 (view! { <DatabaseSearch /> }.into_any(), "Database Search"),
+                (view! { <DatabaseX /> }.into_any(), "Database X"),
                 (view! { <DatabaseZap /> }.into_any(), "Database Zap"),
                 (view! { <DecimalsArrowLeft /> }.into_any(), "Decimals Arrow Left"),
                 (view! { <DecimalsArrowRight /> }.into_any(), "Decimals Arrow Right"),
@@ -1613,6 +1619,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Pentagon /> }.into_any(), "Pentagon"),
                 (view! { <Percent /> }.into_any(), "Percent"),
                 (view! { <PersonStanding /> }.into_any(), "Person Standing"),
+                (view! { <Phi /> }.into_any(), "Phi"),
                 (view! { <PhilippinePeso /> }.into_any(), "Philippine Peso"),
                 (view! { <Phone /> }.into_any(), "Phone"),
                 (view! { <PhoneCall /> }.into_any(), "Phone Call"),
@@ -1657,7 +1664,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PowerOff /> }.into_any(), "Power Off"),
                 (view! { <Presentation /> }.into_any(), "Presentation"),
                 (view! { <Printer /> }.into_any(), "Printer"),
-                (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1675,6 +1681,7 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
                 (view! { <Proportions /> }.into_any(), "Proportions"),

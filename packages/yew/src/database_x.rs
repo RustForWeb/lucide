@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CarrotProps {
+pub struct DatabaseXProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CarrotProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Carrot(props: &CarrotProps) -> Html {
+pub fn DatabaseX(props: &DatabaseXProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,13 @@ pub fn Carrot(props: &CarrotProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 16a1 1 0 0 0-7-7q-4 4-5.987 12.385a.5.5 0 0 0 .602.602Q11 20 15 16l-3-3" />
-            <path d="M15 9q4 4 7 0-3-4-7 0 4-4 0-7-4 3 0 7" />
-            <path d="m8 15-2.58-2.58" />
+            <path d="m17 17 5 5" />
+            <path d="M19.323 13.744A9 3 0 0 0 21 12" />
+            <path d="M21 13.127V5" />
+            <path d="m22 17-5 5" />
+            <path d="M3 12A9 3 0 0 0 13.563 14.954" />
+            <path d="M3 5V19A9 3 0 0 0 13 21.981" />
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
         </svg>
     }
 }

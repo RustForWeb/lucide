@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CarrotProps {
+pub struct PhiProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CarrotProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Carrot(props: CarrotProps) -> Element {
+pub fn Phi(props: PhiProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,8 @@ pub fn Carrot(props: CarrotProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M15 16a1 1 0 0 0-7-7q-4 4-5.987 12.385a.5.5 0 0 0 .602.602Q11 20 15 16l-3-3" }
-            path { "d": "M15 9q4 4 7 0-3-4-7 0 4-4 0-7-4 3 0 7" }
-            path { "d": "m8 15-2.58-2.58" }
+            path { "d": "M12 2v20" }
+            circle { "cx": "12", "cy": "12", "r": "7" }
         }
     }
 }

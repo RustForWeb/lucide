@@ -1172,6 +1172,10 @@ mod cylinder;
 mod dam;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod database_arrow_down;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod database_arrow_up;
 #[cfg(any(
     feature = "devices",
     feature = "arrows",
@@ -1181,7 +1185,15 @@ mod database;
 ))]
 mod database_backup;
 #[cfg(any(feature = "devices", feature = "development"))]
+mod database_check;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod database_minus;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod database_plus;
+#[cfg(any(feature = "devices", feature = "development"))]
 mod database_search;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod database_x;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database_zap;
 #[cfg(any(
@@ -2775,6 +2787,8 @@ mod pentagon;
 mod percent;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 mod person_standing;
+#[cfg(any(feature = "math", feature = "science"))]
+mod phi;
 #[cfg(feature = "finance")]
 mod philippine_peso;
 #[cfg(any(
@@ -5590,6 +5604,10 @@ pub use cylinder::*;
 pub use dam::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_arrow_down::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_arrow_up::*;
 #[cfg(any(
     feature = "devices",
     feature = "arrows",
@@ -5599,7 +5617,15 @@ pub use database::*;
 ))]
 pub use database_backup::*;
 #[cfg(any(feature = "devices", feature = "development"))]
+pub use database_check::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_minus::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_plus::*;
+#[cfg(any(feature = "devices", feature = "development"))]
 pub use database_search::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use database_x::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database_zap::*;
 #[cfg(any(
@@ -7193,6 +7219,8 @@ pub use pentagon::*;
 pub use percent::*;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 pub use person_standing::*;
+#[cfg(any(feature = "math", feature = "science"))]
+pub use phi::*;
 #[cfg(feature = "finance")]
 pub use philippine_peso::*;
 #[cfg(any(

@@ -3248,15 +3248,51 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DatabaseArrowDown {}
+            },
+            "Database Arrow Down",
+        ),
+        (
+            rsx! {
+                DatabaseArrowUp {}
+            },
+            "Database Arrow Up",
+        ),
+        (
+            rsx! {
                 DatabaseBackup {}
             },
             "Database Backup",
         ),
         (
             rsx! {
+                DatabaseCheck {}
+            },
+            "Database Check",
+        ),
+        (
+            rsx! {
+                DatabaseMinus {}
+            },
+            "Database Minus",
+        ),
+        (
+            rsx! {
+                DatabasePlus {}
+            },
+            "Database Plus",
+        ),
+        (
+            rsx! {
                 DatabaseSearch {}
             },
             "Database Search",
+        ),
+        (
+            rsx! {
+                DatabaseX {}
+            },
+            "Database X",
         ),
         (
             rsx! {
@@ -7256,6 +7292,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                Phi {}
+            },
+            "Phi",
+        ),
+        (
+            rsx! {
                 PhilippinePeso {}
             },
             "Philippine Peso",
@@ -7518,12 +7560,6 @@ pub fn IconsP1() -> Element {
             },
             "Printer",
         ),
-        (
-            rsx! {
-                PrinterCheck {}
-            },
-            "Printer Check",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7539,6 +7575,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                PrinterCheck {}
+            },
+            "Printer Check",
+        ),
         (
             rsx! {
                 PrinterX {}
