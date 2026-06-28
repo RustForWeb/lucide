@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1737usize] = [
+pub static ICON_NAMES: [&str; 1744usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -522,8 +522,14 @@ pub static ICON_NAMES: [&str; 1737usize] = [
     "cylinder",
     "dam",
     "database",
+    "database-arrow-down",
+    "database-arrow-up",
     "database-backup",
+    "database-check",
+    "database-minus",
+    "database-plus",
     "database-search",
+    "database-x",
     "database-zap",
     "decimals-arrow-left",
     "decimals-arrow-right",
@@ -1155,6 +1161,7 @@ pub static ICON_NAMES: [&str; 1737usize] = [
     "pentagon",
     "percent",
     "person-standing",
+    "phi",
     "philippine-peso",
     "phone",
     "phone-call",

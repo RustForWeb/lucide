@@ -41,8 +41,8 @@ pub fn Ungroup(props: &UngroupProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect width="8" height="6" x="5" y="4" rx="1" />
-            <rect width="8" height="6" x="11" y="14" rx="1" />
+            <rect x="11" y="14" width="10" height="7" rx="2" />
+            <rect x="3" y="3" width="10" height="7" rx="2" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Ungroup(
+pub fn Phi(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,8 @@ pub fn Ungroup(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect x="11" y="14" width="10" height="7" rx="2" />
-            <rect x="3" y="3" width="10" height="7" rx="2" />
+            <path d="M12 2v20" />
+            <circle cx="12" cy="12" r="7" />
         </svg>
     }
 }

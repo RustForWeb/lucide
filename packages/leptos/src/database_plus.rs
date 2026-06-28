@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Ungroup(
+pub fn DatabasePlus(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,12 @@ pub fn Ungroup(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <rect x="11" y="14" width="10" height="7" rx="2" />
-            <rect x="3" y="3" width="10" height="7" rx="2" />
+            <path d="M19 16v6" />
+            <path d="M21 12.536V5" />
+            <path d="M22 19h-6" />
+            <path d="M3 12A9 3 0 0 0 15.1824 14.8061" />
+            <path d="M3 5V19A9 3 0 0 0 13.318 21.968" />
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
         </svg>
     }
 }
