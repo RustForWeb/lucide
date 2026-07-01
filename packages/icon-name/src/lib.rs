@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1744usize] = [
+pub static ICON_NAMES: [&str; 1745usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -1141,6 +1141,7 @@ pub static ICON_NAMES: [&str; 1744usize] = [
     "panels-left-bottom",
     "panels-right-bottom",
     "panels-top-left",
+    "paper-bag",
     "paperclip",
     "parasol",
     "parentheses",

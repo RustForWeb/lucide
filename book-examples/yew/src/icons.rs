@@ -1518,6 +1518,7 @@ pub fn IconsP() -> Html {
         (html! { <PanelsLeftBottom /> }, "Panels Left Bottom"),
         (html! { <PanelsRightBottom /> }, "Panels Right Bottom"),
         (html! { <PanelsTopLeft /> }, "Panels Top Left"),
+        (html! { <PaperBag /> }, "Paper Bag"),
         (html! { <Paperclip /> }, "Paperclip"),
         (html! { <Parasol /> }, "Parasol"),
         (html! { <Parentheses /> }, "Parentheses"),

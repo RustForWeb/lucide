@@ -7172,6 +7172,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PaperBag {}
+            },
+            "Paper Bag",
+        ),
+        (
+            rsx! {
                 Paperclip {}
             },
             "Paperclip",
@@ -7554,12 +7560,6 @@ pub fn IconsP1() -> Element {
             },
             "Presentation",
         ),
-        (
-            rsx! {
-                Printer {}
-            },
-            "Printer",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7575,6 +7575,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Printer {}
+            },
+            "Printer",
+        ),
         (
             rsx! {
                 PrinterCheck {}
