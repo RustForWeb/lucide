@@ -2716,6 +2716,8 @@ mod panels_left_bottom;
 mod panels_right_bottom;
 #[cfg(any(feature = "layout", feature = "design", feature = "development"))]
 mod panels_top_left;
+#[cfg(any(feature = "food-beverage", feature = "shopping"))]
+mod paper_bag;
 #[cfg(any(
     feature = "text",
     feature = "design",
@@ -7148,6 +7150,8 @@ pub use panels_left_bottom::*;
 pub use panels_right_bottom::*;
 #[cfg(any(feature = "layout", feature = "design", feature = "development"))]
 pub use panels_top_left::*;
+#[cfg(any(feature = "food-beverage", feature = "shopping"))]
+pub use paper_bag::*;
 #[cfg(any(
     feature = "text",
     feature = "design",
