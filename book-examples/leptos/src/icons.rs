@@ -1599,6 +1599,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PanelsLeftBottom /> }.into_any(), "Panels Left Bottom"),
                 (view! { <PanelsRightBottom /> }.into_any(), "Panels Right Bottom"),
                 (view! { <PanelsTopLeft /> }.into_any(), "Panels Top Left"),
+                (view! { <PaperBag /> }.into_any(), "Paper Bag"),
                 (view! { <Paperclip /> }.into_any(), "Paperclip"),
                 (view! { <Parasol /> }.into_any(), "Parasol"),
                 (view! { <Parentheses /> }.into_any(), "Parentheses"),
@@ -1663,7 +1664,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Power /> }.into_any(), "Power"),
                 (view! { <PowerOff /> }.into_any(), "Power Off"),
                 (view! { <Presentation /> }.into_any(), "Presentation"),
-                (view! { <Printer /> }.into_any(), "Printer"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1681,6 +1681,7 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Printer /> }.into_any(), "Printer"),
                 (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
