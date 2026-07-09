@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct DotProps {
+pub struct CircleEuroSignProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct DotProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Dot(props: DotProps) -> Element {
+pub fn CircleEuroSign(props: CircleEuroSignProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,7 +34,9 @@ pub fn Dot(props: DotProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            circle { "cx": "12", "cy": "12", "r": "1" }
+            path { "d": "M15 9.4a4 4 0 1 0 0 5.2" }
+            path { "d": "M7 12h5" }
+            circle { "cx": "12", "cy": "12", "r": "10" }
         }
     }
 }

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DotProps {
+pub struct CircleEuroSignProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DotProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Dot(props: &DotProps) -> Html {
+pub fn CircleEuroSign(props: &CircleEuroSignProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,7 +41,9 @@ pub fn Dot(props: &DotProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="1" />
+            <path d="M15 9.4a4 4 0 1 0 0 5.2" />
+            <path d="M7 12h5" />
+            <circle cx="12" cy="12" r="10" />
         </svg>
     }
 }
