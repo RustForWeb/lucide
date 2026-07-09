@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DotProps {
+pub struct ServerPlusProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DotProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Dot(props: &DotProps) -> Html {
+pub fn ServerPlus(props: &ServerPlusProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,7 +41,12 @@ pub fn Dot(props: &DotProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="1" />
+            <path d="M12.5 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2" />
+            <path d="M16 12h6" />
+            <path d="M19 9v6" />
+            <path d="M22 18v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h8.5" />
+            <path d="M6 18h.01" />
+            <path d="M6 6h.01" />
         </svg>
     }
 }

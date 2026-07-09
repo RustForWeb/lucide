@@ -563,6 +563,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleDotDashed /> }.into_any(), "Circle Dot Dashed"),
                 (view! { <CircleEllipsis /> }.into_any(), "Circle Ellipsis"),
                 (view! { <CircleEqual /> }.into_any(), "Circle Equal"),
+                (view! { <CircleEuroSign /> }.into_any(), "Circle Euro Sign"),
                 (view! { <CircleFadingArrowUp /> }.into_any(), "Circle Fading Arrow Up"),
                 (view! { <CircleFadingPlus /> }.into_any(), "Circle Fading Plus"),
                 (view! { <CircleGauge /> }.into_any(), "Circle Gauge"),
@@ -636,7 +637,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CloudMoon /> }.into_any(), "Cloud Moon"),
                 (view! { <CloudMoonRain /> }.into_any(), "Cloud Moon Rain"),
                 (view! { <CloudOff /> }.into_any(), "Cloud Off"),
-                (view! { <CloudRain /> }.into_any(), "Cloud Rain"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -654,6 +654,7 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudRain /> }.into_any(), "Cloud Rain"),
                 (view! { <CloudRainWind /> }.into_any(), "Cloud Rain Wind"),
                 (view! { <CloudSnow /> }.into_any(), "Cloud Snow"),
                 (view! { <CloudSun /> }.into_any(), "Cloud Sun"),
@@ -1858,6 +1859,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ServerCog /> }.into_any(), "Server Cog"),
                 (view! { <ServerCrash /> }.into_any(), "Server Crash"),
                 (view! { <ServerOff /> }.into_any(), "Server Off"),
+                (view! { <ServerPlus /> }.into_any(), "Server Plus"),
                 (view! { <Settings /> }.into_any(), "Settings"),
                 (view! { <Settings2 /> }.into_any(), "Settings 2"),
                 (view! { <Shapes /> }.into_any(), "Shapes"),
@@ -1909,7 +1911,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Slash /> }.into_any(), "Slash"),
                 (view! { <Slice /> }.into_any(), "Slice"),
                 (view! { <SlidersHorizontal /> }.into_any(), "Sliders Horizontal"),
-                (view! { <SlidersVertical /> }.into_any(), "Sliders Vertical"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1927,6 +1928,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SlidersVertical /> }.into_any(), "Sliders Vertical"),
                 (view! { <Smartphone /> }.into_any(), "Smartphone"),
                 (view! { <SmartphoneCharging /> }.into_any(), "Smartphone Charging"),
                 (view! { <SmartphoneNfc /> }.into_any(), "Smartphone Nfc"),
@@ -2035,7 +2037,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareX /> }.into_any(), "Square X"),
                 (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
                 (view! { <SquaresIntersect /> }.into_any(), "Squares Intersect"),
-                (view! { <SquaresSubtract /> }.into_any(), "Squares Subtract"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2053,6 +2054,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquaresSubtract /> }.into_any(), "Squares Subtract"),
                 (view! { <SquaresUnite /> }.into_any(), "Squares Unite"),
                 (view! { <Squircle /> }.into_any(), "Squircle"),
                 (view! { <SquircleDashed /> }.into_any(), "Squircle Dashed"),

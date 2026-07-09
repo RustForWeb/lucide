@@ -871,6 +871,8 @@ mod circle_dot_dashed;
 mod circle_ellipsis;
 #[cfg(feature = "math")]
 mod circle_equal;
+#[cfg(any(feature = "shopping", feature = "finance"))]
+mod circle_euro_sign;
 #[cfg(any(feature = "arrows", feature = "development"))]
 mod circle_fading_arrow_up;
 #[cfg(any(feature = "communication", feature = "social"))]
@@ -3256,6 +3258,8 @@ mod server_cog;
 mod server_crash;
 #[cfg(any(feature = "development", feature = "devices"))]
 mod server_off;
+#[cfg(any(feature = "development", feature = "devices"))]
+mod server_plus;
 #[cfg(feature = "account")]
 mod settings;
 #[cfg(feature = "account")]
@@ -5305,6 +5309,8 @@ pub use circle_dot_dashed::*;
 pub use circle_ellipsis::*;
 #[cfg(feature = "math")]
 pub use circle_equal::*;
+#[cfg(any(feature = "shopping", feature = "finance"))]
+pub use circle_euro_sign::*;
 #[cfg(any(feature = "arrows", feature = "development"))]
 pub use circle_fading_arrow_up::*;
 #[cfg(any(feature = "communication", feature = "social"))]
@@ -7690,6 +7696,8 @@ pub use server_cog::*;
 pub use server_crash::*;
 #[cfg(any(feature = "development", feature = "devices"))]
 pub use server_off::*;
+#[cfg(any(feature = "development", feature = "devices"))]
+pub use server_plus::*;
 #[cfg(feature = "account")]
 pub use settings::*;
 #[cfg(feature = "account")]

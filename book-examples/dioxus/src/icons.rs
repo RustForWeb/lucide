@@ -2402,6 +2402,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleEuroSign {}
+            },
+            "Circle Euro Sign",
+        ),
+        (
+            rsx! {
                 CircleFadingArrowUp {}
             },
             "Circle Fading Arrow Up",
@@ -2838,12 +2844,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Off",
         ),
-        (
-            rsx! {
-                CloudRain {}
-            },
-            "Cloud Rain",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2859,6 +2859,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudRain {}
+            },
+            "Cloud Rain",
+        ),
         (
             rsx! {
                 CloudRainWind {}
@@ -8378,6 +8384,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ServerPlus {}
+            },
+            "Server Plus",
+        ),
+        (
+            rsx! {
                 Settings {}
             },
             "Settings",
@@ -8682,12 +8694,6 @@ pub fn IconsS1() -> Element {
             },
             "Sliders Horizontal",
         ),
-        (
-            rsx! {
-                SlidersVertical {}
-            },
-            "Sliders Vertical",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8703,6 +8709,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SlidersVertical {}
+            },
+            "Sliders Vertical",
+        ),
         (
             rsx! {
                 Smartphone {}
@@ -9297,12 +9309,6 @@ pub fn IconsS2() -> Element {
             },
             "Squares Intersect",
         ),
-        (
-            rsx! {
-                SquaresSubtract {}
-            },
-            "Squares Subtract",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9318,6 +9324,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquaresSubtract {}
+            },
+            "Squares Subtract",
+        ),
         (
             rsx! {
                 SquaresUnite {}

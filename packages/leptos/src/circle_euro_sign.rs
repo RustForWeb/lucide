@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Option(
+pub fn CircleEuroSign(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,9 @@ pub fn Option(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M14 3h7" />
-            <path d="M3 3h5.28a1 1 0 0 1 .948.684l5.544 16.632a1 1 0 0 0 .949.684H21" />
+            <path d="M15 9.4a4 4 0 1 0 0 5.2" />
+            <path d="M7 12h5" />
+            <circle cx="12" cy="12" r="10" />
         </svg>
     }
 }

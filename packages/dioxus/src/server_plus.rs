@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct DotProps {
+pub struct ServerPlusProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct DotProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Dot(props: DotProps) -> Element {
+pub fn ServerPlus(props: ServerPlusProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,7 +34,12 @@ pub fn Dot(props: DotProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            circle { "cx": "12", "cy": "12", "r": "1" }
+            path { "d": "M12.5 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2" }
+            path { "d": "M16 12h6" }
+            path { "d": "M19 9v6" }
+            path { "d": "M22 18v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h8.5" }
+            path { "d": "M6 18h.01" }
+            path { "d": "M6 6h.01" }
         }
     }
 }
