@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct EthernetPortProps {
+pub struct CircleEuroProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct EthernetPortProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn EthernetPort(props: EthernetPortProps) -> Element {
+pub fn CircleEuro(props: CircleEuroProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,9 @@ pub fn EthernetPort(props: EthernetPortProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 8v1" }
-            path { "d": "M14 8v1" }
-            path { "d": "M18 8v1" }
-            path { "d": "M19 17a2 2 0 00-1.765 1.059l-.47.882A2 2 0 0115 20H9a2 2 0 01-1.765-1.059l-.47-.882A2 2 0 005 17H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v9a2 2 0 01-2 2z" }
-            path { "d": "M6 8v1" }
+            path { "d": "M15 9.4a4 4 0 1 0 0 5.2" }
+            path { "d": "M7 12h5" }
+            circle { "cx": "12", "cy": "12", "r": "10" }
         }
     }
 }

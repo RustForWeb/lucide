@@ -2402,9 +2402,9 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
-                CircleEuroSign {}
+                CircleEuro {}
             },
-            "Circle Euro Sign",
+            "Circle Euro",
         ),
         (
             rsx! {
@@ -8198,6 +8198,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ScanBox {}
+            },
+            "Scan Box",
+        ),
+        (
+            rsx! {
                 ScanEye {}
             },
             "Scan Eye",
@@ -8688,12 +8694,6 @@ pub fn IconsS1() -> Element {
             },
             "Slice",
         ),
-        (
-            rsx! {
-                SlidersHorizontal {}
-            },
-            "Sliders Horizontal",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8709,6 +8709,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SlidersHorizontal {}
+            },
+            "Sliders Horizontal",
+        ),
         (
             rsx! {
                 SlidersVertical {}
@@ -9303,12 +9309,6 @@ pub fn IconsS2() -> Element {
             },
             "Squares Exclude",
         ),
-        (
-            rsx! {
-                SquaresIntersect {}
-            },
-            "Squares Intersect",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9324,6 +9324,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquaresIntersect {}
+            },
+            "Squares Intersect",
+        ),
         (
             rsx! {
                 SquaresSubtract {}

@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1747usize] = [
+pub static ICON_NAMES: [&str; 1748usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -386,7 +386,7 @@ pub static ICON_NAMES: [&str; 1747usize] = [
     "circle-dot-dashed",
     "circle-ellipsis",
     "circle-equal",
-    "circle-euro-sign",
+    "circle-euro",
     "circle-fading-arrow-up",
     "circle-fading-plus",
     "circle-gauge",
@@ -1302,6 +1302,7 @@ pub static ICON_NAMES: [&str; 1747usize] = [
     "scaling",
     "scan",
     "scan-barcode",
+    "scan-box",
     "scan-eye",
     "scan-face",
     "scan-heart",
