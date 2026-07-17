@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FileBoxProps {
+pub struct ScanBoxProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FileBoxProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn FileBox(props: &FileBoxProps) -> Html {
+pub fn ScanBox(props: &ScanBoxProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,15 +41,15 @@ pub fn FileBox(props: &FileBoxProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M14 2v5a1 1 0 001 1h5" />
+            <path d="M12 12v5.5" />
+            <path d="M17 3h2a2 2 0 012 2v2" />
+            <path d="M21 17v2a2 2 0 01-2 2h-2" />
+            <path d="M3 7V5a2 2 0 012-2h2" />
+            <path d="M7 21H5a2 2 0 01-2-2v-2" />
+            <path d="M7.264 9.252 12 12l4.737-2.748" />
             <path
-                d="M14.692 22H18a2 2 0 002-2V8a2.4 2.4 0 00-.706-1.706l-3.588-3.588A2.4 2.4 0 0014 2H6a2 2 0 00-2 2v3.804"
+                d="M7.995 8.514A2 2 0 007 10.244v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0017 13.76v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z"
             />
-            <path d="M2.264 13.752 7 16.5l4.737-2.748" />
-            <path
-                d="M2.995 13.014A2 2 0 002 14.744v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0012 18.26v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z"
-            />
-            <path d="M7 16.5V22" />
         </svg>
     }
 }

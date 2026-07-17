@@ -563,7 +563,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleDotDashed /> }.into_any(), "Circle Dot Dashed"),
                 (view! { <CircleEllipsis /> }.into_any(), "Circle Ellipsis"),
                 (view! { <CircleEqual /> }.into_any(), "Circle Equal"),
-                (view! { <CircleEuroSign /> }.into_any(), "Circle Euro Sign"),
+                (view! { <CircleEuro /> }.into_any(), "Circle Euro"),
                 (view! { <CircleFadingArrowUp /> }.into_any(), "Circle Fading Arrow Up"),
                 (view! { <CircleFadingPlus /> }.into_any(), "Circle Fading Plus"),
                 (view! { <CircleGauge /> }.into_any(), "Circle Gauge"),
@@ -1828,6 +1828,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Scaling /> }.into_any(), "Scaling"),
                 (view! { <Scan /> }.into_any(), "Scan"),
                 (view! { <ScanBarcode /> }.into_any(), "Scan Barcode"),
+                (view! { <ScanBox /> }.into_any(), "Scan Box"),
                 (view! { <ScanEye /> }.into_any(), "Scan Eye"),
                 (view! { <ScanFace /> }.into_any(), "Scan Face"),
                 (view! { <ScanHeart /> }.into_any(), "Scan Heart"),
@@ -1910,7 +1911,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Skull /> }.into_any(), "Skull"),
                 (view! { <Slash /> }.into_any(), "Slash"),
                 (view! { <Slice /> }.into_any(), "Slice"),
-                (view! { <SlidersHorizontal /> }.into_any(), "Sliders Horizontal"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1928,6 +1928,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SlidersHorizontal /> }.into_any(), "Sliders Horizontal"),
                 (view! { <SlidersVertical /> }.into_any(), "Sliders Vertical"),
                 (view! { <Smartphone /> }.into_any(), "Smartphone"),
                 (view! { <SmartphoneCharging /> }.into_any(), "Smartphone Charging"),
@@ -2036,7 +2037,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
                 (view! { <SquareX /> }.into_any(), "Square X"),
                 (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
-                (view! { <SquaresIntersect /> }.into_any(), "Squares Intersect"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2054,6 +2054,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquaresIntersect /> }.into_any(), "Squares Intersect"),
                 (view! { <SquaresSubtract /> }.into_any(), "Squares Subtract"),
                 (view! { <SquaresUnite /> }.into_any(), "Squares Unite"),
                 (view! { <Squircle /> }.into_any(), "Squircle"),
