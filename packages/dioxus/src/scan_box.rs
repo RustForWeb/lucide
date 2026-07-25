@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct EthernetPortProps {
+pub struct ScanBoxProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct EthernetPortProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn EthernetPort(props: EthernetPortProps) -> Element {
+pub fn ScanBox(props: ScanBoxProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,13 @@ pub fn EthernetPort(props: EthernetPortProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 8v1" }
-            path { "d": "M14 8v1" }
-            path { "d": "M18 8v1" }
-            path { "d": "M19 17a2 2 0 00-1.765 1.059l-.47.882A2 2 0 0115 20H9a2 2 0 01-1.765-1.059l-.47-.882A2 2 0 005 17H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v9a2 2 0 01-2 2z" }
-            path { "d": "M6 8v1" }
+            path { "d": "M12 12v5.5" }
+            path { "d": "M17 3h2a2 2 0 012 2v2" }
+            path { "d": "M21 17v2a2 2 0 01-2 2h-2" }
+            path { "d": "M3 7V5a2 2 0 012-2h2" }
+            path { "d": "M7 21H5a2 2 0 01-2-2v-2" }
+            path { "d": "M7.264 9.252 12 12l4.737-2.748" }
+            path { "d": "M7.995 8.514A2 2 0 007 10.244v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0017 13.76v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z" }
         }
     }
 }

@@ -874,7 +874,7 @@ mod circle_ellipsis;
 #[cfg(feature = "math")]
 mod circle_equal;
 #[cfg(any(feature = "shopping", feature = "finance"))]
-mod circle_euro_sign;
+mod circle_euro;
 #[cfg(any(feature = "arrows", feature = "development"))]
 mod circle_fading_arrow_up;
 #[cfg(any(feature = "communication", feature = "social"))]
@@ -1420,7 +1420,7 @@ mod file_archive;
 mod file_axis_3_d;
 #[cfg(feature = "files")]
 mod file_badge;
-#[cfg(feature = "files")]
+#[cfg(any(feature = "files", feature = "design", feature = "development"))]
 mod file_box;
 #[cfg(any(feature = "files", feature = "development"))]
 mod file_braces;
@@ -3169,6 +3169,13 @@ mod scaling;
 mod scan;
 #[cfg(any(feature = "shopping", feature = "devices"))]
 mod scan_barcode;
+#[cfg(any(
+    feature = "design",
+    feature = "devices",
+    feature = "shopping",
+    feature = "gaming"
+))]
+mod scan_box;
 #[cfg(any(
     feature = "photography",
     feature = "multimedia",
@@ -5312,7 +5319,7 @@ pub use circle_ellipsis::*;
 #[cfg(feature = "math")]
 pub use circle_equal::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
-pub use circle_euro_sign::*;
+pub use circle_euro::*;
 #[cfg(any(feature = "arrows", feature = "development"))]
 pub use circle_fading_arrow_up::*;
 #[cfg(any(feature = "communication", feature = "social"))]
@@ -5858,7 +5865,7 @@ pub use file_archive::*;
 pub use file_axis_3_d::*;
 #[cfg(feature = "files")]
 pub use file_badge::*;
-#[cfg(feature = "files")]
+#[cfg(any(feature = "files", feature = "design", feature = "development"))]
 pub use file_box::*;
 #[cfg(any(feature = "files", feature = "development"))]
 pub use file_braces::*;
@@ -7607,6 +7614,13 @@ pub use scaling::*;
 pub use scan::*;
 #[cfg(any(feature = "shopping", feature = "devices"))]
 pub use scan_barcode::*;
+#[cfg(any(
+    feature = "design",
+    feature = "devices",
+    feature = "shopping",
+    feature = "gaming"
+))]
+pub use scan_box::*;
 #[cfg(any(
     feature = "photography",
     feature = "multimedia",
