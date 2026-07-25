@@ -8492,6 +8492,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShieldKeyhole {}
+            },
+            "Shield Keyhole",
+        ),
+        (
+            rsx! {
                 ShieldMinus {}
             },
             "Shield Minus",
@@ -8688,12 +8694,6 @@ pub fn IconsS1() -> Element {
             },
             "Slash",
         ),
-        (
-            rsx! {
-                Slice {}
-            },
-            "Slice",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8709,6 +8709,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Slice {}
+            },
+            "Slice",
+        ),
         (
             rsx! {
                 SlidersHorizontal {}
@@ -9303,12 +9309,6 @@ pub fn IconsS2() -> Element {
             },
             "Square X",
         ),
-        (
-            rsx! {
-                SquaresExclude {}
-            },
-            "Squares Exclude",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9324,6 +9324,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquaresExclude {}
+            },
+            "Squares Exclude",
+        ),
         (
             rsx! {
                 SquaresIntersect {}

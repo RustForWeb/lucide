@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1748usize] = [
+pub static ICON_NAMES: [&str; 1749usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -1351,6 +1351,7 @@ pub static ICON_NAMES: [&str; 1748usize] = [
     "shield-cog-corner",
     "shield-ellipsis",
     "shield-half",
+    "shield-keyhole",
     "shield-minus",
     "shield-off",
     "shield-plus",

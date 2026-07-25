@@ -1877,6 +1877,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ShieldCogCorner /> }.into_any(), "Shield Cog Corner"),
                 (view! { <ShieldEllipsis /> }.into_any(), "Shield Ellipsis"),
                 (view! { <ShieldHalf /> }.into_any(), "Shield Half"),
+                (view! { <ShieldKeyhole /> }.into_any(), "Shield Keyhole"),
                 (view! { <ShieldMinus /> }.into_any(), "Shield Minus"),
                 (view! { <ShieldOff /> }.into_any(), "Shield Off"),
                 (view! { <ShieldPlus /> }.into_any(), "Shield Plus"),
@@ -1910,7 +1911,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SkipForward /> }.into_any(), "Skip Forward"),
                 (view! { <Skull /> }.into_any(), "Skull"),
                 (view! { <Slash /> }.into_any(), "Slash"),
-                (view! { <Slice /> }.into_any(), "Slice"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1928,6 +1928,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Slice /> }.into_any(), "Slice"),
                 (view! { <SlidersHorizontal /> }.into_any(), "Sliders Horizontal"),
                 (view! { <SlidersVertical /> }.into_any(), "Sliders Vertical"),
                 (view! { <Smartphone /> }.into_any(), "Smartphone"),
@@ -2036,7 +2037,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareUser /> }.into_any(), "Square User"),
                 (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
                 (view! { <SquareX /> }.into_any(), "Square X"),
-                (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2054,6 +2054,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
                 (view! { <SquaresIntersect /> }.into_any(), "Squares Intersect"),
                 (view! { <SquaresSubtract /> }.into_any(), "Squares Subtract"),
                 (view! { <SquaresUnite /> }.into_any(), "Squares Unite"),

@@ -1776,6 +1776,7 @@ pub fn IconsS() -> Html {
         (html! { <ShieldCogCorner /> }, "Shield Cog Corner"),
         (html! { <ShieldEllipsis /> }, "Shield Ellipsis"),
         (html! { <ShieldHalf /> }, "Shield Half"),
+        (html! { <ShieldKeyhole /> }, "Shield Keyhole"),
         (html! { <ShieldMinus /> }, "Shield Minus"),
         (html! { <ShieldOff /> }, "Shield Off"),
         (html! { <ShieldPlus /> }, "Shield Plus"),
