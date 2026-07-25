@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BookOpenCheckProps {
+pub struct ShieldKeyholeProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BookOpenCheckProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn BookOpenCheck(props: BookOpenCheckProps) -> Element {
+pub fn ShieldKeyhole(props: ShieldKeyholeProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,9 +34,9 @@ pub fn BookOpenCheck(props: BookOpenCheckProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 5v16" }
-            path { "d": "m16 12 2 2 4-4" }
-            path { "d": "M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344" }
+            path { "d": "M12 13v3" }
+            path { "d": "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 01-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 011-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 011.52 0C14.51 3.81 17 5 19 5a1 1 0 011 1z" }
+            circle { "cx": "12", "cy": "11", "r": "2" }
         }
     }
 }

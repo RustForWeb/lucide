@@ -20,7 +20,11 @@ mod accessibility;
     feature = "multimedia"
 ))]
 mod activity;
-#[cfg(any(feature = "multimedia", feature = "notifications"))]
+#[cfg(any(
+    feature = "multimedia",
+    feature = "accessibility",
+    feature = "notifications"
+))]
 mod ad;
 #[cfg(feature = "home")]
 mod air_vent;
@@ -3355,6 +3359,13 @@ mod shield_half;
     feature = "account",
     feature = "security",
     feature = "development",
+    feature = "files"
+))]
+mod shield_keyhole;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
     feature = "gaming"
 ))]
 mod shield_minus;
@@ -4465,7 +4476,11 @@ pub use accessibility::*;
     feature = "multimedia"
 ))]
 pub use activity::*;
-#[cfg(any(feature = "multimedia", feature = "notifications"))]
+#[cfg(any(
+    feature = "multimedia",
+    feature = "accessibility",
+    feature = "notifications"
+))]
 pub use ad::*;
 #[cfg(feature = "home")]
 pub use air_vent::*;
@@ -7796,6 +7811,13 @@ pub use shield_ellipsis::*;
     feature = "gaming"
 ))]
 pub use shield_half::*;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "files"
+))]
+pub use shield_keyhole::*;
 #[cfg(any(
     feature = "account",
     feature = "security",
