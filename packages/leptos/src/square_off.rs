@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ZapOff(
+pub fn SquareOff(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,9 @@ pub fn ZapOff(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10.768 5.111 13.44 2.44a1.5 1.5 0 012.474 1.561l-1.633 4.625" />
-            <path d="m18.889 13.232.672-.672A1.5 1.5 0 0018.5 10h-2.844" />
-            <path d="m2 2 20 20" />
-            <path d="m7.94 7.94-3.5 3.499A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l5.5-5.5" />
+            <path d="M20.4 20.4a2 2 0 01-1.4.6H5a2 2 0 01-2-2V5a2 2 0 01.59-1.41" />
+            <path d="M21 15.3V5a2 2 0 00-2-2H8.7" />
+            <path d="M22 22 2 2" />
         </svg>
     }
 }

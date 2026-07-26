@@ -1410,7 +1410,12 @@ mod factory;
 mod fan;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 mod fast_forward;
-#[cfg(feature = "gaming")]
+#[cfg(any(
+    feature = "nature",
+    feature = "animals",
+    feature = "gaming",
+    feature = "text"
+))]
 mod feather;
 #[cfg(any(feature = "home", feature = "buildings"))]
 mod fence;
@@ -1980,8 +1985,6 @@ mod helicopter;
 mod hexagon;
 #[cfg(any(feature = "text", feature = "design"))]
 mod highlighter;
-#[cfg(any(feature = "arrows", feature = "time"))]
-mod history;
 #[cfg(feature = "food-beverage")]
 mod hop;
 #[cfg(feature = "food-beverage")]
@@ -2142,6 +2145,8 @@ mod layers_minus;
 mod layers_plus;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layout_dashboard;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layout_freeform;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layout_grid;
 #[cfg(any(
@@ -2444,6 +2449,8 @@ mod metronome;
     feature = "multimedia"
 ))]
 mod mic;
+#[cfg(any(feature = "devices", feature = "communication", feature = "multimedia"))]
+mod mic_audio_lines;
 #[cfg(any(
     feature = "devices",
     feature = "communication",
@@ -2451,6 +2458,13 @@ mod mic;
     feature = "multimedia"
 ))]
 mod mic_off;
+#[cfg(any(
+    feature = "devices",
+    feature = "communication",
+    feature = "connectivity",
+    feature = "multimedia"
+))]
+mod mic_signal;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 mod mic_vocal;
 #[cfg(feature = "devices")]
@@ -2517,6 +2531,8 @@ mod monitor_x;
 mod moon;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 mod moon_star;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+mod mosque;
 #[cfg(feature = "transportation")]
 mod motorbike;
 #[cfg(any(feature = "nature", feature = "gaming"))]
@@ -2904,8 +2920,6 @@ mod plug_zap;
 mod plus;
 #[cfg(feature = "tools")]
 mod pocket_knife;
-#[cfg(any(feature = "multimedia", feature = "social"))]
-mod podcast;
 #[cfg(any(feature = "sports", feature = "gaming"))]
 mod podium;
 #[cfg(feature = "cursors")]
@@ -3088,6 +3102,8 @@ mod rose;
 mod rotate_3_d;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 mod rotate_ccw;
+#[cfg(any(feature = "arrows", feature = "time"))]
+mod rotate_ccw_clock;
 #[cfg(any(feature = "security", feature = "account"))]
 mod rotate_ccw_key;
 #[cfg(any(
@@ -3100,6 +3116,8 @@ mod rotate_ccw_key;
 mod rotate_ccw_square;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 mod rotate_cw;
+#[cfg(feature = "time")]
+mod rotate_cw_fading_clock;
 #[cfg(any(
     feature = "layout",
     feature = "design",
@@ -3213,6 +3231,8 @@ mod scan_qr_code;
     feature = "accessibility"
 ))]
 mod scan_search;
+#[cfg(any(feature = "photography", feature = "design", feature = "development"))]
+mod scan_square;
 #[cfg(any(feature = "text", feature = "devices"))]
 mod scan_text;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
@@ -3694,6 +3714,8 @@ mod square_minus;
     feature = "tools"
 ))]
 mod square_mouse_pointer;
+#[cfg(any(feature = "shapes", feature = "design"))]
+mod square_off;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 mod square_parking;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -4188,6 +4210,13 @@ mod user_round_search;
 mod user_round_x;
 #[cfg(any(feature = "account", feature = "social"))]
 mod user_search;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "people"
+))]
+mod user_shield;
 #[cfg(feature = "account")]
 mod user_star;
 #[cfg(feature = "account")]
@@ -5866,7 +5895,12 @@ pub use factory::*;
 pub use fan::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 pub use fast_forward::*;
-#[cfg(feature = "gaming")]
+#[cfg(any(
+    feature = "nature",
+    feature = "animals",
+    feature = "gaming",
+    feature = "text"
+))]
 pub use feather::*;
 #[cfg(any(feature = "home", feature = "buildings"))]
 pub use fence::*;
@@ -6436,8 +6470,6 @@ pub use helicopter::*;
 pub use hexagon::*;
 #[cfg(any(feature = "text", feature = "design"))]
 pub use highlighter::*;
-#[cfg(any(feature = "arrows", feature = "time"))]
-pub use history::*;
 #[cfg(feature = "food-beverage")]
 pub use hop::*;
 #[cfg(feature = "food-beverage")]
@@ -6598,6 +6630,8 @@ pub use layers_minus::*;
 pub use layers_plus::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_dashboard::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layout_freeform::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_grid::*;
 #[cfg(any(
@@ -6900,6 +6934,8 @@ pub use metronome::*;
     feature = "multimedia"
 ))]
 pub use mic::*;
+#[cfg(any(feature = "devices", feature = "communication", feature = "multimedia"))]
+pub use mic_audio_lines::*;
 #[cfg(any(
     feature = "devices",
     feature = "communication",
@@ -6907,6 +6943,13 @@ pub use mic::*;
     feature = "multimedia"
 ))]
 pub use mic_off::*;
+#[cfg(any(
+    feature = "devices",
+    feature = "communication",
+    feature = "connectivity",
+    feature = "multimedia"
+))]
+pub use mic_signal::*;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 pub use mic_vocal::*;
 #[cfg(feature = "devices")]
@@ -6973,6 +7016,8 @@ pub use monitor_x::*;
 pub use moon::*;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 pub use moon_star::*;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+pub use mosque::*;
 #[cfg(feature = "transportation")]
 pub use motorbike::*;
 #[cfg(any(feature = "nature", feature = "gaming"))]
@@ -7360,8 +7405,6 @@ pub use plug_zap::*;
 pub use plus::*;
 #[cfg(feature = "tools")]
 pub use pocket_knife::*;
-#[cfg(any(feature = "multimedia", feature = "social"))]
-pub use podcast::*;
 #[cfg(any(feature = "sports", feature = "gaming"))]
 pub use podium::*;
 #[cfg(feature = "cursors")]
@@ -7544,6 +7587,8 @@ pub use rose::*;
 pub use rotate_3_d::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 pub use rotate_ccw::*;
+#[cfg(any(feature = "arrows", feature = "time"))]
+pub use rotate_ccw_clock::*;
 #[cfg(any(feature = "security", feature = "account"))]
 pub use rotate_ccw_key::*;
 #[cfg(any(
@@ -7556,6 +7601,8 @@ pub use rotate_ccw_key::*;
 pub use rotate_ccw_square::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 pub use rotate_cw::*;
+#[cfg(feature = "time")]
+pub use rotate_cw_fading_clock::*;
 #[cfg(any(
     feature = "layout",
     feature = "design",
@@ -7669,6 +7716,8 @@ pub use scan_qr_code::*;
     feature = "accessibility"
 ))]
 pub use scan_search::*;
+#[cfg(any(feature = "photography", feature = "design", feature = "development"))]
+pub use scan_square::*;
 #[cfg(any(feature = "text", feature = "devices"))]
 pub use scan_text::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
@@ -8150,6 +8199,8 @@ pub use square_minus::*;
     feature = "tools"
 ))]
 pub use square_mouse_pointer::*;
+#[cfg(any(feature = "shapes", feature = "design"))]
+pub use square_off::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 pub use square_parking::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -8644,6 +8695,13 @@ pub use user_round_search::*;
 pub use user_round_x::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use user_search::*;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "people"
+))]
+pub use user_shield::*;
 #[cfg(feature = "account")]
 pub use user_star::*;
 #[cfg(feature = "account")]

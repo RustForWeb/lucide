@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BarrelProps {
+pub struct ScanSquareProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BarrelProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Barrel(props: BarrelProps) -> Element {
+pub fn ScanSquare(props: ScanSquareProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,17 @@ pub fn Barrel(props: BarrelProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 3a41 41 0 000 18" }
-            path { "d": "M14 3a41 41 0 010 18" }
-            path { "d": "M16.997 21a2 2 0 001.68-.92 15.25 15.25 0 000-16.16 2 2 0 00-1.68-.92h-10a2 2 0 00-1.681.92 15.25 15.25 0 000 16.16 2 2 0 001.681.92z" }
-            path { "d": "M3.54 16h16.914" }
-            path { "d": "M3.54 8h16.914" }
+            path { "d": "M3 7V5a2 2 0 0 1 2-2h2" }
+            path { "d": "M17 3h2a2 2 0 0 1 2 2v2" }
+            path { "d": "M21 17v2a2 2 0 0 1-2 2h-2" }
+            path { "d": "M7 21H5a2 2 0 0 1-2-2v-2" }
+            rect {
+                "width": "8",
+                "height": "8",
+                "x": "8",
+                "y": "8",
+                "rx": "1",
+            }
         }
     }
 }

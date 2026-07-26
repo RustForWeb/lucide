@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FeatherProps {
+pub struct MicAudioLinesProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FeatherProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Feather(props: &FeatherProps) -> Html {
+pub fn MicAudioLines(props: &MicAudioLinesProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,15 @@ pub fn Feather(props: &FeatherProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z"
-            />
-            <path d="M16 8 2 22" />
-            <path d="M17.488 15H9" />
+            <path d="M10 3v2.341" />
+            <path d="M12 17v4" />
+            <path d="M14 5v.341" />
+            <path d="M18 5v13" />
+            <path d="M2 10v3" />
+            <path d="M22 10v3" />
+            <path d="M6 6v11" />
+            <path d="M9 21h6" />
+            <rect width="4" height="8" x="10" y="9" rx="2" />
         </svg>
     }
 }
