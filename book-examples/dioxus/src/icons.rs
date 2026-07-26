@@ -5153,12 +5153,6 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
-                History {}
-            },
-            "History",
-        ),
-        (
-            rsx! {
                 Hop {}
             },
             "Hop",
@@ -5588,6 +5582,12 @@ pub fn IconsL1() -> Element {
                 LayoutDashboard {}
             },
             "Layout Dashboard",
+        ),
+        (
+            rsx! {
+                LayoutFreeform {}
+            },
+            "Layout Freeform",
         ),
         (
             rsx! {
@@ -6404,9 +6404,21 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MicAudioLines {}
+            },
+            "Mic Audio Lines",
+        ),
+        (
+            rsx! {
                 MicOff {}
             },
             "Mic Off",
+        ),
+        (
+            rsx! {
+                MicSignal {}
+            },
+            "Mic Signal",
         ),
         (
             rsx! {
@@ -6552,18 +6564,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Stop",
         ),
-        (
-            rsx! {
-                MonitorUp {}
-            },
-            "Monitor Up",
-        ),
-        (
-            rsx! {
-                MonitorX {}
-            },
-            "Monitor X",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6581,6 +6581,18 @@ pub fn IconsM2() -> Element {
     let icons = [
         (
             rsx! {
+                MonitorUp {}
+            },
+            "Monitor Up",
+        ),
+        (
+            rsx! {
+                MonitorX {}
+            },
+            "Monitor X",
+        ),
+        (
+            rsx! {
                 Moon {}
             },
             "Moon",
@@ -6590,6 +6602,12 @@ pub fn IconsM2() -> Element {
                 MoonStar {}
             },
             "Moon Star",
+        ),
+        (
+            rsx! {
+                Mosque {}
+            },
+            "Mosque",
         ),
         (
             rsx! {
@@ -7508,12 +7526,6 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
-                Podcast {}
-            },
-            "Podcast",
-        ),
-        (
-            rsx! {
                 Podium {}
             },
             "Podium",
@@ -7566,6 +7578,12 @@ pub fn IconsP1() -> Element {
             },
             "Presentation",
         ),
+        (
+            rsx! {
+                Printer {}
+            },
+            "Printer",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -7581,12 +7599,6 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
-        (
-            rsx! {
-                Printer {}
-            },
-            "Printer",
-        ),
         (
             rsx! {
                 PrinterCheck {}
@@ -7997,6 +8009,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RotateCcwClock {}
+            },
+            "Rotate Ccw Clock",
+        ),
+        (
+            rsx! {
                 RotateCcwKey {}
             },
             "Rotate Ccw Key",
@@ -8012,6 +8030,12 @@ pub fn IconsR1() -> Element {
                 RotateCw {}
             },
             "Rotate Cw",
+        ),
+        (
+            rsx! {
+                RotateCwFadingClock {}
+            },
+            "Rotate Cw Fading Clock",
         ),
         (
             rsx! {
@@ -8237,6 +8261,12 @@ pub fn IconsS1() -> Element {
                 ScanSearch {}
             },
             "Scan Search",
+        ),
+        (
+            rsx! {
+                ScanSquare {}
+            },
+            "Scan Square",
         ),
         (
             rsx! {
@@ -8688,12 +8718,6 @@ pub fn IconsS1() -> Element {
             },
             "Skull",
         ),
-        (
-            rsx! {
-                Slash {}
-            },
-            "Slash",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8709,6 +8733,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Slash {}
+            },
+            "Slash",
+        ),
         (
             rsx! {
                 Slice {}
@@ -9161,6 +9191,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareOff {}
+            },
+            "Square Off",
+        ),
+        (
+            rsx! {
                 SquareParking {}
             },
             "Square Parking",
@@ -9297,18 +9333,6 @@ pub fn IconsS2() -> Element {
             },
             "Square User",
         ),
-        (
-            rsx! {
-                SquareUserRound {}
-            },
-            "Square User Round",
-        ),
-        (
-            rsx! {
-                SquareX {}
-            },
-            "Square X",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9324,6 +9348,18 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareUserRound {}
+            },
+            "Square User Round",
+        ),
+        (
+            rsx! {
+                SquareX {}
+            },
+            "Square X",
+        ),
         (
             rsx! {
                 SquaresExclude {}
@@ -10458,6 +10494,12 @@ pub fn IconsU1() -> Element {
                 UserSearch {}
             },
             "User Search",
+        ),
+        (
+            rsx! {
+                UserShield {}
+            },
+            "User Shield",
         ),
         (
             rsx! {

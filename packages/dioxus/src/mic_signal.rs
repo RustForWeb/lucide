@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BarrelProps {
+pub struct MicSignalProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BarrelProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Barrel(props: BarrelProps) -> Element {
+pub fn MicSignal(props: MicSignalProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,19 @@ pub fn Barrel(props: BarrelProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 3a41 41 0 000 18" }
-            path { "d": "M14 3a41 41 0 010 18" }
-            path { "d": "M16.997 21a2 2 0 001.68-.92 15.25 15.25 0 000-16.16 2 2 0 00-1.68-.92h-10a2 2 0 00-1.681.92 15.25 15.25 0 000 16.16 2 2 0 001.681.92z" }
-            path { "d": "M3.54 16h16.914" }
-            path { "d": "M3.54 8h16.914" }
+            path { "d": "M12 17v4" }
+            path { "d": "M18 11a6 6 0 00-3-5.197" }
+            path { "d": "M2 11a10 10 0 015-8.662" }
+            path { "d": "M22 11a10 10 0 00-5-8.662" }
+            path { "d": "M6 11a6 6 0 013-5.197" }
+            path { "d": "M9 21h6" }
+            rect {
+                "x": "10",
+                "y": "9",
+                "width": "4",
+                "height": "8",
+                "rx": "2",
+            }
         }
     }
 }
