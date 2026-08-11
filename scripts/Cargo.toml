@@ -15,7 +15,7 @@ env_logger = "0.11.5"
 git2 = { version = "0.21.0", features = ["cred", "https"] }
 log.workspace = true
 octocrab = "0.54.0"
-prettyplease = "0.2.25"
+prettyplease = "0.3.0"
 proc-macro2 = "1.0.92"
 quote = "1.0.37"
 regex = "1.11.1"
@@ -23,6 +23,6 @@ roxmltree = "0.21.0"
 semver = "1.0.26"
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
-syn = "2.0.89"
+syn = "3.0.0"
 tempfile = "3.14.0"
 tokio = { version = "1.37.0", features = ["full"] }
