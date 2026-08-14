@@ -34,13 +34,13 @@ pub fn Calendar1(props: Calendar1Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M11 14h1v4" }
-            path { "d": "M16 2v4" }
-            path { "d": "M3 10h18" }
-            path { "d": "M8 2v4" }
+            path { "d": "M11 13h1v4" }
+            path { "d": "M16 2v3" }
+            path { "d": "M3 9h18" }
+            path { "d": "M8 2v3" }
             rect {
                 "x": "3",
-                "y": "4",
+                "y": "3",
                 "width": "18",
                 "height": "18",
                 "rx": "2",
