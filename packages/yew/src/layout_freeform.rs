@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FeatherProps {
+pub struct LayoutFreeformProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FeatherProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Feather(props: &FeatherProps) -> Html {
+pub fn LayoutFreeform(props: &LayoutFreeformProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,9 @@ pub fn Feather(props: &FeatherProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z"
-            />
-            <path d="M16 8 2 22" />
-            <path d="M17.488 15H9" />
+            <rect width="7" height="7" x="3" y="3" rx="1" />
+            <rect width="7" height="7" x="14" y="4" rx="1" />
+            <rect width="7" height="7" x="4" y="14" rx="1" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FeatherProps {
+pub struct UserShieldProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FeatherProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Feather(props: &FeatherProps) -> Html {
+pub fn UserShield(props: &UserShieldProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,11 @@ pub fn Feather(props: &FeatherProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
+            <path d="M10 15H6a4 4 0 0 0-4 4v2" />
             <path
-                d="M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z"
+                d="M22 17.5c0 2.499-1.75 3.749-3.83 4.474a.5.5 0 0 1-.335-.005c-2.085-.72-3.835-1.97-3.835-4.47V14a.5.5 0 0 1 .5-.499c1 0 2.25-.6 3.12-1.36a.6.6 0 0 1 .76-.001c.875.765 2.12 1.36 3.12 1.36a.5.5 0 0 1 .5.5z"
             />
-            <path d="M16 8 2 22" />
-            <path d="M17.488 15H9" />
+            <circle cx="9" cy="7" r="4" />
         </svg>
     }
 }

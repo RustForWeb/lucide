@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn ZapOff(
+pub fn Mosque(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,12 @@ pub fn ZapOff(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10.768 5.111 13.44 2.44a1.5 1.5 0 012.474 1.561l-1.633 4.625" />
-            <path d="m18.889 13.232.672-.672A1.5 1.5 0 0018.5 10h-2.844" />
-            <path d="m2 2 20 20" />
-            <path d="m7.94 7.94-3.5 3.499A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l5.5-5.5" />
+            <path d="M12.268 2a2 2 0 003.465 2" />
+            <path d="M14 5 L14 8" />
+            <path d="M16 22v-3a2 2 0 00-4 0v3" />
+            <path d="M21 13c-.662-1.497-1.666-2.753-2.9-3.63C16.825 8.47 15.422 8 14 8s-2.826.47-4.1 1.37C8.668 10.248 7.663 11.504 7 13z" />
+            <path d="M3 9h4" />
+            <path d="M7 22V6a5 5 0 00-2-4 5 5 0 00-2 4v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
         </svg>
     }
 }

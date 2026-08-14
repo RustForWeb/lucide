@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FeatherProps {
+pub struct MicSignalProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FeatherProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Feather(props: &FeatherProps) -> Html {
+pub fn MicSignal(props: &MicSignalProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,13 @@ pub fn Feather(props: &FeatherProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z"
-            />
-            <path d="M16 8 2 22" />
-            <path d="M17.488 15H9" />
+            <path d="M12 17v4" />
+            <path d="M18 11a6 6 0 00-3-5.197" />
+            <path d="M2 11a10 10 0 015-8.662" />
+            <path d="M22 11a10 10 0 00-5-8.662" />
+            <path d="M6 11a6 6 0 013-5.197" />
+            <path d="M9 21h6" />
+            <rect x="10" y="9" width="4" height="8" rx="2" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct BarrelProps {
+pub struct MosqueProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct BarrelProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn Barrel(props: BarrelProps) -> Element {
+pub fn Mosque(props: MosqueProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,11 +34,12 @@ pub fn Barrel(props: BarrelProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 3a41 41 0 000 18" }
-            path { "d": "M14 3a41 41 0 010 18" }
-            path { "d": "M16.997 21a2 2 0 001.68-.92 15.25 15.25 0 000-16.16 2 2 0 00-1.68-.92h-10a2 2 0 00-1.681.92 15.25 15.25 0 000 16.16 2 2 0 001.681.92z" }
-            path { "d": "M3.54 16h16.914" }
-            path { "d": "M3.54 8h16.914" }
+            path { "d": "M12.268 2a2 2 0 003.465 2" }
+            path { "d": "M14 5 L14 8" }
+            path { "d": "M16 22v-3a2 2 0 00-4 0v3" }
+            path { "d": "M21 13c-.662-1.497-1.666-2.753-2.9-3.63C16.825 8.47 15.422 8 14 8s-2.826.47-4.1 1.37C8.668 10.248 7.663 11.504 7 13z" }
+            path { "d": "M3 9h4" }
+            path { "d": "M7 22V6a5 5 0 00-2-4 5 5 0 00-2 4v14a2 2 0 002 2h14a2 2 0 002-2v-7" }
         }
     }
 }
