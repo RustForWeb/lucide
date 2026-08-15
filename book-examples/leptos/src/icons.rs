@@ -131,6 +131,7 @@ pub fn IconsA1() -> impl IntoView {
                 (view! { <Ampersands /> }.into_any(), "Ampersands"),
                 (view! { <Amphora /> }.into_any(), "Amphora"),
                 (view! { <Anchor /> }.into_any(), "Anchor"),
+                (view! { <Angle /> }.into_any(), "Angle"),
                 (view! { <Antenna /> }.into_any(), "Antenna"),
                 (view! { <Anvil /> }.into_any(), "Anvil"),
                 (view! { <Aperture /> }.into_any(), "Aperture"),
@@ -188,7 +189,6 @@ pub fn IconsA1() -> impl IntoView {
                 (view! { <Astroid /> }.into_any(), "Astroid"),
                 (view! { <AtSign /> }.into_any(), "At Sign"),
                 (view! { <Atom /> }.into_any(), "Atom"),
-                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -206,6 +206,7 @@ pub fn IconsA2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
                 (view! { <AudioLinesX /> }.into_any(), "Audio Lines X"),
                 (view! { <AudioWaveform /> }.into_any(), "Audio Waveform"),
                 (view! { <Award /> }.into_any(), "Award"),
@@ -812,6 +813,7 @@ pub fn IconsE1() -> impl IntoView {
                 (view! { <Egg /> }.into_any(), "Egg"),
                 (view! { <EggFried /> }.into_any(), "Egg Fried"),
                 (view! { <EggOff /> }.into_any(), "Egg Off"),
+                (view! { <Eject /> }.into_any(), "Eject"),
                 (view! { <Ellipse /> }.into_any(), "Ellipse"),
                 (view! { <Ellipsis /> }.into_any(), "Ellipsis"),
                 (view! { <EllipsisVertical /> }.into_any(), "Ellipsis Vertical"),
@@ -1349,6 +1351,7 @@ pub fn IconsM1() -> impl IntoView {
             each=move || [
                 (view! { <Magnet /> }.into_any(), "Magnet"),
                 (view! { <Mail /> }.into_any(), "Mail"),
+                (view! { <MailBadge /> }.into_any(), "Mail Badge"),
                 (view! { <MailCheck /> }.into_any(), "Mail Check"),
                 (view! { <MailMinus /> }.into_any(), "Mail Minus"),
                 (view! { <MailOpen /> }.into_any(), "Mail Open"),
@@ -1449,7 +1452,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
-                (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1467,6 +1469,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
                 (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),

@@ -100,6 +100,8 @@ mod ampersands;
 mod amphora;
 #[cfg(any(feature = "transportation", feature = "text"))]
 mod anchor;
+#[cfg(any(feature = "math", feature = "design"))]
+mod angle;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
 mod antenna;
 #[cfg(any(feature = "buildings", feature = "tools", feature = "gaming"))]
@@ -1349,6 +1351,8 @@ mod egg;
 mod egg_fried;
 #[cfg(feature = "food-beverage")]
 mod egg_off;
+#[cfg(any(feature = "devices", feature = "files", feature = "multimedia"))]
+mod eject;
 #[cfg(feature = "shapes")]
 mod ellipse;
 #[cfg(any(feature = "layout", feature = "development"))]
@@ -2322,6 +2326,8 @@ mod luggage;
 mod magnet;
 #[cfg(any(feature = "text", feature = "account", feature = "mail"))]
 mod mail;
+#[cfg(any(feature = "mail", feature = "communication", feature = "security"))]
+mod mail_badge;
 #[cfg(feature = "mail")]
 mod mail_check;
 #[cfg(feature = "mail")]
@@ -4601,6 +4607,8 @@ pub use ampersands::*;
 pub use amphora::*;
 #[cfg(any(feature = "transportation", feature = "text"))]
 pub use anchor::*;
+#[cfg(any(feature = "math", feature = "design"))]
+pub use angle::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
 pub use antenna::*;
 #[cfg(any(feature = "buildings", feature = "tools", feature = "gaming"))]
@@ -5850,6 +5858,8 @@ pub use egg::*;
 pub use egg_fried::*;
 #[cfg(feature = "food-beverage")]
 pub use egg_off::*;
+#[cfg(any(feature = "devices", feature = "files", feature = "multimedia"))]
+pub use eject::*;
 #[cfg(feature = "shapes")]
 pub use ellipse::*;
 #[cfg(any(feature = "layout", feature = "development"))]
@@ -6823,6 +6833,8 @@ pub use luggage::*;
 pub use magnet::*;
 #[cfg(any(feature = "text", feature = "account", feature = "mail"))]
 pub use mail::*;
+#[cfg(any(feature = "mail", feature = "communication", feature = "security"))]
+pub use mail_badge::*;
 #[cfg(feature = "mail")]
 pub use mail_check::*;
 #[cfg(feature = "mail")]

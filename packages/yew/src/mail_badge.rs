@@ -1,0 +1,52 @@
+use yew::prelude::*;
+#[derive(PartialEq, Properties)]
+pub struct MailBadgeProps {
+    #[prop_or(24)]
+    pub size: usize,
+    #[prop_or(AttrValue::from("currentColor"))]
+    pub color: AttrValue,
+    #[prop_or(AttrValue::from("none"))]
+    pub fill: AttrValue,
+    #[prop_or(2)]
+    pub stroke_width: usize,
+    #[prop_or(false)]
+    pub absolute_stroke_width: bool,
+    #[prop_or_default]
+    pub class: Classes,
+    #[prop_or_default]
+    pub style: std::option::Option<AttrValue>,
+    #[prop_or_default]
+    pub node_ref: NodeRef,
+}
+#[component]
+pub fn MailBadge(props: &MailBadgeProps) -> Html {
+    let stroke_width = if props.absolute_stroke_width {
+        props.stroke_width * 24 / props.size
+    } else {
+        props.stroke_width
+    };
+    html! {
+        <svg
+            ref={props.node_ref.clone()}
+            class={classes!("lucide", props.class
+        .clone())}
+            style={props.style.clone()}
+            xmlns="http://www.w3.org/2000/svg"
+            width={props.size.to_string()}
+            height={props.size.to_string()}
+            viewBox="0 0 24 24"
+            fill={& props.fill}
+            stroke={& props.color}
+            stroke-width={stroke_width.to_string()}
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M22 7.7V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8.25" />
+            <path d="M12 12.996a1.94 1.94 0 0 1-1.03-.296L2 7" />
+            <path
+                d="m20.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.879.001l-1.846.85a.5.5 0 0 1-.692-.593l1.29-4.88"
+            />
+            <circle cx="19" cy="14" r="3" />
+        </svg>
+    }
+}

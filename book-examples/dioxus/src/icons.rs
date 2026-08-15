@@ -299,6 +299,12 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
+                Angle {}
+            },
+            "Angle",
+        ),
+        (
+            rsx! {
                 Antenna {}
             },
             "Antenna",
@@ -639,12 +645,6 @@ pub fn IconsA1() -> Element {
             },
             "Atom",
         ),
-        (
-            rsx! {
-                AudioLines {}
-            },
-            "Audio Lines",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -660,6 +660,12 @@ pub fn IconsA1() -> Element {
 #[component]
 pub fn IconsA2() -> Element {
     let icons = [
+        (
+            rsx! {
+                AudioLines {}
+            },
+            "Audio Lines",
+        ),
         (
             rsx! {
                 AudioLinesX {}
@@ -3635,6 +3641,12 @@ pub fn IconsE1() -> Element {
         ),
         (
             rsx! {
+                Eject {}
+            },
+            "Eject",
+        ),
+        (
+            rsx! {
                 Ellipse {}
             },
             "Ellipse",
@@ -6038,6 +6050,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MailBadge {}
+            },
+            "Mail Badge",
+        ),
+        (
+            rsx! {
                 MailCheck {}
             },
             "Mail Check",
@@ -6618,12 +6636,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Stop",
         ),
-        (
-            rsx! {
-                MonitorUp {}
-            },
-            "Monitor Up",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6639,6 +6651,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorUp {}
+            },
+            "Monitor Up",
+        ),
         (
             rsx! {
                 MonitorX {}
