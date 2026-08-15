@@ -299,18 +299,6 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
-                Angry {}
-            },
-            "Angry",
-        ),
-        (
-            rsx! {
-                Annoyed {}
-            },
-            "Annoyed",
-        ),
-        (
-            rsx! {
                 Antenna {}
             },
             "Antenna",
@@ -645,6 +633,18 @@ pub fn IconsA1() -> Element {
             },
             "At Sign",
         ),
+        (
+            rsx! {
+                Atom {}
+            },
+            "Atom",
+        ),
+        (
+            rsx! {
+                AudioLines {}
+            },
+            "Audio Lines",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -662,15 +662,9 @@ pub fn IconsA2() -> Element {
     let icons = [
         (
             rsx! {
-                Atom {}
+                AudioLinesX {}
             },
-            "Atom",
-        ),
-        (
-            rsx! {
-                AudioLines {}
-            },
-            "Audio Lines",
+            "Audio Lines X",
         ),
         (
             rsx! {
@@ -1553,6 +1547,18 @@ pub fn IconsB2() -> Element {
                 Broccoli {}
             },
             "Broccoli",
+        ),
+        (
+            rsx! {
+                Broom {}
+            },
+            "Broom",
+        ),
+        (
+            rsx! {
+                BroomSparkles {}
+            },
+            "Broom Sparkles",
         ),
         (
             rsx! {
@@ -3740,6 +3746,48 @@ pub fn IconsF1() -> Element {
     let icons = [
         (
             rsx! {
+                FaceAngry {}
+            },
+            "Face Angry",
+        ),
+        (
+            rsx! {
+                FaceExpressionless {}
+            },
+            "Face Expressionless",
+        ),
+        (
+            rsx! {
+                FaceGrinning {}
+            },
+            "Face Grinning",
+        ),
+        (
+            rsx! {
+                FaceNeutral {}
+            },
+            "Face Neutral",
+        ),
+        (
+            rsx! {
+                FaceSlightlyFrowning {}
+            },
+            "Face Slightly Frowning",
+        ),
+        (
+            rsx! {
+                FaceSlightlySmiling {}
+            },
+            "Face Slightly Smiling",
+        ),
+        (
+            rsx! {
+                FaceSlightlySmilingPlus {}
+            },
+            "Face Slightly Smiling Plus",
+        ),
+        (
+            rsx! {
                 Factory {}
             },
             "Factory",
@@ -4296,6 +4344,21 @@ pub fn IconsF1() -> Element {
             },
             "Folder Clock",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsF2() -> Element {
+    let icons = [
         (
             rsx! {
                 FolderClosed {}
@@ -4338,21 +4401,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Git 2",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsF2() -> Element {
-    let icons = [
         (
             rsx! {
                 FolderHeart {}
@@ -4502,12 +4550,6 @@ pub fn IconsF2() -> Element {
                 Frame {}
             },
             "Frame",
-        ),
-        (
-            rsx! {
-                Frown {}
-            },
-            "Frown",
         ),
         (
             rsx! {
@@ -5549,12 +5591,6 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
-                Laugh {}
-            },
-            "Laugh",
-        ),
-        (
-            rsx! {
                 LayerArrowDown {}
             },
             "Layer Arrow Down",
@@ -6212,12 +6248,6 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
-                Meh {}
-            },
-            "Meh",
-        ),
-        (
-            rsx! {
                 MemoryStick {}
             },
             "Memory Stick",
@@ -6588,6 +6618,12 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Stop",
         ),
+        (
+            rsx! {
+                MonitorUp {}
+            },
+            "Monitor Up",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6603,12 +6639,6 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
-        (
-            rsx! {
-                MonitorUp {}
-            },
-            "Monitor Up",
-        ),
         (
             rsx! {
                 MonitorX {}
@@ -8552,6 +8582,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShieldLock {}
+            },
+            "Shield Lock",
+        ),
+        (
+            rsx! {
                 ShieldMinus {}
             },
             "Shield Minus",
@@ -8736,12 +8772,6 @@ pub fn IconsS1() -> Element {
             },
             "Skip Forward",
         ),
-        (
-            rsx! {
-                Skull {}
-            },
-            "Skull",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8757,6 +8787,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Skull {}
+            },
+            "Skull",
+        ),
         (
             rsx! {
                 Slash {}
@@ -8798,18 +8834,6 @@ pub fn IconsS2() -> Element {
                 SmartphoneNfc {}
             },
             "Smartphone Nfc",
-        ),
-        (
-            rsx! {
-                Smile {}
-            },
-            "Smile",
-        ),
-        (
-            rsx! {
-                SmilePlus {}
-            },
-            "Smile Plus",
         ),
         (
             rsx! {
@@ -9357,6 +9381,12 @@ pub fn IconsS2() -> Element {
             },
             "Square User",
         ),
+        (
+            rsx! {
+                SquareUserRound {}
+            },
+            "Square User Round",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9372,12 +9402,6 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
-        (
-            rsx! {
-                SquareUserRound {}
-            },
-            "Square User Round",
-        ),
         (
             rsx! {
                 SquareX {}

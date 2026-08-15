@@ -98,10 +98,6 @@ mod ampersands;
 mod amphora;
 #[cfg(any(feature = "transportation", feature = "text"))]
 mod anchor;
-#[cfg(feature = "emoji")]
-mod angry;
-#[cfg(feature = "emoji")]
-mod annoyed;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
 mod antenna;
 #[cfg(any(feature = "buildings", feature = "tools", feature = "gaming"))]
@@ -238,6 +234,8 @@ mod at_sign;
 mod atom;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_lines;
+#[cfg(any(feature = "multimedia", feature = "communication"))]
+mod audio_lines_x;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_waveform;
 #[cfg(any(feature = "account", feature = "sports", feature = "gaming"))]
@@ -562,6 +560,10 @@ mod briefcase_medical;
 mod bring_to_front;
 #[cfg(feature = "food-beverage")]
 mod broccoli;
+#[cfg(any(feature = "tools", feature = "home", feature = "gaming"))]
+mod broom;
+#[cfg(any(feature = "tools", feature = "home", feature = "gaming"))]
+mod broom_sparkles;
 #[cfg(any(feature = "text", feature = "design", feature = "tools"))]
 mod brush;
 #[cfg(any(feature = "home", feature = "tools", feature = "design"))]
@@ -1402,6 +1404,25 @@ mod eye_dashed;
     feature = "security"
 ))]
 mod eye_off;
+#[cfg(feature = "emoji")]
+mod face_angry;
+#[cfg(feature = "emoji")]
+mod face_expressionless;
+#[cfg(feature = "emoji")]
+mod face_grinning;
+#[cfg(feature = "emoji")]
+mod face_neutral;
+#[cfg(any(feature = "emoji", feature = "account"))]
+mod face_slightly_frowning;
+#[cfg(any(feature = "emoji", feature = "account"))]
+mod face_slightly_smiling;
+#[cfg(any(
+    feature = "emoji",
+    feature = "social",
+    feature = "notifications",
+    feature = "communication"
+))]
+mod face_slightly_smiling_plus;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 mod factory;
 #[cfg(feature = "home")]
@@ -1667,8 +1688,6 @@ mod form;
 mod forward;
 #[cfg(any(feature = "design", feature = "photography"))]
 mod frame;
-#[cfg(any(feature = "emoji", feature = "account"))]
-mod frown;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 mod fuel;
 #[cfg(any(
@@ -2131,8 +2150,6 @@ mod laptop_minimal_check;
 mod lasso;
 #[cfg(any(feature = "arrows", feature = "design", feature = "cursors"))]
 mod lasso_select;
-#[cfg(feature = "emoji")]
-mod laugh;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layer_arrow_down;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -2378,8 +2395,6 @@ mod medal;
 mod megaphone;
 #[cfg(any(feature = "multimedia", feature = "notifications"))]
 mod megaphone_off;
-#[cfg(feature = "emoji")]
-mod meh;
 #[cfg(any(feature = "devices", feature = "gaming"))]
 mod memory_stick;
 #[cfg(any(feature = "layout", feature = "account"))]
@@ -3390,6 +3405,8 @@ mod shield_half;
     feature = "files"
 ))]
 mod shield_keyhole;
+#[cfg(feature = "security")]
+mod shield_lock;
 #[cfg(any(
     feature = "account",
     feature = "security",
@@ -3504,15 +3521,6 @@ mod smartphone;
 mod smartphone_charging;
 #[cfg(any(feature = "communication", feature = "finance", feature = "devices"))]
 mod smartphone_nfc;
-#[cfg(any(feature = "emoji", feature = "account"))]
-mod smile;
-#[cfg(any(
-    feature = "emoji",
-    feature = "social",
-    feature = "notifications",
-    feature = "communication"
-))]
-mod smile_plus;
 #[cfg(any(feature = "animals", feature = "food-beverage"))]
 mod snail;
 #[cfg(any(feature = "weather", feature = "seasons"))]
@@ -4591,10 +4599,6 @@ pub use ampersands::*;
 pub use amphora::*;
 #[cfg(any(feature = "transportation", feature = "text"))]
 pub use anchor::*;
-#[cfg(feature = "emoji")]
-pub use angry::*;
-#[cfg(feature = "emoji")]
-pub use annoyed::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "communication"))]
 pub use antenna::*;
 #[cfg(any(feature = "buildings", feature = "tools", feature = "gaming"))]
@@ -4731,6 +4735,8 @@ pub use at_sign::*;
 pub use atom::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 pub use audio_lines::*;
+#[cfg(any(feature = "multimedia", feature = "communication"))]
+pub use audio_lines_x::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 pub use audio_waveform::*;
 #[cfg(any(feature = "account", feature = "sports", feature = "gaming"))]
@@ -5055,6 +5061,10 @@ pub use briefcase_medical::*;
 pub use bring_to_front::*;
 #[cfg(feature = "food-beverage")]
 pub use broccoli::*;
+#[cfg(any(feature = "tools", feature = "home", feature = "gaming"))]
+pub use broom::*;
+#[cfg(any(feature = "tools", feature = "home", feature = "gaming"))]
+pub use broom_sparkles::*;
 #[cfg(any(feature = "text", feature = "design", feature = "tools"))]
 pub use brush::*;
 #[cfg(any(feature = "home", feature = "tools", feature = "design"))]
@@ -5895,6 +5905,25 @@ pub use eye_dashed::*;
     feature = "security"
 ))]
 pub use eye_off::*;
+#[cfg(feature = "emoji")]
+pub use face_angry::*;
+#[cfg(feature = "emoji")]
+pub use face_expressionless::*;
+#[cfg(feature = "emoji")]
+pub use face_grinning::*;
+#[cfg(feature = "emoji")]
+pub use face_neutral::*;
+#[cfg(any(feature = "emoji", feature = "account"))]
+pub use face_slightly_frowning::*;
+#[cfg(any(feature = "emoji", feature = "account"))]
+pub use face_slightly_smiling::*;
+#[cfg(any(
+    feature = "emoji",
+    feature = "social",
+    feature = "notifications",
+    feature = "communication"
+))]
+pub use face_slightly_smiling_plus::*;
 #[cfg(any(feature = "buildings", feature = "navigation"))]
 pub use factory::*;
 #[cfg(feature = "home")]
@@ -6160,8 +6189,6 @@ pub use form::*;
 pub use forward::*;
 #[cfg(any(feature = "design", feature = "photography"))]
 pub use frame::*;
-#[cfg(any(feature = "emoji", feature = "account"))]
-pub use frown::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 pub use fuel::*;
 #[cfg(any(
@@ -6624,8 +6651,6 @@ pub use laptop_minimal_check::*;
 pub use lasso::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "cursors"))]
 pub use lasso_select::*;
-#[cfg(feature = "emoji")]
-pub use laugh::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layer_arrow_down::*;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -6871,8 +6896,6 @@ pub use medal::*;
 pub use megaphone::*;
 #[cfg(any(feature = "multimedia", feature = "notifications"))]
 pub use megaphone_off::*;
-#[cfg(feature = "emoji")]
-pub use meh::*;
 #[cfg(any(feature = "devices", feature = "gaming"))]
 pub use memory_stick::*;
 #[cfg(any(feature = "layout", feature = "account"))]
@@ -7883,6 +7906,8 @@ pub use shield_half::*;
     feature = "files"
 ))]
 pub use shield_keyhole::*;
+#[cfg(feature = "security")]
+pub use shield_lock::*;
 #[cfg(any(
     feature = "account",
     feature = "security",
@@ -7997,15 +8022,6 @@ pub use smartphone::*;
 pub use smartphone_charging::*;
 #[cfg(any(feature = "communication", feature = "finance", feature = "devices"))]
 pub use smartphone_nfc::*;
-#[cfg(any(feature = "emoji", feature = "account"))]
-pub use smile::*;
-#[cfg(any(
-    feature = "emoji",
-    feature = "social",
-    feature = "notifications",
-    feature = "communication"
-))]
-pub use smile_plus::*;
 #[cfg(any(feature = "animals", feature = "food-beverage"))]
 pub use snail::*;
 #[cfg(any(feature = "weather", feature = "seasons"))]

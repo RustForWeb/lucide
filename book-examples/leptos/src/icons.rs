@@ -131,8 +131,6 @@ pub fn IconsA1() -> impl IntoView {
                 (view! { <Ampersands /> }.into_any(), "Ampersands"),
                 (view! { <Amphora /> }.into_any(), "Amphora"),
                 (view! { <Anchor /> }.into_any(), "Anchor"),
-                (view! { <Angry /> }.into_any(), "Angry"),
-                (view! { <Annoyed /> }.into_any(), "Annoyed"),
                 (view! { <Antenna /> }.into_any(), "Antenna"),
                 (view! { <Anvil /> }.into_any(), "Anvil"),
                 (view! { <Aperture /> }.into_any(), "Aperture"),
@@ -189,6 +187,8 @@ pub fn IconsA1() -> impl IntoView {
                 (view! { <Asterisk /> }.into_any(), "Asterisk"),
                 (view! { <Astroid /> }.into_any(), "Astroid"),
                 (view! { <AtSign /> }.into_any(), "At Sign"),
+                (view! { <Atom /> }.into_any(), "Atom"),
+                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -206,8 +206,7 @@ pub fn IconsA2() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <Atom /> }.into_any(), "Atom"),
-                (view! { <AudioLines /> }.into_any(), "Audio Lines"),
+                (view! { <AudioLinesX /> }.into_any(), "Audio Lines X"),
                 (view! { <AudioWaveform /> }.into_any(), "Audio Waveform"),
                 (view! { <Award /> }.into_any(), "Award"),
                 (view! { <Axe /> }.into_any(), "Axe"),
@@ -384,6 +383,8 @@ pub fn IconsB2() -> impl IntoView {
                 (view! { <BriefcaseMedical /> }.into_any(), "Briefcase Medical"),
                 (view! { <BringToFront /> }.into_any(), "Bring To Front"),
                 (view! { <Broccoli /> }.into_any(), "Broccoli"),
+                (view! { <Broom /> }.into_any(), "Broom"),
+                (view! { <BroomSparkles /> }.into_any(), "Broom Sparkles"),
                 (view! { <Brush /> }.into_any(), "Brush"),
                 (view! { <BrushCleaning /> }.into_any(), "Brush Cleaning"),
                 (view! { <Bubbles /> }.into_any(), "Bubbles"),
@@ -844,6 +845,13 @@ pub fn IconsF1() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FaceAngry /> }.into_any(), "Face Angry"),
+                (view! { <FaceExpressionless /> }.into_any(), "Face Expressionless"),
+                (view! { <FaceGrinning /> }.into_any(), "Face Grinning"),
+                (view! { <FaceNeutral /> }.into_any(), "Face Neutral"),
+                (view! { <FaceSlightlyFrowning /> }.into_any(), "Face Slightly Frowning"),
+                (view! { <FaceSlightlySmiling /> }.into_any(), "Face Slightly Smiling"),
+                (view! { <FaceSlightlySmilingPlus /> }.into_any(), "Face Slightly Smiling Plus"),
                 (view! { <Factory /> }.into_any(), "Factory"),
                 (view! { <Fan /> }.into_any(), "Fan"),
                 (view! { <FastForward /> }.into_any(), "Fast Forward"),
@@ -940,13 +948,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderBookmark /> }.into_any(), "Folder Bookmark"),
                 (view! { <FolderCheck /> }.into_any(), "Folder Check"),
                 (view! { <FolderClock /> }.into_any(), "Folder Clock"),
-                (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
-                (view! { <FolderCode /> }.into_any(), "Folder Code"),
-                (view! { <FolderCog /> }.into_any(), "Folder Cog"),
-                (view! { <FolderDot /> }.into_any(), "Folder Dot"),
-                (view! { <FolderDown /> }.into_any(), "Folder Down"),
-                (view! { <FolderGit /> }.into_any(), "Folder Git"),
-                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -964,6 +965,13 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
+                (view! { <FolderCode /> }.into_any(), "Folder Code"),
+                (view! { <FolderCog /> }.into_any(), "Folder Cog"),
+                (view! { <FolderDot /> }.into_any(), "Folder Dot"),
+                (view! { <FolderDown /> }.into_any(), "Folder Down"),
+                (view! { <FolderGit /> }.into_any(), "Folder Git"),
+                (view! { <FolderGit2 /> }.into_any(), "Folder Git 2"),
                 (view! { <FolderHeart /> }.into_any(), "Folder Heart"),
                 (view! { <FolderInput /> }.into_any(), "Folder Input"),
                 (view! { <FolderKanban /> }.into_any(), "Folder Kanban"),
@@ -989,7 +997,6 @@ pub fn IconsF2() -> impl IntoView {
                 (view! { <Form /> }.into_any(), "Form"),
                 (view! { <Forward /> }.into_any(), "Forward"),
                 (view! { <Frame /> }.into_any(), "Frame"),
-                (view! { <Frown /> }.into_any(), "Frown"),
                 (view! { <Fuel /> }.into_any(), "Fuel"),
                 (view! { <Fullscreen /> }.into_any(), "Fullscreen"),
                 (view! { <Funnel /> }.into_any(), "Funnel"),
@@ -1253,7 +1260,6 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <LaptopMinimalCheck /> }.into_any(), "Laptop Minimal Check"),
                 (view! { <Lasso /> }.into_any(), "Lasso"),
                 (view! { <LassoSelect /> }.into_any(), "Lasso Select"),
-                (view! { <Laugh /> }.into_any(), "Laugh"),
                 (view! { <LayerArrowDown /> }.into_any(), "Layer Arrow Down"),
                 (view! { <LayerArrowUp /> }.into_any(), "Layer Arrow Up"),
                 (view! { <Layers /> }.into_any(), "Layers"),
@@ -1378,7 +1384,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Medal /> }.into_any(), "Medal"),
                 (view! { <Megaphone /> }.into_any(), "Megaphone"),
                 (view! { <MegaphoneOff /> }.into_any(), "Megaphone Off"),
-                (view! { <Meh /> }.into_any(), "Meh"),
                 (view! { <MemoryStick /> }.into_any(), "Memory Stick"),
                 (view! { <Menu /> }.into_any(), "Menu"),
                 (view! { <Merge /> }.into_any(), "Merge"),
@@ -1444,6 +1449,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
+                (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1461,7 +1467,6 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
                 (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
@@ -1887,6 +1892,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ShieldEllipsis /> }.into_any(), "Shield Ellipsis"),
                 (view! { <ShieldHalf /> }.into_any(), "Shield Half"),
                 (view! { <ShieldKeyhole /> }.into_any(), "Shield Keyhole"),
+                (view! { <ShieldLock /> }.into_any(), "Shield Lock"),
                 (view! { <ShieldMinus /> }.into_any(), "Shield Minus"),
                 (view! { <ShieldOff /> }.into_any(), "Shield Off"),
                 (view! { <ShieldPlus /> }.into_any(), "Shield Plus"),
@@ -1918,7 +1924,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Siren /> }.into_any(), "Siren"),
                 (view! { <SkipBack /> }.into_any(), "Skip Back"),
                 (view! { <SkipForward /> }.into_any(), "Skip Forward"),
-                (view! { <Skull /> }.into_any(), "Skull"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1936,6 +1941,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Skull /> }.into_any(), "Skull"),
                 (view! { <Slash /> }.into_any(), "Slash"),
                 (view! { <Slice /> }.into_any(), "Slice"),
                 (view! { <SlidersHorizontal /> }.into_any(), "Sliders Horizontal"),
@@ -1943,8 +1949,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <Smartphone /> }.into_any(), "Smartphone"),
                 (view! { <SmartphoneCharging /> }.into_any(), "Smartphone Charging"),
                 (view! { <SmartphoneNfc /> }.into_any(), "Smartphone Nfc"),
-                (view! { <Smile /> }.into_any(), "Smile"),
-                (view! { <SmilePlus /> }.into_any(), "Smile Plus"),
                 (view! { <Snail /> }.into_any(), "Snail"),
                 (view! { <Snowflake /> }.into_any(), "Snowflake"),
                 (view! { <SoapDispenserDroplet /> }.into_any(), "Soap Dispenser Droplet"),
@@ -2045,6 +2049,7 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareStop /> }.into_any(), "Square Stop"),
                 (view! { <SquareTerminal /> }.into_any(), "Square Terminal"),
                 (view! { <SquareUser /> }.into_any(), "Square User"),
+                (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2062,7 +2067,6 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
                 (view! { <SquareX /> }.into_any(), "Square X"),
                 (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
                 (view! { <SquaresIntersect /> }.into_any(), "Squares Intersect"),
