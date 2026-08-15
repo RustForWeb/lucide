@@ -128,6 +128,7 @@ pub fn IconsA() -> Html {
         (html! { <Ampersands /> }, "Ampersands"),
         (html! { <Amphora /> }, "Amphora"),
         (html! { <Anchor /> }, "Anchor"),
+        (html! { <Angle /> }, "Angle"),
         (html! { <Antenna /> }, "Antenna"),
         (html! { <Anvil /> }, "Anvil"),
         (html! { <Aperture /> }, "Aperture"),
@@ -761,6 +762,7 @@ pub fn IconsE() -> Html {
         (html! { <Egg /> }, "Egg"),
         (html! { <EggFried /> }, "Egg Fried"),
         (html! { <EggOff /> }, "Egg Off"),
+        (html! { <Eject /> }, "Eject"),
         (html! { <Ellipse /> }, "Ellipse"),
         (html! { <Ellipsis /> }, "Ellipsis"),
         (html! { <EllipsisVertical /> }, "Ellipsis Vertical"),
@@ -1285,6 +1287,7 @@ pub fn IconsM() -> Html {
     let icons = [
         (html! { <Magnet /> }, "Magnet"),
         (html! { <Mail /> }, "Mail"),
+        (html! { <MailBadge /> }, "Mail Badge"),
         (html! { <MailCheck /> }, "Mail Check"),
         (html! { <MailMinus /> }, "Mail Minus"),
         (html! { <MailOpen /> }, "Mail Open"),
