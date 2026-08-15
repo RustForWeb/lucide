@@ -2136,9 +2136,17 @@ mod lasso_select;
 #[cfg(feature = "emoji")]
 mod laugh;
 #[cfg(any(feature = "design", feature = "layout"))]
+mod layer_arrow_down;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layer_arrow_up;
+#[cfg(any(feature = "design", feature = "layout"))]
 mod layers;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_2;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layers_arrow_down;
+#[cfg(any(feature = "design", feature = "layout", feature = "arrows"))]
+mod layers_arrow_up;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_minus;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -6621,9 +6629,17 @@ pub use lasso_select::*;
 #[cfg(feature = "emoji")]
 pub use laugh::*;
 #[cfg(any(feature = "design", feature = "layout"))]
+pub use layer_arrow_down::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layer_arrow_up::*;
+#[cfg(any(feature = "design", feature = "layout"))]
 pub use layers::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_2::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layers_arrow_down::*;
+#[cfg(any(feature = "design", feature = "layout", feature = "arrows"))]
+pub use layers_arrow_up::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_minus::*;
 #[cfg(any(feature = "design", feature = "layout"))]

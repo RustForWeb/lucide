@@ -5555,6 +5555,18 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LayerArrowDown {}
+            },
+            "Layer Arrow Down",
+        ),
+        (
+            rsx! {
+                LayerArrowUp {}
+            },
+            "Layer Arrow Up",
+        ),
+        (
+            rsx! {
                 Layers {}
             },
             "Layers",
@@ -5564,6 +5576,18 @@ pub fn IconsL1() -> Element {
                 Layers2 {}
             },
             "Layers 2",
+        ),
+        (
+            rsx! {
+                LayersArrowDown {}
+            },
+            "Layers Arrow Down",
+        ),
+        (
+            rsx! {
+                LayersArrowUp {}
+            },
+            "Layers Arrow Up",
         ),
         (
             rsx! {
