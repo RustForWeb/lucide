@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1767usize] = [
+pub static ICON_NAMES: [&str; 1769usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -299,6 +299,7 @@ pub static ICON_NAMES: [&str; 1767usize] = [
     "captions",
     "captions-off",
     "car",
+    "car-battery",
     "car-front",
     "car-taxi-front",
     "caravan",
@@ -1499,6 +1500,7 @@ pub static ICON_NAMES: [&str; 1767usize] = [
     "square-star",
     "square-stop",
     "square-terminal",
+    "square-text",
     "square-user",
     "square-user-round",
     "square-x",
