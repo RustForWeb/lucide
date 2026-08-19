@@ -239,6 +239,8 @@ mod atom;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_lines;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
+mod audio_lines_off;
+#[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_lines_x;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_waveform;
@@ -2253,6 +2255,8 @@ mod list_checks;
 mod list_chevrons_down_up;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod list_chevrons_up_down;
+#[cfg(any(feature = "text", feature = "time", feature = "notifications"))]
+mod list_clock;
 #[cfg(feature = "text")]
 mod list_collapse;
 #[cfg(any(feature = "multimedia", feature = "text"))]
@@ -2504,6 +2508,8 @@ mod microchip;
 mod microscope;
 #[cfg(any(feature = "food-beverage", feature = "home"))]
 mod microwave;
+#[cfg(any(feature = "multimedia", feature = "connectivity", feature = "devices"))]
+mod midi_port;
 #[cfg(any(
     feature = "arrows",
     feature = "navigation",
@@ -2562,6 +2568,10 @@ mod monitor_x;
 mod moon;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 mod moon_star;
+#[cfg(any(feature = "home", feature = "tools"))]
+mod mop;
+#[cfg(any(feature = "home", feature = "tools", feature = "design"))]
+mod mop_sparkles;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 mod mosque;
 #[cfg(feature = "transportation")]
@@ -3701,6 +3711,8 @@ mod square_dashed_mouse_pointer;
 mod square_dashed_text;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 mod square_dashed_top_solid;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod square_dimensions;
 #[cfg(feature = "math")]
 mod square_divide;
 #[cfg(feature = "development")]
@@ -4198,6 +4210,13 @@ mod unplug;
 mod upload;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "home"))]
 mod usb;
+#[cfg(any(
+    feature = "devices",
+    feature = "multimedia",
+    feature = "home",
+    feature = "gaming"
+))]
+mod usb_c_port;
 #[cfg(feature = "account")]
 mod user;
 #[cfg(feature = "account")]
@@ -4749,6 +4768,8 @@ pub use at_sign::*;
 pub use atom::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 pub use audio_lines::*;
+#[cfg(any(feature = "multimedia", feature = "communication"))]
+pub use audio_lines_off::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 pub use audio_lines_x::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
@@ -6764,6 +6785,8 @@ pub use list_checks::*;
 pub use list_chevrons_down_up::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use list_chevrons_up_down::*;
+#[cfg(any(feature = "text", feature = "time", feature = "notifications"))]
+pub use list_clock::*;
 #[cfg(feature = "text")]
 pub use list_collapse::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
@@ -7015,6 +7038,8 @@ pub use microchip::*;
 pub use microscope::*;
 #[cfg(any(feature = "food-beverage", feature = "home"))]
 pub use microwave::*;
+#[cfg(any(feature = "multimedia", feature = "connectivity", feature = "devices"))]
+pub use midi_port::*;
 #[cfg(any(
     feature = "arrows",
     feature = "navigation",
@@ -7073,6 +7098,10 @@ pub use monitor_x::*;
 pub use moon::*;
 #[cfg(any(feature = "accessibility", feature = "weather"))]
 pub use moon_star::*;
+#[cfg(any(feature = "home", feature = "tools"))]
+pub use mop::*;
+#[cfg(any(feature = "home", feature = "tools", feature = "design"))]
+pub use mop_sparkles::*;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 pub use mosque::*;
 #[cfg(feature = "transportation")]
@@ -8212,6 +8241,8 @@ pub use square_dashed_mouse_pointer::*;
 pub use square_dashed_text::*;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 pub use square_dashed_top_solid::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use square_dimensions::*;
 #[cfg(feature = "math")]
 pub use square_divide::*;
 #[cfg(feature = "development")]
@@ -8709,6 +8740,13 @@ pub use unplug::*;
 pub use upload::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "home"))]
 pub use usb::*;
+#[cfg(any(
+    feature = "devices",
+    feature = "multimedia",
+    feature = "home",
+    feature = "gaming"
+))]
+pub use usb_c_port::*;
 #[cfg(feature = "account")]
 pub use user::*;
 #[cfg(feature = "account")]
