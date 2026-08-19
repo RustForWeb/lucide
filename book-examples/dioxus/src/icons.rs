@@ -1865,6 +1865,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CarBattery {}
+            },
+            "Car Battery",
+        ),
+        (
+            rsx! {
                 CarFront {}
             },
             "Car Front",
@@ -2235,12 +2241,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Up",
         ),
-        (
-            rsx! {
-                ChevronsUpDown {}
-            },
-            "Chevrons Up Down",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2256,6 +2256,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsUpDown {}
+            },
+            "Chevrons Up Down",
+        ),
         (
             rsx! {
                 Church {}
@@ -2850,12 +2856,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Moon Rain",
         ),
-        (
-            rsx! {
-                CloudOff {}
-            },
-            "Cloud Off",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2871,6 +2871,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudOff {}
+            },
+            "Cloud Off",
+        ),
         (
             rsx! {
                 CloudRain {}
@@ -9395,15 +9401,15 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
-                SquareUser {}
+                SquareText {}
             },
-            "Square User",
+            "Square Text",
         ),
         (
             rsx! {
-                SquareUserRound {}
+                SquareUser {}
             },
-            "Square User Round",
+            "Square User",
         ),
     ];
     rsx! {
@@ -9420,6 +9426,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareUserRound {}
+            },
+            "Square User Round",
+        ),
         (
             rsx! {
                 SquareX {}

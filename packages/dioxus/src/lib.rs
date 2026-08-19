@@ -668,6 +668,8 @@ mod captions;
 mod captions_off;
 #[cfg(feature = "transportation")]
 mod car;
+#[cfg(any(feature = "connectivity", feature = "transportation"))]
+mod car_battery;
 #[cfg(feature = "transportation")]
 mod car_front;
 #[cfg(feature = "transportation")]
@@ -3796,6 +3798,8 @@ mod square_star;
 mod square_stop;
 #[cfg(feature = "development")]
 mod square_terminal;
+#[cfg(any(feature = "text", feature = "shapes", feature = "development"))]
+mod square_text;
 #[cfg(feature = "account")]
 mod square_user;
 #[cfg(feature = "account")]
@@ -5175,6 +5179,8 @@ pub use captions::*;
 pub use captions_off::*;
 #[cfg(feature = "transportation")]
 pub use car::*;
+#[cfg(any(feature = "connectivity", feature = "transportation"))]
+pub use car_battery::*;
 #[cfg(feature = "transportation")]
 pub use car_front::*;
 #[cfg(feature = "transportation")]
@@ -8303,6 +8309,8 @@ pub use square_star::*;
 pub use square_stop::*;
 #[cfg(feature = "development")]
 pub use square_terminal::*;
+#[cfg(any(feature = "text", feature = "shapes", feature = "development"))]
+pub use square_text::*;
 #[cfg(feature = "account")]
 pub use square_user::*;
 #[cfg(feature = "account")]
