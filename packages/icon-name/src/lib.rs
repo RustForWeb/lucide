@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1769usize] = [
+pub static ICON_NAMES: [&str; 1776usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -107,6 +107,7 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "at-sign",
     "atom",
     "audio-lines",
+    "audio-lines-off",
     "audio-lines-x",
     "audio-waveform",
     "award",
@@ -930,6 +931,7 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "list-checks",
     "list-chevrons-down-up",
     "list-chevrons-up-down",
+    "list-clock",
     "list-collapse",
     "list-end",
     "list-filter",
@@ -1043,6 +1045,7 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "microchip",
     "microscope",
     "microwave",
+    "midi-port",
     "milestone",
     "milk",
     "milk-off",
@@ -1067,6 +1070,8 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "monitor-x",
     "moon",
     "moon-star",
+    "mop",
+    "mop-sparkles",
     "mosque",
     "motorbike",
     "mountain",
@@ -1467,6 +1472,7 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "square-dashed-mouse-pointer",
     "square-dashed-text",
     "square-dashed-top-solid",
+    "square-dimensions",
     "square-divide",
     "square-dot",
     "square-equal",
@@ -1667,6 +1673,7 @@ pub static ICON_NAMES: [&str; 1769usize] = [
     "unplug",
     "upload",
     "usb",
+    "usb-c-port",
     "user",
     "user-check",
     "user-cog",

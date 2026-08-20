@@ -207,6 +207,7 @@ pub fn IconsA2() -> impl IntoView {
         <For
             each=move || [
                 (view! { <AudioLines /> }.into_any(), "Audio Lines"),
+                (view! { <AudioLinesOff /> }.into_any(), "Audio Lines Off"),
                 (view! { <AudioLinesX /> }.into_any(), "Audio Lines X"),
                 (view! { <AudioWaveform /> }.into_any(), "Audio Waveform"),
                 (view! { <Award /> }.into_any(), "Award"),
@@ -1300,6 +1301,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <ListChecks /> }.into_any(), "List Checks"),
                 (view! { <ListChevronsDownUp /> }.into_any(), "List Chevrons Down Up"),
                 (view! { <ListChevronsUpDown /> }.into_any(), "List Chevrons Up Down"),
+                (view! { <ListClock /> }.into_any(), "List Clock"),
                 (view! { <ListCollapse /> }.into_any(), "List Collapse"),
                 (view! { <ListEnd /> }.into_any(), "List End"),
                 (view! { <ListFilter /> }.into_any(), "List Filter"),
@@ -1433,6 +1435,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Microchip /> }.into_any(), "Microchip"),
                 (view! { <Microscope /> }.into_any(), "Microscope"),
                 (view! { <Microwave /> }.into_any(), "Microwave"),
+                (view! { <MidiPort /> }.into_any(), "Midi Port"),
                 (view! { <Milestone /> }.into_any(), "Milestone"),
                 (view! { <Milk /> }.into_any(), "Milk"),
                 (view! { <MilkOff /> }.into_any(), "Milk Off"),
@@ -1452,7 +1455,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
-                (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1470,10 +1472,13 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
                 (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),
                 (view! { <Moon /> }.into_any(), "Moon"),
                 (view! { <MoonStar /> }.into_any(), "Moon Star"),
+                (view! { <Mop /> }.into_any(), "Mop"),
+                (view! { <MopSparkles /> }.into_any(), "Mop Sparkles"),
                 (view! { <Mosque /> }.into_any(), "Mosque"),
                 (view! { <Motorbike /> }.into_any(), "Motorbike"),
                 (view! { <Mountain /> }.into_any(), "Mountain"),
@@ -2019,6 +2024,7 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareDashedMousePointer /> }.into_any(), "Square Dashed Mouse Pointer"),
                 (view! { <SquareDashedText /> }.into_any(), "Square Dashed Text"),
                 (view! { <SquareDashedTopSolid /> }.into_any(), "Square Dashed Top Solid"),
+                (view! { <SquareDimensions /> }.into_any(), "Square Dimensions"),
                 (view! { <SquareDivide /> }.into_any(), "Square Divide"),
                 (view! { <SquareDot /> }.into_any(), "Square Dot"),
                 (view! { <SquareEqual /> }.into_any(), "Square Equal"),
@@ -2053,7 +2059,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareStop /> }.into_any(), "Square Stop"),
                 (view! { <SquareTerminal /> }.into_any(), "Square Terminal"),
                 (view! { <SquareText /> }.into_any(), "Square Text"),
-                (view! { <SquareUser /> }.into_any(), "Square User"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2071,6 +2076,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareUser /> }.into_any(), "Square User"),
                 (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
                 (view! { <SquareX /> }.into_any(), "Square X"),
                 (view! { <SquaresExclude /> }.into_any(), "Squares Exclude"),
@@ -2285,6 +2291,7 @@ pub fn IconsU1() -> impl IntoView {
                 (view! { <Unplug /> }.into_any(), "Unplug"),
                 (view! { <Upload /> }.into_any(), "Upload"),
                 (view! { <Usb /> }.into_any(), "Usb"),
+                (view! { <UsbCPort /> }.into_any(), "Usb C Port"),
                 (view! { <User /> }.into_any(), "User"),
                 (view! { <UserCheck /> }.into_any(), "User Check"),
                 (view! { <UserCog /> }.into_any(), "User Cog"),

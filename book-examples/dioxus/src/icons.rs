@@ -668,6 +668,12 @@ pub fn IconsA2() -> Element {
         ),
         (
             rsx! {
+                AudioLinesOff {}
+            },
+            "Audio Lines Off",
+        ),
+        (
+            rsx! {
                 AudioLinesX {}
             },
             "Audio Lines X",
@@ -5831,6 +5837,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                ListClock {}
+            },
+            "List Clock",
+        ),
+        (
+            rsx! {
                 ListCollapse {}
             },
             "List Collapse",
@@ -6524,6 +6536,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MidiPort {}
+            },
+            "Midi Port",
+        ),
+        (
+            rsx! {
                 Milestone {}
             },
             "Milestone",
@@ -6636,12 +6654,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Speaker",
         ),
-        (
-            rsx! {
-                MonitorStop {}
-            },
-            "Monitor Stop",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6657,6 +6669,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorStop {}
+            },
+            "Monitor Stop",
+        ),
         (
             rsx! {
                 MonitorUp {}
@@ -6680,6 +6698,18 @@ pub fn IconsM2() -> Element {
                 MoonStar {}
             },
             "Moon Star",
+        ),
+        (
+            rsx! {
+                Mop {}
+            },
+            "Mop",
+        ),
+        (
+            rsx! {
+                MopSparkles {}
+            },
+            "Mop Sparkles",
         ),
         (
             rsx! {
@@ -9203,6 +9233,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareDimensions {}
+            },
+            "Square Dimensions",
+        ),
+        (
+            rsx! {
                 SquareDivide {}
             },
             "Square Divide",
@@ -9405,12 +9441,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Text",
         ),
-        (
-            rsx! {
-                SquareUser {}
-            },
-            "Square User",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9426,6 +9456,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareUser {}
+            },
+            "Square User",
+        ),
         (
             rsx! {
                 SquareUserRound {}
@@ -10458,6 +10494,12 @@ pub fn IconsU1() -> Element {
                 Usb {}
             },
             "Usb",
+        ),
+        (
+            rsx! {
+                UsbCPort {}
+            },
+            "Usb C Port",
         ),
         (
             rsx! {
