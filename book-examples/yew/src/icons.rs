@@ -1292,6 +1292,7 @@ pub fn IconsM() -> Html {
         (html! { <Mail /> }, "Mail"),
         (html! { <MailBadge /> }, "Mail Badge"),
         (html! { <MailCheck /> }, "Mail Check"),
+        (html! { <MailClock /> }, "Mail Clock"),
         (html! { <MailMinus /> }, "Mail Minus"),
         (html! { <MailOpen /> }, "Mail Open"),
         (html! { <MailPlus /> }, "Mail Plus"),

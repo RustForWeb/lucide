@@ -1356,6 +1356,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <Mail /> }.into_any(), "Mail"),
                 (view! { <MailBadge /> }.into_any(), "Mail Badge"),
                 (view! { <MailCheck /> }.into_any(), "Mail Check"),
+                (view! { <MailClock /> }.into_any(), "Mail Clock"),
                 (view! { <MailMinus /> }.into_any(), "Mail Minus"),
                 (view! { <MailOpen /> }.into_any(), "Mail Open"),
                 (view! { <MailPlus /> }.into_any(), "Mail Plus"),
@@ -1454,7 +1455,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
                 (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
-                (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1472,6 +1472,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
                 (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
                 (view! { <MonitorX /> }.into_any(), "Monitor X"),

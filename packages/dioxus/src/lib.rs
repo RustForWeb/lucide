@@ -2334,6 +2334,15 @@ mod mail;
 mod mail_badge;
 #[cfg(feature = "mail")]
 mod mail_check;
+#[cfg(any(
+    feature = "text",
+    feature = "account",
+    feature = "mail",
+    feature = "time",
+    feature = "notifications",
+    feature = "communication"
+))]
+mod mail_clock;
 #[cfg(feature = "mail")]
 mod mail_minus;
 #[cfg(feature = "mail")]
@@ -6864,6 +6873,15 @@ pub use mail::*;
 pub use mail_badge::*;
 #[cfg(feature = "mail")]
 pub use mail_check::*;
+#[cfg(any(
+    feature = "text",
+    feature = "account",
+    feature = "mail",
+    feature = "time",
+    feature = "notifications",
+    feature = "communication"
+))]
+pub use mail_clock::*;
 #[cfg(feature = "mail")]
 pub use mail_minus::*;
 #[cfg(feature = "mail")]

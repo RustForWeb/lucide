@@ -6080,6 +6080,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MailClock {}
+            },
+            "Mail Clock",
+        ),
+        (
+            rsx! {
                 MailMinus {}
             },
             "Mail Minus",
@@ -6648,12 +6654,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Smartphone",
         ),
-        (
-            rsx! {
-                MonitorSpeaker {}
-            },
-            "Monitor Speaker",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6669,6 +6669,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorSpeaker {}
+            },
+            "Monitor Speaker",
+        ),
         (
             rsx! {
                 MonitorStop {}
