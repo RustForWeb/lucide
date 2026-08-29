@@ -1711,6 +1711,8 @@ mod funnel;
 mod funnel_plus;
 #[cfg(feature = "layout")]
 mod funnel_x;
+#[cfg(feature = "science")]
+mod galaxy;
 #[cfg(any(
     feature = "layout",
     feature = "design",
@@ -3132,6 +3134,8 @@ mod rewind;
 mod ribbon;
 #[cfg(feature = "transportation")]
 mod road;
+#[cfg(any(feature = "science", feature = "tools"))]
+mod robot_arm;
 #[cfg(any(feature = "gaming", feature = "development"))]
 mod rocket;
 #[cfg(feature = "home")]
@@ -3474,6 +3478,8 @@ mod shield_user;
 mod shield_x;
 #[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
 mod ship;
+#[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
+mod ship_cargo;
 #[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
 mod ship_wheel;
 #[cfg(feature = "shopping")]
@@ -4129,6 +4135,8 @@ mod toy_brick;
 mod tractor;
 #[cfg(feature = "transportation")]
 mod traffic_cone;
+#[cfg(feature = "transportation")]
+mod trailer;
 #[cfg(feature = "transportation")]
 mod train_front;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
@@ -6250,6 +6258,8 @@ pub use funnel::*;
 pub use funnel_plus::*;
 #[cfg(feature = "layout")]
 pub use funnel_x::*;
+#[cfg(feature = "science")]
+pub use galaxy::*;
 #[cfg(any(
     feature = "layout",
     feature = "design",
@@ -7671,6 +7681,8 @@ pub use rewind::*;
 pub use ribbon::*;
 #[cfg(feature = "transportation")]
 pub use road::*;
+#[cfg(any(feature = "science", feature = "tools"))]
+pub use robot_arm::*;
 #[cfg(any(feature = "gaming", feature = "development"))]
 pub use rocket::*;
 #[cfg(feature = "home")]
@@ -8013,6 +8025,8 @@ pub use shield_user::*;
 pub use shield_x::*;
 #[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
 pub use ship::*;
+#[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
+pub use ship_cargo::*;
 #[cfg(any(feature = "transportation", feature = "navigation", feature = "travel"))]
 pub use ship_wheel::*;
 #[cfg(feature = "shopping")]
@@ -8668,6 +8682,8 @@ pub use toy_brick::*;
 pub use tractor::*;
 #[cfg(feature = "transportation")]
 pub use traffic_cone::*;
+#[cfg(feature = "transportation")]
+pub use trailer::*;
 #[cfg(feature = "transportation")]
 pub use train_front::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]

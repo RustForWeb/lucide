@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1777usize] = [
+pub static ICON_NAMES: [&str; 1781usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -741,6 +741,7 @@ pub static ICON_NAMES: [&str; 1777usize] = [
     "funnel",
     "funnel-plus",
     "funnel-x",
+    "galaxy",
     "gallery-horizontal",
     "gallery-horizontal-end",
     "gallery-thumbnails",
@@ -1286,6 +1287,7 @@ pub static ICON_NAMES: [&str; 1777usize] = [
     "rewind",
     "ribbon",
     "road",
+    "robot-arm",
     "rocket",
     "rocking-chair",
     "roller-coaster",
@@ -1384,6 +1386,7 @@ pub static ICON_NAMES: [&str; 1777usize] = [
     "shield-user",
     "shield-x",
     "ship",
+    "ship-cargo",
     "ship-wheel",
     "shirt",
     "shopping-bag",
@@ -1630,6 +1633,7 @@ pub static ICON_NAMES: [&str; 1777usize] = [
     "toy-brick",
     "tractor",
     "traffic-cone",
+    "trailer",
     "train-front",
     "train-front-tunnel",
     "train-track",

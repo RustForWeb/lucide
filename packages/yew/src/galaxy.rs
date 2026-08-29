@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct GhostProps {
+pub struct GalaxyProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct GhostProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Ghost(props: &GhostProps) -> Html {
+pub fn Galaxy(props: &GalaxyProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,13 @@ pub fn Ghost(props: &GhostProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 10v1" />
             <path
-                d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z"
+                d="M16.005 15.108a5.041 6.52 28.25 00-8.008-6.217 5.041 6.52 28.25 008.008 6.217A11.884 7.288-60.76 014.029 7.001"
             />
-            <path d="M9 10v1" />
+            <path d="M17 21h.01" />
+            <path d="M7 3h.01" />
+            <path d="M7.997 8.891a11.885 7.288-60.756 0111.977 8.107" />
+            <circle cx="12" cy="12" r="1" fill="currentColor" />
         </svg>
     }
 }
