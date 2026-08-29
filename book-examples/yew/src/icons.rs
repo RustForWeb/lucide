@@ -956,6 +956,7 @@ pub fn IconsF() -> Html {
 #[component]
 pub fn IconsG() -> Html {
     let icons = [
+        (html! { <Galaxy /> }, "Galaxy"),
         (html! { <GalleryHorizontal /> }, "Gallery Horizontal"),
         (html! { <GalleryHorizontalEnd /> }, "Gallery Horizontal End"),
         (html! { <GalleryThumbnails /> }, "Gallery Thumbnails"),
@@ -1698,6 +1699,7 @@ pub fn IconsR() -> Html {
         (html! { <Rewind /> }, "Rewind"),
         (html! { <Ribbon /> }, "Ribbon"),
         (html! { <Road /> }, "Road"),
+        (html! { <RobotArm /> }, "Robot Arm"),
         (html! { <Rocket /> }, "Rocket"),
         (html! { <RockingChair /> }, "Rocking Chair"),
         (html! { <RollerCoaster /> }, "Roller Coaster"),
@@ -1812,6 +1814,7 @@ pub fn IconsS() -> Html {
         (html! { <ShieldUser /> }, "Shield User"),
         (html! { <ShieldX /> }, "Shield X"),
         (html! { <Ship /> }, "Ship"),
+        (html! { <ShipCargo /> }, "Ship Cargo"),
         (html! { <ShipWheel /> }, "Ship Wheel"),
         (html! { <Shirt /> }, "Shirt"),
         (html! { <ShoppingBag /> }, "Shopping Bag"),
@@ -2116,6 +2119,7 @@ pub fn IconsT() -> Html {
         (html! { <ToyBrick /> }, "Toy Brick"),
         (html! { <Tractor /> }, "Tractor"),
         (html! { <TrafficCone /> }, "Traffic Cone"),
+        (html! { <Trailer /> }, "Trailer"),
         (html! { <TrainFront /> }, "Train Front"),
         (html! { <TrainFrontTunnel /> }, "Train Front Tunnel"),
         (html! { <TrainTrack /> }, "Train Track"),

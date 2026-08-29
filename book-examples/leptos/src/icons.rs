@@ -1023,6 +1023,7 @@ pub fn IconsG1() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Galaxy /> }.into_any(), "Galaxy"),
                 (view! { <GalleryHorizontal /> }.into_any(), "Gallery Horizontal"),
                 (view! { <GalleryHorizontalEnd /> }.into_any(), "Gallery Horizontal End"),
                 (view! { <GalleryThumbnails /> }.into_any(), "Gallery Thumbnails"),
@@ -1795,6 +1796,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <Rewind /> }.into_any(), "Rewind"),
                 (view! { <Ribbon /> }.into_any(), "Ribbon"),
                 (view! { <Road /> }.into_any(), "Road"),
+                (view! { <RobotArm /> }.into_any(), "Robot Arm"),
                 (view! { <Rocket /> }.into_any(), "Rocket"),
                 (view! { <RockingChair /> }.into_any(), "Rocking Chair"),
                 (view! { <RollerCoaster /> }.into_any(), "Roller Coaster"),
@@ -1910,6 +1912,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ShieldUser /> }.into_any(), "Shield User"),
                 (view! { <ShieldX /> }.into_any(), "Shield X"),
                 (view! { <Ship /> }.into_any(), "Ship"),
+                (view! { <ShipCargo /> }.into_any(), "Ship Cargo"),
                 (view! { <ShipWheel /> }.into_any(), "Ship Wheel"),
                 (view! { <Shirt /> }.into_any(), "Shirt"),
                 (view! { <ShoppingBag /> }.into_any(), "Shopping Bag"),
@@ -1933,7 +1936,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SignpostBig /> }.into_any(), "Signpost Big"),
                 (view! { <Siren /> }.into_any(), "Siren"),
                 (view! { <SkipBack /> }.into_any(), "Skip Back"),
-                (view! { <SkipForward /> }.into_any(), "Skip Forward"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1951,6 +1953,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SkipForward /> }.into_any(), "Skip Forward"),
                 (view! { <Skull /> }.into_any(), "Skull"),
                 (view! { <Slash /> }.into_any(), "Slash"),
                 (view! { <Slice /> }.into_any(), "Slice"),
@@ -2059,7 +2062,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareStar /> }.into_any(), "Square Star"),
                 (view! { <SquareStop /> }.into_any(), "Square Stop"),
                 (view! { <SquareTerminal /> }.into_any(), "Square Terminal"),
-                (view! { <SquareText /> }.into_any(), "Square Text"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2077,6 +2079,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareText /> }.into_any(), "Square Text"),
                 (view! { <SquareUser /> }.into_any(), "Square User"),
                 (view! { <SquareUserRound /> }.into_any(), "Square User Round"),
                 (view! { <SquareX /> }.into_any(), "Square X"),
@@ -2216,6 +2219,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <ToyBrick /> }.into_any(), "Toy Brick"),
                 (view! { <Tractor /> }.into_any(), "Tractor"),
                 (view! { <TrafficCone /> }.into_any(), "Traffic Cone"),
+                (view! { <Trailer /> }.into_any(), "Trailer"),
                 (view! { <TrainFront /> }.into_any(), "Train Front"),
                 (view! { <TrainFrontTunnel /> }.into_any(), "Train Front Tunnel"),
                 (view! { <TrainTrack /> }.into_any(), "Train Track"),
@@ -2243,7 +2247,6 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Tv /> }.into_any(), "Tv"),
                 (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),
                 (view! { <TvMinimalPlay /> }.into_any(), "Tv Minimal Play"),
-                (view! { <Type /> }.into_any(), "Type"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2260,7 +2263,10 @@ pub fn IconsT1() -> impl IntoView {
 pub fn IconsT2() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <TypeOutline /> }.into_any(), "Type Outline")]
+            each=move || [
+                (view! { <Type /> }.into_any(), "Type"),
+                (view! { <TypeOutline /> }.into_any(), "Type Outline"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {

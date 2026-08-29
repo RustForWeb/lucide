@@ -4622,6 +4622,12 @@ pub fn IconsG1() -> Element {
     let icons = [
         (
             rsx! {
+                Galaxy {}
+            },
+            "Galaxy",
+        ),
+        (
+            rsx! {
                 GalleryHorizontal {}
             },
             "Gallery Horizontal",
@@ -8087,6 +8093,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RobotArm {}
+            },
+            "Robot Arm",
+        ),
+        (
+            rsx! {
                 Rocket {}
             },
             "Rocket",
@@ -8690,6 +8702,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShipCargo {}
+            },
+            "Ship Cargo",
+        ),
+        (
+            rsx! {
                 ShipWheel {}
             },
             "Ship Wheel",
@@ -8826,12 +8844,6 @@ pub fn IconsS1() -> Element {
             },
             "Skip Back",
         ),
-        (
-            rsx! {
-                SkipForward {}
-            },
-            "Skip Forward",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8847,6 +8859,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SkipForward {}
+            },
+            "Skip Forward",
+        ),
         (
             rsx! {
                 Skull {}
@@ -9441,12 +9459,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Terminal",
         ),
-        (
-            rsx! {
-                SquareText {}
-            },
-            "Square Text",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9462,6 +9474,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareText {}
+            },
+            "Square Text",
+        ),
         (
             rsx! {
                 SquareUser {}
@@ -10211,6 +10229,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Trailer {}
+            },
+            "Trailer",
+        ),
+        (
+            rsx! {
                 TrainFront {}
             },
             "Train Front",
@@ -10371,12 +10395,6 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal Play",
         ),
-        (
-            rsx! {
-                Type {}
-            },
-            "Type",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -10391,12 +10409,20 @@ pub fn IconsT1() -> Element {
 }
 #[component]
 pub fn IconsT2() -> Element {
-    let icons = [(
-        rsx! {
-            TypeOutline {}
-        },
-        "Type Outline",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Type {}
+            },
+            "Type",
+        ),
+        (
+            rsx! {
+                TypeOutline {}
+            },
+            "Type Outline",
+        ),
+    ];
     rsx! {
         for (icon, name) in icons {
             div {

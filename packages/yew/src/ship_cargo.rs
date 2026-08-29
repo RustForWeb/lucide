@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct GhostProps {
+pub struct ShipCargoProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct GhostProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Ghost(props: &GhostProps) -> Html {
+pub fn ShipCargo(props: &ShipCargoProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,17 @@ pub fn Ghost(props: &GhostProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 10v1" />
+            <path d="M12 15v-3" />
+            <path d="M12 2v2" />
             <path
-                d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z"
+                d="M16.5 12V9a1 1 0 011-1h1a1 1 0 001-1V5a1 1 0 00-1-1h-13a1 1 0 00-1 1v2a1 1 0 001 1h1a1 1 0 011 1v3"
             />
-            <path d="M9 10v1" />
+            <path
+                d="M19.38 19c1.076-1.815 1.636-4.89 1.628-6.008a1 1 0 00-1-.992H3.984a1 1 0 00-1 .984c-.03 1.86.97 5.621 2.826 7.776"
+            />
+            <path
+                d="M2 20c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+            />
         </svg>
     }
 }
