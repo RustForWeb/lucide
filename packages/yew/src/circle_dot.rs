@@ -41,8 +41,8 @@ pub fn CircleDot(props: &CircleDotProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <circle cx="12" cy="12" r="10" />
             <circle cx="12" cy="12" r="1" />
+            <circle cx="12" cy="12" r="10" />
         </svg>
     }
 }

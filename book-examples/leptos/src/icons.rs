@@ -710,6 +710,10 @@ pub fn IconsC3() -> impl IntoView {
                 (view! { <Cpu /> }.into_any(), "Cpu"),
                 (view! { <CreativeCommons /> }.into_any(), "Creative Commons"),
                 (view! { <CreditCard /> }.into_any(), "Credit Card"),
+                (view! { <CreditCardCheck /> }.into_any(), "Credit Card Check"),
+                (view! { <CreditCardMinus /> }.into_any(), "Credit Card Minus"),
+                (view! { <CreditCardPlus /> }.into_any(), "Credit Card Plus"),
+                (view! { <CreditCardX /> }.into_any(), "Credit Card X"),
                 (view! { <Croissant /> }.into_any(), "Croissant"),
                 (view! { <Crop /> }.into_any(), "Crop"),
                 (view! { <Cross /> }.into_any(), "Cross"),
@@ -1399,6 +1403,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MessageCircleCheck /> }.into_any(), "Message Circle Check"),
                 (view! { <MessageCircleCode /> }.into_any(), "Message Circle Code"),
                 (view! { <MessageCircleDashed /> }.into_any(), "Message Circle Dashed"),
+                (view! { <MessageCircleDashedCheck /> }.into_any(), "Message Circle Dashed Check"),
                 (view! { <MessageCircleHeart /> }.into_any(), "Message Circle Heart"),
                 (view! { <MessageCircleMore /> }.into_any(), "Message Circle More"),
                 (view! { <MessageCircleOff /> }.into_any(), "Message Circle Off"),
@@ -1455,7 +1460,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorOff /> }.into_any(), "Monitor Off"),
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
                 (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
-                (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1473,6 +1477,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
                 (view! { <MonitorUp /> }.into_any(), "Monitor Up"),
@@ -1673,6 +1678,9 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PlaneTakeoff /> }.into_any(), "Plane Takeoff"),
                 (view! { <Play /> }.into_any(), "Play"),
                 (view! { <PlayOff /> }.into_any(), "Play Off"),
+                (view! { <PlayingCard /> }.into_any(), "Playing Card"),
+                (view! { <PlayingCards /> }.into_any(), "Playing Cards"),
+                (view! { <PlayingCardsFan /> }.into_any(), "Playing Cards Fan"),
                 (view! { <Plug /> }.into_any(), "Plug"),
                 (view! { <Plug2 /> }.into_any(), "Plug 2"),
                 (view! { <PlugZap /> }.into_any(), "Plug Zap"),
@@ -1685,9 +1693,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Popsicle /> }.into_any(), "Popsicle"),
                 (view! { <PoundSterling /> }.into_any(), "Pound Sterling"),
                 (view! { <Power /> }.into_any(), "Power"),
-                (view! { <PowerOff /> }.into_any(), "Power Off"),
-                (view! { <Presentation /> }.into_any(), "Presentation"),
-                (view! { <Printer /> }.into_any(), "Printer"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1705,6 +1710,9 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <PowerOff /> }.into_any(), "Power Off"),
+                (view! { <Presentation /> }.into_any(), "Presentation"),
+                (view! { <Printer /> }.into_any(), "Printer"),
                 (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
@@ -1797,6 +1805,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <Ribbon /> }.into_any(), "Ribbon"),
                 (view! { <Road /> }.into_any(), "Road"),
                 (view! { <RobotArm /> }.into_any(), "Robot Arm"),
+                (view! { <RobotVacuum /> }.into_any(), "Robot Vacuum"),
                 (view! { <Rocket /> }.into_any(), "Rocket"),
                 (view! { <RockingChair /> }.into_any(), "Rocking Chair"),
                 (view! { <RollerCoaster /> }.into_any(), "Roller Coaster"),
