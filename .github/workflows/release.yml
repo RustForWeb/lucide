@@ -18,7 +18,7 @@ permissions:
 jobs:
     release:
         name: Release
-        uses: RustForWeb/.github/.github/workflows/release.yml@dc2442c27ef9f920a1a889ec94e615b419b491b2 # v1.0.1
+        uses: RustForWeb/.github/.github/workflows/release.yml@300f79f742e86d4653d44a17864e89297a7025cf # v1.0.2
         with:
             bump: ${{ inputs.bump }}
             bump-rust: true
