@@ -34,8 +34,8 @@ pub fn CircleDot(props: CircleDotProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            circle { "cx": "12", "cy": "12", "r": "10" }
             circle { "cx": "12", "cy": "12", "r": "1" }
+            circle { "cx": "12", "cy": "12", "r": "10" }
         }
     }
 }

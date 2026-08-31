@@ -3197,6 +3197,30 @@ pub fn IconsC3() -> Element {
         ),
         (
             rsx! {
+                CreditCardCheck {}
+            },
+            "Credit Card Check",
+        ),
+        (
+            rsx! {
+                CreditCardMinus {}
+            },
+            "Credit Card Minus",
+        ),
+        (
+            rsx! {
+                CreditCardPlus {}
+            },
+            "Credit Card Plus",
+        ),
+        (
+            rsx! {
+                CreditCardX {}
+            },
+            "Credit Card X",
+        ),
+        (
+            rsx! {
                 Croissant {}
             },
             "Croissant",
@@ -6338,6 +6362,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MessageCircleDashedCheck {}
+            },
+            "Message Circle Dashed Check",
+        ),
+        (
+            rsx! {
                 MessageCircleHeart {}
             },
             "Message Circle Heart",
@@ -6654,12 +6684,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Play",
         ),
-        (
-            rsx! {
-                MonitorSmartphone {}
-            },
-            "Monitor Smartphone",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6675,6 +6699,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorSmartphone {}
+            },
+            "Monitor Smartphone",
+        ),
         (
             rsx! {
                 MonitorSpeaker {}
@@ -7616,6 +7646,24 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PlayingCard {}
+            },
+            "Playing Card",
+        ),
+        (
+            rsx! {
+                PlayingCards {}
+            },
+            "Playing Cards",
+        ),
+        (
+            rsx! {
+                PlayingCardsFan {}
+            },
+            "Playing Cards Fan",
+        ),
+        (
+            rsx! {
                 Plug {}
             },
             "Plug",
@@ -7686,6 +7734,21 @@ pub fn IconsP1() -> Element {
             },
             "Power",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsP2() -> Element {
+    let icons = [
         (
             rsx! {
                 PowerOff {}
@@ -7704,21 +7767,6 @@ pub fn IconsP1() -> Element {
             },
             "Printer",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsP2() -> Element {
-    let icons = [
         (
             rsx! {
                 PrinterCheck {}
@@ -8096,6 +8144,12 @@ pub fn IconsR1() -> Element {
                 RobotArm {}
             },
             "Robot Arm",
+        ),
+        (
+            rsx! {
+                RobotVacuum {}
+            },
+            "Robot Vacuum",
         ),
         (
             rsx! {

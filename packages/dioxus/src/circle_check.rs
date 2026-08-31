@@ -35,7 +35,7 @@ pub fn CircleCheck(props: CircleCheckProps) -> Element {
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             circle { "cx": "12", "cy": "12", "r": "10" }
-            path { "d": "m9 12 2 2 4-4" }
+            path { "d": "m16 9-5.5 5.5L8 12" }
         }
     }
 }

@@ -1160,6 +1160,14 @@ mod cpu;
 mod creative_commons;
 #[cfg(any(feature = "account", feature = "finance"))]
 mod credit_card;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+mod credit_card_check;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+mod credit_card_minus;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+mod credit_card_plus;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+mod credit_card_x;
 #[cfg(feature = "food-beverage")]
 mod croissant;
 #[cfg(any(feature = "photography", feature = "design"))]
@@ -2432,6 +2440,8 @@ mod message_circle_check;
 mod message_circle_code;
 #[cfg(feature = "social")]
 mod message_circle_dashed;
+#[cfg(any(feature = "social", feature = "account"))]
+mod message_circle_dashed_check;
 #[cfg(feature = "social")]
 mod message_circle_heart;
 #[cfg(feature = "social")]
@@ -2953,6 +2963,12 @@ mod plane_takeoff;
 mod play;
 #[cfg(feature = "multimedia")]
 mod play_off;
+#[cfg(any(feature = "gaming", feature = "development"))]
+mod playing_card;
+#[cfg(any(feature = "gaming", feature = "development"))]
+mod playing_cards;
+#[cfg(any(feature = "gaming", feature = "development", feature = "social"))]
+mod playing_cards_fan;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod plug;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -3136,6 +3152,8 @@ mod ribbon;
 mod road;
 #[cfg(any(feature = "science", feature = "tools"))]
 mod robot_arm;
+#[cfg(any(feature = "devices", feature = "home", feature = "tools"))]
+mod robot_vacuum;
 #[cfg(any(feature = "gaming", feature = "development"))]
 mod rocket;
 #[cfg(feature = "home")]
@@ -5707,6 +5725,14 @@ pub use cpu::*;
 pub use creative_commons::*;
 #[cfg(any(feature = "account", feature = "finance"))]
 pub use credit_card::*;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+pub use credit_card_check::*;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+pub use credit_card_minus::*;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+pub use credit_card_plus::*;
+#[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
+pub use credit_card_x::*;
 #[cfg(feature = "food-beverage")]
 pub use croissant::*;
 #[cfg(any(feature = "photography", feature = "design"))]
@@ -6979,6 +7005,8 @@ pub use message_circle_check::*;
 pub use message_circle_code::*;
 #[cfg(feature = "social")]
 pub use message_circle_dashed::*;
+#[cfg(any(feature = "social", feature = "account"))]
+pub use message_circle_dashed_check::*;
 #[cfg(feature = "social")]
 pub use message_circle_heart::*;
 #[cfg(feature = "social")]
@@ -7500,6 +7528,12 @@ pub use plane_takeoff::*;
 pub use play::*;
 #[cfg(feature = "multimedia")]
 pub use play_off::*;
+#[cfg(any(feature = "gaming", feature = "development"))]
+pub use playing_card::*;
+#[cfg(any(feature = "gaming", feature = "development"))]
+pub use playing_cards::*;
+#[cfg(any(feature = "gaming", feature = "development", feature = "social"))]
+pub use playing_cards_fan::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use plug::*;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -7683,6 +7717,8 @@ pub use ribbon::*;
 pub use road::*;
 #[cfg(any(feature = "science", feature = "tools"))]
 pub use robot_arm::*;
+#[cfg(any(feature = "devices", feature = "home", feature = "tools"))]
+pub use robot_vacuum::*;
 #[cfg(any(feature = "gaming", feature = "development"))]
 pub use rocket::*;
 #[cfg(feature = "home")]

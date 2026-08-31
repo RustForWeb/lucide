@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1781usize] = [
+pub static ICON_NAMES: [&str; 1790usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -516,6 +516,10 @@ pub static ICON_NAMES: [&str; 1781usize] = [
     "cpu",
     "creative-commons",
     "credit-card",
+    "credit-card-check",
+    "credit-card-minus",
+    "credit-card-plus",
+    "credit-card-x",
     "croissant",
     "crop",
     "cross",
@@ -1012,6 +1016,7 @@ pub static ICON_NAMES: [&str; 1781usize] = [
     "message-circle-check",
     "message-circle-code",
     "message-circle-dashed",
+    "message-circle-dashed-check",
     "message-circle-heart",
     "message-circle-more",
     "message-circle-off",
@@ -1215,6 +1220,9 @@ pub static ICON_NAMES: [&str; 1781usize] = [
     "plane-takeoff",
     "play",
     "play-off",
+    "playing-card",
+    "playing-cards",
+    "playing-cards-fan",
     "plug",
     "plug-2",
     "plug-zap",
@@ -1288,6 +1296,7 @@ pub static ICON_NAMES: [&str; 1781usize] = [
     "ribbon",
     "road",
     "robot-arm",
+    "robot-vacuum",
     "rocket",
     "rocking-chair",
     "roller-coaster",
