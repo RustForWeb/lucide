@@ -4315,6 +4315,8 @@ mod van;
 mod variable;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 mod vault;
+#[cfg(any(feature = "design", feature = "math", feature = "shapes"))]
+mod vector_polygon;
 #[cfg(any(
     feature = "shapes",
     feature = "math",
@@ -8880,6 +8882,8 @@ pub use van::*;
 pub use variable::*;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 pub use vault::*;
+#[cfg(any(feature = "design", feature = "math", feature = "shapes"))]
+pub use vector_polygon::*;
 #[cfg(any(
     feature = "shapes",
     feature = "math",
