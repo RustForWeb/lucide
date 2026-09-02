@@ -1364,6 +1364,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MailClock /> }.into_any(), "Mail Clock"),
                 (view! { <MailMinus /> }.into_any(), "Mail Minus"),
                 (view! { <MailOpen /> }.into_any(), "Mail Open"),
+                (view! { <MailPen /> }.into_any(), "Mail Pen"),
                 (view! { <MailPlus /> }.into_any(), "Mail Plus"),
                 (view! { <MailQuestionMark /> }.into_any(), "Mail Question Mark"),
                 (view! { <MailSearch /> }.into_any(), "Mail Search"),
@@ -1459,7 +1460,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorDown /> }.into_any(), "Monitor Down"),
                 (view! { <MonitorOff /> }.into_any(), "Monitor Off"),
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
-                (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1477,6 +1477,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),
                 (view! { <MonitorStop /> }.into_any(), "Monitor Stop"),
@@ -2415,6 +2416,7 @@ pub fn IconsW1() -> impl IntoView {
                 (view! { <WeightTilde /> }.into_any(), "Weight Tilde"),
                 (view! { <Wheat /> }.into_any(), "Wheat"),
                 (view! { <WheatOff /> }.into_any(), "Wheat Off"),
+                (view! { <Whistle /> }.into_any(), "Whistle"),
                 (view! { <WholeWord /> }.into_any(), "Whole Word"),
                 (view! { <Wifi /> }.into_any(), "Wifi"),
                 (view! { <WifiCog /> }.into_any(), "Wifi Cog"),

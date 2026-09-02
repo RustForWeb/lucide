@@ -6128,6 +6128,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MailPen {}
+            },
+            "Mail Pen",
+        ),
+        (
+            rsx! {
                 MailPlus {}
             },
             "Mail Plus",
@@ -6678,12 +6684,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Pause",
         ),
-        (
-            rsx! {
-                MonitorPlay {}
-            },
-            "Monitor Play",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6699,6 +6699,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorPlay {}
+            },
+            "Monitor Play",
+        ),
         (
             rsx! {
                 MonitorSmartphone {}
@@ -11054,6 +11060,12 @@ pub fn IconsW1() -> Element {
                 WheatOff {}
             },
             "Wheat Off",
+        ),
+        (
+            rsx! {
+                Whistle {}
+            },
+            "Whistle",
         ),
         (
             rsx! {
