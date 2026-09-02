@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct VectorSquareProps {
+pub struct VectorPolygonProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct VectorSquareProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn VectorSquare(props: &VectorSquareProps) -> Html {
+pub fn VectorPolygon(props: &VectorPolygonProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,14 +41,14 @@ pub fn VectorSquare(props: &VectorSquareProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M17.055 4.533a24 24 0 00-10.11 0" />
-            <path d="M19.467 17.055a24 24 0 000-10.11" />
-            <path d="M4.533 6.945a24 24 0 000 10.11" />
-            <path d="M6.945 19.467a24 24 0 0010.11 0" />
-            <circle cx="19" cy="19" r="2" />
-            <circle cx="19" cy="5" r="2" />
-            <circle cx="5" cy="19" r="2" />
-            <circle cx="5" cy="5" r="2" />
+            <path d="m12.828 4.813 5.344 2.375" />
+            <path d="m15.769 18.153 3.461-8.306" />
+            <path d="m5.687 14.074 7.625 4.852" />
+            <path d="M9.772 5.579 5.228 11.42" />
+            <circle cx="11" cy="4" r="2" />
+            <circle cx="15" cy="20" r="2" />
+            <circle cx="20" cy="8" r="2" />
+            <circle cx="4" cy="13" r="2" />
         </svg>
     }
 }

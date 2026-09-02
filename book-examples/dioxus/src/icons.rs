@@ -10784,6 +10784,12 @@ pub fn IconsV1() -> Element {
         ),
         (
             rsx! {
+                VectorPolygon {}
+            },
+            "Vector Polygon",
+        ),
+        (
+            rsx! {
                 VectorSquare {}
             },
             "Vector Square",

@@ -2239,6 +2239,7 @@ pub fn IconsV() -> Html {
         (html! { <Van /> }, "Van"),
         (html! { <Variable /> }, "Variable"),
         (html! { <Vault /> }, "Vault"),
+        (html! { <VectorPolygon /> }, "Vector Polygon"),
         (html! { <VectorSquare /> }, "Vector Square"),
         (html! { <Vegan /> }, "Vegan"),
         (html! { <VenetianMask /> }, "Venetian Mask"),

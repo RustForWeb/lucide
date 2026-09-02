@@ -2355,6 +2355,7 @@ pub fn IconsV1() -> impl IntoView {
                 (view! { <Van /> }.into_any(), "Van"),
                 (view! { <Variable /> }.into_any(), "Variable"),
                 (view! { <Vault /> }.into_any(), "Vault"),
+                (view! { <VectorPolygon /> }.into_any(), "Vector Polygon"),
                 (view! { <VectorSquare /> }.into_any(), "Vector Square"),
                 (view! { <Vegan /> }.into_any(), "Vegan"),
                 (view! { <VenetianMask /> }.into_any(), "Venetian Mask"),
