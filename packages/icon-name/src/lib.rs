@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1791usize] = [
+pub static ICON_NAMES: [&str; 1793usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -977,6 +977,7 @@ pub static ICON_NAMES: [&str; 1791usize] = [
     "mail-clock",
     "mail-minus",
     "mail-open",
+    "mail-pen",
     "mail-plus",
     "mail-question-mark",
     "mail-search",
@@ -1761,6 +1762,7 @@ pub static ICON_NAMES: [&str; 1791usize] = [
     "weight-tilde",
     "wheat",
     "wheat-off",
+    "whistle",
     "whole-word",
     "wifi",
     "wifi-cog",

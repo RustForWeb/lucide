@@ -2358,6 +2358,8 @@ mod mail_minus;
 #[cfg(feature = "mail")]
 mod mail_open;
 #[cfg(feature = "mail")]
+mod mail_pen;
+#[cfg(feature = "mail")]
 mod mail_plus;
 #[cfg(feature = "mail")]
 mod mail_question_mark;
@@ -4476,6 +4478,8 @@ mod weight_tilde;
 mod wheat;
 #[cfg(feature = "food-beverage")]
 mod wheat_off;
+#[cfg(any(feature = "sports", feature = "notifications"))]
+mod whistle;
 #[cfg(feature = "text")]
 mod whole_word;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -6925,6 +6929,8 @@ pub use mail_minus::*;
 #[cfg(feature = "mail")]
 pub use mail_open::*;
 #[cfg(feature = "mail")]
+pub use mail_pen::*;
+#[cfg(feature = "mail")]
 pub use mail_plus::*;
 #[cfg(feature = "mail")]
 pub use mail_question_mark::*;
@@ -9043,6 +9049,8 @@ pub use weight_tilde::*;
 pub use wheat::*;
 #[cfg(feature = "food-beverage")]
 pub use wheat_off::*;
+#[cfg(any(feature = "sports", feature = "notifications"))]
+pub use whistle::*;
 #[cfg(feature = "text")]
 pub use whole_word::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
