@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Shrimp(
+pub fn Bridge(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,12 @@ pub fn Shrimp(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 2a3.28 3.28 0 003.227 1.798l6.17-.561A1 1 0 1119.614 8H8.5a6.44 6.44 0 00-5.63 9.75A6.5 6.5 0 008.5 21c1.38 0 2-.5 2.5-1" />
-            <path d="M10 8a8.5 8.5 0 000 8" />
-            <path d="M11 22c-.5-.5-1.12-1-2.5-1a1 1 0 010-5H12a7 7 0 007-7V8" />
-            <path d="M13 12h.01" />
-            <path d="M8 16c-2 0-4.5-4-4-6" />
+            <path d="M10 9.728V16" />
+            <path d="M14 9.728V16" />
+            <path d="M18 20V4" />
+            <path d="m22 11-4-4A7.5 7.5 0 0 1 6 7l-4 4" />
+            <path d="M22 16H2" />
+            <path d="M6 20V4" />
         </svg>
     }
 }

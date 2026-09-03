@@ -1526,6 +1526,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                Bridge {}
+            },
+            "Bridge",
+        ),
+        (
+            rsx! {
                 Briefcase {}
             },
             "Briefcase",
@@ -1820,6 +1826,12 @@ pub fn IconsC1() -> Element {
                 CameraOff {}
             },
             "Camera Off",
+        ),
+        (
+            rsx! {
+                Can {}
+            },
+            "Can",
         ),
         (
             rsx! {
@@ -2241,12 +2253,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Right Left",
         ),
-        (
-            rsx! {
-                ChevronsUp {}
-            },
-            "Chevrons Up",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2262,6 +2268,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsUp {}
+            },
+            "Chevrons Up",
+        ),
         (
             rsx! {
                 ChevronsUpDown {}
@@ -2856,12 +2868,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Moon",
         ),
-        (
-            rsx! {
-                CloudMoonRain {}
-            },
-            "Cloud Moon Rain",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2877,6 +2883,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudMoonRain {}
+            },
+            "Cloud Moon Rain",
+        ),
         (
             rsx! {
                 CloudOff {}
@@ -5798,6 +5810,12 @@ pub fn IconsL1() -> Element {
                 LightbulbOff {}
             },
             "Lightbulb Off",
+        ),
+        (
+            rsx! {
+                Lighthouse {}
+            },
+            "Lighthouse",
         ),
         (
             rsx! {
@@ -8798,6 +8816,18 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShoppingCartMinus {}
+            },
+            "Shopping Cart Minus",
+        ),
+        (
+            rsx! {
+                ShoppingCartPlus {}
+            },
+            "Shopping Cart Plus",
+        ),
+        (
+            rsx! {
                 Shovel {}
             },
             "Shovel",
@@ -8819,6 +8849,12 @@ pub fn IconsS1() -> Element {
                 Shrimp {}
             },
             "Shrimp",
+        ),
+        (
+            rsx! {
+                ShrimpOff {}
+            },
+            "Shrimp Off",
         ),
         (
             rsx! {
@@ -8886,6 +8922,21 @@ pub fn IconsS1() -> Element {
             },
             "Signpost",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS2() -> Element {
+    let icons = [
         (
             rsx! {
                 SignpostBig {}
@@ -8904,21 +8955,6 @@ pub fn IconsS1() -> Element {
             },
             "Skip Back",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS2() -> Element {
-    let icons = [
         (
             rsx! {
                 SkipForward {}
@@ -9501,6 +9537,21 @@ pub fn IconsS2() -> Element {
             },
             "Square Stack",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS3() -> Element {
+    let icons = [
         (
             rsx! {
                 SquareStar {}
@@ -9519,21 +9570,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Terminal",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS3() -> Element {
-    let icons = [
         (
             rsx! {
                 SquareText {}

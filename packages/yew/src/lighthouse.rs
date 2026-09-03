@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct ShrimpProps {
+pub struct LighthouseProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct ShrimpProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Shrimp(props: &ShrimpProps) -> Html {
+pub fn Lighthouse(props: &LighthouseProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,13 +41,18 @@ pub fn Shrimp(props: &ShrimpProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M10 2a3.28 3.28 0 003.227 1.798l6.17-.561A1 1 0 1119.614 8H8.5a6.44 6.44 0 00-5.63 9.75A6.5 6.5 0 008.5 21c1.38 0 2-.5 2.5-1"
-            />
-            <path d="M10 8a8.5 8.5 0 000 8" />
-            <path d="M11 22c-.5-.5-1.12-1-2.5-1a1 1 0 010-5H12a7 7 0 007-7V8" />
-            <path d="M13 12h.01" />
-            <path d="M8 16c-2 0-4.5-4-4-6" />
+            <path d="M12 3V2" />
+            <path d="M16.066 16.865 7 22l2-11V6a3 3 0 016 0v5l2 11" />
+            <path d="m19.792 4.5.866-.5" />
+            <path d="m19.797 13.5.866.5" />
+            <path d="M21 9h1" />
+            <path d="M3 9H2" />
+            <path d="m4.203 13.5-.866.5" />
+            <path d="M4.208 4.5 3.342 4" />
+            <path d="M5.5 22h13" />
+            <path d="m7.932 16.875 7.377-4.178" />
+            <path d="M8 11h8" />
+            <path d="M8 7h8" />
         </svg>
     }
 }
