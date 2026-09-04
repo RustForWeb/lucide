@@ -552,6 +552,8 @@ mod brick_wall;
 mod brick_wall_fire;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
 mod brick_wall_shield;
+#[cfg(any(feature = "travel", feature = "transportation", feature = "buildings"))]
+mod bridge;
 #[cfg(feature = "transportation")]
 mod briefcase;
 #[cfg(feature = "transportation")]
@@ -654,6 +656,8 @@ mod camera;
     feature = "communication"
 ))]
 mod camera_off;
+#[cfg(feature = "food-beverage")]
+mod can;
 #[cfg(feature = "food-beverage")]
 mod candy;
 #[cfg(feature = "food-beverage")]
@@ -2241,6 +2245,8 @@ mod ligature;
 mod lightbulb;
 #[cfg(feature = "photography")]
 mod lightbulb_off;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+mod lighthouse;
 #[cfg(any(feature = "development", feature = "navigation"))]
 mod line_dot_right_horizontal;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
@@ -3510,14 +3516,20 @@ mod shopping_bag;
 mod shopping_basket;
 #[cfg(feature = "shopping")]
 mod shopping_cart;
+#[cfg(feature = "shopping")]
+mod shopping_cart_minus;
+#[cfg(feature = "shopping")]
+mod shopping_cart_plus;
 #[cfg(any(feature = "nature", feature = "tools", feature = "gaming"))]
 mod shovel;
 #[cfg(any(feature = "home", feature = "travel"))]
 mod shower_head;
 #[cfg(any(feature = "mail", feature = "files"))]
 mod shredder;
-#[cfg(feature = "animals")]
+#[cfg(any(feature = "animals", feature = "food-beverage"))]
 mod shrimp;
+#[cfg(any(feature = "animals", feature = "food-beverage"))]
+mod shrimp_off;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 mod shrink;
 #[cfg(feature = "nature")]
@@ -5123,6 +5135,8 @@ pub use brick_wall::*;
 pub use brick_wall_fire::*;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
 pub use brick_wall_shield::*;
+#[cfg(any(feature = "travel", feature = "transportation", feature = "buildings"))]
+pub use bridge::*;
 #[cfg(feature = "transportation")]
 pub use briefcase::*;
 #[cfg(feature = "transportation")]
@@ -5225,6 +5239,8 @@ pub use camera::*;
     feature = "communication"
 ))]
 pub use camera_off::*;
+#[cfg(feature = "food-beverage")]
+pub use can::*;
 #[cfg(feature = "food-beverage")]
 pub use candy::*;
 #[cfg(feature = "food-beverage")]
@@ -6812,6 +6828,8 @@ pub use ligature::*;
 pub use lightbulb::*;
 #[cfg(feature = "photography")]
 pub use lightbulb_off::*;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+pub use lighthouse::*;
 #[cfg(any(feature = "development", feature = "navigation"))]
 pub use line_dot_right_horizontal::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
@@ -8081,14 +8099,20 @@ pub use shopping_bag::*;
 pub use shopping_basket::*;
 #[cfg(feature = "shopping")]
 pub use shopping_cart::*;
+#[cfg(feature = "shopping")]
+pub use shopping_cart_minus::*;
+#[cfg(feature = "shopping")]
+pub use shopping_cart_plus::*;
 #[cfg(any(feature = "nature", feature = "tools", feature = "gaming"))]
 pub use shovel::*;
 #[cfg(any(feature = "home", feature = "travel"))]
 pub use shower_head::*;
 #[cfg(any(feature = "mail", feature = "files"))]
 pub use shredder::*;
-#[cfg(feature = "animals")]
+#[cfg(any(feature = "animals", feature = "food-beverage"))]
 pub use shrimp::*;
+#[cfg(any(feature = "animals", feature = "food-beverage"))]
+pub use shrimp_off::*;
 #[cfg(any(feature = "layout", feature = "arrows"))]
 pub use shrink::*;
 #[cfg(feature = "nature")]

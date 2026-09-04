@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1793usize] = [
+pub static ICON_NAMES: [&str; 1799usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -245,6 +245,7 @@ pub static ICON_NAMES: [&str; 1793usize] = [
     "brick-wall",
     "brick-wall-fire",
     "brick-wall-shield",
+    "bridge",
     "briefcase",
     "briefcase-business",
     "briefcase-conveyor-belt",
@@ -292,6 +293,7 @@ pub static ICON_NAMES: [&str; 1793usize] = [
     "calendars",
     "camera",
     "camera-off",
+    "can",
     "candy",
     "candy-cane",
     "candy-off",
@@ -925,6 +927,7 @@ pub static ICON_NAMES: [&str; 1793usize] = [
     "ligature",
     "lightbulb",
     "lightbulb-off",
+    "lighthouse",
     "line-dot-right-horizontal",
     "line-squiggle",
     "line-style",
@@ -1402,10 +1405,13 @@ pub static ICON_NAMES: [&str; 1793usize] = [
     "shopping-bag",
     "shopping-basket",
     "shopping-cart",
+    "shopping-cart-minus",
+    "shopping-cart-plus",
     "shovel",
     "shower-head",
     "shredder",
     "shrimp",
+    "shrimp-off",
     "shrink",
     "shrub",
     "shuffle",
