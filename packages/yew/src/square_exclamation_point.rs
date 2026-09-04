@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DoorClosedProps {
+pub struct SquareExclamationPointProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DoorClosedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn DoorClosed(props: &DoorClosedProps) -> Html {
+pub fn SquareExclamationPoint(props: &SquareExclamationPointProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,9 @@ pub fn DoorClosed(props: &DoorClosedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-            <path d="M2 21h20" />
-            <path d="M9 12h.01" />
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <line x1="12" x2="12" y1="8" y2="12" />
+            <line x1="12" x2="12.01" y1="16" y2="16" />
         </svg>
     }
 }

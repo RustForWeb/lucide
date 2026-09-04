@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Leaf(
+pub fn VirusOff(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,26 @@ pub fn Leaf(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" />
-            <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" />
+            <path d="M10.01 10h.01" />
+            <path d="M12 14.991h.01" />
+            <path d="M12 22v-3" />
+            <path d="M12 2v3" />
+            <path d="M13 22h-2" />
+            <path d="M13 2h-2" />
+            <path d="m16.5 19.794-1-1.733" />
+            <path d="m16.5 4.205-1 1.732" />
+            <path d="M18.891 13.235a7 7 0 00-8.126-8.126" />
+            <path d="m19.794 7.5-1.732 1" />
+            <path d="M2 12h3" />
+            <path d="M2 13v-2" />
+            <path d="m2 2 20 20" />
+            <path d="M22 12h-3" />
+            <path d="M22 13v-2" />
+            <path d="m4.206 16.5 1.732-1" />
+            <path d="m4.206 7.5 1.732 1" />
+            <path d="M7.05 7.05a7 7 0 009.9 9.9" />
+            <path d="m7.5 19.794 1-1.733" />
+            <path d="M9 12h.01" />
         </svg>
     }
 }

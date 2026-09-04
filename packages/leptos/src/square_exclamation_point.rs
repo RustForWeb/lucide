@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Leaf(
+pub fn SquareExclamationPoint(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,9 @@ pub fn Leaf(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" />
-            <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" />
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <line x1="12" x2="12" y1="8" y2="12" />
+            <line x1="12" x2="12.01" y1="16" y2="16" />
         </svg>
     }
 }

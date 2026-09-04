@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Leaf(
+pub fn Germ(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,8 +29,18 @@ pub fn Leaf(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" />
-            <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" />
+            <path d="m11 2 .925 1.848" />
+            <path d="M13 15h.01" />
+            <path d="m16 21-1-2.472" />
+            <path d="m19 2-1 1.804" />
+            <path d="m2 19 2.746-1.373" />
+            <path d="m22 16-2.474-2.13" />
+            <path d="m22 5-1.804 1" />
+            <path d="m3 10 2 2" />
+            <path d="M9 16h.01" />
+            <path d="M9 20v2" />
+            <path d="M9.33 7.035c-.51 1.478-1.786 2.93-3.09 3.794A5 5 0 009 20a12.1 12.1 0 0011.902-9.916A6 6 0 009.33 7.035" />
+            <circle cx="15" cy="9" r="2" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DoorClosedProps {
+pub struct CreditCardReaderProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DoorClosedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn DoorClosed(props: &DoorClosedProps) -> Html {
+pub fn CreditCardReader(props: &CreditCardReaderProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn DoorClosed(props: &DoorClosedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-            <path d="M2 21h20" />
-            <path d="M9 12h.01" />
+            <path d="M15 16v1" />
+            <path
+                d="M16.963 7.734A1 1 0 0015.999 7H8.003a1 1 0 00-.964.734L4.073 18.467A2 2 0 006 21h12a2 2 0 001.927-2.532z"
+            />
+            <path d="M2.678 8.5A2 2 0 012 7V5a2 2 0 012-2h16a2 2 0 012 2v2a2 2 0 01-.676 1.499" />
+            <path d="m9 21 2-14" />
         </svg>
     }
 }

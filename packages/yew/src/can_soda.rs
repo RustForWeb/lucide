@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DoorClosedProps {
+pub struct CanSodaProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DoorClosedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn DoorClosed(props: &DoorClosedProps) -> Html {
+pub fn CanSoda(props: &CanSodaProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn DoorClosed(props: &DoorClosedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-            <path d="M2 21h20" />
-            <path d="M9 12h.01" />
+            <path d="m17 22 1.664-2.496a2 2 0 00.336-1.11V5.606a2 2 0 00-.336-1.11L17 2" />
+            <path d="M18 22H6" />
+            <path d="M18 2H6" />
+            <path d="M5 17h14" />
+            <path d="M5 7h14" />
+            <path d="m7 22-1.664-2.496A2 2 0 015 18.394V5.606a2 2 0 01.336-1.11L7 2" />
         </svg>
     }
 }

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct DoorClosedProps {
+pub struct VirusOffProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct DoorClosedProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn DoorClosed(props: &DoorClosedProps) -> Html {
+pub fn VirusOff(props: &VirusOffProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,8 +41,25 @@ pub fn DoorClosed(props: &DoorClosedProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-            <path d="M2 21h20" />
+            <path d="M10.01 10h.01" />
+            <path d="M12 14.991h.01" />
+            <path d="M12 22v-3" />
+            <path d="M12 2v3" />
+            <path d="M13 22h-2" />
+            <path d="M13 2h-2" />
+            <path d="m16.5 19.794-1-1.733" />
+            <path d="m16.5 4.205-1 1.732" />
+            <path d="M18.891 13.235a7 7 0 00-8.126-8.126" />
+            <path d="m19.794 7.5-1.732 1" />
+            <path d="M2 12h3" />
+            <path d="M2 13v-2" />
+            <path d="m2 2 20 20" />
+            <path d="M22 12h-3" />
+            <path d="M22 13v-2" />
+            <path d="m4.206 16.5 1.732-1" />
+            <path d="m4.206 7.5 1.732 1" />
+            <path d="M7.05 7.05a7 7 0 009.9 9.9" />
+            <path d="m7.5 19.794 1-1.733" />
             <path d="M9 12h.01" />
         </svg>
     }
