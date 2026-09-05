@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct DoorClosedLockedProps {
+pub struct SquareExclamationPointProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct DoorClosedLockedProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
+pub fn SquareExclamationPoint(props: SquareExclamationPointProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,16 +34,24 @@ pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M19 8V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" }
-            path { "d": "M2 21h8" }
-            path { "d": "M20 16v-2a2 2 0 00-4 0v2" }
-            path { "d": "M9 12h.01" }
             rect {
-                "x": "14",
-                "y": "16",
-                "width": "8",
-                "height": "5",
-                "rx": "1",
+                "width": "18",
+                "height": "18",
+                "x": "3",
+                "y": "3",
+                "rx": "2",
+            }
+            line {
+                "x1": "12",
+                "x2": "12",
+                "y1": "8",
+                "y2": "12",
+            }
+            line {
+                "x1": "12",
+                "x2": "12.01",
+                "y1": "16",
+                "y2": "16",
             }
         }
     }

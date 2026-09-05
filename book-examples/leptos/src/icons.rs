@@ -445,6 +445,7 @@ pub fn IconsC1() -> impl IntoView {
                 (view! { <Camera /> }.into_any(), "Camera"),
                 (view! { <CameraOff /> }.into_any(), "Camera Off"),
                 (view! { <Can /> }.into_any(), "Can"),
+                (view! { <CanSoda /> }.into_any(), "Can Soda"),
                 (view! { <Candy /> }.into_any(), "Candy"),
                 (view! { <CandyCane /> }.into_any(), "Candy Cane"),
                 (view! { <CandyOff /> }.into_any(), "Candy Off"),
@@ -523,7 +524,6 @@ pub fn IconsC1() -> impl IntoView {
                     "Chevrons Left Right Ellipsis",
                 ),
                 (view! { <ChevronsRight /> }.into_any(), "Chevrons Right"),
-                (view! { <ChevronsRightLeft /> }.into_any(), "Chevrons Right Left"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -541,6 +541,7 @@ pub fn IconsC2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <ChevronsRightLeft /> }.into_any(), "Chevrons Right Left"),
                 (view! { <ChevronsUp /> }.into_any(), "Chevrons Up"),
                 (view! { <ChevronsUpDown /> }.into_any(), "Chevrons Up Down"),
                 (view! { <Church /> }.into_any(), "Church"),
@@ -640,7 +641,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CloudFog /> }.into_any(), "Cloud Fog"),
                 (view! { <CloudHail /> }.into_any(), "Cloud Hail"),
                 (view! { <CloudLightning /> }.into_any(), "Cloud Lightning"),
-                (view! { <CloudMoon /> }.into_any(), "Cloud Moon"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -658,6 +658,7 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudMoon /> }.into_any(), "Cloud Moon"),
                 (view! { <CloudMoonRain /> }.into_any(), "Cloud Moon Rain"),
                 (view! { <CloudOff /> }.into_any(), "Cloud Off"),
                 (view! { <CloudRain /> }.into_any(), "Cloud Rain"),
@@ -715,6 +716,7 @@ pub fn IconsC3() -> impl IntoView {
                 (view! { <CreditCardCheck /> }.into_any(), "Credit Card Check"),
                 (view! { <CreditCardMinus /> }.into_any(), "Credit Card Minus"),
                 (view! { <CreditCardPlus /> }.into_any(), "Credit Card Plus"),
+                (view! { <CreditCardReader /> }.into_any(), "Credit Card Reader"),
                 (view! { <CreditCardX /> }.into_any(), "Credit Card X"),
                 (view! { <Croissant /> }.into_any(), "Croissant"),
                 (view! { <Crop /> }.into_any(), "Crop"),
@@ -784,6 +786,7 @@ pub fn IconsD1() -> impl IntoView {
                 (view! { <DoorClosed /> }.into_any(), "Door Closed"),
                 (view! { <DoorClosedLocked /> }.into_any(), "Door Closed Locked"),
                 (view! { <DoorOpen /> }.into_any(), "Door Open"),
+                (view! { <DoorStairwell /> }.into_any(), "Door Stairwell"),
                 (view! { <Dot /> }.into_any(), "Dot"),
                 (view! { <Download /> }.into_any(), "Download"),
                 (view! { <DraftingCompass /> }.into_any(), "Drafting Compass"),
@@ -825,6 +828,7 @@ pub fn IconsE1() -> impl IntoView {
                 (view! { <Ellipse /> }.into_any(), "Ellipse"),
                 (view! { <Ellipsis /> }.into_any(), "Ellipsis"),
                 (view! { <EllipsisVertical /> }.into_any(), "Ellipsis Vertical"),
+                (view! { <Engine /> }.into_any(), "Engine"),
                 (view! { <Equal /> }.into_any(), "Equal"),
                 (view! { <EqualApproximately /> }.into_any(), "Equal Approximately"),
                 (view! { <EqualNot /> }.into_any(), "Equal Not"),
@@ -1042,6 +1046,8 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Gavel /> }.into_any(), "Gavel"),
                 (view! { <Gem /> }.into_any(), "Gem"),
                 (view! { <GeorgianLari /> }.into_any(), "Georgian Lari"),
+                (view! { <Germ /> }.into_any(), "Germ"),
+                (view! { <GermOff /> }.into_any(), "Germ Off"),
                 (view! { <Ghost /> }.into_any(), "Ghost"),
                 (view! { <Gift /> }.into_any(), "Gift"),
                 (view! { <GitBranch /> }.into_any(), "Git Branch"),
@@ -2048,6 +2054,7 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareDivide /> }.into_any(), "Square Divide"),
                 (view! { <SquareDot /> }.into_any(), "Square Dot"),
                 (view! { <SquareEqual /> }.into_any(), "Square Equal"),
+                (view! { <SquareExclamationPoint /> }.into_any(), "Square Exclamation Point"),
                 (view! { <SquareFunction /> }.into_any(), "Square Function"),
                 (view! { <SquareKanban /> }.into_any(), "Square Kanban"),
                 (view! { <SquareLibrary /> }.into_any(), "Square Library"),
@@ -2074,7 +2081,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareSplitHorizontal /> }.into_any(), "Square Split Horizontal"),
                 (view! { <SquareSplitVertical /> }.into_any(), "Square Split Vertical"),
                 (view! { <SquareSquare /> }.into_any(), "Square Square"),
-                (view! { <SquareStack /> }.into_any(), "Square Stack"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2092,6 +2098,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareStack /> }.into_any(), "Square Stack"),
                 (view! { <SquareStar /> }.into_any(), "Square Star"),
                 (view! { <SquareStop /> }.into_any(), "Square Stop"),
                 (view! { <SquareTerminal /> }.into_any(), "Square Terminal"),
@@ -2242,7 +2249,6 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TramFront /> }.into_any(), "Tram Front"),
                 (view! { <Transgender /> }.into_any(), "Transgender"),
                 (view! { <Trash /> }.into_any(), "Trash"),
-                (view! { <Trash2 /> }.into_any(), "Trash 2"),
                 (view! { <TreeDeciduous /> }.into_any(), "Tree Deciduous"),
                 (view! { <TreePalm /> }.into_any(), "Tree Palm"),
                 (view! { <TreePine /> }.into_any(), "Tree Pine"),
@@ -2263,6 +2269,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Tv /> }.into_any(), "Tv"),
                 (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),
                 (view! { <TvMinimalPlay /> }.into_any(), "Tv Minimal Play"),
+                (view! { <Type /> }.into_any(), "Type"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2279,10 +2286,7 @@ pub fn IconsT1() -> impl IntoView {
 pub fn IconsT2() -> impl IntoView {
     view! {
         <For
-            each=move || [
-                (view! { <Type /> }.into_any(), "Type"),
-                (view! { <TypeOutline /> }.into_any(), "Type Outline"),
-            ]
+            each=move || [(view! { <TypeOutline /> }.into_any(), "Type Outline")]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {
@@ -2374,6 +2378,8 @@ pub fn IconsV1() -> impl IntoView {
                 (view! { <VideoOff /> }.into_any(), "Video Off"),
                 (view! { <Videotape /> }.into_any(), "Videotape"),
                 (view! { <View /> }.into_any(), "View"),
+                (view! { <Virus /> }.into_any(), "Virus"),
+                (view! { <VirusOff /> }.into_any(), "Virus Off"),
                 (view! { <Voicemail /> }.into_any(), "Voicemail"),
                 (view! { <Volleyball /> }.into_any(), "Volleyball"),
                 (view! { <Volume /> }.into_any(), "Volume"),

@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct DoorClosedLockedProps {
+pub struct CreditCardReaderProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct DoorClosedLockedProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
+pub fn CreditCardReader(props: CreditCardReaderProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,10 @@ pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M19 8V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" }
-            path { "d": "M2 21h8" }
-            path { "d": "M20 16v-2a2 2 0 00-4 0v2" }
-            path { "d": "M9 12h.01" }
-            rect {
-                "x": "14",
-                "y": "16",
-                "width": "8",
-                "height": "5",
-                "rx": "1",
-            }
+            path { "d": "M15 16v1" }
+            path { "d": "M16.963 7.734A1 1 0 0015.999 7H8.003a1 1 0 00-.964.734L4.073 18.467A2 2 0 006 21h12a2 2 0 001.927-2.532z" }
+            path { "d": "M2.678 8.5A2 2 0 012 7V5a2 2 0 012-2h16a2 2 0 012 2v2a2 2 0 01-.676 1.499" }
+            path { "d": "m9 21 2-14" }
         }
     }
 }

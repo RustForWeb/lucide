@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct DoorClosedLockedProps {
+pub struct CanSodaProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct DoorClosedLockedProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
+pub fn CanSoda(props: CanSodaProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,12 @@ pub fn DoorClosedLocked(props: DoorClosedLockedProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M19 8V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" }
-            path { "d": "M2 21h8" }
-            path { "d": "M20 16v-2a2 2 0 00-4 0v2" }
-            path { "d": "M9 12h.01" }
-            rect {
-                "x": "14",
-                "y": "16",
-                "width": "8",
-                "height": "5",
-                "rx": "1",
-            }
+            path { "d": "m17 22 1.664-2.496a2 2 0 00.336-1.11V5.606a2 2 0 00-.336-1.11L17 2" }
+            path { "d": "M18 22H6" }
+            path { "d": "M18 2H6" }
+            path { "d": "M5 17h14" }
+            path { "d": "M5 7h14" }
+            path { "d": "m7 22-1.664-2.496A2 2 0 015 18.394V5.606a2 2 0 01.336-1.11L7 2" }
         }
     }
 }

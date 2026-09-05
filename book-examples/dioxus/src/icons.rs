@@ -1835,6 +1835,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                CanSoda {}
+            },
+            "Can Soda",
+        ),
+        (
+            rsx! {
                 Candy {}
             },
             "Candy",
@@ -2247,12 +2253,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Right",
         ),
-        (
-            rsx! {
-                ChevronsRightLeft {}
-            },
-            "Chevrons Right Left",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2268,6 +2268,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsRightLeft {}
+            },
+            "Chevrons Right Left",
+        ),
         (
             rsx! {
                 ChevronsUp {}
@@ -2862,12 +2868,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Lightning",
         ),
-        (
-            rsx! {
-                CloudMoon {}
-            },
-            "Cloud Moon",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2883,6 +2883,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudMoon {}
+            },
+            "Cloud Moon",
+        ),
         (
             rsx! {
                 CloudMoonRain {}
@@ -3227,6 +3233,12 @@ pub fn IconsC3() -> Element {
         ),
         (
             rsx! {
+                CreditCardReader {}
+            },
+            "Credit Card Reader",
+        ),
+        (
+            rsx! {
                 CreditCardX {}
             },
             "Credit Card X",
@@ -3554,6 +3566,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DoorStairwell {}
+            },
+            "Door Stairwell",
+        ),
+        (
+            rsx! {
                 Dot {}
             },
             "Dot",
@@ -3710,6 +3728,12 @@ pub fn IconsE1() -> Element {
                 EllipsisVertical {}
             },
             "Ellipsis Vertical",
+        ),
+        (
+            rsx! {
+                Engine {}
+            },
+            "Engine",
         ),
         (
             rsx! {
@@ -4733,6 +4757,18 @@ pub fn IconsG1() -> Element {
                 GeorgianLari {}
             },
             "Georgian Lari",
+        ),
+        (
+            rsx! {
+                Germ {}
+            },
+            "Germ",
+        ),
+        (
+            rsx! {
+                GermOff {}
+            },
+            "Germ Off",
         ),
         (
             rsx! {
@@ -9377,6 +9413,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareExclamationPoint {}
+            },
+            "Square Exclamation Point",
+        ),
+        (
+            rsx! {
                 SquareFunction {}
             },
             "Square Function",
@@ -9531,12 +9573,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Square",
         ),
-        (
-            rsx! {
-                SquareStack {}
-            },
-            "Square Stack",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9552,6 +9588,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareStack {}
+            },
+            "Square Stack",
+        ),
         (
             rsx! {
                 SquareStar {}
@@ -10367,12 +10409,6 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
-                Trash2 {}
-            },
-            "Trash 2",
-        ),
-        (
-            rsx! {
                 TreeDeciduous {}
             },
             "Tree Deciduous",
@@ -10491,6 +10527,12 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal Play",
         ),
+        (
+            rsx! {
+                Type {}
+            },
+            "Type",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -10505,20 +10547,12 @@ pub fn IconsT1() -> Element {
 }
 #[component]
 pub fn IconsT2() -> Element {
-    let icons = [
-        (
-            rsx! {
-                Type {}
-            },
-            "Type",
-        ),
-        (
-            rsx! {
-                TypeOutline {}
-            },
-            "Type Outline",
-        ),
-    ];
+    let icons = [(
+        rsx! {
+            TypeOutline {}
+        },
+        "Type Outline",
+    )];
     rsx! {
         for (icon, name) in icons {
             div {
@@ -10895,6 +10929,18 @@ pub fn IconsV1() -> Element {
                 View {}
             },
             "View",
+        ),
+        (
+            rsx! {
+                Virus {}
+            },
+            "Virus",
+        ),
+        (
+            rsx! {
+                VirusOff {}
+            },
+            "Virus Off",
         ),
         (
             rsx! {

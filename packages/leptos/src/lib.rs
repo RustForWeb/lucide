@@ -659,6 +659,8 @@ mod camera_off;
 #[cfg(feature = "food-beverage")]
 mod can;
 #[cfg(feature = "food-beverage")]
+mod can_soda;
+#[cfg(feature = "food-beverage")]
 mod candy;
 #[cfg(feature = "food-beverage")]
 mod candy_cane;
@@ -1170,6 +1172,8 @@ mod credit_card_check;
 mod credit_card_minus;
 #[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
 mod credit_card_plus;
+#[cfg(any(feature = "finance", feature = "navigation", feature = "shopping"))]
+mod credit_card_reader;
 #[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
 mod credit_card_x;
 #[cfg(feature = "food-beverage")]
@@ -1319,6 +1323,8 @@ mod door_closed;
 mod door_closed_locked;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 mod door_open;
+#[cfg(any(feature = "home", feature = "travel"))]
+mod door_stairwell;
 #[cfg(any(feature = "shapes", feature = "text"))]
 mod dot;
 #[cfg(any(feature = "arrows", feature = "files"))]
@@ -1373,6 +1379,8 @@ mod ellipse;
 mod ellipsis;
 #[cfg(feature = "layout")]
 mod ellipsis_vertical;
+#[cfg(feature = "transportation")]
+mod engine;
 #[cfg(any(feature = "math", feature = "development"))]
 mod equal;
 #[cfg(feature = "math")]
@@ -1781,6 +1789,10 @@ mod gavel;
 mod gem;
 #[cfg(feature = "finance")]
 mod georgian_lari;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+mod germ;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+mod germ_off;
 #[cfg(feature = "gaming")]
 mod ghost;
 #[cfg(any(feature = "gaming", feature = "account"))]
@@ -3764,6 +3776,8 @@ mod square_divide;
 mod square_dot;
 #[cfg(feature = "math")]
 mod square_equal;
+#[cfg(any(feature = "notifications", feature = "shapes"))]
+mod square_exclamation_point;
 #[cfg(any(feature = "development", feature = "math"))]
 mod square_function;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
@@ -4181,8 +4195,6 @@ mod tram_front;
 mod transgender;
 #[cfg(any(feature = "files", feature = "mail"))]
 mod trash;
-#[cfg(any(feature = "files", feature = "mail"))]
-mod trash_2;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 mod tree_deciduous;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
@@ -4379,6 +4391,10 @@ mod video_off;
 mod videotape;
 #[cfg(any(feature = "design", feature = "photography"))]
 mod view;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+mod virus;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+mod virus_off;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "social"))]
 mod voicemail;
 #[cfg(any(feature = "sports", feature = "gaming", feature = "travel"))]
@@ -5242,6 +5258,8 @@ pub use camera_off::*;
 #[cfg(feature = "food-beverage")]
 pub use can::*;
 #[cfg(feature = "food-beverage")]
+pub use can_soda::*;
+#[cfg(feature = "food-beverage")]
 pub use candy::*;
 #[cfg(feature = "food-beverage")]
 pub use candy_cane::*;
@@ -5753,6 +5771,8 @@ pub use credit_card_check::*;
 pub use credit_card_minus::*;
 #[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
 pub use credit_card_plus::*;
+#[cfg(any(feature = "finance", feature = "navigation", feature = "shopping"))]
+pub use credit_card_reader::*;
 #[cfg(any(feature = "account", feature = "finance", feature = "shopping"))]
 pub use credit_card_x::*;
 #[cfg(feature = "food-beverage")]
@@ -5902,6 +5922,8 @@ pub use door_closed::*;
 pub use door_closed_locked::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 pub use door_open::*;
+#[cfg(any(feature = "home", feature = "travel"))]
+pub use door_stairwell::*;
 #[cfg(any(feature = "shapes", feature = "text"))]
 pub use dot::*;
 #[cfg(any(feature = "arrows", feature = "files"))]
@@ -5956,6 +5978,8 @@ pub use ellipse::*;
 pub use ellipsis::*;
 #[cfg(feature = "layout")]
 pub use ellipsis_vertical::*;
+#[cfg(feature = "transportation")]
+pub use engine::*;
 #[cfg(any(feature = "math", feature = "development"))]
 pub use equal::*;
 #[cfg(feature = "math")]
@@ -6364,6 +6388,10 @@ pub use gavel::*;
 pub use gem::*;
 #[cfg(feature = "finance")]
 pub use georgian_lari::*;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+pub use germ::*;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+pub use germ_off::*;
 #[cfg(feature = "gaming")]
 pub use ghost::*;
 #[cfg(any(feature = "gaming", feature = "account"))]
@@ -8347,6 +8375,8 @@ pub use square_divide::*;
 pub use square_dot::*;
 #[cfg(feature = "math")]
 pub use square_equal::*;
+#[cfg(any(feature = "notifications", feature = "shapes"))]
+pub use square_exclamation_point::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use square_function::*;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
@@ -8764,8 +8794,6 @@ pub use tram_front::*;
 pub use transgender::*;
 #[cfg(any(feature = "files", feature = "mail"))]
 pub use trash::*;
-#[cfg(any(feature = "files", feature = "mail"))]
-pub use trash_2::*;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 pub use tree_deciduous::*;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
@@ -8962,6 +8990,10 @@ pub use video_off::*;
 pub use videotape::*;
 #[cfg(any(feature = "design", feature = "photography"))]
 pub use view::*;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+pub use virus::*;
+#[cfg(any(feature = "medical", feature = "science", feature = "security"))]
+pub use virus_off::*;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "social"))]
 pub use voicemail::*;
 #[cfg(any(feature = "sports", feature = "gaming", feature = "travel"))]
