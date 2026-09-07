@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Computer(
+pub fn EqualApproximatelyNot(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,9 @@ pub fn Computer(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 18h6" />
-            <path d="M6 18h.01" />
-            <path d="M8 6h1" />
-            <rect x="2" y="14" width="20" height="8" rx="2" />
-            <rect x="4" y="2" width="16" height="12" rx="2" />
+            <path d="M5 15a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+            <path d="M5 9a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+            <line x1="19" x2="5" y1="5" y2="19" />
         </svg>
     }
 }

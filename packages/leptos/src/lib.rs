@@ -877,6 +877,8 @@ mod circle_chevron_right;
 mod circle_chevron_up;
 #[cfg(any(feature = "development", feature = "shapes"))]
 mod circle_dashed;
+#[cfg(any(feature = "shapes", feature = "development", feature = "notifications"))]
+mod circle_dashed_check;
 #[cfg(feature = "math")]
 mod circle_divide;
 #[cfg(feature = "finance")]
@@ -1315,6 +1317,8 @@ mod dock;
 mod dog;
 #[cfg(feature = "finance")]
 mod dollar_sign;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+mod dome;
 #[cfg(feature = "food-beverage")]
 mod donut;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
@@ -1385,6 +1389,13 @@ mod engine;
 mod equal;
 #[cfg(feature = "math")]
 mod equal_approximately;
+#[cfg(any(
+    feature = "math",
+    feature = "development",
+    feature = "charts",
+    feature = "science"
+))]
+mod equal_approximately_not;
 #[cfg(any(feature = "math", feature = "development"))]
 mod equal_not;
 #[cfg(feature = "text")]
@@ -1781,6 +1792,10 @@ mod gamepad;
 mod gamepad_2;
 #[cfg(any(feature = "gaming", feature = "devices"))]
 mod gamepad_directional;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod gap_horizontal;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod gap_vertical;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 mod gauge;
 #[cfg(any(feature = "navigation", feature = "tools"))]
@@ -4195,6 +4210,8 @@ mod tram_front;
 mod transgender;
 #[cfg(any(feature = "files", feature = "mail"))]
 mod trash;
+#[cfg(any(feature = "files", feature = "mail"))]
+mod trash_off;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 mod tree_deciduous;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
@@ -4282,6 +4299,8 @@ mod user;
 mod user_check;
 #[cfg(feature = "account")]
 mod user_cog;
+#[cfg(any(feature = "account", feature = "people", feature = "social"))]
+mod user_group;
 #[cfg(feature = "account")]
 mod user_key;
 #[cfg(any(feature = "account", feature = "security"))]
@@ -4300,6 +4319,8 @@ mod user_round_arrow_left;
 mod user_round_check;
 #[cfg(feature = "account")]
 mod user_round_cog;
+#[cfg(any(feature = "account", feature = "people", feature = "social"))]
+mod user_round_group;
 #[cfg(feature = "account")]
 mod user_round_key;
 #[cfg(feature = "account")]
@@ -5476,6 +5497,8 @@ pub use circle_chevron_right::*;
 pub use circle_chevron_up::*;
 #[cfg(any(feature = "development", feature = "shapes"))]
 pub use circle_dashed::*;
+#[cfg(any(feature = "shapes", feature = "development", feature = "notifications"))]
+pub use circle_dashed_check::*;
 #[cfg(feature = "math")]
 pub use circle_divide::*;
 #[cfg(feature = "finance")]
@@ -5914,6 +5937,8 @@ pub use dock::*;
 pub use dog::*;
 #[cfg(feature = "finance")]
 pub use dollar_sign::*;
+#[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
+pub use dome::*;
 #[cfg(feature = "food-beverage")]
 pub use donut::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
@@ -5984,6 +6009,13 @@ pub use engine::*;
 pub use equal::*;
 #[cfg(feature = "math")]
 pub use equal_approximately::*;
+#[cfg(any(
+    feature = "math",
+    feature = "development",
+    feature = "charts",
+    feature = "science"
+))]
+pub use equal_approximately_not::*;
 #[cfg(any(feature = "math", feature = "development"))]
 pub use equal_not::*;
 #[cfg(feature = "text")]
@@ -6380,6 +6412,10 @@ pub use gamepad::*;
 pub use gamepad_2::*;
 #[cfg(any(feature = "gaming", feature = "devices"))]
 pub use gamepad_directional::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use gap_horizontal::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use gap_vertical::*;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 pub use gauge::*;
 #[cfg(any(feature = "navigation", feature = "tools"))]
@@ -8794,6 +8830,8 @@ pub use tram_front::*;
 pub use transgender::*;
 #[cfg(any(feature = "files", feature = "mail"))]
 pub use trash::*;
+#[cfg(any(feature = "files", feature = "mail"))]
+pub use trash_off::*;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
 pub use tree_deciduous::*;
 #[cfg(any(feature = "nature", feature = "sustainability"))]
@@ -8881,6 +8919,8 @@ pub use user::*;
 pub use user_check::*;
 #[cfg(feature = "account")]
 pub use user_cog::*;
+#[cfg(any(feature = "account", feature = "people", feature = "social"))]
+pub use user_group::*;
 #[cfg(feature = "account")]
 pub use user_key::*;
 #[cfg(any(feature = "account", feature = "security"))]
@@ -8899,6 +8939,8 @@ pub use user_round_arrow_left::*;
 pub use user_round_check::*;
 #[cfg(feature = "account")]
 pub use user_round_cog::*;
+#[cfg(any(feature = "account", feature = "people", feature = "social"))]
+pub use user_round_group::*;
 #[cfg(feature = "account")]
 pub use user_round_key::*;
 #[cfg(feature = "account")]

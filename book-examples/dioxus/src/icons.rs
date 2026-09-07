@@ -2408,6 +2408,12 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleDashedCheck {}
+            },
+            "Circle Dashed Check",
+        ),
+        (
+            rsx! {
                 CircleDivide {}
             },
             "Circle Divide",
@@ -2862,12 +2868,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Hail",
         ),
-        (
-            rsx! {
-                CloudLightning {}
-            },
-            "Cloud Lightning",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2883,6 +2883,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudLightning {}
+            },
+            "Cloud Lightning",
+        ),
         (
             rsx! {
                 CloudMoon {}
@@ -3542,6 +3548,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                Dome {}
+            },
+            "Dome",
+        ),
+        (
+            rsx! {
                 Donut {}
             },
             "Donut",
@@ -3746,6 +3758,12 @@ pub fn IconsE1() -> Element {
                 EqualApproximately {}
             },
             "Equal Approximately",
+        ),
+        (
+            rsx! {
+                EqualApproximatelyNot {}
+            },
+            "Equal Approximately Not",
         ),
         (
             rsx! {
@@ -4733,6 +4751,18 @@ pub fn IconsG1() -> Element {
                 GamepadDirectional {}
             },
             "Gamepad Directional",
+        ),
+        (
+            rsx! {
+                GapHorizontal {}
+            },
+            "Gap Horizontal",
+        ),
+        (
+            rsx! {
+                GapVertical {}
+            },
+            "Gap Vertical",
         ),
         (
             rsx! {
@@ -10409,6 +10439,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TrashOff {}
+            },
+            "Trash Off",
+        ),
+        (
+            rsx! {
                 TreeDeciduous {}
             },
             "Tree Deciduous",
@@ -10527,12 +10563,6 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal Play",
         ),
-        (
-            rsx! {
-                Type {}
-            },
-            "Type",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -10547,12 +10577,20 @@ pub fn IconsT1() -> Element {
 }
 #[component]
 pub fn IconsT2() -> Element {
-    let icons = [(
-        rsx! {
-            TypeOutline {}
-        },
-        "Type Outline",
-    )];
+    let icons = [
+        (
+            rsx! {
+                Type {}
+            },
+            "Type",
+        ),
+        (
+            rsx! {
+                TypeOutline {}
+            },
+            "Type Outline",
+        ),
+    ];
     rsx! {
         for (icon, name) in icons {
             div {
@@ -10683,6 +10721,12 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UserGroup {}
+            },
+            "User Group",
+        ),
+        (
+            rsx! {
                 UserKey {}
             },
             "User Key",
@@ -10734,6 +10778,12 @@ pub fn IconsU1() -> Element {
                 UserRoundCog {}
             },
             "User Round Cog",
+        ),
+        (
+            rsx! {
+                UserRoundGroup {}
+            },
+            "User Round Group",
         ),
         (
             rsx! {

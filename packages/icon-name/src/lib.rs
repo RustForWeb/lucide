@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1807usize] = [
+pub static ICON_NAMES: [&str; 1815usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -387,6 +387,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "circle-chevron-right",
     "circle-chevron-up",
     "circle-dashed",
+    "circle-dashed-check",
     "circle-divide",
     "circle-dollar-sign",
     "circle-dot",
@@ -571,6 +572,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "dock",
     "dog",
     "dollar-sign",
+    "dome",
     "donut",
     "door-closed",
     "door-closed-locked",
@@ -603,6 +605,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "engine",
     "equal",
     "equal-approximately",
+    "equal-approximately-not",
     "equal-not",
     "eraser",
     "ethernet-port",
@@ -760,6 +763,8 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "gamepad",
     "gamepad-2",
     "gamepad-directional",
+    "gap-horizontal",
+    "gap-vertical",
     "gauge",
     "gavel",
     "gem",
@@ -1663,6 +1668,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "tram-front",
     "transgender",
     "trash",
+    "trash-off",
     "tree-deciduous",
     "tree-palm",
     "tree-pine",
@@ -1704,6 +1710,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "user",
     "user-check",
     "user-cog",
+    "user-group",
     "user-key",
     "user-lock",
     "user-minus",
@@ -1713,6 +1720,7 @@ pub static ICON_NAMES: [&str; 1807usize] = [
     "user-round-arrow-left",
     "user-round-check",
     "user-round-cog",
+    "user-round-group",
     "user-round-key",
     "user-round-minus",
     "user-round-pen",

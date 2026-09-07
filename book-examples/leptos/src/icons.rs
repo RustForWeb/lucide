@@ -564,6 +564,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleChevronRight /> }.into_any(), "Circle Chevron Right"),
                 (view! { <CircleChevronUp /> }.into_any(), "Circle Chevron Up"),
                 (view! { <CircleDashed /> }.into_any(), "Circle Dashed"),
+                (view! { <CircleDashedCheck /> }.into_any(), "Circle Dashed Check"),
                 (view! { <CircleDivide /> }.into_any(), "Circle Divide"),
                 (view! { <CircleDollarSign /> }.into_any(), "Circle Dollar Sign"),
                 (view! { <CircleDot /> }.into_any(), "Circle Dot"),
@@ -640,7 +641,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CloudDrizzle /> }.into_any(), "Cloud Drizzle"),
                 (view! { <CloudFog /> }.into_any(), "Cloud Fog"),
                 (view! { <CloudHail /> }.into_any(), "Cloud Hail"),
-                (view! { <CloudLightning /> }.into_any(), "Cloud Lightning"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -658,6 +658,7 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudLightning /> }.into_any(), "Cloud Lightning"),
                 (view! { <CloudMoon /> }.into_any(), "Cloud Moon"),
                 (view! { <CloudMoonRain /> }.into_any(), "Cloud Moon Rain"),
                 (view! { <CloudOff /> }.into_any(), "Cloud Off"),
@@ -782,6 +783,7 @@ pub fn IconsD1() -> impl IntoView {
                 (view! { <Dock /> }.into_any(), "Dock"),
                 (view! { <Dog /> }.into_any(), "Dog"),
                 (view! { <DollarSign /> }.into_any(), "Dollar Sign"),
+                (view! { <Dome /> }.into_any(), "Dome"),
                 (view! { <Donut /> }.into_any(), "Donut"),
                 (view! { <DoorClosed /> }.into_any(), "Door Closed"),
                 (view! { <DoorClosedLocked /> }.into_any(), "Door Closed Locked"),
@@ -831,6 +833,7 @@ pub fn IconsE1() -> impl IntoView {
                 (view! { <Engine /> }.into_any(), "Engine"),
                 (view! { <Equal /> }.into_any(), "Equal"),
                 (view! { <EqualApproximately /> }.into_any(), "Equal Approximately"),
+                (view! { <EqualApproximatelyNot /> }.into_any(), "Equal Approximately Not"),
                 (view! { <EqualNot /> }.into_any(), "Equal Not"),
                 (view! { <Eraser /> }.into_any(), "Eraser"),
                 (view! { <EthernetPort /> }.into_any(), "Ethernet Port"),
@@ -1042,6 +1045,8 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Gamepad /> }.into_any(), "Gamepad"),
                 (view! { <Gamepad2 /> }.into_any(), "Gamepad 2"),
                 (view! { <GamepadDirectional /> }.into_any(), "Gamepad Directional"),
+                (view! { <GapHorizontal /> }.into_any(), "Gap Horizontal"),
+                (view! { <GapVertical /> }.into_any(), "Gap Vertical"),
                 (view! { <Gauge /> }.into_any(), "Gauge"),
                 (view! { <Gavel /> }.into_any(), "Gavel"),
                 (view! { <Gem /> }.into_any(), "Gem"),
@@ -2249,6 +2254,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TramFront /> }.into_any(), "Tram Front"),
                 (view! { <Transgender /> }.into_any(), "Transgender"),
                 (view! { <Trash /> }.into_any(), "Trash"),
+                (view! { <TrashOff /> }.into_any(), "Trash Off"),
                 (view! { <TreeDeciduous /> }.into_any(), "Tree Deciduous"),
                 (view! { <TreePalm /> }.into_any(), "Tree Palm"),
                 (view! { <TreePine /> }.into_any(), "Tree Pine"),
@@ -2269,7 +2275,6 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Tv /> }.into_any(), "Tv"),
                 (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),
                 (view! { <TvMinimalPlay /> }.into_any(), "Tv Minimal Play"),
-                (view! { <Type /> }.into_any(), "Type"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2286,7 +2291,10 @@ pub fn IconsT1() -> impl IntoView {
 pub fn IconsT2() -> impl IntoView {
     view! {
         <For
-            each=move || [(view! { <TypeOutline /> }.into_any(), "Type Outline")]
+            each=move || [
+                (view! { <Type /> }.into_any(), "Type"),
+                (view! { <TypeOutline /> }.into_any(), "Type Outline"),
+            ]
             key=|icon| icon.1
             children=move |(icon, name)| {
                 view! {
@@ -2322,6 +2330,7 @@ pub fn IconsU1() -> impl IntoView {
                 (view! { <User /> }.into_any(), "User"),
                 (view! { <UserCheck /> }.into_any(), "User Check"),
                 (view! { <UserCog /> }.into_any(), "User Cog"),
+                (view! { <UserGroup /> }.into_any(), "User Group"),
                 (view! { <UserKey /> }.into_any(), "User Key"),
                 (view! { <UserLock /> }.into_any(), "User Lock"),
                 (view! { <UserMinus /> }.into_any(), "User Minus"),
@@ -2331,6 +2340,7 @@ pub fn IconsU1() -> impl IntoView {
                 (view! { <UserRoundArrowLeft /> }.into_any(), "User Round Arrow Left"),
                 (view! { <UserRoundCheck /> }.into_any(), "User Round Check"),
                 (view! { <UserRoundCog /> }.into_any(), "User Round Cog"),
+                (view! { <UserRoundGroup /> }.into_any(), "User Round Group"),
                 (view! { <UserRoundKey /> }.into_any(), "User Round Key"),
                 (view! { <UserRoundMinus /> }.into_any(), "User Round Minus"),
                 (view! { <UserRoundPen /> }.into_any(), "User Round Pen"),
