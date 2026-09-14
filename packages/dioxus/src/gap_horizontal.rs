@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Table2Props {
+pub struct GapHorizontalProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Table2Props {
     pub style: Option<String>,
 }
 #[component]
-pub fn Table2(props: Table2Props) -> Element {
+pub fn GapHorizontal(props: GapHorizontalProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,12 @@ pub fn Table2(props: Table2Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 9h18" }
-            path { "d": "M9 3v18" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M12 2v2" }
+            path { "d": "M12 8v2" }
+            path { "d": "M12 14v2" }
+            path { "d": "M12 20v2" }
+            path { "d": "M21 3h-3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3" }
+            path { "d": "M3 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3" }
         }
     }
 }

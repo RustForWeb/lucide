@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct Table2Props {
+pub struct EqualApproximatelyNotProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct Table2Props {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Table2(props: &Table2Props) -> Html {
+pub fn EqualApproximatelyNot(props: &EqualApproximatelyNotProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,9 @@ pub fn Table2(props: &Table2Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 9h18" />
-            <path d="M9 3v18" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M5 15a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+            <path d="M5 9a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+            <line x1="19" x2="5" y1="5" y2="19" />
         </svg>
     }
 }

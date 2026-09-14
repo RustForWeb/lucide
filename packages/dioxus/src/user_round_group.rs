@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Table2Props {
+pub struct UserRoundGroupProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Table2Props {
     pub style: Option<String>,
 }
 #[component]
-pub fn Table2(props: Table2Props) -> Element {
+pub fn UserRoundGroup(props: UserRoundGroupProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,12 @@ pub fn Table2(props: Table2Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 9h18" }
-            path { "d": "M9 3v18" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M17 21a5 5 0 00-10 0" }
+            path { "d": "M22 10.5a3.5 3.5 0 00-5.507-2.868" }
+            path { "d": "M7.507 7.632A3.5 3.5 0 002 10.5" }
+            circle { "cx": "12", "cy": "13", "r": "3" }
+            circle { "cx": "18.5", "cy": "4.5", "r": "2.5" }
+            circle { "cx": "5.5", "cy": "4.5", "r": "2.5" }
         }
     }
 }

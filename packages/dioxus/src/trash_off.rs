@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct Table2Props {
+pub struct TrashOffProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct Table2Props {
     pub style: Option<String>,
 }
 #[component]
-pub fn Table2(props: Table2Props) -> Element {
+pub fn TrashOff(props: TrashOffProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,15 +34,14 @@ pub fn Table2(props: Table2Props) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M3 9h18" }
-            path { "d": "M9 3v18" }
-            rect {
-                "x": "3",
-                "y": "3",
-                "width": "18",
-                "height": "18",
-                "rx": "2",
-            }
+            path { "d": "M10 11v6" }
+            path { "d": "M14 17v-3" }
+            path { "d": "M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-1.576.768" }
+            path { "d": "M19 6v7.344" }
+            path { "d": "m2 2 20 20" }
+            path { "d": "M21 6h-9.344" }
+            path { "d": "M3 6h3" }
+            path { "d": "M5 6v14a2 2 0 002 2h10a2 2 0 002-2v-1" }
         }
     }
 }

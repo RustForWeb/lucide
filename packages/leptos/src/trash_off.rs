@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Computer(
+pub fn TrashOff(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,14 @@ pub fn Computer(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M12 18h6" />
-            <path d="M6 18h.01" />
-            <path d="M8 6h1" />
-            <rect x="2" y="14" width="20" height="8" rx="2" />
-            <rect x="4" y="2" width="16" height="12" rx="2" />
+            <path d="M10 11v6" />
+            <path d="M14 17v-3" />
+            <path d="M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-1.576.768" />
+            <path d="M19 6v7.344" />
+            <path d="m2 2 20 20" />
+            <path d="M21 6h-9.344" />
+            <path d="M3 6h3" />
+            <path d="M5 6v14a2 2 0 002 2h10a2 2 0 002-2v-1" />
         </svg>
     }
 }

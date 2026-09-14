@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct Table2Props {
+pub struct DomeProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct Table2Props {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn Table2(props: &Table2Props) -> Html {
+pub fn Dome(props: &DomeProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,9 +41,12 @@ pub fn Table2(props: &Table2Props) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M3 9h18" />
-            <path d="M9 3v18" />
-            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M10 21v-3a2 2 0 014 0v3" />
+            <path d="M12 2v2" />
+            <path d="M18 12v9" />
+            <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2v-6a1 1 0 011-1h18a1 1 0 011 1z" />
+            <path d="M4 12a8 8 0 0116 0" />
+            <path d="M6 12v9" />
         </svg>
     }
 }
