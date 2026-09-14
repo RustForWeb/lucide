@@ -695,6 +695,10 @@ mod caravan;
 mod card_sim;
 #[cfg(feature = "food-beverage")]
 mod carrot;
+#[cfg(feature = "food-beverage")]
+mod carton;
+#[cfg(feature = "food-beverage")]
+mod carton_off;
 #[cfg(any(feature = "text", feature = "development"))]
 mod case_lower;
 #[cfg(feature = "text")]
@@ -4135,6 +4139,8 @@ mod thermometer_sun;
 mod thumbs_down;
 #[cfg(any(feature = "account", feature = "social", feature = "emoji"))]
 mod thumbs_up;
+#[cfg(feature = "gaming")]
+mod tic_tac_toe;
 #[cfg(any(feature = "account", feature = "transportation"))]
 mod ticket;
 #[cfg(feature = "transportation")]
@@ -5315,6 +5321,10 @@ pub use caravan::*;
 pub use card_sim::*;
 #[cfg(feature = "food-beverage")]
 pub use carrot::*;
+#[cfg(feature = "food-beverage")]
+pub use carton::*;
+#[cfg(feature = "food-beverage")]
+pub use carton_off::*;
 #[cfg(any(feature = "text", feature = "development"))]
 pub use case_lower::*;
 #[cfg(feature = "text")]
@@ -8755,6 +8765,8 @@ pub use thermometer_sun::*;
 pub use thumbs_down::*;
 #[cfg(any(feature = "account", feature = "social", feature = "emoji"))]
 pub use thumbs_up::*;
+#[cfg(feature = "gaming")]
+pub use tic_tac_toe::*;
 #[cfg(any(feature = "account", feature = "transportation"))]
 pub use ticket::*;
 #[cfg(feature = "transportation")]

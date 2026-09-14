@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn IdCardLanyard(
+pub fn CartonOff(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,12 @@ pub fn IdCardLanyard(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13.5 8h-3" />
-            <path d="m15 2-1 2h3a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2h3" />
-            <path d="M16 22a4 4 0 00-8 0" />
-            <path d="m9 2 3 6" />
-            <circle cx="12" cy="15" r="3" />
+            <path d="M10 10H5v10a2 2 0 002 2h10a2 2 0 002-2v-1" />
+            <path d="M13 22v-9" />
+            <path d="M13.902 8.245 16 6h-4.343" />
+            <path d="M19 13.343V10a2 2 0 00-.539-1.367L16 6V3a1 1 0 00-1-1H9a1 1 0 00-.857.486" />
+            <path d="m2 2 20 20" />
+            <path d="M7.034 7.034 5.539 8.633A2 2 0 005 10" />
         </svg>
     }
 }

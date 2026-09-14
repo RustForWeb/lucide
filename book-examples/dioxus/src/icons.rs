@@ -1925,6 +1925,18 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                Carton {}
+            },
+            "Carton",
+        ),
+        (
+            rsx! {
+                CartonOff {}
+            },
+            "Carton Off",
+        ),
+        (
+            rsx! {
                 CaseLower {}
             },
             "Case Lower",
@@ -2241,18 +2253,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Left Right",
         ),
-        (
-            rsx! {
-                ChevronsLeftRightEllipsis {}
-            },
-            "Chevrons Left Right Ellipsis",
-        ),
-        (
-            rsx! {
-                ChevronsRight {}
-            },
-            "Chevrons Right",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2268,6 +2268,18 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsLeftRightEllipsis {}
+            },
+            "Chevrons Left Right Ellipsis",
+        ),
+        (
+            rsx! {
+                ChevronsRight {}
+            },
+            "Chevrons Right",
+        ),
         (
             rsx! {
                 ChevronsRightLeft {}
@@ -2856,18 +2868,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Drizzle",
         ),
-        (
-            rsx! {
-                CloudFog {}
-            },
-            "Cloud Fog",
-        ),
-        (
-            rsx! {
-                CloudHail {}
-            },
-            "Cloud Hail",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2883,6 +2883,18 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudFog {}
+            },
+            "Cloud Fog",
+        ),
+        (
+            rsx! {
+                CloudHail {}
+            },
+            "Cloud Hail",
+        ),
         (
             rsx! {
                 CloudLightning {}
@@ -10235,6 +10247,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TicTacToe {}
+            },
+            "Tic Tac Toe",
+        ),
+        (
+            rsx! {
                 Ticket {}
             },
             "Ticket",
@@ -10557,12 +10575,6 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal",
         ),
-        (
-            rsx! {
-                TvMinimalPlay {}
-            },
-            "Tv Minimal Play",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -10578,6 +10590,12 @@ pub fn IconsT1() -> Element {
 #[component]
 pub fn IconsT2() -> Element {
     let icons = [
+        (
+            rsx! {
+                TvMinimalPlay {}
+            },
+            "Tv Minimal Play",
+        ),
         (
             rsx! {
                 Type {}
