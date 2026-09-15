@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn DoorOpen(
+pub fn ToothbrushSparkles(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,15 @@ pub fn DoorOpen(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 21H2" />
-            <path d="M10 3H7a2 2 0 00-2 2v16" />
-            <path d="M14 12h.01" />
-            <path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" />
-            <path d="M22 21h-3" />
+            <path d="M10 3H8" />
+            <path d="M14.586 11.414 22 4" />
+            <path d="M15 11a8 8 0 01-.429.4" />
+            <path d="m2 22 7-7c1.857-1.857 3.714-1.99 5.571-3.6l-1.985-1.986A2 2 0 0114 6a2 2 0 012-2 2 2 0 013.262-1.552l2.152 2.138" />
+            <path d="M20 15v4" />
+            <path d="M22 17h-4" />
+            <path d="M4 5v4" />
+            <path d="M6 7H2" />
+            <path d="M9 2v2" />
         </svg>
     }
 }

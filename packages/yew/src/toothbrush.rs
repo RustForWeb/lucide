@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SatelliteDishProps {
+pub struct ToothbrushProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SatelliteDishProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn SatelliteDish(props: &SatelliteDishProps) -> Html {
+pub fn Toothbrush(props: &ToothbrushProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,10 @@ pub fn SatelliteDish(props: &SatelliteDishProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M18 12a6 6 0 00-6-6" />
+            <path d="M15 11c-2 2-4 2-6 4l-7 7" />
             <path
-                d="M2.824 10.459a8 8 0 0010.717 10.717c.558-.276.623-1.012.183-1.452l-9.448-9.448c-.44-.44-1.176-.375-1.452.183"
+                d="m22 4-7.414 7.414-2-2A2 2 0 0114 6c0-.512.196-1.024.586-1.414A2 2 0 0116 4a2 2 0 013.262-1.552l2.152 2.138"
             />
-            <path d="M22 12A10 10 0 0012 2" />
-            <path d="m9 15 4-4" />
         </svg>
     }
 }

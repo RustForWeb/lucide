@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct SatelliteDishProps {
+pub struct TrianglesCenterlineDashedVerticalProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct SatelliteDishProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn SatelliteDish(props: &SatelliteDishProps) -> Html {
+pub fn TrianglesCenterlineDashedVertical(props: &TrianglesCenterlineDashedVerticalProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,16 @@ pub fn SatelliteDish(props: &SatelliteDishProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M18 12a6 6 0 00-6-6" />
+            <path d="M12 14v2" />
+            <path d="M12 20v2" />
+            <path d="M12 2v2" />
+            <path d="M12 8v2" />
             <path
-                d="M2.824 10.459a8 8 0 0010.717 10.717c.558-.276.623-1.012.183-1.452l-9.448-9.448c-.44-.44-1.176-.375-1.452.183"
+                d="M20.288 16.703A1 1 0 0022 16V8a1 1 0 00-1.712-.703l-3.99 3.991a1 1 0 00-.001 1.424z"
             />
-            <path d="M22 12A10 10 0 0012 2" />
-            <path d="m9 15 4-4" />
+            <path
+                d="M3.712 16.703A1 1 0 012 16V8a1 1 0 011.712-.703l3.99 3.991a1 1 0 01.001 1.424z"
+            />
         </svg>
     }
 }

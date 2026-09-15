@@ -955,8 +955,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FlaskConical /> }.into_any(), "Flask Conical"),
                 (view! { <FlaskConicalOff /> }.into_any(), "Flask Conical Off"),
                 (view! { <FlaskRound /> }.into_any(), "Flask Round"),
-                (view! { <FlipHorizontal2 /> }.into_any(), "Flip Horizontal 2"),
-                (view! { <FlipVertical2 /> }.into_any(), "Flip Vertical 2"),
                 (view! { <Flower /> }.into_any(), "Flower"),
                 (view! { <Flower2 /> }.into_any(), "Flower 2"),
                 (view! { <Focus /> }.into_any(), "Focus"),
@@ -967,6 +965,8 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderBookmark /> }.into_any(), "Folder Bookmark"),
                 (view! { <FolderCheck /> }.into_any(), "Folder Check"),
                 (view! { <FolderClock /> }.into_any(), "Folder Clock"),
+                (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
+                (view! { <FolderCode /> }.into_any(), "Folder Code"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -984,8 +984,6 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
-                (view! { <FolderCode /> }.into_any(), "Folder Code"),
                 (view! { <FolderCog /> }.into_any(), "Folder Cog"),
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
@@ -2241,6 +2239,8 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Toilet /> }.into_any(), "Toilet"),
                 (view! { <ToolCase /> }.into_any(), "Tool Case"),
                 (view! { <Toolbox /> }.into_any(), "Toolbox"),
+                (view! { <Toothbrush /> }.into_any(), "Toothbrush"),
+                (view! { <ToothbrushSparkles /> }.into_any(), "Toothbrush Sparkles"),
                 (view! { <Tornado /> }.into_any(), "Tornado"),
                 (view! { <Torus /> }.into_any(), "Torus"),
                 (view! { <Touchpad /> }.into_any(), "Touchpad"),
@@ -2269,14 +2269,18 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <TriangleAlert /> }.into_any(), "Triangle Alert"),
                 (view! { <TriangleDashed /> }.into_any(), "Triangle Dashed"),
                 (view! { <TriangleRight /> }.into_any(), "Triangle Right"),
+                (
+                    view! { <TrianglesCenterlineDashedHorizontal /> }.into_any(),
+                    "Triangles Centerline Dashed Horizontal",
+                ),
+                (
+                    view! { <TrianglesCenterlineDashedVertical /> }.into_any(),
+                    "Triangles Centerline Dashed Vertical",
+                ),
                 (view! { <Trophy /> }.into_any(), "Trophy"),
                 (view! { <Truck /> }.into_any(), "Truck"),
                 (view! { <TruckElectric /> }.into_any(), "Truck Electric"),
                 (view! { <TurkishLira /> }.into_any(), "Turkish Lira"),
-                (view! { <Turntable /> }.into_any(), "Turntable"),
-                (view! { <Turtle /> }.into_any(), "Turtle"),
-                (view! { <Tv /> }.into_any(), "Tv"),
-                (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2294,6 +2298,10 @@ pub fn IconsT2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Turntable /> }.into_any(), "Turntable"),
+                (view! { <Turtle /> }.into_any(), "Turtle"),
+                (view! { <Tv /> }.into_any(), "Tv"),
+                (view! { <TvMinimal /> }.into_any(), "Tv Minimal"),
                 (view! { <TvMinimalPlay /> }.into_any(), "Tv Minimal Play"),
                 (view! { <Type /> }.into_any(), "Type"),
                 (view! { <TypeOutline /> }.into_any(), "Type Outline"),

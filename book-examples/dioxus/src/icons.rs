@@ -4388,18 +4388,6 @@ pub fn IconsF1() -> Element {
         ),
         (
             rsx! {
-                FlipHorizontal2 {}
-            },
-            "Flip Horizontal 2",
-        ),
-        (
-            rsx! {
-                FlipVertical2 {}
-            },
-            "Flip Vertical 2",
-        ),
-        (
-            rsx! {
                 Flower {}
             },
             "Flower",
@@ -4458,6 +4446,18 @@ pub fn IconsF1() -> Element {
             },
             "Folder Clock",
         ),
+        (
+            rsx! {
+                FolderClosed {}
+            },
+            "Folder Closed",
+        ),
+        (
+            rsx! {
+                FolderCode {}
+            },
+            "Folder Code",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -4473,18 +4473,6 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
-        (
-            rsx! {
-                FolderClosed {}
-            },
-            "Folder Closed",
-        ),
-        (
-            rsx! {
-                FolderCode {}
-            },
-            "Folder Code",
-        ),
         (
             rsx! {
                 FolderCog {}
@@ -10361,6 +10349,18 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Toothbrush {}
+            },
+            "Toothbrush",
+        ),
+        (
+            rsx! {
+                ToothbrushSparkles {}
+            },
+            "Toothbrush Sparkles",
+        ),
+        (
+            rsx! {
                 Tornado {}
             },
             "Tornado",
@@ -10529,6 +10529,18 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TrianglesCenterlineDashedHorizontal {}
+            },
+            "Triangles Centerline Dashed Horizontal",
+        ),
+        (
+            rsx! {
+                TrianglesCenterlineDashedVertical {}
+            },
+            "Triangles Centerline Dashed Vertical",
+        ),
+        (
+            rsx! {
                 Trophy {}
             },
             "Trophy",
@@ -10551,6 +10563,21 @@ pub fn IconsT1() -> Element {
             },
             "Turkish Lira",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsT2() -> Element {
+    let icons = [
         (
             rsx! {
                 Turntable {}
@@ -10575,21 +10602,6 @@ pub fn IconsT1() -> Element {
             },
             "Tv Minimal",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsT2() -> Element {
-    let icons = [
         (
             rsx! {
                 TvMinimalPlay {}

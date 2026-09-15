@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn DoorOpen(
+pub fn TrianglesCenterlineDashedHorizontal(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,12 @@ pub fn DoorOpen(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 21H2" />
-            <path d="M10 3H7a2 2 0 00-2 2v16" />
-            <path d="M14 12h.01" />
-            <path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" />
-            <path d="M22 21h-3" />
+            <path d="M10 12H8" />
+            <path d="M16 12h-2" />
+            <path d="M22 12h-2" />
+            <path d="M4 12H2" />
+            <path d="M7.298 20.288A1 1 0 008 22h8a1 1 0 00.703-1.712l-3.991-3.99a1 1 0 00-1.424-.001z" />
+            <path d="M7.298 3.712A1 1 0 018 2h8a1 1 0 01.703 1.712l-3.991 3.99a1 1 0 01-1.424.001z" />
         </svg>
     }
 }

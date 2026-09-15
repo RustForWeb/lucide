@@ -1640,10 +1640,6 @@ mod flask_conical;
 mod flask_conical_off;
 #[cfg(any(feature = "science", feature = "gaming"))]
 mod flask_round;
-#[cfg(any(feature = "design", feature = "photography"))]
-mod flip_horizontal_2;
-#[cfg(any(feature = "design", feature = "photography"))]
-mod flip_vertical_2;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
 mod flower;
 #[cfg(any(feature = "nature", feature = "sustainability", feature = "seasons"))]
@@ -4177,6 +4173,20 @@ mod toilet;
 mod tool_case;
 #[cfg(any(feature = "tools", feature = "home"))]
 mod toolbox;
+#[cfg(any(
+    feature = "home",
+    feature = "travel",
+    feature = "tools",
+    feature = "medical"
+))]
+mod toothbrush;
+#[cfg(any(
+    feature = "home",
+    feature = "tools",
+    feature = "medical",
+    feature = "travel"
+))]
+mod toothbrush_sparkles;
 #[cfg(feature = "weather")]
 mod tornado;
 #[cfg(any(
@@ -4242,6 +4252,10 @@ mod triangle_alert;
 mod triangle_dashed;
 #[cfg(any(feature = "shapes", feature = "math"))]
 mod triangle_right;
+#[cfg(any(feature = "design", feature = "photography"))]
+mod triangles_centerline_dashed_horizontal;
+#[cfg(any(feature = "design", feature = "photography"))]
+mod triangles_centerline_dashed_vertical;
 #[cfg(any(feature = "sports", feature = "gaming"))]
 mod trophy;
 #[cfg(feature = "transportation")]
@@ -6266,10 +6280,6 @@ pub use flask_conical::*;
 pub use flask_conical_off::*;
 #[cfg(any(feature = "science", feature = "gaming"))]
 pub use flask_round::*;
-#[cfg(any(feature = "design", feature = "photography"))]
-pub use flip_horizontal_2::*;
-#[cfg(any(feature = "design", feature = "photography"))]
-pub use flip_vertical_2::*;
 #[cfg(any(feature = "nature", feature = "gaming", feature = "sustainability"))]
 pub use flower::*;
 #[cfg(any(feature = "nature", feature = "sustainability", feature = "seasons"))]
@@ -8803,6 +8813,20 @@ pub use toilet::*;
 pub use tool_case::*;
 #[cfg(any(feature = "tools", feature = "home"))]
 pub use toolbox::*;
+#[cfg(any(
+    feature = "home",
+    feature = "travel",
+    feature = "tools",
+    feature = "medical"
+))]
+pub use toothbrush::*;
+#[cfg(any(
+    feature = "home",
+    feature = "tools",
+    feature = "medical",
+    feature = "travel"
+))]
+pub use toothbrush_sparkles::*;
 #[cfg(feature = "weather")]
 pub use tornado::*;
 #[cfg(any(
@@ -8868,6 +8892,10 @@ pub use triangle_alert::*;
 pub use triangle_dashed::*;
 #[cfg(any(feature = "shapes", feature = "math"))]
 pub use triangle_right::*;
+#[cfg(any(feature = "design", feature = "photography"))]
+pub use triangles_centerline_dashed_horizontal::*;
+#[cfg(any(feature = "design", feature = "photography"))]
+pub use triangles_centerline_dashed_vertical::*;
 #[cfg(any(feature = "sports", feature = "gaming"))]
 pub use trophy::*;
 #[cfg(feature = "transportation")]
