@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct IdCardProps {
+pub struct CartonOffProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct IdCardProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn IdCard(props: &IdCardProps) -> Html {
+pub fn CartonOff(props: &CartonOffProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,12 @@ pub fn IdCard(props: &IdCardProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13 19a4 4 0 00-8 0" />
-            <path d="M16 10h2" />
-            <path d="M16 14h2" />
-            <circle cx="9" cy="12" r="3" />
-            <rect x="2" y="5" width="20" height="14" rx="2" />
+            <path d="M10 10H5v10a2 2 0 002 2h10a2 2 0 002-2v-1" />
+            <path d="M13 22v-9" />
+            <path d="M13.902 8.245 16 6h-4.343" />
+            <path d="M19 13.343V10a2 2 0 00-.539-1.367L16 6V3a1 1 0 00-1-1H9a1 1 0 00-.857.486" />
+            <path d="m2 2 20 20" />
+            <path d="M7.034 7.034 5.539 8.633A2 2 0 005 10" />
         </svg>
     }
 }

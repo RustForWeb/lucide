@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1815usize] = [
+pub static ICON_NAMES: [&str; 1818usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -309,6 +309,8 @@ pub static ICON_NAMES: [&str; 1815usize] = [
     "caravan",
     "card-sim",
     "carrot",
+    "carton",
+    "carton-off",
     "case-lower",
     "case-sensitive",
     "case-upper",
@@ -1634,6 +1636,7 @@ pub static ICON_NAMES: [&str; 1815usize] = [
     "thermometer-sun",
     "thumbs-down",
     "thumbs-up",
+    "tic-tac-toe",
     "ticket",
     "ticket-check",
     "ticket-minus",

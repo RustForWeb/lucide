@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn IdCardLanyard(
+pub fn TicTacToe(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,11 +29,14 @@ pub fn IdCardLanyard(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M13.5 8h-3" />
-            <path d="m15 2-1 2h3a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2h3" />
-            <path d="M16 22a4 4 0 00-8 0" />
-            <path d="m9 2 3 6" />
-            <circle cx="12" cy="15" r="3" />
+            <path d="M12 2v20" />
+            <path d="m21 16-5 5" />
+            <path d="m21 21-5-5" />
+            <path d="M22 12H2" />
+            <path d="M8 3 3 8" />
+            <path d="M8 8 3 3" />
+            <circle cx="18.5" cy="5.5" r="2.5" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
         </svg>
     }
 }

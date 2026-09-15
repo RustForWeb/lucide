@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct IdCardProps {
+pub struct TicTacToeProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct IdCardProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn IdCard(props: IdCardProps) -> Element {
+pub fn TicTacToe(props: TicTacToeProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,14 @@ pub fn IdCard(props: IdCardProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M13 19a4 4 0 00-8 0" }
-            path { "d": "M16 10h2" }
-            path { "d": "M16 14h2" }
-            circle { "cx": "9", "cy": "12", "r": "3" }
-            rect {
-                "x": "2",
-                "y": "5",
-                "width": "20",
-                "height": "14",
-                "rx": "2",
-            }
+            path { "d": "M12 2v20" }
+            path { "d": "m21 16-5 5" }
+            path { "d": "m21 21-5-5" }
+            path { "d": "M22 12H2" }
+            path { "d": "M8 3 3 8" }
+            path { "d": "M8 8 3 3" }
+            circle { "cx": "18.5", "cy": "5.5", "r": "2.5" }
+            circle { "cx": "5.5", "cy": "18.5", "r": "2.5" }
         }
     }
 }

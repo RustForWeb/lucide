@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct IdCardProps {
+pub struct CartonProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct IdCardProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn IdCard(props: IdCardProps) -> Element {
+pub fn Carton(props: CartonProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,17 +34,8 @@ pub fn IdCard(props: IdCardProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M13 19a4 4 0 00-8 0" }
-            path { "d": "M16 10h2" }
-            path { "d": "M16 14h2" }
-            circle { "cx": "9", "cy": "12", "r": "3" }
-            rect {
-                "x": "2",
-                "y": "5",
-                "width": "20",
-                "height": "14",
-                "rx": "2",
-            }
+            path { "d": "M13 22V10a2 2 0 01.539-1.367L16 6H8L5.539 8.633A2 2 0 005 10v10a2 2 0 002 2h10a2 2 0 002-2V10a2 2 0 00-.539-1.367L16 6V3a1 1 0 00-1-1H9a1 1 0 00-1 1v3" }
+            path { "d": "M5 10h8" }
         }
     }
 }
