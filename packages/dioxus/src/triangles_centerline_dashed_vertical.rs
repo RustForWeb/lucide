@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CreditCardProps {
+pub struct TrianglesCenterlineDashedVerticalProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CreditCardProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CreditCard(props: CreditCardProps) -> Element {
+pub fn TrianglesCenterlineDashedVertical(props: TrianglesCenterlineDashedVerticalProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,20 +34,12 @@ pub fn CreditCard(props: CreditCardProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            rect {
-                "width": "20",
-                "height": "14",
-                "x": "2",
-                "y": "5",
-                "rx": "2",
-            }
-            line {
-                "x1": "2",
-                "x2": "22",
-                "y1": "10",
-                "y2": "10",
-            }
-            path { "d": "M6 14h2" }
+            path { "d": "M12 14v2" }
+            path { "d": "M12 20v2" }
+            path { "d": "M12 2v2" }
+            path { "d": "M12 8v2" }
+            path { "d": "M20.288 16.703A1 1 0 0022 16V8a1 1 0 00-1.712-.703l-3.99 3.991a1 1 0 00-.001 1.424z" }
+            path { "d": "M3.712 16.703A1 1 0 012 16V8a1 1 0 011.712-.703l3.99 3.991a1 1 0 01.001 1.424z" }
         }
     }
 }

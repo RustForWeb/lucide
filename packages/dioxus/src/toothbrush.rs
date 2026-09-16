@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CreditCardProps {
+pub struct ToothbrushProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CreditCardProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CreditCard(props: CreditCardProps) -> Element {
+pub fn Toothbrush(props: ToothbrushProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,20 +34,8 @@ pub fn CreditCard(props: CreditCardProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            rect {
-                "width": "20",
-                "height": "14",
-                "x": "2",
-                "y": "5",
-                "rx": "2",
-            }
-            line {
-                "x1": "2",
-                "x2": "22",
-                "y1": "10",
-                "y2": "10",
-            }
-            path { "d": "M6 14h2" }
+            path { "d": "M15 11c-2 2-4 2-6 4l-7 7" }
+            path { "d": "m22 4-7.414 7.414-2-2A2 2 0 0114 6c0-.512.196-1.024.586-1.414A2 2 0 0116 4a2 2 0 013.262-1.552l2.152 2.138" }
         }
     }
 }

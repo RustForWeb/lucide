@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1818usize] = [
+pub static ICON_NAMES: [&str; 1820usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -707,8 +707,6 @@ pub static ICON_NAMES: [&str; 1818usize] = [
     "flask-conical",
     "flask-conical-off",
     "flask-round",
-    "flip-horizontal-2",
-    "flip-vertical-2",
     "flower",
     "flower-2",
     "focus",
@@ -1655,6 +1653,8 @@ pub static ICON_NAMES: [&str; 1818usize] = [
     "toilet",
     "tool-case",
     "toolbox",
+    "toothbrush",
+    "toothbrush-sparkles",
     "tornado",
     "torus",
     "touchpad",
@@ -1683,6 +1683,8 @@ pub static ICON_NAMES: [&str; 1818usize] = [
     "triangle-alert",
     "triangle-dashed",
     "triangle-right",
+    "triangles-centerline-dashed-horizontal",
+    "triangles-centerline-dashed-vertical",
     "trophy",
     "truck",
     "truck-electric",
