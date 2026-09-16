@@ -42,8 +42,6 @@ mod alarm_clock_off;
 mod alarm_clock_plus;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 mod alarm_smoke;
-#[cfg(any(feature = "photography", feature = "multimedia"))]
-mod album;
 #[cfg(feature = "layout")]
 mod align_center_horizontal;
 #[cfg(feature = "layout")]
@@ -447,6 +445,8 @@ mod book_alert;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod book_audio;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+mod book_bookmark;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 mod book_check;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 mod book_copy;
@@ -472,8 +472,6 @@ mod book_image;
 mod book_key;
 #[cfg(any(feature = "development", feature = "security", feature = "gaming"))]
 mod book_lock;
-#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
-mod book_marked;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 mod book_minus;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
@@ -585,7 +583,9 @@ mod bug_play;
 #[cfg(any(feature = "account", feature = "buildings"))]
 mod building;
 #[cfg(any(feature = "account", feature = "buildings"))]
-mod building_2;
+mod building_complex;
+#[cfg(any(feature = "account", feature = "buildings"))]
+mod building_complex_plus;
 #[cfg(feature = "transportation")]
 mod bus;
 #[cfg(feature = "transportation")]
@@ -612,6 +612,8 @@ mod calendar_arrow_up;
 mod calendar_check;
 #[cfg(feature = "time")]
 mod calendar_check_2;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+mod calendar_chevrons_right;
 #[cfg(feature = "time")]
 mod calendar_clock;
 #[cfg(feature = "time")]
@@ -1854,6 +1856,8 @@ mod glasses;
 mod globe;
 #[cfg(feature = "navigation")]
 mod globe_check;
+#[cfg(any(feature = "navigation", feature = "development"))]
+mod globe_code;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 mod globe_lock;
 #[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
@@ -2066,6 +2070,8 @@ mod hospital;
 mod hotel;
 #[cfg(any(feature = "time", feature = "gaming"))]
 mod hourglass;
+#[cfg(any(feature = "time", feature = "tools"))]
+mod hourglass_cog;
 #[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 mod house;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
@@ -2076,6 +2082,8 @@ mod house_plug;
 mod house_plus;
 #[cfg(any(feature = "home", feature = "buildings", feature = "connectivity"))]
 mod house_wifi;
+#[cfg(any(feature = "buildings", feature = "home"))]
+mod houses;
 #[cfg(feature = "food-beverage")]
 mod ice_cream_bowl;
 #[cfg(feature = "food-beverage")]
@@ -2145,6 +2153,8 @@ mod italic;
 mod iteration_ccw;
 #[cfg(any(feature = "arrows", feature = "design"))]
 mod iteration_cw;
+#[cfg(feature = "medical")]
+mod iv_bag;
 #[cfg(feature = "finance")]
 mod japanese_yen;
 #[cfg(any(feature = "gaming", feature = "devices"))]
@@ -2215,6 +2225,10 @@ mod layers_arrow_up;
 mod layers_minus;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layers_plus;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layout_arrow_down;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layout_arrow_right;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layout_dashboard;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -2527,6 +2541,12 @@ mod message_square_text;
 mod message_square_warning;
 #[cfg(feature = "social")]
 mod message_square_x;
+#[cfg(any(
+    feature = "social",
+    feature = "communication",
+    feature = "notifications"
+))]
+mod messages_circle;
 #[cfg(feature = "social")]
 mod messages_square;
 #[cfg(any(feature = "multimedia", feature = "time"))]
@@ -2652,6 +2672,18 @@ mod mouse_pointer_ban;
 mod mouse_pointer_click;
 #[cfg(feature = "devices")]
 mod mouse_right;
+#[cfg(any(
+    feature = "medical",
+    feature = "accessibility",
+    feature = "communication"
+))]
+mod mouth;
+#[cfg(any(
+    feature = "medical",
+    feature = "accessibility",
+    feature = "communication"
+))]
+mod mouth_off;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod r#move;
 #[cfg(feature = "design")]
@@ -2711,6 +2743,8 @@ mod non_binary;
     feature = "design"
 ))]
 mod notebook;
+#[cfg(feature = "communication")]
+mod notebook_dot;
 #[cfg(any(feature = "text", feature = "social"))]
 mod notebook_pen;
 #[cfg(any(feature = "account", feature = "communication", feature = "social"))]
@@ -2848,6 +2882,8 @@ mod paperclip;
 mod parasol;
 #[cfg(any(feature = "development", feature = "files", feature = "math"))]
 mod parentheses;
+#[cfg(any(feature = "nature", feature = "navigation", feature = "travel"))]
+mod park;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 mod parking_meter;
 #[cfg(feature = "emoji")]
@@ -2994,6 +3030,8 @@ mod plane;
 mod plane_landing;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod plane_takeoff;
+#[cfg(any(feature = "home", feature = "nature"))]
+mod plant_pot;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 mod play;
 #[cfg(feature = "multimedia")]
@@ -3731,6 +3769,8 @@ mod square_arrow_up_right;
     feature = "development"
 ))]
 mod square_asterisk;
+#[cfg(any(feature = "photography", feature = "multimedia"))]
+mod square_bookmark;
 #[cfg(any(
     feature = "text",
     feature = "design",
@@ -4682,8 +4722,6 @@ pub use alarm_clock_off::*;
 pub use alarm_clock_plus::*;
 #[cfg(any(feature = "home", feature = "devices", feature = "travel"))]
 pub use alarm_smoke::*;
-#[cfg(any(feature = "photography", feature = "multimedia"))]
-pub use album::*;
 #[cfg(feature = "layout")]
 pub use align_center_horizontal::*;
 #[cfg(feature = "layout")]
@@ -5087,6 +5125,8 @@ pub use book_alert::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use book_audio::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
+pub use book_bookmark::*;
+#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 pub use book_check::*;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 pub use book_copy::*;
@@ -5112,8 +5152,6 @@ pub use book_image::*;
 pub use book_key::*;
 #[cfg(any(feature = "development", feature = "security", feature = "gaming"))]
 pub use book_lock::*;
-#[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
-pub use book_marked::*;
 #[cfg(any(feature = "development", feature = "text", feature = "gaming"))]
 pub use book_minus::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
@@ -5225,7 +5263,9 @@ pub use bug_play::*;
 #[cfg(any(feature = "account", feature = "buildings"))]
 pub use building::*;
 #[cfg(any(feature = "account", feature = "buildings"))]
-pub use building_2::*;
+pub use building_complex::*;
+#[cfg(any(feature = "account", feature = "buildings"))]
+pub use building_complex_plus::*;
 #[cfg(feature = "transportation")]
 pub use bus::*;
 #[cfg(feature = "transportation")]
@@ -5252,6 +5292,8 @@ pub use calendar_arrow_up::*;
 pub use calendar_check::*;
 #[cfg(feature = "time")]
 pub use calendar_check_2::*;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+pub use calendar_chevrons_right::*;
 #[cfg(feature = "time")]
 pub use calendar_clock::*;
 #[cfg(feature = "time")]
@@ -6494,6 +6536,8 @@ pub use glasses::*;
 pub use globe::*;
 #[cfg(feature = "navigation")]
 pub use globe_check::*;
+#[cfg(any(feature = "navigation", feature = "development"))]
+pub use globe_code::*;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
 pub use globe_lock::*;
 #[cfg(any(feature = "navigation", feature = "connectivity", feature = "devices"))]
@@ -6706,6 +6750,8 @@ pub use hospital::*;
 pub use hotel::*;
 #[cfg(any(feature = "time", feature = "gaming"))]
 pub use hourglass::*;
+#[cfg(any(feature = "time", feature = "tools"))]
+pub use hourglass_cog::*;
 #[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 pub use house::*;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
@@ -6716,6 +6762,8 @@ pub use house_plug::*;
 pub use house_plus::*;
 #[cfg(any(feature = "home", feature = "buildings", feature = "connectivity"))]
 pub use house_wifi::*;
+#[cfg(any(feature = "buildings", feature = "home"))]
+pub use houses::*;
 #[cfg(feature = "food-beverage")]
 pub use ice_cream_bowl::*;
 #[cfg(feature = "food-beverage")]
@@ -6785,6 +6833,8 @@ pub use italic::*;
 pub use iteration_ccw::*;
 #[cfg(any(feature = "arrows", feature = "design"))]
 pub use iteration_cw::*;
+#[cfg(feature = "medical")]
+pub use iv_bag::*;
 #[cfg(feature = "finance")]
 pub use japanese_yen::*;
 #[cfg(any(feature = "gaming", feature = "devices"))]
@@ -6855,6 +6905,10 @@ pub use layers_arrow_up::*;
 pub use layers_minus::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layers_plus::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layout_arrow_down::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layout_arrow_right::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_dashboard::*;
 #[cfg(any(feature = "design", feature = "layout"))]
@@ -7167,6 +7221,12 @@ pub use message_square_text::*;
 pub use message_square_warning::*;
 #[cfg(feature = "social")]
 pub use message_square_x::*;
+#[cfg(any(
+    feature = "social",
+    feature = "communication",
+    feature = "notifications"
+))]
+pub use messages_circle::*;
 #[cfg(feature = "social")]
 pub use messages_square::*;
 #[cfg(any(feature = "multimedia", feature = "time"))]
@@ -7292,6 +7352,18 @@ pub use mouse_pointer_ban::*;
 pub use mouse_pointer_click::*;
 #[cfg(feature = "devices")]
 pub use mouse_right::*;
+#[cfg(any(
+    feature = "medical",
+    feature = "accessibility",
+    feature = "communication"
+))]
+pub use mouth::*;
+#[cfg(any(
+    feature = "medical",
+    feature = "accessibility",
+    feature = "communication"
+))]
+pub use mouth_off::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use r#move::*;
 #[cfg(feature = "design")]
@@ -7351,6 +7423,8 @@ pub use non_binary::*;
     feature = "design"
 ))]
 pub use notebook::*;
+#[cfg(feature = "communication")]
+pub use notebook_dot::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use notebook_pen::*;
 #[cfg(any(feature = "account", feature = "communication", feature = "social"))]
@@ -7488,6 +7562,8 @@ pub use paperclip::*;
 pub use parasol::*;
 #[cfg(any(feature = "development", feature = "files", feature = "math"))]
 pub use parentheses::*;
+#[cfg(any(feature = "nature", feature = "navigation", feature = "travel"))]
+pub use park::*;
 #[cfg(any(feature = "transportation", feature = "navigation"))]
 pub use parking_meter::*;
 #[cfg(feature = "emoji")]
@@ -7634,6 +7710,8 @@ pub use plane::*;
 pub use plane_landing::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use plane_takeoff::*;
+#[cfg(any(feature = "home", feature = "nature"))]
+pub use plant_pot::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 pub use play::*;
 #[cfg(feature = "multimedia")]
@@ -8371,6 +8449,8 @@ pub use square_arrow_up_right::*;
     feature = "development"
 ))]
 pub use square_asterisk::*;
+#[cfg(any(feature = "photography", feature = "multimedia"))]
+pub use square_bookmark::*;
 #[cfg(any(
     feature = "text",
     feature = "design",

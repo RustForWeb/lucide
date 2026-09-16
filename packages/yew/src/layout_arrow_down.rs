@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FolderBookmarkProps {
+pub struct LayoutArrowDownProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FolderBookmarkProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn FolderBookmark(props: &FolderBookmarkProps) -> Html {
+pub fn LayoutArrowDown(props: &LayoutArrowDownProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,10 @@ pub fn FolderBookmark(props: &FolderBookmarkProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M12 6v7.751a.25.25 0 00.407.195l2.28-1.834a.5.5 0 01.627 0l2.28 1.834a.25.25 0 00.406-.195V6"
-            />
-            <path
-                d="M20 20a2 2 0 002-2V8a2 2 0 00-2-2h-7.9a2 2 0 01-1.69-.9L9.6 3.9A2 2 0 007.93 3H4a2 2 0 00-2 2v13a2 2 0 002 2z"
-            />
+            <rect width="7" height="7" x="3" y="3" rx="1" />
+            <rect width="7" height="7" x="3" y="14" rx="1" />
+            <path d="M18 3v18" />
+            <path d="m21 18-3 3-3-3" />
         </svg>
     }
 }
