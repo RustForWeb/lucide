@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Cookie(
+pub fn Mouth(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,15 +29,8 @@ pub fn Cookie(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M11 17h.01" />
-            <path d="M11.496 2c.324-.016.558.292.529.615a4 4 0 004.235 4.368.713.713 0 01.758.757 4 4 0 004.366 4.237c.323-.03.63.204.614.527a10 10 0 01-2.915 6.566A1 1 0 114.93 4.918 10 10 0 0111.496 2" />
-            <path d="M12 12h.01" />
-            <path d="M16 16h.01" />
-            <path d="M16 3h.01" />
-            <path d="M21 4h.01" />
-            <path d="M21 8h.01" />
-            <path d="M7 14h.01" />
-            <path d="M9 8h.01" />
+            <path d="M2 12a50.5 50.5 0 0020 0 1 1 0 00-1-1" />
+            <path d="M2.457 11.159a1 1 0 00-.307 1.369 11.59 11.59 0 0019.7 0 1 1 0 00-.308-1.368c-2.426-1.568-3.65-2.284-5.479-3.644a2.6 2.6 0 00-3.373.208 1 1 0 01-1.38 0 2.62 2.62 0 00-3.373-.208c-1.83 1.36-3.053 2.076-5.48 3.643" />
         </svg>
     }
 }

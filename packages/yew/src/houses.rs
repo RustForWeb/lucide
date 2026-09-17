@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct FolderBookmarkProps {
+pub struct HousesProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct FolderBookmarkProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn FolderBookmark(props: &FolderBookmarkProps) -> Html {
+pub fn Houses(props: &HousesProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -42,11 +42,12 @@ pub fn FolderBookmark(props: &FolderBookmarkProps) -> Html {
             stroke-linejoin="round"
         >
             <path
-                d="M12 6v7.751a.25.25 0 00.407.195l2.28-1.834a.5.5 0 01.627 0l2.28 1.834a.25.25 0 00.406-.195V6"
+                d="m12.681 4.24.834-.715a1.45 1.45 0 011.88 0l5.09 4.364A1.45 1.45 0 0121 9v6.546a1.45 1.45 0 01-1 1.381"
             />
             <path
-                d="M20 20a2 2 0 002-2V8a2 2 0 00-2-2h-7.9a2 2 0 01-1.69-.9L9.6 3.9A2 2 0 007.93 3H4a2 2 0 00-2 2v13a2 2 0 002 2z"
+                d="M15.485 11.889A1.45 1.45 0 0116 13v6.546A1.454 1.454 0 0114.546 21H4.364a1.454 1.454 0 01-1.454-1.454V13a1.45 1.45 0 01.515-1.111l5.09-4.364a1.45 1.45 0 011.88 0z"
             />
+            <path d="M7.41 20.546v-4a1 1 0 011-1h2a1 1 0 011 1v4" />
         </svg>
     }
 }

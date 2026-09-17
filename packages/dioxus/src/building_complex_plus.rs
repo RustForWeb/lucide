@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct FolderBookmarkProps {
+pub struct BuildingComplexPlusProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct FolderBookmarkProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn FolderBookmark(props: FolderBookmarkProps) -> Element {
+pub fn BuildingComplexPlus(props: BuildingComplexPlusProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,14 @@ pub fn FolderBookmark(props: FolderBookmarkProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 6v7.751a.25.25 0 00.407.195l2.28-1.834a.5.5 0 01.627 0l2.28 1.834a.25.25 0 00.406-.195V6" }
-            path { "d": "M20 20a2 2 0 002-2V8a2 2 0 00-2-2h-7.9a2 2 0 01-1.69-.9L9.6 3.9A2 2 0 007.93 3H4a2 2 0 00-2 2v13a2 2 0 002 2z" }
+            path { "d": "M10 12h4" }
+            path { "d": "M10 21v-3a2 2 0 013.05-1.702" }
+            path { "d": "M10 8h4" }
+            path { "d": "M16 19h6" }
+            path { "d": "M18 7h2a2 2 0 012 2v4.355" }
+            path { "d": "M19 16v6" }
+            path { "d": "M6 10H4a2 2 0 00-2 2v7a2 2 0 002 2h8.535" }
+            path { "d": "M6 21V5a2 2 0 012-2h8a2 2 0 012 2v7.126" }
         }
     }
 }

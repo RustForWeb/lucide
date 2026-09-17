@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct FolderBookmarkProps {
+pub struct HourglassCogProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct FolderBookmarkProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn FolderBookmark(props: FolderBookmarkProps) -> Element {
+pub fn HourglassCog(props: HourglassCogProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,8 +34,19 @@ pub fn FolderBookmark(props: FolderBookmarkProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 6v7.751a.25.25 0 00.407.195l2.28-1.834a.5.5 0 01.627 0l2.28 1.834a.25.25 0 00.406-.195V6" }
-            path { "d": "M20 20a2 2 0 002-2V8a2 2 0 00-2-2h-7.9a2 2 0 01-1.69-.9L9.6 3.9A2 2 0 007.93 3H4a2 2 0 00-2 2v13a2 2 0 002 2z" }
+            path { "d": "m14.305 19.53.923-.382" }
+            path { "d": "m15.228 16.852-.923-.383" }
+            path { "d": "m16.852 15.228-.383-.923" }
+            path { "d": "m16.852 20.772-.383.924" }
+            path { "d": "M17 2v4.172a2 2 0 0 1-.586 1.414l-8.828 8.828A2 2 0 0 0 7 17.828V22" }
+            path { "d": "m19.148 15.228.383-.923" }
+            path { "d": "m19.53 21.696-.382-.924" }
+            path { "d": "m20.772 16.852.924-.383" }
+            path { "d": "m20.772 19.148.924.383" }
+            path { "d": "M5 22h6.159" }
+            path { "d": "M5 2h14" }
+            path { "d": "M7 2v4.172a2 2 0 0 0 .586 1.414l5.188 5.188" }
+            circle { "cx": "18", "cy": "18", "r": "3" }
         }
     }
 }
