@@ -601,6 +601,9 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircuitBoard /> }.into_any(), "Circuit Board"),
                 (view! { <Citrus /> }.into_any(), "Citrus"),
                 (view! { <Clapperboard /> }.into_any(), "Clapperboard"),
+                (view! { <ClefAlto /> }.into_any(), "Clef Alto"),
+                (view! { <ClefBass /> }.into_any(), "Clef Bass"),
+                (view! { <ClefTreble /> }.into_any(), "Clef Treble"),
                 (view! { <Clipboard /> }.into_any(), "Clipboard"),
                 (view! { <ClipboardCheck /> }.into_any(), "Clipboard Check"),
                 (view! { <ClipboardClock /> }.into_any(), "Clipboard Clock"),
@@ -638,9 +641,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <Cloud /> }.into_any(), "Cloud"),
                 (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
                 (view! { <CloudBackup /> }.into_any(), "Cloud Backup"),
-                (view! { <CloudCheck /> }.into_any(), "Cloud Check"),
-                (view! { <CloudCog /> }.into_any(), "Cloud Cog"),
-                (view! { <CloudDownload /> }.into_any(), "Cloud Download"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -658,6 +658,9 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudCheck /> }.into_any(), "Cloud Check"),
+                (view! { <CloudCog /> }.into_any(), "Cloud Cog"),
+                (view! { <CloudDownload /> }.into_any(), "Cloud Download"),
                 (view! { <CloudDrizzle /> }.into_any(), "Cloud Drizzle"),
                 (view! { <CloudFog /> }.into_any(), "Cloud Fog"),
                 (view! { <CloudHail /> }.into_any(), "Cloud Hail"),
@@ -1499,6 +1502,7 @@ pub fn IconsM2() -> impl IntoView {
         <For
             each=move || [
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
+                (view! { <MonitorPc /> }.into_any(), "Monitor Pc"),
                 (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
                 (view! { <MonitorSmartphone /> }.into_any(), "Monitor Smartphone"),
                 (view! { <MonitorSpeaker /> }.into_any(), "Monitor Speaker"),

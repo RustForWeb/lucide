@@ -2630,6 +2630,24 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                ClefAlto {}
+            },
+            "Clef Alto",
+        ),
+        (
+            rsx! {
+                ClefBass {}
+            },
+            "Clef Bass",
+        ),
+        (
+            rsx! {
+                ClefTreble {}
+            },
+            "Clef Treble",
+        ),
+        (
+            rsx! {
                 Clipboard {}
             },
             "Clipboard",
@@ -2850,6 +2868,21 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Backup",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 CloudCheck {}
@@ -2868,21 +2901,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud Download",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 CloudDrizzle {}
@@ -6830,6 +6848,12 @@ pub fn IconsM2() -> Element {
                 MonitorPause {}
             },
             "Monitor Pause",
+        ),
+        (
+            rsx! {
+                MonitorPc {}
+            },
+            "Monitor Pc",
         ),
         (
             rsx! {

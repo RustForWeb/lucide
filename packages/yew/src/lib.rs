@@ -963,6 +963,12 @@ mod circuit_board;
 mod citrus;
 #[cfg(feature = "multimedia")]
 mod clapperboard;
+#[cfg(feature = "multimedia")]
+mod clef_alto;
+#[cfg(feature = "multimedia")]
+mod clef_bass;
+#[cfg(feature = "multimedia")]
+mod clef_treble;
 #[cfg(feature = "text")]
 mod clipboard;
 #[cfg(feature = "text")]
@@ -2628,6 +2634,8 @@ mod monitor_down;
 mod monitor_off;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "multimedia"))]
 mod monitor_pause;
+#[cfg(any(feature = "devices", feature = "development", feature = "gaming"))]
+mod monitor_pc;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "multimedia"))]
 mod monitor_play;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -5643,6 +5651,12 @@ pub use circuit_board::*;
 pub use citrus::*;
 #[cfg(feature = "multimedia")]
 pub use clapperboard::*;
+#[cfg(feature = "multimedia")]
+pub use clef_alto::*;
+#[cfg(feature = "multimedia")]
+pub use clef_bass::*;
+#[cfg(feature = "multimedia")]
+pub use clef_treble::*;
 #[cfg(feature = "text")]
 pub use clipboard::*;
 #[cfg(feature = "text")]
@@ -7308,6 +7322,8 @@ pub use monitor_down::*;
 pub use monitor_off::*;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "multimedia"))]
 pub use monitor_pause::*;
+#[cfg(any(feature = "devices", feature = "development", feature = "gaming"))]
+pub use monitor_pc::*;
 #[cfg(any(feature = "connectivity", feature = "devices", feature = "multimedia"))]
 pub use monitor_play::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
