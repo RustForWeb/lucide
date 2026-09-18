@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1834usize] = [
+pub static ICON_NAMES: [&str; 1838usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -424,6 +424,9 @@ pub static ICON_NAMES: [&str; 1834usize] = [
     "circuit-board",
     "citrus",
     "clapperboard",
+    "clef-alto",
+    "clef-bass",
+    "clef-treble",
     "clipboard",
     "clipboard-check",
     "clipboard-clock",
@@ -1092,6 +1095,7 @@ pub static ICON_NAMES: [&str; 1834usize] = [
     "monitor-down",
     "monitor-off",
     "monitor-pause",
+    "monitor-pc",
     "monitor-play",
     "monitor-smartphone",
     "monitor-speaker",
