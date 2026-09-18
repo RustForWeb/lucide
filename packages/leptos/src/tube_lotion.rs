@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn Broccoli(
+pub fn TubeLotion(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,10 +29,9 @@ pub fn Broccoli(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M10 13a3 3 0 01-2.121-5.121" />
-            <path d="M15.606 14.204c-3.5 1.5-5.899 4.503-8.899 7.503A1 1 0 016 22c-2 0-4-2-4-4a1 1 0 01.293-.707c1.911-1.911 3.823-3.578 5.347-5.441" />
-            <path d="M16.573 14.737A4 4 0 0114 11" />
-            <path d="M7.14 10.907a4 4 0 112.756-7.43A4 4 0 0116.7 4.48a2 2 0 012.82 2.82 4 4 0 011.002 6.805 4 4 0 11-7.51 1.59" />
+            <path d="M15 18v3a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3" />
+            <path d="M17 2a2 2 0 0 1 1.6 3.2A8 8 0 0 0 17 10v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6a8 8 0 0 0-1.6-4.8A2 2 0 0 1 7 2z" />
+            <path d="M7 10a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" />
         </svg>
     }
 }

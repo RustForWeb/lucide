@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CalendarChevronsRightProps {
+pub struct SquareDashedXCornerProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CalendarChevronsRightProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
+pub fn SquareDashedXCorner(props: &SquareDashedXCornerProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,17 @@ pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m13 21 3-3-3-3" />
-            <path d="M16 2v3" />
-            <path d="m19 21 3-3-3-3" />
-            <path d="M21 11.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h4" />
-            <path d="M3 9h18" />
-            <path d="M8 2v3" />
+            <path d="M14 3h1" />
+            <path d="m16 16 5 5" />
+            <path d="M19 3a2 2 0 012 2" />
+            <path d="m21 16-5 5" />
+            <path d="M21 9v1" />
+            <path d="M3 14v1" />
+            <path d="M3 9v1" />
+            <path d="M5 21a2 2 0 01-2-2" />
+            <path d="M5 3a2 2 0 00-2 2" />
+            <path d="M9 21h1" />
+            <path d="M9 3h1" />
         </svg>
     }
 }

@@ -732,6 +732,7 @@ pub fn IconsC3() -> impl IntoView {
                 (view! { <Crown /> }.into_any(), "Crown"),
                 (view! { <Cuboid /> }.into_any(), "Cuboid"),
                 (view! { <CupSoda /> }.into_any(), "Cup Soda"),
+                (view! { <Cupcake /> }.into_any(), "Cupcake"),
                 (view! { <Currency /> }.into_any(), "Currency"),
                 (view! { <Cylinder /> }.into_any(), "Cylinder"),
             ]
@@ -793,6 +794,7 @@ pub fn IconsD1() -> impl IntoView {
                 (view! { <Donut /> }.into_any(), "Donut"),
                 (view! { <DoorClosed /> }.into_any(), "Door Closed"),
                 (view! { <DoorClosedLocked /> }.into_any(), "Door Closed Locked"),
+                (view! { <DoorClosedPackage /> }.into_any(), "Door Closed Package"),
                 (view! { <DoorOpen /> }.into_any(), "Door Open"),
                 (view! { <DoorStairwell /> }.into_any(), "Door Stairwell"),
                 (view! { <Dot /> }.into_any(), "Dot"),
@@ -878,6 +880,7 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <Factory /> }.into_any(), "Factory"),
                 (view! { <Fan /> }.into_any(), "Fan"),
                 (view! { <FastForward /> }.into_any(), "Fast Forward"),
+                (view! { <Faucet /> }.into_any(), "Faucet"),
                 (view! { <Feather /> }.into_any(), "Feather"),
                 (view! { <Fence /> }.into_any(), "Fence"),
                 (view! { <FerrisWheel /> }.into_any(), "Ferris Wheel"),
@@ -970,7 +973,6 @@ pub fn IconsF1() -> impl IntoView {
                 (view! { <FolderCheck /> }.into_any(), "Folder Check"),
                 (view! { <FolderClock /> }.into_any(), "Folder Clock"),
                 (view! { <FolderClosed /> }.into_any(), "Folder Closed"),
-                (view! { <FolderCode /> }.into_any(), "Folder Code"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -988,6 +990,7 @@ pub fn IconsF2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <FolderCode /> }.into_any(), "Folder Code"),
                 (view! { <FolderCog /> }.into_any(), "Folder Cog"),
                 (view! { <FolderDot /> }.into_any(), "Folder Dot"),
                 (view! { <FolderDown /> }.into_any(), "Folder Down"),
@@ -1276,6 +1279,7 @@ pub fn IconsL1() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Lambda /> }.into_any(), "Lambda"),
                 (view! { <Lamp /> }.into_any(), "Lamp"),
                 (view! { <LampCeiling /> }.into_any(), "Lamp Ceiling"),
                 (view! { <LampDesk /> }.into_any(), "Lamp Desk"),
@@ -1567,6 +1571,7 @@ pub fn IconsN1() -> impl IntoView {
                 (view! { <Navigation2 /> }.into_any(), "Navigation 2"),
                 (view! { <Navigation2Off /> }.into_any(), "Navigation 2 Off"),
                 (view! { <NavigationOff /> }.into_any(), "Navigation Off"),
+                (view! { <NepaliRupee /> }.into_any(), "Nepali Rupee"),
                 (view! { <Network /> }.into_any(), "Network"),
                 (view! { <Newspaper /> }.into_any(), "Newspaper"),
                 (view! { <Nfc /> }.into_any(), "Nfc"),
@@ -1848,6 +1853,7 @@ pub fn IconsR1() -> impl IntoView {
                 (view! { <RotateCcwKey /> }.into_any(), "Rotate Ccw Key"),
                 (view! { <RotateCcwSquare /> }.into_any(), "Rotate Ccw Square"),
                 (view! { <RotateCw /> }.into_any(), "Rotate Cw"),
+                (view! { <RotateCwClock /> }.into_any(), "Rotate Cw Clock"),
                 (view! { <RotateCwFadingClock /> }.into_any(), "Rotate Cw Fading Clock"),
                 (view! { <RotateCwSquare /> }.into_any(), "Rotate Cw Square"),
                 (view! { <Route /> }.into_any(), "Route"),
@@ -2071,8 +2077,11 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareDashedBottomCode /> }.into_any(), "Square Dashed Bottom Code"),
                 (view! { <SquareDashedKanban /> }.into_any(), "Square Dashed Kanban"),
                 (view! { <SquareDashedMousePointer /> }.into_any(), "Square Dashed Mouse Pointer"),
+                (view! { <SquareDashedPlus /> }.into_any(), "Square Dashed Plus"),
                 (view! { <SquareDashedText /> }.into_any(), "Square Dashed Text"),
                 (view! { <SquareDashedTopSolid /> }.into_any(), "Square Dashed Top Solid"),
+                (view! { <SquareDashedX /> }.into_any(), "Square Dashed X"),
+                (view! { <SquareDashedXCorner /> }.into_any(), "Square Dashed X Corner"),
                 (view! { <SquareDimensions /> }.into_any(), "Square Dimensions"),
                 (view! { <SquareDivide /> }.into_any(), "Square Divide"),
                 (view! { <SquareDot /> }.into_any(), "Square Dot"),
@@ -2100,9 +2109,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareRoundCorner /> }.into_any(), "Square Round Corner"),
                 (view! { <SquareScissors /> }.into_any(), "Square Scissors"),
                 (view! { <SquareSigma /> }.into_any(), "Square Sigma"),
-                (view! { <SquareSlash /> }.into_any(), "Square Slash"),
-                (view! { <SquareSplitHorizontal /> }.into_any(), "Square Split Horizontal"),
-                (view! { <SquareSplitVertical /> }.into_any(), "Square Split Vertical"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2120,6 +2126,9 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareSlash /> }.into_any(), "Square Slash"),
+                (view! { <SquareSplitHorizontal /> }.into_any(), "Square Split Horizontal"),
+                (view! { <SquareSplitVertical /> }.into_any(), "Square Split Vertical"),
                 (view! { <SquareSquare /> }.into_any(), "Square Square"),
                 (view! { <SquareStack /> }.into_any(), "Square Stack"),
                 (view! { <SquareStar /> }.into_any(), "Square Star"),
@@ -2298,7 +2307,7 @@ pub fn IconsT1() -> impl IntoView {
                 (view! { <Trophy /> }.into_any(), "Trophy"),
                 (view! { <Truck /> }.into_any(), "Truck"),
                 (view! { <TruckElectric /> }.into_any(), "Truck Electric"),
-                (view! { <TurkishLira /> }.into_any(), "Turkish Lira"),
+                (view! { <TubeLotion /> }.into_any(), "Tube Lotion"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2316,6 +2325,7 @@ pub fn IconsT2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <TurkishLira /> }.into_any(), "Turkish Lira"),
                 (view! { <Turntable /> }.into_any(), "Turntable"),
                 (view! { <Turtle /> }.into_any(), "Turtle"),
                 (view! { <Tv /> }.into_any(), "Tv"),
