@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CalendarChevronsRightProps {
+pub struct NepaliRupeeProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CalendarChevronsRightProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CalendarChevronsRight(props: CalendarChevronsRightProps) -> Element {
+pub fn NepaliRupee(props: NepaliRupeeProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,12 +34,11 @@ pub fn CalendarChevronsRight(props: CalendarChevronsRightProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m13 21 3-3-3-3" }
-            path { "d": "M16 2v3" }
-            path { "d": "m19 21 3-3-3-3" }
-            path { "d": "M21 11.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h4" }
-            path { "d": "M3 9h18" }
-            path { "d": "M8 2v3" }
+            path { "d": "M18 16.173 A4.74 4.74 0 0 0 13.496 8.005" }
+            path { "d": "M4 3 L20 3" }
+            path { "d": "M5 13 L13.5 21" }
+            path { "d": "M5 13 L9 13" }
+            path { "d": "M8 13 C15.5 13 14.667 3 8 3" }
         }
     }
 }

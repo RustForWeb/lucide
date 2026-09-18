@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CalendarChevronsRightProps {
+pub struct RotateCwClockProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CalendarChevronsRightProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
+pub fn RotateCwClock(props: &RotateCwClockProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,9 @@ pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m13 21 3-3-3-3" />
-            <path d="M16 2v3" />
-            <path d="m19 21 3-3-3-3" />
-            <path d="M21 11.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h4" />
-            <path d="M3 9h18" />
-            <path d="M8 2v3" />
+            <path d="M12 7v5l4 2" />
+            <path d="M16 8h5V3" />
+            <path d="m21 8-2.3-2.3A9.7 9.7 0 0012 3a9 9 0 109 9" />
         </svg>
     }
 }
