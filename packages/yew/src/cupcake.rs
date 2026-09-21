@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct CalendarChevronsRightProps {
+pub struct CupcakeProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct CalendarChevronsRightProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
+pub fn Cupcake(props: &CupcakeProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,12 +41,15 @@ pub fn CalendarChevronsRight(props: &CalendarChevronsRightProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="m13 21 3-3-3-3" />
-            <path d="M16 2v3" />
-            <path d="m19 21 3-3-3-3" />
-            <path d="M21 11.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h4" />
-            <path d="M3 9h18" />
-            <path d="M8 2v3" />
+            <path d="M12 22v-9" />
+            <path d="M14 4h1a3 3 0 013 3l-.004.125A4 4 0 0121 11v2" />
+            <path d="m15.5 22 1.5-9" />
+            <path
+                d="M21 13a1 1 0 01.919 1.394l-2.74 6.394A2 2 0 0117.34 22H6.659a2 2 0 01-1.838-1.212l-2.74-6.394A1 1 0 013 13z"
+            />
+            <path d="M3 13v-2a4 4 0 013.003-3.875L6 7a3 3 0 013-3h1" />
+            <path d="M8.5 22 7 13" />
+            <circle cx="12" cy="4" r="2" />
         </svg>
     }
 }

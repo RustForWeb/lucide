@@ -3329,6 +3329,12 @@ pub fn IconsC3() -> Element {
         ),
         (
             rsx! {
+                Cupcake {}
+            },
+            "Cupcake",
+        ),
+        (
+            rsx! {
                 Currency {}
             },
             "Currency",
@@ -3605,6 +3611,12 @@ pub fn IconsD1() -> Element {
                 DoorClosedLocked {}
             },
             "Door Closed Locked",
+        ),
+        (
+            rsx! {
+                DoorClosedPackage {}
+            },
+            "Door Closed Package",
         ),
         (
             rsx! {
@@ -3941,6 +3953,12 @@ pub fn IconsF1() -> Element {
                 FastForward {}
             },
             "Fast Forward",
+        ),
+        (
+            rsx! {
+                Faucet {}
+            },
+            "Faucet",
         ),
         (
             rsx! {
@@ -4476,12 +4494,6 @@ pub fn IconsF1() -> Element {
             },
             "Folder Closed",
         ),
-        (
-            rsx! {
-                FolderCode {}
-            },
-            "Folder Code",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -4497,6 +4509,12 @@ pub fn IconsF1() -> Element {
 #[component]
 pub fn IconsF2() -> Element {
     let icons = [
+        (
+            rsx! {
+                FolderCode {}
+            },
+            "Folder Code",
+        ),
         (
             rsx! {
                 FolderCog {}
@@ -5685,6 +5703,12 @@ pub fn IconsK1() -> Element {
 #[component]
 pub fn IconsL1() -> Element {
     let icons = [
+        (
+            rsx! {
+                Lambda {}
+            },
+            "Lambda",
+        ),
         (
             rsx! {
                 Lamp {}
@@ -7154,6 +7178,12 @@ pub fn IconsN1() -> Element {
         ),
         (
             rsx! {
+                NepaliRupee {}
+            },
+            "Nepali Rupee",
+        ),
+        (
+            rsx! {
                 Network {}
             },
             "Network",
@@ -8405,6 +8435,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RotateCwClock {}
+            },
+            "Rotate Cw Clock",
+        ),
+        (
+            rsx! {
                 RotateCwFadingClock {}
             },
             "Rotate Cw Fading Clock",
@@ -9515,6 +9551,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareDashedPlus {}
+            },
+            "Square Dashed Plus",
+        ),
+        (
+            rsx! {
                 SquareDashedText {}
             },
             "Square Dashed Text",
@@ -9524,6 +9566,18 @@ pub fn IconsS2() -> Element {
                 SquareDashedTopSolid {}
             },
             "Square Dashed Top Solid",
+        ),
+        (
+            rsx! {
+                SquareDashedX {}
+            },
+            "Square Dashed X",
+        ),
+        (
+            rsx! {
+                SquareDashedXCorner {}
+            },
+            "Square Dashed X Corner",
         ),
         (
             rsx! {
@@ -9687,6 +9741,21 @@ pub fn IconsS2() -> Element {
             },
             "Square Sigma",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS3() -> Element {
+    let icons = [
         (
             rsx! {
                 SquareSlash {}
@@ -9705,21 +9774,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Split Vertical",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS3() -> Element {
-    let icons = [
         (
             rsx! {
                 SquareSquare {}
@@ -10667,9 +10721,9 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
-                TurkishLira {}
+                TubeLotion {}
             },
-            "Turkish Lira",
+            "Tube Lotion",
         ),
     ];
     rsx! {
@@ -10686,6 +10740,12 @@ pub fn IconsT1() -> Element {
 #[component]
 pub fn IconsT2() -> Element {
     let icons = [
+        (
+            rsx! {
+                TurkishLira {}
+            },
+            "Turkish Lira",
+        ),
         (
             rsx! {
                 Turntable {}

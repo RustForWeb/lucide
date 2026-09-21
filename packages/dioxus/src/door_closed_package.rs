@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CalendarChevronsRightProps {
+pub struct DoorClosedPackageProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CalendarChevronsRightProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CalendarChevronsRight(props: CalendarChevronsRightProps) -> Element {
+pub fn DoorClosedPackage(props: DoorClosedPackageProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,12 +34,17 @@ pub fn CalendarChevronsRight(props: CalendarChevronsRightProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "m13 21 3-3-3-3" }
-            path { "d": "M16 2v3" }
-            path { "d": "m19 21 3-3-3-3" }
-            path { "d": "M21 11.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h4" }
-            path { "d": "M3 9h18" }
-            path { "d": "M8 2v3" }
+            path { "d": "M18 13v3" }
+            path { "d": "M19 9V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" }
+            path { "d": "M2 21h8" }
+            path { "d": "M9 12h.01" }
+            rect {
+                "x": "14",
+                "y": "13",
+                "width": "8",
+                "height": "8",
+                "rx": "1",
+            }
         }
     }
 }

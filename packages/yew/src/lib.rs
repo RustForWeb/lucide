@@ -1206,6 +1206,8 @@ mod crown;
 mod cuboid;
 #[cfg(feature = "food-beverage")]
 mod cup_soda;
+#[cfg(feature = "food-beverage")]
+mod cupcake;
 #[cfg(feature = "finance")]
 mod currency;
 #[cfg(any(feature = "shapes", feature = "design", feature = "math"))]
@@ -1339,6 +1341,12 @@ mod donut;
 mod door_closed;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 mod door_closed_locked;
+#[cfg(any(
+    feature = "home",
+    feature = "food-beverage",
+    feature = "transportation"
+))]
+mod door_closed_package;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 mod door_open;
 #[cfg(any(feature = "home", feature = "travel"))]
@@ -1482,6 +1490,13 @@ mod factory;
 mod fan;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 mod fast_forward;
+#[cfg(any(
+    feature = "food-beverage",
+    feature = "home",
+    feature = "navigation",
+    feature = "travel"
+))]
+mod faucet;
 #[cfg(any(
     feature = "nature",
     feature = "animals",
@@ -2183,6 +2198,13 @@ mod keyboard;
 mod keyboard_music;
 #[cfg(any(feature = "devices", feature = "text", feature = "development"))]
 mod keyboard_off;
+#[cfg(any(
+    feature = "development",
+    feature = "math",
+    feature = "science",
+    feature = "text"
+))]
+mod lambda;
 #[cfg(feature = "home")]
 mod lamp;
 #[cfg(feature = "home")]
@@ -2738,6 +2760,8 @@ mod navigation_2;
 mod navigation_2_off;
 #[cfg(feature = "navigation")]
 mod navigation_off;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+mod nepali_rupee;
 #[cfg(feature = "development")]
 mod network;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
@@ -3269,6 +3293,8 @@ mod rotate_ccw_key;
 mod rotate_ccw_square;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 mod rotate_cw;
+#[cfg(any(feature = "arrows", feature = "time"))]
+mod rotate_cw_clock;
 #[cfg(feature = "time")]
 mod rotate_cw_fading_clock;
 #[cfg(any(
@@ -3829,10 +3855,16 @@ mod square_dashed_kanban;
     feature = "tools"
 ))]
 mod square_dashed_mouse_pointer;
+#[cfg(any(feature = "design", feature = "layout", feature = "shapes"))]
+mod square_dashed_plus;
 #[cfg(any(feature = "text", feature = "cursors"))]
 mod square_dashed_text;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 mod square_dashed_top_solid;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+mod square_dashed_x;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+mod square_dashed_x_corner;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod square_dimensions;
 #[cfg(feature = "math")]
@@ -4310,6 +4342,14 @@ mod trophy;
 mod truck;
 #[cfg(feature = "transportation")]
 mod truck_electric;
+#[cfg(any(
+    feature = "medical",
+    feature = "home",
+    feature = "shopping",
+    feature = "travel",
+    feature = "seasons"
+))]
+mod tube_lotion;
 #[cfg(feature = "finance")]
 mod turkish_lira;
 #[cfg(any(feature = "multimedia", feature = "home"))]
@@ -5894,6 +5934,8 @@ pub use crown::*;
 pub use cuboid::*;
 #[cfg(feature = "food-beverage")]
 pub use cup_soda::*;
+#[cfg(feature = "food-beverage")]
+pub use cupcake::*;
 #[cfg(feature = "finance")]
 pub use currency::*;
 #[cfg(any(feature = "shapes", feature = "design", feature = "math"))]
@@ -6027,6 +6069,12 @@ pub use donut::*;
 pub use door_closed::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 pub use door_closed_locked::*;
+#[cfg(any(
+    feature = "home",
+    feature = "food-beverage",
+    feature = "transportation"
+))]
+pub use door_closed_package::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 pub use door_open::*;
 #[cfg(any(feature = "home", feature = "travel"))]
@@ -6170,6 +6218,13 @@ pub use factory::*;
 pub use fan::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 pub use fast_forward::*;
+#[cfg(any(
+    feature = "food-beverage",
+    feature = "home",
+    feature = "navigation",
+    feature = "travel"
+))]
+pub use faucet::*;
 #[cfg(any(
     feature = "nature",
     feature = "animals",
@@ -6871,6 +6926,13 @@ pub use keyboard::*;
 pub use keyboard_music::*;
 #[cfg(any(feature = "devices", feature = "text", feature = "development"))]
 pub use keyboard_off::*;
+#[cfg(any(
+    feature = "development",
+    feature = "math",
+    feature = "science",
+    feature = "text"
+))]
+pub use lambda::*;
 #[cfg(feature = "home")]
 pub use lamp::*;
 #[cfg(feature = "home")]
@@ -7426,6 +7488,8 @@ pub use navigation_2::*;
 pub use navigation_2_off::*;
 #[cfg(feature = "navigation")]
 pub use navigation_off::*;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+pub use nepali_rupee::*;
 #[cfg(feature = "development")]
 pub use network::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
@@ -7957,6 +8021,8 @@ pub use rotate_ccw_key::*;
 pub use rotate_ccw_square::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "photography"))]
 pub use rotate_cw::*;
+#[cfg(any(feature = "arrows", feature = "time"))]
+pub use rotate_cw_clock::*;
 #[cfg(feature = "time")]
 pub use rotate_cw_fading_clock::*;
 #[cfg(any(
@@ -8517,10 +8583,16 @@ pub use square_dashed_kanban::*;
     feature = "tools"
 ))]
 pub use square_dashed_mouse_pointer::*;
+#[cfg(any(feature = "design", feature = "layout", feature = "shapes"))]
+pub use square_dashed_plus::*;
 #[cfg(any(feature = "text", feature = "cursors"))]
 pub use square_dashed_text::*;
 #[cfg(any(feature = "design", feature = "development", feature = "layout"))]
 pub use square_dashed_top_solid::*;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+pub use square_dashed_x::*;
+#[cfg(any(feature = "design", feature = "development", feature = "layout"))]
+pub use square_dashed_x_corner::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use square_dimensions::*;
 #[cfg(feature = "math")]
@@ -8998,6 +9070,14 @@ pub use trophy::*;
 pub use truck::*;
 #[cfg(feature = "transportation")]
 pub use truck_electric::*;
+#[cfg(any(
+    feature = "medical",
+    feature = "home",
+    feature = "shopping",
+    feature = "travel",
+    feature = "seasons"
+))]
+pub use tube_lotion::*;
 #[cfg(feature = "finance")]
 pub use turkish_lira::*;
 #[cfg(any(feature = "multimedia", feature = "home"))]
