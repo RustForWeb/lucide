@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CardSimProps {
+pub struct SquareSparklesProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CardSimProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CardSim(props: CardSimProps) -> Element {
+pub fn SquareSparkles(props: SquareSparklesProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,16 +34,10 @@ pub fn CardSim(props: CardSimProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 14v4" }
-            path { "d": "M14.172 2a2 2 0 0 1 1.414.586l3.828 3.828A2 2 0 0 1 20 7.828V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" }
-            path { "d": "M8 14h8" }
-            rect {
-                "x": "8",
-                "y": "10",
-                "width": "8",
-                "height": "8",
-                "rx": "2",
-            }
+            path { "d": "M11 15H7" }
+            path { "d": "M15.41 2.49a.6.6 0 011.18 0l.63 3.334a1.2 1.2 0 00.956.955l3.334.631a.6.6 0 010 1.18l-3.334.63a1.2 1.2 0 00-.955.956l-.631 3.334a.6.6 0 01-1.18 0l-.63-3.334a1.2 1.2 0 00-.956-.955L10.49 8.59a.6.6 0 010-1.18l3.334-.63a1.2 1.2 0 00.955-.956z" }
+            path { "d": "M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" }
+            path { "d": "M9 13v4" }
         }
     }
 }

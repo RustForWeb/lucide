@@ -351,6 +351,7 @@ pub fn IconsB() -> Html {
             "Briefcase Conveyor Belt",
         ),
         (html! { <BriefcaseMedical /> }, "Briefcase Medical"),
+        (html! { <BriefcasePlus /> }, "Briefcase Plus"),
         (html! { <BringToFront /> }, "Bring To Front"),
         (html! { <Broccoli /> }, "Broccoli"),
         (html! { <Broom /> }, "Broom"),
@@ -1117,6 +1118,7 @@ pub fn IconsH() -> Html {
         (html! { <Hourglass /> }, "Hourglass"),
         (html! { <HourglassCog /> }, "Hourglass Cog"),
         (html! { <House /> }, "House"),
+        (html! { <HouseCog /> }, "House Cog"),
         (html! { <HouseHeart /> }, "House Heart"),
         (html! { <HousePlug /> }, "House Plug"),
         (html! { <HousePlus /> }, "House Plus"),
@@ -1264,9 +1266,18 @@ pub fn IconsL() -> Html {
         (html! { <LightbulbOff /> }, "Lightbulb Off"),
         (html! { <Lighthouse /> }, "Lighthouse"),
         (
+            html! { <LineDotBottomVertical /> },
+            "Line Dot Bottom Vertical",
+        ),
+        (
+            html! { <LineDotLeftHorizontal /> },
+            "Line Dot Left Horizontal",
+        ),
+        (
             html! { <LineDotRightHorizontal /> },
             "Line Dot Right Horizontal",
         ),
+        (html! { <LineDotTopVertical /> }, "Line Dot Top Vertical"),
         (html! { <LineSquiggle /> }, "Line Squiggle"),
         (html! { <LineStyle /> }, "Line Style"),
         (html! { <Link /> }, "Link"),
@@ -2037,6 +2048,7 @@ pub fn IconsS() -> Html {
         (html! { <SquareScissors /> }, "Square Scissors"),
         (html! { <SquareSigma /> }, "Square Sigma"),
         (html! { <SquareSlash /> }, "Square Slash"),
+        (html! { <SquareSparkles /> }, "Square Sparkles"),
         (
             html! { <SquareSplitHorizontal /> },
             "Square Split Horizontal",
