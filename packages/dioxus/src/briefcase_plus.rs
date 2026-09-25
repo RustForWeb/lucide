@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 #[derive(Clone, PartialEq, Props)]
-pub struct CardSimProps {
+pub struct BriefcasePlusProps {
     #[props(default = 24)]
     pub size: usize,
     #[props(default = "currentColor".to_owned())]
@@ -15,7 +15,7 @@ pub struct CardSimProps {
     pub style: Option<String>,
 }
 #[component]
-pub fn CardSim(props: CardSimProps) -> Element {
+pub fn BriefcasePlus(props: BriefcasePlusProps) -> Element {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -34,16 +34,10 @@ pub fn CardSim(props: CardSimProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M12 14v4" }
-            path { "d": "M14.172 2a2 2 0 0 1 1.414.586l3.828 3.828A2 2 0 0 1 20 7.828V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" }
-            path { "d": "M8 14h8" }
-            rect {
-                "x": "8",
-                "y": "10",
-                "width": "8",
-                "height": "8",
-                "rx": "2",
-            }
+            path { "d": "M13.354 20H4a2 2 0 01-2-2V8a2 2 0 012-2h16a2 2 0 012 2v3.354" }
+            path { "d": "M16 11.354V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" }
+            path { "d": "M16 17h6" }
+            path { "d": "M19 14v6" }
         }
     }
 }

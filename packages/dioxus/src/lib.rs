@@ -560,6 +560,8 @@ mod briefcase_business;
 mod briefcase_conveyor_belt;
 #[cfg(any(feature = "medical", feature = "transportation"))]
 mod briefcase_medical;
+#[cfg(any(feature = "transportation", feature = "files", feature = "account"))]
+mod briefcase_plus;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod bring_to_front;
 #[cfg(feature = "food-beverage")]
@@ -2095,6 +2097,8 @@ mod hourglass;
 mod hourglass_cog;
 #[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 mod house;
+#[cfg(any(feature = "buildings", feature = "home"))]
+mod house_cog;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
 mod house_heart;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
@@ -2317,7 +2321,13 @@ mod lightbulb_off;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 mod lighthouse;
 #[cfg(any(feature = "development", feature = "navigation"))]
+mod line_dot_bottom_vertical;
+#[cfg(any(feature = "development", feature = "navigation"))]
+mod line_dot_left_horizontal;
+#[cfg(any(feature = "development", feature = "navigation"))]
 mod line_dot_right_horizontal;
+#[cfg(any(feature = "development", feature = "navigation"))]
+mod line_dot_top_vertical;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 mod line_squiggle;
 #[cfg(any(feature = "design", feature = "tools"))]
@@ -3952,6 +3962,13 @@ mod square_scissors;
 mod square_sigma;
 #[cfg(any(feature = "development", feature = "math"))]
 mod square_slash;
+#[cfg(any(
+    feature = "photography",
+    feature = "text",
+    feature = "multimedia",
+    feature = "files"
+))]
+mod square_sparkles;
 #[cfg(feature = "layout")]
 mod square_split_horizontal;
 #[cfg(feature = "layout")]
@@ -5288,6 +5305,8 @@ pub use briefcase_business::*;
 pub use briefcase_conveyor_belt::*;
 #[cfg(any(feature = "medical", feature = "transportation"))]
 pub use briefcase_medical::*;
+#[cfg(any(feature = "transportation", feature = "files", feature = "account"))]
+pub use briefcase_plus::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use bring_to_front::*;
 #[cfg(feature = "food-beverage")]
@@ -6823,6 +6842,8 @@ pub use hourglass::*;
 pub use hourglass_cog::*;
 #[cfg(any(feature = "buildings", feature = "home", feature = "navigation"))]
 pub use house::*;
+#[cfg(any(feature = "buildings", feature = "home"))]
+pub use house_cog::*;
 #[cfg(any(feature = "home", feature = "buildings", feature = "medical"))]
 pub use house_heart::*;
 #[cfg(any(feature = "buildings", feature = "home", feature = "sustainability"))]
@@ -7045,7 +7066,13 @@ pub use lightbulb_off::*;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 pub use lighthouse::*;
 #[cfg(any(feature = "development", feature = "navigation"))]
+pub use line_dot_bottom_vertical::*;
+#[cfg(any(feature = "development", feature = "navigation"))]
+pub use line_dot_left_horizontal::*;
+#[cfg(any(feature = "development", feature = "navigation"))]
 pub use line_dot_right_horizontal::*;
+#[cfg(any(feature = "development", feature = "navigation"))]
+pub use line_dot_top_vertical::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 pub use line_squiggle::*;
 #[cfg(any(feature = "design", feature = "tools"))]
@@ -8680,6 +8707,13 @@ pub use square_scissors::*;
 pub use square_sigma::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use square_slash::*;
+#[cfg(any(
+    feature = "photography",
+    feature = "text",
+    feature = "multimedia",
+    feature = "files"
+))]
+pub use square_sparkles::*;
 #[cfg(feature = "layout")]
 pub use square_split_horizontal::*;
 #[cfg(feature = "layout")]

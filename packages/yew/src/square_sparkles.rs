@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct MailPenProps {
+pub struct SquareSparklesProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct MailPenProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn MailPen(props: &MailPenProps) -> Html {
+pub fn SquareSparkles(props: &SquareSparklesProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,12 @@ pub fn MailPen(props: &MailPenProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
+            <path d="M11 15H7" />
             <path
-                d="M15.363 17.634a2 2 0 00-.506.854l-.837 2.87a.5.5 0 00.62.62l2.87-.837a2 2 0 00.854-.506l3.013-3.009a1 1 0 10-3.004-3.004z"
+                d="M15.41 2.49a.6.6 0 011.18 0l.63 3.334a1.2 1.2 0 00.956.955l3.334.631a.6.6 0 010 1.18l-3.334.63a1.2 1.2 0 00-.955.956l-.631 3.334a.6.6 0 01-1.18 0l-.63-3.334a1.2 1.2 0 00-.956-.955L10.49 8.59a.6.6 0 010-1.18l3.334-.63a1.2 1.2 0 00.955-.956z"
             />
-            <path d="M22 10.38V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h6.25" />
-            <path d="m22 7-8.991 5.727a2 2 0 01-2.009 0L2 7" />
+            <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+            <path d="M9 13v4" />
         </svg>
     }
 }

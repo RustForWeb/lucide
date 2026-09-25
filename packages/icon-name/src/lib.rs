@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1848usize] = [
+pub static ICON_NAMES: [&str; 1854usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -249,6 +249,7 @@ pub static ICON_NAMES: [&str; 1848usize] = [
     "briefcase-business",
     "briefcase-conveyor-belt",
     "briefcase-medical",
+    "briefcase-plus",
     "bring-to-front",
     "broccoli",
     "broom",
@@ -871,6 +872,7 @@ pub static ICON_NAMES: [&str; 1848usize] = [
     "hourglass",
     "hourglass-cog",
     "house",
+    "house-cog",
     "house-heart",
     "house-plug",
     "house-plus",
@@ -953,7 +955,10 @@ pub static ICON_NAMES: [&str; 1848usize] = [
     "lightbulb",
     "lightbulb-off",
     "lighthouse",
+    "line-dot-bottom-vertical",
+    "line-dot-left-horizontal",
     "line-dot-right-horizontal",
+    "line-dot-top-vertical",
     "line-squiggle",
     "line-style",
     "link",
@@ -1558,6 +1563,7 @@ pub static ICON_NAMES: [&str; 1848usize] = [
     "square-scissors",
     "square-sigma",
     "square-slash",
+    "square-sparkles",
     "square-split-horizontal",
     "square-split-vertical",
     "square-square",

@@ -1,6 +1,6 @@
 use yew::prelude::*;
 #[derive(PartialEq, Properties)]
-pub struct MailPenProps {
+pub struct BriefcasePlusProps {
     #[prop_or(24)]
     pub size: usize,
     #[prop_or(AttrValue::from("currentColor"))]
@@ -19,7 +19,7 @@ pub struct MailPenProps {
     pub node_ref: NodeRef,
 }
 #[component]
-pub fn MailPen(props: &MailPenProps) -> Html {
+pub fn BriefcasePlus(props: &BriefcasePlusProps) -> Html {
     let stroke_width = if props.absolute_stroke_width {
         props.stroke_width * 24 / props.size
     } else {
@@ -41,11 +41,10 @@ pub fn MailPen(props: &MailPenProps) -> Html {
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path
-                d="M15.363 17.634a2 2 0 00-.506.854l-.837 2.87a.5.5 0 00.62.62l2.87-.837a2 2 0 00.854-.506l3.013-3.009a1 1 0 10-3.004-3.004z"
-            />
-            <path d="M22 10.38V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h6.25" />
-            <path d="m22 7-8.991 5.727a2 2 0 01-2.009 0L2 7" />
+            <path d="M13.354 20H4a2 2 0 01-2-2V8a2 2 0 012-2h16a2 2 0 012 2v3.354" />
+            <path d="M16 11.354V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+            <path d="M16 17h6" />
+            <path d="M19 14v6" />
         </svg>
     }
 }

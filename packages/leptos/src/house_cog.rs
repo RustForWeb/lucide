@@ -1,6 +1,6 @@
 use leptos::{prelude::*, svg::Svg};
 #[component]
-pub fn MailPen(
+pub fn HouseCog(
     #[prop(default = 24.into(), into)] size: Signal<usize>,
     #[prop(default = "currentColor".into(), into)] color: Signal<String>,
     #[prop(default = "none".into(), into)] fill: Signal<String>,
@@ -29,9 +29,17 @@ pub fn MailPen(
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15.363 17.634a2 2 0 00-.506.854l-.837 2.87a.5.5 0 00.62.62l2.87-.837a2 2 0 00.854-.506l3.013-3.009a1 1 0 10-3.004-3.004z" />
-            <path d="M22 10.38V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h6.25" />
-            <path d="m22 7-8.991 5.727a2 2 0 01-2.009 0L2 7" />
+            <path d="M10.584 21H5a2 2 0 01-2-2v-9a2 2 0 01.709-1.527l7-6a2 2 0 012.582 0l7 6A2 2 0 0121 10.001v.583" />
+            <path d="M14 12H10a1 1 0 00-1 1v8" />
+            <path d="m14.305 19.53.923-.382" />
+            <path d="m15.229 16.852-.924-.383" />
+            <path d="m16.852 15.228-.383-.923" />
+            <path d="m16.852 20.773-.383.924" />
+            <path d="m19.148 15.228.383-.923" />
+            <path d="m19.53 21.697-.382-.924" />
+            <path d="m20.773 16.852.922-.383" />
+            <path d="m20.773 19.148.922.383" />
+            <circle cx="18" cy="18" r="3" />
         </svg>
     }
 }

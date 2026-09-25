@@ -1550,6 +1550,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BriefcasePlus {}
+            },
+            "Briefcase Plus",
+        ),
+        (
+            rsx! {
                 BringToFront {}
             },
             "Bring To Front",
@@ -5417,6 +5423,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HouseCog {}
+            },
+            "House Cog",
+        ),
+        (
+            rsx! {
                 HouseHeart {}
             },
             "House Heart",
@@ -5969,9 +5981,27 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LineDotBottomVertical {}
+            },
+            "Line Dot Bottom Vertical",
+        ),
+        (
+            rsx! {
+                LineDotLeftHorizontal {}
+            },
+            "Line Dot Left Horizontal",
+        ),
+        (
+            rsx! {
                 LineDotRightHorizontal {}
             },
             "Line Dot Right Horizontal",
+        ),
+        (
+            rsx! {
+                LineDotTopVertical {}
+            },
+            "Line Dot Top Vertical",
         ),
         (
             rsx! {
@@ -9761,6 +9791,12 @@ pub fn IconsS3() -> Element {
                 SquareSlash {}
             },
             "Square Slash",
+        ),
+        (
+            rsx! {
+                SquareSparkles {}
+            },
+            "Square Sparkles",
         ),
         (
             rsx! {
