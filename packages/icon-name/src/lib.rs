@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1854usize] = [
+pub static ICON_NAMES: [&str; 1857usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -137,6 +137,7 @@ pub static ICON_NAMES: [&str; 1854usize] = [
     "ban",
     "banana",
     "bandage",
+    "bangladeshi-taka",
     "banknote",
     "banknote-arrow-down",
     "banknote-arrow-up",
@@ -948,6 +949,7 @@ pub static ICON_NAMES: [&str; 1854usize] = [
     "lectern",
     "lens-concave",
     "lens-convex",
+    "letters",
     "library",
     "library-big",
     "life-buoy",
@@ -1280,6 +1282,7 @@ pub static ICON_NAMES: [&str; 1854usize] = [
     "power-off",
     "presentation",
     "printer",
+    "printer-3d",
     "printer-check",
     "printer-x",
     "projector",

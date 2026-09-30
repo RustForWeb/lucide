@@ -301,6 +301,8 @@ mod ban;
 mod banana;
 #[cfg(feature = "medical")]
 mod bandage;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+mod bangladeshi_taka;
 #[cfg(feature = "finance")]
 mod banknote;
 #[cfg(feature = "finance")]
@@ -2294,6 +2296,8 @@ mod lectern;
 mod lens_concave;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 mod lens_convex;
+#[cfg(feature = "text")]
+mod letters;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -3127,6 +3131,8 @@ mod power_off;
 mod presentation;
 #[cfg(feature = "devices")]
 mod printer;
+#[cfg(any(feature = "devices", feature = "tools"))]
+mod printer_3_d;
 #[cfg(feature = "devices")]
 mod printer_check;
 #[cfg(feature = "devices")]
@@ -5046,6 +5052,8 @@ pub use ban::*;
 pub use banana::*;
 #[cfg(feature = "medical")]
 pub use bandage::*;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+pub use bangladeshi_taka::*;
 #[cfg(feature = "finance")]
 pub use banknote::*;
 #[cfg(feature = "finance")]
@@ -7039,6 +7047,8 @@ pub use lectern::*;
 pub use lens_concave::*;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 pub use lens_convex::*;
+#[cfg(feature = "text")]
+pub use letters::*;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -7872,6 +7882,8 @@ pub use power_off::*;
 pub use presentation::*;
 #[cfg(feature = "devices")]
 pub use printer::*;
+#[cfg(any(feature = "devices", feature = "tools"))]
+pub use printer_3_d::*;
 #[cfg(feature = "devices")]
 pub use printer_check::*;
 #[cfg(feature = "devices")]
