@@ -1250,6 +1250,7 @@ pub fn IconsL() -> Html {
         (html! { <LayoutDashboard /> }, "Layout Dashboard"),
         (html! { <LayoutFreeform /> }, "Layout Freeform"),
         (html! { <LayoutGrid /> }, "Layout Grid"),
+        (html! { <LayoutGridCircles /> }, "Layout Grid Circles"),
         (html! { <LayoutList /> }, "Layout List"),
         (html! { <LayoutPanelLeft /> }, "Layout Panel Left"),
         (html! { <LayoutPanelTop /> }, "Layout Panel Top"),

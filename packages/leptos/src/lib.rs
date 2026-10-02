@@ -2269,6 +2269,8 @@ mod layout_dashboard;
 mod layout_freeform;
 #[cfg(any(feature = "design", feature = "layout"))]
 mod layout_grid;
+#[cfg(any(feature = "design", feature = "layout"))]
+mod layout_grid_circles;
 #[cfg(any(
     feature = "design",
     feature = "layout",
@@ -7020,6 +7022,8 @@ pub use layout_dashboard::*;
 pub use layout_freeform::*;
 #[cfg(any(feature = "design", feature = "layout"))]
 pub use layout_grid::*;
+#[cfg(any(feature = "design", feature = "layout"))]
+pub use layout_grid_circles::*;
 #[cfg(any(
     feature = "design",
     feature = "layout",
