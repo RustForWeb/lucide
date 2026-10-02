@@ -863,6 +863,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BangladeshiTaka {}
+            },
+            "Bangladeshi Taka",
+        ),
+        (
+            rsx! {
                 Banknote {}
             },
             "Banknote",
@@ -1305,12 +1311,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Minus",
         ),
-        (
-            rsx! {
-                BookOpen {}
-            },
-            "Book Open",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1326,6 +1326,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookOpen {}
+            },
+            "Book Open",
+        ),
         (
             rsx! {
                 BookOpenCheck {}
@@ -5939,6 +5945,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                Letters {}
+            },
+            "Letters",
+        ),
+        (
+            rsx! {
                 Library {}
             },
             "Library",
@@ -8018,6 +8030,12 @@ pub fn IconsP2() -> Element {
                 Printer {}
             },
             "Printer",
+        ),
+        (
+            rsx! {
+                Printer3D {}
+            },
+            "Printer 3 D",
         ),
         (
             rsx! {

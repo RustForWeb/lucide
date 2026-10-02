@@ -254,6 +254,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <Ban /> }.into_any(), "Ban"),
                 (view! { <Banana /> }.into_any(), "Banana"),
                 (view! { <Bandage /> }.into_any(), "Bandage"),
+                (view! { <BangladeshiTaka /> }.into_any(), "Bangladeshi Taka"),
                 (view! { <Banknote /> }.into_any(), "Banknote"),
                 (view! { <BanknoteArrowDown /> }.into_any(), "Banknote Arrow Down"),
                 (view! { <BanknoteArrowUp /> }.into_any(), "Banknote Arrow Up"),
@@ -328,7 +329,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookKey /> }.into_any(), "Book Key"),
                 (view! { <BookLock /> }.into_any(), "Book Lock"),
                 (view! { <BookMinus /> }.into_any(), "Book Minus"),
-                (view! { <BookOpen /> }.into_any(), "Book Open"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -346,6 +346,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookOpen /> }.into_any(), "Book Open"),
                 (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
                 (view! { <BookOpenText /> }.into_any(), "Book Open Text"),
                 (view! { <BookPlus /> }.into_any(), "Book Plus"),
@@ -1318,6 +1319,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <Lectern /> }.into_any(), "Lectern"),
                 (view! { <LensConcave /> }.into_any(), "Lens Concave"),
                 (view! { <LensConvex /> }.into_any(), "Lens Convex"),
+                (view! { <Letters /> }.into_any(), "Letters"),
                 (view! { <Library /> }.into_any(), "Library"),
                 (view! { <LibraryBig /> }.into_any(), "Library Big"),
                 (view! { <LifeBuoy /> }.into_any(), "Life Buoy"),
@@ -1755,6 +1757,7 @@ pub fn IconsP2() -> impl IntoView {
                 (view! { <PowerOff /> }.into_any(), "Power Off"),
                 (view! { <Presentation /> }.into_any(), "Presentation"),
                 (view! { <Printer /> }.into_any(), "Printer"),
+                (view! { <Printer3D /> }.into_any(), "Printer 3 D"),
                 (view! { <PrinterCheck /> }.into_any(), "Printer Check"),
                 (view! { <PrinterX /> }.into_any(), "Printer X"),
                 (view! { <Projector /> }.into_any(), "Projector"),
