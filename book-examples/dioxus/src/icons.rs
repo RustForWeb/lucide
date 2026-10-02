@@ -5891,6 +5891,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LayoutGridCircles {}
+            },
+            "Layout Grid Circles",
+        ),
+        (
+            rsx! {
                 LayoutList {}
             },
             "Layout List",
