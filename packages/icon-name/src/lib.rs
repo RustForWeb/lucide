@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1858usize] = [
+pub static ICON_NAMES: [&str; 1866usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -58,6 +58,7 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "archive-restore",
     "archive-x",
     "armchair",
+    "armenian-dram",
     "arrow-big-down",
     "arrow-big-down-dash",
     "arrow-big-left",
@@ -584,6 +585,7 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "dome",
     "donut",
     "door-closed",
+    "door-closed-cog",
     "door-closed-locked",
     "door-closed-package",
     "door-open",
@@ -906,6 +908,7 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "joystick",
     "kanban",
     "kayak",
+    "kazakh-tenge",
     "key",
     "key-round",
     "key-square",
@@ -1363,6 +1366,7 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "rows-3",
     "rows-4",
     "rss",
+    "rugby-ball",
     "ruler",
     "ruler-dimension-line",
     "russian-ruble",
@@ -1658,6 +1662,9 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "text-align-center",
     "text-align-end",
     "text-align-justify",
+    "text-align-justify-center",
+    "text-align-justify-end",
+    "text-align-justify-start",
     "text-align-start",
     "text-cursor",
     "text-cursor-input",
@@ -1839,6 +1846,7 @@ pub static ICON_NAMES: [&str; 1858usize] = [
     "wifi-zero",
     "wind",
     "wind-arrow-down",
+    "wind-arrow-up",
     "wine",
     "wine-off",
     "workflow",
