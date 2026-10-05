@@ -1310,6 +1310,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <LayoutDashboard /> }.into_any(), "Layout Dashboard"),
                 (view! { <LayoutFreeform /> }.into_any(), "Layout Freeform"),
                 (view! { <LayoutGrid /> }.into_any(), "Layout Grid"),
+                (view! { <LayoutGridCircles /> }.into_any(), "Layout Grid Circles"),
                 (view! { <LayoutList /> }.into_any(), "Layout List"),
                 (view! { <LayoutPanelLeft /> }.into_any(), "Layout Panel Left"),
                 (view! { <LayoutPanelTop /> }.into_any(), "Layout Panel Top"),
