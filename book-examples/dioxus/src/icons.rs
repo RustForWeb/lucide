@@ -359,6 +359,12 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
+                ArmenianDram {}
+            },
+            "Armenian Dram",
+        ),
+        (
+            rsx! {
                 ArrowBigDown {}
             },
             "Arrow Big Down",
@@ -639,12 +645,6 @@ pub fn IconsA1() -> Element {
             },
             "Atom",
         ),
-        (
-            rsx! {
-                AudioLines {}
-            },
-            "Audio Lines",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -660,6 +660,12 @@ pub fn IconsA1() -> Element {
 #[component]
 pub fn IconsA2() -> Element {
     let icons = [
+        (
+            rsx! {
+                AudioLines {}
+            },
+            "Audio Lines",
+        ),
         (
             rsx! {
                 AudioLinesOff {}
@@ -3620,6 +3626,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DoorClosedCog {}
+            },
+            "Door Closed Cog",
+        ),
+        (
+            rsx! {
                 DoorClosedLocked {}
             },
             "Door Closed Locked",
@@ -5669,6 +5681,12 @@ pub fn IconsK1() -> Element {
                 Kayak {}
             },
             "Kayak",
+        ),
+        (
+            rsx! {
+                KazakhTenge {}
+            },
+            "Kazakh Tenge",
         ),
         (
             rsx! {
@@ -8549,6 +8567,12 @@ pub fn IconsR1() -> Element {
         ),
         (
             rsx! {
+                RugbyBall {}
+            },
+            "Rugby Ball",
+        ),
+        (
+            rsx! {
                 Ruler {}
             },
             "Ruler",
@@ -10379,6 +10403,24 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                TextAlignJustifyCenter {}
+            },
+            "Text Align Justify Center",
+        ),
+        (
+            rsx! {
+                TextAlignJustifyEnd {}
+            },
+            "Text Align Justify End",
+        ),
+        (
+            rsx! {
+                TextAlignJustifyStart {}
+            },
+            "Text Align Justify Start",
+        ),
+        (
+            rsx! {
                 TextAlignStart {}
             },
             "Text Align Start",
@@ -10767,6 +10809,21 @@ pub fn IconsT1() -> Element {
             },
             "Trophy",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsT2() -> Element {
+    let icons = [
         (
             rsx! {
                 Truck {}
@@ -10785,21 +10842,6 @@ pub fn IconsT1() -> Element {
             },
             "Tube Lotion",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsT2() -> Element {
-    let icons = [
         (
             rsx! {
                 TurkishLira {}
@@ -11522,6 +11564,12 @@ pub fn IconsW1() -> Element {
                 WindArrowDown {}
             },
             "Wind Arrow Down",
+        ),
+        (
+            rsx! {
+                WindArrowUp {}
+            },
+            "Wind Arrow Up",
         ),
         (
             rsx! {

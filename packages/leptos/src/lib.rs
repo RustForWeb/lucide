@@ -128,6 +128,8 @@ mod archive_restore;
 mod archive_x;
 #[cfg(feature = "home")]
 mod armchair;
+#[cfg(feature = "finance")]
+mod armenian_dram;
 #[cfg(any(feature = "arrows", feature = "gaming"))]
 mod arrow_big_down;
 #[cfg(any(feature = "arrows", feature = "gaming", feature = "files"))]
@@ -1341,6 +1343,8 @@ mod dome;
 mod donut;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 mod door_closed;
+#[cfg(any(feature = "home", feature = "security"))]
+mod door_closed_cog;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 mod door_closed_locked;
 #[cfg(any(
@@ -2190,6 +2194,8 @@ mod joystick;
 mod kanban;
 #[cfg(feature = "transportation")]
 mod kayak;
+#[cfg(feature = "finance")]
+mod kazakh_tenge;
 #[cfg(any(feature = "security", feature = "account"))]
 mod key;
 #[cfg(any(feature = "security", feature = "account"))]
@@ -3340,6 +3346,8 @@ mod rows_3;
 mod rows_4;
 #[cfg(any(feature = "development", feature = "social"))]
 mod rss;
+#[cfg(feature = "sports")]
+mod rugby_ball;
 #[cfg(any(feature = "tools", feature = "design", feature = "layout"))]
 mod ruler;
 #[cfg(any(feature = "tools", feature = "design", feature = "layout"))]
@@ -4213,6 +4221,12 @@ mod text_align_end;
 #[cfg(feature = "text")]
 mod text_align_justify;
 #[cfg(feature = "text")]
+mod text_align_justify_center;
+#[cfg(feature = "text")]
+mod text_align_justify_end;
+#[cfg(feature = "text")]
+mod text_align_justify_start;
+#[cfg(feature = "text")]
 mod text_align_start;
 #[cfg(any(feature = "text", feature = "cursors"))]
 mod text_cursor;
@@ -4684,6 +4698,13 @@ mod wifi_zero;
 mod wind;
 #[cfg(any(feature = "weather", feature = "sustainability"))]
 mod wind_arrow_down;
+#[cfg(any(
+    feature = "weather",
+    feature = "sustainability",
+    feature = "arrows",
+    feature = "navigation"
+))]
+mod wind_arrow_up;
 #[cfg(feature = "food-beverage")]
 mod wine;
 #[cfg(feature = "food-beverage")]
@@ -4881,6 +4902,8 @@ pub use archive_restore::*;
 pub use archive_x::*;
 #[cfg(feature = "home")]
 pub use armchair::*;
+#[cfg(feature = "finance")]
+pub use armenian_dram::*;
 #[cfg(any(feature = "arrows", feature = "gaming"))]
 pub use arrow_big_down::*;
 #[cfg(any(feature = "arrows", feature = "gaming", feature = "files"))]
@@ -6094,6 +6117,8 @@ pub use dome::*;
 pub use donut::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 pub use door_closed::*;
+#[cfg(any(feature = "home", feature = "security"))]
+pub use door_closed_cog::*;
 #[cfg(any(feature = "home", feature = "travel", feature = "security"))]
 pub use door_closed_locked::*;
 #[cfg(any(
@@ -6943,6 +6968,8 @@ pub use joystick::*;
 pub use kanban::*;
 #[cfg(feature = "transportation")]
 pub use kayak::*;
+#[cfg(feature = "finance")]
+pub use kazakh_tenge::*;
 #[cfg(any(feature = "security", feature = "account"))]
 pub use key::*;
 #[cfg(any(feature = "security", feature = "account"))]
@@ -8093,6 +8120,8 @@ pub use rows_3::*;
 pub use rows_4::*;
 #[cfg(any(feature = "development", feature = "social"))]
 pub use rss::*;
+#[cfg(feature = "sports")]
+pub use rugby_ball::*;
 #[cfg(any(feature = "tools", feature = "design", feature = "layout"))]
 pub use ruler::*;
 #[cfg(any(feature = "tools", feature = "design", feature = "layout"))]
@@ -8966,6 +8995,12 @@ pub use text_align_end::*;
 #[cfg(feature = "text")]
 pub use text_align_justify::*;
 #[cfg(feature = "text")]
+pub use text_align_justify_center::*;
+#[cfg(feature = "text")]
+pub use text_align_justify_end::*;
+#[cfg(feature = "text")]
+pub use text_align_justify_start::*;
+#[cfg(feature = "text")]
 pub use text_align_start::*;
 #[cfg(any(feature = "text", feature = "cursors"))]
 pub use text_cursor::*;
@@ -9437,6 +9472,13 @@ pub use wifi_zero::*;
 pub use wind::*;
 #[cfg(any(feature = "weather", feature = "sustainability"))]
 pub use wind_arrow_down::*;
+#[cfg(any(
+    feature = "weather",
+    feature = "sustainability",
+    feature = "arrows",
+    feature = "navigation"
+))]
+pub use wind_arrow_up::*;
 #[cfg(feature = "food-beverage")]
 pub use wine::*;
 #[cfg(feature = "food-beverage")]
