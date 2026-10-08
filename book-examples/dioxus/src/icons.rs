@@ -5108,6 +5108,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                Groceries {}
+            },
+            "Groceries",
+        ),
+        (
+            rsx! {
                 Group {}
             },
             "Group",
@@ -5396,6 +5402,12 @@ pub fn IconsH1() -> Element {
                 Highlighter {}
             },
             "Highlighter",
+        ),
+        (
+            rsx! {
+                HikingStick {}
+            },
+            "Hiking Stick",
         ),
         (
             rsx! {
@@ -8786,6 +8798,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ScratchBlocks {}
+            },
+            "Scratch Blocks",
+        ),
+        (
+            rsx! {
                 ScreenShare {}
             },
             "Screen Share",
@@ -9198,12 +9216,6 @@ pub fn IconsS1() -> Element {
             },
             "Signature",
         ),
-        (
-            rsx! {
-                Signpost {}
-            },
-            "Signpost",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9219,6 +9231,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Signpost {}
+            },
+            "Signpost",
+        ),
         (
             rsx! {
                 SignpostBig {}
@@ -9813,12 +9831,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Scissors",
         ),
-        (
-            rsx! {
-                SquareSigma {}
-            },
-            "Square Sigma",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9834,6 +9846,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareSigma {}
+            },
+            "Square Sigma",
+        ),
         (
             rsx! {
                 SquareSlash {}

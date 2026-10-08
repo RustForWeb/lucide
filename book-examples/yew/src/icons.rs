@@ -1052,6 +1052,7 @@ pub fn IconsG() -> Html {
         (html! { <Grip /> }, "Grip"),
         (html! { <GripHorizontal /> }, "Grip Horizontal"),
         (html! { <GripVertical /> }, "Grip Vertical"),
+        (html! { <Groceries /> }, "Groceries"),
         (html! { <Group /> }, "Group"),
         (html! { <Guitar /> }, "Guitar"),
     ];
@@ -1114,6 +1115,7 @@ pub fn IconsH() -> Html {
         (html! { <Helicopter /> }, "Helicopter"),
         (html! { <Hexagon /> }, "Hexagon"),
         (html! { <Highlighter /> }, "Highlighter"),
+        (html! { <HikingStick /> }, "Hiking Stick"),
         (html! { <Hop /> }, "Hop"),
         (html! { <HopOff /> }, "Hop Off"),
         (html! { <Hospital /> }, "Hospital"),
@@ -1843,6 +1845,7 @@ pub fn IconsS() -> Html {
         (html! { <Scissors /> }, "Scissors"),
         (html! { <ScissorsLineDashed /> }, "Scissors Line Dashed"),
         (html! { <Scooter /> }, "Scooter"),
+        (html! { <ScratchBlocks /> }, "Scratch Blocks"),
         (html! { <ScreenShare /> }, "Screen Share"),
         (html! { <ScreenShareOff /> }, "Screen Share Off"),
         (html! { <Scroll /> }, "Scroll"),

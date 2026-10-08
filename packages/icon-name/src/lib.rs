@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1866usize] = [
+pub static ICON_NAMES: [&str; 1869usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -822,6 +822,7 @@ pub static ICON_NAMES: [&str; 1866usize] = [
     "grip",
     "grip-horizontal",
     "grip-vertical",
+    "groceries",
     "group",
     "guitar",
     "ham",
@@ -868,6 +869,7 @@ pub static ICON_NAMES: [&str; 1866usize] = [
     "helicopter",
     "hexagon",
     "highlighter",
+    "hiking-stick",
     "hop",
     "hop-off",
     "hospital",
@@ -1400,6 +1402,7 @@ pub static ICON_NAMES: [&str; 1866usize] = [
     "scissors",
     "scissors-line-dashed",
     "scooter",
+    "scratch-blocks",
     "screen-share",
     "screen-share-off",
     "scroll",
