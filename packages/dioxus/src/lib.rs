@@ -1929,6 +1929,8 @@ mod grip;
 mod grip_horizontal;
 #[cfg(feature = "layout")]
 mod grip_vertical;
+#[cfg(feature = "food-beverage")]
+mod groceries;
 #[cfg(feature = "files")]
 mod group;
 #[cfg(feature = "multimedia")]
@@ -2084,6 +2086,13 @@ mod helicopter;
 mod hexagon;
 #[cfg(any(feature = "text", feature = "design"))]
 mod highlighter;
+#[cfg(any(
+    feature = "sports",
+    feature = "travel",
+    feature = "nature",
+    feature = "navigation"
+))]
+mod hiking_stick;
 #[cfg(feature = "food-beverage")]
 mod hop;
 #[cfg(feature = "food-beverage")]
@@ -3446,6 +3455,8 @@ mod scissors;
 mod scissors_line_dashed;
 #[cfg(feature = "transportation")]
 mod scooter;
+#[cfg(feature = "development")]
+mod scratch_blocks;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -6703,6 +6714,8 @@ pub use grip::*;
 pub use grip_horizontal::*;
 #[cfg(feature = "layout")]
 pub use grip_vertical::*;
+#[cfg(feature = "food-beverage")]
+pub use groceries::*;
 #[cfg(feature = "files")]
 pub use group::*;
 #[cfg(feature = "multimedia")]
@@ -6858,6 +6871,13 @@ pub use helicopter::*;
 pub use hexagon::*;
 #[cfg(any(feature = "text", feature = "design"))]
 pub use highlighter::*;
+#[cfg(any(
+    feature = "sports",
+    feature = "travel",
+    feature = "nature",
+    feature = "navigation"
+))]
+pub use hiking_stick::*;
 #[cfg(feature = "food-beverage")]
 pub use hop::*;
 #[cfg(feature = "food-beverage")]
@@ -8220,6 +8240,8 @@ pub use scissors::*;
 pub use scissors_line_dashed::*;
 #[cfg(feature = "transportation")]
 pub use scooter::*;
+#[cfg(feature = "development")]
+pub use scratch_blocks::*;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",

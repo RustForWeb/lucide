@@ -1107,6 +1107,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Grip /> }.into_any(), "Grip"),
                 (view! { <GripHorizontal /> }.into_any(), "Grip Horizontal"),
                 (view! { <GripVertical /> }.into_any(), "Grip Vertical"),
+                (view! { <Groceries /> }.into_any(), "Groceries"),
                 (view! { <Group /> }.into_any(), "Group"),
                 (view! { <Guitar /> }.into_any(), "Guitar"),
             ]
@@ -1170,6 +1171,7 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <Helicopter /> }.into_any(), "Helicopter"),
                 (view! { <Hexagon /> }.into_any(), "Hexagon"),
                 (view! { <Highlighter /> }.into_any(), "Highlighter"),
+                (view! { <HikingStick /> }.into_any(), "Hiking Stick"),
                 (view! { <Hop /> }.into_any(), "Hop"),
                 (view! { <HopOff /> }.into_any(), "Hop Off"),
                 (view! { <Hospital /> }.into_any(), "Hospital"),
@@ -1926,6 +1928,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Scissors /> }.into_any(), "Scissors"),
                 (view! { <ScissorsLineDashed /> }.into_any(), "Scissors Line Dashed"),
                 (view! { <Scooter /> }.into_any(), "Scooter"),
+                (view! { <ScratchBlocks /> }.into_any(), "Scratch Blocks"),
                 (view! { <ScreenShare /> }.into_any(), "Screen Share"),
                 (view! { <ScreenShareOff /> }.into_any(), "Screen Share Off"),
                 (view! { <Scroll /> }.into_any(), "Scroll"),
@@ -1995,7 +1998,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SignalMedium /> }.into_any(), "Signal Medium"),
                 (view! { <SignalZero /> }.into_any(), "Signal Zero"),
                 (view! { <Signature /> }.into_any(), "Signature"),
-                (view! { <Signpost /> }.into_any(), "Signpost"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2013,6 +2015,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Signpost /> }.into_any(), "Signpost"),
                 (view! { <SignpostBig /> }.into_any(), "Signpost Big"),
                 (view! { <Siren /> }.into_any(), "Siren"),
                 (view! { <SkipBack /> }.into_any(), "Skip Back"),
@@ -2121,7 +2124,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareRadical /> }.into_any(), "Square Radical"),
                 (view! { <SquareRoundCorner /> }.into_any(), "Square Round Corner"),
                 (view! { <SquareScissors /> }.into_any(), "Square Scissors"),
-                (view! { <SquareSigma /> }.into_any(), "Square Sigma"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2139,6 +2141,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareSigma /> }.into_any(), "Square Sigma"),
                 (view! { <SquareSlash /> }.into_any(), "Square Slash"),
                 (view! { <SquareSparkles /> }.into_any(), "Square Sparkles"),
                 (view! { <SquareSplitHorizontal /> }.into_any(), "Square Split Horizontal"),
