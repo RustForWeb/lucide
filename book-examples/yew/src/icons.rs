@@ -1263,6 +1263,7 @@ pub fn IconsL() -> Html {
         (html! { <Leaf /> }, "Leaf"),
         (html! { <LeafyGreen /> }, "Leafy Green"),
         (html! { <Lectern /> }, "Lectern"),
+        (html! { <Lens /> }, "Lens"),
         (html! { <LensConcave /> }, "Lens Concave"),
         (html! { <LensConvex /> }, "Lens Convex"),
         (html! { <Letters /> }, "Letters"),

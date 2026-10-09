@@ -5969,6 +5969,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                Lens {}
+            },
+            "Lens",
+        ),
+        (
+            rsx! {
                 LensConcave {}
             },
             "Lens Concave",
