@@ -1323,6 +1323,7 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <Leaf /> }.into_any(), "Leaf"),
                 (view! { <LeafyGreen /> }.into_any(), "Leafy Green"),
                 (view! { <Lectern /> }.into_any(), "Lectern"),
+                (view! { <Lens /> }.into_any(), "Lens"),
                 (view! { <LensConcave /> }.into_any(), "Lens Concave"),
                 (view! { <LensConvex /> }.into_any(), "Lens Convex"),
                 (view! { <Letters /> }.into_any(), "Letters"),
