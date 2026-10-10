@@ -1139,6 +1139,7 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <HandMetal /> }.into_any(), "Hand Metal"),
                 (view! { <HandPlatter /> }.into_any(), "Hand Platter"),
                 (view! { <Handbag /> }.into_any(), "Handbag"),
+                (view! { <HandleBottomRight /> }.into_any(), "Handle Bottom Right"),
                 (view! { <Handshake /> }.into_any(), "Handshake"),
                 (view! { <HardDrive /> }.into_any(), "Hard Drive"),
                 (view! { <HardDriveDownload /> }.into_any(), "Hard Drive Download"),
@@ -1404,6 +1405,7 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MailBadge /> }.into_any(), "Mail Badge"),
                 (view! { <MailCheck /> }.into_any(), "Mail Check"),
                 (view! { <MailClock /> }.into_any(), "Mail Clock"),
+                (view! { <MailDot /> }.into_any(), "Mail Dot"),
                 (view! { <MailMinus /> }.into_any(), "Mail Minus"),
                 (view! { <MailOpen /> }.into_any(), "Mail Open"),
                 (view! { <MailPen /> }.into_any(), "Mail Pen"),
@@ -1501,7 +1503,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorCog /> }.into_any(), "Monitor Cog"),
                 (view! { <MonitorDot /> }.into_any(), "Monitor Dot"),
                 (view! { <MonitorDown /> }.into_any(), "Monitor Down"),
-                (view! { <MonitorOff /> }.into_any(), "Monitor Off"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1519,6 +1520,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorOff /> }.into_any(), "Monitor Off"),
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
                 (view! { <MonitorPc /> }.into_any(), "Monitor Pc"),
                 (view! { <MonitorPlay /> }.into_any(), "Monitor Play"),
@@ -1705,6 +1707,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PhoneCall /> }.into_any(), "Phone Call"),
                 (view! { <PhoneForwarded /> }.into_any(), "Phone Forwarded"),
                 (view! { <PhoneIncoming /> }.into_any(), "Phone Incoming"),
+                (view! { <PhoneLog /> }.into_any(), "Phone Log"),
                 (view! { <PhoneMissed /> }.into_any(), "Phone Missed"),
                 (view! { <PhoneOff /> }.into_any(), "Phone Off"),
                 (view! { <PhoneOutgoing /> }.into_any(), "Phone Outgoing"),
@@ -1741,7 +1744,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Pointer /> }.into_any(), "Pointer"),
                 (view! { <PointerOff /> }.into_any(), "Pointer Off"),
                 (view! { <Popcorn /> }.into_any(), "Popcorn"),
-                (view! { <Popsicle /> }.into_any(), "Popsicle"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1759,6 +1761,7 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Popsicle /> }.into_any(), "Popsicle"),
                 (view! { <PoundSterling /> }.into_any(), "Pound Sterling"),
                 (view! { <Power /> }.into_any(), "Power"),
                 (view! { <PowerOff /> }.into_any(), "Power Off"),
@@ -1932,6 +1935,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ScratchBlocks /> }.into_any(), "Scratch Blocks"),
                 (view! { <ScreenShare /> }.into_any(), "Screen Share"),
                 (view! { <ScreenShareOff /> }.into_any(), "Screen Share Off"),
+                (view! { <Screw /> }.into_any(), "Screw"),
                 (view! { <Scroll /> }.into_any(), "Scroll"),
                 (view! { <ScrollText /> }.into_any(), "Scroll Text"),
                 (view! { <Search /> }.into_any(), "Search"),
@@ -1967,6 +1971,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <ShieldCogCorner /> }.into_any(), "Shield Cog Corner"),
                 (view! { <ShieldEllipsis /> }.into_any(), "Shield Ellipsis"),
                 (view! { <ShieldHalf /> }.into_any(), "Shield Half"),
+                (view! { <ShieldHouse /> }.into_any(), "Shield House"),
                 (view! { <ShieldKeyhole /> }.into_any(), "Shield Keyhole"),
                 (view! { <ShieldLock /> }.into_any(), "Shield Lock"),
                 (view! { <ShieldMinus /> }.into_any(), "Shield Minus"),
@@ -1997,8 +2002,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <SignalHigh /> }.into_any(), "Signal High"),
                 (view! { <SignalLow /> }.into_any(), "Signal Low"),
                 (view! { <SignalMedium /> }.into_any(), "Signal Medium"),
-                (view! { <SignalZero /> }.into_any(), "Signal Zero"),
-                (view! { <Signature /> }.into_any(), "Signature"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2016,6 +2019,8 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SignalZero /> }.into_any(), "Signal Zero"),
+                (view! { <Signature /> }.into_any(), "Signature"),
                 (view! { <Signpost /> }.into_any(), "Signpost"),
                 (view! { <SignpostBig /> }.into_any(), "Signpost Big"),
                 (view! { <Siren /> }.into_any(), "Siren"),
@@ -2123,8 +2128,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquarePlus /> }.into_any(), "Square Plus"),
                 (view! { <SquarePower /> }.into_any(), "Square Power"),
                 (view! { <SquareRadical /> }.into_any(), "Square Radical"),
-                (view! { <SquareRoundCorner /> }.into_any(), "Square Round Corner"),
-                (view! { <SquareScissors /> }.into_any(), "Square Scissors"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2142,6 +2145,8 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareRoundCorner /> }.into_any(), "Square Round Corner"),
+                (view! { <SquareScissors /> }.into_any(), "Square Scissors"),
                 (view! { <SquareSigma /> }.into_any(), "Square Sigma"),
                 (view! { <SquareSlash /> }.into_any(), "Square Slash"),
                 (view! { <SquareSparkles /> }.into_any(), "Square Sparkles"),
@@ -2406,6 +2411,7 @@ pub fn IconsU1() -> impl IntoView {
                 (view! { <UserRoundPen /> }.into_any(), "User Round Pen"),
                 (view! { <UserRoundPlus /> }.into_any(), "User Round Plus"),
                 (view! { <UserRoundSearch /> }.into_any(), "User Round Search"),
+                (view! { <UserRoundStar /> }.into_any(), "User Round Star"),
                 (view! { <UserRoundX /> }.into_any(), "User Round X"),
                 (view! { <UserSearch /> }.into_any(), "User Search"),
                 (view! { <UserShield /> }.into_any(), "User Shield"),
@@ -2503,6 +2509,7 @@ pub fn IconsW1() -> impl IntoView {
                 (view! { <Wifi /> }.into_any(), "Wifi"),
                 (view! { <WifiCog /> }.into_any(), "Wifi Cog"),
                 (view! { <WifiHigh /> }.into_any(), "Wifi High"),
+                (view! { <WifiLock /> }.into_any(), "Wifi Lock"),
                 (view! { <WifiLow /> }.into_any(), "Wifi Low"),
                 (view! { <WifiOff /> }.into_any(), "Wifi Off"),
                 (view! { <WifiPen /> }.into_any(), "Wifi Pen"),
