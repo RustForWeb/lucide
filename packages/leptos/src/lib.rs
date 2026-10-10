@@ -1964,6 +1964,8 @@ mod hand_metal;
 mod hand_platter;
 #[cfg(any(feature = "shopping", feature = "transportation"))]
 mod handbag;
+#[cfg(feature = "design")]
+mod handle_bottom_right;
 #[cfg(any(
     feature = "account",
     feature = "social",
@@ -2461,6 +2463,8 @@ mod mail_check;
     feature = "communication"
 ))]
 mod mail_clock;
+#[cfg(any(feature = "text", feature = "account", feature = "mail"))]
+mod mail_dot;
 #[cfg(feature = "mail")]
 mod mail_minus;
 #[cfg(feature = "mail")]
@@ -3040,6 +3044,8 @@ mod phone_forwarded;
     feature = "communication"
 ))]
 mod phone_incoming;
+#[cfg(feature = "communication")]
+mod phone_log;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -3471,6 +3477,8 @@ mod screen_share;
     feature = "communication"
 ))]
 mod screen_share_off;
+#[cfg(feature = "tools")]
+mod screw;
 #[cfg(any(feature = "gaming", feature = "development", feature = "text"))]
 mod scroll;
 #[cfg(any(feature = "gaming", feature = "development", feature = "text"))]
@@ -3593,6 +3601,14 @@ mod shield_ellipsis;
     feature = "gaming"
 ))]
 mod shield_half;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "home",
+    feature = "connectivity"
+))]
+mod shield_house;
 #[cfg(any(
     feature = "account",
     feature = "security",
@@ -4492,6 +4508,8 @@ mod user_round_plus;
 #[cfg(any(feature = "account", feature = "social"))]
 mod user_round_search;
 #[cfg(feature = "account")]
+mod user_round_star;
+#[cfg(feature = "account")]
 mod user_round_x;
 #[cfg(any(feature = "account", feature = "social"))]
 mod user_search;
@@ -4697,6 +4715,8 @@ mod wifi;
 mod wifi_cog;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi_high;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "security"))]
+mod wifi_lock;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi_low;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
@@ -6751,6 +6771,8 @@ pub use hand_metal::*;
 pub use hand_platter::*;
 #[cfg(any(feature = "shopping", feature = "transportation"))]
 pub use handbag::*;
+#[cfg(feature = "design")]
+pub use handle_bottom_right::*;
 #[cfg(any(
     feature = "account",
     feature = "social",
@@ -7248,6 +7270,8 @@ pub use mail_check::*;
     feature = "communication"
 ))]
 pub use mail_clock::*;
+#[cfg(any(feature = "text", feature = "account", feature = "mail"))]
+pub use mail_dot::*;
 #[cfg(feature = "mail")]
 pub use mail_minus::*;
 #[cfg(feature = "mail")]
@@ -7827,6 +7851,8 @@ pub use phone_forwarded::*;
     feature = "communication"
 ))]
 pub use phone_incoming::*;
+#[cfg(feature = "communication")]
+pub use phone_log::*;
 #[cfg(any(
     feature = "connectivity",
     feature = "devices",
@@ -8258,6 +8284,8 @@ pub use screen_share::*;
     feature = "communication"
 ))]
 pub use screen_share_off::*;
+#[cfg(feature = "tools")]
+pub use screw::*;
 #[cfg(any(feature = "gaming", feature = "development", feature = "text"))]
 pub use scroll::*;
 #[cfg(any(feature = "gaming", feature = "development", feature = "text"))]
@@ -8380,6 +8408,14 @@ pub use shield_ellipsis::*;
     feature = "gaming"
 ))]
 pub use shield_half::*;
+#[cfg(any(
+    feature = "account",
+    feature = "security",
+    feature = "development",
+    feature = "home",
+    feature = "connectivity"
+))]
+pub use shield_house::*;
 #[cfg(any(
     feature = "account",
     feature = "security",
@@ -9279,6 +9315,8 @@ pub use user_round_plus::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use user_round_search::*;
 #[cfg(feature = "account")]
+pub use user_round_star::*;
+#[cfg(feature = "account")]
 pub use user_round_x::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use user_search::*;
@@ -9484,6 +9522,8 @@ pub use wifi::*;
 pub use wifi_cog::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi_high::*;
+#[cfg(any(feature = "connectivity", feature = "devices", feature = "security"))]
+pub use wifi_lock::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi_low::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]

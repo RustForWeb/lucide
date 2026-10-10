@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1870usize] = [
+pub static ICON_NAMES: [&str; 1877usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -837,6 +837,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "hand-metal",
     "hand-platter",
     "handbag",
+    "handle-bottom-right",
     "handshake",
     "hard-drive",
     "hard-drive-download",
@@ -1017,6 +1018,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "mail-badge",
     "mail-check",
     "mail-clock",
+    "mail-dot",
     "mail-minus",
     "mail-open",
     "mail-pen",
@@ -1247,6 +1249,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "phone-call",
     "phone-forwarded",
     "phone-incoming",
+    "phone-log",
     "phone-missed",
     "phone-off",
     "phone-outgoing",
@@ -1406,6 +1409,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "scratch-blocks",
     "screen-share",
     "screen-share-off",
+    "screw",
     "scroll",
     "scroll-text",
     "search",
@@ -1441,6 +1445,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "shield-cog-corner",
     "shield-ellipsis",
     "shield-half",
+    "shield-house",
     "shield-keyhole",
     "shield-lock",
     "shield-minus",
@@ -1780,6 +1785,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "user-round-pen",
     "user-round-plus",
     "user-round-search",
+    "user-round-star",
     "user-round-x",
     "user-search",
     "user-shield",
@@ -1843,6 +1849,7 @@ pub static ICON_NAMES: [&str; 1870usize] = [
     "wifi",
     "wifi-cog",
     "wifi-high",
+    "wifi-lock",
     "wifi-low",
     "wifi-off",
     "wifi-pen",
