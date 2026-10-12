@@ -5213,6 +5213,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HandleBottomRight {}
+            },
+            "Handle Bottom Right",
+        ),
+        (
+            rsx! {
                 Handshake {}
             },
             "Handshake",
@@ -6368,6 +6374,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MailDot {}
+            },
+            "Mail Dot",
+        ),
+        (
+            rsx! {
                 MailMinus {}
             },
             "Mail Minus",
@@ -6930,12 +6942,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Down",
         ),
-        (
-            rsx! {
-                MonitorOff {}
-            },
-            "Monitor Off",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6951,6 +6957,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorOff {}
+            },
+            "Monitor Off",
+        ),
         (
             rsx! {
                 MonitorPause {}
@@ -7808,6 +7820,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PhoneLog {}
+            },
+            "Phone Log",
+        ),
+        (
+            rsx! {
                 PhoneMissed {}
             },
             "Phone Missed",
@@ -8022,12 +8040,6 @@ pub fn IconsP1() -> Element {
             },
             "Popcorn",
         ),
-        (
-            rsx! {
-                Popsicle {}
-            },
-            "Popsicle",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8043,6 +8055,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Popsicle {}
+            },
+            "Popsicle",
+        ),
         (
             rsx! {
                 PoundSterling {}
@@ -8822,6 +8840,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                Screw {}
+            },
+            "Screw",
+        ),
+        (
+            rsx! {
                 Scroll {}
             },
             "Scroll",
@@ -9032,6 +9056,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ShieldHouse {}
+            },
+            "Shield House",
+        ),
+        (
+            rsx! {
                 ShieldKeyhole {}
             },
             "Shield Keyhole",
@@ -9210,18 +9240,6 @@ pub fn IconsS1() -> Element {
             },
             "Signal Medium",
         ),
-        (
-            rsx! {
-                SignalZero {}
-            },
-            "Signal Zero",
-        ),
-        (
-            rsx! {
-                Signature {}
-            },
-            "Signature",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9237,6 +9255,18 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SignalZero {}
+            },
+            "Signal Zero",
+        ),
+        (
+            rsx! {
+                Signature {}
+            },
+            "Signature",
+        ),
         (
             rsx! {
                 Signpost {}
@@ -9825,18 +9855,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Radical",
         ),
-        (
-            rsx! {
-                SquareRoundCorner {}
-            },
-            "Square Round Corner",
-        ),
-        (
-            rsx! {
-                SquareScissors {}
-            },
-            "Square Scissors",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9852,6 +9870,18 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareRoundCorner {}
+            },
+            "Square Round Corner",
+        ),
+        (
+            rsx! {
+                SquareScissors {}
+            },
+            "Square Scissors",
+        ),
         (
             rsx! {
                 SquareSigma {}
@@ -11141,6 +11171,12 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UserRoundStar {}
+            },
+            "User Round Star",
+        ),
+        (
+            rsx! {
                 UserRoundX {}
             },
             "User Round X",
@@ -11546,6 +11582,12 @@ pub fn IconsW1() -> Element {
                 WifiHigh {}
             },
             "Wifi High",
+        ),
+        (
+            rsx! {
+                WifiLock {}
+            },
+            "Wifi Lock",
         ),
         (
             rsx! {
