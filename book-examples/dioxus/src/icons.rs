@@ -6674,6 +6674,12 @@ pub fn IconsM1() -> Element {
         ),
         (
             rsx! {
+                MessageCircleText {}
+            },
+            "Message Circle Text",
+        ),
+        (
+            rsx! {
                 MessageCircleWarning {}
             },
             "Message Circle Warning",
@@ -6936,12 +6942,6 @@ pub fn IconsM1() -> Element {
             },
             "Monitor Dot",
         ),
-        (
-            rsx! {
-                MonitorDown {}
-            },
-            "Monitor Down",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -6957,6 +6957,12 @@ pub fn IconsM1() -> Element {
 #[component]
 pub fn IconsM2() -> Element {
     let icons = [
+        (
+            rsx! {
+                MonitorDown {}
+            },
+            "Monitor Down",
+        ),
         (
             rsx! {
                 MonitorOff {}
@@ -8948,6 +8954,12 @@ pub fn IconsS1() -> Element {
         ),
         (
             rsx! {
+                ServerNas {}
+            },
+            "Server Nas",
+        ),
+        (
+            rsx! {
                 ServerOff {}
             },
             "Server Off",
@@ -9234,12 +9246,6 @@ pub fn IconsS1() -> Element {
             },
             "Signal Low",
         ),
-        (
-            rsx! {
-                SignalMedium {}
-            },
-            "Signal Medium",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9255,6 +9261,12 @@ pub fn IconsS1() -> Element {
 #[component]
 pub fn IconsS2() -> Element {
     let icons = [
+        (
+            rsx! {
+                SignalMedium {}
+            },
+            "Signal Medium",
+        ),
         (
             rsx! {
                 SignalZero {}
@@ -9849,12 +9861,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Power",
         ),
-        (
-            rsx! {
-                SquareRadical {}
-            },
-            "Square Radical",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9870,6 +9876,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquareRadical {}
+            },
+            "Square Radical",
+        ),
         (
             rsx! {
                 SquareRoundCorner {}

@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1877usize] = [
+pub static ICON_NAMES: [&str; 1879usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -1068,6 +1068,7 @@ pub static ICON_NAMES: [&str; 1877usize] = [
     "message-circle-plus",
     "message-circle-question-mark",
     "message-circle-reply",
+    "message-circle-text",
     "message-circle-warning",
     "message-circle-x",
     "message-square",
@@ -1427,6 +1428,7 @@ pub static ICON_NAMES: [&str; 1877usize] = [
     "server",
     "server-cog",
     "server-crash",
+    "server-nas",
     "server-off",
     "server-plus",
     "settings",

@@ -2570,6 +2570,8 @@ mod message_circle_plus;
 mod message_circle_question_mark;
 #[cfg(feature = "social")]
 mod message_circle_reply;
+#[cfg(feature = "social")]
+mod message_circle_text;
 #[cfg(any(feature = "social", feature = "notifications"))]
 mod message_circle_warning;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -3515,6 +3517,8 @@ mod server;
 mod server_cog;
 #[cfg(any(feature = "development", feature = "devices"))]
 mod server_crash;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod server_nas;
 #[cfg(any(feature = "development", feature = "devices"))]
 mod server_off;
 #[cfg(any(feature = "development", feature = "devices"))]
@@ -7377,6 +7381,8 @@ pub use message_circle_plus::*;
 pub use message_circle_question_mark::*;
 #[cfg(feature = "social")]
 pub use message_circle_reply::*;
+#[cfg(feature = "social")]
+pub use message_circle_text::*;
 #[cfg(any(feature = "social", feature = "notifications"))]
 pub use message_circle_warning::*;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -8322,6 +8328,8 @@ pub use server::*;
 pub use server_cog::*;
 #[cfg(any(feature = "development", feature = "devices"))]
 pub use server_crash::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use server_nas::*;
 #[cfg(any(feature = "development", feature = "devices"))]
 pub use server_off::*;
 #[cfg(any(feature = "development", feature = "devices"))]
