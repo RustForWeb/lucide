@@ -1458,6 +1458,7 @@ pub fn IconsM1() -> impl IntoView {
                     "Message Circle Question Mark",
                 ),
                 (view! { <MessageCircleReply /> }.into_any(), "Message Circle Reply"),
+                (view! { <MessageCircleText /> }.into_any(), "Message Circle Text"),
                 (view! { <MessageCircleWarning /> }.into_any(), "Message Circle Warning"),
                 (view! { <MessageCircleX /> }.into_any(), "Message Circle X"),
                 (view! { <MessageSquare /> }.into_any(), "Message Square"),
@@ -1502,7 +1503,6 @@ pub fn IconsM1() -> impl IntoView {
                 (view! { <MonitorCloud /> }.into_any(), "Monitor Cloud"),
                 (view! { <MonitorCog /> }.into_any(), "Monitor Cog"),
                 (view! { <MonitorDot /> }.into_any(), "Monitor Dot"),
-                (view! { <MonitorDown /> }.into_any(), "Monitor Down"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1520,6 +1520,7 @@ pub fn IconsM2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <MonitorDown /> }.into_any(), "Monitor Down"),
                 (view! { <MonitorOff /> }.into_any(), "Monitor Off"),
                 (view! { <MonitorPause /> }.into_any(), "Monitor Pause"),
                 (view! { <MonitorPc /> }.into_any(), "Monitor Pc"),
@@ -1953,6 +1954,7 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Server /> }.into_any(), "Server"),
                 (view! { <ServerCog /> }.into_any(), "Server Cog"),
                 (view! { <ServerCrash /> }.into_any(), "Server Crash"),
+                (view! { <ServerNas /> }.into_any(), "Server Nas"),
                 (view! { <ServerOff /> }.into_any(), "Server Off"),
                 (view! { <ServerPlus /> }.into_any(), "Server Plus"),
                 (view! { <Settings /> }.into_any(), "Settings"),
@@ -2001,7 +2003,6 @@ pub fn IconsS1() -> impl IntoView {
                 (view! { <Signal /> }.into_any(), "Signal"),
                 (view! { <SignalHigh /> }.into_any(), "Signal High"),
                 (view! { <SignalLow /> }.into_any(), "Signal Low"),
-                (view! { <SignalMedium /> }.into_any(), "Signal Medium"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2019,6 +2020,7 @@ pub fn IconsS2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SignalMedium /> }.into_any(), "Signal Medium"),
                 (view! { <SignalZero /> }.into_any(), "Signal Zero"),
                 (view! { <Signature /> }.into_any(), "Signature"),
                 (view! { <Signpost /> }.into_any(), "Signpost"),
@@ -2127,7 +2129,6 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquarePlay /> }.into_any(), "Square Play"),
                 (view! { <SquarePlus /> }.into_any(), "Square Plus"),
                 (view! { <SquarePower /> }.into_any(), "Square Power"),
-                (view! { <SquareRadical /> }.into_any(), "Square Radical"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2145,6 +2146,7 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareRadical /> }.into_any(), "Square Radical"),
                 (view! { <SquareRoundCorner /> }.into_any(), "Square Round Corner"),
                 (view! { <SquareScissors /> }.into_any(), "Square Scissors"),
                 (view! { <SquareSigma /> }.into_any(), "Square Sigma"),
