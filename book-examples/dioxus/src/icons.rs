@@ -1031,6 +1031,12 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
+                BelarusianRuble {}
+            },
+            "Belarusian Ruble",
+        ),
+        (
+            rsx! {
                 Bell {}
             },
             "Bell",
@@ -1311,12 +1317,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Lock",
         ),
-        (
-            rsx! {
-                BookMinus {}
-            },
-            "Book Minus",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1332,6 +1332,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookMinus {}
+            },
+            "Book Minus",
+        ),
         (
             rsx! {
                 BookOpen {}
@@ -1736,6 +1742,12 @@ pub fn IconsC1() -> Element {
                 CalendarCheck2 {}
             },
             "Calendar Check 2",
+        ),
+        (
+            rsx! {
+                CalendarChevronsLeft {}
+            },
+            "Calendar Chevrons Left",
         ),
         (
             rsx! {
@@ -2265,12 +2277,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Down Up",
         ),
-        (
-            rsx! {
-                ChevronsLeft {}
-            },
-            "Chevrons Left",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2286,6 +2292,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsLeft {}
+            },
+            "Chevrons Left",
+        ),
         (
             rsx! {
                 ChevronsLeftRight {}
@@ -2495,6 +2507,12 @@ pub fn IconsC2() -> Element {
                 CircleFadingArrowUp {}
             },
             "Circle Fading Arrow Up",
+        ),
+        (
+            rsx! {
+                CircleFadingPlay {}
+            },
+            "Circle Fading Play",
         ),
         (
             rsx! {
@@ -2874,18 +2892,6 @@ pub fn IconsC2() -> Element {
             },
             "Cloud",
         ),
-        (
-            rsx! {
-                CloudAlert {}
-            },
-            "Cloud Alert",
-        ),
-        (
-            rsx! {
-                CloudBackup {}
-            },
-            "Cloud Backup",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2901,6 +2907,18 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                CloudAlert {}
+            },
+            "Cloud Alert",
+        ),
+        (
+            rsx! {
+                CloudBackup {}
+            },
+            "Cloud Backup",
+        ),
         (
             rsx! {
                 CloudCheck {}
@@ -3260,6 +3278,12 @@ pub fn IconsC3() -> Element {
                 Cpu {}
             },
             "Cpu",
+        ),
+        (
+            rsx! {
+                CpuAi {}
+            },
+            "Cpu Ai",
         ),
         (
             rsx! {
@@ -4679,6 +4703,18 @@ pub fn IconsF2() -> Element {
         ),
         (
             rsx! {
+                FolderUser {}
+            },
+            "Folder User",
+        ),
+        (
+            rsx! {
+                FolderUsers {}
+            },
+            "Folder Users",
+        ),
+        (
+            rsx! {
                 FolderX {}
             },
             "Folder X",
@@ -5054,6 +5090,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GraphStar {}
+            },
+            "Graph Star",
+        ),
+        (
+            rsx! {
                 Grid2X2 {}
             },
             "Grid 2 X 2",
@@ -5123,6 +5165,12 @@ pub fn IconsG1() -> Element {
                 Guitar {}
             },
             "Guitar",
+        ),
+        (
+            rsx! {
+                GuitarElectric {}
+            },
+            "Guitar Electric",
         ),
     ];
     rsx! {
@@ -7784,6 +7832,12 @@ pub fn IconsP1() -> Element {
         ),
         (
             rsx! {
+                PerfumeBottle {}
+            },
+            "Perfume Bottle",
+        ),
+        (
+            rsx! {
                 PersonStanding {}
             },
             "Person Standing",
@@ -8040,12 +8094,6 @@ pub fn IconsP1() -> Element {
             },
             "Pointer Off",
         ),
-        (
-            rsx! {
-                Popcorn {}
-            },
-            "Popcorn",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -8061,6 +8109,12 @@ pub fn IconsP1() -> Element {
 #[component]
 pub fn IconsP2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Popcorn {}
+            },
+            "Popcorn",
+        ),
         (
             rsx! {
                 Popsicle {}
@@ -11225,9 +11279,21 @@ pub fn IconsU1() -> Element {
         ),
         (
             rsx! {
+                UsersCollaboration {}
+            },
+            "Users Collaboration",
+        ),
+        (
+            rsx! {
                 UsersRound {}
             },
             "Users Round",
+        ),
+        (
+            rsx! {
+                UsersRoundCollaboration {}
+            },
+            "Users Round Collaboration",
         ),
         (
             rsx! {

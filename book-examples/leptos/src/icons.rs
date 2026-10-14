@@ -282,6 +282,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BeefOff /> }.into_any(), "Beef Off"),
                 (view! { <Beer /> }.into_any(), "Beer"),
                 (view! { <BeerOff /> }.into_any(), "Beer Off"),
+                (view! { <BelarusianRuble /> }.into_any(), "Belarusian Ruble"),
                 (view! { <Bell /> }.into_any(), "Bell"),
                 (view! { <BellCheck /> }.into_any(), "Bell Check"),
                 (view! { <BellDot /> }.into_any(), "Bell Dot"),
@@ -329,7 +330,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookImage /> }.into_any(), "Book Image"),
                 (view! { <BookKey /> }.into_any(), "Book Key"),
                 (view! { <BookLock /> }.into_any(), "Book Lock"),
-                (view! { <BookMinus /> }.into_any(), "Book Minus"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -347,6 +347,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookMinus /> }.into_any(), "Book Minus"),
                 (view! { <BookOpen /> }.into_any(), "Book Open"),
                 (view! { <BookOpenCheck /> }.into_any(), "Book Open Check"),
                 (view! { <BookOpenText /> }.into_any(), "Book Open Text"),
@@ -429,6 +430,7 @@ pub fn IconsC1() -> impl IntoView {
                 (view! { <CalendarArrowUp /> }.into_any(), "Calendar Arrow Up"),
                 (view! { <CalendarCheck /> }.into_any(), "Calendar Check"),
                 (view! { <CalendarCheck2 /> }.into_any(), "Calendar Check 2"),
+                (view! { <CalendarChevronsLeft /> }.into_any(), "Calendar Chevrons Left"),
                 (view! { <CalendarChevronsRight /> }.into_any(), "Calendar Chevrons Right"),
                 (view! { <CalendarClock /> }.into_any(), "Calendar Clock"),
                 (view! { <CalendarCog /> }.into_any(), "Calendar Cog"),
@@ -523,7 +525,6 @@ pub fn IconsC1() -> impl IntoView {
                 (view! { <ChevronUp /> }.into_any(), "Chevron Up"),
                 (view! { <ChevronsDown /> }.into_any(), "Chevrons Down"),
                 (view! { <ChevronsDownUp /> }.into_any(), "Chevrons Down Up"),
-                (view! { <ChevronsLeft /> }.into_any(), "Chevrons Left"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -541,6 +542,7 @@ pub fn IconsC2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <ChevronsLeft /> }.into_any(), "Chevrons Left"),
                 (view! { <ChevronsLeftRight /> }.into_any(), "Chevrons Left Right"),
                 (
                     view! { <ChevronsLeftRightEllipsis /> }.into_any(),
@@ -579,6 +581,7 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleEqual /> }.into_any(), "Circle Equal"),
                 (view! { <CircleEuro /> }.into_any(), "Circle Euro"),
                 (view! { <CircleFadingArrowUp /> }.into_any(), "Circle Fading Arrow Up"),
+                (view! { <CircleFadingPlay /> }.into_any(), "Circle Fading Play"),
                 (view! { <CircleFadingPlus /> }.into_any(), "Circle Fading Plus"),
                 (view! { <CircleGauge /> }.into_any(), "Circle Gauge"),
                 (view! { <CircleMinus /> }.into_any(), "Circle Minus"),
@@ -642,8 +645,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <ClockPlus /> }.into_any(), "Clock Plus"),
                 (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),
                 (view! { <Cloud /> }.into_any(), "Cloud"),
-                (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
-                (view! { <CloudBackup /> }.into_any(), "Cloud Backup"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -661,6 +662,8 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
+                (view! { <CloudBackup /> }.into_any(), "Cloud Backup"),
                 (view! { <CloudCheck /> }.into_any(), "Cloud Check"),
                 (view! { <CloudCog /> }.into_any(), "Cloud Cog"),
                 (view! { <CloudDownload /> }.into_any(), "Cloud Download"),
@@ -721,6 +724,7 @@ pub fn IconsC3() -> impl IntoView {
                 (view! { <CornerUpLeft /> }.into_any(), "Corner Up Left"),
                 (view! { <CornerUpRight /> }.into_any(), "Corner Up Right"),
                 (view! { <Cpu /> }.into_any(), "Cpu"),
+                (view! { <CpuAi /> }.into_any(), "Cpu Ai"),
                 (view! { <CreativeCommons /> }.into_any(), "Creative Commons"),
                 (view! { <CreditCard /> }.into_any(), "Credit Card"),
                 (view! { <CreditCardCheck /> }.into_any(), "Credit Card Check"),
@@ -1018,6 +1022,8 @@ pub fn IconsF2() -> impl IntoView {
                 (view! { <FolderSync /> }.into_any(), "Folder Sync"),
                 (view! { <FolderTree /> }.into_any(), "Folder Tree"),
                 (view! { <FolderUp /> }.into_any(), "Folder Up"),
+                (view! { <FolderUser /> }.into_any(), "Folder User"),
+                (view! { <FolderUsers /> }.into_any(), "Folder Users"),
                 (view! { <FolderX /> }.into_any(), "Folder X"),
                 (view! { <Folders /> }.into_any(), "Folders"),
                 (view! { <Footprints /> }.into_any(), "Footprints"),
@@ -1098,6 +1104,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Gpu /> }.into_any(), "Gpu"),
                 (view! { <GraduationCap /> }.into_any(), "Graduation Cap"),
                 (view! { <Grape /> }.into_any(), "Grape"),
+                (view! { <GraphStar /> }.into_any(), "Graph Star"),
                 (view! { <Grid2X2 /> }.into_any(), "Grid 2 X 2"),
                 (view! { <Grid2X2Check /> }.into_any(), "Grid 2 X 2 Check"),
                 (view! { <Grid2X2Plus /> }.into_any(), "Grid 2 X 2 Plus"),
@@ -1110,6 +1117,7 @@ pub fn IconsG1() -> impl IntoView {
                 (view! { <Groceries /> }.into_any(), "Groceries"),
                 (view! { <Group /> }.into_any(), "Group"),
                 (view! { <Guitar /> }.into_any(), "Guitar"),
+                (view! { <GuitarElectric /> }.into_any(), "Guitar Electric"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1701,6 +1709,7 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <PencilSparkles /> }.into_any(), "Pencil Sparkles"),
                 (view! { <Pentagon /> }.into_any(), "Pentagon"),
                 (view! { <Percent /> }.into_any(), "Percent"),
+                (view! { <PerfumeBottle /> }.into_any(), "Perfume Bottle"),
                 (view! { <PersonStanding /> }.into_any(), "Person Standing"),
                 (view! { <Phi /> }.into_any(), "Phi"),
                 (view! { <PhilippinePeso /> }.into_any(), "Philippine Peso"),
@@ -1744,7 +1753,6 @@ pub fn IconsP1() -> impl IntoView {
                 (view! { <Podium /> }.into_any(), "Podium"),
                 (view! { <Pointer /> }.into_any(), "Pointer"),
                 (view! { <PointerOff /> }.into_any(), "Pointer Off"),
-                (view! { <Popcorn /> }.into_any(), "Popcorn"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -1762,6 +1770,7 @@ pub fn IconsP2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <Popcorn /> }.into_any(), "Popcorn"),
                 (view! { <Popsicle /> }.into_any(), "Popsicle"),
                 (view! { <PoundSterling /> }.into_any(), "Pound Sterling"),
                 (view! { <Power /> }.into_any(), "Power"),
@@ -2420,7 +2429,9 @@ pub fn IconsU1() -> impl IntoView {
                 (view! { <UserStar /> }.into_any(), "User Star"),
                 (view! { <UserX /> }.into_any(), "User X"),
                 (view! { <Users /> }.into_any(), "Users"),
+                (view! { <UsersCollaboration /> }.into_any(), "Users Collaboration"),
                 (view! { <UsersRound /> }.into_any(), "Users Round"),
+                (view! { <UsersRoundCollaboration /> }.into_any(), "Users Round Collaboration"),
                 (view! { <Utensils /> }.into_any(), "Utensils"),
                 (view! { <UtensilsCrossed /> }.into_any(), "Utensils Crossed"),
                 (view! { <UtilityPole /> }.into_any(), "Utility Pole"),
