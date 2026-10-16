@@ -747,6 +747,8 @@ mod cctv;
     feature = "photography"
 ))]
 mod cctv_off;
+#[cfg(any(feature = "connectivity", feature = "security"))]
+mod certificate;
 #[cfg(feature = "charts")]
 mod chart_area;
 #[cfg(feature = "charts")]
@@ -1413,6 +1415,10 @@ mod egg;
 mod egg_fried;
 #[cfg(feature = "food-beverage")]
 mod egg_off;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+mod eighth_note;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+mod eighth_notes;
 #[cfg(any(feature = "devices", feature = "files", feature = "multimedia"))]
 mod eject;
 #[cfg(feature = "shapes")]
@@ -1965,6 +1971,8 @@ mod group;
 mod guitar;
 #[cfg(feature = "multimedia")]
 mod guitar_electric;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+mod half_note;
 #[cfg(feature = "food-beverage")]
 mod ham;
 #[cfg(feature = "food-beverage")]
@@ -2811,14 +2819,6 @@ mod move_up_left;
 mod move_up_right;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 mod move_vertical;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-mod music;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-mod music_2;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-mod music_3;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-mod music_4;
 #[cfg(feature = "navigation")]
 mod navigation;
 #[cfg(feature = "navigation")]
@@ -3756,6 +3756,8 @@ mod signpost;
 mod signpost_big;
 #[cfg(feature = "medical")]
 mod siren;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+mod sixteenth_notes;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 mod skip_back;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
@@ -5592,6 +5594,8 @@ pub use cctv::*;
     feature = "photography"
 ))]
 pub use cctv_off::*;
+#[cfg(any(feature = "connectivity", feature = "security"))]
+pub use certificate::*;
 #[cfg(feature = "charts")]
 pub use chart_area::*;
 #[cfg(feature = "charts")]
@@ -6258,6 +6262,10 @@ pub use egg::*;
 pub use egg_fried::*;
 #[cfg(feature = "food-beverage")]
 pub use egg_off::*;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+pub use eighth_note::*;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+pub use eighth_notes::*;
 #[cfg(any(feature = "devices", feature = "files", feature = "multimedia"))]
 pub use eject::*;
 #[cfg(feature = "shapes")]
@@ -6810,6 +6818,8 @@ pub use group::*;
 pub use guitar::*;
 #[cfg(feature = "multimedia")]
 pub use guitar_electric::*;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+pub use half_note::*;
 #[cfg(feature = "food-beverage")]
 pub use ham::*;
 #[cfg(feature = "food-beverage")]
@@ -7656,14 +7666,6 @@ pub use move_up_left::*;
 pub use move_up_right::*;
 #[cfg(any(feature = "arrows", feature = "cursors"))]
 pub use move_vertical::*;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-pub use music::*;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-pub use music_2::*;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-pub use music_3::*;
-#[cfg(any(feature = "multimedia", feature = "files"))]
-pub use music_4::*;
 #[cfg(feature = "navigation")]
 pub use navigation::*;
 #[cfg(feature = "navigation")]
@@ -8601,6 +8603,8 @@ pub use signpost::*;
 pub use signpost_big::*;
 #[cfg(feature = "medical")]
 pub use siren::*;
+#[cfg(any(feature = "multimedia", feature = "files"))]
+pub use sixteenth_notes::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 pub use skip_back::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]

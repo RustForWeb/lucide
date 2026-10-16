@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1890usize] = [
+pub static ICON_NAMES: [&str; 1891usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -326,6 +326,7 @@ pub static ICON_NAMES: [&str; 1890usize] = [
     "cat",
     "cctv",
     "cctv-off",
+    "certificate",
     "chart-area",
     "chart-bar",
     "chart-bar-big",
@@ -614,6 +615,8 @@ pub static ICON_NAMES: [&str; 1890usize] = [
     "egg",
     "egg-fried",
     "egg-off",
+    "eighth-note",
+    "eighth-notes",
     "eject",
     "ellipse",
     "ellipsis",
@@ -833,6 +836,7 @@ pub static ICON_NAMES: [&str; 1890usize] = [
     "group",
     "guitar",
     "guitar-electric",
+    "half-note",
     "ham",
     "hamburger",
     "hammer",
@@ -1164,10 +1168,6 @@ pub static ICON_NAMES: [&str; 1890usize] = [
     "move-up-left",
     "move-up-right",
     "move-vertical",
-    "music",
-    "music-2",
-    "music-3",
-    "music-4",
     "navigation",
     "navigation-2",
     "navigation-2-off",
@@ -1492,6 +1492,7 @@ pub static ICON_NAMES: [&str; 1890usize] = [
     "signpost",
     "signpost-big",
     "siren",
+    "sixteenth-notes",
     "skip-back",
     "skip-forward",
     "skull",
