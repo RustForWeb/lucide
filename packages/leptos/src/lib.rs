@@ -357,6 +357,8 @@ mod beef_off;
 mod beer;
 #[cfg(feature = "food-beverage")]
 mod beer_off;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "account"))]
+mod belarusian_ruble;
 #[cfg(any(feature = "account", feature = "notifications"))]
 mod bell;
 #[cfg(any(feature = "account", feature = "notifications"))]
@@ -618,6 +620,8 @@ mod calendar_arrow_up;
 mod calendar_check;
 #[cfg(feature = "time")]
 mod calendar_check_2;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+mod calendar_chevrons_left;
 #[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
 mod calendar_chevrons_right;
 #[cfg(feature = "time")]
@@ -907,6 +911,8 @@ mod circle_equal;
 mod circle_euro;
 #[cfg(any(feature = "arrows", feature = "development"))]
 mod circle_fading_arrow_up;
+#[cfg(any(feature = "multimedia", feature = "social"))]
+mod circle_fading_play;
 #[cfg(any(feature = "communication", feature = "social"))]
 mod circle_fading_plus;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
@@ -1182,6 +1188,8 @@ mod corner_up_left;
 mod corner_up_right;
 #[cfg(feature = "devices")]
 mod cpu;
+#[cfg(any(feature = "devices", feature = "development"))]
+mod cpu_ai;
 #[cfg(feature = "text")]
 mod creative_commons;
 #[cfg(any(feature = "account", feature = "finance"))]
@@ -1744,6 +1752,22 @@ mod folder_sync;
 mod folder_tree;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod folder_up;
+#[cfg(any(
+    feature = "files",
+    feature = "account",
+    feature = "social",
+    feature = "people",
+    feature = "security"
+))]
+mod folder_user;
+#[cfg(any(
+    feature = "files",
+    feature = "account",
+    feature = "social",
+    feature = "people",
+    feature = "security"
+))]
+mod folder_users;
 #[cfg(feature = "files")]
 mod folder_x;
 #[cfg(feature = "files")]
@@ -1901,6 +1925,8 @@ mod gpu;
 mod graduation_cap;
 #[cfg(feature = "food-beverage")]
 mod grape;
+#[cfg(any(feature = "development", feature = "charts"))]
+mod graph_star;
 #[cfg(any(
     feature = "text",
     feature = "layout",
@@ -1935,6 +1961,8 @@ mod groceries;
 mod group;
 #[cfg(feature = "multimedia")]
 mod guitar;
+#[cfg(feature = "multimedia")]
+mod guitar_electric;
 #[cfg(feature = "food-beverage")]
 mod ham;
 #[cfg(feature = "food-beverage")]
@@ -3013,6 +3041,8 @@ mod pentagon;
     feature = "shopping"
 ))]
 mod percent;
+#[cfg(any(feature = "shopping", feature = "travel"))]
+mod perfume_bottle;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 mod person_standing;
 #[cfg(any(feature = "math", feature = "science"))]
@@ -4530,8 +4560,12 @@ mod user_star;
 mod user_x;
 #[cfg(feature = "account")]
 mod users;
+#[cfg(any(feature = "account", feature = "people", feature = "communication"))]
+mod users_collaboration;
 #[cfg(feature = "account")]
 mod users_round;
+#[cfg(any(feature = "account", feature = "people", feature = "communication"))]
+mod users_round_collaboration;
 #[cfg(any(feature = "food-beverage", feature = "travel", feature = "navigation"))]
 mod utensils;
 #[cfg(any(feature = "food-beverage", feature = "travel", feature = "navigation"))]
@@ -5168,6 +5202,8 @@ pub use beef_off::*;
 pub use beer::*;
 #[cfg(feature = "food-beverage")]
 pub use beer_off::*;
+#[cfg(any(feature = "finance", feature = "shopping", feature = "account"))]
+pub use belarusian_ruble::*;
 #[cfg(any(feature = "account", feature = "notifications"))]
 pub use bell::*;
 #[cfg(any(feature = "account", feature = "notifications"))]
@@ -5429,6 +5465,8 @@ pub use calendar_arrow_up::*;
 pub use calendar_check::*;
 #[cfg(feature = "time")]
 pub use calendar_check_2::*;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+pub use calendar_chevrons_left::*;
 #[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
 pub use calendar_chevrons_right::*;
 #[cfg(feature = "time")]
@@ -5718,6 +5756,8 @@ pub use circle_equal::*;
 pub use circle_euro::*;
 #[cfg(any(feature = "arrows", feature = "development"))]
 pub use circle_fading_arrow_up::*;
+#[cfg(any(feature = "multimedia", feature = "social"))]
+pub use circle_fading_play::*;
 #[cfg(any(feature = "communication", feature = "social"))]
 pub use circle_fading_plus::*;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
@@ -5993,6 +6033,8 @@ pub use corner_up_left::*;
 pub use corner_up_right::*;
 #[cfg(feature = "devices")]
 pub use cpu::*;
+#[cfg(any(feature = "devices", feature = "development"))]
+pub use cpu_ai::*;
 #[cfg(feature = "text")]
 pub use creative_commons::*;
 #[cfg(any(feature = "account", feature = "finance"))]
@@ -6555,6 +6597,22 @@ pub use folder_sync::*;
 pub use folder_tree::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use folder_up::*;
+#[cfg(any(
+    feature = "files",
+    feature = "account",
+    feature = "social",
+    feature = "people",
+    feature = "security"
+))]
+pub use folder_user::*;
+#[cfg(any(
+    feature = "files",
+    feature = "account",
+    feature = "social",
+    feature = "people",
+    feature = "security"
+))]
+pub use folder_users::*;
 #[cfg(feature = "files")]
 pub use folder_x::*;
 #[cfg(feature = "files")]
@@ -6712,6 +6770,8 @@ pub use gpu::*;
 pub use graduation_cap::*;
 #[cfg(feature = "food-beverage")]
 pub use grape::*;
+#[cfg(any(feature = "development", feature = "charts"))]
+pub use graph_star::*;
 #[cfg(any(
     feature = "text",
     feature = "layout",
@@ -6746,6 +6806,8 @@ pub use groceries::*;
 pub use group::*;
 #[cfg(feature = "multimedia")]
 pub use guitar::*;
+#[cfg(feature = "multimedia")]
+pub use guitar_electric::*;
 #[cfg(feature = "food-beverage")]
 pub use ham::*;
 #[cfg(feature = "food-beverage")]
@@ -7824,6 +7886,8 @@ pub use pentagon::*;
     feature = "shopping"
 ))]
 pub use percent::*;
+#[cfg(any(feature = "shopping", feature = "travel"))]
+pub use perfume_bottle::*;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 pub use person_standing::*;
 #[cfg(any(feature = "math", feature = "science"))]
@@ -9341,8 +9405,12 @@ pub use user_star::*;
 pub use user_x::*;
 #[cfg(feature = "account")]
 pub use users::*;
+#[cfg(any(feature = "account", feature = "people", feature = "communication"))]
+pub use users_collaboration::*;
 #[cfg(feature = "account")]
 pub use users_round::*;
+#[cfg(any(feature = "account", feature = "people", feature = "communication"))]
+pub use users_round_collaboration::*;
 #[cfg(any(feature = "food-beverage", feature = "travel", feature = "navigation"))]
 pub use utensils::*;
 #[cfg(any(feature = "food-beverage", feature = "travel", feature = "navigation"))]
