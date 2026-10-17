@@ -2027,6 +2027,12 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                Certificate {}
+            },
+            "Certificate",
+        ),
+        (
+            rsx! {
                 ChartArea {}
             },
             "Chart Area",
@@ -2271,12 +2277,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Down",
         ),
-        (
-            rsx! {
-                ChevronsDownUp {}
-            },
-            "Chevrons Down Up",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2292,6 +2292,12 @@ pub fn IconsC1() -> Element {
 #[component]
 pub fn IconsC2() -> Element {
     let icons = [
+        (
+            rsx! {
+                ChevronsDownUp {}
+            },
+            "Chevrons Down Up",
+        ),
         (
             rsx! {
                 ChevronsLeft {}
@@ -2886,12 +2892,6 @@ pub fn IconsC2() -> Element {
             },
             "Closed Caption",
         ),
-        (
-            rsx! {
-                Cloud {}
-            },
-            "Cloud",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -2907,6 +2907,12 @@ pub fn IconsC2() -> Element {
 #[component]
 pub fn IconsC3() -> Element {
     let icons = [
+        (
+            rsx! {
+                Cloud {}
+            },
+            "Cloud",
+        ),
         (
             rsx! {
                 CloudAlert {}
@@ -3812,6 +3818,18 @@ pub fn IconsE1() -> Element {
                 EggOff {}
             },
             "Egg Off",
+        ),
+        (
+            rsx! {
+                EighthNote {}
+            },
+            "Eighth Note",
+        ),
+        (
+            rsx! {
+                EighthNotes {}
+            },
+            "Eighth Notes",
         ),
         (
             rsx! {
@@ -5187,6 +5205,12 @@ pub fn IconsG1() -> Element {
 #[component]
 pub fn IconsH1() -> Element {
     let icons = [
+        (
+            rsx! {
+                HalfNote {}
+            },
+            "Half Note",
+        ),
         (
             rsx! {
                 Ham {}
@@ -7263,30 +7287,6 @@ pub fn IconsM2() -> Element {
             },
             "Move Vertical",
         ),
-        (
-            rsx! {
-                Music {}
-            },
-            "Music",
-        ),
-        (
-            rsx! {
-                Music2 {}
-            },
-            "Music 2",
-        ),
-        (
-            rsx! {
-                Music3 {}
-            },
-            "Music 3",
-        ),
-        (
-            rsx! {
-                Music4 {}
-            },
-            "Music 4",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9353,6 +9353,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SixteenthNotes {}
+            },
+            "Sixteenth Notes",
+        ),
+        (
+            rsx! {
                 SkipBack {}
             },
             "Skip Back",
@@ -9909,12 +9915,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Plus",
         ),
-        (
-            rsx! {
-                SquarePower {}
-            },
-            "Square Power",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9930,6 +9930,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquarePower {}
+            },
+            "Square Power",
+        ),
         (
             rsx! {
                 SquareRadical {}

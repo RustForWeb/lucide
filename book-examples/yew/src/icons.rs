@@ -447,6 +447,7 @@ pub fn IconsC() -> Html {
         (html! { <Cat /> }, "Cat"),
         (html! { <Cctv /> }, "Cctv"),
         (html! { <CctvOff /> }, "Cctv Off"),
+        (html! { <Certificate /> }, "Certificate"),
         (html! { <ChartArea /> }, "Chart Area"),
         (html! { <ChartBar /> }, "Chart Bar"),
         (html! { <ChartBarBig /> }, "Chart Bar Big"),
@@ -794,6 +795,8 @@ pub fn IconsE() -> Html {
         (html! { <Egg /> }, "Egg"),
         (html! { <EggFried /> }, "Egg Fried"),
         (html! { <EggOff /> }, "Egg Off"),
+        (html! { <EighthNote /> }, "Eighth Note"),
+        (html! { <EighthNotes /> }, "Eighth Notes"),
         (html! { <Eject /> }, "Eject"),
         (html! { <Ellipse /> }, "Ellipse"),
         (html! { <Ellipsis /> }, "Ellipsis"),
@@ -1079,6 +1082,7 @@ pub fn IconsG() -> Html {
 #[component]
 pub fn IconsH() -> Html {
     let icons = [
+        (html! { <HalfNote /> }, "Half Note"),
         (html! { <Ham /> }, "Ham"),
         (html! { <Hamburger /> }, "Hamburger"),
         (html! { <Hammer /> }, "Hammer"),
@@ -1505,10 +1509,6 @@ pub fn IconsM() -> Html {
         (html! { <MoveUpLeft /> }, "Move Up Left"),
         (html! { <MoveUpRight /> }, "Move Up Right"),
         (html! { <MoveVertical /> }, "Move Vertical"),
-        (html! { <Music /> }, "Music"),
-        (html! { <Music2 /> }, "Music 2"),
-        (html! { <Music3 /> }, "Music 3"),
-        (html! { <Music4 /> }, "Music 4"),
     ];
     icons
         .into_iter()
@@ -1935,6 +1935,7 @@ pub fn IconsS() -> Html {
         (html! { <Signpost /> }, "Signpost"),
         (html! { <SignpostBig /> }, "Signpost Big"),
         (html! { <Siren /> }, "Siren"),
+        (html! { <SixteenthNotes /> }, "Sixteenth Notes"),
         (html! { <SkipBack /> }, "Skip Back"),
         (html! { <SkipForward /> }, "Skip Forward"),
         (html! { <Skull /> }, "Skull"),
