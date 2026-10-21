@@ -686,6 +686,12 @@ pub fn IconsA2() -> Element {
         ),
         (
             rsx! {
+                Avocado {}
+            },
+            "Avocado",
+        ),
+        (
+            rsx! {
                 Award {}
             },
             "Award",
@@ -728,6 +734,12 @@ pub fn IconsB1() -> Element {
                 Backpack {}
             },
             "Backpack",
+        ),
+        (
+            rsx! {
+                Bacon {}
+            },
+            "Bacon",
         ),
         (
             rsx! {
@@ -1311,12 +1323,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Key",
         ),
-        (
-            rsx! {
-                BookLock {}
-            },
-            "Book Lock",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1332,6 +1338,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookLock {}
+            },
+            "Book Lock",
+        ),
         (
             rsx! {
                 BookMinus {}
@@ -1517,6 +1529,12 @@ pub fn IconsB2() -> Element {
                 BrainCog {}
             },
             "Brain Cog",
+        ),
+        (
+            rsx! {
+                BrainOff {}
+            },
+            "Brain Off",
         ),
         (
             rsx! {
@@ -5108,6 +5126,12 @@ pub fn IconsG1() -> Element {
         ),
         (
             rsx! {
+                GraphHub {}
+            },
+            "Graph Hub",
+        ),
+        (
+            rsx! {
                 GraphStar {}
             },
             "Graph Star",
@@ -6065,6 +6089,12 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LetterSpacing {}
+            },
+            "Letter Spacing",
+        ),
+        (
+            rsx! {
                 Letters {}
             },
             "Letters",
@@ -6134,6 +6164,12 @@ pub fn IconsL1() -> Element {
                 LineDotTopVertical {}
             },
             "Line Dot Top Vertical",
+        ),
+        (
+            rsx! {
+                LineHeight {}
+            },
+            "Line Height",
         ),
         (
             rsx! {
@@ -9419,6 +9455,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SmartphoneUserRound {}
+            },
+            "Smartphone User Round",
+        ),
+        (
+            rsx! {
                 Snail {}
             },
             "Snail",
@@ -9909,12 +9951,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Play",
         ),
-        (
-            rsx! {
-                SquarePlus {}
-            },
-            "Square Plus",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -9930,6 +9966,12 @@ pub fn IconsS2() -> Element {
 #[component]
 pub fn IconsS3() -> Element {
     let icons = [
+        (
+            rsx! {
+                SquarePlus {}
+            },
+            "Square Plus",
+        ),
         (
             rsx! {
                 SquarePower {}
@@ -10727,6 +10769,12 @@ pub fn IconsT1() -> Element {
         ),
         (
             rsx! {
+                Tombstone {}
+            },
+            "Tombstone",
+        ),
+        (
+            rsx! {
                 ToolCase {}
             },
             "Tool Case",
@@ -10929,12 +10977,6 @@ pub fn IconsT1() -> Element {
             },
             "Triangles Centerline Dashed Vertical",
         ),
-        (
-            rsx! {
-                Trophy {}
-            },
-            "Trophy",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -10950,6 +10992,12 @@ pub fn IconsT1() -> Element {
 #[component]
 pub fn IconsT2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Trophy {}
+            },
+            "Trophy",
+        ),
         (
             rsx! {
                 Truck {}
