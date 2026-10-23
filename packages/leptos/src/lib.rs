@@ -242,6 +242,8 @@ mod audio_lines_off;
 mod audio_lines_x;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 mod audio_waveform;
+#[cfg(feature = "food-beverage")]
+mod avocado;
 #[cfg(any(feature = "account", feature = "sports", feature = "gaming"))]
 mod award;
 #[cfg(any(feature = "tools", feature = "gaming"))]
@@ -252,6 +254,8 @@ mod axis_3_d;
 mod baby;
 #[cfg(any(feature = "gaming", feature = "photography", feature = "travel"))]
 mod backpack;
+#[cfg(feature = "food-beverage")]
+mod bacon;
 #[cfg(any(feature = "account", feature = "social", feature = "shapes"))]
 mod badge;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -550,6 +554,8 @@ mod brain;
 mod brain_circuit;
 #[cfg(any(feature = "science", feature = "development"))]
 mod brain_cog;
+#[cfg(any(feature = "medical", feature = "science", feature = "development"))]
+mod brain_off;
 #[cfg(any(feature = "buildings", feature = "home"))]
 mod brick_wall;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
@@ -1931,6 +1937,8 @@ mod gpu;
 mod graduation_cap;
 #[cfg(feature = "food-beverage")]
 mod grape;
+#[cfg(any(feature = "connectivity", feature = "development"))]
+mod graph_hub;
 #[cfg(any(feature = "development", feature = "charts"))]
 mod graph_star;
 #[cfg(any(
@@ -2354,6 +2362,8 @@ mod lens_concave;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 mod lens_convex;
 #[cfg(feature = "text")]
+mod letter_spacing;
+#[cfg(feature = "text")]
 mod letters;
 #[cfg(any(
     feature = "text",
@@ -2389,6 +2399,8 @@ mod line_dot_left_horizontal;
 mod line_dot_right_horizontal;
 #[cfg(any(feature = "development", feature = "navigation"))]
 mod line_dot_top_vertical;
+#[cfg(feature = "text")]
+mod line_height;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 mod line_squiggle;
 #[cfg(any(feature = "design", feature = "tools"))]
@@ -3776,6 +3788,8 @@ mod smartphone;
 mod smartphone_charging;
 #[cfg(any(feature = "communication", feature = "finance", feature = "devices"))]
 mod smartphone_nfc;
+#[cfg(any(feature = "account", feature = "devices", feature = "people"))]
+mod smartphone_user_round;
 #[cfg(any(feature = "animals", feature = "food-beverage"))]
 mod snail;
 #[cfg(any(feature = "weather", feature = "seasons"))]
@@ -4351,6 +4365,13 @@ mod toggle_left;
 mod toggle_right;
 #[cfg(any(feature = "devices", feature = "home"))]
 mod toilet;
+#[cfg(any(
+    feature = "gaming",
+    feature = "navigation",
+    feature = "people",
+    feature = "development"
+))]
+mod tombstone;
 #[cfg(any(feature = "tools", feature = "development", feature = "home"))]
 mod tool_case;
 #[cfg(any(feature = "tools", feature = "home"))]
@@ -5089,6 +5110,8 @@ pub use audio_lines_off::*;
 pub use audio_lines_x::*;
 #[cfg(any(feature = "multimedia", feature = "communication"))]
 pub use audio_waveform::*;
+#[cfg(feature = "food-beverage")]
+pub use avocado::*;
 #[cfg(any(feature = "account", feature = "sports", feature = "gaming"))]
 pub use award::*;
 #[cfg(any(feature = "tools", feature = "gaming"))]
@@ -5099,6 +5122,8 @@ pub use axis_3_d::*;
 pub use baby::*;
 #[cfg(any(feature = "gaming", feature = "photography", feature = "travel"))]
 pub use backpack::*;
+#[cfg(feature = "food-beverage")]
+pub use bacon::*;
 #[cfg(any(feature = "account", feature = "social", feature = "shapes"))]
 pub use badge::*;
 #[cfg(any(feature = "account", feature = "social"))]
@@ -5397,6 +5422,8 @@ pub use brain::*;
 pub use brain_circuit::*;
 #[cfg(any(feature = "science", feature = "development"))]
 pub use brain_cog::*;
+#[cfg(any(feature = "medical", feature = "science", feature = "development"))]
+pub use brain_off::*;
 #[cfg(any(feature = "buildings", feature = "home"))]
 pub use brick_wall::*;
 #[cfg(any(feature = "security", feature = "home", feature = "connectivity"))]
@@ -6778,6 +6805,8 @@ pub use gpu::*;
 pub use graduation_cap::*;
 #[cfg(feature = "food-beverage")]
 pub use grape::*;
+#[cfg(any(feature = "connectivity", feature = "development"))]
+pub use graph_hub::*;
 #[cfg(any(feature = "development", feature = "charts"))]
 pub use graph_star::*;
 #[cfg(any(
@@ -7201,6 +7230,8 @@ pub use lens_concave::*;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 pub use lens_convex::*;
 #[cfg(feature = "text")]
+pub use letter_spacing::*;
+#[cfg(feature = "text")]
 pub use letters::*;
 #[cfg(any(
     feature = "text",
@@ -7236,6 +7267,8 @@ pub use line_dot_left_horizontal::*;
 pub use line_dot_right_horizontal::*;
 #[cfg(any(feature = "development", feature = "navigation"))]
 pub use line_dot_top_vertical::*;
+#[cfg(feature = "text")]
+pub use line_height::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 pub use line_squiggle::*;
 #[cfg(any(feature = "design", feature = "tools"))]
@@ -8623,6 +8656,8 @@ pub use smartphone::*;
 pub use smartphone_charging::*;
 #[cfg(any(feature = "communication", feature = "finance", feature = "devices"))]
 pub use smartphone_nfc::*;
+#[cfg(any(feature = "account", feature = "devices", feature = "people"))]
+pub use smartphone_user_round::*;
 #[cfg(any(feature = "animals", feature = "food-beverage"))]
 pub use snail::*;
 #[cfg(any(feature = "weather", feature = "seasons"))]
@@ -9198,6 +9233,13 @@ pub use toggle_left::*;
 pub use toggle_right::*;
 #[cfg(any(feature = "devices", feature = "home"))]
 pub use toilet::*;
+#[cfg(any(
+    feature = "gaming",
+    feature = "navigation",
+    feature = "people",
+    feature = "development"
+))]
+pub use tombstone::*;
 #[cfg(any(feature = "tools", feature = "development", feature = "home"))]
 pub use tool_case::*;
 #[cfg(any(feature = "tools", feature = "home"))]
