@@ -2474,6 +2474,30 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleChevronsDown {}
+            },
+            "Circle Chevrons Down",
+        ),
+        (
+            rsx! {
+                CircleChevronsLeft {}
+            },
+            "Circle Chevrons Left",
+        ),
+        (
+            rsx! {
+                CircleChevronsRight {}
+            },
+            "Circle Chevrons Right",
+        ),
+        (
+            rsx! {
+                CircleChevronsUp {}
+            },
+            "Circle Chevrons Up",
+        ),
+        (
+            rsx! {
                 CircleDashed {}
             },
             "Circle Dashed",
@@ -2886,6 +2910,21 @@ pub fn IconsC2() -> Element {
             },
             "Clock Arrow Up",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 ClockCheck {}
@@ -2910,21 +2949,6 @@ pub fn IconsC2() -> Element {
             },
             "Closed Caption",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 Cloud {}
