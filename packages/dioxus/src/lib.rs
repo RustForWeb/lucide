@@ -899,6 +899,14 @@ mod circle_chevron_left;
 mod circle_chevron_right;
 #[cfg(feature = "arrows")]
 mod circle_chevron_up;
+#[cfg(any(feature = "arrows", feature = "navigation"))]
+mod circle_chevrons_down;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+mod circle_chevrons_left;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+mod circle_chevrons_right;
+#[cfg(any(feature = "arrows", feature = "navigation"))]
+mod circle_chevrons_up;
 #[cfg(any(feature = "development", feature = "shapes"))]
 mod circle_dashed;
 #[cfg(any(feature = "shapes", feature = "development", feature = "notifications"))]
@@ -5767,6 +5775,14 @@ pub use circle_chevron_left::*;
 pub use circle_chevron_right::*;
 #[cfg(feature = "arrows")]
 pub use circle_chevron_up::*;
+#[cfg(any(feature = "arrows", feature = "navigation"))]
+pub use circle_chevrons_down::*;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+pub use circle_chevrons_left::*;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+pub use circle_chevrons_right::*;
+#[cfg(any(feature = "arrows", feature = "navigation"))]
+pub use circle_chevrons_up::*;
 #[cfg(any(feature = "development", feature = "shapes"))]
 pub use circle_dashed::*;
 #[cfg(any(feature = "shapes", feature = "development", feature = "notifications"))]

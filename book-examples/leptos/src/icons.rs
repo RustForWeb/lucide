@@ -575,6 +575,10 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleChevronLeft /> }.into_any(), "Circle Chevron Left"),
                 (view! { <CircleChevronRight /> }.into_any(), "Circle Chevron Right"),
                 (view! { <CircleChevronUp /> }.into_any(), "Circle Chevron Up"),
+                (view! { <CircleChevronsDown /> }.into_any(), "Circle Chevrons Down"),
+                (view! { <CircleChevronsLeft /> }.into_any(), "Circle Chevrons Left"),
+                (view! { <CircleChevronsRight /> }.into_any(), "Circle Chevrons Right"),
+                (view! { <CircleChevronsUp /> }.into_any(), "Circle Chevrons Up"),
                 (view! { <CircleDashed /> }.into_any(), "Circle Dashed"),
                 (view! { <CircleDashedCheck /> }.into_any(), "Circle Dashed Check"),
                 (view! { <CircleDivide /> }.into_any(), "Circle Divide"),
@@ -644,10 +648,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <ClockArrowLeft /> }.into_any(), "Clock Arrow Left"),
                 (view! { <ClockArrowRight /> }.into_any(), "Clock Arrow Right"),
                 (view! { <ClockArrowUp /> }.into_any(), "Clock Arrow Up"),
-                (view! { <ClockCheck /> }.into_any(), "Clock Check"),
-                (view! { <ClockFading /> }.into_any(), "Clock Fading"),
-                (view! { <ClockPlus /> }.into_any(), "Clock Plus"),
-                (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -665,6 +665,10 @@ pub fn IconsC3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <ClockCheck /> }.into_any(), "Clock Check"),
+                (view! { <ClockFading /> }.into_any(), "Clock Fading"),
+                (view! { <ClockPlus /> }.into_any(), "Clock Plus"),
+                (view! { <ClosedCaption /> }.into_any(), "Closed Caption"),
                 (view! { <Cloud /> }.into_any(), "Cloud"),
                 (view! { <CloudAlert /> }.into_any(), "Cloud Alert"),
                 (view! { <CloudBackup /> }.into_any(), "Cloud Backup"),
