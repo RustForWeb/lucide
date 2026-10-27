@@ -194,6 +194,7 @@ pub fn IconsA() -> Html {
         (html! { <Award /> }, "Award"),
         (html! { <Axe /> }, "Axe"),
         (html! { <Axis3D /> }, "Axis 3 D"),
+        (html! { <AzerbaijaniManat /> }, "Azerbaijani Manat"),
     ];
     icons
         .into_iter()
@@ -232,6 +233,7 @@ pub fn IconsB() -> Html {
         (html! { <BadgeTurkishLira /> }, "Badge Turkish Lira"),
         (html! { <BadgeX /> }, "Badge X"),
         (html! { <BaggageClaim /> }, "Baggage Claim"),
+        (html! { <BallWave /> }, "Ball Wave"),
         (html! { <Balloon /> }, "Balloon"),
         (html! { <Ban /> }, "Ban"),
         (html! { <Banana /> }, "Banana"),
@@ -808,6 +810,7 @@ pub fn IconsE() -> Html {
         (html! { <Ellipse /> }, "Ellipse"),
         (html! { <Ellipsis /> }, "Ellipsis"),
         (html! { <EllipsisVertical /> }, "Ellipsis Vertical"),
+        (html! { <EmiratiDirham /> }, "Emirati Dirham"),
         (html! { <Engine /> }, "Engine"),
         (html! { <Equal /> }, "Equal"),
         (html! { <EqualApproximately /> }, "Equal Approximately"),
@@ -1137,9 +1140,11 @@ pub fn IconsH() -> Html {
         (html! { <Hexagon /> }, "Hexagon"),
         (html! { <Highlighter /> }, "Highlighter"),
         (html! { <HikingStick /> }, "Hiking Stick"),
+        (html! { <HockeyStick /> }, "Hockey Stick"),
         (html! { <Hop /> }, "Hop"),
         (html! { <HopOff /> }, "Hop Off"),
         (html! { <Hospital /> }, "Hospital"),
+        (html! { <HotAirBalloon /> }, "Hot Air Balloon"),
         (html! { <Hotel /> }, "Hotel"),
         (html! { <Hourglass /> }, "Hourglass"),
         (html! { <HourglassCog /> }, "Hourglass Cog"),

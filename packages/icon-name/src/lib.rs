@@ -5,7 +5,7 @@
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/) for more documenation.
 
 /// [Lucide](https://lucide.dev/) icon names.
-pub static ICON_NAMES: [&str; 1903usize] = [
+pub static ICON_NAMES: [&str; 1908usize] = [
     "a-arrow-down",
     "a-arrow-up",
     "a-large-small",
@@ -114,6 +114,7 @@ pub static ICON_NAMES: [&str; 1903usize] = [
     "award",
     "axe",
     "axis-3d",
+    "azerbaijani-manat",
     "baby",
     "backpack",
     "bacon",
@@ -136,6 +137,7 @@ pub static ICON_NAMES: [&str; 1903usize] = [
     "badge-turkish-lira",
     "badge-x",
     "baggage-claim",
+    "ball-wave",
     "balloon",
     "ban",
     "banana",
@@ -628,6 +630,7 @@ pub static ICON_NAMES: [&str; 1903usize] = [
     "ellipse",
     "ellipsis",
     "ellipsis-vertical",
+    "emirati-dirham",
     "engine",
     "equal",
     "equal-approximately",
@@ -891,9 +894,11 @@ pub static ICON_NAMES: [&str; 1903usize] = [
     "hexagon",
     "highlighter",
     "hiking-stick",
+    "hockey-stick",
     "hop",
     "hop-off",
     "hospital",
+    "hot-air-balloon",
     "hotel",
     "hourglass",
     "hourglass-cog",
