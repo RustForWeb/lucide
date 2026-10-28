@@ -708,6 +708,12 @@ pub fn IconsA2() -> Element {
             },
             "Axis 3 D",
         ),
+        (
+            rsx! {
+                AzerbaijaniManat {}
+            },
+            "Azerbaijani Manat",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -854,6 +860,12 @@ pub fn IconsB1() -> Element {
                 BaggageClaim {}
             },
             "Baggage Claim",
+        ),
+        (
+            rsx! {
+                BallWave {}
+            },
+            "Ball Wave",
         ),
         (
             rsx! {
@@ -1317,12 +1329,6 @@ pub fn IconsB1() -> Element {
             },
             "Book Image",
         ),
-        (
-            rsx! {
-                BookKey {}
-            },
-            "Book Key",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1338,6 +1344,12 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
+        (
+            rsx! {
+                BookKey {}
+            },
+            "Book Key",
+        ),
         (
             rsx! {
                 BookLock {}
@@ -3899,6 +3911,12 @@ pub fn IconsE1() -> Element {
         ),
         (
             rsx! {
+                EmiratiDirham {}
+            },
+            "Emirati Dirham",
+        ),
+        (
+            rsx! {
                 Engine {}
             },
             "Engine",
@@ -5537,6 +5555,12 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
+                HockeyStick {}
+            },
+            "Hockey Stick",
+        ),
+        (
+            rsx! {
                 Hop {}
             },
             "Hop",
@@ -5552,6 +5576,12 @@ pub fn IconsH1() -> Element {
                 Hospital {}
             },
             "Hospital",
+        ),
+        (
+            rsx! {
+                HotAirBalloon {}
+            },
+            "Hot Air Balloon",
         ),
         (
             rsx! {

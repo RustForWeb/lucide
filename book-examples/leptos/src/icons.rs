@@ -214,6 +214,7 @@ pub fn IconsA2() -> impl IntoView {
                 (view! { <Award /> }.into_any(), "Award"),
                 (view! { <Axe /> }.into_any(), "Axe"),
                 (view! { <Axis3D /> }.into_any(), "Axis 3 D"),
+                (view! { <AzerbaijaniManat /> }.into_any(), "Azerbaijani Manat"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -253,6 +254,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BadgeTurkishLira /> }.into_any(), "Badge Turkish Lira"),
                 (view! { <BadgeX /> }.into_any(), "Badge X"),
                 (view! { <BaggageClaim /> }.into_any(), "Baggage Claim"),
+                (view! { <BallWave /> }.into_any(), "Ball Wave"),
                 (view! { <Balloon /> }.into_any(), "Balloon"),
                 (view! { <Ban /> }.into_any(), "Ban"),
                 (view! { <Banana /> }.into_any(), "Banana"),
@@ -330,7 +332,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookHeadphones /> }.into_any(), "Book Headphones"),
                 (view! { <BookHeart /> }.into_any(), "Book Heart"),
                 (view! { <BookImage /> }.into_any(), "Book Image"),
-                (view! { <BookKey /> }.into_any(), "Book Key"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -348,6 +349,7 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <BookKey /> }.into_any(), "Book Key"),
                 (view! { <BookLock /> }.into_any(), "Book Lock"),
                 (view! { <BookMinus /> }.into_any(), "Book Minus"),
                 (view! { <BookOpen /> }.into_any(), "Book Open"),
@@ -856,6 +858,7 @@ pub fn IconsE1() -> impl IntoView {
                 (view! { <Ellipse /> }.into_any(), "Ellipse"),
                 (view! { <Ellipsis /> }.into_any(), "Ellipsis"),
                 (view! { <EllipsisVertical /> }.into_any(), "Ellipsis Vertical"),
+                (view! { <EmiratiDirham /> }.into_any(), "Emirati Dirham"),
                 (view! { <Engine /> }.into_any(), "Engine"),
                 (view! { <Equal /> }.into_any(), "Equal"),
                 (view! { <EqualApproximately /> }.into_any(), "Equal Approximately"),
@@ -1193,9 +1196,11 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <Hexagon /> }.into_any(), "Hexagon"),
                 (view! { <Highlighter /> }.into_any(), "Highlighter"),
                 (view! { <HikingStick /> }.into_any(), "Hiking Stick"),
+                (view! { <HockeyStick /> }.into_any(), "Hockey Stick"),
                 (view! { <Hop /> }.into_any(), "Hop"),
                 (view! { <HopOff /> }.into_any(), "Hop Off"),
                 (view! { <Hospital /> }.into_any(), "Hospital"),
+                (view! { <HotAirBalloon /> }.into_any(), "Hot Air Balloon"),
                 (view! { <Hotel /> }.into_any(), "Hotel"),
                 (view! { <Hourglass /> }.into_any(), "Hourglass"),
                 (view! { <HourglassCog /> }.into_any(), "Hourglass Cog"),

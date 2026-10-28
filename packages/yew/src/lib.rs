@@ -252,6 +252,8 @@ mod award;
 mod axe;
 #[cfg(feature = "design")]
 mod axis_3_d;
+#[cfg(feature = "finance")]
+mod azerbaijani_manat;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 mod baby;
 #[cfg(any(feature = "gaming", feature = "photography", feature = "travel"))]
@@ -301,6 +303,8 @@ mod badge_turkish_lira;
 mod badge_x;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 mod baggage_claim;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+mod ball_wave;
 #[cfg(feature = "emoji")]
 mod balloon;
 #[cfg(feature = "account")]
@@ -1441,6 +1445,8 @@ mod ellipse;
 mod ellipsis;
 #[cfg(feature = "layout")]
 mod ellipsis_vertical;
+#[cfg(feature = "finance")]
+mod emirati_dirham;
 #[cfg(feature = "transportation")]
 mod engine;
 #[cfg(any(feature = "math", feature = "development"))]
@@ -2149,6 +2155,8 @@ mod highlighter;
     feature = "navigation"
 ))]
 mod hiking_stick;
+#[cfg(feature = "sports")]
+mod hockey_stick;
 #[cfg(feature = "food-beverage")]
 mod hop;
 #[cfg(feature = "food-beverage")]
@@ -2160,6 +2168,8 @@ mod hop_off;
     feature = "travel"
 ))]
 mod hospital;
+#[cfg(feature = "sports")]
+mod hot_air_balloon;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 mod hotel;
 #[cfg(any(feature = "time", feature = "gaming"))]
@@ -5128,6 +5138,8 @@ pub use award::*;
 pub use axe::*;
 #[cfg(feature = "design")]
 pub use axis_3_d::*;
+#[cfg(feature = "finance")]
+pub use azerbaijani_manat::*;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 pub use baby::*;
 #[cfg(any(feature = "gaming", feature = "photography", feature = "travel"))]
@@ -5177,6 +5189,8 @@ pub use badge_turkish_lira::*;
 pub use badge_x::*;
 #[cfg(any(feature = "transportation", feature = "travel"))]
 pub use baggage_claim::*;
+#[cfg(any(feature = "sports", feature = "gaming"))]
+pub use ball_wave::*;
 #[cfg(feature = "emoji")]
 pub use balloon::*;
 #[cfg(feature = "account")]
@@ -6317,6 +6331,8 @@ pub use ellipse::*;
 pub use ellipsis::*;
 #[cfg(feature = "layout")]
 pub use ellipsis_vertical::*;
+#[cfg(feature = "finance")]
+pub use emirati_dirham::*;
 #[cfg(feature = "transportation")]
 pub use engine::*;
 #[cfg(any(feature = "math", feature = "development"))]
@@ -7025,6 +7041,8 @@ pub use highlighter::*;
     feature = "navigation"
 ))]
 pub use hiking_stick::*;
+#[cfg(feature = "sports")]
+pub use hockey_stick::*;
 #[cfg(feature = "food-beverage")]
 pub use hop::*;
 #[cfg(feature = "food-beverage")]
@@ -7036,6 +7054,8 @@ pub use hop_off::*;
     feature = "travel"
 ))]
 pub use hospital::*;
+#[cfg(feature = "sports")]
+pub use hot_air_balloon::*;
 #[cfg(any(feature = "buildings", feature = "navigation", feature = "travel"))]
 pub use hotel::*;
 #[cfg(any(feature = "time", feature = "gaming"))]
