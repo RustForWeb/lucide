@@ -341,9 +341,15 @@ pub fn IconsA1() -> Element {
         ),
         (
             rsx! {
-                ArchiveRestore {}
+                ArchiveArrowDown {}
             },
-            "Archive Restore",
+            "Archive Arrow Down",
+        ),
+        (
+            rsx! {
+                ArchiveArrowUp {}
+            },
+            "Archive Arrow Up",
         ),
         (
             rsx! {
@@ -639,12 +645,6 @@ pub fn IconsA1() -> Element {
             },
             "At Sign",
         ),
-        (
-            rsx! {
-                Atom {}
-            },
-            "Atom",
-        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -660,6 +660,12 @@ pub fn IconsA1() -> Element {
 #[component]
 pub fn IconsA2() -> Element {
     let icons = [
+        (
+            rsx! {
+                Atom {}
+            },
+            "Atom",
+        ),
         (
             rsx! {
                 AudioLines {}
@@ -1514,6 +1520,12 @@ pub fn IconsB2() -> Element {
         ),
         (
             rsx! {
+                BoxesLinked {}
+            },
+            "Boxes Linked",
+        ),
+        (
+            rsx! {
                 Braces {}
             },
             "Braces",
@@ -1754,6 +1766,18 @@ pub fn IconsC1() -> Element {
                 CalendarArrowDown {}
             },
             "Calendar Arrow Down",
+        ),
+        (
+            rsx! {
+                CalendarArrowLeft {}
+            },
+            "Calendar Arrow Left",
+        ),
+        (
+            rsx! {
+                CalendarArrowRight {}
+            },
+            "Calendar Arrow Right",
         ),
         (
             rsx! {
@@ -2189,6 +2213,18 @@ pub fn IconsC1() -> Element {
         ),
         (
             rsx! {
+                ChartQuadrant {}
+            },
+            "Chart Quadrant",
+        ),
+        (
+            rsx! {
+                ChartRadar {}
+            },
+            "Chart Radar",
+        ),
+        (
+            rsx! {
                 ChartScatter {}
             },
             "Chart Scatter",
@@ -2283,6 +2319,21 @@ pub fn IconsC1() -> Element {
             },
             "Chevron Last",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC2() -> Element {
+    let icons = [
         (
             rsx! {
                 ChevronLeft {}
@@ -2307,21 +2358,6 @@ pub fn IconsC1() -> Element {
             },
             "Chevrons Down",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC2() -> Element {
-    let icons = [
         (
             rsx! {
                 ChevronsDownUp {}
@@ -2898,6 +2934,21 @@ pub fn IconsC2() -> Element {
             },
             "Clock Alert",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 ClockArrowDown {}
@@ -2922,21 +2973,6 @@ pub fn IconsC2() -> Element {
             },
             "Clock Arrow Up",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 ClockCheck {}
@@ -3500,6 +3536,12 @@ pub fn IconsD1() -> Element {
         ),
         (
             rsx! {
+                DatabaseCog {}
+            },
+            "Database Cog",
+        ),
+        (
+            rsx! {
                 DatabaseMinus {}
             },
             "Database Minus",
@@ -3836,6 +3878,18 @@ pub fn IconsE1() -> Element {
                 EarOff {}
             },
             "Ear Off",
+        ),
+        (
+            rsx! {
+                Earbuds {}
+            },
+            "Earbuds",
+        ),
+        (
+            rsx! {
+                EarbudsOff {}
+            },
+            "Earbuds Off",
         ),
         (
             rsx! {
@@ -5984,6 +6038,12 @@ pub fn IconsL1() -> Element {
                 LaptopMinimalCheck {}
             },
             "Laptop Minimal Check",
+        ),
+        (
+            rsx! {
+                Laser {}
+            },
+            "Laser",
         ),
         (
             rsx! {
@@ -9443,6 +9503,12 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SirenOff {}
+            },
+            "Siren Off",
+        ),
+        (
+            rsx! {
                 SixteenthNotes {}
             },
             "Sixteenth Notes",
@@ -9815,6 +9881,30 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
+                SquareChevronsDown {}
+            },
+            "Square Chevrons Down",
+        ),
+        (
+            rsx! {
+                SquareChevronsLeft {}
+            },
+            "Square Chevrons Left",
+        ),
+        (
+            rsx! {
+                SquareChevronsRight {}
+            },
+            "Square Chevrons Right",
+        ),
+        (
+            rsx! {
+                SquareChevronsUp {}
+            },
+            "Square Chevrons Up",
+        ),
+        (
+            rsx! {
                 SquareCode {}
             },
             "Square Code",
@@ -9975,6 +10065,21 @@ pub fn IconsS2() -> Element {
             },
             "Square Pause",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS3() -> Element {
+    let icons = [
         (
             rsx! {
                 SquarePen {}
@@ -10005,21 +10110,6 @@ pub fn IconsS2() -> Element {
             },
             "Square Play",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS3() -> Element {
-    let icons = [
         (
             rsx! {
                 SquarePlus {}
@@ -11342,6 +11432,12 @@ pub fn IconsU1() -> Element {
                 UserRoundSearch {}
             },
             "User Round Search",
+        ),
+        (
+            rsx! {
+                UserRoundShield {}
+            },
+            "User Round Shield",
         ),
         (
             rsx! {

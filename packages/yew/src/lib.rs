@@ -125,7 +125,9 @@ mod apple;
 #[cfg(any(feature = "files", feature = "mail"))]
 mod archive;
 #[cfg(any(feature = "files", feature = "mail"))]
-mod archive_restore;
+mod archive_arrow_down;
+#[cfg(any(feature = "files", feature = "mail"))]
+mod archive_arrow_up;
 #[cfg(any(feature = "files", feature = "mail"))]
 mod archive_x;
 #[cfg(feature = "home")]
@@ -550,6 +552,8 @@ mod bow_arrow;
 mod r#box;
 #[cfg(any(feature = "shapes", feature = "gaming", feature = "development"))]
 mod boxes;
+#[cfg(feature = "development")]
+mod boxes_linked;
 #[cfg(any(feature = "development", feature = "files"))]
 mod braces;
 #[cfg(any(feature = "development", feature = "files"))]
@@ -626,6 +630,10 @@ mod calendar;
 mod calendar_1;
 #[cfg(feature = "time")]
 mod calendar_arrow_down;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+mod calendar_arrow_left;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+mod calendar_arrow_right;
 #[cfg(feature = "time")]
 mod calendar_arrow_up;
 #[cfg(feature = "time")]
@@ -806,6 +814,10 @@ mod chart_no_axes_combined;
 mod chart_no_axes_gantt;
 #[cfg(any(feature = "charts", feature = "files"))]
 mod chart_pie;
+#[cfg(any(feature = "charts", feature = "science", feature = "math"))]
+mod chart_quadrant;
+#[cfg(any(feature = "charts", feature = "shapes", feature = "science"))]
+mod chart_radar;
 #[cfg(feature = "charts")]
 mod chart_scatter;
 #[cfg(feature = "charts")]
@@ -1268,6 +1280,8 @@ mod database_arrow_up;
 mod database_backup;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database_check;
+#[cfg(feature = "development")]
+mod database_cog;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database_minus;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -1415,6 +1429,10 @@ mod dumbbell;
 mod ear;
 #[cfg(any(feature = "medical", feature = "accessibility"))]
 mod ear_off;
+#[cfg(feature = "devices")]
+mod earbuds;
+#[cfg(feature = "devices")]
+mod earbuds_off;
 #[cfg(feature = "navigation")]
 mod earth;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
@@ -2320,6 +2338,8 @@ mod laptop;
 mod laptop_minimal;
 #[cfg(any(feature = "devices", feature = "notifications"))]
 mod laptop_minimal_check;
+#[cfg(feature = "tools")]
+mod laser;
 #[cfg(any(feature = "design", feature = "cursors"))]
 mod lasso;
 #[cfg(any(feature = "arrows", feature = "design", feature = "cursors"))]
@@ -3786,6 +3806,8 @@ mod signpost;
 mod signpost_big;
 #[cfg(feature = "medical")]
 mod siren;
+#[cfg(feature = "medical")]
+mod siren_off;
 #[cfg(any(feature = "multimedia", feature = "files"))]
 mod sixteenth_notes;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
@@ -3961,6 +3983,19 @@ mod square_chevron_left;
 mod square_chevron_right;
 #[cfg(any(feature = "arrows", feature = "navigation", feature = "math"))]
 mod square_chevron_up;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+mod square_chevrons_down;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+mod square_chevrons_left;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+mod square_chevrons_right;
+#[cfg(any(
+    feature = "arrows",
+    feature = "navigation",
+    feature = "multimedia",
+    feature = "layout"
+))]
+mod square_chevrons_up;
 #[cfg(any(feature = "text", feature = "development"))]
 mod square_code;
 #[cfg(any(feature = "text", feature = "design"))]
@@ -4584,6 +4619,8 @@ mod user_round_pen;
 mod user_round_plus;
 #[cfg(any(feature = "account", feature = "social"))]
 mod user_round_search;
+#[cfg(any(feature = "account", feature = "security"))]
+mod user_round_shield;
 #[cfg(feature = "account")]
 mod user_round_star;
 #[cfg(feature = "account")]
@@ -5011,7 +5048,9 @@ pub use apple::*;
 #[cfg(any(feature = "files", feature = "mail"))]
 pub use archive::*;
 #[cfg(any(feature = "files", feature = "mail"))]
-pub use archive_restore::*;
+pub use archive_arrow_down::*;
+#[cfg(any(feature = "files", feature = "mail"))]
+pub use archive_arrow_up::*;
 #[cfg(any(feature = "files", feature = "mail"))]
 pub use archive_x::*;
 #[cfg(feature = "home")]
@@ -5436,6 +5475,8 @@ pub use bow_arrow::*;
 pub use r#box::*;
 #[cfg(any(feature = "shapes", feature = "gaming", feature = "development"))]
 pub use boxes::*;
+#[cfg(feature = "development")]
+pub use boxes_linked::*;
 #[cfg(any(feature = "development", feature = "files"))]
 pub use braces::*;
 #[cfg(any(feature = "development", feature = "files"))]
@@ -5512,6 +5553,10 @@ pub use calendar::*;
 pub use calendar_1::*;
 #[cfg(feature = "time")]
 pub use calendar_arrow_down::*;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+pub use calendar_arrow_left::*;
+#[cfg(any(feature = "time", feature = "arrows", feature = "navigation"))]
+pub use calendar_arrow_right::*;
 #[cfg(feature = "time")]
 pub use calendar_arrow_up::*;
 #[cfg(feature = "time")]
@@ -5692,6 +5737,10 @@ pub use chart_no_axes_combined::*;
 pub use chart_no_axes_gantt::*;
 #[cfg(any(feature = "charts", feature = "files"))]
 pub use chart_pie::*;
+#[cfg(any(feature = "charts", feature = "science", feature = "math"))]
+pub use chart_quadrant::*;
+#[cfg(any(feature = "charts", feature = "shapes", feature = "science"))]
+pub use chart_radar::*;
 #[cfg(feature = "charts")]
 pub use chart_scatter::*;
 #[cfg(feature = "charts")]
@@ -6154,6 +6203,8 @@ pub use database_arrow_up::*;
 pub use database_backup::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database_check::*;
+#[cfg(feature = "development")]
+pub use database_cog::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database_minus::*;
 #[cfg(any(feature = "devices", feature = "development"))]
@@ -6301,6 +6352,10 @@ pub use dumbbell::*;
 pub use ear::*;
 #[cfg(any(feature = "medical", feature = "accessibility"))]
 pub use ear_off::*;
+#[cfg(feature = "devices")]
+pub use earbuds::*;
+#[cfg(feature = "devices")]
+pub use earbuds_off::*;
 #[cfg(feature = "navigation")]
 pub use earth::*;
 #[cfg(any(feature = "security", feature = "development", feature = "devices"))]
@@ -7206,6 +7261,8 @@ pub use laptop::*;
 pub use laptop_minimal::*;
 #[cfg(any(feature = "devices", feature = "notifications"))]
 pub use laptop_minimal_check::*;
+#[cfg(feature = "tools")]
+pub use laser::*;
 #[cfg(any(feature = "design", feature = "cursors"))]
 pub use lasso::*;
 #[cfg(any(feature = "arrows", feature = "design", feature = "cursors"))]
@@ -8672,6 +8729,8 @@ pub use signpost::*;
 pub use signpost_big::*;
 #[cfg(feature = "medical")]
 pub use siren::*;
+#[cfg(feature = "medical")]
+pub use siren_off::*;
 #[cfg(any(feature = "multimedia", feature = "files"))]
 pub use sixteenth_notes::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
@@ -8847,6 +8906,19 @@ pub use square_chevron_left::*;
 pub use square_chevron_right::*;
 #[cfg(any(feature = "arrows", feature = "navigation", feature = "math"))]
 pub use square_chevron_up::*;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+pub use square_chevrons_down::*;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+pub use square_chevrons_left::*;
+#[cfg(any(feature = "arrows", feature = "navigation", feature = "multimedia"))]
+pub use square_chevrons_right::*;
+#[cfg(any(
+    feature = "arrows",
+    feature = "navigation",
+    feature = "multimedia",
+    feature = "layout"
+))]
+pub use square_chevrons_up::*;
 #[cfg(any(feature = "text", feature = "development"))]
 pub use square_code::*;
 #[cfg(any(feature = "text", feature = "design"))]
@@ -9470,6 +9542,8 @@ pub use user_round_pen::*;
 pub use user_round_plus::*;
 #[cfg(any(feature = "account", feature = "social"))]
 pub use user_round_search::*;
+#[cfg(any(feature = "account", feature = "security"))]
+pub use user_round_shield::*;
 #[cfg(feature = "account")]
 pub use user_round_star::*;
 #[cfg(feature = "account")]
