@@ -34,9 +34,9 @@ pub fn SwissFranc(props: SwissFrancProps) -> Element {
             "stroke-width": "{stroke_width}",
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
-            path { "d": "M10 21V3h8" }
+            path { "d": "M10 10h7" }
+            path { "d": "M10 20V5a1 1 0 011-1h7" }
             path { "d": "M6 16h9" }
-            path { "d": "M10 9.5h7" }
         }
     }
 }
