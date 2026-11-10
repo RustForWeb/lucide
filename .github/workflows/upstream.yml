@@ -32,7 +32,7 @@ jobs:
                   target: wasm32-unknown-unknown
 
             - name: Install Cargo Binary Install
-              uses: cargo-bins/cargo-binstall@8a2045612414e945291083f820cd50b4d8fc2218 # v1.26.0
+              uses: cargo-bins/cargo-binstall@851112458b5f28a29e5bc14a690c3f283d9dcc6f # v1.26.2
 
             - name: Install crates
               run: cargo binstall --force -y dioxus-cli@0.7.9 leptosfmt@0.1.33 yew-fmt@0.6.3
