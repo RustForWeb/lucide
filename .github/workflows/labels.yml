@@ -10,4 +10,4 @@ permissions:
 jobs:
     labels:
         name: Labels
-        uses: RustForWeb/.github/.github/workflows/labels.yml@8a0ce4333fd134d177f151cba9b768f041f43601 # v1.0.3
+        uses: RustForWeb/.github/.github/workflows/labels.yml@a274809f14e1aa38ab083978e1e3f2d2a8e58d29 # v1.0.4
