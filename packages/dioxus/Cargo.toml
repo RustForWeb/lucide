@@ -30,6 +30,7 @@ food-beverage = []
 gaming = []
 home = []
 layout = []
+letters-digits = []
 mail = []
 math = []
 medical = []
@@ -73,6 +74,7 @@ all-icons = [
     "gaming",
     "home",
     "layout",
+    "letters-digits",
     "mail",
     "math",
     "medical",

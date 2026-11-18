@@ -4,11 +4,11 @@
 //!
 //! See [the Rust Lucide book](https://lucide.rustforweb.org/frameworks/dioxus.html) for more documenation.
 
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 mod a_arrow_down;
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 mod a_arrow_up;
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 mod a_large_small;
 #[cfg(any(feature = "accessibility", feature = "medical"))]
 mod accessibility;
@@ -21,6 +21,7 @@ mod accessibility;
 ))]
 mod activity;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "multimedia",
     feature = "accessibility",
     feature = "notifications"
@@ -160,11 +161,26 @@ mod arrow_big_up;
 mod arrow_big_up_dash;
 #[cfg(feature = "arrows")]
 mod arrow_down;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_down_0_1;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_down_1_0;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_down_a_z;
 #[cfg(any(feature = "arrows", feature = "files"))]
 mod arrow_down_from_line;
@@ -182,7 +198,12 @@ mod arrow_down_to_line;
 mod arrow_down_up;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_down_wide_narrow;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_down_z_a;
 #[cfg(feature = "arrows")]
 mod arrow_left;
@@ -202,11 +223,26 @@ mod arrow_right_left;
 mod arrow_right_to_line;
 #[cfg(feature = "arrows")]
 mod arrow_up;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_up_0_1;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_up_1_0;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_up_a_z;
 #[cfg(feature = "arrows")]
 mod arrow_up_down;
@@ -224,7 +260,12 @@ mod arrow_up_right;
 mod arrow_up_to_line;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 mod arrow_up_wide_narrow;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 mod arrow_up_z_a;
 #[cfg(any(feature = "arrows", feature = "transportation", feature = "mail"))]
 mod arrows_up_from_line;
@@ -232,7 +273,7 @@ mod arrows_up_from_line;
 mod asterisk;
 #[cfg(any(feature = "shapes", feature = "math"))]
 mod astroid;
-#[cfg(any(feature = "text", feature = "account"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "account"))]
 mod at_sign;
 #[cfg(feature = "science")]
 mod atom;
@@ -274,7 +315,12 @@ mod badge_dollar_sign;
 mod badge_euro;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_indian_rupee;
-#[cfg(any(feature = "account", feature = "accessibility", feature = "social"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "account",
+    feature = "accessibility",
+    feature = "social"
+))]
 mod badge_info;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 mod badge_japanese_yen;
@@ -329,7 +375,7 @@ mod banknote_x;
 mod barcode;
 #[cfg(any(feature = "food-beverage", feature = "navigation"))]
 mod barrel;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod baseline;
 #[cfg(feature = "travel")]
 mod bath;
@@ -397,7 +443,7 @@ mod between_vertical_start;
 mod biceps_flexed;
 #[cfg(feature = "transportation")]
 mod bike;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 mod binary;
 #[cfg(any(
     feature = "navigation",
@@ -442,8 +488,6 @@ mod bluetooth_connected;
 mod bluetooth_off;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod bluetooth_searching;
-#[cfg(feature = "text")]
-mod bold;
 #[cfg(any(feature = "tools", feature = "home"))]
 mod bolt;
 #[cfg(any(feature = "security", feature = "tools"))]
@@ -454,7 +498,7 @@ mod bone;
 mod bone_fracture;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 mod book;
-#[cfg(any(feature = "text", feature = "gaming"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "gaming"))]
 mod book_a;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 mod book_alert;
@@ -502,7 +546,12 @@ mod book_plus;
 mod book_search;
 #[cfg(any(feature = "text", feature = "gaming"))]
 mod book_text;
-#[cfg(any(feature = "text", feature = "design", feature = "gaming"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "design",
+    feature = "gaming"
+))]
 mod book_type;
 #[cfg(feature = "development")]
 mod book_up;
@@ -624,7 +673,7 @@ mod cake_slice;
 mod calculator;
 #[cfg(feature = "time")]
 mod calendar;
-#[cfg(feature = "time")]
+#[cfg(any(feature = "letters-digits", feature = "time"))]
 mod calendar_1;
 #[cfg(feature = "time")]
 mod calendar_arrow_down;
@@ -727,11 +776,11 @@ mod carrot;
 mod carton;
 #[cfg(feature = "food-beverage")]
 mod carton_off;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 mod case_lower;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod case_sensitive;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 mod case_upper;
 #[cfg(any(
     feature = "connectivity",
@@ -949,14 +998,68 @@ mod circle_fading_play;
 mod circle_fading_plus;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 mod circle_gauge;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_a;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_b;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_c;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_d;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_e;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_f;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_g;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_h;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_i;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_j;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_k;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_l;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_m;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_n;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_o;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_p;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+mod circle_letter_p_off;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_q;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_r;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_s;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_t;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_u;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_v;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_w;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_x;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_y;
+#[cfg(feature = "letters-digits")]
+mod circle_letter_z;
 #[cfg(feature = "math")]
 mod circle_minus;
 #[cfg(feature = "shapes")]
 mod circle_off;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod circle_parking;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod circle_parking_off;
 #[cfg(feature = "multimedia")]
 mod circle_pause;
 #[cfg(any(
@@ -1031,7 +1134,7 @@ mod clipboard_pen;
 mod clipboard_pen_line;
 #[cfg(any(feature = "text", feature = "medical"))]
 mod clipboard_plus;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod clipboard_type;
 #[cfg(feature = "text")]
 mod clipboard_x;
@@ -1077,7 +1180,11 @@ mod clock_check;
 mod clock_fading;
 #[cfg(feature = "time")]
 mod clock_plus;
-#[cfg(any(feature = "accessibility", feature = "multimedia"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "accessibility",
+    feature = "multimedia"
+))]
 mod closed_caption;
 #[cfg(feature = "weather")]
 mod cloud;
@@ -1198,9 +1305,9 @@ mod copy_plus;
 mod copy_slash;
 #[cfg(any(feature = "notifications", feature = "math"))]
 mod copy_x;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod copyleft;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod copyright;
 #[cfg(feature = "arrows")]
 mod corner_down_left;
@@ -1220,9 +1327,13 @@ mod corner_up_left;
 mod corner_up_right;
 #[cfg(feature = "devices")]
 mod cpu;
-#[cfg(any(feature = "devices", feature = "development"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "devices",
+    feature = "development"
+))]
 mod cpu_ai;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod creative_commons;
 #[cfg(any(feature = "account", feature = "finance"))]
 mod credit_card;
@@ -1291,6 +1402,7 @@ mod database_x;
 #[cfg(any(feature = "devices", feature = "development"))]
 mod database_zap;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "design",
     feature = "text",
     feature = "arrows",
@@ -1298,6 +1410,7 @@ mod database_zap;
 ))]
 mod decimals_arrow_left;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "design",
     feature = "text",
     feature = "arrows",
@@ -1602,7 +1715,7 @@ mod file_code_corner;
 mod file_cog;
 #[cfg(any(feature = "files", feature = "development"))]
 mod file_diff;
-#[cfg(any(feature = "files", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "development"))]
 mod file_digit;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod file_down;
@@ -1660,9 +1773,9 @@ mod file_symlink;
 mod file_terminal;
 #[cfg(any(feature = "files", feature = "text"))]
 mod file_text;
-#[cfg(any(feature = "files", feature = "text"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "text"))]
 mod file_type;
-#[cfg(any(feature = "files", feature = "text"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "text"))]
 mod file_type_corner;
 #[cfg(any(feature = "files", feature = "arrows"))]
 mod file_up;
@@ -2074,23 +2187,25 @@ mod hash;
 mod hat_glasses;
 #[cfg(feature = "weather")]
 mod haze;
-#[cfg(any(feature = "devices", feature = "multimedia"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "devices",
+    feature = "multimedia"
+))]
 mod hd;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
 mod hdmi_port;
-#[cfg(feature = "text")]
-mod heading;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_1;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_2;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_3;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_4;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_5;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod heading_6;
 #[cfg(any(
     feature = "multimedia",
@@ -2265,11 +2380,15 @@ mod inbox;
 mod indian_rupee;
 #[cfg(feature = "multimedia")]
 mod infinity;
-#[cfg(any(feature = "accessibility", feature = "notifications"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "accessibility",
+    feature = "notifications"
+))]
 mod info;
 #[cfg(feature = "tools")]
 mod inspection_panel;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod italic;
 #[cfg(any(feature = "arrows", feature = "design"))]
 mod iteration_ccw;
@@ -2300,6 +2419,7 @@ mod keyboard_music;
 #[cfg(any(feature = "devices", feature = "text", feature = "development"))]
 mod keyboard_off;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "development",
     feature = "math",
     feature = "science",
@@ -2328,7 +2448,7 @@ mod lamp_wall_up;
 mod land_plot;
 #[cfg(any(feature = "finance", feature = "navigation", feature = "buildings"))]
 mod landmark;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod languages;
 #[cfg(feature = "devices")]
 mod laptop;
@@ -2399,9 +2519,61 @@ mod lens;
 mod lens_concave;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 mod lens_convex;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+mod letter_a;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+mod letter_b;
+#[cfg(feature = "letters-digits")]
+mod letter_c;
+#[cfg(feature = "letters-digits")]
+mod letter_d;
+#[cfg(feature = "letters-digits")]
+mod letter_e;
+#[cfg(feature = "letters-digits")]
+mod letter_f;
+#[cfg(feature = "letters-digits")]
+mod letter_g;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+mod letter_h;
+#[cfg(feature = "letters-digits")]
+mod letter_i;
+#[cfg(feature = "letters-digits")]
+mod letter_j;
+#[cfg(feature = "letters-digits")]
+mod letter_k;
+#[cfg(feature = "letters-digits")]
+mod letter_l;
+#[cfg(feature = "letters-digits")]
+mod letter_m;
+#[cfg(feature = "letters-digits")]
+mod letter_n;
+#[cfg(feature = "letters-digits")]
+mod letter_o;
+#[cfg(feature = "letters-digits")]
+mod letter_p;
+#[cfg(feature = "letters-digits")]
+mod letter_q;
+#[cfg(feature = "letters-digits")]
+mod letter_r;
+#[cfg(feature = "letters-digits")]
+mod letter_s;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod letter_spacing;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+mod letter_t;
+#[cfg(feature = "letters-digits")]
+mod letter_u;
+#[cfg(feature = "letters-digits")]
+mod letter_v;
+#[cfg(feature = "letters-digits")]
+mod letter_w;
+#[cfg(feature = "letters-digits")]
+mod letter_x;
+#[cfg(feature = "letters-digits")]
+mod letter_y;
+#[cfg(feature = "letters-digits")]
+mod letter_z;
+#[cfg(feature = "letters-digits")]
 mod letters;
 #[cfg(any(
     feature = "text",
@@ -2421,7 +2593,7 @@ mod library;
 mod library_big;
 #[cfg(any(feature = "accessibility", feature = "medical"))]
 mod life_buoy;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod ligature;
 #[cfg(feature = "photography")]
 mod lightbulb;
@@ -2437,7 +2609,7 @@ mod line_dot_left_horizontal;
 mod line_dot_right_horizontal;
 #[cfg(any(feature = "development", feature = "navigation"))]
 mod line_dot_top_vertical;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod line_height;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 mod line_squiggle;
@@ -2477,7 +2649,7 @@ mod list_indent_increase;
 mod list_minus;
 #[cfg(feature = "multimedia")]
 mod list_music;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod list_ordered;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 mod list_plus;
@@ -2875,7 +3047,7 @@ mod navigation_2;
 mod navigation_2_off;
 #[cfg(feature = "navigation")]
 mod navigation_off;
-#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod nepali_rupee;
 #[cfg(feature = "development")]
 mod network;
@@ -2904,6 +3076,8 @@ mod notebook_text;
 mod notepad_text;
 #[cfg(any(feature = "text", feature = "social"))]
 mod notepad_text_dashed;
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "math"))]
+mod numbers;
 #[cfg(feature = "food-beverage")]
 mod nut;
 #[cfg(feature = "food-beverage")]
@@ -2919,6 +3093,7 @@ mod octagon_pause;
 #[cfg(any(feature = "math", feature = "notifications"))]
 mod octagon_x;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "math",
     feature = "development",
     feature = "text",
@@ -3095,7 +3270,7 @@ mod percent;
 mod perfume_bottle;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 mod person_standing;
-#[cfg(any(feature = "math", feature = "science"))]
+#[cfg(any(feature = "letters-digits", feature = "math", feature = "science"))]
 mod phi;
 #[cfg(feature = "finance")]
 mod philippine_peso;
@@ -3147,7 +3322,7 @@ mod phone_off;
     feature = "communication"
 ))]
 mod phone_outgoing;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 mod pi;
 #[cfg(any(feature = "multimedia", feature = "devices"))]
 mod piano;
@@ -3212,7 +3387,7 @@ mod plug_zap;
 mod plus;
 #[cfg(feature = "tools")]
 mod pocket_knife;
-#[cfg(any(feature = "sports", feature = "gaming"))]
+#[cfg(any(feature = "letters-digits", feature = "sports", feature = "gaming"))]
 mod podium;
 #[cfg(feature = "cursors")]
 mod pointer;
@@ -3301,23 +3476,23 @@ mod rat;
 mod ratio;
 #[cfg(any(feature = "finance", feature = "travel"))]
 mod receipt;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_cent;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_euro;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_indian_rupee;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_japanese_yen;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_pound_sterling;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_russian_ruble;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_swiss_franc;
 #[cfg(any(feature = "finance", feature = "travel"))]
 mod receipt_text;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 mod receipt_turkish_lira;
 #[cfg(any(feature = "development", feature = "text"))]
 mod rectangle_circle;
@@ -3354,11 +3529,11 @@ mod refresh_cw_off;
 mod refrigerator;
 #[cfg(any(feature = "text", feature = "development"))]
 mod regex;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod remove_formatting;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 mod repeat;
-#[cfg(feature = "multimedia")]
+#[cfg(any(feature = "letters-digits", feature = "multimedia"))]
 mod repeat_1;
 #[cfg(any(feature = "arrows", feature = "social", feature = "multimedia"))]
 mod repeat_2;
@@ -3774,7 +3949,12 @@ mod shrink;
 mod shrub;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 mod shuffle;
-#[cfg(any(feature = "text", feature = "math", feature = "science"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "math",
+    feature = "science"
+))]
 mod sigma;
 #[cfg(feature = "connectivity")]
 mod signal;
@@ -3864,9 +4044,9 @@ mod sparkles;
 mod speaker;
 #[cfg(any(feature = "accessibility", feature = "communication"))]
 mod speech;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 mod spell_check;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 mod spell_check_2;
 #[cfg(feature = "design")]
 mod spline;
@@ -4031,10 +4211,83 @@ mod square_dot;
 mod square_equal;
 #[cfg(any(feature = "notifications", feature = "shapes"))]
 mod square_exclamation_point;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 mod square_function;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
 mod square_kanban;
+#[cfg(any(
+    feature = "charts",
+    feature = "development",
+    feature = "design",
+    feature = "layout"
+))]
+mod square_kanban_plus;
+#[cfg(feature = "letters-digits")]
+mod square_letter_a;
+#[cfg(feature = "letters-digits")]
+mod square_letter_b;
+#[cfg(feature = "letters-digits")]
+mod square_letter_c;
+#[cfg(feature = "letters-digits")]
+mod square_letter_d;
+#[cfg(feature = "letters-digits")]
+mod square_letter_e;
+#[cfg(feature = "letters-digits")]
+mod square_letter_f;
+#[cfg(feature = "letters-digits")]
+mod square_letter_g;
+#[cfg(feature = "letters-digits")]
+mod square_letter_h;
+#[cfg(feature = "letters-digits")]
+mod square_letter_i;
+#[cfg(feature = "letters-digits")]
+mod square_letter_j;
+#[cfg(feature = "letters-digits")]
+mod square_letter_k;
+#[cfg(feature = "letters-digits")]
+mod square_letter_l;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+mod square_letter_m;
+#[cfg(feature = "letters-digits")]
+mod square_letter_n;
+#[cfg(feature = "letters-digits")]
+mod square_letter_o;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+mod square_letter_p;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+mod square_letter_p_off;
+#[cfg(feature = "letters-digits")]
+mod square_letter_q;
+#[cfg(feature = "letters-digits")]
+mod square_letter_r;
+#[cfg(feature = "letters-digits")]
+mod square_letter_s;
+#[cfg(feature = "letters-digits")]
+mod square_letter_t;
+#[cfg(feature = "letters-digits")]
+mod square_letter_u;
+#[cfg(feature = "letters-digits")]
+mod square_letter_v;
+#[cfg(feature = "letters-digits")]
+mod square_letter_w;
+#[cfg(feature = "letters-digits")]
+mod square_letter_x;
+#[cfg(feature = "letters-digits")]
+mod square_letter_y;
+#[cfg(feature = "letters-digits")]
+mod square_letter_z;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -4043,8 +4296,6 @@ mod square_kanban;
     feature = "development"
 ))]
 mod square_library;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod square_m;
 #[cfg(feature = "layout")]
 mod square_menu;
 #[cfg(any(
@@ -4064,10 +4315,6 @@ mod square_minus;
 mod square_mouse_pointer;
 #[cfg(any(feature = "shapes", feature = "design"))]
 mod square_off;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod square_parking;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-mod square_parking_off;
 #[cfg(feature = "multimedia")]
 mod square_pause;
 #[cfg(feature = "text")]
@@ -4079,7 +4326,7 @@ mod square_pen;
     feature = "math"
 ))]
 mod square_percent;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 mod square_pi;
 #[cfg(feature = "text")]
 mod square_pilcrow;
@@ -4106,7 +4353,7 @@ mod square_round_corner;
     feature = "development"
 ))]
 mod square_scissors;
-#[cfg(any(feature = "text", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "math"))]
 mod square_sigma;
 #[cfg(any(feature = "development", feature = "math"))]
 mod square_slash;
@@ -4239,9 +4486,9 @@ mod store;
 mod stretch_horizontal;
 #[cfg(feature = "layout")]
 mod stretch_vertical;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod strikethrough;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod subscript;
 #[cfg(feature = "text")]
 mod summary;
@@ -4264,7 +4511,7 @@ mod sun_snow;
 mod sunrise;
 #[cfg(any(feature = "arrows", feature = "weather"))]
 mod sunset;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod superscript;
 #[cfg(any(feature = "design", feature = "home", feature = "photography"))]
 mod swatch_book;
@@ -4364,7 +4611,7 @@ mod text_align_start;
 mod text_cursor;
 #[cfg(any(feature = "text", feature = "layout"))]
 mod text_cursor_input;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod text_initial;
 #[cfg(feature = "text")]
 mod text_quote;
@@ -4538,15 +4785,15 @@ mod tv;
 mod tv_minimal;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 mod tv_minimal_play;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod r#type;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod type_outline;
 #[cfg(feature = "weather")]
 mod umbrella;
 #[cfg(feature = "weather")]
 mod umbrella_off;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod underline;
 #[cfg(any(feature = "text", feature = "arrows"))]
 mod undo;
@@ -4652,7 +4899,7 @@ mod utensils_crossed;
 mod utility_pole;
 #[cfg(feature = "transportation")]
 mod van;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 mod variable;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 mod vault;
@@ -4823,7 +5070,7 @@ mod wheat;
 mod wheat_off;
 #[cfg(any(feature = "sports", feature = "notifications"))]
 mod whistle;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 mod whole_word;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 mod wifi;
@@ -4868,7 +5115,11 @@ mod wrench;
 mod wrench_off;
 #[cfg(any(feature = "notifications", feature = "math"))]
 mod x;
-#[cfg(any(feature = "notifications", feature = "math"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "notifications",
+    feature = "math"
+))]
 mod x_line_top;
 #[cfg(any(
     feature = "connectivity",
@@ -4927,11 +5178,11 @@ mod zoom_in;
 ))]
 mod zoom_out;
 
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 pub use a_arrow_down::*;
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 pub use a_arrow_up::*;
-#[cfg(any(feature = "text", feature = "design"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "design"))]
 pub use a_large_small::*;
 #[cfg(any(feature = "accessibility", feature = "medical"))]
 pub use accessibility::*;
@@ -4944,6 +5195,7 @@ pub use accessibility::*;
 ))]
 pub use activity::*;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "multimedia",
     feature = "accessibility",
     feature = "notifications"
@@ -5083,11 +5335,26 @@ pub use arrow_big_up::*;
 pub use arrow_big_up_dash::*;
 #[cfg(feature = "arrows")]
 pub use arrow_down::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_down_0_1::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_down_1_0::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_down_a_z::*;
 #[cfg(any(feature = "arrows", feature = "files"))]
 pub use arrow_down_from_line::*;
@@ -5105,7 +5372,12 @@ pub use arrow_down_to_line::*;
 pub use arrow_down_up::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_down_wide_narrow::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_down_z_a::*;
 #[cfg(feature = "arrows")]
 pub use arrow_left::*;
@@ -5125,11 +5397,26 @@ pub use arrow_right_left::*;
 pub use arrow_right_to_line::*;
 #[cfg(feature = "arrows")]
 pub use arrow_up::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_up_0_1::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_up_1_0::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_up_a_z::*;
 #[cfg(feature = "arrows")]
 pub use arrow_up_down::*;
@@ -5147,7 +5434,12 @@ pub use arrow_up_right::*;
 pub use arrow_up_to_line::*;
 #[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
 pub use arrow_up_wide_narrow::*;
-#[cfg(any(feature = "text", feature = "layout", feature = "arrows"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "layout",
+    feature = "arrows"
+))]
 pub use arrow_up_z_a::*;
 #[cfg(any(feature = "arrows", feature = "transportation", feature = "mail"))]
 pub use arrows_up_from_line::*;
@@ -5155,7 +5447,7 @@ pub use arrows_up_from_line::*;
 pub use asterisk::*;
 #[cfg(any(feature = "shapes", feature = "math"))]
 pub use astroid::*;
-#[cfg(any(feature = "text", feature = "account"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "account"))]
 pub use at_sign::*;
 #[cfg(feature = "science")]
 pub use atom::*;
@@ -5197,7 +5489,12 @@ pub use badge_dollar_sign::*;
 pub use badge_euro::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_indian_rupee::*;
-#[cfg(any(feature = "account", feature = "accessibility", feature = "social"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "account",
+    feature = "accessibility",
+    feature = "social"
+))]
 pub use badge_info::*;
 #[cfg(any(feature = "shopping", feature = "finance"))]
 pub use badge_japanese_yen::*;
@@ -5252,7 +5549,7 @@ pub use banknote_x::*;
 pub use barcode::*;
 #[cfg(any(feature = "food-beverage", feature = "navigation"))]
 pub use barrel::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use baseline::*;
 #[cfg(feature = "travel")]
 pub use bath::*;
@@ -5320,7 +5617,7 @@ pub use between_vertical_start::*;
 pub use biceps_flexed::*;
 #[cfg(feature = "transportation")]
 pub use bike::*;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 pub use binary::*;
 #[cfg(any(
     feature = "navigation",
@@ -5365,8 +5662,6 @@ pub use bluetooth_connected::*;
 pub use bluetooth_off::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use bluetooth_searching::*;
-#[cfg(feature = "text")]
-pub use bold::*;
 #[cfg(any(feature = "tools", feature = "home"))]
 pub use bolt::*;
 #[cfg(any(feature = "security", feature = "tools"))]
@@ -5377,7 +5672,7 @@ pub use bone::*;
 pub use bone_fracture::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 pub use book::*;
-#[cfg(any(feature = "text", feature = "gaming"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "gaming"))]
 pub use book_a::*;
 #[cfg(any(feature = "text", feature = "development", feature = "gaming"))]
 pub use book_alert::*;
@@ -5425,7 +5720,12 @@ pub use book_plus::*;
 pub use book_search::*;
 #[cfg(any(feature = "text", feature = "gaming"))]
 pub use book_text::*;
-#[cfg(any(feature = "text", feature = "design", feature = "gaming"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "design",
+    feature = "gaming"
+))]
 pub use book_type::*;
 #[cfg(feature = "development")]
 pub use book_up::*;
@@ -5547,7 +5847,7 @@ pub use cake_slice::*;
 pub use calculator::*;
 #[cfg(feature = "time")]
 pub use calendar::*;
-#[cfg(feature = "time")]
+#[cfg(any(feature = "letters-digits", feature = "time"))]
 pub use calendar_1::*;
 #[cfg(feature = "time")]
 pub use calendar_arrow_down::*;
@@ -5650,11 +5950,11 @@ pub use carrot::*;
 pub use carton::*;
 #[cfg(feature = "food-beverage")]
 pub use carton_off::*;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 pub use case_lower::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use case_sensitive::*;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 pub use case_upper::*;
 #[cfg(any(
     feature = "connectivity",
@@ -5872,14 +6172,68 @@ pub use circle_fading_play::*;
 pub use circle_fading_plus::*;
 #[cfg(any(feature = "transportation", feature = "sports", feature = "science"))]
 pub use circle_gauge::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_a::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_b::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_c::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_d::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_e::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_f::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_g::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_h::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_i::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_j::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_k::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_l::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_m::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_n::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_o::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_p::*;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+pub use circle_letter_p_off::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_q::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_r::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_s::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_t::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_u::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_v::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_w::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_x::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_y::*;
+#[cfg(feature = "letters-digits")]
+pub use circle_letter_z::*;
 #[cfg(feature = "math")]
 pub use circle_minus::*;
 #[cfg(feature = "shapes")]
 pub use circle_off::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use circle_parking::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use circle_parking_off::*;
 #[cfg(feature = "multimedia")]
 pub use circle_pause::*;
 #[cfg(any(
@@ -5954,7 +6308,7 @@ pub use clipboard_pen::*;
 pub use clipboard_pen_line::*;
 #[cfg(any(feature = "text", feature = "medical"))]
 pub use clipboard_plus::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use clipboard_type::*;
 #[cfg(feature = "text")]
 pub use clipboard_x::*;
@@ -6000,7 +6354,11 @@ pub use clock_check::*;
 pub use clock_fading::*;
 #[cfg(feature = "time")]
 pub use clock_plus::*;
-#[cfg(any(feature = "accessibility", feature = "multimedia"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "accessibility",
+    feature = "multimedia"
+))]
 pub use closed_caption::*;
 #[cfg(feature = "weather")]
 pub use cloud::*;
@@ -6121,9 +6479,9 @@ pub use copy_plus::*;
 pub use copy_slash::*;
 #[cfg(any(feature = "notifications", feature = "math"))]
 pub use copy_x::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use copyleft::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use copyright::*;
 #[cfg(feature = "arrows")]
 pub use corner_down_left::*;
@@ -6143,9 +6501,13 @@ pub use corner_up_left::*;
 pub use corner_up_right::*;
 #[cfg(feature = "devices")]
 pub use cpu::*;
-#[cfg(any(feature = "devices", feature = "development"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "devices",
+    feature = "development"
+))]
 pub use cpu_ai::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use creative_commons::*;
 #[cfg(any(feature = "account", feature = "finance"))]
 pub use credit_card::*;
@@ -6214,6 +6576,7 @@ pub use database_x::*;
 #[cfg(any(feature = "devices", feature = "development"))]
 pub use database_zap::*;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "design",
     feature = "text",
     feature = "arrows",
@@ -6221,6 +6584,7 @@ pub use database_zap::*;
 ))]
 pub use decimals_arrow_left::*;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "design",
     feature = "text",
     feature = "arrows",
@@ -6525,7 +6889,7 @@ pub use file_code_corner::*;
 pub use file_cog::*;
 #[cfg(any(feature = "files", feature = "development"))]
 pub use file_diff::*;
-#[cfg(any(feature = "files", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "development"))]
 pub use file_digit::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use file_down::*;
@@ -6583,9 +6947,9 @@ pub use file_symlink::*;
 pub use file_terminal::*;
 #[cfg(any(feature = "files", feature = "text"))]
 pub use file_text::*;
-#[cfg(any(feature = "files", feature = "text"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "text"))]
 pub use file_type::*;
-#[cfg(any(feature = "files", feature = "text"))]
+#[cfg(any(feature = "letters-digits", feature = "files", feature = "text"))]
 pub use file_type_corner::*;
 #[cfg(any(feature = "files", feature = "arrows"))]
 pub use file_up::*;
@@ -6997,23 +7361,25 @@ pub use hash::*;
 pub use hat_glasses::*;
 #[cfg(feature = "weather")]
 pub use haze::*;
-#[cfg(any(feature = "devices", feature = "multimedia"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "devices",
+    feature = "multimedia"
+))]
 pub use hd::*;
 #[cfg(any(feature = "devices", feature = "multimedia", feature = "gaming"))]
 pub use hdmi_port::*;
-#[cfg(feature = "text")]
-pub use heading::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_1::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_2::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_3::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_4::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_5::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use heading_6::*;
 #[cfg(any(
     feature = "multimedia",
@@ -7188,11 +7554,15 @@ pub use inbox::*;
 pub use indian_rupee::*;
 #[cfg(feature = "multimedia")]
 pub use infinity::*;
-#[cfg(any(feature = "accessibility", feature = "notifications"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "accessibility",
+    feature = "notifications"
+))]
 pub use info::*;
 #[cfg(feature = "tools")]
 pub use inspection_panel::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use italic::*;
 #[cfg(any(feature = "arrows", feature = "design"))]
 pub use iteration_ccw::*;
@@ -7223,6 +7593,7 @@ pub use keyboard_music::*;
 #[cfg(any(feature = "devices", feature = "text", feature = "development"))]
 pub use keyboard_off::*;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "development",
     feature = "math",
     feature = "science",
@@ -7251,7 +7622,7 @@ pub use lamp_wall_up::*;
 pub use land_plot::*;
 #[cfg(any(feature = "finance", feature = "navigation", feature = "buildings"))]
 pub use landmark::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use languages::*;
 #[cfg(feature = "devices")]
 pub use laptop::*;
@@ -7322,9 +7693,61 @@ pub use lens::*;
 pub use lens_concave::*;
 #[cfg(any(feature = "science", feature = "tools", feature = "shapes"))]
 pub use lens_convex::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+pub use letter_a::*;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+pub use letter_b::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_c::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_d::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_e::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_f::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_g::*;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+pub use letter_h::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_i::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_j::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_k::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_l::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_m::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_n::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_o::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_p::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_q::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_r::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_s::*;
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use letter_spacing::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
+pub use letter_t::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_u::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_v::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_w::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_x::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_y::*;
+#[cfg(feature = "letters-digits")]
+pub use letter_z::*;
+#[cfg(feature = "letters-digits")]
 pub use letters::*;
 #[cfg(any(
     feature = "text",
@@ -7344,7 +7767,7 @@ pub use library::*;
 pub use library_big::*;
 #[cfg(any(feature = "accessibility", feature = "medical"))]
 pub use life_buoy::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use ligature::*;
 #[cfg(feature = "photography")]
 pub use lightbulb::*;
@@ -7360,7 +7783,7 @@ pub use line_dot_left_horizontal::*;
 pub use line_dot_right_horizontal::*;
 #[cfg(any(feature = "development", feature = "navigation"))]
 pub use line_dot_top_vertical::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use line_height::*;
 #[cfg(any(feature = "shapes", feature = "math", feature = "design"))]
 pub use line_squiggle::*;
@@ -7400,7 +7823,7 @@ pub use list_indent_increase::*;
 pub use list_minus::*;
 #[cfg(feature = "multimedia")]
 pub use list_music::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use list_ordered::*;
 #[cfg(any(feature = "multimedia", feature = "text"))]
 pub use list_plus::*;
@@ -7798,7 +8221,7 @@ pub use navigation_2::*;
 pub use navigation_2_off::*;
 #[cfg(feature = "navigation")]
 pub use navigation_off::*;
-#[cfg(any(feature = "finance", feature = "shopping", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use nepali_rupee::*;
 #[cfg(feature = "development")]
 pub use network::*;
@@ -7827,6 +8250,8 @@ pub use notebook_text::*;
 pub use notepad_text::*;
 #[cfg(any(feature = "text", feature = "social"))]
 pub use notepad_text_dashed::*;
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "math"))]
+pub use numbers::*;
 #[cfg(feature = "food-beverage")]
 pub use nut::*;
 #[cfg(feature = "food-beverage")]
@@ -7842,6 +8267,7 @@ pub use octagon_pause::*;
 #[cfg(any(feature = "math", feature = "notifications"))]
 pub use octagon_x::*;
 #[cfg(any(
+    feature = "letters-digits",
     feature = "math",
     feature = "development",
     feature = "text",
@@ -8018,7 +8444,7 @@ pub use percent::*;
 pub use perfume_bottle::*;
 #[cfg(any(feature = "accessibility", feature = "people"))]
 pub use person_standing::*;
-#[cfg(any(feature = "math", feature = "science"))]
+#[cfg(any(feature = "letters-digits", feature = "math", feature = "science"))]
 pub use phi::*;
 #[cfg(feature = "finance")]
 pub use philippine_peso::*;
@@ -8070,7 +8496,7 @@ pub use phone_off::*;
     feature = "communication"
 ))]
 pub use phone_outgoing::*;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 pub use pi::*;
 #[cfg(any(feature = "multimedia", feature = "devices"))]
 pub use piano::*;
@@ -8135,7 +8561,7 @@ pub use plug_zap::*;
 pub use plus::*;
 #[cfg(feature = "tools")]
 pub use pocket_knife::*;
-#[cfg(any(feature = "sports", feature = "gaming"))]
+#[cfg(any(feature = "letters-digits", feature = "sports", feature = "gaming"))]
 pub use podium::*;
 #[cfg(feature = "cursors")]
 pub use pointer::*;
@@ -8224,23 +8650,23 @@ pub use rat::*;
 pub use ratio::*;
 #[cfg(any(feature = "finance", feature = "travel"))]
 pub use receipt::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_cent::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_euro::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_indian_rupee::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_japanese_yen::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_pound_sterling::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_russian_ruble::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_swiss_franc::*;
 #[cfg(any(feature = "finance", feature = "travel"))]
 pub use receipt_text::*;
-#[cfg(any(feature = "finance", feature = "travel"))]
+#[cfg(feature = "finance")]
 pub use receipt_turkish_lira::*;
 #[cfg(any(feature = "development", feature = "text"))]
 pub use rectangle_circle::*;
@@ -8277,11 +8703,11 @@ pub use refresh_cw_off::*;
 pub use refrigerator::*;
 #[cfg(any(feature = "text", feature = "development"))]
 pub use regex::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use remove_formatting::*;
 #[cfg(any(feature = "arrows", feature = "multimedia"))]
 pub use repeat::*;
-#[cfg(feature = "multimedia")]
+#[cfg(any(feature = "letters-digits", feature = "multimedia"))]
 pub use repeat_1::*;
 #[cfg(any(feature = "arrows", feature = "social", feature = "multimedia"))]
 pub use repeat_2::*;
@@ -8697,7 +9123,12 @@ pub use shrink::*;
 pub use shrub::*;
 #[cfg(any(feature = "multimedia", feature = "arrows"))]
 pub use shuffle::*;
-#[cfg(any(feature = "text", feature = "math", feature = "science"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "text",
+    feature = "math",
+    feature = "science"
+))]
 pub use sigma::*;
 #[cfg(feature = "connectivity")]
 pub use signal::*;
@@ -8787,9 +9218,9 @@ pub use sparkles::*;
 pub use speaker::*;
 #[cfg(any(feature = "accessibility", feature = "communication"))]
 pub use speech::*;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 pub use spell_check::*;
-#[cfg(any(feature = "text", feature = "development"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "development"))]
 pub use spell_check_2::*;
 #[cfg(feature = "design")]
 pub use spline::*;
@@ -8954,10 +9385,83 @@ pub use square_dot::*;
 pub use square_equal::*;
 #[cfg(any(feature = "notifications", feature = "shapes"))]
 pub use square_exclamation_point::*;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 pub use square_function::*;
 #[cfg(any(feature = "charts", feature = "development", feature = "design"))]
 pub use square_kanban::*;
+#[cfg(any(
+    feature = "charts",
+    feature = "development",
+    feature = "design",
+    feature = "layout"
+))]
+pub use square_kanban_plus::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_a::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_b::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_c::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_d::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_e::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_f::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_g::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_h::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_i::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_j::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_k::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_l::*;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+pub use square_letter_m::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_n::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_o::*;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+pub use square_letter_p::*;
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "transportation",
+    feature = "navigation"
+))]
+pub use square_letter_p_off::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_q::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_r::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_s::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_t::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_u::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_v::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_w::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_x::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_y::*;
+#[cfg(feature = "letters-digits")]
+pub use square_letter_z::*;
 #[cfg(any(
     feature = "text",
     feature = "photography",
@@ -8966,8 +9470,6 @@ pub use square_kanban::*;
     feature = "development"
 ))]
 pub use square_library::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use square_m::*;
 #[cfg(feature = "layout")]
 pub use square_menu::*;
 #[cfg(any(
@@ -8987,10 +9489,6 @@ pub use square_minus::*;
 pub use square_mouse_pointer::*;
 #[cfg(any(feature = "shapes", feature = "design"))]
 pub use square_off::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use square_parking::*;
-#[cfg(any(feature = "transportation", feature = "navigation"))]
-pub use square_parking_off::*;
 #[cfg(feature = "multimedia")]
 pub use square_pause::*;
 #[cfg(feature = "text")]
@@ -9002,7 +9500,7 @@ pub use square_pen::*;
     feature = "math"
 ))]
 pub use square_percent::*;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 pub use square_pi::*;
 #[cfg(feature = "text")]
 pub use square_pilcrow::*;
@@ -9029,7 +9527,7 @@ pub use square_round_corner::*;
     feature = "development"
 ))]
 pub use square_scissors::*;
-#[cfg(any(feature = "text", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "text", feature = "math"))]
 pub use square_sigma::*;
 #[cfg(any(feature = "development", feature = "math"))]
 pub use square_slash::*;
@@ -9162,9 +9660,9 @@ pub use store::*;
 pub use stretch_horizontal::*;
 #[cfg(feature = "layout")]
 pub use stretch_vertical::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use strikethrough::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use subscript::*;
 #[cfg(feature = "text")]
 pub use summary::*;
@@ -9187,7 +9685,7 @@ pub use sun_snow::*;
 pub use sunrise::*;
 #[cfg(any(feature = "arrows", feature = "weather"))]
 pub use sunset::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use superscript::*;
 #[cfg(any(feature = "design", feature = "home", feature = "photography"))]
 pub use swatch_book::*;
@@ -9287,7 +9785,7 @@ pub use text_align_start::*;
 pub use text_cursor::*;
 #[cfg(any(feature = "text", feature = "layout"))]
 pub use text_cursor_input::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use text_initial::*;
 #[cfg(feature = "text")]
 pub use text_quote::*;
@@ -9461,15 +9959,15 @@ pub use tv::*;
 pub use tv_minimal::*;
 #[cfg(any(feature = "devices", feature = "multimedia"))]
 pub use tv_minimal_play::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use r#type::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use type_outline::*;
 #[cfg(feature = "weather")]
 pub use umbrella::*;
 #[cfg(feature = "weather")]
 pub use umbrella_off::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use underline::*;
 #[cfg(any(feature = "text", feature = "arrows"))]
 pub use undo::*;
@@ -9575,7 +10073,7 @@ pub use utensils_crossed::*;
 pub use utility_pole::*;
 #[cfg(feature = "transportation")]
 pub use van::*;
-#[cfg(any(feature = "development", feature = "math"))]
+#[cfg(any(feature = "letters-digits", feature = "development", feature = "math"))]
 pub use variable::*;
 #[cfg(any(feature = "security", feature = "travel", feature = "home"))]
 pub use vault::*;
@@ -9746,7 +10244,7 @@ pub use wheat::*;
 pub use wheat_off::*;
 #[cfg(any(feature = "sports", feature = "notifications"))]
 pub use whistle::*;
-#[cfg(feature = "text")]
+#[cfg(any(feature = "letters-digits", feature = "text"))]
 pub use whole_word::*;
 #[cfg(any(feature = "connectivity", feature = "devices"))]
 pub use wifi::*;
@@ -9791,7 +10289,11 @@ pub use wrench::*;
 pub use wrench_off::*;
 #[cfg(any(feature = "notifications", feature = "math"))]
 pub use x::*;
-#[cfg(any(feature = "notifications", feature = "math"))]
+#[cfg(any(
+    feature = "letters-digits",
+    feature = "notifications",
+    feature = "math"
+))]
 pub use x_line_top::*;
 #[cfg(any(
     feature = "connectivity",

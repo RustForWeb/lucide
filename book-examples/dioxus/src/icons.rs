@@ -11,6 +11,7 @@ pub fn Icons() -> Element {
             IconsC1 {}
             IconsC2 {}
             IconsC3 {}
+            IconsC4 {}
             IconsD1 {}
             IconsE1 {}
             IconsF1 {}
@@ -21,6 +22,7 @@ pub fn Icons() -> Element {
             IconsJ1 {}
             IconsK1 {}
             IconsL1 {}
+            IconsL2 {}
             IconsM1 {}
             IconsM2 {}
             IconsN1 {}
@@ -1235,12 +1237,6 @@ pub fn IconsB1() -> Element {
         ),
         (
             rsx! {
-                Bold {}
-            },
-            "Bold",
-        ),
-        (
-            rsx! {
                 Bolt {}
             },
             "Bolt",
@@ -1335,6 +1331,12 @@ pub fn IconsB1() -> Element {
             },
             "Book Image",
         ),
+        (
+            rsx! {
+                BookKey {}
+            },
+            "Book Key",
+        ),
     ];
     rsx! {
         for (icon, name) in icons {
@@ -1350,12 +1352,6 @@ pub fn IconsB1() -> Element {
 #[component]
 pub fn IconsB2() -> Element {
     let icons = [
-        (
-            rsx! {
-                BookKey {}
-            },
-            "Book Key",
-        ),
         (
             rsx! {
                 BookLock {}
@@ -2624,6 +2620,168 @@ pub fn IconsC2() -> Element {
         ),
         (
             rsx! {
+                CircleLetterA {}
+            },
+            "Circle Letter A",
+        ),
+        (
+            rsx! {
+                CircleLetterB {}
+            },
+            "Circle Letter B",
+        ),
+        (
+            rsx! {
+                CircleLetterC {}
+            },
+            "Circle Letter C",
+        ),
+        (
+            rsx! {
+                CircleLetterD {}
+            },
+            "Circle Letter D",
+        ),
+        (
+            rsx! {
+                CircleLetterE {}
+            },
+            "Circle Letter E",
+        ),
+        (
+            rsx! {
+                CircleLetterF {}
+            },
+            "Circle Letter F",
+        ),
+        (
+            rsx! {
+                CircleLetterG {}
+            },
+            "Circle Letter G",
+        ),
+        (
+            rsx! {
+                CircleLetterH {}
+            },
+            "Circle Letter H",
+        ),
+        (
+            rsx! {
+                CircleLetterI {}
+            },
+            "Circle Letter I",
+        ),
+        (
+            rsx! {
+                CircleLetterJ {}
+            },
+            "Circle Letter J",
+        ),
+        (
+            rsx! {
+                CircleLetterK {}
+            },
+            "Circle Letter K",
+        ),
+        (
+            rsx! {
+                CircleLetterL {}
+            },
+            "Circle Letter L",
+        ),
+        (
+            rsx! {
+                CircleLetterM {}
+            },
+            "Circle Letter M",
+        ),
+        (
+            rsx! {
+                CircleLetterN {}
+            },
+            "Circle Letter N",
+        ),
+        (
+            rsx! {
+                CircleLetterO {}
+            },
+            "Circle Letter O",
+        ),
+        (
+            rsx! {
+                CircleLetterP {}
+            },
+            "Circle Letter P",
+        ),
+        (
+            rsx! {
+                CircleLetterPOff {}
+            },
+            "Circle Letter P Off",
+        ),
+        (
+            rsx! {
+                CircleLetterQ {}
+            },
+            "Circle Letter Q",
+        ),
+        (
+            rsx! {
+                CircleLetterR {}
+            },
+            "Circle Letter R",
+        ),
+        (
+            rsx! {
+                CircleLetterS {}
+            },
+            "Circle Letter S",
+        ),
+        (
+            rsx! {
+                CircleLetterT {}
+            },
+            "Circle Letter T",
+        ),
+        (
+            rsx! {
+                CircleLetterU {}
+            },
+            "Circle Letter U",
+        ),
+        (
+            rsx! {
+                CircleLetterV {}
+            },
+            "Circle Letter V",
+        ),
+        (
+            rsx! {
+                CircleLetterW {}
+            },
+            "Circle Letter W",
+        ),
+        (
+            rsx! {
+                CircleLetterX {}
+            },
+            "Circle Letter X",
+        ),
+        (
+            rsx! {
+                CircleLetterY {}
+            },
+            "Circle Letter Y",
+        ),
+        (
+            rsx! {
+                CircleLetterZ {}
+            },
+            "Circle Letter Z",
+        ),
+        (
+            rsx! {
                 CircleMinus {}
             },
             "Circle Minus",
@@ -2633,18 +2791,6 @@ pub fn IconsC2() -> Element {
                 CircleOff {}
             },
             "Circle Off",
-        ),
-        (
-            rsx! {
-                CircleParking {}
-            },
-            "Circle Parking",
-        ),
-        (
-            rsx! {
-                CircleParkingOff {}
-            },
-            "Circle Parking Off",
         ),
         (
             rsx! {
@@ -2784,6 +2930,21 @@ pub fn IconsC2() -> Element {
             },
             "Clipboard",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC3() -> Element {
+    let icons = [
         (
             rsx! {
                 ClipboardCheck {}
@@ -2934,21 +3095,6 @@ pub fn IconsC2() -> Element {
             },
             "Clock Alert",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsC3() -> Element {
-    let icons = [
         (
             rsx! {
                 ClockArrowDown {}
@@ -3399,6 +3545,21 @@ pub fn IconsC3() -> Element {
             },
             "Credit Card Check",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsC4() -> Element {
+    let icons = [
         (
             rsx! {
                 CreditCardMinus {}
@@ -5471,12 +5632,6 @@ pub fn IconsH1() -> Element {
         ),
         (
             rsx! {
-                Heading {}
-            },
-            "Heading",
-        ),
-        (
-            rsx! {
                 Heading1 {}
             },
             "Heading 1",
@@ -6203,9 +6358,165 @@ pub fn IconsL1() -> Element {
         ),
         (
             rsx! {
+                LetterA {}
+            },
+            "Letter A",
+        ),
+        (
+            rsx! {
+                LetterB {}
+            },
+            "Letter B",
+        ),
+        (
+            rsx! {
+                LetterC {}
+            },
+            "Letter C",
+        ),
+        (
+            rsx! {
+                LetterD {}
+            },
+            "Letter D",
+        ),
+        (
+            rsx! {
+                LetterE {}
+            },
+            "Letter E",
+        ),
+        (
+            rsx! {
+                LetterF {}
+            },
+            "Letter F",
+        ),
+        (
+            rsx! {
+                LetterG {}
+            },
+            "Letter G",
+        ),
+        (
+            rsx! {
+                LetterH {}
+            },
+            "Letter H",
+        ),
+        (
+            rsx! {
+                LetterI {}
+            },
+            "Letter I",
+        ),
+        (
+            rsx! {
+                LetterJ {}
+            },
+            "Letter J",
+        ),
+        (
+            rsx! {
+                LetterK {}
+            },
+            "Letter K",
+        ),
+        (
+            rsx! {
+                LetterL {}
+            },
+            "Letter L",
+        ),
+        (
+            rsx! {
+                LetterM {}
+            },
+            "Letter M",
+        ),
+        (
+            rsx! {
+                LetterN {}
+            },
+            "Letter N",
+        ),
+        (
+            rsx! {
+                LetterO {}
+            },
+            "Letter O",
+        ),
+        (
+            rsx! {
+                LetterP {}
+            },
+            "Letter P",
+        ),
+        (
+            rsx! {
+                LetterQ {}
+            },
+            "Letter Q",
+        ),
+        (
+            rsx! {
+                LetterR {}
+            },
+            "Letter R",
+        ),
+        (
+            rsx! {
+                LetterS {}
+            },
+            "Letter S",
+        ),
+        (
+            rsx! {
                 LetterSpacing {}
             },
             "Letter Spacing",
+        ),
+        (
+            rsx! {
+                LetterT {}
+            },
+            "Letter T",
+        ),
+        (
+            rsx! {
+                LetterU {}
+            },
+            "Letter U",
+        ),
+        (
+            rsx! {
+                LetterV {}
+            },
+            "Letter V",
+        ),
+        (
+            rsx! {
+                LetterW {}
+            },
+            "Letter W",
+        ),
+        (
+            rsx! {
+                LetterX {}
+            },
+            "Letter X",
+        ),
+        (
+            rsx! {
+                LetterY {}
+            },
+            "Letter Y",
+        ),
+        (
+            rsx! {
+                LetterZ {}
+            },
+            "Letter Z",
         ),
         (
             rsx! {
@@ -6405,6 +6716,21 @@ pub fn IconsL1() -> Element {
             },
             "List Ordered",
         ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsL2() -> Element {
+    let icons = [
         (
             rsx! {
                 ListPlus {}
@@ -7547,6 +7873,12 @@ pub fn IconsN1() -> Element {
                 NotepadTextDashed {}
             },
             "Notepad Text Dashed",
+        ),
+        (
+            rsx! {
+                Numbers {}
+            },
+            "Numbers",
         ),
         (
             rsx! {
@@ -10013,15 +10345,192 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
-                SquareLibrary {}
+                SquareKanbanPlus {}
             },
-            "Square Library",
+            "Square Kanban Plus",
         ),
         (
             rsx! {
-                SquareM {}
+                SquareLetterA {}
             },
-            "Square M",
+            "Square Letter A",
+        ),
+        (
+            rsx! {
+                SquareLetterB {}
+            },
+            "Square Letter B",
+        ),
+        (
+            rsx! {
+                SquareLetterC {}
+            },
+            "Square Letter C",
+        ),
+        (
+            rsx! {
+                SquareLetterD {}
+            },
+            "Square Letter D",
+        ),
+        (
+            rsx! {
+                SquareLetterE {}
+            },
+            "Square Letter E",
+        ),
+        (
+            rsx! {
+                SquareLetterF {}
+            },
+            "Square Letter F",
+        ),
+        (
+            rsx! {
+                SquareLetterG {}
+            },
+            "Square Letter G",
+        ),
+        (
+            rsx! {
+                SquareLetterH {}
+            },
+            "Square Letter H",
+        ),
+    ];
+    rsx! {
+        for (icon, name) in icons {
+            div {
+                key: "{name}",
+                class: "flex flex-wrap items-center gap-4 text-sm",
+                {icon}
+                span { {name} }
+            }
+        }
+    }
+}
+#[component]
+pub fn IconsS3() -> Element {
+    let icons = [
+        (
+            rsx! {
+                SquareLetterI {}
+            },
+            "Square Letter I",
+        ),
+        (
+            rsx! {
+                SquareLetterJ {}
+            },
+            "Square Letter J",
+        ),
+        (
+            rsx! {
+                SquareLetterK {}
+            },
+            "Square Letter K",
+        ),
+        (
+            rsx! {
+                SquareLetterL {}
+            },
+            "Square Letter L",
+        ),
+        (
+            rsx! {
+                SquareLetterM {}
+            },
+            "Square Letter M",
+        ),
+        (
+            rsx! {
+                SquareLetterN {}
+            },
+            "Square Letter N",
+        ),
+        (
+            rsx! {
+                SquareLetterO {}
+            },
+            "Square Letter O",
+        ),
+        (
+            rsx! {
+                SquareLetterP {}
+            },
+            "Square Letter P",
+        ),
+        (
+            rsx! {
+                SquareLetterPOff {}
+            },
+            "Square Letter P Off",
+        ),
+        (
+            rsx! {
+                SquareLetterQ {}
+            },
+            "Square Letter Q",
+        ),
+        (
+            rsx! {
+                SquareLetterR {}
+            },
+            "Square Letter R",
+        ),
+        (
+            rsx! {
+                SquareLetterS {}
+            },
+            "Square Letter S",
+        ),
+        (
+            rsx! {
+                SquareLetterT {}
+            },
+            "Square Letter T",
+        ),
+        (
+            rsx! {
+                SquareLetterU {}
+            },
+            "Square Letter U",
+        ),
+        (
+            rsx! {
+                SquareLetterV {}
+            },
+            "Square Letter V",
+        ),
+        (
+            rsx! {
+                SquareLetterW {}
+            },
+            "Square Letter W",
+        ),
+        (
+            rsx! {
+                SquareLetterX {}
+            },
+            "Square Letter X",
+        ),
+        (
+            rsx! {
+                SquareLetterY {}
+            },
+            "Square Letter Y",
+        ),
+        (
+            rsx! {
+                SquareLetterZ {}
+            },
+            "Square Letter Z",
+        ),
+        (
+            rsx! {
+                SquareLibrary {}
+            },
+            "Square Library",
         ),
         (
             rsx! {
@@ -10049,37 +10558,10 @@ pub fn IconsS2() -> Element {
         ),
         (
             rsx! {
-                SquareParking {}
-            },
-            "Square Parking",
-        ),
-        (
-            rsx! {
-                SquareParkingOff {}
-            },
-            "Square Parking Off",
-        ),
-        (
-            rsx! {
                 SquarePause {}
             },
             "Square Pause",
         ),
-    ];
-    rsx! {
-        for (icon, name) in icons {
-            div {
-                key: "{name}",
-                class: "flex flex-wrap items-center gap-4 text-sm",
-                {icon}
-                span { {name} }
-            }
-        }
-    }
-}
-#[component]
-pub fn IconsS3() -> Element {
-    let icons = [
         (
             rsx! {
                 SquarePen {}

@@ -11,6 +11,7 @@ pub fn Icons() -> impl IntoView {
             <IconsC1 />
             <IconsC2 />
             <IconsC3 />
+            <IconsC4 />
             <IconsD1 />
             <IconsE1 />
             <IconsF1 />
@@ -21,6 +22,7 @@ pub fn Icons() -> impl IntoView {
             <IconsJ1 />
             <IconsK1 />
             <IconsL1 />
+            <IconsL2 />
             <IconsM1 />
             <IconsM2 />
             <IconsN1 />
@@ -316,7 +318,6 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BluetoothConnected /> }.into_any(), "Bluetooth Connected"),
                 (view! { <BluetoothOff /> }.into_any(), "Bluetooth Off"),
                 (view! { <BluetoothSearching /> }.into_any(), "Bluetooth Searching"),
-                (view! { <Bold /> }.into_any(), "Bold"),
                 (view! { <Bolt /> }.into_any(), "Bolt"),
                 (view! { <Bomb /> }.into_any(), "Bomb"),
                 (view! { <Bone /> }.into_any(), "Bone"),
@@ -333,6 +334,7 @@ pub fn IconsB1() -> impl IntoView {
                 (view! { <BookHeadphones /> }.into_any(), "Book Headphones"),
                 (view! { <BookHeart /> }.into_any(), "Book Heart"),
                 (view! { <BookImage /> }.into_any(), "Book Image"),
+                (view! { <BookKey /> }.into_any(), "Book Key"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -350,7 +352,6 @@ pub fn IconsB2() -> impl IntoView {
     view! {
         <For
             each=move || [
-                (view! { <BookKey /> }.into_any(), "Book Key"),
                 (view! { <BookLock /> }.into_any(), "Book Lock"),
                 (view! { <BookMinus /> }.into_any(), "Book Minus"),
                 (view! { <BookOpen /> }.into_any(), "Book Open"),
@@ -600,10 +601,35 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <CircleFadingPlay /> }.into_any(), "Circle Fading Play"),
                 (view! { <CircleFadingPlus /> }.into_any(), "Circle Fading Plus"),
                 (view! { <CircleGauge /> }.into_any(), "Circle Gauge"),
+                (view! { <CircleLetterA /> }.into_any(), "Circle Letter A"),
+                (view! { <CircleLetterB /> }.into_any(), "Circle Letter B"),
+                (view! { <CircleLetterC /> }.into_any(), "Circle Letter C"),
+                (view! { <CircleLetterD /> }.into_any(), "Circle Letter D"),
+                (view! { <CircleLetterE /> }.into_any(), "Circle Letter E"),
+                (view! { <CircleLetterF /> }.into_any(), "Circle Letter F"),
+                (view! { <CircleLetterG /> }.into_any(), "Circle Letter G"),
+                (view! { <CircleLetterH /> }.into_any(), "Circle Letter H"),
+                (view! { <CircleLetterI /> }.into_any(), "Circle Letter I"),
+                (view! { <CircleLetterJ /> }.into_any(), "Circle Letter J"),
+                (view! { <CircleLetterK /> }.into_any(), "Circle Letter K"),
+                (view! { <CircleLetterL /> }.into_any(), "Circle Letter L"),
+                (view! { <CircleLetterM /> }.into_any(), "Circle Letter M"),
+                (view! { <CircleLetterN /> }.into_any(), "Circle Letter N"),
+                (view! { <CircleLetterO /> }.into_any(), "Circle Letter O"),
+                (view! { <CircleLetterP /> }.into_any(), "Circle Letter P"),
+                (view! { <CircleLetterPOff /> }.into_any(), "Circle Letter P Off"),
+                (view! { <CircleLetterQ /> }.into_any(), "Circle Letter Q"),
+                (view! { <CircleLetterR /> }.into_any(), "Circle Letter R"),
+                (view! { <CircleLetterS /> }.into_any(), "Circle Letter S"),
+                (view! { <CircleLetterT /> }.into_any(), "Circle Letter T"),
+                (view! { <CircleLetterU /> }.into_any(), "Circle Letter U"),
+                (view! { <CircleLetterV /> }.into_any(), "Circle Letter V"),
+                (view! { <CircleLetterW /> }.into_any(), "Circle Letter W"),
+                (view! { <CircleLetterX /> }.into_any(), "Circle Letter X"),
+                (view! { <CircleLetterY /> }.into_any(), "Circle Letter Y"),
+                (view! { <CircleLetterZ /> }.into_any(), "Circle Letter Z"),
                 (view! { <CircleMinus /> }.into_any(), "Circle Minus"),
                 (view! { <CircleOff /> }.into_any(), "Circle Off"),
-                (view! { <CircleParking /> }.into_any(), "Circle Parking"),
-                (view! { <CircleParkingOff /> }.into_any(), "Circle Parking Off"),
                 (view! { <CirclePause /> }.into_any(), "Circle Pause"),
                 (view! { <CirclePercent /> }.into_any(), "Circle Percent"),
                 (view! { <CirclePile /> }.into_any(), "Circle Pile"),
@@ -627,6 +653,23 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <ClefBass /> }.into_any(), "Clef Bass"),
                 (view! { <ClefTreble /> }.into_any(), "Clef Treble"),
                 (view! { <Clipboard /> }.into_any(), "Clipboard"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsC3() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <ClipboardCheck /> }.into_any(), "Clipboard Check"),
                 (view! { <ClipboardClock /> }.into_any(), "Clipboard Clock"),
                 (view! { <ClipboardCopy /> }.into_any(), "Clipboard Copy"),
@@ -652,23 +695,6 @@ pub fn IconsC2() -> impl IntoView {
                 (view! { <Clock8 /> }.into_any(), "Clock 8"),
                 (view! { <Clock9 /> }.into_any(), "Clock 9"),
                 (view! { <ClockAlert /> }.into_any(), "Clock Alert"),
-            ]
-            key=|icon| icon.1
-            children=move |(icon, name)| {
-                view! {
-                    <div class="flex flex-wrap items-center gap-4 text-sm">
-                        {icon} <span>{name}</span>
-                    </div>
-                }
-            }
-        />
-    }
-}
-#[component]
-pub fn IconsC3() -> impl IntoView {
-    view! {
-        <For
-            each=move || [
                 (view! { <ClockArrowDown /> }.into_any(), "Clock Arrow Down"),
                 (view! { <ClockArrowLeft /> }.into_any(), "Clock Arrow Left"),
                 (view! { <ClockArrowRight /> }.into_any(), "Clock Arrow Right"),
@@ -744,6 +770,23 @@ pub fn IconsC3() -> impl IntoView {
                 (view! { <CreativeCommons /> }.into_any(), "Creative Commons"),
                 (view! { <CreditCard /> }.into_any(), "Credit Card"),
                 (view! { <CreditCardCheck /> }.into_any(), "Credit Card Check"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsC4() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <CreditCardMinus /> }.into_any(), "Credit Card Minus"),
                 (view! { <CreditCardPlus /> }.into_any(), "Credit Card Plus"),
                 (view! { <CreditCardReader /> }.into_any(), "Credit Card Reader"),
@@ -1182,7 +1225,6 @@ pub fn IconsH1() -> impl IntoView {
                 (view! { <Haze /> }.into_any(), "Haze"),
                 (view! { <Hd /> }.into_any(), "Hd"),
                 (view! { <HdmiPort /> }.into_any(), "Hdmi Port"),
-                (view! { <Heading /> }.into_any(), "Heading"),
                 (view! { <Heading1 /> }.into_any(), "Heading 1"),
                 (view! { <Heading2 /> }.into_any(), "Heading 2"),
                 (view! { <Heading3 /> }.into_any(), "Heading 3"),
@@ -1362,7 +1404,33 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <Lens /> }.into_any(), "Lens"),
                 (view! { <LensConcave /> }.into_any(), "Lens Concave"),
                 (view! { <LensConvex /> }.into_any(), "Lens Convex"),
+                (view! { <LetterA /> }.into_any(), "Letter A"),
+                (view! { <LetterB /> }.into_any(), "Letter B"),
+                (view! { <LetterC /> }.into_any(), "Letter C"),
+                (view! { <LetterD /> }.into_any(), "Letter D"),
+                (view! { <LetterE /> }.into_any(), "Letter E"),
+                (view! { <LetterF /> }.into_any(), "Letter F"),
+                (view! { <LetterG /> }.into_any(), "Letter G"),
+                (view! { <LetterH /> }.into_any(), "Letter H"),
+                (view! { <LetterI /> }.into_any(), "Letter I"),
+                (view! { <LetterJ /> }.into_any(), "Letter J"),
+                (view! { <LetterK /> }.into_any(), "Letter K"),
+                (view! { <LetterL /> }.into_any(), "Letter L"),
+                (view! { <LetterM /> }.into_any(), "Letter M"),
+                (view! { <LetterN /> }.into_any(), "Letter N"),
+                (view! { <LetterO /> }.into_any(), "Letter O"),
+                (view! { <LetterP /> }.into_any(), "Letter P"),
+                (view! { <LetterQ /> }.into_any(), "Letter Q"),
+                (view! { <LetterR /> }.into_any(), "Letter R"),
+                (view! { <LetterS /> }.into_any(), "Letter S"),
                 (view! { <LetterSpacing /> }.into_any(), "Letter Spacing"),
+                (view! { <LetterT /> }.into_any(), "Letter T"),
+                (view! { <LetterU /> }.into_any(), "Letter U"),
+                (view! { <LetterV /> }.into_any(), "Letter V"),
+                (view! { <LetterW /> }.into_any(), "Letter W"),
+                (view! { <LetterX /> }.into_any(), "Letter X"),
+                (view! { <LetterY /> }.into_any(), "Letter Y"),
+                (view! { <LetterZ /> }.into_any(), "Letter Z"),
                 (view! { <Letters /> }.into_any(), "Letters"),
                 (view! { <Library /> }.into_any(), "Library"),
                 (view! { <LibraryBig /> }.into_any(), "Library Big"),
@@ -1396,6 +1464,23 @@ pub fn IconsL1() -> impl IntoView {
                 (view! { <ListMinus /> }.into_any(), "List Minus"),
                 (view! { <ListMusic /> }.into_any(), "List Music"),
                 (view! { <ListOrdered /> }.into_any(), "List Ordered"),
+            ]
+            key=|icon| icon.1
+            children=move |(icon, name)| {
+                view! {
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        {icon} <span>{name}</span>
+                    </div>
+                }
+            }
+        />
+    }
+}
+#[component]
+pub fn IconsL2() -> impl IntoView {
+    view! {
+        <For
+            each=move || [
                 (view! { <ListPlus /> }.into_any(), "List Plus"),
                 (view! { <ListRestart /> }.into_any(), "List Restart"),
                 (view! { <ListSortAscending /> }.into_any(), "List Sort Ascending"),
@@ -1633,6 +1718,7 @@ pub fn IconsN1() -> impl IntoView {
                 (view! { <NotebookText /> }.into_any(), "Notebook Text"),
                 (view! { <NotepadText /> }.into_any(), "Notepad Text"),
                 (view! { <NotepadTextDashed /> }.into_any(), "Notepad Text Dashed"),
+                (view! { <Numbers /> }.into_any(), "Numbers"),
                 (view! { <Nut /> }.into_any(), "Nut"),
                 (view! { <NutOff /> }.into_any(), "Nut Off"),
             ]
@@ -2154,15 +2240,15 @@ pub fn IconsS2() -> impl IntoView {
                 (view! { <SquareExclamationPoint /> }.into_any(), "Square Exclamation Point"),
                 (view! { <SquareFunction /> }.into_any(), "Square Function"),
                 (view! { <SquareKanban /> }.into_any(), "Square Kanban"),
-                (view! { <SquareLibrary /> }.into_any(), "Square Library"),
-                (view! { <SquareM /> }.into_any(), "Square M"),
-                (view! { <SquareMenu /> }.into_any(), "Square Menu"),
-                (view! { <SquareMinus /> }.into_any(), "Square Minus"),
-                (view! { <SquareMousePointer /> }.into_any(), "Square Mouse Pointer"),
-                (view! { <SquareOff /> }.into_any(), "Square Off"),
-                (view! { <SquareParking /> }.into_any(), "Square Parking"),
-                (view! { <SquareParkingOff /> }.into_any(), "Square Parking Off"),
-                (view! { <SquarePause /> }.into_any(), "Square Pause"),
+                (view! { <SquareKanbanPlus /> }.into_any(), "Square Kanban Plus"),
+                (view! { <SquareLetterA /> }.into_any(), "Square Letter A"),
+                (view! { <SquareLetterB /> }.into_any(), "Square Letter B"),
+                (view! { <SquareLetterC /> }.into_any(), "Square Letter C"),
+                (view! { <SquareLetterD /> }.into_any(), "Square Letter D"),
+                (view! { <SquareLetterE /> }.into_any(), "Square Letter E"),
+                (view! { <SquareLetterF /> }.into_any(), "Square Letter F"),
+                (view! { <SquareLetterG /> }.into_any(), "Square Letter G"),
+                (view! { <SquareLetterH /> }.into_any(), "Square Letter H"),
             ]
             key=|icon| icon.1
             children=move |(icon, name)| {
@@ -2180,6 +2266,31 @@ pub fn IconsS3() -> impl IntoView {
     view! {
         <For
             each=move || [
+                (view! { <SquareLetterI /> }.into_any(), "Square Letter I"),
+                (view! { <SquareLetterJ /> }.into_any(), "Square Letter J"),
+                (view! { <SquareLetterK /> }.into_any(), "Square Letter K"),
+                (view! { <SquareLetterL /> }.into_any(), "Square Letter L"),
+                (view! { <SquareLetterM /> }.into_any(), "Square Letter M"),
+                (view! { <SquareLetterN /> }.into_any(), "Square Letter N"),
+                (view! { <SquareLetterO /> }.into_any(), "Square Letter O"),
+                (view! { <SquareLetterP /> }.into_any(), "Square Letter P"),
+                (view! { <SquareLetterPOff /> }.into_any(), "Square Letter P Off"),
+                (view! { <SquareLetterQ /> }.into_any(), "Square Letter Q"),
+                (view! { <SquareLetterR /> }.into_any(), "Square Letter R"),
+                (view! { <SquareLetterS /> }.into_any(), "Square Letter S"),
+                (view! { <SquareLetterT /> }.into_any(), "Square Letter T"),
+                (view! { <SquareLetterU /> }.into_any(), "Square Letter U"),
+                (view! { <SquareLetterV /> }.into_any(), "Square Letter V"),
+                (view! { <SquareLetterW /> }.into_any(), "Square Letter W"),
+                (view! { <SquareLetterX /> }.into_any(), "Square Letter X"),
+                (view! { <SquareLetterY /> }.into_any(), "Square Letter Y"),
+                (view! { <SquareLetterZ /> }.into_any(), "Square Letter Z"),
+                (view! { <SquareLibrary /> }.into_any(), "Square Library"),
+                (view! { <SquareMenu /> }.into_any(), "Square Menu"),
+                (view! { <SquareMinus /> }.into_any(), "Square Minus"),
+                (view! { <SquareMousePointer /> }.into_any(), "Square Mouse Pointer"),
+                (view! { <SquareOff /> }.into_any(), "Square Off"),
+                (view! { <SquarePause /> }.into_any(), "Square Pause"),
                 (view! { <SquarePen /> }.into_any(), "Square Pen"),
                 (view! { <SquarePercent /> }.into_any(), "Square Percent"),
                 (view! { <SquarePi /> }.into_any(), "Square Pi"),
